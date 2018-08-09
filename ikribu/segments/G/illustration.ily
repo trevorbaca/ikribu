@@ -1,46 +1,46 @@
-G_GlobalRests = {
-    
+G_GlobalRests = {                                                              %! extern
+
     % [G GlobalRests measure 87 / measure 1]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 88 / measure 2]                                   %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 89 / measure 3]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 90 / measure 4]                                   %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 91 / measure 5]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 92 / measure 6]                                   %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 93 / measure 7]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 94 / measure 8]                                   %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 95 / measure 9]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 96 / measure 10]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 97 / measure 11]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [G GlobalRests measure 98 / measure 12]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
-    
-}
+
+}                                                                              %! extern
 
 
-G_GlobalSkips = {
-    
+G_GlobalSkips = {                                                              %! extern
+
     % [G GlobalSkips measure 87 / measure 1]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
     \mark #7                                                                   %! IndicatorCommand
@@ -74,7 +74,7 @@ G_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [G GlobalSkips measure 88 / measure 2]                                   %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -84,7 +84,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((2))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.2]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 89 / measure 3]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -94,7 +94,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((3))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.3]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 90 / measure 4]                                   %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -104,7 +104,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((4))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.4]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'15'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 91 / measure 5]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -114,7 +114,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((5))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.5]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'16'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 92 / measure 6]                                   %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -124,7 +124,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((6))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.6]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'26'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 93 / measure 7]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -134,7 +134,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((7))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.7]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'27'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 94 / measure 8]                                   %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -144,7 +144,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((8))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.8]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'37'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 95 / measure 9]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -154,7 +154,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((9))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.9]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'38'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 96 / measure 10]                                  %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -164,7 +164,7 @@ G_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((10))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [G.10]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[7'48'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [G GlobalSkips measure 97 / measure 11]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -197,7 +197,7 @@ G_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [G GlobalSkips measure 98 / measure 12]                                  %! _comment_measure_numbers
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -210,12 +210,12 @@ G_GlobalSkips = {
     \stopTextSpan                                                              %! _attach_metronome_marks(4)
     \baca_bar_line_visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
-    
-}
+
+}                                                                              %! extern
 
 
-G_BassClarinetMusicVoice = {
-    
+G_BassClarinetMusicVoice = {                                                   %! extern
+
     % [G BassClarinetMusicVoice measure 87 / measure 1]                        %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -248,16 +248,16 @@ G_BassClarinetMusicVoice = {
             "B. cl."                                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a4                                                                         %! baca_make_tied_reepated_durations
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 88 / measure 2]                        %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
+
     % [G BassClarinetMusicVoice measure 89 / measure 3]                        %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -265,16 +265,16 @@ G_BassClarinetMusicVoice = {
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     af!4                                                                       %! baca_make_tied_reepated_durations
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 90 / measure 4]                        %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
+
     % [G BassClarinetMusicVoice measure 91 / measure 5]                        %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -282,16 +282,16 @@ G_BassClarinetMusicVoice = {
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g4                                                                         %! baca_make_tied_reepated_durations
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 92 / measure 6]                        %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
+
     % [G BassClarinetMusicVoice measure 93 / measure 7]                        %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -299,16 +299,16 @@ G_BassClarinetMusicVoice = {
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!4                                                                       %! baca_make_tied_reepated_durations
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 94 / measure 8]                        %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
+
     % [G BassClarinetMusicVoice measure 95 / measure 9]                        %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -316,16 +316,16 @@ G_BassClarinetMusicVoice = {
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f4                                                                         %! baca_make_tied_reepated_durations
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 96 / measure 10]                       %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
+
     % [G BassClarinetMusicVoice measure 97 / measure 11]                       %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -333,27 +333,27 @@ G_BassClarinetMusicVoice = {
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     e4                                                                         %! baca_make_tied_reepated_durations
     \ffff                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    
+
     % [G BassClarinetMusicVoice measure 98 / measure 12]                       %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    
-}
+
+}                                                                              %! extern
 
 
-G_BassClarinetMusicStaff = {
+G_BassClarinetMusicStaff = {                                                   %! extern
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \G_BassClarinetMusicVoice                                                  %! extern
-}
+}                                                                              %! extern
 
 
-G_ViolinRHMusicVoice = {
-    
+G_ViolinRHMusicVoice = {                                                       %! extern
+
     % [G ViolinRHMusicVoice measure 87 / measure 1]                            %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -367,67 +367,67 @@ G_ViolinRHMusicVoice = {
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 88 / measure 2]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinRHMusicVoice measure 89 / measure 3]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 90 / measure 4]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinRHMusicVoice measure 91 / measure 5]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 92 / measure 6]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinRHMusicVoice measure 93 / measure 7]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 94 / measure 8]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinRHMusicVoice measure 95 / measure 9]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 96 / measure 10]                       %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinRHMusicVoice measure 97 / measure 11]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinRHMusicVoice measure 98 / measure 12]                       %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
-        
+
     }
-}
+}                                                                              %! extern
 
 
-G_ViolinRHMusicStaff = {
+G_ViolinRHMusicStaff = {                                                       %! extern
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \G_ViolinRHMusicVoice                                                      %! extern
-}
+}                                                                              %! extern
 
 
-G_ViolinMusicVoice = {
-    
+G_ViolinMusicVoice = {                                                         %! extern
+
     % [G ViolinMusicVoice measure 87 / measure 1]                              %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -459,67 +459,67 @@ G_ViolinMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 88 / measure 2]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinMusicVoice measure 89 / measure 3]                              %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 90 / measure 4]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinMusicVoice measure 91 / measure 5]                              %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 92 / measure 6]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinMusicVoice measure 93 / measure 7]                              %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 94 / measure 8]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinMusicVoice measure 95 / measure 9]                              %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 96 / measure 10]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolinMusicVoice measure 97 / measure 11]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolinMusicVoice measure 98 / measure 12]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
-        
+
     }
-}
+}                                                                              %! extern
 
 
-G_ViolinMusicStaff = {
+G_ViolinMusicStaff = {                                                         %! extern
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \G_ViolinMusicVoice                                                        %! extern
-}
+}                                                                              %! extern
 
 
-G_ViolaRHMusicVoice = {
-    
+G_ViolaRHMusicVoice = {                                                        %! extern
+
     % [G ViolaRHMusicVoice measure 87 / measure 1]                             %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -533,67 +533,67 @@ G_ViolaRHMusicVoice = {
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 88 / measure 2]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaRHMusicVoice measure 89 / measure 3]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 90 / measure 4]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaRHMusicVoice measure 91 / measure 5]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 92 / measure 6]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaRHMusicVoice measure 93 / measure 7]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 94 / measure 8]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaRHMusicVoice measure 95 / measure 9]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 96 / measure 10]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaRHMusicVoice measure 97 / measure 11]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaRHMusicVoice measure 98 / measure 12]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
-        
+
     }
-}
+}                                                                              %! extern
 
 
-G_ViolaRHMusicStaff = {
+G_ViolaRHMusicStaff = {                                                        %! extern
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \G_ViolaRHMusicVoice                                                       %! extern
-}
+}                                                                              %! extern
 
 
-G_ViolaMusicVoice = {
-    
+G_ViolaMusicVoice = {                                                          %! extern
+
     % [G ViolaMusicVoice measure 87 / measure 1]                               %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -625,67 +625,67 @@ G_ViolaMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 88 / measure 2]                           %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaMusicVoice measure 89 / measure 3]                               %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 90 / measure 4]                           %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaMusicVoice measure 91 / measure 5]                               %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 92 / measure 6]                           %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaMusicVoice measure 93 / measure 7]                               %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 94 / measure 8]                           %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaMusicVoice measure 95 / measure 9]                               %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 96 / measure 10]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G ViolaMusicVoice measure 97 / measure 11]                              %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G ViolaMusicVoice measure 98 / measure 12]                          %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
-        
+
     }
-}
+}                                                                              %! extern
 
 
-G_ViolaMusicStaff = {
+G_ViolaMusicStaff = {                                                          %! extern
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \G_ViolaMusicVoice                                                         %! extern
-}
+}                                                                              %! extern
 
 
-G_CelloRHMusicVoice = {
-    
+G_CelloRHMusicVoice = {                                                        %! extern
+
     % [G CelloRHMusicVoice measure 87 / measure 1]                             %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -701,67 +701,67 @@ G_CelloRHMusicVoice = {
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 88 / measure 2]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G CelloRHMusicVoice measure 89 / measure 3]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 90 / measure 4]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G CelloRHMusicVoice measure 91 / measure 5]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 92 / measure 6]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G CelloRHMusicVoice measure 93 / measure 7]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 94 / measure 8]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G CelloRHMusicVoice measure 95 / measure 9]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 96 / measure 10]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
     }
-    
+
     % [G CelloRHMusicVoice measure 97 / measure 11]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloRHMusicVoice measure 98 / measure 12]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
-        
+
     }
-}
+}                                                                              %! extern
 
 
-G_CelloRHMusicStaff = {
+G_CelloRHMusicStaff = {                                                        %! extern
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \G_CelloRHMusicVoice                                                       %! extern
-}
+}                                                                              %! extern
 
 
-G_CelloMusicVoice = {
-    
+G_CelloMusicVoice = {                                                          %! extern
+
     % [G CelloMusicVoice measure 87 / measure 1]                               %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -801,7 +801,7 @@ G_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloMusicVoice measure 88 / measure 2]                           %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fqf''!4                                                                %! baca_make_notes
@@ -811,7 +811,7 @@ G_CelloMusicVoice = {
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
     }
-    
+
     % [G CelloMusicVoice measure 89 / measure 3]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d''1..                                                                     %! baca_make_notes
@@ -822,7 +822,7 @@ G_CelloMusicVoice = {
     \glissando                                                                 %! SpannerCommand
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloMusicVoice measure 90 / measure 4]                           %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b'4                                                                    %! baca_make_notes
@@ -832,7 +832,7 @@ G_CelloMusicVoice = {
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
     }
-    
+
     % [G CelloMusicVoice measure 91 / measure 5]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d''1..                                                                     %! baca_make_notes
@@ -843,7 +843,7 @@ G_CelloMusicVoice = {
     \glissando                                                                 %! SpannerCommand
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloMusicVoice measure 92 / measure 6]                           %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b'4                                                                    %! baca_make_notes
@@ -853,7 +853,7 @@ G_CelloMusicVoice = {
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
     }
-    
+
     % [G CelloMusicVoice measure 93 / measure 7]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g'1..                                                                      %! baca_make_notes
@@ -864,7 +864,7 @@ G_CelloMusicVoice = {
     \glissando                                                                 %! SpannerCommand
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloMusicVoice measure 94 / measure 8]                           %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b'4                                                                    %! baca_make_notes
@@ -874,7 +874,7 @@ G_CelloMusicVoice = {
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
     }
-    
+
     % [G CelloMusicVoice measure 95 / measure 9]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g'1..                                                                      %! baca_make_notes
@@ -885,7 +885,7 @@ G_CelloMusicVoice = {
     \glissando                                                                 %! SpannerCommand
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
-        
+
         % [G CelloMusicVoice measure 96 / measure 10]                          %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d'4                                                                    %! baca_make_notes
@@ -895,23 +895,23 @@ G_CelloMusicVoice = {
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
     }
-    
+
     % [G CelloMusicVoice measure 97 / measure 11]                              %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g'1..                                                                      %! baca_make_notes
     :32                                                                        %! IndicatorCommand
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
-    
+
     % [G CelloMusicVoice measure 98 / measure 12]                              %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.direction                                            %! baca_tuplet_bracket_down:OverrideCommand(2)
-    
-}
+
+}                                                                              %! extern
 
 
-G_CelloMusicStaff = {
+G_CelloMusicStaff = {                                                          %! extern
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \G_CelloMusicVoice                                                         %! extern
-}
+}                                                                              %! extern
