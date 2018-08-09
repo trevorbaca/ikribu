@@ -1,34 +1,34 @@
-F_GlobalRests = {
-    
+F_GlobalRests = {                                                              %! extern
+
     % [F GlobalRests measure 79 / measure 1]                                   %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
-    
+
     % [F GlobalRests measure 80 / measure 2]                                   %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
-    
+
     % [F GlobalRests measure 81 / measure 3]                                   %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
-    
+
     % [F GlobalRests measure 82 / measure 4]                                   %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
-    
+
     % [F GlobalRests measure 83 / measure 5]                                   %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests
-    
+
     % [F GlobalRests measure 84 / measure 6]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [F GlobalRests measure 85 / measure 7]                                   %! _comment_measure_numbers
     R1 * 2                                                                     %! _make_global_rests
-    
+
     % [F GlobalRests measure 86 / measure 8]                                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
-}
+
+}                                                                              %! extern
 
 
-F_GlobalSkips = {
-    
+F_GlobalSkips = {                                                              %! extern
+
     % [F GlobalSkips measure 79 / measure 1]                                   %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #6                                                                   %! IndicatorCommand
@@ -62,7 +62,7 @@ F_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [F GlobalSkips measure 80 / measure 2]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -72,7 +72,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((2))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.2]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'06'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 81 / measure 3]                                   %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -82,7 +82,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((3))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.3]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'11'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 82 / measure 4]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -92,7 +92,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((4))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.4]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'16'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 83 / measure 5]                                   %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -102,7 +102,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((5))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.5]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'21'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 84 / measure 6]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -112,7 +112,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((6))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.6]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'23'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 85 / measure 7]                                   %! _comment_measure_numbers
     \time 8/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -122,7 +122,7 @@ F_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((7))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.7]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[6'33'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [F GlobalSkips measure 86 / measure 8]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -135,12 +135,12 @@ F_GlobalSkips = {
     \stopTextSpan                                                              %! _attach_metronome_marks(4)
     \baca_bar_line_visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
-    
-}
+
+}                                                                              %! extern
 
 
-F_BassClarinetMusicVoice = {
-    
+F_BassClarinetMusicVoice = {                                                   %! extern
+
     % [F BassClarinetMusicVoice measure 79 / measure 1]                        %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -170,50 +170,50 @@ F_BassClarinetMusicVoice = {
             "B. cl."                                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F BassClarinetMusicVoice measure 80 / measure 2]                        %! _comment_measure_numbers
     gs'!2.                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
-    
+
     % [F BassClarinetMusicVoice measure 81 / measure 3]                        %! _comment_measure_numbers
     gs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
-    
+
     % [F BassClarinetMusicVoice measure 82 / measure 4]                        %! _comment_measure_numbers
     gs'!2.                                                                     %! baca_make_repeat_tied_notes
     \repeatTie
-    
+
     % [F BassClarinetMusicVoice measure 83 / measure 5]                        %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
-    
+
     % [F BassClarinetMusicVoice measure 84 / measure 6]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a1..                                                                       %! baca_make_repeat_tied_notes
     \sfp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    
+
     % [F BassClarinetMusicVoice measure 85 / measure 7]                        %! _comment_measure_numbers
     a\breve                                                                    %! baca_make_repeat_tied_notes
     \repeatTie
-    
+
     % [F BassClarinetMusicVoice measure 86 / measure 8]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a1..                                                                       %! baca_make_repeat_tied_notes
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    
-}
+
+}                                                                              %! extern
 
 
-F_BassClarinetMusicStaff = {
+F_BassClarinetMusicStaff = {                                                   %! extern
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \F_BassClarinetMusicVoice                                                  %! extern
-}
+}                                                                              %! extern
 
 
-F_ViolinRHMusicVoice = {
-    
+F_ViolinRHMusicVoice = {                                                       %! extern
+
     % [F ViolinRHMusicVoice measure 79 / measure 1]                            %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -225,39 +225,39 @@ F_ViolinRHMusicVoice = {
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 1                                                                     %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolinRHMusicVoice measure 80 / measure 2]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 81 / measure 3]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 82 / measure 4]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 83 / measure 5]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 84 / measure 6]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 85 / measure 7]                            %! _comment_measure_numbers
     R1 * 2                                                                     %! _call_rhythm_commands
-    
+
     % [F ViolinRHMusicVoice measure 86 / measure 8]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-F_ViolinRHMusicStaff = {
+F_ViolinRHMusicStaff = {                                                       %! extern
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \F_ViolinRHMusicVoice                                                      %! extern
-}
+}                                                                              %! extern
 
 
-F_ViolinMusicVoice = {
-    
+F_ViolinMusicVoice = {                                                         %! extern
+
     % [F ViolinMusicVoice measure 79 / measure 1]                              %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -287,19 +287,19 @@ F_ViolinMusicVoice = {
             Vn.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolinMusicVoice measure 80 / measure 2]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
-    
+
     % [F ViolinMusicVoice measure 81 / measure 3]                              %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
-    
+
     % [F ViolinMusicVoice measure 82 / measure 4]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
-    
+
     % [F ViolinMusicVoice measure 83 / measure 5]                              %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
-    
+
     % [F ViolinMusicVoice measure 84 / measure 6]                              %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -327,7 +327,7 @@ F_ViolinMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolinMusicVoice measure 85 / measure 7]                              %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     <e' fs'!>\breve
@@ -342,23 +342,23 @@ F_ViolinMusicVoice = {
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
-    
+
     % [F ViolinMusicVoice measure 86 / measure 8]                              %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 7/4                                                                   %! _make_measure_silences
     \!                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    
-}
+
+}                                                                              %! extern
 
 
-F_ViolinMusicStaff = {
+F_ViolinMusicStaff = {                                                         %! extern
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \F_ViolinMusicVoice                                                        %! extern
-}
+}                                                                              %! extern
 
 
-F_ViolaRHMusicVoice = {
-    
+F_ViolaRHMusicVoice = {                                                        %! extern
+
     % [F ViolaRHMusicVoice measure 79 / measure 1]                             %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -370,39 +370,39 @@ F_ViolaRHMusicVoice = {
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 1                                                                     %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolaRHMusicVoice measure 80 / measure 2]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 81 / measure 3]                             %! _comment_measure_numbers
     R1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 82 / measure 4]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 83 / measure 5]                             %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 84 / measure 6]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 85 / measure 7]                             %! _comment_measure_numbers
     R1 * 2                                                                     %! _call_rhythm_commands
-    
+
     % [F ViolaRHMusicVoice measure 86 / measure 8]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-F_ViolaRHMusicStaff = {
+F_ViolaRHMusicStaff = {                                                        %! extern
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \F_ViolaRHMusicVoice                                                       %! extern
-}
+}                                                                              %! extern
 
 
-F_ViolaMusicVoice = {
-    
+F_ViolaMusicVoice = {                                                          %! extern
+
     % [F ViolaMusicVoice measure 79 / measure 1]                               %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -432,19 +432,19 @@ F_ViolaMusicVoice = {
             Va.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolaMusicVoice measure 80 / measure 2]                               %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
-    
+
     % [F ViolaMusicVoice measure 81 / measure 3]                               %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
-    
+
     % [F ViolaMusicVoice measure 82 / measure 4]                               %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
-    
+
     % [F ViolaMusicVoice measure 83 / measure 5]                               %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
-    
+
     % [F ViolaMusicVoice measure 84 / measure 6]                               %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -474,7 +474,7 @@ F_ViolaMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F ViolaMusicVoice measure 85 / measure 7]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     <ef'! f'>\breve
@@ -489,23 +489,23 @@ F_ViolaMusicVoice = {
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
-    
+
     % [F ViolaMusicVoice measure 86 / measure 8]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 7/4                                                                   %! _make_measure_silences
     \!                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    
-}
+
+}                                                                              %! extern
 
 
-F_ViolaMusicStaff = {
+F_ViolaMusicStaff = {                                                          %! extern
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \F_ViolaMusicVoice                                                         %! extern
-}
+}                                                                              %! extern
 
 
-F_CelloRHMusicVoice = {
-    
+F_CelloRHMusicVoice = {                                                        %! extern
+
     % [F CelloRHMusicVoice measure 79 / measure 1]                             %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -519,39 +519,39 @@ F_CelloRHMusicVoice = {
     R1 * 1                                                                     %! _call_rhythm_commands
     \pp                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F CelloRHMusicVoice measure 80 / measure 2]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 81 / measure 3]                             %! _comment_measure_numbers
     R1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 82 / measure 4]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 83 / measure 5]                             %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 84 / measure 6]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 85 / measure 7]                             %! _comment_measure_numbers
     R1 * 2                                                                     %! _call_rhythm_commands
-    
+
     % [F CelloRHMusicVoice measure 86 / measure 8]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-F_CelloRHMusicStaff = {
+F_CelloRHMusicStaff = {                                                        %! extern
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \F_CelloRHMusicVoice                                                       %! extern
-}
+}                                                                              %! extern
 
 
-F_CelloMusicVoice = {
-    
+F_CelloMusicVoice = {                                                          %! extern
+
     % [F CelloMusicVoice measure 79 / measure 1]                               %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -591,17 +591,17 @@ F_CelloMusicVoice = {
             Vc.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [F CelloMusicVoice measure 80 / measure 2]                               %! _comment_measure_numbers
     fs!2.                                                                      %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
-    
+
     % [F CelloMusicVoice measure 81 / measure 3]                               %! _comment_measure_numbers
     fs!1                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
-    
+
     % [F CelloMusicVoice measure 82 / measure 4]                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!2.                                                                      %! baca_make_repeat_tied_notes
@@ -610,10 +610,10 @@ F_CelloMusicVoice = {
     \repeatTie
     \stopTextSpan                                                              %! PiecewiseIndicatorCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
-    
+
     % [F CelloMusicVoice measure 83 / measure 5]                               %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
-    
+
     % [F CelloMusicVoice measure 84 / measure 6]                               %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -632,52 +632,52 @@ F_CelloMusicVoice = {
                         "π/2 every quarter note"                               %! IndicatorCommand
                     }                                                          %! IndicatorCommand
         }                                                                      %! IndicatorCommand
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     % [F CelloMusicVoice measure 85 / measure 7]                               %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
-    
+
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
     \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_center:OverrideCommand(2)
-    
+
     % [F CelloMusicVoice measure 86 / measure 8]                               %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -691,11 +691,11 @@ F_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 7/4                                                                   %! _make_measure_silences
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
-}
+
+}                                                                              %! extern
 
 
-F_CelloMusicStaff = {
+F_CelloMusicStaff = {                                                          %! extern
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \F_CelloMusicVoice                                                         %! extern
-}
+}                                                                              %! extern
