@@ -81,26 +81,10 @@ K_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [K.1]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[9'52'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 %@% - \abjad_invisible_line                                                    %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                 %! _attach_metronome_marks(2)
-%@%     \concat                                                                %! _attach_metronome_marks(2)
-%@%         {                                                                  %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! _attach_metronome_marks(2)
-%@%             \hspace                                                        %! _attach_metronome_marks(2)
-%@%                 #0.5                                                       %! _attach_metronome_marks(2)
-%@%         }                                                                  %! _attach_metronome_marks(2)
-%@%     }                                                                      %! _attach_metronome_marks(2)
+%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "58"                        %! _attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! _attach_metronome_marks(2)
     - \abjad_invisible_line                                                    %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                 %! _attach_metronome_marks(3)
-        \concat                                                                %! _attach_metronome_marks(3)
-            {                                                                  %! _attach_metronome_marks(3)
-                \with-color                                                    %! _attach_metronome_marks(3)
-                    #(x11-color 'green4)                                       %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                %! _attach_metronome_marks(3)
-                \hspace                                                        %! _attach_metronome_marks(3)
-                    #0.5                                                       %! _attach_metronome_marks(3)
-            }                                                                  %! _attach_metronome_marks(3)
-        }                                                                      %! _attach_metronome_marks(3)
+    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "58" #'green4       %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
 
     % [K GlobalSkips measure 128 / measure 2]                                  %! _comment_measure_numbers
