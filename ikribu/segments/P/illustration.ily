@@ -545,7 +545,7 @@ P_ViolinRHMusicVoice = {                                                       %
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
         - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
-        - \tweak bound-details.right.text \markup \baca-bcp-right #0 #7        %! BowContactPointCommand
+        - \baca_bcp_spanner_right_text #0 #7                                   %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -990,7 +990,7 @@ P_ViolaRHMusicVoice = {                                                        %
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
     - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
-    - \tweak bound-details.right.text \markup \baca-bcp-right #0 #7            %! BowContactPointCommand
+    - \baca_bcp_spanner_right_text #0 #7                                       %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1396,7 +1396,7 @@ P_CelloRHMusicVoice = {                                                        %
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
         - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
-        - \tweak bound-details.right.text \markup \baca-bcp-right #5 #7        %! BowContactPointCommand
+        - \baca_bcp_spanner_right_text #5 #7                                   %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
