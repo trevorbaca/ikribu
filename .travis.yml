@@ -61,7 +61,7 @@ before_install:
     - ls
     - ls /tmp
     - pwd
-    - which doctest
+    - which baca-doctest
     - which mypy
     - which prime-parser-tables
 
@@ -73,7 +73,7 @@ install:
 script:
     # eventually uncomment:
     # -mypy $PACKAGE
-    - coverage run -a `which doctest` $PACKAGE
+    - coverage run -a `which baca-doctest` $PACKAGE
     - coverage run -a `which py.test` -rf $PACKAGE
 
 after_success:
