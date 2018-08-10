@@ -123,17 +123,17 @@ maker(
     ('vn', (2, 16)),
     baca.clef('treble'),
     baca.dls_staff_padding(3),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
-    baca.map(
-        baca.runs()[abjad.index([0], 2)],
+    baca.new(
         baca.hairpin('pp < p'),
+        map=baca.runs()[abjad.index([0], 2)],
         ),
-    baca.map(
-        baca.runs()[abjad.index([1], 2)],
+    baca.new(
         baca.hairpin('p > pp'),
+        map=baca.runs()[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches('F#4 G#4 G#4 F#4'),
@@ -156,17 +156,17 @@ maker(
 maker(
     ('va', (2, 16)),
     baca.dls_staff_padding(3),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
-    baca.map(
-        baca.runs()[abjad.index([0], 2)],
+    baca.new(
         baca.hairpin('pp < p'),
+        map=baca.runs()[abjad.index([0], 2)],
         ),
-    baca.map(
-        baca.runs()[abjad.index([1], 2)],
+    baca.new(
         baca.hairpin('p > pp'),
+        map=baca.runs()[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches('F4 E4 E4 F4'),
