@@ -590,7 +590,7 @@ O_ViolinMusicVoice = {                                                         %
     _ \markup { II+III }                                                       %! IndicatorCommand
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. nut"   %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "trem. flaut. nut"                         %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -826,7 +826,7 @@ O_ViolaMusicVoice = {                                                          %
     _ \markup { II+III }                                                       %! IndicatorCommand
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. nut"   %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "trem. flaut. nut"                         %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -1052,7 +1052,7 @@ O_CelloMusicVoice = {                                                          %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "tasto poss."                               %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "pos. ord."          %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "pos. ord."                                %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -1091,7 +1091,7 @@ O_CelloMusicVoice = {                                                          %
     \repeatTie
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "pos. ord."                                 %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "XP"                 %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "XP"                                       %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -1130,7 +1130,7 @@ O_CelloMusicVoice = {                                                          %
     \repeatTie
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "XP"                                        %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "pos. ord."          %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "pos. ord."                                %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -1169,7 +1169,7 @@ O_CelloMusicVoice = {                                                          %
     \repeatTie
     - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
     - \baca_text_spanner_left_text "pos. ord."                                 %! PiecewiseIndicatorCommand(1)
-    - \tweak bound-details.right.text \markup \baca-right "tasto poss."        %! PiecewiseIndicatorCommand(1)
+    - \baca_text_spanner_right_text "tasto poss."                              %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)

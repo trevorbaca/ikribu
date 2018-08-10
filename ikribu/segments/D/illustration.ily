@@ -927,7 +927,7 @@ D_CelloRHMusicVoice = {                                                        %
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
         - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
-        - \tweak bound-details.right.text \markup \baca-bcp-right #6 #7        %! BowContactPointCommand
+        - \baca_bcp_spanner_right_text #6 #7                                   %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
