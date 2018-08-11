@@ -33,23 +33,23 @@ F_GlobalSkips = {                                                              %
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #6                                                                   %! IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (79)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <0>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-dark-cyan-markup ((1))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [F.1]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[6'01'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_invisible_line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "42"                        %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "42"                        %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "42" #'green4       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'green4       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [F GlobalSkips measure 80 / measure 2]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (80)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <1>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -59,7 +59,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 81 / measure 3]                                   %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (81)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -69,7 +69,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 82 / measure 4]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (82)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <3>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -79,7 +79,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 83 / measure 5]                                   %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (83)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <4>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -89,7 +89,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 84 / measure 6]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (84)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <5>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -99,7 +99,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 85 / measure 7]                                   %! _comment_measure_numbers
     \time 8/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (85)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -109,7 +109,7 @@ F_GlobalSkips = {                                                              %
 
     % [F GlobalSkips measure 86 / measure 8]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (86)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -117,7 +117,7 @@ F_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [F.8]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[6'45'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(4)
-    \baca_bar_line_visible                                                     %! _attach_final_bar_line
+    \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
 }                                                                              %! extern
@@ -304,9 +304,9 @@ F_ViolinMusicVoice = {                                                         %
     _ \markup { II+III }                                                       %! baca_markup:IndicatorCommand
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_left_text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_right_text "trem. flaut. tast."                       %! PiecewiseIndicatorCommand(1)
+    - \abjad-dashed-line-with-arrow                                            %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-left-text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-right-text "trem. flaut. tast."                       %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -451,9 +451,9 @@ F_ViolaMusicVoice = {                                                          %
     _ \markup { I+II }                                                         %! baca_markup:IndicatorCommand
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_left_text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_right_text "trem. flaut. tast."                       %! PiecewiseIndicatorCommand(1)
+    - \abjad-dashed-line-with-arrow                                            %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-left-text "trem. flaut. XP"                           %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-right-text "trem. flaut. tast."                       %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)
@@ -561,9 +561,9 @@ F_CelloMusicVoice = {                                                          %
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \abjad_dashed_line_with_arrow                                            %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_left_text "(trem. flaut. tast.)"                      %! PiecewiseIndicatorCommand(1)
-    - \baca_text_spanner_right_text "trem. XP (non. flaut.)"                   %! PiecewiseIndicatorCommand(1)
+    - \abjad-dashed-line-with-arrow                                            %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-left-text "(trem. flaut. tast.)"                      %! PiecewiseIndicatorCommand(1)
+    - \baca-text-spanner-right-text "trem. XP (non. flaut.)"                   %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! PiecewiseIndicatorCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! PiecewiseIndicatorCommand(1)
     \startTextSpan                                                             %! PiecewiseIndicatorCommand(1)

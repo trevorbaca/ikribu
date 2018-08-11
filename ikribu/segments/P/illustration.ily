@@ -24,7 +24,7 @@ P_GlobalRests = {                                                              %
     % [P GlobalRests measure 246 / measure 8]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_long_fermata_markup                                                %! GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! GlobalFermataCommand(1)
 
 }                                                                              %! extern
 
@@ -35,23 +35,23 @@ P_GlobalSkips = {                                                              %
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #16                                                                  %! IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (239)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <0>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-dark-cyan-markup ((1))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [P.1]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[17'45'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "104"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "104"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "104" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "104" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [P GlobalSkips measure 240 / measure 2]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (240)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <1>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -61,7 +61,7 @@ P_GlobalSkips = {                                                              %
 
     % [P GlobalSkips measure 241 / measure 3]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (241)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -79,7 +79,7 @@ P_GlobalSkips = {                                                              %
 
     % [P GlobalSkips measure 243 / measure 5]                                  %! _comment_measure_numbers
     \time 8/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (243)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <4>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -89,7 +89,7 @@ P_GlobalSkips = {                                                              %
 
     % [P GlobalSkips measure 244 / measure 6]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (244)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <5>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -97,16 +97,16 @@ P_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [P.6]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[18'00'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "42"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "42"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "42" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [P GlobalSkips measure 245 / measure 7]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (245)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -116,7 +116,7 @@ P_GlobalSkips = {                                                              %
 
     % [P GlobalSkips measure 246 / measure 8]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (246)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -124,7 +124,7 @@ P_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [P.8]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[18'14'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(4)
-    \baca_bar_line_visible                                                     %! _attach_final_bar_line
+    \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
 }                                                                              %! extern
@@ -291,16 +291,16 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
 
     % [P ViolinRHMusicVoice measure 240 / measure 2]                           %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #4 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -310,8 +310,8 @@ P_ViolinRHMusicVoice = {                                                       %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #5 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
@@ -319,15 +319,15 @@ P_ViolinRHMusicVoice = {                                                       %
         % [P ViolinRHMusicVoice measure 241 / measure 3]                       %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -338,8 +338,8 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -347,14 +347,14 @@ P_ViolinRHMusicVoice = {                                                       %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -364,15 +364,15 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -380,8 +380,8 @@ P_ViolinRHMusicVoice = {                                                       %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
@@ -390,8 +390,8 @@ P_ViolinRHMusicVoice = {                                                       %
         % [P ViolinRHMusicVoice measure 242 / measure 4]                       %! _comment_measure_numbers
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -401,15 +401,15 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -419,20 +419,20 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #5 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -443,8 +443,8 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -452,14 +452,14 @@ P_ViolinRHMusicVoice = {                                                       %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
@@ -473,29 +473,29 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4                                                                    %! bow_rhythm
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #2 #4                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -505,15 +505,15 @@ P_ViolinRHMusicVoice = {                                                       %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #2 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
-        - \baca_bcp_spanner_right_text #0 #7                                   %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
+        - \baca-bcp-spanner-right-text #0 #7                                   %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -709,16 +709,16 @@ P_ViolaRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! bow_rhythm
     - \downbow                                                                 %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #0 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -729,8 +729,8 @@ P_ViolaRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 2/3 {                                                               %! bow_rhythm
@@ -741,14 +741,14 @@ P_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -758,8 +758,8 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
@@ -769,8 +769,8 @@ P_ViolaRHMusicVoice = {                                                        %
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -780,20 +780,20 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #5 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -804,15 +804,15 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -823,8 +823,8 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -832,14 +832,14 @@ P_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
@@ -853,15 +853,15 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #2 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -871,29 +871,29 @@ P_ViolaRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4                                                                    %! bow_rhythm
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #5 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
 
@@ -905,14 +905,14 @@ P_ViolaRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #5 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #6 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -923,22 +923,22 @@ P_ViolaRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \downbow                                                                 %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #6 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \upbow                                                                   %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -949,16 +949,16 @@ P_ViolaRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #0 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \upbow                                                                   %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
-    - \baca_bcp_spanner_right_text #0 #7                                       %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
+    - \baca-bcp-spanner-right-text #0 #7                                       %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1141,14 +1141,14 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1158,23 +1158,23 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #5 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
 
     % [P CelloRHMusicVoice measure 240 / measure 2]                            %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #6 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \upbow                                                                   %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/6 {                                                               %! bow_rhythm
@@ -1188,8 +1188,8 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #6 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1197,14 +1197,14 @@ P_CelloRHMusicVoice = {                                                        %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #4                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1214,14 +1214,14 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #1 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1232,23 +1232,23 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #2 #4                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
     }                                                                          %! bow_rhythm
 
     % [P CelloRHMusicVoice measure 242 / measure 4]                            %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #1 #4                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #1 #4                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \downbow                                                                 %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #0 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1258,14 +1258,14 @@ P_CelloRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #4 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #5 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1275,22 +1275,22 @@ P_CelloRHMusicVoice = {                                                        %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #6 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \upbow                                                                   %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #7 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
 
     c'4                                                                        %! bow_rhythm
     - \downbow                                                                 %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad_solid_line_with_arrow                                             %! BowContactPointCommand
-    - \baca_bcp_spanner_left_text #6 #7                                        %! BowContactPointCommand
+    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 8/9 {                                                               %! bow_rhythm
@@ -1301,14 +1301,14 @@ P_CelloRHMusicVoice = {                                                        %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         r4
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_invisible_line                                                %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-invisible-line                                                %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1318,15 +1318,15 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1337,22 +1337,22 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \upbow                                                               %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #7 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         c'4                                                                    %! bow_rhythm
         - \downbow                                                             %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #0 #7                                    %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1362,9 +1362,9 @@ P_CelloRHMusicVoice = {                                                        %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad_solid_line_with_arrow                                         %! BowContactPointCommand
-        - \baca_bcp_spanner_left_text #4 #7                                    %! BowContactPointCommand
-        - \baca_bcp_spanner_right_text #5 #7                                   %! BowContactPointCommand
+        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
+        - \baca-bcp-spanner-right-text #5 #7                                   %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
 
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
