@@ -367,8 +367,10 @@ E_BassClarinetMusicVoice = {                                                   %
 
 
 E_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \E_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -435,12 +437,15 @@ E_ViolinRHMusicVoice = {                                                       %
 
 
 E_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \E_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 E_ViolinMusicVoice = {                                                         %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -494,7 +499,9 @@ E_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -514,6 +521,7 @@ E_ViolinMusicVoice = {                                                         %
         c'1                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolinMusicVoice measure 65 / measure 3]                              %! _comment_measure_numbers
@@ -535,6 +543,7 @@ E_ViolinMusicVoice = {                                                         %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -554,6 +563,7 @@ E_ViolinMusicVoice = {                                                         %
         c'2                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolinMusicVoice measure 69 / measure 7]                              %! _comment_measure_numbers
@@ -561,6 +571,7 @@ E_ViolinMusicVoice = {                                                         %
 
     % [E ViolinMusicVoice measure 70 / measure 8]                              %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -577,7 +588,9 @@ E_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -597,6 +610,7 @@ E_ViolinMusicVoice = {                                                         %
         c'1                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolinMusicVoice measure 73 / measure 11]                             %! _comment_measure_numbers
@@ -618,6 +632,7 @@ E_ViolinMusicVoice = {                                                         %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -637,6 +652,7 @@ E_ViolinMusicVoice = {                                                         %
         c'4                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolinMusicVoice measure 77 / measure 15]                             %! _comment_measure_numbers
@@ -653,8 +669,10 @@ E_ViolinMusicVoice = {                                                         %
 
 
 E_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \E_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -721,8 +739,10 @@ E_ViolaRHMusicVoice = {                                                        %
 
 
 E_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \E_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -763,6 +783,7 @@ E_ViolaMusicVoice = {                                                          %
             Va.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -785,6 +806,7 @@ E_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolaMusicVoice measure 65 / measure 3]                               %! _comment_measure_numbers
@@ -809,6 +831,7 @@ E_ViolaMusicVoice = {                                                          %
 
     % [E ViolaMusicVoice measure 67 / measure 5]                               %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -825,6 +848,7 @@ E_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolaMusicVoice measure 69 / measure 7]                               %! _comment_measure_numbers
@@ -849,6 +873,7 @@ E_ViolaMusicVoice = {                                                          %
 
     % [E ViolaMusicVoice measure 71 / measure 9]                               %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -865,7 +890,9 @@ E_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -885,6 +912,7 @@ E_ViolaMusicVoice = {                                                          %
         c'1                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolaMusicVoice measure 74 / measure 12]                              %! _comment_measure_numbers
@@ -892,6 +920,7 @@ E_ViolaMusicVoice = {                                                          %
 
     % [E ViolaMusicVoice measure 75 / measure 13]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -908,7 +937,9 @@ E_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -928,6 +959,7 @@ E_ViolaMusicVoice = {                                                          %
         c'1                                                                    %! triplet_rhythm
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [E ViolaMusicVoice measure 78 / measure 16]                              %! _comment_measure_numbers
@@ -941,8 +973,10 @@ E_ViolaMusicVoice = {                                                          %
 
 
 E_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \E_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1011,8 +1045,10 @@ E_CelloRHMusicVoice = {                                                        %
 
 
 E_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \E_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1148,6 +1184,8 @@ E_CelloMusicVoice = {                                                          %
 
 
 E_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \E_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

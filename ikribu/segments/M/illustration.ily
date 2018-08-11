@@ -864,8 +864,10 @@ M_BassClarinetMusicVoice = {                                                   %
 
 
 M_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \M_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -1015,8 +1017,10 @@ M_ViolinRHMusicVoice = {                                                       %
 
 
 M_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \M_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -1061,6 +1065,7 @@ M_ViolinMusicVoice = {                                                         %
             Vn.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1083,7 +1088,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1096,7 +1103,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1111,6 +1120,7 @@ M_ViolinMusicVoice = {                                                         %
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 180 / measure 5]                             %! _comment_measure_numbers
@@ -1132,6 +1142,7 @@ M_ViolinMusicVoice = {                                                         %
             \box                                                               %! baca_markup:IndicatorCommand
                 "grainfall (4)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/4 {                                                               %! color_rhythm
 
@@ -1155,6 +1166,7 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 183 / measure 8]                             %! _comment_measure_numbers
@@ -1176,6 +1188,7 @@ M_ViolinMusicVoice = {                                                         %
             \box                                                               %! baca_markup:IndicatorCommand
                 "grainfall (5)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/5 {                                                               %! color_rhythm
 
@@ -1204,7 +1217,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 4/5 {                                                               %! color_rhythm
 
@@ -1223,7 +1238,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/5 {                                                               %! color_rhythm
 
@@ -1244,6 +1261,7 @@ M_ViolinMusicVoice = {                                                         %
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 188 / measure 13]                            %! _comment_measure_numbers
@@ -1265,6 +1283,7 @@ M_ViolinMusicVoice = {                                                         %
             \box                                                               %! baca_markup:IndicatorCommand
                 "grainfall (6)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/12 {                                                              %! color_rhythm
 
@@ -1287,7 +1306,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/12 {                                                              %! color_rhythm
 
@@ -1300,7 +1321,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1315,6 +1338,7 @@ M_ViolinMusicVoice = {                                                         %
         c'1                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 193 / measure 18]                            %! _comment_measure_numbers
@@ -1336,6 +1360,7 @@ M_ViolinMusicVoice = {                                                         %
             \box                                                               %! baca_markup:IndicatorCommand
                 "grainfall (7)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/4 {                                                               %! color_rhythm
 
@@ -1359,6 +1384,7 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 196 / measure 21]                            %! _comment_measure_numbers
@@ -1380,6 +1406,7 @@ M_ViolinMusicVoice = {                                                         %
             \box                                                               %! baca_markup:IndicatorCommand
                 "grainfall (8)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 4/5 {                                                               %! color_rhythm
 
@@ -1408,7 +1435,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/10 {                                                              %! color_rhythm
 
@@ -1427,7 +1456,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 4/5 {                                                               %! color_rhythm
 
@@ -1446,7 +1477,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 4/5 {                                                               %! color_rhythm
 
@@ -1465,7 +1498,9 @@ M_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/5 {                                                               %! color_rhythm
 
@@ -1486,6 +1521,7 @@ M_ViolinMusicVoice = {                                                         %
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! color_rhythm
 
     % [M ViolinMusicVoice measure 203 / measure 28]                            %! _comment_measure_numbers
@@ -1514,8 +1550,10 @@ M_ViolinMusicVoice = {                                                         %
 
 
 M_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \M_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -1665,8 +1703,10 @@ M_ViolaRHMusicVoice = {                                                        %
 
 
 M_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \M_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1764,6 +1804,7 @@ M_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 7/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/5 {                                                               %! color_rhythm
 
@@ -1782,6 +1823,7 @@ M_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolaMusicVoice measure 183 / measure 8]                              %! _comment_measure_numbers
@@ -1809,6 +1851,7 @@ M_ViolaMusicVoice = {                                                          %
 
     c'4                                                                        %! color_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1821,6 +1864,7 @@ M_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolaMusicVoice measure 187 / measure 12]                             %! _comment_measure_numbers
@@ -1846,6 +1890,7 @@ M_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 1/2                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/8 {                                                               %! color_rhythm
 
@@ -1865,7 +1910,9 @@ M_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/8 {                                                               %! color_rhythm
 
@@ -1881,6 +1928,7 @@ M_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolaMusicVoice measure 192 / measure 17]                             %! _comment_measure_numbers
@@ -1909,6 +1957,7 @@ M_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 7/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 3/5 {                                                               %! color_rhythm
 
@@ -1927,6 +1976,7 @@ M_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolaMusicVoice measure 196 / measure 21]                             %! _comment_measure_numbers
@@ -1940,6 +1990,7 @@ M_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 1/2                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1956,7 +2007,9 @@ M_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 7/12 {                                                              %! color_rhythm
 
@@ -1969,7 +2022,9 @@ M_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1982,7 +2037,9 @@ M_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! color_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! color_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
     \times 2/3 {                                                               %! color_rhythm
 
@@ -1995,6 +2052,7 @@ M_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! color_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! color_rhythm
 
     % [M ViolaMusicVoice measure 202 / measure 27]                             %! _comment_measure_numbers
@@ -2035,8 +2093,10 @@ M_ViolaMusicVoice = {                                                          %
 
 
 M_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \M_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -2186,8 +2246,10 @@ M_CelloRHMusicVoice = {                                                        %
 
 
 M_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \M_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -2540,6 +2602,8 @@ M_CelloMusicVoice = {                                                          %
 
 
 M_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \M_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

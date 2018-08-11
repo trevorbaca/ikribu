@@ -351,8 +351,10 @@ Q_BassClarinetMusicVoice = {                                                   %
 
 
 Q_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \Q_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -412,8 +414,10 @@ Q_ViolinRHMusicVoice = {                                                       %
 
 
 Q_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \Q_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -624,8 +628,10 @@ Q_ViolinMusicVoice = {                                                         %
 
 
 Q_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \Q_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -685,8 +691,10 @@ Q_ViolaRHMusicVoice = {                                                        %
 
 
 Q_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \Q_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -897,8 +905,10 @@ Q_ViolaMusicVoice = {                                                          %
 
 
 Q_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \Q_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -958,12 +968,15 @@ Q_CelloRHMusicVoice = {                                                        %
 
 
 Q_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \Q_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
 Q_CelloMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 14/15 {                                                             %! inscription_rhythm
 
@@ -1040,7 +1053,9 @@ Q_CelloMusicVoice = {                                                          %
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
         ]                                                                      %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \times 8/9 {                                                               %! inscription_rhythm
 
         % [Q CelloMusicVoice measure 248 / measure 2]                          %! _comment_measure_numbers
@@ -1067,7 +1082,9 @@ Q_CelloMusicVoice = {                                                          %
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 1/1 {                                                               %! inscription_rhythm
 
@@ -1111,7 +1128,9 @@ Q_CelloMusicVoice = {                                                          %
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
         ]                                                                      %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 6/7 {                                                               %! inscription_rhythm
 
@@ -1139,7 +1158,9 @@ Q_CelloMusicVoice = {                                                          %
         r8                                                                     %! inscription_rhythm
 
         r4                                                                     %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \times 2/3 {                                                               %! inscription_rhythm
 
         % [Q CelloMusicVoice measure 251 / measure 5]                          %! _comment_measure_numbers
@@ -1158,7 +1179,9 @@ Q_CelloMusicVoice = {                                                          %
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
         ]                                                                      %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 1/1 {                                                               %! inscription_rhythm
 
@@ -1191,7 +1214,9 @@ Q_CelloMusicVoice = {                                                          %
         - \accent                                                              %! IndicatorCommand
 
         r8.                                                                    %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 14/15 {                                                             %! inscription_rhythm
 
@@ -1218,7 +1243,9 @@ Q_CelloMusicVoice = {                                                          %
         ]                                                                      %! inscription_rhythm
 
         r2..                                                                   %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \times 4/5 {                                                               %! inscription_rhythm
 
         % [Q CelloMusicVoice measure 254 / measure 8]                          %! _comment_measure_numbers
@@ -1245,7 +1272,9 @@ Q_CelloMusicVoice = {                                                          %
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
         ]                                                                      %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 1/1 {                                                               %! inscription_rhythm
 
@@ -1268,7 +1297,9 @@ Q_CelloMusicVoice = {                                                          %
         r2                                                                     %! inscription_rhythm
 
         r8.                                                                    %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 6/7 {                                                               %! inscription_rhythm
 
@@ -1293,7 +1324,9 @@ Q_CelloMusicVoice = {                                                          %
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! inscription_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! inscription_rhythm
     \times 7/8 {                                                               %! inscription_rhythm
 
@@ -1334,6 +1367,7 @@ Q_CelloMusicVoice = {                                                          %
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! IndicatorCommand
         ]                                                                      %! inscription_rhythm
+
     }                                                                          %! inscription_rhythm
 
     % [Q CelloMusicVoice measure 258 / measure 12]                             %! _comment_measure_numbers
@@ -1374,6 +1408,8 @@ Q_CelloMusicVoice = {                                                          %
 
 
 Q_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \Q_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

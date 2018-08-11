@@ -231,8 +231,10 @@ N_BassClarinetMusicVoice = {                                                   %
 
 
 N_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \N_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -329,6 +331,7 @@ N_ViolinRHMusicVoice = {                                                       %
     - \abjad-invisible-line                                                    %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
 
@@ -365,7 +368,9 @@ N_ViolinRHMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 4/6 {                                                               %! bow_rhythm
 
@@ -422,7 +427,9 @@ N_ViolinRHMusicVoice = {                                                       %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/2 {                                                               %! bow_rhythm
 
@@ -441,6 +448,7 @@ N_ViolinRHMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N ViolinRHMusicVoice measure 213 / measure 6]                           %! _comment_measure_numbers
@@ -475,6 +483,7 @@ N_ViolinRHMusicVoice = {                                                       %
     - \abjad-invisible-line                                                    %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #2 #4                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
 
@@ -513,6 +522,7 @@ N_ViolinRHMusicVoice = {                                                       %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N ViolinRHMusicVoice measure 215 / measure 8]                           %! _comment_measure_numbers
@@ -532,6 +542,7 @@ N_ViolinRHMusicVoice = {                                                       %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/6 {                                                               %! bow_rhythm
 
@@ -583,6 +594,7 @@ N_ViolinRHMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N ViolinRHMusicVoice measure 217 / measure 10]                          %! _comment_measure_numbers
@@ -653,12 +665,15 @@ N_ViolinRHMusicVoice = {                                                       %
 
 
 N_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \N_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 N_ViolinMusicVoice = {                                                         %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
 
@@ -705,7 +720,9 @@ N_ViolinMusicVoice = {                                                         %
         b'8.                                                                   %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/16 {                                                             %! glissando_rhythm
 
@@ -718,11 +735,13 @@ N_ViolinMusicVoice = {                                                         %
 
         e''8                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolinMusicVoice measure 210 / measure 3]                             %! _comment_measure_numbers
     f'''2.                                                                     %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 8/9 {                                                               %! glissando_rhythm
 
@@ -732,7 +751,9 @@ N_ViolinMusicVoice = {                                                         %
 
         d''8                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/8 {                                                               %! glissando_rhythm
 
@@ -750,6 +771,7 @@ N_ViolinMusicVoice = {                                                         %
 
         d''2                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolinMusicVoice measure 213 / measure 6]                             %! _comment_measure_numbers
@@ -761,6 +783,7 @@ N_ViolinMusicVoice = {                                                         %
 
     a'8                                                                        %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -770,7 +793,9 @@ N_ViolinMusicVoice = {                                                         %
 
         a2                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/6 {                                                               %! glissando_rhythm
 
@@ -780,6 +805,7 @@ N_ViolinMusicVoice = {                                                         %
 
         a4.                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolinMusicVoice measure 216 / measure 9]                             %! _comment_measure_numbers
@@ -805,6 +831,7 @@ N_ViolinMusicVoice = {                                                         %
 
     d'2                                                                        %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
@@ -818,12 +845,15 @@ N_ViolinMusicVoice = {                                                         %
         e'''2                                                                  %! glissando_rhythm
 
     }                                                                          %! glissando_rhythm
+
 }                                                                              %! extern
 
 
 N_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \N_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -865,6 +895,7 @@ N_ViolaRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
@@ -936,7 +967,9 @@ N_ViolaRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/5 {                                                               %! bow_rhythm
 
@@ -986,7 +1019,9 @@ N_ViolaRHMusicVoice = {                                                        %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 4/3 {                                                               %! bow_rhythm
 
@@ -1019,6 +1054,7 @@ N_ViolaRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N ViolaRHMusicVoice measure 212 / measure 5]                            %! _comment_measure_numbers
@@ -1042,6 +1078,7 @@ N_ViolaRHMusicVoice = {                                                        %
     - \abjad-invisible-line                                                    %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 4/5 {                                                               %! bow_rhythm
 
@@ -1088,7 +1125,9 @@ N_ViolaRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/5 {                                                               %! bow_rhythm
 
@@ -1138,6 +1177,7 @@ N_ViolaRHMusicVoice = {                                                        %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N ViolaRHMusicVoice measure 215 / measure 8]                            %! _comment_measure_numbers
@@ -1220,6 +1260,7 @@ N_ViolaRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #0 #4                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
@@ -1287,16 +1328,20 @@ N_ViolaRHMusicVoice = {                                                        %
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
 
     }                                                                          %! bow_rhythm
+
 }                                                                              %! extern
 
 
 N_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \N_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
 N_ViolaMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/6 {                                                               %! glissando_rhythm
 
@@ -1332,6 +1377,7 @@ N_ViolaMusicVoice = {                                                          %
                 Va.                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolaMusicVoice measure 209 / measure 2]                              %! _comment_measure_numbers
@@ -1346,6 +1392,7 @@ N_ViolaMusicVoice = {                                                          %
 
     f''8                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -1358,7 +1405,9 @@ N_ViolaMusicVoice = {                                                          %
 
         g8                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 8/10 {                                                              %! glissando_rhythm
 
@@ -1382,6 +1431,7 @@ N_ViolaMusicVoice = {                                                          %
 
         f'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolaMusicVoice measure 212 / measure 5]                              %! _comment_measure_numbers
@@ -1395,6 +1445,7 @@ N_ViolaMusicVoice = {                                                          %
     e''8                                                                       %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 8/9 {                                                               %! glissando_rhythm
 
@@ -1404,7 +1455,9 @@ N_ViolaMusicVoice = {                                                          %
 
         c''4                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/8 {                                                               %! glissando_rhythm
 
@@ -1417,11 +1470,13 @@ N_ViolaMusicVoice = {                                                          %
 
         f'''4.                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N ViolaMusicVoice measure 215 / measure 8]                              %! _comment_measure_numbers
     e''2                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
@@ -1448,7 +1503,9 @@ N_ViolaMusicVoice = {                                                          %
 
         b''4                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/16 {                                                             %! glissando_rhythm
 
@@ -1462,16 +1519,20 @@ N_ViolaMusicVoice = {                                                          %
         g'4.                                                                   %! glissando_rhythm
 
     }                                                                          %! glissando_rhythm
+
 }                                                                              %! extern
 
 
 N_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \N_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
 N_CelloRHMusicVoice = {                                                        %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 2/3 {                                                               %! bow_rhythm
 
@@ -1514,7 +1575,9 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/9 {                                                               %! bow_rhythm
 
@@ -1598,7 +1661,9 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/2 {                                                               %! bow_rhythm
 
@@ -1615,6 +1680,7 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N CelloRHMusicVoice measure 211 / measure 4]                            %! _comment_measure_numbers
@@ -1652,6 +1718,7 @@ N_CelloRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
 
@@ -1688,7 +1755,9 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 4/6 {                                                               %! bow_rhythm
 
@@ -1744,7 +1813,9 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/2 {                                                               %! bow_rhythm
 
@@ -1765,6 +1836,7 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [N CelloRHMusicVoice measure 215 / measure 8]                            %! _comment_measure_numbers
@@ -1786,6 +1858,7 @@ N_CelloRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
@@ -1853,7 +1926,9 @@ N_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/9 {                                                               %! bow_rhythm
 
@@ -1940,12 +2015,15 @@ N_CelloRHMusicVoice = {                                                        %
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
 
     }                                                                          %! bow_rhythm
+
 }                                                                              %! extern
 
 
 N_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \N_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1994,6 +2072,7 @@ N_CelloMusicVoice = {                                                          %
     f16                                                                        %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
@@ -2006,7 +2085,9 @@ N_CelloMusicVoice = {                                                          %
 
         e'2..                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/8 {                                                               %! glissando_rhythm
 
@@ -2016,11 +2097,13 @@ N_CelloMusicVoice = {                                                          %
 
         c'2..                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N CelloMusicVoice measure 211 / measure 4]                              %! _comment_measure_numbers
     d'1                                                                        %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -2041,7 +2124,9 @@ N_CelloMusicVoice = {                                                          %
 
         g4                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 8/10 {                                                              %! glissando_rhythm
 
@@ -2057,6 +2142,7 @@ N_CelloMusicVoice = {                                                          %
 
         c'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N CelloMusicVoice measure 214 / measure 7]                              %! _comment_measure_numbers
@@ -2065,6 +2151,7 @@ N_CelloMusicVoice = {                                                          %
 
     a4.                                                                        %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
 
@@ -2074,7 +2161,9 @@ N_CelloMusicVoice = {                                                          %
 
         g8                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/16 {                                                             %! glissando_rhythm
 
@@ -2098,6 +2187,7 @@ N_CelloMusicVoice = {                                                          %
 
         c'2                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [N CelloMusicVoice measure 217 / measure 10]                             %! _comment_measure_numbers
@@ -2113,6 +2203,8 @@ N_CelloMusicVoice = {                                                          %
 
 
 N_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \N_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern
