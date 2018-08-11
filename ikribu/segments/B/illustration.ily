@@ -542,8 +542,10 @@ B_BassClarinetMusicVoice = {                                                   %
 
 
 B_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \B_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -676,8 +678,10 @@ B_ViolinRHMusicVoice = {                                                       %
 
 
 B_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \B_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -916,8 +920,10 @@ B_ViolinMusicVoice = {                                                         %
 
 
 B_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \B_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -1050,8 +1056,10 @@ B_ViolaRHMusicVoice = {                                                        %
 
 
 B_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \B_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1248,8 +1256,10 @@ B_ViolaMusicVoice = {                                                          %
 
 
 B_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \B_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1382,8 +1392,10 @@ B_CelloRHMusicVoice = {                                                        %
 
 
 B_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \B_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1541,6 +1553,8 @@ B_CelloMusicVoice = {                                                          %
 
 
 B_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \B_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

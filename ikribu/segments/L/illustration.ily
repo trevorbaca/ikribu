@@ -610,8 +610,10 @@ L_BassClarinetMusicVoice = {                                                   %
 
 
 L_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \L_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -734,12 +736,15 @@ L_ViolinRHMusicVoice = {                                                       %
 
 
 L_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \L_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 L_ViolinMusicVoice = {                                                         %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 16/20 {                                                             %! clb_rhythm
 
@@ -832,7 +837,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/18 {                                                             %! clb_rhythm
 
@@ -892,7 +899,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/10 {                                                              %! clb_rhythm
 
@@ -928,7 +937,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -970,7 +981,9 @@ L_ViolinMusicVoice = {                                                         %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -1012,6 +1025,7 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [L ViolinMusicVoice measure 148 / measure 6]                             %! _comment_measure_numbers
@@ -1028,6 +1042,7 @@ L_ViolinMusicVoice = {                                                         %
     d'8                                                                        %! clb_rhythm
     - \staccato                                                                %! IndicatorCommand
     ]                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/18 {                                                             %! clb_rhythm
 
@@ -1087,7 +1102,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/10 {                                                              %! clb_rhythm
 
@@ -1123,7 +1140,9 @@ L_ViolinMusicVoice = {                                                         %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -1165,7 +1184,9 @@ L_ViolinMusicVoice = {                                                         %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/10 {                                                              %! clb_rhythm
 
@@ -1201,7 +1222,9 @@ L_ViolinMusicVoice = {                                                         %
         b8                                                                     %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -1243,7 +1266,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/10 {                                                              %! clb_rhythm
 
@@ -1279,6 +1304,7 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [L ViolinMusicVoice measure 155 / measure 13]                            %! _comment_measure_numbers
@@ -1305,6 +1331,7 @@ L_ViolinMusicVoice = {                                                         %
     d'8                                                                        %! clb_rhythm
     - \staccato                                                                %! IndicatorCommand
     ]                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/18 {                                                             %! clb_rhythm
 
@@ -1364,7 +1391,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/18 {                                                             %! clb_rhythm
 
@@ -1424,7 +1453,9 @@ L_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 16/20 {                                                             %! clb_rhythm
 
@@ -1494,6 +1525,7 @@ L_ViolinMusicVoice = {                                                         %
         ]                                                                      %! clb_rhythm
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert Hairpin.shorten-pair                                           %! baca_hairpin_start_shift:OverrideCommand(2)
+
     }                                                                          %! clb_rhythm
 
     % [L ViolinMusicVoice measure 159 / measure 17]                            %! _comment_measure_numbers
@@ -1507,6 +1539,7 @@ L_ViolinMusicVoice = {                                                         %
 
     % [L ViolinMusicVoice measure 162 / measure 20]                            %! _comment_measure_numbers
     R1 * 2                                                                     %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -1533,7 +1566,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -1550,7 +1585,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -1567,6 +1604,7 @@ L_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolinMusicVoice measure 166 / measure 24]                            %! _comment_measure_numbers
@@ -1582,6 +1620,7 @@ L_ViolinMusicVoice = {                                                         %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -1598,7 +1637,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -1615,6 +1656,7 @@ L_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolinMusicVoice measure 169 / measure 27]                            %! _comment_measure_numbers
@@ -1630,6 +1672,7 @@ L_ViolinMusicVoice = {                                                         %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -1646,7 +1689,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -1663,7 +1708,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -1680,7 +1727,9 @@ L_ViolinMusicVoice = {                                                         %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -1697,6 +1746,7 @@ L_ViolinMusicVoice = {                                                         %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolinMusicVoice measure 174 / measure 32]                            %! _comment_measure_numbers
@@ -1729,8 +1779,10 @@ L_ViolinMusicVoice = {                                                         %
 
 
 L_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \L_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -1853,12 +1905,15 @@ L_ViolaRHMusicVoice = {                                                        %
 
 
 L_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \L_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
 L_ViolaMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 16/18 {                                                             %! clb_rhythm
 
@@ -1945,7 +2000,9 @@ L_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/16 {                                                             %! clb_rhythm
 
@@ -1999,7 +2056,9 @@ L_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/8 {                                                               %! clb_rhythm
 
@@ -2029,7 +2088,9 @@ L_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/10 {                                                              %! clb_rhythm
 
@@ -2065,7 +2126,9 @@ L_ViolaMusicVoice = {                                                          %
         b8                                                                     %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/10 {                                                              %! clb_rhythm
 
@@ -2111,7 +2174,9 @@ L_ViolaMusicVoice = {                                                          %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 4/6 {                                                               %! clb_rhythm
 
@@ -2135,7 +2200,9 @@ L_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 14/16 {                                                             %! clb_rhythm
 
@@ -2189,7 +2256,9 @@ L_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/8 {                                                               %! clb_rhythm
 
@@ -2223,6 +2292,7 @@ L_ViolaMusicVoice = {                                                          %
         ]                                                                      %! clb_rhythm
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert Hairpin.shorten-pair                                           %! baca_hairpin_start_shift:OverrideCommand(2)
+
     }                                                                          %! clb_rhythm
 
     % [L ViolaMusicVoice measure 151 / measure 9]                              %! _comment_measure_numbers
@@ -2236,6 +2306,7 @@ L_ViolaMusicVoice = {                                                          %
 
     % [L ViolaMusicVoice measure 154 / measure 12]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -2262,7 +2333,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2279,7 +2352,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2296,7 +2371,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -2313,7 +2390,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2330,6 +2409,7 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolaMusicVoice measure 160 / measure 18]                             %! _comment_measure_numbers
@@ -2345,6 +2425,7 @@ L_ViolaMusicVoice = {                                                          %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -2361,7 +2442,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -2378,7 +2461,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2395,7 +2480,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -2412,7 +2499,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -2429,6 +2518,7 @@ L_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolaMusicVoice measure 166 / measure 24]                             %! _comment_measure_numbers
@@ -2444,6 +2534,7 @@ L_ViolaMusicVoice = {                                                          %
 
     c'4                                                                        %! triplet_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2460,7 +2551,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 8/12 {                                                              %! triplet_rhythm
 
@@ -2477,6 +2570,7 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolaMusicVoice measure 169 / measure 27]                             %! _comment_measure_numbers
@@ -2492,6 +2586,7 @@ L_ViolaMusicVoice = {                                                          %
 
     c'4                                                                        %! triplet_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -2508,7 +2603,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 4/6 {                                                               %! triplet_rhythm
 
@@ -2525,7 +2622,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'2                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 2/3 {                                                               %! triplet_rhythm
 
@@ -2542,7 +2641,9 @@ L_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! triplet_rhythm
     \times 7/12 {                                                              %! triplet_rhythm
 
@@ -2559,6 +2660,7 @@ L_ViolaMusicVoice = {                                                          %
 
         c'1                                                                    %! triplet_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! triplet_rhythm
 
     % [L ViolaMusicVoice measure 174 / measure 32]                             %! _comment_measure_numbers
@@ -2591,8 +2693,10 @@ L_ViolaMusicVoice = {                                                          %
 
 
 L_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \L_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -2715,8 +2819,10 @@ L_CelloRHMusicVoice = {                                                        %
 
 
 L_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \L_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -3295,6 +3401,8 @@ L_CelloMusicVoice = {                                                          %
 
 
 L_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \L_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

@@ -252,12 +252,15 @@ P_BassClarinetMusicVoice = {                                                   %
 
 
 P_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \P_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
 P_ViolinRHMusicVoice = {                                                       %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/2 {                                                               %! bow_rhythm
 
@@ -294,6 +297,7 @@ P_ViolinRHMusicVoice = {                                                       %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [P ViolinRHMusicVoice measure 240 / measure 2]                           %! _comment_measure_numbers
@@ -313,6 +317,7 @@ P_ViolinRHMusicVoice = {                                                       %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
@@ -383,7 +388,9 @@ P_ViolinRHMusicVoice = {                                                       %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/9 {                                                               %! bow_rhythm
 
@@ -461,7 +468,9 @@ P_ViolinRHMusicVoice = {                                                       %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 8/7 {                                                               %! bow_rhythm
 
@@ -523,6 +532,7 @@ P_ViolinRHMusicVoice = {                                                       %
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
+
     }                                                                          %! bow_rhythm
 
     % [P ViolinRHMusicVoice measure 244 / measure 6]                           %! _comment_measure_numbers
@@ -541,12 +551,15 @@ P_ViolinRHMusicVoice = {                                                       %
 
 
 P_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \P_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 P_ViolinMusicVoice = {                                                         %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -594,7 +607,9 @@ P_ViolinMusicVoice = {                                                         %
 
         g'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/6 {                                                               %! glissando_rhythm
 
@@ -609,6 +624,7 @@ P_ViolinMusicVoice = {                                                         %
         f'''8                                                                  %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [P ViolinMusicVoice measure 241 / measure 3]                             %! _comment_measure_numbers
@@ -617,6 +633,7 @@ P_ViolinMusicVoice = {                                                         %
 
     d''2..                                                                     %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
@@ -640,7 +657,9 @@ P_ViolinMusicVoice = {                                                         %
 
         f'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 16/18 {                                                             %! glissando_rhythm
 
@@ -658,6 +677,7 @@ P_ViolinMusicVoice = {                                                         %
         \glissando                                                             %! SpannerCommand
 
         a8                                                                     %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     % [P ViolinMusicVoice measure 244 / measure 6]                             %! _comment_measure_numbers
@@ -677,8 +697,10 @@ P_ViolinMusicVoice = {                                                         %
 
 
 P_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \P_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -732,6 +754,7 @@ P_ViolaRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 2/3 {                                                               %! bow_rhythm
 
@@ -761,7 +784,9 @@ P_ViolaRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/9 {                                                               %! bow_rhythm
 
@@ -841,7 +866,9 @@ P_ViolaRHMusicVoice = {                                                        %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/6 {                                                               %! bow_rhythm
 
@@ -895,6 +922,7 @@ P_ViolaRHMusicVoice = {                                                        %
         - \abjad-invisible-line                                                %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [P ViolaRHMusicVoice measure 243 / measure 5]                            %! _comment_measure_numbers
@@ -985,12 +1013,15 @@ P_ViolaRHMusicVoice = {                                                        %
 
 
 P_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \P_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
 P_ViolaMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/8 {                                                               %! glissando_rhythm
 
@@ -1027,11 +1058,13 @@ P_ViolaMusicVoice = {                                                          %
 
         d'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [P ViolaMusicVoice measure 240 / measure 2]                              %! _comment_measure_numbers
     e''2                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
@@ -1047,7 +1080,9 @@ P_ViolaMusicVoice = {                                                          %
 
         a'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/16 {                                                             %! glissando_rhythm
 
@@ -1074,6 +1109,7 @@ P_ViolaMusicVoice = {                                                          %
 
         f'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [P ViolaMusicVoice measure 243 / measure 5]                              %! _comment_measure_numbers
@@ -1102,12 +1138,15 @@ P_ViolaMusicVoice = {                                                          %
 
 
 P_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \P_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
 P_CelloRHMusicVoice = {                                                        %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
 
@@ -1161,6 +1200,7 @@ P_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [P CelloRHMusicVoice measure 240 / measure 2]                            %! _comment_measure_numbers
@@ -1176,6 +1216,7 @@ P_CelloRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/6 {                                                               %! bow_rhythm
 
@@ -1235,6 +1276,7 @@ P_CelloRHMusicVoice = {                                                        %
         - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
         - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+
     }                                                                          %! bow_rhythm
 
     % [P CelloRHMusicVoice measure 242 / measure 4]                            %! _comment_measure_numbers
@@ -1292,6 +1334,7 @@ P_CelloRHMusicVoice = {                                                        %
     - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
     - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 8/9 {                                                               %! bow_rhythm
 
@@ -1374,6 +1417,7 @@ P_CelloRHMusicVoice = {                                                        %
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
+
     }                                                                          %! bow_rhythm
 
     % [P CelloRHMusicVoice measure 244 / measure 6]                            %! _comment_measure_numbers
@@ -1392,8 +1436,10 @@ P_CelloRHMusicVoice = {                                                        %
 
 
 P_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \P_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1445,6 +1491,7 @@ P_CelloMusicVoice = {                                                          %
     f'8                                                                        %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
 
@@ -1454,7 +1501,9 @@ P_CelloMusicVoice = {                                                          %
 
         e'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/16 {                                                             %! glissando_rhythm
 
@@ -1467,6 +1516,7 @@ P_CelloMusicVoice = {                                                          %
 
         d'2..                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [P CelloMusicVoice measure 242 / measure 4]                              %! _comment_measure_numbers
@@ -1489,6 +1539,7 @@ P_CelloMusicVoice = {                                                          %
     b8                                                                         %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 16/17 {                                                             %! glissando_rhythm
 
@@ -1500,6 +1551,7 @@ P_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         c'4.                                                                   %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     % [P CelloMusicVoice measure 244 / measure 6]                              %! _comment_measure_numbers
@@ -1519,6 +1571,8 @@ P_CelloMusicVoice = {                                                          %
 
 
 P_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \P_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

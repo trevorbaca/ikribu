@@ -443,8 +443,10 @@ K_BassClarinetMusicVoice = {                                                   %
 
 
 K_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \K_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -558,8 +560,10 @@ K_ViolinRHMusicVoice = {                                                       %
 
 
 K_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \K_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -604,6 +608,7 @@ K_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -651,6 +656,7 @@ K_ViolinMusicVoice = {                                                         %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolinMusicVoice measure 130 / measure 4]                             %! _comment_measure_numbers
@@ -670,6 +676,7 @@ K_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 16/20 {                                                             %! clb_rhythm
 
@@ -738,6 +745,7 @@ K_ViolinMusicVoice = {                                                         %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolinMusicVoice measure 134 / measure 8]                             %! _comment_measure_numbers
@@ -757,6 +765,7 @@ K_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/10 {                                                              %! clb_rhythm
 
@@ -795,6 +804,7 @@ K_ViolinMusicVoice = {                                                         %
         b8                                                                     %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolinMusicVoice measure 138 / measure 12]                            %! _comment_measure_numbers
@@ -814,6 +824,7 @@ K_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/12 {                                                              %! clb_rhythm
 
@@ -858,6 +869,7 @@ K_ViolinMusicVoice = {                                                         %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolinMusicVoice measure 142 / measure 16]                            %! _comment_measure_numbers
@@ -872,8 +884,10 @@ K_ViolinMusicVoice = {                                                         %
 
 
 K_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \K_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -987,8 +1001,10 @@ K_ViolaRHMusicVoice = {                                                        %
 
 
 K_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \K_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1033,6 +1049,7 @@ K_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/10 {                                                              %! clb_rhythm
 
@@ -1074,6 +1091,7 @@ K_ViolaMusicVoice = {                                                          %
         b8                                                                     %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolaMusicVoice measure 130 / measure 4]                              %! _comment_measure_numbers
@@ -1093,6 +1111,7 @@ K_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 16/18 {                                                             %! clb_rhythm
 
@@ -1155,6 +1174,7 @@ K_ViolaMusicVoice = {                                                          %
         d'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolaMusicVoice measure 134 / measure 8]                              %! _comment_measure_numbers
@@ -1174,6 +1194,7 @@ K_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 6/8 {                                                               %! clb_rhythm
 
@@ -1206,6 +1227,7 @@ K_ViolaMusicVoice = {                                                          %
         b8                                                                     %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolaMusicVoice measure 138 / measure 12]                             %! _comment_measure_numbers
@@ -1225,6 +1247,7 @@ K_ViolaMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
     \times 8/10 {                                                              %! clb_rhythm
 
@@ -1263,6 +1286,7 @@ K_ViolaMusicVoice = {                                                          %
         c'8                                                                    %! clb_rhythm
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! clb_rhythm
+
     }                                                                          %! clb_rhythm
 
     % [K ViolaMusicVoice measure 142 / measure 16]                             %! _comment_measure_numbers
@@ -1277,8 +1301,10 @@ K_ViolaMusicVoice = {                                                          %
 
 
 K_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \K_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1392,8 +1418,10 @@ K_CelloRHMusicVoice = {                                                        %
 
 
 K_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \K_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1595,6 +1623,8 @@ K_CelloMusicVoice = {                                                          %
 
 
 K_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \K_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

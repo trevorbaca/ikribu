@@ -2,14 +2,17 @@
 % measure_count = 11
 
 
+
 \context Score = "Score"                                                                 %! SingleStaffScoreTemplate
 \with                                                                                    %! SingleStaffScoreTemplate
 {                                                                                        %! SingleStaffScoreTemplate
     currentBarNumber = #52                                                               %! SingleStaffScoreTemplate
 }                                                                                        %! SingleStaffScoreTemplate
 <<                                                                                       %! SingleStaffScoreTemplate
+
     \context GlobalContext = "GlobalContext"                                             %! _make_global_context
     <<                                                                                   %! _make_global_context
+
         \context PageLayout = "PageLayout"                                               %! _make_global_context
         {   %*% PageLayout                                                               %! _make_global_context
 
@@ -83,5 +86,7 @@
         %@% ^ \markup { \baca-forest-green-markup "[[1/4 * 35/24]]" }                    %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
         }   %*% PageLayout                                                               %! _make_global_context
+
     >>                                                                                   %! _make_global_context
+
 >>                                                                                       %! SingleStaffScoreTemplate

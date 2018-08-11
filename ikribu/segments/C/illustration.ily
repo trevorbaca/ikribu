@@ -480,8 +480,10 @@ C_BassClarinetMusicVoice = {                                                   %
 
 
 C_BassClarinetMusicStaff = {                                                   %! extern
+
     \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
     \C_BassClarinetMusicVoice                                                  %! extern
+
 }                                                                              %! extern
 
 
@@ -507,11 +509,13 @@ C_ViolinRHMusicVoice = {                                                       %
 
     % [C ViolinRHMusicVoice measure 38 / measure 4]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolinRHMusicVoice measure 39 / measure 5]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolinRHMusicVoice measure 40 / measure 6]                            %! _comment_measure_numbers
@@ -522,11 +526,13 @@ C_ViolinRHMusicVoice = {                                                       %
 
     % [C ViolinRHMusicVoice measure 42 / measure 8]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolinRHMusicVoice measure 43 / measure 9]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolinRHMusicVoice measure 44 / measure 10]                           %! _comment_measure_numbers
@@ -537,11 +543,13 @@ C_ViolinRHMusicVoice = {                                                       %
 
     % [C ViolinRHMusicVoice measure 46 / measure 12]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolinRHMusicVoice measure 47 / measure 13]                       %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolinRHMusicVoice measure 48 / measure 14]                           %! _comment_measure_numbers
@@ -552,6 +560,7 @@ C_ViolinRHMusicVoice = {                                                       %
 
     % [C ViolinRHMusicVoice measure 50 / measure 16]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -559,12 +568,15 @@ C_ViolinRHMusicVoice = {                                                       %
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
+
 }                                                                              %! extern
 
 
 C_ViolinRHMusicStaff = {                                                       %! extern
+
     \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
     \C_ViolinRHMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -714,8 +726,10 @@ C_ViolinMusicVoice = {                                                         %
 
 
 C_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \C_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -741,11 +755,13 @@ C_ViolaRHMusicVoice = {                                                        %
 
     % [C ViolaRHMusicVoice measure 38 / measure 4]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolaRHMusicVoice measure 39 / measure 5]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolaRHMusicVoice measure 40 / measure 6]                             %! _comment_measure_numbers
@@ -756,11 +772,13 @@ C_ViolaRHMusicVoice = {                                                        %
 
     % [C ViolaRHMusicVoice measure 42 / measure 8]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolaRHMusicVoice measure 43 / measure 9]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolaRHMusicVoice measure 44 / measure 10]                            %! _comment_measure_numbers
@@ -771,11 +789,13 @@ C_ViolaRHMusicVoice = {                                                        %
 
     % [C ViolaRHMusicVoice measure 46 / measure 12]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C ViolaRHMusicVoice measure 47 / measure 13]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C ViolaRHMusicVoice measure 48 / measure 14]                            %! _comment_measure_numbers
@@ -786,6 +806,7 @@ C_ViolaRHMusicVoice = {                                                        %
 
     % [C ViolaRHMusicVoice measure 50 / measure 16]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -793,12 +814,15 @@ C_ViolaRHMusicVoice = {                                                        %
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
+
 }                                                                              %! extern
 
 
 C_ViolaRHMusicStaff = {                                                        %! extern
+
     \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
     \C_ViolaRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -927,8 +951,10 @@ C_ViolaMusicVoice = {                                                          %
 
 
 C_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \C_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -954,11 +980,13 @@ C_CelloRHMusicVoice = {                                                        %
 
     % [C CelloRHMusicVoice measure 38 / measure 4]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C CelloRHMusicVoice measure 39 / measure 5]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C CelloRHMusicVoice measure 40 / measure 6]                             %! _comment_measure_numbers
@@ -969,11 +997,13 @@ C_CelloRHMusicVoice = {                                                        %
 
     % [C CelloRHMusicVoice measure 42 / measure 8]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C CelloRHMusicVoice measure 43 / measure 9]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C CelloRHMusicVoice measure 44 / measure 10]                            %! _comment_measure_numbers
@@ -984,11 +1014,13 @@ C_CelloRHMusicVoice = {                                                        %
 
     % [C CelloRHMusicVoice measure 46 / measure 12]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
         % [C CelloRHMusicVoice measure 47 / measure 13]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
+
     }
 
     % [C CelloRHMusicVoice measure 48 / measure 14]                            %! _comment_measure_numbers
@@ -999,6 +1031,7 @@ C_CelloRHMusicVoice = {                                                        %
 
     % [C CelloRHMusicVoice measure 50 / measure 16]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -1006,12 +1039,15 @@ C_CelloRHMusicVoice = {                                                        %
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
+
 }                                                                              %! extern
 
 
 C_CelloRHMusicStaff = {                                                        %! extern
+
     \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
     \C_CelloRHMusicVoice                                                       %! extern
+
 }                                                                              %! extern
 
 
@@ -1087,6 +1123,7 @@ C_CelloMusicVoice = {                                                          %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                 %! SpannerCommand
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -1098,6 +1135,7 @@ C_CelloMusicVoice = {                                                          %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [C CelloMusicVoice measure 40 / measure 6]                               %! _comment_measure_numbers
@@ -1126,6 +1164,7 @@ C_CelloMusicVoice = {                                                          %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                 %! SpannerCommand
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -1137,6 +1176,7 @@ C_CelloMusicVoice = {                                                          %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [C CelloMusicVoice measure 44 / measure 10]                              %! _comment_measure_numbers
@@ -1165,6 +1205,7 @@ C_CelloMusicVoice = {                                                          %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                 %! SpannerCommand
+
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
@@ -1176,6 +1217,7 @@ C_CelloMusicVoice = {                                                          %
         - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                             %! SpannerCommand
+
     }
 
     % [C CelloMusicVoice measure 48 / measure 14]                              %! _comment_measure_numbers
@@ -1214,6 +1256,8 @@ C_CelloMusicVoice = {                                                          %
 
 
 C_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \C_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern
