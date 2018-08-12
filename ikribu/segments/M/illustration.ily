@@ -1048,7 +1048,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2.                                                                       %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Violin”)"                            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
@@ -1135,7 +1135,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     c'1..                                                                      %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -1181,7 +1181,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     c'1                                                                        %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -1276,7 +1276,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     c'2                                                                        %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -1353,7 +1353,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     c'1..                                                                      %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -1399,7 +1399,7 @@ M_ViolinMusicVoice = {                                                         %
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     c'2                                                                        %! baca_make_repeat_tied_notes
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -2381,7 +2381,7 @@ M_CelloMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     fqf''!1                                                                    %! baca_make_repeat_tied_notes
-    \baca_sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \laissezVibrer                                                           %! IndicatorCommand
     ^ \markup { pizz. }                                                        %! baca_markup:IndicatorCommand
     _ \markup { III }                                                          %! baca_markup:IndicatorCommand
@@ -2438,7 +2438,7 @@ M_CelloMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     g''2                                                                       %! baca_make_repeat_tied_notes
-    \baca_sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \laissezVibrer                                                           %! IndicatorCommand
     ^ \markup { pizz. }                                                        %! baca_markup:IndicatorCommand
     _ \markup { III }                                                          %! baca_markup:IndicatorCommand
@@ -2495,7 +2495,7 @@ M_CelloMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     a''1..                                                                     %! baca_make_repeat_tied_notes
-    \baca_sfffz                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-sfffz                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \laissezVibrer                                                           %! IndicatorCommand
     ^ \markup { pizz. }                                                        %! baca_markup:IndicatorCommand
     _ \markup { III }                                                          %! baca_markup:IndicatorCommand
@@ -2534,7 +2534,7 @@ M_CelloMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     cqs'''!2                                                                   %! baca_make_repeat_tied_notes
-    \baca_sfffz                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-sfffz                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \laissezVibrer                                                           %! IndicatorCommand
     ^ \markup { pizz. }                                                        %! baca_markup:IndicatorCommand
     _ \markup { III }                                                          %! baca_markup:IndicatorCommand

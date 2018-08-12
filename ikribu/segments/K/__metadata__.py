@@ -79,7 +79,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='BassClarinetMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='\\baca_effort_p',
+                                value='\\baca-effort-p',
                                 ),
                             ],
                         ),
@@ -104,7 +104,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='CelloMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='\\baca_effort_f',
+                                value='\\baca-effort-f',
                                 ),
                             ],
                         ),
@@ -185,7 +185,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='ViolaMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='\\baca_effort_mp',
+                                value='\\baca-effort-mp',
                                 ),
                             ],
                         ),
@@ -251,7 +251,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='ViolinMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='\\baca_effort_mp',
+                                value='\\baca-effort-mp',
                                 ),
                             ],
                         ),

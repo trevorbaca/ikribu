@@ -160,7 +160,7 @@ i_ViolinMusicVoice = {                                                         %
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'1..                                                                      %! baca_make_repeat_tied_notes
-    \baca_effort_mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-default-indicator-markup "(“Violin”)"                              %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
