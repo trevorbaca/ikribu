@@ -72,7 +72,7 @@ O_GlobalSkips = {                                                              %
 
     % [O GlobalSkips measure 218 / measure 1]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #15                                                                  %! IndicatorCommand
+    \mark #15                                                                  %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
@@ -572,7 +572,7 @@ O_ViolinMusicVoice = {                                                         %
     % [O ViolinMusicVoice measure 226 / measure 9]                             %! _comment_measure_numbers
     \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
     <e' fs'!>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     _ \markup { II+III }                                                       %! baca_markup:IndicatorCommand
@@ -585,52 +585,52 @@ O_ViolinMusicVoice = {                                                         %
 
     % [O ViolinMusicVoice measure 227 / measure 10]                            %! _comment_measure_numbers
     <e' fs'!>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 228 / measure 11]                            %! _comment_measure_numbers
     <e' fs'!>2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 229 / measure 12]                            %! _comment_measure_numbers
     <e' fs'!>\breve
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 230 / measure 13]                            %! _comment_measure_numbers
     <e' fs'!>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 231 / measure 14]                            %! _comment_measure_numbers
     <e' fs'!>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 232 / measure 15]                            %! _comment_measure_numbers
     <e' fs'!>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 233 / measure 16]                            %! _comment_measure_numbers
     <e' fs'!>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 234 / measure 17]                            %! _comment_measure_numbers
     <e' fs'!>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 235 / measure 18]                            %! _comment_measure_numbers
     <e' fs'!>\breve
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolinMusicVoice measure 236 / measure 19]                            %! _comment_measure_numbers
     <e' fs'!>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -641,7 +641,7 @@ O_ViolinMusicVoice = {                                                         %
 
     % [O ViolinMusicVoice measure 237 / measure 20]                            %! _comment_measure_numbers
     <e' fs'!>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
@@ -812,7 +812,7 @@ O_ViolaMusicVoice = {                                                          %
     % [O ViolaMusicVoice measure 226 / measure 9]                              %! _comment_measure_numbers
     \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
     <ef'! f'>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     _ \markup { II+III }                                                       %! baca_markup:IndicatorCommand
@@ -825,52 +825,52 @@ O_ViolaMusicVoice = {                                                          %
 
     % [O ViolaMusicVoice measure 227 / measure 10]                             %! _comment_measure_numbers
     <ef'! f'>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 228 / measure 11]                             %! _comment_measure_numbers
     <ef'! f'>2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 229 / measure 12]                             %! _comment_measure_numbers
     <ef'! f'>\breve
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 230 / measure 13]                             %! _comment_measure_numbers
     <ef'! f'>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 231 / measure 14]                             %! _comment_measure_numbers
     <ef'! f'>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 232 / measure 15]                             %! _comment_measure_numbers
     <ef'! f'>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 233 / measure 16]                             %! _comment_measure_numbers
     <ef'! f'>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 234 / measure 17]                             %! _comment_measure_numbers
     <ef'! f'>1..
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 235 / measure 18]                             %! _comment_measure_numbers
     <ef'! f'>\breve
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [O ViolaMusicVoice measure 236 / measure 19]                             %! _comment_measure_numbers
     <ef'! f'>2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -881,7 +881,7 @@ O_ViolaMusicVoice = {                                                          %
 
     % [O ViolaMusicVoice measure 237 / measure 20]                             %! _comment_measure_numbers
     <ef'! f'>1
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
@@ -1009,12 +1009,12 @@ O_CelloMusicVoice = {                                                          %
     \once \override Staff.StaffSymbol.line-count = 5                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     R1 * 1                                                                     %! _make_measure_silences
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
