@@ -260,7 +260,7 @@ N_ViolinRHMusicVoice = {                                                       %
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(6)
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -269,17 +269,17 @@ N_ViolinRHMusicVoice = {                                                       %
         }                                                                      %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     % [N ViolinRHMusicVoice measure 209 / measure 2]                           %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -288,51 +288,51 @@ N_ViolinRHMusicVoice = {                                                       %
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     r4
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-invisible-line                                                    %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-invisible-line                                                    %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
@@ -341,35 +341,35 @@ N_ViolinRHMusicVoice = {                                                       %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -380,20 +380,20 @@ N_ViolinRHMusicVoice = {                                                       %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -402,35 +402,35 @@ N_ViolinRHMusicVoice = {                                                       %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -441,17 +441,17 @@ N_ViolinRHMusicVoice = {                                                       %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -459,34 +459,34 @@ N_ViolinRHMusicVoice = {                                                       %
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \upbow                                                                   %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(5)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \downbow                                                                 %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #4                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #4                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #1 #4                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #1 #4                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     r4
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-invisible-line                                                    %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #2 #4                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-invisible-line                                                    %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #2 #4                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
@@ -495,47 +495,47 @@ N_ViolinRHMusicVoice = {                                                       %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
     % [N ViolinRHMusicVoice measure 215 / measure 8]                           %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -544,10 +544,10 @@ N_ViolinRHMusicVoice = {                                                       %
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/6 {                                                               %! bow_rhythm
@@ -556,50 +556,50 @@ N_ViolinRHMusicVoice = {                                                       %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -607,46 +607,46 @@ N_ViolinRHMusicVoice = {                                                       %
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \upbow                                                                   %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(5)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \downbow                                                                 %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \upbow                                                                   %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \downbow                                                                 %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -655,16 +655,16 @@ N_ViolinRHMusicVoice = {                                                       %
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    - \baca-bcp-spanner-right-text #6 #7                                       %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    - \baca-bcp-spanner-right-text #6 #7                                       %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(1)
     \revert Script.staff-padding                                               %! baca_script_staff_padding:OverrideCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -882,7 +882,7 @@ N_ViolaRHMusicVoice = {                                                        %
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \upbow                                                                   %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(5)
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -891,18 +891,18 @@ N_ViolaRHMusicVoice = {                                                        %
         }                                                                      %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! bow_rhythm
-    - \downbow                                                                 %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
@@ -913,46 +913,46 @@ N_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -961,22 +961,22 @@ N_ViolaRHMusicVoice = {                                                        %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -989,48 +989,48 @@ N_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1041,20 +1041,20 @@ N_ViolaRHMusicVoice = {                                                        %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1063,34 +1063,34 @@ N_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
     % [N ViolaRHMusicVoice measure 212 / measure 5]                            %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
-    - \downbow                                                                 %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     r4
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-invisible-line                                                    %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-invisible-line                                                    %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 4/5 {                                                               %! bow_rhythm
@@ -1099,46 +1099,46 @@ N_ViolaRHMusicVoice = {                                                        %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1151,48 +1151,48 @@ N_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1200,19 +1200,19 @@ N_ViolaRHMusicVoice = {                                                        %
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(6)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     % [N ViolaRHMusicVoice measure 216 / measure 9]                            %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
@@ -1222,79 +1222,79 @@ N_ViolaRHMusicVoice = {                                                        %
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     r4
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-invisible-line                                                    %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-invisible-line                                                    %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(6)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #0 #4                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #4                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
         % [N ViolaRHMusicVoice measure 217 / measure 10]                       %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1303,17 +1303,17 @@ N_ViolaRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1322,27 +1322,27 @@ N_ViolaRHMusicVoice = {                                                        %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(1)
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1576,7 +1576,7 @@ N_CelloRHMusicVoice = {                                                        %
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         ^ \markup {                                                            %! baca_markup:IndicatorCommand
             \override                                                          %! baca_markup:IndicatorCommand
                 #'(box-padding . 0.5)                                          %! baca_markup:IndicatorCommand
@@ -1585,16 +1585,16 @@ N_CelloRHMusicVoice = {                                                        %
             }                                                                  %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1609,81 +1609,81 @@ N_CelloRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1692,17 +1692,17 @@ N_CelloRHMusicVoice = {                                                        %
 
         % [N CelloRHMusicVoice measure 210 / measure 3]                        %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1714,16 +1714,16 @@ N_CelloRHMusicVoice = {                                                        %
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #4 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #5 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1732,54 +1732,54 @@ N_CelloRHMusicVoice = {                                                        %
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 3/4 {                                                               %! bow_rhythm
 
         % [N CelloRHMusicVoice measure 212 / measure 5]                        %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1788,38 +1788,38 @@ N_CelloRHMusicVoice = {                                                        %
 
         % [N CelloRHMusicVoice measure 213 / measure 6]                        %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1828,18 +1828,18 @@ N_CelloRHMusicVoice = {                                                        %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1848,62 +1848,62 @@ N_CelloRHMusicVoice = {                                                        %
 
         % [N CelloRHMusicVoice measure 214 / measure 7]                        %! _comment_measure_numbers
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
     % [N CelloRHMusicVoice measure 215 / measure 8]                            %! _comment_measure_numbers
     c'4                                                                        %! bow_rhythm
-    - \upbow                                                                   %! BowContactPointCommand
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #7 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    - \upbow                                                                   %! BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     c'4                                                                        %! bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    - \downbow                                                                 %! BowContactPointCommand
+    - \downbow                                                                 %! BCPCommand(8)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! BowContactPointCommand
-    - \abjad-solid-line-with-arrow                                             %! BowContactPointCommand
-    - \baca-bcp-spanner-left-text #6 #7                                        %! BowContactPointCommand
-    \bacaStartTextSpanBCP                                                      %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                                       %! BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 7/8 {                                                               %! bow_rhythm
 
         % [N CelloRHMusicVoice measure 216 / measure 9]                        %! _comment_measure_numbers
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1912,17 +1912,17 @@ N_CelloRHMusicVoice = {                                                        %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #2 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
@@ -1931,31 +1931,31 @@ N_CelloRHMusicVoice = {                                                        %
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #1 #4                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #4 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #5 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
     }                                                                          %! bow_rhythm
 
@@ -1964,84 +1964,84 @@ N_CelloRHMusicVoice = {                                                        %
 
         % [N CelloRHMusicVoice measure 217 / measure 10]                       %! _comment_measure_numbers
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \downbow                                                             %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #6 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \upbow                                                               %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \upbow                                                               %! BowContactPointCommand
+        - \upbow                                                               %! BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         c'4                                                                    %! bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        - \downbow                                                             %! BowContactPointCommand
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-solid-line-with-arrow                                         %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #0 #7                                    %! BowContactPointCommand
-        - \baca-bcp-spanner-right-text #7 #7                                   %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        - \downbow                                                             %! BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! BCPCommand(2)
+        - \baca-bcp-spanner-right-text #7 #7                                   %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
 
         r4
-        \bacaStopTextSpanBCP                                                   %! BowContactPointCommand
-        - \abjad-invisible-line                                                %! BowContactPointCommand
-        - \baca-bcp-spanner-left-text #7 #7                                    %! BowContactPointCommand
-        \bacaStartTextSpanBCP                                                  %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                                   %! BCPCommand(3)
+        - \abjad-invisible-line                                                %! BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! BCPCommand(2)
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
