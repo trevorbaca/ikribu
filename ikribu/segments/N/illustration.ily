@@ -269,7 +269,6 @@ N_ViolinRHMusicVoice = {                                                       %
         }                                                                      %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca_bcps:BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca_bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca_bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca_bcps:BCPCommand(2)
@@ -891,7 +890,6 @@ N_ViolaRHMusicVoice = {                                                        %
         }                                                                      %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca_bcps:BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca_bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca_bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca_bcps:BCPCommand(2)
@@ -1333,6 +1331,7 @@ N_ViolaRHMusicVoice = {                                                        %
         \bacaStopTextSpanBCP                                                   %! baca_bcps:BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca_bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca_bcps:BCPCommand(2)
+        - \baca-bcp-spanner-right-text #6 #7                                   %! baca_bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca_bcps:BCPCommand(2)
 
         r4
@@ -1341,8 +1340,7 @@ N_ViolaRHMusicVoice = {                                                        %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca_bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca_bcps:BCPCommand(2)
 
-        c'4                                                                    %! bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca_bcps:BCPCommand(1)
+        r4
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1585,7 +1583,6 @@ N_CelloRHMusicVoice = {                                                        %
             }                                                                  %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca_bcps:BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca_bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca_bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca_bcps:BCPCommand(2)
