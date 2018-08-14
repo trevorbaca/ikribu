@@ -1336,9 +1336,6 @@ N_ViolaRHMusicVoice = {                                                        %
 
         r4
         \bacaStopTextSpanBCP                                                   %! baca_bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca_bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca_bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca_bcps:BCPCommand(2)
 
         r4
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
@@ -2036,9 +2033,6 @@ N_CelloRHMusicVoice = {                                                        %
 
         r4
         \bacaStopTextSpanBCP                                                   %! baca_bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca_bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca_bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca_bcps:BCPCommand(2)
         \revert Script.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
