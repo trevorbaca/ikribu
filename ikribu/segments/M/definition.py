@@ -301,11 +301,6 @@ maker(
     )
 
 maker(
-    ('vc', (2, 4)),
-    baca.clef('bass'),
-    )
-
-maker(
     ('vc', 6),
     baca.clef('treble'),
     baca.dynamic('sfz'),

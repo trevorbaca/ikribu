@@ -60,8 +60,10 @@ maker(
         ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
-    baca.hairpin('sfpp < p', selector=baca.leaves()[:2]),
-    baca.hairpin('p >o niente', selector=baca.leaves()[-1:].rleak()),
+    baca.hairpin(
+        'sfpp < p >o niente',
+        piece_selector=baca.rleaves().omgroups([1, 1]),
+        ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(3.5),
     )
