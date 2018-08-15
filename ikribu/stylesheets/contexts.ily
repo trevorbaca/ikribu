@@ -51,10 +51,12 @@
         \consists Axis_group_engraver
         \consists Bar_number_engraver
         \consists Mark_engraver
+        % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
+        \consists Staff_collecting_engraver
         \consists Staff_symbol_engraver
         \consists Time_signature_engraver
-        \accepts GlobalSkips
         \accepts GlobalRests
+        \accepts GlobalSkips
         \accepts PageLayout
 
         \override BarNumber.X-offset = -8
@@ -62,12 +64,12 @@
         \override BarNumber.font-size = 1
 
         % rehearsal marks (right) align with time signatures:
-        \override RehearsalMark.padding = 4
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 200
+        \override RehearsalMark.padding = 4
         \override RehearsalMark.self-alignment-X = #right
 
         %\override StaffSymbol.color = #red
