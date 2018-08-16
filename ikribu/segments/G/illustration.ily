@@ -60,6 +60,7 @@ G_GlobalSkips = {                                                              %
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [G GlobalSkips measure 88 / measure 2]                                   %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
@@ -80,6 +81,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup "[7'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
     % [G GlobalSkips measure 90 / measure 4]                                   %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
@@ -100,6 +102,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup "[7'16'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
     % [G GlobalSkips measure 92 / measure 6]                                   %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
@@ -120,6 +123,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup "[7'27'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
     % [G GlobalSkips measure 94 / measure 8]                                   %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
@@ -140,6 +144,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup "[7'38'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
     % [G GlobalSkips measure 96 / measure 10]                                  %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
@@ -167,6 +172,7 @@ G_GlobalSkips = {                                                              %
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [G GlobalSkips measure 98 / measure 12]                                  %! _comment_measure_numbers
+    #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/6                                                                   %! _make_global_skips(1)
