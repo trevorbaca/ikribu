@@ -17,18 +17,18 @@
         \context Score = "Score"                                               %! ScoreTemplate
         <<                                                                     %! ScoreTemplate
 
-            \context GlobalContext = "GlobalContext"                           %! _make_global_context
+            \context GlobalContext = "Global_Context"                          %! _make_global_context
             <<                                                                 %! _make_global_context
 
-                \context GlobalRests = "GlobalRests"                           %! _make_global_context
-                \M_GlobalRests                                                 %! extern
+                \context GlobalRests = "Global_Rests"                          %! _make_global_context
+                \M_Global_Rests                                                %! extern
 
-                \context GlobalSkips = "GlobalSkips"                           %! _make_global_context
-                \M_GlobalSkips                                                 %! extern
+                \context GlobalSkips = "Global_Skips"                          %! _make_global_context
+                \M_Global_Skips                                                %! extern
 
             >>                                                                 %! _make_global_context
 
-            \context MusicContext = "MusicContext"                             %! ScoreTemplate
+            \context MusicContext = "Music_Context"                            %! ScoreTemplate
             {                                                                  %! ScoreTemplate
 
                 \context EnsembleStaffGroup = "Ensemble_Staff_Group"           %! ScoreTemplate

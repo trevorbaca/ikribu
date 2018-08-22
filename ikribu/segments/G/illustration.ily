@@ -1,47 +1,47 @@
-G_GlobalRests = {                                                              %! extern
+G_Global_Rests = {                                                             %! extern
 
-    % [G GlobalRests measure 87 / measure 1]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 87 / measure 1]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 88 / measure 2]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 88 / measure 2]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 89 / measure 3]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 89 / measure 3]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 90 / measure 4]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 90 / measure 4]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 91 / measure 5]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 91 / measure 5]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 92 / measure 6]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 92 / measure 6]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 93 / measure 7]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 93 / measure 7]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 94 / measure 8]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 94 / measure 8]                                  %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 95 / measure 9]                                   %! _comment_measure_numbers
+    % [G Global_Rests measure 95 / measure 9]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 96 / measure 10]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 96 / measure 10]                                 %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 97 / measure 11]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 97 / measure 11]                                 %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 98 / measure 12]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 98 / measure 12]                                 %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests
 
 }                                                                              %! extern
 
 
-G_GlobalSkips = {                                                              %! extern
+G_Global_Skips = {                                                             %! extern
 
-    % [G GlobalSkips measure 87 / measure 1]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 87 / measure 1]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
     \mark #7                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
@@ -59,7 +59,7 @@ G_GlobalSkips = {                                                              %
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
-    % [G GlobalSkips measure 88 / measure 2]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 88 / measure 2]                                  %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -70,7 +70,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.2]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 89 / measure 3]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 89 / measure 3]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -80,7 +80,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.3]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'05'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 90 / measure 4]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 90 / measure 4]                                  %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -91,7 +91,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.4]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'15'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 91 / measure 5]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 91 / measure 5]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -101,7 +101,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.5]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'16'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 92 / measure 6]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 92 / measure 6]                                  %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -112,7 +112,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.6]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'26'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 93 / measure 7]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 93 / measure 7]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -122,7 +122,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.7]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'27'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 94 / measure 8]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 94 / measure 8]                                  %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -133,7 +133,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.8]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'37'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 95 / measure 9]                                   %! _comment_measure_numbers
+    % [G Global_Skips measure 95 / measure 9]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -143,7 +143,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.9]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'38'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 96 / measure 10]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 96 / measure 10]                                 %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -154,7 +154,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.10]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[7'48'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 97 / measure 11]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 97 / measure 11]                                 %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -171,7 +171,7 @@ G_GlobalSkips = {                                                              %
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "104" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
-    % [G GlobalSkips measure 98 / measure 12]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 98 / measure 12]                                 %! _comment_measure_numbers
     #(ly:expect-warning "strange time signature found")                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \time 1/6                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
