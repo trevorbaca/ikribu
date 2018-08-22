@@ -188,9 +188,9 @@ G_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-G_BassClarinetMusicVoice = {                                                   %! extern
+G_Bass_Clarinet_Music_Voice = {                                                %! extern
 
-    % [G BassClarinetMusicVoice measure 87 / measure 1]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 87 / measure 1]                     %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -229,10 +229,10 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 88 / measure 2]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 88 / measure 2]                     %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
-    % [G BassClarinetMusicVoice measure 89 / measure 3]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 89 / measure 3]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     af!1.                                                                      %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -246,10 +246,10 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 90 / measure 4]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 90 / measure 4]                     %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
-    % [G BassClarinetMusicVoice measure 91 / measure 5]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 91 / measure 5]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     g1.                                                                        %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -263,10 +263,10 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 92 / measure 6]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 92 / measure 6]                     %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
-    % [G BassClarinetMusicVoice measure 93 / measure 7]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 93 / measure 7]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     fs!1.                                                                      %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -280,10 +280,10 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 94 / measure 8]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 94 / measure 8]                     %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
-    % [G BassClarinetMusicVoice measure 95 / measure 9]                        %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 95 / measure 9]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     f1.                                                                        %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -297,10 +297,10 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 96 / measure 10]                       %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 96 / measure 10]                    %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
-    % [G BassClarinetMusicVoice measure 97 / measure 11]                       %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 97 / measure 11]                    %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     e1.                                                                        %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -314,23 +314,23 @@ G_BassClarinetMusicVoice = {                                                   %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G BassClarinetMusicVoice measure 98 / measure 12]                       %! _comment_measure_numbers
+    % [G Bass_Clarinet_Music_Voice measure 98 / measure 12]                    %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_BassClarinetMusicStaff = {                                                   %! extern
+G_Bass_Clarinet_Music_Staff = {                                                %! extern
 
-    \context Voice = "BassClarinetMusicVoice"                                  %! ScoreTemplate
-    \G_BassClarinetMusicVoice                                                  %! extern
+    \context Voice = "Bass_Clarinet_Music_Voice"                               %! ScoreTemplate
+    \G_Bass_Clarinet_Music_Voice                                               %! extern
 
 }                                                                              %! extern
 
 
-G_ViolinRHMusicVoice = {                                                       %! extern
+G_Violin_RH_Music_Voice = {                                                    %! extern
 
-    % [G ViolinRHMusicVoice measure 87 / measure 1]                            %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 87 / measure 1]                         %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -345,62 +345,62 @@ G_ViolinRHMusicVoice = {                                                       %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 88 / measure 2]                        %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 88 / measure 2]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinRHMusicVoice measure 89 / measure 3]                            %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 89 / measure 3]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 90 / measure 4]                        %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 90 / measure 4]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinRHMusicVoice measure 91 / measure 5]                            %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 91 / measure 5]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 92 / measure 6]                        %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 92 / measure 6]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinRHMusicVoice measure 93 / measure 7]                            %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 93 / measure 7]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 94 / measure 8]                        %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 94 / measure 8]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinRHMusicVoice measure 95 / measure 9]                            %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 95 / measure 9]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 96 / measure 10]                       %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 96 / measure 10]                    %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinRHMusicVoice measure 97 / measure 11]                           %! _comment_measure_numbers
+    % [G Violin_RH_Music_Voice measure 97 / measure 11]                        %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinRHMusicVoice measure 98 / measure 12]                       %! _comment_measure_numbers
+        % [G Violin_RH_Music_Voice measure 98 / measure 12]                    %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
@@ -408,17 +408,17 @@ G_ViolinRHMusicVoice = {                                                       %
 }                                                                              %! extern
 
 
-G_ViolinRHMusicStaff = {                                                       %! extern
+G_Violin_RH_Music_Staff = {                                                    %! extern
 
-    \context Voice = "ViolinRHMusicVoice"                                      %! ScoreTemplate
-    \G_ViolinRHMusicVoice                                                      %! extern
+    \context Voice = "Violin_RH_Music_Voice"                                   %! ScoreTemplate
+    \G_Violin_RH_Music_Voice                                                   %! extern
 
 }                                                                              %! extern
 
 
-G_ViolinMusicVoice = {                                                         %! extern
+G_Violin_Music_Voice = {                                                       %! extern
 
-    % [G ViolinMusicVoice measure 87 / measure 1]                              %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 87 / measure 1]                            %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -451,62 +451,62 @@ G_ViolinMusicVoice = {                                                         %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 88 / measure 2]                          %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 88 / measure 2]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinMusicVoice measure 89 / measure 3]                              %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 89 / measure 3]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 90 / measure 4]                          %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 90 / measure 4]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinMusicVoice measure 91 / measure 5]                              %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 91 / measure 5]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 92 / measure 6]                          %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 92 / measure 6]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinMusicVoice measure 93 / measure 7]                              %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 93 / measure 7]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 94 / measure 8]                          %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 94 / measure 8]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinMusicVoice measure 95 / measure 9]                              %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 95 / measure 9]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 96 / measure 10]                         %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 96 / measure 10]                       %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolinMusicVoice measure 97 / measure 11]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 97 / measure 11]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolinMusicVoice measure 98 / measure 12]                         %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 98 / measure 12]                       %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
@@ -514,17 +514,17 @@ G_ViolinMusicVoice = {                                                         %
 }                                                                              %! extern
 
 
-G_ViolinMusicStaff = {                                                         %! extern
+G_Violin_Music_Staff = {                                                       %! extern
 
-    \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
-    \G_ViolinMusicVoice                                                        %! extern
+    \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
+    \G_Violin_Music_Voice                                                      %! extern
 
 }                                                                              %! extern
 
 
-G_ViolaRHMusicVoice = {                                                        %! extern
+G_Viola_RH_Music_Voice = {                                                     %! extern
 
-    % [G ViolaRHMusicVoice measure 87 / measure 1]                             %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 87 / measure 1]                          %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -539,62 +539,62 @@ G_ViolaRHMusicVoice = {                                                        %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 88 / measure 2]                         %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 88 / measure 2]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaRHMusicVoice measure 89 / measure 3]                             %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 89 / measure 3]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 90 / measure 4]                         %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 90 / measure 4]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaRHMusicVoice measure 91 / measure 5]                             %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 91 / measure 5]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 92 / measure 6]                         %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 92 / measure 6]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaRHMusicVoice measure 93 / measure 7]                             %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 93 / measure 7]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 94 / measure 8]                         %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 94 / measure 8]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaRHMusicVoice measure 95 / measure 9]                             %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 95 / measure 9]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 96 / measure 10]                        %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 96 / measure 10]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaRHMusicVoice measure 97 / measure 11]                            %! _comment_measure_numbers
+    % [G Viola_RH_Music_Voice measure 97 / measure 11]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaRHMusicVoice measure 98 / measure 12]                        %! _comment_measure_numbers
+        % [G Viola_RH_Music_Voice measure 98 / measure 12]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
@@ -602,17 +602,17 @@ G_ViolaRHMusicVoice = {                                                        %
 }                                                                              %! extern
 
 
-G_ViolaRHMusicStaff = {                                                        %! extern
+G_Viola_RH_Music_Staff = {                                                     %! extern
 
-    \context Voice = "ViolaRHMusicVoice"                                       %! ScoreTemplate
-    \G_ViolaRHMusicVoice                                                       %! extern
+    \context Voice = "Viola_RH_Music_Voice"                                    %! ScoreTemplate
+    \G_Viola_RH_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
 
 
-G_ViolaMusicVoice = {                                                          %! extern
+G_Viola_Music_Voice = {                                                        %! extern
 
-    % [G ViolaMusicVoice measure 87 / measure 1]                               %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 87 / measure 1]                             %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -645,62 +645,62 @@ G_ViolaMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 88 / measure 2]                           %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 88 / measure 2]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaMusicVoice measure 89 / measure 3]                               %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 89 / measure 3]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 90 / measure 4]                           %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 90 / measure 4]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaMusicVoice measure 91 / measure 5]                               %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 91 / measure 5]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 92 / measure 6]                           %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 92 / measure 6]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaMusicVoice measure 93 / measure 7]                               %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 93 / measure 7]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 94 / measure 8]                           %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 94 / measure 8]                         %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaMusicVoice measure 95 / measure 9]                               %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 95 / measure 9]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 96 / measure 10]                          %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 96 / measure 10]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G ViolaMusicVoice measure 97 / measure 11]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 97 / measure 11]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G ViolaMusicVoice measure 98 / measure 12]                          %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 98 / measure 12]                        %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
@@ -708,17 +708,17 @@ G_ViolaMusicVoice = {                                                          %
 }                                                                              %! extern
 
 
-G_ViolaMusicStaff = {                                                          %! extern
+G_Viola_Music_Staff = {                                                        %! extern
 
-    \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
-    \G_ViolaMusicVoice                                                         %! extern
+    \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
+    \G_Viola_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
 
 
-G_CelloRHMusicVoice = {                                                        %! extern
+G_Cello_RH_Music_Voice = {                                                     %! extern
 
-    % [G CelloRHMusicVoice measure 87 / measure 1]                             %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 87 / measure 1]                          %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -735,62 +735,62 @@ G_CelloRHMusicVoice = {                                                        %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 88 / measure 2]                         %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 88 / measure 2]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G CelloRHMusicVoice measure 89 / measure 3]                             %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 89 / measure 3]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 90 / measure 4]                         %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 90 / measure 4]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G CelloRHMusicVoice measure 91 / measure 5]                             %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 91 / measure 5]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 92 / measure 6]                         %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 92 / measure 6]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G CelloRHMusicVoice measure 93 / measure 7]                             %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 93 / measure 7]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 94 / measure 8]                         %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 94 / measure 8]                      %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G CelloRHMusicVoice measure 95 / measure 9]                             %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 95 / measure 9]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 96 / measure 10]                        %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 96 / measure 10]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
 
-    % [G CelloRHMusicVoice measure 97 / measure 11]                            %! _comment_measure_numbers
+    % [G Cello_RH_Music_Voice measure 97 / measure 11]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloRHMusicVoice measure 98 / measure 12]                        %! _comment_measure_numbers
+        % [G Cello_RH_Music_Voice measure 98 / measure 12]                     %! _comment_measure_numbers
         R1 * 1/4                                                               %! _call_rhythm_commands
 
     }
@@ -798,17 +798,17 @@ G_CelloRHMusicVoice = {                                                        %
 }                                                                              %! extern
 
 
-G_CelloRHMusicStaff = {                                                        %! extern
+G_Cello_RH_Music_Staff = {                                                     %! extern
 
-    \context Voice = "CelloRHMusicVoice"                                       %! ScoreTemplate
-    \G_CelloRHMusicVoice                                                       %! extern
+    \context Voice = "Cello_RH_Music_Voice"                                    %! ScoreTemplate
+    \G_Cello_RH_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
 
 
-G_CelloMusicVoice = {                                                          %! extern
+G_Cello_Music_Voice = {                                                        %! extern
 
-    % [G CelloMusicVoice measure 87 / measure 1]                               %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 87 / measure 1]                             %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -849,7 +849,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloMusicVoice measure 88 / measure 2]                           %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 88 / measure 2]                         %! _comment_measure_numbers
         fqf''!4                                                                %! baca_make_notes
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -860,7 +860,7 @@ G_CelloMusicVoice = {                                                          %
 
     }
 
-    % [G CelloMusicVoice measure 89 / measure 3]                               %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 89 / measure 3]                             %! _comment_measure_numbers
     d''1..                                                                     %! baca_make_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -872,7 +872,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloMusicVoice measure 90 / measure 4]                           %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 90 / measure 4]                         %! _comment_measure_numbers
         b'4                                                                    %! baca_make_notes
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -883,7 +883,7 @@ G_CelloMusicVoice = {                                                          %
 
     }
 
-    % [G CelloMusicVoice measure 91 / measure 5]                               %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 91 / measure 5]                             %! _comment_measure_numbers
     d''1..                                                                     %! baca_make_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -895,7 +895,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloMusicVoice measure 92 / measure 6]                           %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 92 / measure 6]                         %! _comment_measure_numbers
         b'4                                                                    %! baca_make_notes
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -906,7 +906,7 @@ G_CelloMusicVoice = {                                                          %
 
     }
 
-    % [G CelloMusicVoice measure 93 / measure 7]                               %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 93 / measure 7]                             %! _comment_measure_numbers
     g'1..                                                                      %! baca_make_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -918,7 +918,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloMusicVoice measure 94 / measure 8]                           %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 94 / measure 8]                         %! _comment_measure_numbers
         b'4                                                                    %! baca_make_notes
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -929,7 +929,7 @@ G_CelloMusicVoice = {                                                          %
 
     }
 
-    % [G CelloMusicVoice measure 95 / measure 9]                               %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 95 / measure 9]                             %! _comment_measure_numbers
     g'1..                                                                      %! baca_make_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -941,7 +941,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
 
-        % [G CelloMusicVoice measure 96 / measure 10]                          %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 96 / measure 10]                        %! _comment_measure_numbers
         d'4                                                                    %! baca_make_notes
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -952,14 +952,14 @@ G_CelloMusicVoice = {                                                          %
 
     }
 
-    % [G CelloMusicVoice measure 97 / measure 11]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 97 / measure 11]                            %! _comment_measure_numbers
     g'1..                                                                      %! baca_make_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    % [G CelloMusicVoice measure 98 / measure 12]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 98 / measure 12]                            %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.direction                                            %! baca_tuplet_bracket_down:OverrideCommand(2)
@@ -967,9 +967,9 @@ G_CelloMusicVoice = {                                                          %
 }                                                                              %! extern
 
 
-G_CelloMusicStaff = {                                                          %! extern
+G_Cello_Music_Staff = {                                                        %! extern
 
-    \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
-    \G_CelloMusicVoice                                                         %! extern
+    \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
+    \G_Cello_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
