@@ -24,12 +24,12 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    'GlobalSkips',
+    'Global_Skips',
     baca.metronome_mark('incisions', selector=baca.leaf(1 - 1)),
     )
 
 maker(
-    'GlobalRests',
+    'Global_Rests',
     baca.global_fermata('long', selector=baca.leaf(2 - 1)),
     )
 

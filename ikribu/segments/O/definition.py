@@ -50,13 +50,13 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    'GlobalSkips',
+    'Global_Skips',
     baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('O'),
     )
 
 maker(
-    'GlobalRests',
+    'Global_Rests',
     baca.global_fermata('fermata', selector=baca.leaf(21 - 1)),
     )
 
