@@ -120,12 +120,17 @@ maker(
 maker(
     ('vn', (1, 16)),
     baca.dls_staff_padding(8),
-    [
+    baca.new(
         baca.dynamic('"mp"'),
         baca.dynamic_shift('"mp"'),
-        ],
-    baca.markup('col legno battuto'),
-    baca.staccato(selector=baca.pheads()),
+        baca.markup(
+            'col legno battuto',
+            ),
+        selector=baca.phead(0, exclude=baca.enums.HIDDEN),
+        ),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )
@@ -133,12 +138,17 @@ maker(
 maker(
     ('va', (1, 16)),
     baca.dls_staff_padding(8),
-    [
+    baca.new(
         baca.dynamic('"mp"'),
         baca.dynamic_shift('"mp"'),
-        ],
-    baca.markup('col legno battuto'),
-    baca.staccato(selector=baca.pheads()),
+        baca.markup(
+            'col legno battuto',
+            ),
+        selector=baca.phead(0, exclude=baca.enums.HIDDEN),
+        ),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )

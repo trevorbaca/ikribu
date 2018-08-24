@@ -323,8 +323,26 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
     b'4                                                                        %! baca_make_tied_reepated_durations
     \repeatTie
 
-    % [Q Bass_Clarinet_Music_Voice measure 253 / measure 7]                    %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Bass_Clarinet_Music_Voice measure 253 / measure 7]            %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            b'1 * 7/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Bass_Clarinet_Rest_Voice measure 253 / measure 7]             %! _comment_measure_numbers
+            R1 * 7/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [Q Bass_Clarinet_Music_Voice measure 254 / measure 8]                    %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
@@ -612,8 +630,26 @@ Q_Violin_Music_Voice = {                                                       %
     - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
     \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
 
-    % [Q Violin_Music_Voice measure 256 / measure 10]                          %! _comment_measure_numbers
-    R1 * 3/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Violin_Music_Voice"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Violin_Music_Voice measure 256 / measure 10]                  %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Violin_Rest_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Violin_Rest_Voice measure 256 / measure 10]                   %! _comment_measure_numbers
+            R1 * 3/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [Q Violin_Music_Voice measure 257 / measure 11]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
@@ -889,8 +925,26 @@ Q_Viola_Music_Voice = {                                                        %
     - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
     \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
 
-    % [Q Viola_Music_Voice measure 256 / measure 10]                           %! _comment_measure_numbers
-    R1 * 3/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Viola_Music_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Viola_Music_Voice measure 256 / measure 10]                   %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Viola_Rest_Voice"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Viola_Rest_Voice measure 256 / measure 10]                    %! _comment_measure_numbers
+            R1 * 3/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [Q Viola_Music_Voice measure 257 / measure 11]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
@@ -1370,39 +1424,58 @@ Q_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! inscription_rhythm
 
-    % [Q Cello_Music_Voice measure 258 / measure 12]                           %! _comment_measure_numbers
-    \once \override MultiMeasureRestText.extra-offset = #'(-16 . -4)
-    \stopStaff                                                                 %! _style_fermata_measures(1)
-    \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
-    \startStaff                                                                %! _style_fermata_measures(1)
-    R1 * 1/4                                                                   %! _make_measure_silences
-    _ \markup {                                                                %! SCORE_2
-        \override                                                              %! SCORE_2
-            #'(font-name . "Palatino")                                         %! SCORE_2
-            \with-color                                                        %! SCORE_2
-                #black                                                         %! SCORE_2
-                \right-column                                                  %! SCORE_2
-                    {                                                          %! SCORE_2
-                        \line                                                  %! SCORE_2
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Cello_Music_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Cello_Music_Voice measure 258 / measure 12]                   %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            \stopStaff                                                         %! _style_fermata_measures(1)
+            \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+            \startStaff                                                        %! _style_fermata_measures(1)
+            a1 * 1/4                                                           %! _make_multimeasure_rest_container
+            - \accent                                                          %! baca_accent:IndicatorCommand
+            \revert Staff.BarLine.bar-extent                                   %! baca_bar_extent:OverrideCommand(2)
+            \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_center:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Cello_Rest_Voice"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [Q Cello_Rest_Voice measure 258 / measure 12]                    %! _comment_measure_numbers
+            \once \override MultiMeasureRestText.extra-offset = #'(-16 . -4)
+            R1 * 1/4                                                           %! _make_multimeasure_rest_container
+            _ \markup {                                                        %! SCORE_2
+                \override                                                      %! SCORE_2
+                    #'(font-name . "Palatino")                                 %! SCORE_2
+                    \with-color                                                %! SCORE_2
+                        #black                                                 %! SCORE_2
+                        \right-column                                          %! SCORE_2
                             {                                                  %! SCORE_2
-                                "Madison, WI."                                 %! SCORE_2
+                                \line                                          %! SCORE_2
+                                    {                                          %! SCORE_2
+                                        "Madison, WI."                         %! SCORE_2
+                                    }                                          %! SCORE_2
+                                \line                                          %! SCORE_2
+                                    {                                          %! SCORE_2
+                                        January                                %! SCORE_2
+                                        \hspace                                %! SCORE_2
+                                            #0.75                              %! SCORE_2
+                                        –                                      %! SCORE_2
+                                        \hspace                                %! SCORE_2
+                                            #0.75                              %! SCORE_2
+                                        March                                  %! SCORE_2
+                                        2016.                                  %! SCORE_2
+                                    }                                          %! SCORE_2
                             }                                                  %! SCORE_2
-                        \line                                                  %! SCORE_2
-                            {                                                  %! SCORE_2
-                                January                                        %! SCORE_2
-                                \hspace                                        %! SCORE_2
-                                    #0.75                                      %! SCORE_2
-                                –                                              %! SCORE_2
-                                \hspace                                        %! SCORE_2
-                                    #0.75                                      %! SCORE_2
-                                March                                          %! SCORE_2
-                                2016.                                          %! SCORE_2
-                            }                                                  %! SCORE_2
-                    }                                                          %! SCORE_2
-        }                                                                      %! SCORE_2
-    \revert Staff.BarLine.bar-extent                                           %! baca_bar_extent:OverrideCommand(2)
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_center:OverrideCommand(2)
+                }                                                              %! SCORE_2
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 

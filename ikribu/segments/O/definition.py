@@ -153,7 +153,9 @@ maker(
 
 maker(
     ('bcl', (1, -1)),
-    baca.repeat_tie(selector=baca.pleaves()),
+    baca.repeat_tie(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -185,8 +187,11 @@ maker(
     )
 
 maker(
-    ('vc', (1, 20)),
-    baca.clef('bass'),
+    ('vc', (5, 20)),
+    baca.new(
+        baca.clef('bass'),
+        measures=1,
+        ),
     baca.ottava_bassa(),
     baca.hairpin(
         'mp > p <',

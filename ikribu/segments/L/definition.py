@@ -87,7 +87,10 @@ maker(
 maker(
     ('vn', (13, 16)),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
+    baca.hairpin(
+        '"mp" >o niente',
+        selector=baca.tleaves(),
+        ),
     baca.hairpin_start_shift('"mp"'),
     )
 
@@ -101,7 +104,10 @@ maker(
 maker(
     ('va', (5, 8)),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
+    baca.hairpin(
+        '"mp" >o niente',
+        selector=baca.tleaves(),
+        ),
     baca.hairpin_start_shift('"mp"'),
     )
 
@@ -135,7 +141,7 @@ maker(
         'p < f >',
         bookend=-1,
         piece_selector=baca.cmgroups(),
-        selector=baca.tleaves(),
+        selector=baca.tleaves(exclude=baca.enums.HIDDEN),
         ),
     baca.staff_position(0),
     ikribu.box_adjustment(),

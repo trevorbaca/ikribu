@@ -94,7 +94,7 @@ maker(
     )
 
 maker(
-    ('vc', (1, 12)),
+    ('vc', (1, 11)),
     baca.dls_staff_padding(7),
     baca.glissando(),
     baca.hairpin(

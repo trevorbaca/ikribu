@@ -118,17 +118,24 @@ maker(
         'vn',
         'va',
         ],
-    baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(
+        selector=baca.pheads(
+            exclude=baca.enums.HIDDEN)[~abjad.index([0, 4], 9)],
+        ),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
     baca.hairpin(
         'f > p <',
         bookend=True,
-        piece_selector=baca.runs().map(baca.enchain([4, 3])).flatten(),
+        piece_selector=baca.runs(
+            exclude=baca.enums.HIDDEN).map(baca.enchain([4, 3])).flatten(),
         ),
     baca.staff_lines(1),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(
+        selector=baca.pheads(
+            exclude=baca.enums.HIDDEN)[abjad.index([0, 4], 9)],
+        ),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     )

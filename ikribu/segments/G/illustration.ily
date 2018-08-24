@@ -229,8 +229,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 88 / measure 2]                     %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 88 / measure 2]             %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 88 / measure 2]              %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [G Bass_Clarinet_Music_Voice measure 89 / measure 3]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -246,8 +264,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 90 / measure 4]                     %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 90 / measure 4]             %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 90 / measure 4]              %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [G Bass_Clarinet_Music_Voice measure 91 / measure 5]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -263,8 +299,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 92 / measure 6]                     %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 92 / measure 6]             %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 92 / measure 6]              %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [G Bass_Clarinet_Music_Voice measure 93 / measure 7]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -280,8 +334,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 94 / measure 8]                     %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 94 / measure 8]             %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 94 / measure 8]              %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [G Bass_Clarinet_Music_Voice measure 95 / measure 9]                     %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -297,8 +369,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 96 / measure 10]                    %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 96 / measure 10]            %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 96 / measure 10]             %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [G Bass_Clarinet_Music_Voice measure 97 / measure 11]                    %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -314,8 +404,26 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G Bass_Clarinet_Music_Voice measure 98 / measure 12]                    %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Music_Voice"                           %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Music_Voice measure 98 / measure 12]            %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 1/6                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Bass_Clarinet_Rest_Voice"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Bass_Clarinet_Rest_Voice measure 98 / measure 12]             %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -957,12 +1065,30 @@ G_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
-
-    % [G Cello_Music_Voice measure 98 / measure 12]                            %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert TupletBracket.direction                                            %! baca_tuplet_bracket_down:OverrideCommand(2)
+
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Cello_Music_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Cello_Music_Voice measure 98 / measure 12]                    %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/6                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Cello_Rest_Voice"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [G Cello_Rest_Voice measure 98 / measure 12]                     %! _comment_measure_numbers
+            R1 * 1/6                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
