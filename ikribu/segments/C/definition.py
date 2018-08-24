@@ -125,21 +125,26 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs()[abjad.index([0], 2)],
+        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([0], 2)],
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs()[abjad.index([1], 2)],
+        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
-    baca.pitches('F#4 G#4 G#4 F#4'),
+    baca.pitches(
+        'F#4 G#4 G#4 F#4',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 
@@ -158,19 +163,24 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs()[abjad.index([0], 2)],
+        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([0], 2)],
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs()[abjad.index([1], 2)],
+        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
-    baca.pitches('F4 E4 E4 F4'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.pitches(
+        'F4 E4 E4 F4',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 

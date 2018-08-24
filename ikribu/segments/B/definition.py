@@ -106,7 +106,10 @@ maker(
 
 maker(
     ('bcl', (5, 25)),
-    baca.pitch('Db2'),
+    baca.pitch(
+        'Db2',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -126,8 +129,13 @@ maker(
         'III',
         direction=abjad.Down,
         ),
-    baca.pitch('E4'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.pitch(
+        'E4',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -146,7 +154,9 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('Eb4'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(

@@ -14,6 +14,7 @@ metadata = abjad.OrderedDict(
                 'Ensemble_Staff_Group',
                 'Bass_Clarinet_Music_Staff',
                 'Bass_Clarinet_Music_Voice',
+                'Bass_Clarinet_Rest_Voice',
                 'Violin_Staff_Group',
                 'Violin_RH_Music_Staff',
                 'Violin_RH_Music_Voice',
@@ -24,6 +25,7 @@ metadata = abjad.OrderedDict(
                 'Viola_RH_Music_Voice',
                 'Viola_Music_Staff',
                 'Viola_Music_Voice',
+                'Viola_Rest_Voice',
                 'Cello_Staff_Group',
                 'Cello_RH_Music_Staff',
                 'Cello_RH_Music_Voice',
@@ -276,10 +278,12 @@ metadata = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     ('Bass_Clarinet_Music_Voice', True),
+                    ('Bass_Clarinet_Rest_Voice', False),
                     ('Cello_Music_Voice', False),
                     ('Cello_RH_Music_Voice', False),
                     ('Viola_Music_Voice', True),
                     ('Viola_RH_Music_Voice', False),
+                    ('Viola_Rest_Voice', False),
                     ('Violin_Music_Voice', False),
                     ('Violin_RH_Music_Voice', False),
                     ]
