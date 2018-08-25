@@ -9,7 +9,7 @@
     \context GlobalContext = "Global_Context"                                            %! _make_global_context
     <<                                                                                   %! _make_global_context
 
-        \context GlobalSkips = "Page_Layout"                                             %! _make_global_context
+        \context PageLayout = "Page_Layout"                                              %! _make_global_context
         {   %*% Page_Layout                                                              %! _make_global_context
 
             % [Page_Layout measure 1]                                                    %! _comment_measure_numbers
