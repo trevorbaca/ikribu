@@ -703,10 +703,10 @@ C_Violin_RH_Music_Voice = {                                                    %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [C Violin_RH_Music_Voice measure 36 / measure 2]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 37 / measure 3]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 38 / measure 4]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -720,10 +720,10 @@ C_Violin_RH_Music_Voice = {                                                    %
     }
 
     % [C Violin_RH_Music_Voice measure 40 / measure 6]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 41 / measure 7]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 42 / measure 8]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -737,10 +737,10 @@ C_Violin_RH_Music_Voice = {                                                    %
     }
 
     % [C Violin_RH_Music_Voice measure 44 / measure 10]                        %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 45 / measure 11]                        %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 46 / measure 12]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -754,10 +754,10 @@ C_Violin_RH_Music_Voice = {                                                    %
     }
 
     % [C Violin_RH_Music_Voice measure 48 / measure 14]                        %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 49 / measure 15]                        %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 50 / measure 16]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1039,10 +1039,10 @@ C_Viola_RH_Music_Voice = {                                                     %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [C Viola_RH_Music_Voice measure 36 / measure 2]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 37 / measure 3]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 38 / measure 4]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1056,10 +1056,10 @@ C_Viola_RH_Music_Voice = {                                                     %
     }
 
     % [C Viola_RH_Music_Voice measure 40 / measure 6]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 41 / measure 7]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 42 / measure 8]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1073,10 +1073,10 @@ C_Viola_RH_Music_Voice = {                                                     %
     }
 
     % [C Viola_RH_Music_Voice measure 44 / measure 10]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 45 / measure 11]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 46 / measure 12]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1090,10 +1090,10 @@ C_Viola_RH_Music_Voice = {                                                     %
     }
 
     % [C Viola_RH_Music_Voice measure 48 / measure 14]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 49 / measure 15]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 50 / measure 16]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1354,10 +1354,10 @@ C_Cello_RH_Music_Voice = {                                                     %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [C Cello_RH_Music_Voice measure 36 / measure 2]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 37 / measure 3]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 38 / measure 4]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1371,10 +1371,10 @@ C_Cello_RH_Music_Voice = {                                                     %
     }
 
     % [C Cello_RH_Music_Voice measure 40 / measure 6]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 41 / measure 7]                          %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 42 / measure 8]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1388,10 +1388,10 @@ C_Cello_RH_Music_Voice = {                                                     %
     }
 
     % [C Cello_RH_Music_Voice measure 44 / measure 10]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 45 / measure 11]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 46 / measure 12]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1405,10 +1405,10 @@ C_Cello_RH_Music_Voice = {                                                     %
     }
 
     % [C Cello_RH_Music_Voice measure 48 / measure 14]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 49 / measure 15]                         %! _comment_measure_numbers
-    R1 * 1                                                                     %! _call_rhythm_commands
+    R1 * 1/1                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 50 / measure 16]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
