@@ -9,14 +9,11 @@
         \type Engraver_group
         \consists Script_engraver
         \consists Text_engraver
-        \consists Text_spanner_engraver
+        \consists \alternateTextSpannerEngraver
 
-        \override TextScript.X-extent = #'(0 . 0)
-        \override TextScript.Y-extent = #'(0 . 0)
+        \override TextScript.font-size = 6
 
-        \override TextSpanner.bound-details.right.attach-dir = #left
         \override TextSpanner.font-size = 6
-        \override TextSpanner.staff-padding = 6
         }
 
     % GLOBAL RESTS
@@ -38,10 +35,9 @@
         \name PageLayout
         \type Engraver_group
         \consists Text_engraver
+        \consists \alternateTextSpannerEngraver
 
-        \override TextScript.X-extent = #'(0 . 0)
-        \override TextScript.Y-extent = #'(0 . 0)
-        \override TextScript.staff-padding = 1
+        \override TextSpanner.font-size = 6
         }
 
     % GLOBAL CONTEXT
@@ -50,7 +46,6 @@
         \type Engraver_group
         \consists Axis_group_engraver
         \consists Bar_number_engraver
-        \consists Mark_engraver
         % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
         \consists Staff_collecting_engraver
         \consists Staff_symbol_engraver
@@ -59,20 +54,9 @@
         \accepts GlobalSkips
         \accepts PageLayout
 
-        \override BarNumber.X-offset = -8
-        \override BarNumber.Y-offset = -0.5
+        \override BarNumber.Y-extent = ##f
         \override BarNumber.font-size = 1
 
-        % rehearsal marks (right) align with time signatures:
-        \override RehearsalMark.break-align-symbols = #'(time-signature)
-        \override RehearsalMark.break-visibility = #end-of-line-invisible
-        \override RehearsalMark.font-name = "Didot"
-        \override RehearsalMark.font-size = 10
-        \override RehearsalMark.outside-staff-priority = 200
-        \override RehearsalMark.padding = 4
-        \override RehearsalMark.self-alignment-X = #right
-
-        %\override StaffSymbol.color = #red
         \override StaffSymbol.stencil = ##f
 
         % prevents StaffSymbol from starting too early after cut-away measures:
