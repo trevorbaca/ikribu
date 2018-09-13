@@ -232,47 +232,33 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! TieCorrectionCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4                                                                       %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c'4                                                                        %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [P Bass_Clarinet_Music_Voice measure 244 / measure 6]                    %! _comment_measure_numbers
     b4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d4                                                                         %! baca_make_repeated_duration_notes
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     cs!4                                                                       %! baca_make_repeated_duration_notes
 
@@ -660,7 +646,6 @@ P_Violin_Music_Voice = {                                                       %
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -671,17 +656,13 @@ P_Violin_Music_Voice = {                                                       %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         b''8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'8.                                                                   %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -690,48 +671,37 @@ P_Violin_Music_Voice = {                                                       %
 
         % [P Violin_Music_Voice measure 240 / measure 2]                       %! _comment_measure_numbers
         g''2                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e''8                                                                   %! glissando_rhythm
         [                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'''8                                                                  %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [P Violin_Music_Voice measure 241 / measure 3]                           %! _comment_measure_numbers
     e'''2..                                                                    %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''2..                                                                     %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
         % [P Violin_Music_Voice measure 242 / measure 4]                       %! _comment_measure_numbers
         c''1                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'8                                                                    %! glissando_rhythm
         [                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e''8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d''8                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f''8.                                                                  %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -740,16 +710,12 @@ P_Violin_Music_Voice = {                                                       %
 
         % [P Violin_Music_Voice measure 243 / measure 5]                       %! _comment_measure_numbers
         a'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a1                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a8                                                                     %! glissando_rhythm
 
@@ -1149,7 +1115,6 @@ P_Viola_Music_Voice = {                                                        %
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \glissando                                                             %! baca_glissando:SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1160,29 +1125,23 @@ P_Viola_Music_Voice = {                                                        %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         d'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [P Viola_Music_Voice measure 240 / measure 2]                            %! _comment_measure_numbers
     e''2                                                                       %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 14/15 {                                                             %! glissando_rhythm
 
         % [P Viola_Music_Voice measure 241 / measure 3]                        %! _comment_measure_numbers
         d''4.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f''2..                                                                 %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -1191,36 +1150,27 @@ P_Viola_Music_Voice = {                                                        %
 
         % [P Viola_Music_Voice measure 242 / measure 4]                        %! _comment_measure_numbers
         g4.                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a8                                                                     %! glissando_rhythm
         [                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'8.                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g8.                                                                    %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'2..                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [P Viola_Music_Voice measure 243 / measure 5]                            %! _comment_measure_numbers
     f''2..                                                                     %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''2..                                                                     %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! glissando_rhythm
 
@@ -1600,7 +1550,6 @@ P_Cello_Music_Voice = {                                                        %
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     [                                                                          %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1611,27 +1560,21 @@ P_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     g,8.                                                                       %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a8                                                                         %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f8.                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'8                                                                        %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [P Cello_Music_Voice measure 240 / measure 2]                        %! _comment_measure_numbers
         d'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -1640,46 +1583,35 @@ P_Cello_Music_Voice = {                                                        %
 
         % [P Cello_Music_Voice measure 241 / measure 3]                        %! _comment_measure_numbers
         d8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'1                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'2..                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [P Cello_Music_Voice measure 242 / measure 4]                            %! _comment_measure_numbers
     e''1                                                                       %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''8                                                                       %! glissando_rhythm
     [                                                                          %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'8.                                                                       %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'8                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g8.                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b8                                                                         %! glissando_rhythm
     ]                                                                          %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 16/17 {                                                             %! glissando_rhythm
 
         % [P Cello_Music_Voice measure 243 / measure 5]                        %! _comment_measure_numbers
         a2.                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'1                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4.                                                                   %! glissando_rhythm
 
