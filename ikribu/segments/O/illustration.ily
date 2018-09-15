@@ -1282,8 +1282,8 @@ O_Cello_Music_Voice = {                                                        %
 
     % [O Cello_Music_Voice measure 222 / measure 5]                            %! _comment_measure_numbers
     \override Staff.OttavaBracket.staff-padding = #10                          %! baca_ottava_bracket_staff_padding:OverrideCommand(1)
+    \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
     \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
-    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     bf,,,!2                                                                    %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1436,8 +1436,8 @@ O_Cello_Music_Voice = {                                                        %
     \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
     \revert Staff.OttavaBracket.staff-padding                                  %! baca_ottava_bracket_staff_padding:OverrideCommand(2)
+    \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
-    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
 

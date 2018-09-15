@@ -1278,8 +1278,8 @@ J_Cello_Music_Voice = {                                                        %
     R1 * 2                                                                     %! _make_measure_silences
 
     % [J Cello_Music_Voice measure 118 / measure 3]                            %! _comment_measure_numbers
+    \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
     \override Staff.OttavaBracket.staff-padding = #8                           %! baca_ottava_bracket_staff_padding:OverrideCommand(1)
-    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     d,,1                                                                       %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1313,8 +1313,8 @@ J_Cello_Music_Voice = {                                                        %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \repeatTie                                                                 %! TieCorrectionCommand
+    \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
     \revert Staff.OttavaBracket.staff-padding                                  %! baca_ottava_bracket_staff_padding:OverrideCommand(2)
-    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
 
