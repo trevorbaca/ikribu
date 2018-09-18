@@ -1287,32 +1287,32 @@ J_Cello_Music_Voice = {                                                        %
 
     % [J Cello_Music_Voice measure 119 / measure 4]                            %! _comment_measure_numbers
     d,,1                                                                       %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! TieCorrectionCommand
+    \repeatTie
 
     % [J Cello_Music_Voice measure 120 / measure 5]                            %! _comment_measure_numbers
     d,,2.                                                                      %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! TieCorrectionCommand
+    \repeatTie
 
     % [J Cello_Music_Voice measure 121 / measure 6]                            %! _comment_measure_numbers
     d,,\breve                                                                  %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! TieCorrectionCommand
+    \repeatTie
+    ~                                                                          %! TieCorrectionCommand
 
     % [J Cello_Music_Voice measure 122 / measure 7]                            %! _comment_measure_numbers
     d,,1..                                                                     %! baca_make_tied_reepated_durations
-    \repeatTie                                                                 %! TieCorrectionCommand
 
     % [J Cello_Music_Voice measure 123 / measure 8]                            %! _comment_measure_numbers
     d,,2                                                                       %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie                                                                 %! TieCorrectionCommand
 
     d,,4                                                                       %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    \repeatTie                                                                 %! TieCorrectionCommand
+    \repeatTie
     \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
     \revert Staff.OttavaBracket.staff-padding                                  %! baca_ottava_bracket_staff_padding:OverrideCommand(2)
 
