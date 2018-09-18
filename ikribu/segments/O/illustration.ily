@@ -459,71 +459,71 @@ O_Bass_Clarinet_Music_Voice = {                                                %
 
     % [O Bass_Clarinet_Music_Voice measure 219 / measure 2]                    %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 220 / measure 3]                    %! _comment_measure_numbers
     <c g''>1
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 221 / measure 4]                    %! _comment_measure_numbers
     <c g''>2.
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 222 / measure 5]                    %! _comment_measure_numbers
     <c g''>2
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 223 / measure 6]                    %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 224 / measure 7]                    %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 225 / measure 8]                    %! _comment_measure_numbers
     c\breve                                                                    %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 226 / measure 9]                    %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 227 / measure 10]                   %! _comment_measure_numbers
     <c g''>2.
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 228 / measure 11]                   %! _comment_measure_numbers
     <c btqf''!>2
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 229 / measure 12]                   %! _comment_measure_numbers
     <c btqf''!>\breve
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 230 / measure 13]                   %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 231 / measure 14]                   %! _comment_measure_numbers
     c1                                                                         %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 232 / measure 15]                   %! _comment_measure_numbers
     <c e''>1
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 233 / measure 16]                   %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 234 / measure 17]                   %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 235 / measure 18]                   %! _comment_measure_numbers
     <c e''>\breve
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 236 / measure 19]                   %! _comment_measure_numbers
     c2.                                                                        %! baca_make_repeat_tied_notes
@@ -533,11 +533,11 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 237 / measure 20]                   %! _comment_measure_numbers
     c1                                                                         %! baca_make_repeat_tied_notes
-    \repeatTie                                                                 %! baca_repeat_tie:SpannerCommand
+    \repeatTie                                                                 %! baca_repeat_tie
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -804,11 +804,11 @@ O_Violin_Music_Voice = {                                                       %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Violin_Music_Voice measure 237 / measure 20]                          %! _comment_measure_numbers
     <e' fs'!>1
@@ -1080,11 +1080,11 @@ O_Viola_Music_Voice = {                                                        %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Viola_Music_Voice measure 237 / measure 20]                           %! _comment_measure_numbers
     <ef'! f'>1
@@ -1300,34 +1300,34 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 224 / measure 7]                            %! _comment_measure_numbers
     bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 225 / measure 8]                            %! _comment_measure_numbers
     bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 226 / measure 9]                            %! _comment_measure_numbers
     bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "pos. ord."                                 %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "XP"                                       %! baca_text_spanner:PiecewiseCommand(1)
@@ -1339,34 +1339,34 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 228 / measure 11]                           %! _comment_measure_numbers
     bf,,,!2                                                                    %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 229 / measure 12]                           %! _comment_measure_numbers
     bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 230 / measure 13]                           %! _comment_measure_numbers
     bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "XP"                                        %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "pos. ord."                                %! baca_text_spanner:PiecewiseCommand(1)
@@ -1378,34 +1378,34 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1                                                                    %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 232 / measure 15]                           %! _comment_measure_numbers
     bf,,,!1                                                                    %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 233 / measure 16]                           %! _comment_measure_numbers
     bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 234 / measure 17]                           %! _comment_measure_numbers
     bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "pos. ord."                                 %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "tasto poss."                              %! baca_text_spanner:PiecewiseCommand(1)
@@ -1417,17 +1417,17 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 236 / measure 19]                           %! _comment_measure_numbers
     bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \repeatTie
 
     % [O Cello_Music_Voice measure 237 / measure 20]                           %! _comment_measure_numbers
     bf,,,!1                                                                    %! baca_make_repeat_tied_notes

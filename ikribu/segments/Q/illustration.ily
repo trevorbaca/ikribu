@@ -1147,18 +1147,15 @@ Q_Cello_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
 
         r16                                                                    %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1166,16 +1163,13 @@ Q_Cello_Music_Voice = {                                                        %
 
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
@@ -1187,12 +1181,10 @@ Q_Cello_Music_Voice = {                                                        %
         % [Q Cello_Music_Voice measure 248 / measure 2]                        %! _comment_measure_numbers
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
@@ -1205,7 +1197,6 @@ Q_Cello_Music_Voice = {                                                        %
 
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1215,7 +1206,6 @@ Q_Cello_Music_Voice = {                                                        %
     \times 1/1 {                                                               %! inscription_rhythm
 
         % [Q Cello_Music_Voice measure 249 / measure 3]                        %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1246,7 +1236,6 @@ Q_Cello_Music_Voice = {                                                        %
 
         r16                                                                    %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
@@ -1265,15 +1254,12 @@ Q_Cello_Music_Voice = {                                                        %
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1297,7 +1283,6 @@ Q_Cello_Music_Voice = {                                                        %
 
         r16                                                                    %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
@@ -1312,12 +1297,10 @@ Q_Cello_Music_Voice = {                                                        %
     \times 1/1 {                                                               %! inscription_rhythm
 
         % [Q Cello_Music_Voice measure 252 / measure 6]                        %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         \repeatTie
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
@@ -1351,7 +1334,6 @@ Q_Cello_Music_Voice = {                                                        %
 
         r16                                                                    %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
@@ -1359,11 +1341,9 @@ Q_Cello_Music_Voice = {                                                        %
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
@@ -1381,7 +1361,6 @@ Q_Cello_Music_Voice = {                                                        %
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
@@ -1390,7 +1369,6 @@ Q_Cello_Music_Voice = {                                                        %
 
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
@@ -1405,12 +1383,10 @@ Q_Cello_Music_Voice = {                                                        %
     \times 1/1 {                                                               %! inscription_rhythm
 
         % [Q Cello_Music_Voice measure 255 / measure 9]                        %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         \repeatTie
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1436,18 +1412,15 @@ Q_Cello_Music_Voice = {                                                        %
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
 
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1457,7 +1430,6 @@ Q_Cello_Music_Voice = {                                                        %
     \times 7/8 {                                                               %! inscription_rhythm
 
         % [Q Cello_Music_Voice measure 257 / measure 11]                       %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
@@ -1465,18 +1437,15 @@ Q_Cello_Music_Voice = {                                                        %
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8                                                                     %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
 
         r16                                                                    %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a8.                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -1484,12 +1453,10 @@ Q_Cello_Music_Voice = {                                                        %
 
         r8                                                                     %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         [                                                                      %! inscription_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         a16                                                                    %! inscription_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         ]                                                                      %! inscription_rhythm
