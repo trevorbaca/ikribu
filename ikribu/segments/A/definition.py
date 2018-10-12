@@ -60,13 +60,16 @@ maker(
 maker(
     ('va', (3, 6)),
     baca.clef('percussion'),
-    baca.dynamic('"mf"'),
+    baca.dynamic(
+        '"mf"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     baca.make_tied_repeated_durations((1, 4)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,
         ),
-    baca.dynamic_shift('"mf"'),
     baca.staff_position(0),
     baca.staff_lines(1),
     ikribu.box_adjustment(),
