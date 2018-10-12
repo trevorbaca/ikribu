@@ -88,26 +88,29 @@ maker(
 
 maker(
     ('bcl', 5),
-    [
-        baca.dynamic('"mf"'),
-        baca.dynamic_shift('"mf"'),
-        ],
+    baca.dynamic(
+        '"mf"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     )
 
 maker(
     ('bcl', 9),
-    [
-        baca.dynamic('"mp"'),
-        baca.dynamic_shift('"mp"'),
-        ],
+    baca.dynamic(
+        '"mp"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     )
 
 maker(
     ('bcl', 13),
-    [
-        baca.dynamic('"p"'),
-        baca.dynamic_shift('"p"'),
-        ],
+    baca.dynamic(
+        '"p"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-2, 0)).extra_offset,
+        ),
     )
 
 maker(
@@ -121,8 +124,11 @@ maker(
     ('vn', (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
-        baca.dynamic('"mp"'),
-        baca.dynamic_shift('"mp"'),
+        baca.dynamic(
+            '"mp"',
+            abjad.tweak((0, 0)).X_extent,
+            abjad.tweak((-3, 0)).extra_offset,
+            ),
         baca.markup(
             'col legno battuto',
             ),
@@ -139,8 +145,11 @@ maker(
     ('va', (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
-        baca.dynamic('"mp"'),
-        baca.dynamic_shift('"mp"'),
+        baca.dynamic(
+            '"mp"',
+            abjad.tweak((0, 0)).X_extent,
+            abjad.tweak((-3, 0)).extra_offset,
+            ),
         baca.markup(
             'col legno battuto',
             ),
@@ -172,24 +181,27 @@ maker(
 
 maker(
     ('vc', 5),
-    [
-        baca.dynamic('"mp"'),
-        baca.dynamic_shift('"mp"'),
-        ],
+    baca.dynamic(
+        '"mp"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     )
 
 maker(
     ('vc', 9),
-    [
-        baca.dynamic('"mf"'),
-        baca.dynamic_shift('"mf"'),
-        ],
+    baca.dynamic(
+        '"mf"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     )
 
 maker(
     ('vc', 13),
-    [
-        baca.dynamic('"f"'),
-        baca.dynamic_shift('"f"'),
-        ],
+    baca.dynamic(
+        '"f"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-2, 0)).extra_offset,
+        ),
     )

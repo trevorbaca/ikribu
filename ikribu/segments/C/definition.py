@@ -74,10 +74,11 @@ maker(
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
-    [
-        baca.dynamic('"mf"'),
-        baca.dynamic_shift('"mf"'),
-        ],
+    baca.dynamic(
+        '"mf"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-3, 0)).extra_offset,
+        ),
     baca.staff_lines(1),
     baca.staff_position(0),
     )

@@ -181,10 +181,11 @@ maker(
         ('vn', 10),
         ('va', 10),
         ],
-    [
-        baca.dynamic('"f"'),
-        baca.dynamic_shift('"f"'),
-        ],
+    baca.dynamic(
+        '"f"',
+        abjad.tweak((0, 0)).X_extent,
+        abjad.tweak((-2, 0)).extra_offset,
+        ),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/2 every quarter note']),
         boxed=True,
