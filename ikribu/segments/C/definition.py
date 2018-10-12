@@ -209,7 +209,7 @@ maker(
     baca.hairpin(
         'ppp < pp >',
         final_hairpin=False,
-        piece_selector=baca.cmgroups(),
+        pieces=baca.cmgroups(),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner('trem. flaut. tasto. (arco) => trem. flaut. XP'),
