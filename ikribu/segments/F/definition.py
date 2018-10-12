@@ -62,7 +62,7 @@ maker(
     baca.dls_staff_padding(4),
     baca.hairpin(
         'sfpp < p >o niente',
-        piece_selector=baca.rleaves().omgroups([1, 1]),
+        pieces=baca.rleaves().omgroups([1, 1]),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(3.5),

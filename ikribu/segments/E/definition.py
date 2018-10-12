@@ -127,7 +127,7 @@ maker(
     baca.hairpin(
         'f > p <',
         bookend=True,
-        piece_selector=baca.runs(
+        pieces=baca.runs(
             exclude=baca.enums.HIDDEN).map(baca.enchain([4, 3])).flatten(),
         ),
     baca.staff_lines(1),
@@ -152,7 +152,7 @@ maker(
     baca.hairpin(
         'p < mp >',
         final_hairpin=False,
-        piece_selector=baca.cmgroups(),
+        pieces=baca.cmgroups(),
         ),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
