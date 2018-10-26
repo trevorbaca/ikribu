@@ -1,29 +1,29 @@
 P_Global_Rests = {                                                             %! extern
 
     % [P Global_Rests measure 239 / measure 1]                                 %! _comment_measure_numbers
-    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 240 / measure 2]                                 %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_global_rests
+    R1 * 1/2                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 241 / measure 3]                                 %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 242 / measure 4]                                 %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 243 / measure 5]                                 %! _comment_measure_numbers
-    R1 * 2                                                                     %! _make_global_rests
+    R1 * 2                                                                     %! _make_global_rests(1)
 
     % [P Global_Rests measure 244 / measure 6]                                 %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 245 / measure 7]                                 %! _comment_measure_numbers
-    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [P Global_Rests measure 246 / measure 8]                                 %! _comment_measure_numbers
     \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
-    R1 * 1/4                                                                   %! _make_global_rests
+    R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-long-fermata-markup                                                %! baca_global_fermata:GlobalFermataCommand(1)
 
 }                                                                              %! extern
