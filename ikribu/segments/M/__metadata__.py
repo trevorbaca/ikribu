@@ -44,9 +44,9 @@ metadata = abjad.OrderedDict(
             'fermata_measure_numbers',
             [180, 183, 188, 193, 196, 207],
             ),
+        ('final_measure_is_fermata', True),
+        ('final_measure_number', 207),
         ('first_measure_number', 176),
-        ('last_measure_is_fermata', True),
-        ('last_measure_number', 207),
         (
             'persistent_indicators',
             abjad.OrderedDict(
