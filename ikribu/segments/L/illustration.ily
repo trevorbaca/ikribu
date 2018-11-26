@@ -1545,7 +1545,7 @@ L_Violin_Music_Voice = {                                                       %
     }                                                                          %! clb_rhythm
 
     % [L Violin_Music_Voice measure 155 / measure 13]                          %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'8                           %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #8                            %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)                    %! baca_hairpin_start_shift:OverrideCommand(1)
     \once \override DynamicText.X-extent = #'(0 . 0)                           %! baca_hairpin_start_shift:OverrideCommand(1)
     \override Hairpin.shorten-pair = #'(2.25 . 0)                              %! baca_hairpin_start_shift:OverrideCommand(1)
@@ -1799,7 +1799,7 @@ L_Violin_Music_Voice = {                                                       %
     \times 7/12 {                                                              %! triplet_rhythm
 
         % [L Violin_Music_Voice measure 163 / measure 21]                      %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
         \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_center:OverrideCommand(1)
@@ -2406,7 +2406,7 @@ L_Viola_Music_Voice = {                                                        %
     \times 8/10 {                                                              %! clb_rhythm
 
         % [L Viola_Music_Voice measure 147 / measure 5]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \once \override DynamicText.extra-offset = #'(-3.5 . 0)                %! baca_hairpin_start_shift:OverrideCommand(1)
         \once \override DynamicText.X-extent = #'(0 . 0)                       %! baca_hairpin_start_shift:OverrideCommand(1)
         \override Hairpin.shorten-pair = #'(2.25 . 0)                          %! baca_hairpin_start_shift:OverrideCommand(1)
@@ -2602,7 +2602,7 @@ L_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! triplet_rhythm
 
         % [L Viola_Music_Voice measure 155 / measure 13]                       %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
         \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_center:OverrideCommand(1)
