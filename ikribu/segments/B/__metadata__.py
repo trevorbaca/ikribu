@@ -69,11 +69,6 @@ metadata = abjad.OrderedDict(
                                 prototype='abjad.Clef',
                                 value='treble',
                                 ),
-                            abjad.Momento(
-                                context='Bass_Clarinet_Music_Voice',
-                                prototype='baca.StaffLines',
-                                value=5,
-                                ),
                             ],
                         ),
                     (
@@ -93,11 +88,6 @@ metadata = abjad.OrderedDict(
                                 context='Cello_Music_Voice',
                                 prototype='abjad.Clef',
                                 value='treble',
-                                ),
-                            abjad.Momento(
-                                context='Cello_Music_Voice',
-                                prototype='baca.StaffLines',
-                                value=5,
                                 ),
                             ],
                         ),
