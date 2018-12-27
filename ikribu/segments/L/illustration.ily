@@ -3698,7 +3698,7 @@ L_Cello_Music_Voice = {                                                        %
 
             % [L Cello_Music_Voice measure 167 / measure 25]                   %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            d1 * 7/4                                                           %! _make_multimeasure_rest_container
+            c'1 * 7/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
