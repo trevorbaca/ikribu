@@ -507,7 +507,7 @@ C_Bass_Clarinet_Music_Voice = {                                                %
 
             % [C Bass_Clarinet_Music_Voice measure 38 / measure 4]             %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 3/4                                                          %! _make_multimeasure_rest_container
+            d''1 * 3/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -556,7 +556,7 @@ C_Bass_Clarinet_Music_Voice = {                                                %
 
             % [C Bass_Clarinet_Music_Voice measure 42 / measure 8]             %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 3/4                                                          %! _make_multimeasure_rest_container
+            d''1 * 3/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -605,7 +605,7 @@ C_Bass_Clarinet_Music_Voice = {                                                %
 
             % [C Bass_Clarinet_Music_Voice measure 46 / measure 12]            %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 3/4                                                          %! _make_multimeasure_rest_container
+            d''1 * 3/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -654,7 +654,7 @@ C_Bass_Clarinet_Music_Voice = {                                                %
 
             % [C Bass_Clarinet_Music_Voice measure 50 / measure 16]            %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 3/4                                                          %! _make_multimeasure_rest_container
+            d''1 * 3/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 

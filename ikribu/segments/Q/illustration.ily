@@ -402,7 +402,7 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
             % [Q Bass_Clarinet_Music_Voice measure 253 / measure 7]            %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 7/4                                                          %! _make_multimeasure_rest_container
+            d''1 * 7/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -1491,8 +1491,7 @@ Q_Cello_Music_Voice = {                                                        %
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
-            a1 * 1/4                                                           %! _make_multimeasure_rest_container
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
             \revert Staff.BarLine.bar-extent                                   %! baca_bar_extent:OverrideCommand(2)
             \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
             \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_center:OverrideCommand(2)
