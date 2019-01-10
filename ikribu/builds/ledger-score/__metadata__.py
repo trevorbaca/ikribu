@@ -28,6 +28,8 @@ metadata = abjad.OrderedDict(
                 252,
                 ],
             ),
+
+        ('catalog_number_suffix', 'LED'),
         ('paper_size', 'ledger'),
         ('price', '\\$60 / \\euro 60'),
         ]
