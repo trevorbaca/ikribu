@@ -6,3 +6,7 @@
     composer = ##f
     title = ##f
 }
+
+\layout {
+    indent = 0
+}
