@@ -104,7 +104,7 @@ maker(
     'vc',
     baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accent(
-        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
         ),
     baca.dynamic('"mf"'),
     baca.markup('stonescratch: one short stroke for each attack', boxed=True),

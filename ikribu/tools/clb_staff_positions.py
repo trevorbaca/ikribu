@@ -8,5 +8,5 @@ def clb_staff_positions(rotation=None):
     return baca.staff_positions(
         positions,
         allow_repeats=True,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         )
