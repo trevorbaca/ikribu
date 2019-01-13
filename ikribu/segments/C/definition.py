@@ -126,25 +126,25 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.enums.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([0], 2)],
+        map=baca.runs(exclude=baca.const.HIDDEN)[abjad.index([0], 2)],
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([1], 2)],
+        map=baca.runs(exclude=baca.const.HIDDEN)[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches(
         'F#4 G#4 G#4 F#4',
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        selector=baca.pleaves(exclude=baca.const.HIDDEN),
         ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
@@ -164,23 +164,23 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.enums.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([0], 2)],
+        map=baca.runs(exclude=baca.const.HIDDEN)[abjad.index([0], 2)],
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs(exclude=baca.enums.HIDDEN)[abjad.index([1], 2)],
+        map=baca.runs(exclude=baca.const.HIDDEN)[abjad.index([1], 2)],
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches(
         'F4 E4 E4 F4',
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        selector=baca.pleaves(exclude=baca.const.HIDDEN),
         ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
