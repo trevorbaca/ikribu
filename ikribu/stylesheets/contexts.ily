@@ -137,17 +137,6 @@
         \remove System_start_delimiter_engraver
 
         \override BarLine.hair-thickness = 0.5
-        \override BarLine.space-alist = #'(
-            (time-signature extra-space . 0.0)
-            (custos minimum-space . 0.0) 
-            (clef minimum-space . 0.0) 
-            (key-signature extra-space . 0.0) 
-            (key-cancellation extra-space . 0.0) 
-            (first-note fixed-space . 0.0) 
-            (next-note semi-fixed-space . 0.0) 
-            (right-edge extra-space . 0.0)
-            )
-
         %\override BarLine.X-extent = #'(0 . 0)
 
         \override Beam.breakable = ##t
