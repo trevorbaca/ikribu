@@ -88,6 +88,7 @@
         \remove Forbid_line_break_engraver
     }
 
+    % RH STAFF
     \context {
         \Staff
         \name RHStaff
@@ -98,6 +99,7 @@
         \RemoveAllEmptyStaves
     }
 
+    % SINGLE-STRING STAFF GROUP
     \context {
         \PianoStaff
         \name SingleStringStaffGroup
