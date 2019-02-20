@@ -141,7 +141,7 @@ maker(
         'p < f >',
         bookend=-1,
         pieces=baca.cmgroups(),
-        selector=baca.tleaves(exclude=baca.const.HIDDEN),
+        selector=baca.tleaves(exclude=abjad.const.HIDDEN),
         ),
     baca.staff_position(0),
     ikribu.box_adjustment(),
