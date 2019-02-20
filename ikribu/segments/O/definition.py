@@ -154,7 +154,7 @@ maker(
 maker(
     ('bcl', (1, -1)),
     baca.repeat_tie(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.pleaves(exclude=abjad.const.HIDDEN),
         ),
     )
 
