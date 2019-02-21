@@ -485,7 +485,7 @@ A_Viola_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_center:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -562,7 +562,7 @@ A_Viola_Music_Voice = {                                                        %
     c'4                                                                        %! baca_make_tied_reepated_durations
     \repeatTie
     \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_center:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
