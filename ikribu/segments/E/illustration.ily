@@ -574,7 +574,7 @@ E_Violin_Music_Voice = {                                                       %
         \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_center:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_63:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_63:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "percussion"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
@@ -843,7 +843,7 @@ E_Violin_Music_Voice = {                                                       %
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_center:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
 
 }                                                                              %! extern
 
@@ -952,7 +952,7 @@ E_Viola_Music_Voice = {                                                        %
             \override DynamicLineSpanner.staff-padding = #8                    %! baca_dls_staff_padding:OverrideCommand(1)
             \override TupletBracket.staff-padding = #3                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \override TextScript.padding = #2.5                                %! text_script_padding:OverrideCommand(1)
-            \override TextScript.parent-alignment-X = #0                       %! baca_text_script_parent_center:OverrideCommand(1)
+            \override TextScript.parent-alignment-X = #0                       %! baca_text_script_parent_alignment_x:OverrideCommand(1)
         %%% \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_63:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)             %! MEASURE_63:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
             \clef "percussion"                                                 %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
@@ -1227,7 +1227,7 @@ E_Viola_Music_Voice = {                                                        %
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
             \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
-            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_center:OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_alignment_x:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 

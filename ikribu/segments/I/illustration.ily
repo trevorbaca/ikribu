@@ -713,7 +713,7 @@ I_Cello_Music_Voice = {                                                        %
         }                                                                      %! _clone_segment_initial_short_instrument_name
     \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! baca_bar_extent:OverrideCommand(1)
     \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_center:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -871,7 +871,7 @@ I_Cello_Music_Voice = {                                                        %
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
             \revert Staff.BarLine.bar-extent                                   %! baca_bar_extent:OverrideCommand(2)
             \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
-            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_center:OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_alignment_x:OverrideCommand(2)
             \stopStaff                                                         %! _style_fermata_measures(3)
             \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(3)
             \startStaff                                                        %! _style_fermata_measures(3)
