@@ -1,4 +1,4 @@
-N_Global_Rests = {                                                             %! extern
+N_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [N Global_Rests measure 208 / measure 1]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
@@ -30,10 +30,10 @@ N_Global_Rests = {                                                             %
     % [N Global_Rests measure 217 / measure 10]                                %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests(1)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Global_Skips = {                                                             %! extern
+N_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [N Global_Skips measure 208 / measure 1]                                 %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -202,10 +202,10 @@ N_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Bass_Clarinet_Music_Voice = {                                                %! extern
+N_Bass_Clarinet_Music_Voice = {                                                %! abjad.Path.extern
 
     % [N Bass_Clarinet_Music_Voice measure 208 / measure 1]                    %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -291,18 +291,18 @@ N_Bass_Clarinet_Music_Voice = {                                                %
     <c e''>1..
     \repeatTie                                                                 %! baca_repeat_tie
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Bass_Clarinet_Music_Staff = {                                                %! extern
+N_Bass_Clarinet_Music_Staff = {                                                %! abjad.Path.extern
 
     \context Voice = "Bass_Clarinet_Music_Voice"                               %! ScoreTemplate
-    \N_Bass_Clarinet_Music_Voice                                               %! extern
+    \N_Bass_Clarinet_Music_Voice                                               %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Violin_RH_Music_Voice = {                                                    %! extern
+N_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern
 
     % [N Violin_RH_Music_Voice measure 208 / measure 1]                        %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -716,18 +716,18 @@ N_Violin_RH_Music_Voice = {                                                    %
     \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Violin_RH_Music_Staff = {                                                    %! extern
+N_Violin_RH_Music_Staff = {                                                    %! abjad.Path.extern
 
     \context Voice = "Violin_RH_Music_Voice"                                   %! ScoreTemplate
-    \N_Violin_RH_Music_Voice                                                   %! extern
+    \N_Violin_RH_Music_Voice                                                   %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Violin_Music_Voice = {                                                       %! extern
+N_Violin_Music_Voice = {                                                       %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
@@ -877,18 +877,18 @@ N_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! glissando_rhythm
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Violin_Music_Staff = {                                                       %! extern
+N_Violin_Music_Staff = {                                                       %! abjad.Path.extern
 
     \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
-    \N_Violin_Music_Voice                                                      %! extern
+    \N_Violin_Music_Voice                                                      %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Viola_RH_Music_Voice = {                                                     %! extern
+N_Viola_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [N Viola_RH_Music_Voice measure 208 / measure 1]                         %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1344,18 +1344,18 @@ N_Viola_RH_Music_Voice = {                                                     %
 
     }                                                                          %! bow_rhythm
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Viola_RH_Music_Staff = {                                                     %! extern
+N_Viola_RH_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context Voice = "Viola_RH_Music_Voice"                                    %! ScoreTemplate
-    \N_Viola_RH_Music_Voice                                                    %! extern
+    \N_Viola_RH_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Viola_Music_Voice = {                                                        %! extern
+N_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 4/6 {                                                               %! glissando_rhythm
@@ -1509,18 +1509,18 @@ N_Viola_Music_Voice = {                                                        %
 
     }                                                                          %! glissando_rhythm
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Viola_Music_Staff = {                                                        %! extern
+N_Viola_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
-    \N_Viola_Music_Voice                                                       %! extern
+    \N_Viola_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Cello_RH_Music_Voice = {                                                     %! extern
+N_Cello_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! bow_rhythm
     \times 2/3 {                                                               %! bow_rhythm
@@ -1989,18 +1989,18 @@ N_Cello_RH_Music_Voice = {                                                     %
 
     }                                                                          %! bow_rhythm
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Cello_RH_Music_Staff = {                                                     %! extern
+N_Cello_RH_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context Voice = "Cello_RH_Music_Voice"                                    %! ScoreTemplate
-    \N_Cello_RH_Music_Voice                                                    %! extern
+    \N_Cello_RH_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Cello_Music_Voice = {                                                        %! extern
+N_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
     % [N Cello_Music_Voice measure 208 / measure 1]                            %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2147,12 +2147,12 @@ N_Cello_Music_Voice = {                                                        %
 
     d'4.                                                                       %! glissando_rhythm
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-N_Cello_Music_Staff = {                                                        %! extern
+N_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
-    \N_Cello_Music_Voice                                                       %! extern
+    \N_Cello_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

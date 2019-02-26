@@ -1,4 +1,4 @@
-C_Global_Rests = {                                                             %! extern
+C_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [C Global_Rests measure 35 / measure 1]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests(1)
@@ -51,10 +51,10 @@ C_Global_Rests = {                                                             %
     % [C Global_Rests measure 51 / measure 17]                                 %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_global_rests(1)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Global_Skips = {                                                             %! extern
+C_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [C Global_Skips measure 35 / measure 1]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -396,10 +396,10 @@ C_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Bass_Clarinet_Music_Voice = {                                                %! extern
+C_Bass_Clarinet_Music_Voice = {                                                %! abjad.Path.extern
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -679,18 +679,18 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     \revert Staff.BarLine.bar-extent                                           %! baca_bar_extent:OverrideCommand(2)
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                       %! baca_bar_extent:OverrideCommand(1)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Bass_Clarinet_Music_Staff = {                                                %! extern
+C_Bass_Clarinet_Music_Staff = {                                                %! abjad.Path.extern
 
     \context Voice = "Bass_Clarinet_Music_Voice"                               %! ScoreTemplate
-    \C_Bass_Clarinet_Music_Voice                                               %! extern
+    \C_Bass_Clarinet_Music_Voice                                               %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Violin_RH_Music_Voice = {                                                    %! extern
+C_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern
 
     % [C Violin_RH_Music_Voice measure 35 / measure 1]                         %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -772,18 +772,18 @@ C_Violin_RH_Music_Voice = {                                                    %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Violin_RH_Music_Staff = {                                                    %! extern
+C_Violin_RH_Music_Staff = {                                                    %! abjad.Path.extern
 
     \context Voice = "Violin_RH_Music_Voice"                                   %! ScoreTemplate
-    \C_Violin_RH_Music_Voice                                                   %! extern
+    \C_Violin_RH_Music_Voice                                                   %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Violin_Music_Voice = {                                                       %! extern
+C_Violin_Music_Voice = {                                                       %! abjad.Path.extern
 
     % [C Violin_Music_Voice measure 35 / measure 1]                            %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1017,18 +1017,18 @@ C_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Violin_Music_Staff = {                                                       %! extern
+C_Violin_Music_Staff = {                                                       %! abjad.Path.extern
 
     \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
-    \C_Violin_Music_Voice                                                      %! extern
+    \C_Violin_Music_Voice                                                      %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Viola_RH_Music_Voice = {                                                     %! extern
+C_Viola_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [C Viola_RH_Music_Voice measure 35 / measure 1]                          %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1110,18 +1110,18 @@ C_Viola_RH_Music_Voice = {                                                     %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Viola_RH_Music_Staff = {                                                     %! extern
+C_Viola_RH_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context Voice = "Viola_RH_Music_Voice"                                    %! ScoreTemplate
-    \C_Viola_RH_Music_Voice                                                    %! extern
+    \C_Viola_RH_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Viola_Music_Voice = {                                                        %! extern
+C_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1334,18 +1334,18 @@ C_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Viola_Music_Staff = {                                                        %! extern
+C_Viola_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
-    \C_Viola_Music_Voice                                                       %! extern
+    \C_Viola_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Cello_RH_Music_Voice = {                                                     %! extern
+C_Cello_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [C Cello_RH_Music_Voice measure 35 / measure 1]                          %! _comment_measure_numbers
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1427,18 +1427,18 @@ C_Cello_RH_Music_Voice = {                                                     %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Cello_RH_Music_Staff = {                                                     %! extern
+C_Cello_RH_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context Voice = "Cello_RH_Music_Voice"                                    %! ScoreTemplate
-    \C_Cello_RH_Music_Voice                                                    %! extern
+    \C_Cello_RH_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Cello_Music_Voice = {                                                        %! extern
+C_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
     % [C Cello_Music_Voice measure 35 / measure 1]                             %! _comment_measure_numbers
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1645,12 +1645,12 @@ C_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-C_Cello_Music_Staff = {                                                        %! extern
+C_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
-    \C_Cello_Music_Voice                                                       %! extern
+    \C_Cello_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
