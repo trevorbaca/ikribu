@@ -8,26 +8,21 @@ import os
 ##################################### [C] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 1),
-        2: (2, 2),
-        3: (3, 3),
-        4: (4, 4),
-        5: (5, 5),
-        6: (6, 6),
-        7: (7, 7),
-        8: (8, 8),
-        9: (9, 9),
-        10: (10, 10),
-        11: (11, 11),
-        12: (12, 12),
-        13: (13, 13),
-        14: (14, 14),
-        15: (15, 15),
-        16: (16, 16),
-        17: (17, 17),
-        }[n]
+stage_markup = (
+    ('[C.1]', 1),
+    ('[C.2]', 2),
+    ('[C.3]', 3),
+    ('[C.4]', 4),
+    ('[C.6]', 6),
+    ('[C.7]', 7),
+    ('[C.8]', 8),
+    ('[C.10]', 10),
+    ('[C.11]', 11),
+    ('[C.12]', 12),
+    ('[C.14]', 14),
+    ('[C.15]', 15),
+    ('[C.16]', 16),
+    )
 
 time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
 time_signatures.insert(0, (7, 4))
@@ -41,6 +36,7 @@ time_signatures = maker.run()
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=17,

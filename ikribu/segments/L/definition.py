@@ -8,18 +8,16 @@ import os
 ##################################### [L] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 4),
-        2: (5, 8),
-        3: (9, 12),
-        4: (13, 16),
-        5: (17, 20),
-        6: (21, 24),
-        7: (25, 28),
-        8: (29, 32),
-        9: 33,
-        }[n]
+stage_markup = (
+    ('[L.1]', 1),
+    ('[L.2]', 5),
+    ('[L.3]', 9),
+    ('[L.4]', 13),
+    ('[L.5]', 17),
+    ('[L.6]', 21),
+    ('[L.7]', 25),
+    ('[L.8]', 29),
+    )
 
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
@@ -32,6 +30,7 @@ time_signatures = maker.run()
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=33,
