@@ -9,15 +9,13 @@ from abjadext import rmakers
 ##################################### [P] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 3),
-        2: (4, 4),
-        3: (5, 5),
-        4: (6, 6),
-        5: (7, 7),
-        6: 8,
-        }[n]
+stage_markup = (
+    ('[P.1]', 1),
+    ('[P.2]', 4),
+    ('[P.3]', 5),
+    ('[P.4]', 6),
+    ('[P.5]', 7),
+    )
 
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
@@ -30,6 +28,7 @@ time_signatures = maker.run()
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=8,
