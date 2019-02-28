@@ -109,7 +109,7 @@
             \noBreak                                                           %! BreakMeasureMap(2):BREAK
             s1 * 7/4                                                           %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                               %! SPACING
-        %@% - \baca-start-spm-both "[1/30]" "[[1/4 * 35/24]]"                  %! SPACING
+        %@% - \baca-start-spm-left-only "[1/30]"                               %! SPACING
         %@% \bacaStartTextSpanSPM                                              %! SPACING
 
             % [Page_Layout measure 258]                                        %! _comment_measure_numbers
@@ -117,6 +117,17 @@
             \noBreak                                                           %! BreakMeasureMap(2):BREAK
             s1 * 1/4                                                           %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                               %! SPACING
+        %@% - \baca-start-spm-both "[[1/4 * 35/24]]" "[1]"                     %! SPACING
+        %@% \bacaStartTextSpanSPM                                              %! SPACING
+
+            % [Page_Layout measure 259]                                        %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
+            \baca-new-spacing-section #1 #1                                    %! PHANTOM:_style_phantom_measures(1):HorizontalSpacingSpecifier(1):SPACING_COMMAND
+            \noBreak                                                           %! PHANTOM:_style_phantom_measures(1):BreakMeasureMap(2):BREAK
+            \baca-time-signature-transparent                                   %! PHANTOM:_style_phantom_measures(2)
+            s1 * 1/4                                                           %! PHANTOM:_make_global_skips(3)
+        %@% \bacaStopTextSpanSPM                                               %! PHANTOM:_style_phantom_measures(1):SPACING
+            \once \override Score.BarLine.transparent = ##t                    %! PHANTOM:_style_phantom_measures(3)
+            \once \override Score.SpanBar.transparent = ##t                    %! PHANTOM:_style_phantom_measures(3)
 
         }   %*% Page_Layout                                                    %! abjad.ScoreTemplate._make_global_context
 
