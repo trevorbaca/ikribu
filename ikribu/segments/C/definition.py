@@ -24,14 +24,13 @@ stage_markup = (
     ('[C.16]', 16),
     )
 
-time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
-time_signatures.insert(0, (7, 4))
-time_signatures = [time_signatures]
-maker = baca.TimeSignatureMaker(
-    time_signatures,
+pairs = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
+pairs.insert(0, (7, 4))
+maker_ = baca.TimeSignatureMaker(
+    [pairs],
     count=17,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
