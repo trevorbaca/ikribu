@@ -1,6 +1,7 @@
 import abjad
 import baca
 import ikribu
+import typing
 
 
 def margin_markup(
@@ -8,7 +9,7 @@ def margin_markup(
     alert: baca.IndicatorCommand  = None,
     context: str = 'Staff',
     selector: baca.typings.Selector = 'baca.leaf(0)',
-    ) -> baca.IndicatorCommand:
+    ) -> typing.Union[baca.Command, baca.Suite]:
     """
     Makes tagged margin markup indicator command.
     """

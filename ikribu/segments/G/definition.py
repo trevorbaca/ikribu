@@ -17,11 +17,11 @@ stage_markup = (
     ('[G.11]', 11),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     [[(7, 4), (1, 6)]],
     count=12,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,

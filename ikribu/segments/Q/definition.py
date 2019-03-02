@@ -15,13 +15,13 @@ stage_markup = (
     ('[Q.4]', 10),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     count=12,
     fermata_measures=[12],
     rotation=-17,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,

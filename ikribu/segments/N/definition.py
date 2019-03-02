@@ -14,12 +14,12 @@ stage_markup = (
     ('[N.2]', 6),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     count=10,
     rotation=-14,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     # TODO: find and eliminate two incomplete spanners
