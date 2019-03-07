@@ -71,8 +71,7 @@ install:
     - prime-parser-tables
     
 script:
-    # eventually uncomment:
-    # -mypy $PACKAGE
+    - mypy $PACKAGE
     - coverage run -a `which baca-doctest` $PACKAGE
     - coverage run -a `which py.test` -rf $PACKAGE
 
