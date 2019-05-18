@@ -9,4 +9,4 @@ def clb_staff_positions(rotation=None):
         positions,
         allow_repeats=True,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        )
+    )
