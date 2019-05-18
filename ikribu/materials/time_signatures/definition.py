@@ -9,6 +9,6 @@ lengths = [len(_) for _ in numerator_groups]
 numerators = baca.sequence(numerator_groups).flatten()
 time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
 time_signature_groups = baca.sequence(time_signatures).partition_by_counts(
-    lengths,
-    )
+    lengths
+)
 time_signatures = time_signature_groups

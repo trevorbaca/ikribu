@@ -2,30 +2,17 @@ import abjad
 import baca
 
 
-instruments = abjad.OrderedDict([
-    (
-        'BassClarinet',
-        abjad.BassClarinet(),
+instruments = abjad.OrderedDict(
+    [
+        ("BassClarinet", abjad.BassClarinet()),
+        (
+            "Violin",
+            abjad.Violin(context="StaffGroup", pitch_range="[G3, +inf]"),
         ),
-    (
-        'Violin',
-        abjad.Violin(
-            context='StaffGroup',
-            pitch_range='[G3, +inf]',
-            )
+        ("Viola", abjad.Viola(context="StaffGroup", pitch_range="[C3, +inf]")),
+        (
+            "Cello",
+            abjad.Cello(context="StaffGroup", pitch_range="[Bb0, +inf]"),
         ),
-    (
-        'Viola',
-        abjad.Viola(
-            context='StaffGroup',
-            pitch_range='[C3, +inf]',
-            ),
-        ),
-    (
-        'Cello',
-        abjad.Cello(
-            context='StaffGroup',
-            pitch_range='[Bb0, +inf]',
-            ),
-        ),
-    ])
+    ]
+)

@@ -9,7 +9,7 @@ def color_rhythm(n):
     """
     tuplet_ratio = tuple(n * [1])
     rhythm_maker = rmakers.TupletRhythmMaker(
-        tag='color_rhythm',
+        tag="color_rhythm",
         tuplet_ratios=[tuplet_ratio],
         tuplet_specifier=rmakers.TupletSpecifier(
             extract_trivial=True,
@@ -17,8 +17,6 @@ def color_rhythm(n):
             force_fraction=True,
             rewrite_dots=True,
             trivialize=True,
-            ),
-        )
-    return baca.rhythm(
-        rhythm_maker=rhythm_maker,
-        )
+        ),
+    )
+    return baca.rhythm(rhythm_maker=rhythm_maker)
