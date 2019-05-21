@@ -1,3 +1,4 @@
+% Ikribu (2016)
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
 
 
@@ -169,8 +170,13 @@
         \override StemTremolo.slope = 0.5
 
         \override TextScript.padding = 1
+        % DISCOVERY: overriding TextScript.X-extent = ##f
+        %            makes LilyPond ignore self-alignment-X tweaks;
+        %            probably should never be done at stylesheet level.
+        % NOTE:      may be best to override NO text script properties.
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
+
         \override TextSpanner.staff-padding = 2
 
         \override TrillSpanner.bound-details.right.padding = 2
