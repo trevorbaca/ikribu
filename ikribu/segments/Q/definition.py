@@ -58,7 +58,7 @@ maker(
 
 maker(
     ('bcl', (1, 6)),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
@@ -76,7 +76,7 @@ maker(
 
 maker(
     ('vn', (1, 9)),
-    baca.make_repeated_duration_notes((1, 4)),
+    baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
@@ -86,7 +86,7 @@ maker(
 
 maker(
     ('va', (1, 9)),
-    baca.make_repeated_duration_notes((1, 4)),
+    baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
     baca.markup('col legno battuto meccanico: strike each note twice'),

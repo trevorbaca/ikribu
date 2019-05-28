@@ -55,7 +55,7 @@ maker(
 
 maker(
     ('bcl', [1, 5, 9, 13]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
@@ -70,7 +70,7 @@ maker(
 
 maker(
     ('vc', [1, 5, 9, 13]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(

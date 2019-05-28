@@ -64,7 +64,7 @@ maker(
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
         ),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,

@@ -108,7 +108,7 @@ maker(
 
 maker(
     ('vc', (6, 7)),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,

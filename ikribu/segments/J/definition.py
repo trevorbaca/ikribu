@@ -47,17 +47,17 @@ maker(
 
 maker(
     ('bcl', [(1, 2), (3, 6)]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
     ('vn', [(1, 4), (5, 6)]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
     ('va', [(1, 2), (3, 4), (5, 6)]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
@@ -66,7 +66,7 @@ maker(
         ('vn', 10),
         ('va', 10),
         ],
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
