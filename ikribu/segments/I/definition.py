@@ -47,7 +47,7 @@ maker(
 
 maker(
     ('vc', [1, 3, 5, 7]),
-    baca.make_tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
     )
 
 maker(
