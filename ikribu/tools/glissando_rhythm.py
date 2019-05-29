@@ -13,7 +13,7 @@ def glissando_rhythm(rotation_1=None, rotation_2=None):
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation_2)
     rhythm_maker = rmakers.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
-        tag="glissando_rhythm",
+        tag="ikribu.glissando_rhythm",
         talea=rmakers.Talea(counts=counts, denominator=16),
         tie_specifier=rmakers.TieSpecifier(strip_ties=True),
         tuplet_specifier=rmakers.TupletSpecifier(

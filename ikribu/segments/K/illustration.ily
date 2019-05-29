@@ -864,57 +864,57 @@ K_Violin_Music_Voice = {                                                       %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 8/12 {                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 8/12 {                                                              %! ikribu.clb_rhythm
 
         % [K Violin_Music_Voice measure 129 / measure 3]                       %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \tweak X-extent #'(0 . 0)                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak extra-offset #'(-3 . 0)                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \baca-effort-mp                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ^ \markup { "col legno battuto" }                                      %! baca_markup:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
+        ]                                                                      %! ikribu.clb_rhythm
 
-    }                                                                          %! clb_rhythm
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -952,76 +952,76 @@ K_Violin_Music_Voice = {                                                       %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 16/20 {                                                             %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 16/20 {                                                             %! ikribu.clb_rhythm
 
         % [K Violin_Music_Voice measure 133 / measure 7]                       %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        d'8                                                                    %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1059,46 +1059,46 @@ K_Violin_Music_Voice = {                                                       %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 6/10 {                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 6/10 {                                                              %! ikribu.clb_rhythm
 
         % [K Violin_Music_Voice measure 137 / measure 11]                      %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        b8                                                                     %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1136,52 +1136,52 @@ K_Violin_Music_Voice = {                                                       %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 8/12 {                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 8/12 {                                                              %! ikribu.clb_rhythm
 
         % [K Violin_Music_Voice measure 141 / measure 15]                      %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        d'8                                                                    %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1459,51 +1459,51 @@ K_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 8/10 {                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 8/10 {                                                              %! ikribu.clb_rhythm
 
         % [K Viola_Music_Voice measure 129 / measure 3]                        %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \tweak X-extent #'(0 . 0)                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak extra-offset #'(-3 . 0)                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \baca-effort-mp                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ^ \markup { "col legno battuto" }                                      %! baca_markup:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
+        ]                                                                      %! ikribu.clb_rhythm
 
-    }                                                                          %! clb_rhythm
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1541,70 +1541,70 @@ K_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 16/18 {                                                             %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 16/18 {                                                             %! ikribu.clb_rhythm
 
         % [K Viola_Music_Voice measure 133 / measure 7]                        %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        c'8                                                                    %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1642,40 +1642,40 @@ K_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 6/8 {                                                               %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 6/8 {                                                               %! ikribu.clb_rhythm
 
         % [K Viola_Music_Voice measure 137 / measure 11]                       %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        b8                                                                     %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        d'8                                                                    %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1713,46 +1713,46 @@ K_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! clb_rhythm
-    \times 8/10 {                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
+    \times 8/10 {                                                              %! ikribu.clb_rhythm
 
         % [K Viola_Music_Voice measure 141 / measure 15]                       %! _comment_measure_numbers
         \stopStaff                                                             %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
         \startStaff                                                            %! _style_fermata_measures(2)
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! clb_rhythm
+        [                                                                      %! ikribu.clb_rhythm
 
-        c'8                                                                    %! clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b8                                                                     %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        b8                                                                     %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        d'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'8                                                                    %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! clb_rhythm
 
-    }                                                                          %! clb_rhythm
+        c'8                                                                    %! ikribu.clb_rhythm
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! ikribu.clb_rhythm
+
+    }                                                                          %! ikribu.clb_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 

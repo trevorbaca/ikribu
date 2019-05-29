@@ -9,7 +9,7 @@ def color_rhythm(n):
     """
     tuplet_ratio = tuple(n * [1])
     rhythm_maker = rmakers.TupletRhythmMaker(
-        tag="color_rhythm",
+        tag="ikribu.color_rhythm",
         tuplet_ratios=[tuplet_ratio],
         tuplet_specifier=rmakers.TupletSpecifier(
             extract_trivial=True,
