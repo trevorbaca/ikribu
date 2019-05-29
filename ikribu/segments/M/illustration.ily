@@ -1450,11 +1450,11 @@ M_Violin_Music_Voice = {                                                       %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 177 / measure 2]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1467,45 +1467,45 @@ M_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 178 / measure 3]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 179 / measure 4]                       %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1545,11 +1545,11 @@ M_Violin_Music_Voice = {                                                       %
                 "grainfall (4)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/4 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/4 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 182 / measure 7]                       %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1560,16 +1560,16 @@ M_Violin_Music_Voice = {                                                       %
                     "sponges on BD"                                            %! baca_markup:IndicatorCommand
             }                                                                  %! baca_markup:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1609,11 +1609,11 @@ M_Violin_Music_Voice = {                                                       %
                 "grainfall (5)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 185 / measure 10]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1626,63 +1626,63 @@ M_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 4/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 4/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 186 / measure 11]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 187 / measure 12]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1722,11 +1722,11 @@ M_Violin_Music_Voice = {                                                       %
                 "grainfall (6)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/12 {                                                              %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/12 {                                                              %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 190 / measure 15]                      %! _comment_measure_numbers
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1739,45 +1739,45 @@ M_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/12 {                                                              %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/12 {                                                              %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 191 / measure 16]                      %! _comment_measure_numbers
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 192 / measure 17]                      %! _comment_measure_numbers
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1817,11 +1817,11 @@ M_Violin_Music_Voice = {                                                       %
                 "grainfall (7)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/4 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/4 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 195 / measure 20]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1832,16 +1832,16 @@ M_Violin_Music_Voice = {                                                       %
                     "sponges on BD"                                            %! baca_markup:IndicatorCommand
             }                                                                  %! baca_markup:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1881,11 +1881,11 @@ M_Violin_Music_Voice = {                                                       %
                 "grainfall (8)"                                                %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 4/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 4/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 198 / measure 23]                      %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1898,105 +1898,105 @@ M_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/10 {                                                              %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/10 {                                                              %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 199 / measure 24]                      %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 4/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 4/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 200 / measure 25]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 4/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 4/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 201 / measure 26]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/5 {                                                               %! ikribu.color_rhythm
 
         % [M Violin_Music_Voice measure 202 / measure 27]                      %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2321,51 +2321,51 @@ M_Viola_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Viola_Music_Voice measure 177 / measure 2]                            %! _comment_measure_numbers
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [M Viola_Music_Voice measure 178 / measure 3]                            %! _comment_measure_numbers
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [M Viola_Music_Voice measure 179 / measure 4]                            %! _comment_measure_numbers
-    c'8                                                                        %! color_rhythm
+    c'8                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    [                                                                          %! color_rhythm
+    [                                                                          %! ikribu.color_rhythm
 
-    c'8                                                                        %! color_rhythm
+    c'8                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'8                                                                        %! color_rhythm
+    c'8                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'8                                                                        %! color_rhythm
+    c'8                                                                        %! ikribu.color_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    ]                                                                          %! color_rhythm
+    ]                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2397,26 +2397,26 @@ M_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/5 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 182 / measure 7]                        %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2449,42 +2449,42 @@ M_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [M Viola_Music_Voice measure 185 / measure 10]                           %! _comment_measure_numbers
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 186 / measure 11]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     % [M Viola_Music_Voice measure 187 / measure 12]                           %! _comment_measure_numbers
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
@@ -2519,57 +2519,57 @@ M_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/8 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/8 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 190 / measure 15]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/8 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/8 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 191 / measure 16]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     % [M Viola_Music_Voice measure 192 / measure 17]                           %! _comment_measure_numbers
-    c'2                                                                        %! color_rhythm
+    c'2                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'2                                                                        %! color_rhythm
+    c'2                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'2                                                                        %! color_rhythm
+    c'2                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'2                                                                        %! color_rhythm
+    c'2                                                                        %! ikribu.color_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     - \accent                                                                  %! baca_accent:IndicatorCommand
@@ -2604,26 +2604,26 @@ M_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 3/5 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 3/5 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 195 / measure 20]                       %! _comment_measure_numbers
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! color_rhythm
+        c'4                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2655,78 +2655,78 @@ M_Viola_Music_Voice = {                                                        %
     \startStaff                                                                %! _style_fermata_measures(2)
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 198 / measure 23]                       %! _comment_measure_numbers
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 7/12 {                                                              %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 7/12 {                                                              %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 199 / measure 24]                       %! _comment_measure_numbers
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'1                                                                    %! color_rhythm
+        c'1                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 200 / measure 25]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_rhythm
-    \times 2/3 {                                                               %! color_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm
+    \times 2/3 {                                                               %! ikribu.color_rhythm
 
         % [M Viola_Music_Voice measure 201 / measure 26]                       %! _comment_measure_numbers
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        c'2                                                                    %! color_rhythm
+        c'2                                                                    %! ikribu.color_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! color_rhythm
+    }                                                                          %! ikribu.color_rhythm
 
     % [M Viola_Music_Voice measure 202 / measure 27]                           %! _comment_measure_numbers
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! color_rhythm
+    c'4                                                                        %! ikribu.color_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)

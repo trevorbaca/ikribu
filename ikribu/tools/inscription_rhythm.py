@@ -15,7 +15,7 @@ def inscription_rhythm():
     extra_counts_per_division = [2, 4, 0]
     rhythm_maker = rmakers.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
-        tag="inscription_rhythm",
+        tag="ikribu.inscription_rhythm",
         talea=rmakers.Talea(counts=counts, denominator=16),
         tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
     )
