@@ -8,8 +8,8 @@ def margin_markup(
     key: str,
     alert: baca.IndicatorCommand = None,
     context: str = "Staff",
-    selector: baca.typings.Selector = "baca.leaf(0)",
-) -> typing.Union[baca.Command, baca.Suite]:
+    selector: abjad.Selector = "baca.leaf(0)",
+) -> baca.CommandTyping:
     """
     Makes tagged margin markup indicator command.
     """
