@@ -4,33 +4,33 @@ I_Global_Rests = {                                                             %
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [I Global_Rests measure 109 / measure 2]                                 %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-long-fermata-markup                                                %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [I Global_Rests measure 110 / measure 3]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [I Global_Rests measure 111 / measure 4]                                 %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-long-fermata-markup                                                %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [I Global_Rests measure 112 / measure 5]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [I Global_Rests measure 113 / measure 6]                                 %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-long-fermata-markup                                                %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [I Global_Rests measure 114 / measure 7]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [I Global_Rests measure 115 / measure 8]                                 %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-long-fermata-markup                                                %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [I Global_Rests measure 116 / measure 9]                                 %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
@@ -45,7 +45,7 @@ I_Global_Skips = {                                                             %
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
-    - \baca-rehearsal-mark-markup "I"                                          %! baca_rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "I"                                          %! baca.rehearsal_mark:IndicatorCommand
 %@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "108"                                           %! MEASURE_NUMBER
@@ -867,18 +867,18 @@ I_Cello_Music_Voice = {                                                        %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Vc.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \set SingleStringStaffGroup.instrumentName =                               %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
             Vc.                                                                %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! baca_bar_extent:OverrideCommand(1)
-    \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! baca.bar_extent:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -887,19 +887,19 @@ I_Cello_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     b'4                                                                        %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        stonecircle:                                           %! baca_markup:IndicatorCommand
-                        "π/4 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        stonecircle:                                           %! baca.markup:IndicatorCommand
+                        "π/4 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1034,9 +1034,9 @@ I_Cello_Music_Voice = {                                                        %
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
-            \revert Staff.BarLine.bar-extent                                   %! baca_bar_extent:OverrideCommand(2)
-            \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
-            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+            \revert Staff.BarLine.bar-extent                                   %! baca.bar_extent:OverrideCommand(2)
+            \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
             \stopStaff                                                         %! _style_fermata_measures(3)
             \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(3)
             \startStaff                                                        %! _style_fermata_measures(3)

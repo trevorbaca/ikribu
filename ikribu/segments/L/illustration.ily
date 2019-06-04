@@ -97,9 +97,9 @@ L_Global_Rests = {                                                             %
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [L Global_Rests measure 175 / measure 33]                                %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-short-fermata-markup                                               %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [L Global_Rests measure 176 / measure 34]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
@@ -114,7 +114,7 @@ L_Global_Skips = {                                                             %
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2                                                                     %! _make_global_skips(1)
-    - \baca-rehearsal-mark-markup "L"                                          %! baca_rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "L"                                          %! baca.rehearsal_mark:IndicatorCommand
 %@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "143"                                           %! MEASURE_NUMBER
@@ -616,29 +616,29 @@ L_Bass_Clarinet_Music_Voice = {                                                %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             "B. cl."                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
             "B. cl."                                                           %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_143:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_143:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_143:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_143:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     d\breve                                                                    %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    ^ \markup { "breathe discreetly before any downbeat as needed (but do not circular breathe)" } %! baca_markup:IndicatorCommand
+    ^ \markup { "breathe discreetly before any downbeat as needed (but do not circular breathe)" } %! baca.markup:IndicatorCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1020,7 +1020,7 @@ L_Violin_Music_Voice = {                                                       %
         c'8                                                                    %! ikribu.clb_rhythm
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-effort-mp                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [                                                                      %! ikribu.clb_rhythm
@@ -1034,61 +1034,61 @@ L_Violin_Music_Voice = {                                                       %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1098,59 +1098,59 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 144 / measure 2]                       %! _comment_measure_numbers
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1160,35 +1160,35 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 145 / measure 3]                       %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1198,41 +1198,41 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 146 / measure 4]                       %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1242,58 +1242,58 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 147 / measure 5]                       %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
 
     % [L Violin_Music_Voice measure 148 / measure 6]                           %! _comment_measure_numbers
     c'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
     [                                                                          %! ikribu.clb_rhythm
 
     c'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     d'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     d'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! ikribu.clb_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
@@ -1301,59 +1301,59 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 149 / measure 7]                       %! _comment_measure_numbers
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1363,35 +1363,35 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 150 / measure 8]                       %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1401,41 +1401,41 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 151 / measure 9]                       %! _comment_measure_numbers
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1445,35 +1445,35 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 152 / measure 10]                      %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1483,41 +1483,41 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 153 / measure 11]                      %! _comment_measure_numbers
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1527,62 +1527,62 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 154 / measure 12]                      %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
 
     % [L Violin_Music_Voice measure 155 / measure 13]                          %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #8                            %! baca_dls_staff_padding:OverrideCommand(1)
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                    %! baca_hairpin_start_shift:OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                           %! baca_hairpin_start_shift:OverrideCommand(1)
-    \override Hairpin.shorten-pair = #'(2.25 . 0)                              %! baca_hairpin_start_shift:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #8                            %! baca.dls_staff_padding:OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                    %! baca.hairpin_start_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                           %! baca.hairpin_start_shift:OverrideCommand(1)
+    \override Hairpin.shorten-pair = #'(2.25 . 0)                              %! baca.hairpin_start_shift:OverrideCommand(1)
     c'8                                                                        %! ikribu.clb_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     [                                                                          %! ikribu.clb_rhythm
 
     d'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     b8                                                                         %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     d'8                                                                        %! ikribu.clb_rhythm
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! ikribu.clb_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm
@@ -1590,59 +1590,59 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 156 / measure 14]                      %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1652,59 +1652,59 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 157 / measure 15]                      %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -1714,70 +1714,70 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 158 / measure 16]                      %! _comment_measure_numbers
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert Hairpin.shorten-pair                                           %! baca_hairpin_start_shift:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert Hairpin.shorten-pair                                           %! baca.hairpin_start_shift:OverrideCommand(2)
 
     }                                                                          %! ikribu.clb_rhythm
 
@@ -1815,28 +1815,28 @@ L_Violin_Music_Voice = {                                                       %
     \times 7/12 {                                                              %! ikribu.triplet_rhythm
 
         % [L Violin_Music_Voice measure 163 / measure 21]                      %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                    %! text.script_padding:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x:OverrideCommand(1)
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        ^ \markup {                                                            %! baca_markup:IndicatorCommand
-            \override                                                          %! baca_markup:IndicatorCommand
-                #'(box-padding . 0.5)                                          %! baca_markup:IndicatorCommand
-                \box                                                           %! baca_markup:IndicatorCommand
-                    "sponges on BD"                                            %! baca_markup:IndicatorCommand
-            }                                                                  %! baca_markup:IndicatorCommand
+        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        ^ \markup {                                                            %! baca.markup:IndicatorCommand
+            \override                                                          %! baca.markup:IndicatorCommand
+                #'(box-padding . 0.5)                                          %! baca.markup:IndicatorCommand
+                \box                                                           %! baca.markup:IndicatorCommand
+                    "sponges on BD"                                            %! baca.markup:IndicatorCommand
+            }                                                                  %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -1846,16 +1846,16 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 164 / measure 22]                      %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -1865,32 +1865,32 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 165 / measure 23]                      %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Violin_Music_Voice measure 166 / measure 24]                          %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
-    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm
     \times 7/12 {                                                              %! ikribu.triplet_rhythm
@@ -1898,16 +1898,16 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 167 / measure 25]                      %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -1917,32 +1917,32 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 168 / measure 26]                      %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Violin_Music_Voice measure 169 / measure 27]                          %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
-    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm
     \times 4/6 {                                                               %! ikribu.triplet_rhythm
@@ -1950,16 +1950,16 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 170 / measure 28]                      %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -1969,16 +1969,16 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 171 / measure 29]                      %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -1987,17 +1987,17 @@ L_Violin_Music_Voice = {                                                       %
 
         % [L Violin_Music_Voice measure 172 / measure 30]                      %! _comment_measure_numbers
         c'4                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2007,38 +2007,38 @@ L_Violin_Music_Voice = {                                                       %
         % [L Violin_Music_Voice measure 173 / measure 31]                      %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Violin_Music_Voice measure 174 / measure 32]                          %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2289,7 +2289,7 @@ L_Viola_Music_Voice = {                                                        %
         c'8                                                                    %! ikribu.clb_rhythm
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-effort-mp                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [                                                                      %! ikribu.clb_rhythm
@@ -2303,55 +2303,55 @@ L_Viola_Music_Voice = {                                                        %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2361,53 +2361,53 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 144 / measure 2]                        %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2417,29 +2417,29 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 145 / measure 3]                        %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2449,35 +2449,35 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 146 / measure 4]                        %! _comment_measure_numbers
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2486,46 +2486,46 @@ L_Viola_Music_Voice = {                                                        %
     \times 8/10 {                                                              %! ikribu.clb_rhythm
 
         % [L Viola_Music_Voice measure 147 / measure 5]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0)                %! baca_hairpin_start_shift:OverrideCommand(1)
-        \once \override DynamicText.X-extent = #'(0 . 0)                       %! baca_hairpin_start_shift:OverrideCommand(1)
-        \override Hairpin.shorten-pair = #'(2.25 . 0)                          %! baca_hairpin_start_shift:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0)                %! baca.hairpin_start_shift:OverrideCommand(1)
+        \once \override DynamicText.X-extent = #'(0 . 0)                       %! baca.hairpin_start_shift:OverrideCommand(1)
+        \override Hairpin.shorten-pair = #'(2.25 . 0)                          %! baca.hairpin_start_shift:OverrideCommand(1)
         d'8                                                                    %! ikribu.clb_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \baca-effort-mp                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        \baca-effort-mp                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \tweak circled-tip ##t                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \tweak circled-tip ##t                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         [                                                                      %! ikribu.clb_rhythm
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2535,23 +2535,23 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 148 / measure 6]                        %! _comment_measure_numbers
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2561,53 +2561,53 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 149 / measure 7]                        %! _comment_measure_numbers
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
 
     }                                                                          %! ikribu.clb_rhythm
@@ -2617,34 +2617,34 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 150 / measure 8]                        %! _comment_measure_numbers
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! ikribu.clb_rhythm
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         c'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         d'8                                                                    %! ikribu.clb_rhythm
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b8                                                                     %! ikribu.clb_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+        - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! ikribu.clb_rhythm
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert Hairpin.shorten-pair                                           %! baca_hairpin_start_shift:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert Hairpin.shorten-pair                                           %! baca.hairpin_start_shift:OverrideCommand(2)
 
     }                                                                          %! ikribu.clb_rhythm
 
@@ -2682,28 +2682,28 @@ L_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! ikribu.triplet_rhythm
 
         % [L Viola_Music_Voice measure 155 / measure 13]                       %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                    %! text.script_padding:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x:OverrideCommand(1)
         c'4                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        ^ \markup {                                                            %! baca_markup:IndicatorCommand
-            \override                                                          %! baca_markup:IndicatorCommand
-                #'(box-padding . 0.5)                                          %! baca_markup:IndicatorCommand
-                \box                                                           %! baca_markup:IndicatorCommand
-                    "sponges on BD"                                            %! baca_markup:IndicatorCommand
-            }                                                                  %! baca_markup:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        ^ \markup {                                                            %! baca.markup:IndicatorCommand
+            \override                                                          %! baca.markup:IndicatorCommand
+                #'(box-padding . 0.5)                                          %! baca.markup:IndicatorCommand
+                \box                                                           %! baca.markup:IndicatorCommand
+                    "sponges on BD"                                            %! baca.markup:IndicatorCommand
+            }                                                                  %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2713,16 +2713,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 156 / measure 14]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2732,16 +2732,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 157 / measure 15]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2751,16 +2751,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 158 / measure 16]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2770,32 +2770,32 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 159 / measure 17]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Viola_Music_Voice measure 160 / measure 18]                           %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm
     \times 2/3 {                                                               %! ikribu.triplet_rhythm
@@ -2803,16 +2803,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 161 / measure 19]                       %! _comment_measure_numbers
         c'4                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2822,16 +2822,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 162 / measure 20]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2841,16 +2841,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 163 / measure 21]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2859,17 +2859,17 @@ L_Viola_Music_Voice = {                                                        %
 
         % [L Viola_Music_Voice measure 164 / measure 22]                       %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2879,32 +2879,32 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 165 / measure 23]                       %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Viola_Music_Voice measure 166 / measure 24]                           %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
-    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm
     \times 7/12 {                                                              %! ikribu.triplet_rhythm
@@ -2912,16 +2912,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 167 / measure 25]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2931,32 +2931,32 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 168 / measure 26]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Viola_Music_Voice measure 169 / measure 27]                           %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm
     \times 4/6 {                                                               %! ikribu.triplet_rhythm
@@ -2964,16 +2964,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 170 / measure 28]                       %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -2983,16 +2983,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 171 / measure 29]                       %! _comment_measure_numbers
         c'2                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'2                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -3002,16 +3002,16 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 172 / measure 30]                       %! _comment_measure_numbers
         c'4                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         c'4                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
@@ -3021,38 +3021,38 @@ L_Viola_Music_Voice = {                                                        %
         % [L Viola_Music_Voice measure 173 / measure 31]                       %! _comment_measure_numbers
         c'1                                                                    %! ikribu.triplet_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        - \accent                                                              %! baca.accent:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         c'1                                                                    %! ikribu.triplet_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.triplet_rhythm
 
     % [L Viola_Music_Voice measure 174 / measure 32]                           %! _comment_measure_numbers
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     c'4                                                                        %! ikribu.triplet_rhythm
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     c'4                                                                        %! ikribu.triplet_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    - \accent                                                                  %! baca_accent:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3291,9 +3291,9 @@ L_Cello_Music_Voice = {                                                        %
             #16                                                                %! _clone_segment_initial_short_instrument_name
             Vc.                                                                %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! baca_bar_extent:OverrideCommand(1)
-    \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! baca.bar_extent:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \clef "bass"                                                               %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -3302,11 +3302,11 @@ L_Cello_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -3340,10 +3340,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 144 / measure 2]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3366,10 +3366,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 145 / measure 3]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3380,10 +3380,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 146 / measure 4]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3397,19 +3397,19 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 147 / measure 5]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        graincircle:                                           %! baca_markup:IndicatorCommand
-                        "π/3 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        graincircle:                                           %! baca.markup:IndicatorCommand
+                        "π/3 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3423,10 +3423,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 148 / measure 6]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3434,10 +3434,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 149 / measure 7]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3460,10 +3460,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 150 / measure 8]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3474,19 +3474,19 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 151 / measure 9]                            %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        graincircle:                                           %! baca_markup:IndicatorCommand
-                        "π/4 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        graincircle:                                           %! baca.markup:IndicatorCommand
+                        "π/4 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3500,10 +3500,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 152 / measure 10]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3514,10 +3514,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 153 / measure 11]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3531,10 +3531,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 154 / measure 12]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3545,19 +3545,19 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 155 / measure 13]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        graincircle:                                           %! baca_markup:IndicatorCommand
-                        "π/3 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        graincircle:                                           %! baca.markup:IndicatorCommand
+                        "π/3 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3565,10 +3565,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 156 / measure 14]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3591,10 +3591,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 157 / measure 15]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3617,10 +3617,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 158 / measure 16]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3646,19 +3646,19 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 159 / measure 17]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        graincircle:                                           %! baca_markup:IndicatorCommand
-                        "π/2 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        graincircle:                                           %! baca.markup:IndicatorCommand
+                        "π/2 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3681,10 +3681,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 160 / measure 18]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3695,10 +3695,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 161 / measure 19]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3706,10 +3706,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 162 / measure 20]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3735,19 +3735,19 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 163 / measure 21]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                \column                                                        %! baca_markup:IndicatorCommand
-                    {                                                          %! baca_markup:IndicatorCommand
-                        graincircle:                                           %! baca_markup:IndicatorCommand
-                        "π/3 every quarter note"                               %! baca_markup:IndicatorCommand
-                    }                                                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                \column                                                        %! baca.markup:IndicatorCommand
+                    {                                                          %! baca.markup:IndicatorCommand
+                        graincircle:                                           %! baca.markup:IndicatorCommand
+                        "π/3 every quarter note"                               %! baca.markup:IndicatorCommand
+                    }                                                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3770,10 +3770,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 164 / measure 22]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3787,10 +3787,10 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 165 / measure 23]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
@@ -3804,17 +3804,17 @@ L_Cello_Music_Voice = {                                                        %
     % [L Cello_Music_Voice measure 166 / measure 24]                           %! _comment_measure_numbers
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca_make_tied_reepated_durations
     \repeatTie
 
     d4                                                                         %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -3864,9 +3864,9 @@ L_Cello_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                           %! baca_bar_extent:OverrideCommand(2)
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+    \revert Staff.BarLine.bar-extent                                           %! baca.bar_extent:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
     \stopStaff                                                                 %! _style_fermata_measures(3)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
     \startStaff                                                                %! _style_fermata_measures(3)
