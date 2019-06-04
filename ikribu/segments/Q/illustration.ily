@@ -34,9 +34,9 @@ Q_Global_Rests = {                                                             %
     R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [Q Global_Rests measure 258 / measure 12]                                %! _comment_measure_numbers
-    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
-    ^ \baca-fermata-markup                                                     %! baca_global_fermata:GlobalFermataCommand(1)
+    ^ \baca-fermata-markup                                                     %! baca.global_fermata:GlobalFermataCommand(1)
 
     % [Q Global_Rests measure 259 / measure 13]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
@@ -51,7 +51,7 @@ Q_Global_Skips = {                                                             %
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
-    - \baca-rehearsal-mark-markup "Q"                                          %! baca_rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "Q"                                          %! baca.rehearsal_mark:IndicatorCommand
 %@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "247"                                           %! MEASURE_NUMBER
@@ -253,18 +253,18 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             "B. cl."                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
             "B. cl."                                                           %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca_bar_extent:OverrideCommand(1)
-    \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.bar_extent:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -273,15 +273,15 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     b'4                                                                        %! baca_make_tied_reepated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                "graincircle: π/3 every quarter note"                          %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                "graincircle: π/3 every quarter note"                          %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -430,8 +430,8 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
     % [Q Bass_Clarinet_Music_Voice measure 257 / measure 11]                   %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
 
     % [Q Bass_Clarinet_Music_Voice measure 258 / measure 12]                   %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(1)
@@ -450,7 +450,7 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
             % [Q Bass_Clarinet_Music_Voice measure 259 / measure 13]           %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca_bar_extent:OverrideCommand(2)
+            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca.bar_extent:OverrideCommand(2)
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
@@ -581,16 +581,16 @@ Q_Violin_Music_Voice = {                                                       %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Vn.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \set SingleStringStaffGroup.instrumentName =                               %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
             Vn.                                                                %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -599,11 +599,11 @@ Q_Violin_Music_Voice = {                                                       %
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     a'4                                                                        %! baca_make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Violin”)"                            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    ^ \markup { "col legno battuto meccanico: strike each note twice" }        %! baca_markup:IndicatorCommand
+    ^ \markup { "col legno battuto meccanico: strike each note twice" }        %! baca.markup:IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -614,160 +614,160 @@ Q_Violin_Music_Voice = {                                                       %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 248 / measure 2]                           %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 249 / measure 3]                           %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 250 / measure 4]                           %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 251 / measure 5]                           %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 252 / measure 6]                           %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 253 / measure 7]                           %! _comment_measure_numbers
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 254 / measure 8]                           %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 255 / measure 9]                           %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -940,16 +940,16 @@ Q_Viola_Music_Voice = {                                                        %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Va.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \set SingleStringStaffGroup.instrumentName =                               %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
             Va.                                                                %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override TextScript.padding = #2.5                                        %! text_script_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -958,11 +958,11 @@ Q_Viola_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     b'4                                                                        %! baca_make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Va.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Viola”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    ^ \markup { "col legno battuto meccanico: strike each note twice" }        %! baca_markup:IndicatorCommand
+    ^ \markup { "col legno battuto meccanico: strike each note twice" }        %! baca.markup:IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -973,160 +973,160 @@ Q_Viola_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 248 / measure 2]                            %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 249 / measure 3]                            %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 250 / measure 4]                            %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 251 / measure 5]                            %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 252 / measure 6]                            %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 253 / measure 7]                            %! _comment_measure_numbers
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 254 / measure 8]                            %! _comment_measure_numbers
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 255 / measure 9]                            %! _comment_measure_numbers
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     c''4                                                                       %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     b'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     a'4                                                                        %! baca_make_repeated_duration_notes
-    - \baca-staccati #2                                                        %! baca_double_staccato:IndicatorCommand
-    \revert TextScript.padding                                                 %! text_script_padding:OverrideCommand(2)
+    - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
+    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1302,18 +1302,18 @@ Q_Cello_Music_Voice = {                                                        %
                 #16                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 Vc.                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-        \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-        \once \override Staff.StaffSymbol.line-count = 1                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-        \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 1                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+        \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \set SingleStringStaffGroup.instrumentName =                           %! _clone_segment_initial_short_instrument_name
         \markup {                                                              %! _clone_segment_initial_short_instrument_name
             \hcenter-in                                                        %! _clone_segment_initial_short_instrument_name
                 #16                                                            %! _clone_segment_initial_short_instrument_name
                 Vc.                                                            %! _clone_segment_initial_short_instrument_name
             }                                                                  %! _clone_segment_initial_short_instrument_name
-        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! baca_bar_extent:OverrideCommand(1)
-        \override TextScript.padding = #2.5                                    %! text_script_padding:OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                           %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! baca.bar_extent:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                    %! text.script_padding:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x:OverrideCommand(1)
         \clef "tenor"                                                          %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1322,16 +1322,16 @@ Q_Cello_Music_Voice = {                                                        %
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         a8                                                                     %! ikribu.inscription_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \baca-effort-mf                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        \baca-effort-mf                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        ^ \markup {                                                            %! baca_markup:IndicatorCommand
-            \override                                                          %! baca_markup:IndicatorCommand
-                #'(box-padding . 0.5)                                          %! baca_markup:IndicatorCommand
-                \box                                                           %! baca_markup:IndicatorCommand
-                    "stonescratch: one short stroke for each attack"           %! baca_markup:IndicatorCommand
-            }                                                                  %! baca_markup:IndicatorCommand
+        ^ \markup {                                                            %! baca.markup:IndicatorCommand
+            \override                                                          %! baca.markup:IndicatorCommand
+                #'(box-padding . 0.5)                                          %! baca.markup:IndicatorCommand
+                \box                                                           %! baca.markup:IndicatorCommand
+                    "stonescratch: one short stroke for each attack"           %! baca.markup:IndicatorCommand
+            }                                                                  %! baca.markup:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1343,30 +1343,30 @@ Q_Cello_Music_Voice = {                                                        %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r16                                                                    %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         r1                                                                     %! ikribu.inscription_rhythm
 
         r8                                                                     %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
     }                                                                          %! ikribu.inscription_rhythm
@@ -1377,11 +1377,11 @@ Q_Cello_Music_Voice = {                                                        %
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r2                                                                     %! ikribu.inscription_rhythm
@@ -1393,7 +1393,7 @@ Q_Cello_Music_Voice = {                                                        %
         r8                                                                     %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.inscription_rhythm
 
@@ -1402,19 +1402,19 @@ Q_Cello_Music_Voice = {                                                        %
 
         % [Q Cello_Music_Voice measure 249 / measure 3]                        %! _comment_measure_numbers
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r2                                                                     %! ikribu.inscription_rhythm
@@ -1422,21 +1422,21 @@ Q_Cello_Music_Voice = {                                                        %
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r16                                                                    %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
     }                                                                          %! ikribu.inscription_rhythm
@@ -1446,20 +1446,20 @@ Q_Cello_Music_Voice = {                                                        %
 
         % [Q Cello_Music_Voice measure 250 / measure 4]                        %! _comment_measure_numbers
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r8                                                                     %! ikribu.inscription_rhythm
@@ -1474,16 +1474,16 @@ Q_Cello_Music_Voice = {                                                        %
         r4.                                                                    %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         r16                                                                    %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
     }                                                                          %! ikribu.inscription_rhythm
@@ -1497,7 +1497,7 @@ Q_Cello_Music_Voice = {                                                        %
         [                                                                      %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r1                                                                     %! ikribu.inscription_rhythm
@@ -1505,17 +1505,17 @@ Q_Cello_Music_Voice = {                                                        %
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         r8.                                                                    %! ikribu.inscription_rhythm
 
@@ -1530,17 +1530,17 @@ Q_Cello_Music_Voice = {                                                        %
         r16                                                                    %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r2..                                                                   %! ikribu.inscription_rhythm
@@ -1553,11 +1553,11 @@ Q_Cello_Music_Voice = {                                                        %
         r4                                                                     %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r2                                                                     %! ikribu.inscription_rhythm
@@ -1565,11 +1565,11 @@ Q_Cello_Music_Voice = {                                                        %
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
     }                                                                          %! ikribu.inscription_rhythm
@@ -1583,10 +1583,10 @@ Q_Cello_Music_Voice = {                                                        %
         [                                                                      %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r16                                                                    %! ikribu.inscription_rhythm
@@ -1604,20 +1604,20 @@ Q_Cello_Music_Voice = {                                                        %
         r4..                                                                   %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r8                                                                     %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
     }                                                                          %! ikribu.inscription_rhythm
 
@@ -1626,34 +1626,34 @@ Q_Cello_Music_Voice = {                                                        %
 
         % [Q Cello_Music_Voice measure 257 / measure 11]                       %! _comment_measure_numbers
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
         r16                                                                    %! ikribu.inscription_rhythm
 
         a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
 
         r1                                                                     %! ikribu.inscription_rhythm
 
         r8                                                                     %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         [                                                                      %! ikribu.inscription_rhythm
 
         a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca_accent:IndicatorCommand
+        - \accent                                                              %! baca.accent:IndicatorCommand
         ]                                                                      %! ikribu.inscription_rhythm
 
     }                                                                          %! ikribu.inscription_rhythm
@@ -1669,8 +1669,8 @@ Q_Cello_Music_Voice = {                                                        %
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
-            \revert TextScript.padding                                         %! text_script_padding:OverrideCommand(2)
-            \revert TextScript.parent-alignment-X                              %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+            \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
             \stopStaff                                                         %! _style_fermata_measures(3)
             \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(3)
             \startStaff                                                        %! _style_fermata_measures(3)
@@ -1695,7 +1695,7 @@ Q_Cello_Music_Voice = {                                                        %
             % [Q Cello_Music_Voice measure 259 / measure 13]                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca_bar_extent:OverrideCommand(2)
+            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca.bar_extent:OverrideCommand(2)
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
