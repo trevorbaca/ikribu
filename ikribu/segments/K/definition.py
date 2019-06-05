@@ -60,12 +60,12 @@ maker(
 
 maker(
     ('vn', [3, 7, 11, 15]),
-    ikribu.clb_rhythm([4]),
+    ikribu.clb_rhythm(extra_counts=[4]),
     )
 
 maker(
     ('va', [3, 7, 11, 15]),
-    ikribu.clb_rhythm([2]),
+    ikribu.clb_rhythm(extra_counts=[2]),
     )
 
 maker(

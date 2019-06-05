@@ -3,7 +3,7 @@ import baca
 from abjadext import rmakers
 
 
-def inscription_rhythm():
+def inscription_rhythm() -> baca.RhythmCommand:
     """
     Makes inscription rhythm.
     """
@@ -13,10 +13,11 @@ def inscription_rhythm():
     counts = counts.helianthate(-1, -1)
     counts = counts.flatten()
     extra_counts_per_division = [2, 4, 0]
-    rhythm_maker = rmakers.TaleaRhythmMaker(
-        extra_counts_per_division=extra_counts_per_division,
+    return baca.rhythm(
+        rhythm_maker=rmakers.TaleaRhythmMaker(
+            extra_counts_per_division=extra_counts_per_division,
+            talea=rmakers.Talea(counts=counts, denominator=16),
+            tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
+        ),
         tag="ikribu.inscription_rhythm",
-        talea=rmakers.Talea(counts=counts, denominator=16),
-        tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
     )
-    return baca.rhythm(rhythm_maker=rhythm_maker)

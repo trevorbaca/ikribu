@@ -3,14 +3,14 @@ import baca
 from abjadext import rmakers
 
 
-def vigil_rhythm():
+def vigil_rhythm() -> baca.RhythmCommand:
     """
     Makes vigil rhythm.
     """
-    counts = abjad.sequence([16, -1])
-    rhythm_maker = rmakers.TaleaRhythmMaker(
+    return baca.rhythm(
+        rhythm_maker=rmakers.TaleaRhythmMaker(
+            talea=rmakers.Talea(counts=[16, -1], denominator=4),
+            tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
+        ),
         tag="ikribu.vigil_rhythm",
-        talea=rmakers.Talea(counts=counts, denominator=4),
-        tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
     )
-    return baca.rhythm(rhythm_maker=rhythm_maker)

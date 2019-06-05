@@ -1,7 +1,7 @@
 import baca
 
 
-def box_adjustment():
+def box_adjustment() -> baca.Suite:
     """
     Makes suite of boxed text script adjustment commands.
     """
