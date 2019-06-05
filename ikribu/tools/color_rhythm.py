@@ -3,20 +3,20 @@ import baca
 from abjadext import rmakers
 
 
-def color_rhythm(n):
+def color_rhythm(n: int) -> baca.RhythmCommand:
     """
     Makes color rhythm.
     """
-    tuplet_ratio = tuple(n * [1])
-    rhythm_maker = rmakers.TupletRhythmMaker(
-        tag="ikribu.color_rhythm",
-        tuplet_ratios=[tuplet_ratio],
-        tuplet_specifier=rmakers.TupletSpecifier(
-            extract_trivial=True,
-            diminution=True,
-            force_fraction=True,
-            rewrite_dots=True,
-            trivialize=True,
+    return baca.rhythm(
+        rhythm_maker=rmakers.TupletRhythmMaker(
+            tuplet_ratios=[tuple(n * [1])],
+            tuplet_specifier=rmakers.TupletSpecifier(
+                extract_trivial=True,
+                diminution=True,
+                force_fraction=True,
+                rewrite_dots=True,
+                trivialize=True,
+            ),
         ),
+        tag="ikribu.color_rhythm",
     )
-    return baca.rhythm(rhythm_maker=rhythm_maker)

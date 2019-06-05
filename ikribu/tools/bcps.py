@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def bcps(rotation=None):
+def bcps(rotation: int = None) -> baca.BCPCommand:
     """
     Makes bow contact points.
     """

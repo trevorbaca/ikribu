@@ -3,20 +3,21 @@ import baca
 from abjadext import rmakers
 
 
-def triplet_rhythm():
+def triplet_rhythm() -> baca.RhythmCommand:
     """
     Makes triplet rhythm.
     """
-    rhythm_maker = rmakers.TupletRhythmMaker(
-        tag="ikribu.triplet_rhythm",
-        tuplet_ratios=[(1, 1, 1)],
-        tuplet_specifier=rmakers.TupletSpecifier(
-            denominator="divisions",
-            diminution=True,
-            extract_trivial=True,
-            force_fraction=True,
-            rewrite_dots=True,
-            trivialize=True,
+    return baca.rhythm(
+        rhythm_maker=rmakers.TupletRhythmMaker(
+            tuplet_ratios=[(1, 1, 1)],
+            tuplet_specifier=rmakers.TupletSpecifier(
+                denominator="divisions",
+                diminution=True,
+                extract_trivial=True,
+                force_fraction=True,
+                rewrite_dots=True,
+                trivialize=True,
+            ),
         ),
+        tag="ikribu.triplet_rhythm",
     )
-    return baca.rhythm(rhythm_maker=rhythm_maker)

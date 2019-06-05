@@ -2,7 +2,9 @@ import abjad
 import baca
 
 
-def glissando_pitches(octave=4, rotation=None):
+def glissando_pitches(
+    octave: int = 4, rotation: int = None
+) -> baca.PitchCommand:
     """
     Makes glissando pitches.
     """
@@ -13,6 +15,6 @@ def glissando_pitches(octave=4, rotation=None):
     pitches = left[:] + right[1:-1]
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
-    pitches = abjad.sequence(pitches)
-    pitches = pitches.rotate(n=rotation)
-    return baca.pitches(pitches, allow_repeats=True)
+    pitches_ = abjad.sequence(pitches)
+    pitches_ = pitches_.rotate(n=rotation)
+    return baca.pitches(pitches_, allow_repeats=True)
