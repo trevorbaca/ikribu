@@ -15,9 +15,7 @@ def bow_rhythm(
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation)
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[4],
             extra_counts_per_division=extra_counts_per_division,
             logical_tie_masks=ltmask,

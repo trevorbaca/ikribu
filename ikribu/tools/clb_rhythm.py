@@ -9,9 +9,7 @@ def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[8],
             extra_counts_per_division=extra_counts,
             tuplet_specifier=rmakers.TupletSpecifier(
