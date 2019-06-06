@@ -9,6 +9,9 @@ def triplet_rhythm() -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
+            beam_specifier=rmakers.BeamSpecifier(
+                beam_each_division=True,
+            ),
             tuplet_ratios=[(1, 1, 1)],
             tuplet_specifier=rmakers.TupletSpecifier(
                 denominator="divisions",
