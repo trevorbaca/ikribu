@@ -340,7 +340,7 @@ N_Violin_RH_Music_Voice = {                                                    %
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    r4
+    r4                                                                         %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -411,7 +411,7 @@ N_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
 
-    r4
+    r4                                                                         %! ikribu.bow_rhythm
     \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps:BCPCommand(2)
@@ -448,7 +448,7 @@ N_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
@@ -526,7 +526,7 @@ N_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
@@ -561,7 +561,7 @@ N_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #1 #4                                        %! baca.bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
 
-    r4
+    r4                                                                         %! ikribu.bow_rhythm
     \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #2 #4                                        %! baca.bcps:BCPCommand(2)
@@ -637,7 +637,7 @@ N_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
@@ -670,7 +670,7 @@ N_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
@@ -1026,7 +1026,7 @@ N_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
@@ -1116,7 +1116,7 @@ N_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
@@ -1174,7 +1174,7 @@ N_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
 
-    r4
+    r4                                                                         %! ikribu.bow_rhythm
     \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps:BCPCommand(2)
@@ -1270,7 +1270,7 @@ N_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
@@ -1322,7 +1322,7 @@ N_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
 
-    r4
+    r4                                                                         %! ikribu.bow_rhythm
     \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps:BCPCommand(2)
     - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
@@ -1410,10 +1410,10 @@ N_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-right-text #6 #7                                   %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \revert Script.staff-padding                                           %! baca.script_staff_padding:OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
@@ -1665,7 +1665,7 @@ N_Cello_RH_Music_Voice = {                                                     %
     %@% \override RHStaff.Clef.color = ##f                                     %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set RHStaff.forceClef = ##t                                           %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)       %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                 %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1741,7 +1741,7 @@ N_Cello_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
@@ -1850,7 +1850,7 @@ N_Cello_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
@@ -1929,7 +1929,7 @@ N_Cello_RH_Music_Voice = {                                                     %
     \times 3/2 {                                                               %! ikribu.bow_rhythm
 
         % [N Cello_RH_Music_Voice measure 214 / measure 7]                     %! _comment_measure_numbers
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
@@ -2039,7 +2039,7 @@ N_Cello_RH_Music_Voice = {                                                     %
     \times 7/9 {                                                               %! ikribu.bow_rhythm
 
         % [N Cello_RH_Music_Voice measure 217 / measure 10]                    %! _comment_measure_numbers
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
@@ -2109,7 +2109,7 @@ N_Cello_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-right-text #7 #7                                   %! baca.bcps:BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
 
-        r4
+        r4                                                                     %! ikribu.bow_rhythm
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)

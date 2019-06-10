@@ -4,9 +4,7 @@ from abjadext import rmakers
 
 
 def bow_rhythm(
-    *,
-    ltmask: rmakers.MasksTyping = rmakers.silence([4, 19], 20),
-    rotation: int = None,
+    *specifiers: rmakers.SpecifierTyping, rotation: int = None
 ) -> baca.RhythmCommand:
     """
     Makes bow rhythm.
@@ -15,10 +13,10 @@ def bow_rhythm(
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation)
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
+            *specifiers,
             beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[4],
             extra_counts_per_division=extra_counts_per_division,
-            logical_tie_masks=ltmask,
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, force_fraction=True
             ),

@@ -92,10 +92,12 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([0, 8], 12),
-        rotation=0,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([0, 8], 12)],
         ),
-    )
+        rotation=0,
+    ),
+)
 
 maker(
     ('vn', (1, 5)),
@@ -110,10 +112,12 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([4, 14], 16),
-        rotation=-1,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([4, 14], 16)],
         ),
-    )
+        rotation=-1,
+    ),
+)
 
 maker(
     ('va', (1, 5)),
@@ -128,10 +132,12 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-2),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([8, 20], 20),
-        rotation=-2,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([8, 20], 20)],
         ),
-    )
+        rotation=-2,
+    ),
+)
 
 maker(
     ('vc', (1, 5)),

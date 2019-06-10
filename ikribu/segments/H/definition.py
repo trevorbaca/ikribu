@@ -52,10 +52,12 @@ maker(
     ('vn_rh', (1, 8)),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([0, 8], 12),
-        rotation=0,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([0, 8], 12)],
         ),
-    )
+        rotation=0,
+    ),
+)
 
 maker(
     ('vn', (1, 8)),
@@ -68,10 +70,12 @@ maker(
     ('va_rh', (1, 8)),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([4, 14], 16),
-        rotation=-1,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([4, 14], 16)],
         ),
-    )
+        rotation=-1,
+    ),
+)
 
 maker(
     ('va', (1, 8)),
