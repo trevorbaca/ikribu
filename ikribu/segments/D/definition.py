@@ -52,10 +52,12 @@ maker(
 maker(
     ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([8, 20], 20),
-        rotation=-2,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([8, 20], 20)],
         ),
-    )
+        rotation=-2,
+    ),
+)
 
 maker(
     ('vc', (1, 10)),

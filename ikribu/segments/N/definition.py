@@ -46,10 +46,12 @@ maker(
 maker(
     ('vn_rh', (1, 10)),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([0, 8], 12),
-        rotation=0,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([0, 8], 12)],
         ),
-    )
+        rotation=0,
+    ),
+)
 
 maker(
     ('vn', (1, 10)),
@@ -58,15 +60,16 @@ maker(
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
+pattern = abjad.Pattern([4, 14], period=16)| abjad.Pattern([-1])
 maker(
     ('va_rh', (1, 10)),
     ikribu.bow_rhythm(
-        #ltmask=rmakers.silence([4, 14], 16),
-        ltmask=rmakers.SilenceMask(abjad.Pattern([4, 14], period=16)|abjad.Pattern([-1])),
-        #ltmask=baca.silence(abjad.Pattern([4, 14], period=16)|abjad.Pattern([-1])),
-        rotation=-1,
+        rmakers.SilenceMask(
+            selector=baca.lts()[pattern],
         ),
-    )
+        rotation=-1,
+    ),
+)
 
 maker(
     ('va', (1, 10)),
@@ -77,10 +80,12 @@ maker(
 maker(
     ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
-        ltmask=rmakers.silence([8, 20], 20),
-        rotation=-2,
+        rmakers.SilenceMask(
+            selector=baca.lts()[abjad.index([8, 20], 20)],
         ),
-    )
+        rotation=-2,
+    ),
+)
 
 maker(
     ('vc', (1, 10)),
