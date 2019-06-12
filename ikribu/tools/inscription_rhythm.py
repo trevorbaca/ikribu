@@ -15,6 +15,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     extra_counts_per_division = [2, 4, 0]
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
+            rmakers.TupletSpecifier(extract_trivial=True),
             beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             extra_counts_per_division=extra_counts_per_division,
             talea=rmakers.Talea(counts=counts, denominator=16),
