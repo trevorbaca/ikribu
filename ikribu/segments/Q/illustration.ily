@@ -1397,49 +1397,44 @@ Q_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 1/1 {                                                               %! ikribu.inscription_rhythm
+    % [Q Cello_Music_Voice measure 249 / measure 3]                            %! _comment_measure_numbers
+    a16                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
-        % [Q Cello_Music_Voice measure 249 / measure 3]                        %! _comment_measure_numbers
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
+    r8                                                                         %! ikribu.inscription_rhythm
 
-        r8                                                                     %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    [                                                                          %! ikribu.inscription_rhythm
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        [                                                                      %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
-        a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
+    a16                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
+    r2                                                                         %! ikribu.inscription_rhythm
 
-        r2                                                                     %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm
 
-        r8                                                                     %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    [                                                                          %! ikribu.inscription_rhythm
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        [                                                                      %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
+    r16                                                                        %! ikribu.inscription_rhythm
 
-        r16                                                                    %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    [                                                                          %! ikribu.inscription_rhythm
 
-        a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        [                                                                      %! ikribu.inscription_rhythm
-
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
-
-    }                                                                          %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
     \times 6/7 {                                                               %! ikribu.inscription_rhythm
@@ -1488,38 +1483,33 @@ Q_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 1/1 {                                                               %! ikribu.inscription_rhythm
+    % [Q Cello_Music_Voice measure 252 / measure 6]                            %! _comment_measure_numbers
+    a16                                                                        %! ikribu.inscription_rhythm
+    \repeatTie
+    [                                                                          %! ikribu.inscription_rhythm
 
-        % [Q Cello_Music_Voice measure 252 / measure 6]                        %! _comment_measure_numbers
-        a16                                                                    %! ikribu.inscription_rhythm
-        \repeatTie
-        [                                                                      %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
+    r1                                                                         %! ikribu.inscription_rhythm
 
-        r1                                                                     %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm
 
-        r8                                                                     %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    [                                                                          %! ikribu.inscription_rhythm
 
-        a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        [                                                                      %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm
 
-        r8                                                                     %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-
-        r8.                                                                    %! ikribu.inscription_rhythm
-
-    }                                                                          %! ikribu.inscription_rhythm
+    r8.                                                                        %! ikribu.inscription_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
     \times 14/15 {                                                             %! ikribu.inscription_rhythm
@@ -1574,28 +1564,23 @@ Q_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 1/1 {                                                               %! ikribu.inscription_rhythm
+    % [Q Cello_Music_Voice measure 255 / measure 9]                            %! _comment_measure_numbers
+    a16                                                                        %! ikribu.inscription_rhythm
+    \repeatTie
+    [                                                                          %! ikribu.inscription_rhythm
 
-        % [Q Cello_Music_Voice measure 255 / measure 9]                        %! _comment_measure_numbers
-        a16                                                                    %! ikribu.inscription_rhythm
-        \repeatTie
-        [                                                                      %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
+    a16                                                                        %! ikribu.inscription_rhythm
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ]                                                                          %! ikribu.inscription_rhythm
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent:IndicatorCommand
-        ]                                                                      %! ikribu.inscription_rhythm
+    r16                                                                        %! ikribu.inscription_rhythm
 
-        r16                                                                    %! ikribu.inscription_rhythm
+    r2                                                                         %! ikribu.inscription_rhythm
 
-        r2                                                                     %! ikribu.inscription_rhythm
-
-        r8.                                                                    %! ikribu.inscription_rhythm
-
-    }                                                                          %! ikribu.inscription_rhythm
+    r8.                                                                        %! ikribu.inscription_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
     \times 6/7 {                                                               %! ikribu.inscription_rhythm
