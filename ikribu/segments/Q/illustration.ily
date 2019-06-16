@@ -271,7 +271,7 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -291,111 +291,111 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [Q Bass_Clarinet_Music_Voice measure 248 / measure 2]                    %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [Q Bass_Clarinet_Music_Voice measure 249 / measure 3]                    %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [Q Bass_Clarinet_Music_Voice measure 250 / measure 4]                    %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [Q Bass_Clarinet_Music_Voice measure 251 / measure 5]                    %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [Q Bass_Clarinet_Music_Voice measure 252 / measure 6]                    %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -597,7 +597,7 @@ Q_Violin_Music_Voice = {                                                       %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
@@ -613,159 +613,159 @@ Q_Violin_Music_Voice = {                                                       %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 248 / measure 2]                           %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 249 / measure 3]                           %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 250 / measure 4]                           %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 251 / measure 5]                           %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 252 / measure 6]                           %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 253 / measure 7]                           %! _comment_measure_numbers
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 254 / measure 8]                           %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Violin_Music_Voice measure 255 / measure 9]                           %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
 
@@ -956,7 +956,7 @@ Q_Viola_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
@@ -972,159 +972,159 @@ Q_Viola_Music_Voice = {                                                        %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 248 / measure 2]                            %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 249 / measure 3]                            %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 250 / measure 4]                            %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 251 / measure 5]                            %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 252 / measure 6]                            %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 253 / measure 7]                            %! _comment_measure_numbers
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 254 / measure 8]                            %! _comment_measure_numbers
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
     % [Q Viola_Music_Voice measure 255 / measure 9]                            %! _comment_measure_numbers
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    c''4                                                                       %! baca_make_repeated_duration_notes
+    c''4                                                                       %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
 
-    a'4                                                                        %! baca_make_repeated_duration_notes
+    a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
 

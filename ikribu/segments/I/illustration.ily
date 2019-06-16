@@ -885,7 +885,7 @@ I_Cello_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -909,10 +909,10 @@ I_Cello_Music_Voice = {                                                        %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -943,12 +943,12 @@ I_Cello_Music_Voice = {                                                        %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -979,12 +979,12 @@ I_Cello_Music_Voice = {                                                        %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -1015,12 +1015,12 @@ I_Cello_Music_Voice = {                                                        %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    b'4                                                                        %! baca_make_tied_reepated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container

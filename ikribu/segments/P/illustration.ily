@@ -210,7 +210,7 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'''2.                                                                     %! baca_make_repeat_tied_notes
+    c'''2.                                                                     %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -227,15 +227,15 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [P Bass_Clarinet_Music_Voice measure 240 / measure 2]                    %! _comment_measure_numbers
-    c'''2                                                                      %! baca_make_repeat_tied_notes
+    c'''2                                                                      %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [P Bass_Clarinet_Music_Voice measure 241 / measure 3]                    %! _comment_measure_numbers
-    c'''1..                                                                    %! baca_make_repeat_tied_notes
+    c'''1..                                                                    %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [P Bass_Clarinet_Music_Voice measure 242 / measure 4]                    %! _comment_measure_numbers
-    c'''1..                                                                    %! baca_make_repeat_tied_notes
+    c'''1..                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \repeatTie
@@ -243,7 +243,7 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 
     % [P Bass_Clarinet_Music_Voice measure 243 / measure 5]                    %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #9                            %! baca.dls_staff_padding:OverrideCommand(1)
-    c'''4                                                                      %! baca_make_repeated_duration_notes
+    c'''4                                                                      %! baca.make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -251,37 +251,37 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
-    a''4                                                                       %! baca_make_repeated_duration_notes
+    a''4                                                                       %! baca.make_repeated_duration_notes
 
-    f''4                                                                       %! baca_make_repeated_duration_notes
+    f''4                                                                       %! baca.make_repeated_duration_notes
 
-    d''4                                                                       %! baca_make_repeated_duration_notes
+    d''4                                                                       %! baca.make_repeated_duration_notes
 
-    b'4                                                                        %! baca_make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes
 
-    g'4                                                                        %! baca_make_repeated_duration_notes
+    g'4                                                                        %! baca.make_repeated_duration_notes
 
-    e'4                                                                        %! baca_make_repeated_duration_notes
+    e'4                                                                        %! baca.make_repeated_duration_notes
 
-    c'4                                                                        %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca.make_repeated_duration_notes
 
     % [P Bass_Clarinet_Music_Voice measure 244 / measure 6]                    %! _comment_measure_numbers
-    b4                                                                         %! baca_make_repeated_duration_notes
+    b4                                                                         %! baca.make_repeated_duration_notes
 
-    a4                                                                         %! baca_make_repeated_duration_notes
+    a4                                                                         %! baca.make_repeated_duration_notes
 
-    g4                                                                         %! baca_make_repeated_duration_notes
+    g4                                                                         %! baca.make_repeated_duration_notes
 
-    f4                                                                         %! baca_make_repeated_duration_notes
+    f4                                                                         %! baca.make_repeated_duration_notes
 
-    e4                                                                         %! baca_make_repeated_duration_notes
+    e4                                                                         %! baca.make_repeated_duration_notes
 
-    d4                                                                         %! baca_make_repeated_duration_notes
+    d4                                                                         %! baca.make_repeated_duration_notes
 
-    cs!4                                                                       %! baca_make_repeated_duration_notes
+    cs!4                                                                       %! baca.make_repeated_duration_notes
 
     % [P Bass_Clarinet_Music_Voice measure 245 / measure 7]                    %! _comment_measure_numbers
-    cs!2.                                                                      %! baca_make_repeat_tied_notes
+    cs!2.                                                                      %! baca.make_repeat_tied_notes
     \repeatTie                                                                 %! TieCorrectionCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
@@ -364,7 +364,7 @@ P_Violin_RH_Music_Voice = {                                                    %
         \once \override RHStaff.StaffSymbol.line-count = 1                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \startStaff                                                            %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \override Script.staff-padding = #7                                    %! baca.script_staff_padding:OverrideCommand(1)
-        \override TextSpanner.staff-padding = #4                               %! baca_text_spanner_staff_padding:OverrideCommand(1)
+        \override TextSpanner.staff-padding = #4                               %! baca.text_spanner_staff_padding:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #9                        %! baca.dls_staff_padding:OverrideCommand(1)
         \clef "percussion"                                                     %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)              %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -620,7 +620,7 @@ P_Violin_RH_Music_Voice = {                                                    %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(1)
         \revert Script.staff-padding                                           %! baca.script_staff_padding:OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
@@ -881,7 +881,7 @@ P_Viola_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \override Script.staff-padding = #7                                        %! baca.script_staff_padding:OverrideCommand(1)
-    \override TextSpanner.staff-padding = #4                                   %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #4                                   %! baca.text_spanner_staff_padding:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #9                            %! baca.dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1156,7 +1156,7 @@ P_Viola_RH_Music_Voice = {                                                     %
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(1)
     \revert Script.staff-padding                                               %! baca.script_staff_padding:OverrideCommand(2)
-    \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -1401,7 +1401,7 @@ P_Cello_RH_Music_Voice = {                                                     %
         \once \override RHStaff.StaffSymbol.line-count = 1                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \startStaff                                                            %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \override Script.staff-padding = #7                                    %! baca.script_staff_padding:OverrideCommand(1)
-        \override TextSpanner.staff-padding = #4                               %! baca_text_spanner_staff_padding:OverrideCommand(1)
+        \override TextSpanner.staff-padding = #4                               %! baca.text_spanner_staff_padding:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #9                        %! baca.dls_staff_padding:OverrideCommand(1)
         \clef "percussion"                                                     %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)              %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1653,7 +1653,7 @@ P_Cello_RH_Music_Voice = {                                                     %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(1)
         \revert Script.staff-padding                                           %! baca.script_staff_padding:OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                      %! baca_text_spanner_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
