@@ -506,7 +506,7 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 225 / measure 8]                    %! _comment_measure_numbers
-    c\breve                                                                    %! baca_make_repeat_tied_notes
+    c\breve                                                                    %! baca.make_repeat_tied_notes
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 226 / measure 9]                    %! _comment_measure_numbers
@@ -530,7 +530,7 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 231 / measure 14]                   %! _comment_measure_numbers
-    c1                                                                         %! baca_make_repeat_tied_notes
+    c1                                                                         %! baca.make_repeat_tied_notes
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 232 / measure 15]                   %! _comment_measure_numbers
@@ -550,7 +550,7 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 236 / measure 19]                   %! _comment_measure_numbers
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c2.                                                                        %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -560,7 +560,7 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie                                                                 %! baca.repeat_tie
 
     % [O Bass_Clarinet_Music_Voice measure 237 / measure 20]                   %! _comment_measure_numbers
-    c1                                                                         %! baca_make_repeat_tied_notes
+    c1                                                                         %! baca.make_repeat_tied_notes
     \repeatTie                                                                 %! baca.repeat_tie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -829,7 +829,7 @@ O_Violin_Music_Voice = {                                                       %
     R1 * 2                                                                     %! _make_measure_silences
 
     % [O Violin_Music_Voice measure 226 / measure 9]                           %! _comment_measure_numbers
-    \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #2.5                                 %! baca.text_spanner_staff_padding:OverrideCommand(1)
     <e' fs'!>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -903,7 +903,7 @@ O_Violin_Music_Voice = {                                                       %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
-    \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1169,7 +1169,7 @@ O_Viola_Music_Voice = {                                                        %
     R1 * 2                                                                     %! _make_measure_silences
 
     % [O Viola_Music_Voice measure 226 / measure 9]                            %! _comment_measure_numbers
-    \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #2.5                                 %! baca.text_spanner_staff_padding:OverrideCommand(1)
     <ef'! f'>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1243,7 +1243,7 @@ O_Viola_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
-    \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1499,8 +1499,8 @@ O_Cello_Music_Voice = {                                                        %
     % [O Cello_Music_Voice measure 222 / measure 5]                            %! _comment_measure_numbers
     \override Staff.OttavaBracket.staff-padding = #10                          %! baca.ottava_bracket_staff_padding:OverrideCommand(1)
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
-    \override TextSpanner.staff-padding = #2.5                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
-    bf,,,!2                                                                    %! baca_make_repeat_tied_notes
+    \override TextSpanner.staff-padding = #2.5                                 %! baca.text_spanner_staff_padding:OverrideCommand(1)
+    bf,,,!2                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1513,7 +1513,7 @@ O_Cello_Music_Voice = {                                                        %
     \startTextSpan                                                             %! baca.text_spanner:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 223 / measure 6]                            %! _comment_measure_numbers
-    bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
+    bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1521,7 +1521,7 @@ O_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 224 / measure 7]                            %! _comment_measure_numbers
-    bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
+    bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1529,7 +1529,7 @@ O_Cello_Music_Voice = {                                                        %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 225 / measure 8]                            %! _comment_measure_numbers
-    bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
+    bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1538,7 +1538,7 @@ O_Cello_Music_Voice = {                                                        %
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 226 / measure 9]                            %! _comment_measure_numbers
-    bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
+    bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1552,7 +1552,7 @@ O_Cello_Music_Voice = {                                                        %
     \startTextSpan                                                             %! baca.text_spanner:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 227 / measure 10]                           %! _comment_measure_numbers
-    bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
+    bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1560,7 +1560,7 @@ O_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 228 / measure 11]                           %! _comment_measure_numbers
-    bf,,,!2                                                                    %! baca_make_repeat_tied_notes
+    bf,,,!2                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1568,7 +1568,7 @@ O_Cello_Music_Voice = {                                                        %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 229 / measure 12]                           %! _comment_measure_numbers
-    bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
+    bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1577,7 +1577,7 @@ O_Cello_Music_Voice = {                                                        %
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 230 / measure 13]                           %! _comment_measure_numbers
-    bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
+    bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1591,7 +1591,7 @@ O_Cello_Music_Voice = {                                                        %
     \startTextSpan                                                             %! baca.text_spanner:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 231 / measure 14]                           %! _comment_measure_numbers
-    bf,,,!1                                                                    %! baca_make_repeat_tied_notes
+    bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1599,7 +1599,7 @@ O_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 232 / measure 15]                           %! _comment_measure_numbers
-    bf,,,!1                                                                    %! baca_make_repeat_tied_notes
+    bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1607,7 +1607,7 @@ O_Cello_Music_Voice = {                                                        %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 233 / measure 16]                           %! _comment_measure_numbers
-    bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
+    bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1616,7 +1616,7 @@ O_Cello_Music_Voice = {                                                        %
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
 
     % [O Cello_Music_Voice measure 234 / measure 17]                           %! _comment_measure_numbers
-    bf,,,!1..                                                                  %! baca_make_repeat_tied_notes
+    bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1630,7 +1630,7 @@ O_Cello_Music_Voice = {                                                        %
     \startTextSpan                                                             %! baca.text_spanner:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 235 / measure 18]                           %! _comment_measure_numbers
-    bf,,,!\breve                                                               %! baca_make_repeat_tied_notes
+    bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1638,7 +1638,7 @@ O_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 236 / measure 19]                           %! _comment_measure_numbers
-    bf,,,!2.                                                                   %! baca_make_repeat_tied_notes
+    bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -1646,14 +1646,14 @@ O_Cello_Music_Voice = {                                                        %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [O Cello_Music_Voice measure 237 / measure 20]                           %! _comment_measure_numbers
-    bf,,,!1                                                                    %! baca_make_repeat_tied_notes
+    bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
     \revert Staff.OttavaBracket.staff-padding                                  %! baca.ottava_bracket_staff_padding:OverrideCommand(2)
     \ottava 0                                                                  %! baca.ottava_bassa:SpannerIndicatorCommand(2)
-    \revert TextSpanner.staff-padding                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 

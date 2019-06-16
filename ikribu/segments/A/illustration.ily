@@ -176,7 +176,7 @@ A_Bass_Clarinet_Music_Voice = {                                                %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    e\breve                                                                    %! baca_make_repeat_tied_notes
+    e\breve                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -193,13 +193,13 @@ A_Bass_Clarinet_Music_Voice = {                                                %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Bass_Clarinet_Music_Voice measure 4 / measure 2]                      %! _comment_measure_numbers
-    e1..                                                                       %! baca_make_repeat_tied_notes
+    e1..                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \repeatTie
 
     % [A Bass_Clarinet_Music_Voice measure 5 / measure 3]                      %! _comment_measure_numbers
-    e1                                                                         %! baca_make_repeat_tied_notes
+    e1                                                                         %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -209,11 +209,11 @@ A_Bass_Clarinet_Music_Voice = {                                                %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [A Bass_Clarinet_Music_Voice measure 6 / measure 4]                      %! _comment_measure_numbers
-    e1                                                                         %! baca_make_repeat_tied_notes
+    e1                                                                         %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [A Bass_Clarinet_Music_Voice measure 7 / measure 5]                      %! _comment_measure_numbers
-    e2.                                                                        %! baca_make_repeat_tied_notes
+    e2.                                                                        %! baca.make_repeat_tied_notes
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -604,7 +604,7 @@ A_Viola_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak X-extent #'(0 . 0)                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak extra-offset #'(-3 . 0)                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -621,58 +621,58 @@ A_Viola_Music_Voice = {                                                        %
         }                                                                      %! baca.markup:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [A Viola_Music_Voice measure 6 / measure 4]                              %! _comment_measure_numbers
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [A Viola_Music_Voice measure 7 / measure 5]                              %! _comment_measure_numbers
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
     % [A Viola_Music_Voice measure 8 / measure 6]                              %! _comment_measure_numbers
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
 
-    c'4                                                                        %! baca_make_tied_reepated_durations
+    c'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
