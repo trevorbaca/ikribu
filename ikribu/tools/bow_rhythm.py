@@ -14,12 +14,10 @@ def bow_rhythm(
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
             *specifiers,
+            rmakers.TupletSpecifier(extract_trivial=True, force_fraction=True),
             rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[4],
             extra_counts_per_division=extra_counts_per_division,
-            tuplet_specifier=rmakers.TupletSpecifier(
-                extract_trivial=True, force_fraction=True
-            ),
         ),
         tag="ikribu.bow_rhythm",
     )
