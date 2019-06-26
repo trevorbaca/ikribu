@@ -10,7 +10,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             rmakers.TupletSpecifier(
-                denominator="divisions",
+                denominator=(1, 4),
                 diminution=True,
                 extract_trivial=True,
                 force_fraction=True,
