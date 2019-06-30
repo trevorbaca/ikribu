@@ -15,11 +15,11 @@ def glissando_rhythm(
     extra_counts = extra_counts.rotate(n=rotation_2)
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
             rmakers.TupletSpecifier(
                 denominator=(1, 8), extract_trivial=True, force_fraction=True
             ),
-            rmakers.BeamSpecifier(beam_each_division=True),
             extra_counts_per_division=extra_counts,
             talea=rmakers.Talea(counts=counts, denominator=16),
         ),

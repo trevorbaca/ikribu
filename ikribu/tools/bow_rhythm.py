@@ -14,8 +14,8 @@ def bow_rhythm(
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
             *specifiers,
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True, force_fraction=True),
-            rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[4],
             extra_counts_per_division=extra_counts_per_division,
         ),
