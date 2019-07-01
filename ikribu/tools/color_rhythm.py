@@ -16,9 +16,7 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
                 trivialize=True,
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(
-                extract_trivial=True,
-            ),
+            rmakers.TupletSpecifier(extract_trivial=True),
             tuplet_ratios=[tuple(n * [1])],
         ),
         tag="ikribu.color_rhythm",
