@@ -558,68 +558,38 @@ G_Violin_RH_Music_Voice = {                                                    %
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 88 / measure 2]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 88 / measure 2]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_RH_Music_Voice measure 89 / measure 3]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 90 / measure 4]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 90 / measure 4]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_RH_Music_Voice measure 91 / measure 5]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 92 / measure 6]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 92 / measure 6]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_RH_Music_Voice measure 93 / measure 7]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 94 / measure 8]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 94 / measure 8]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_RH_Music_Voice measure 95 / measure 9]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 96 / measure 10]                    %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 96 / measure 10]                        %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_RH_Music_Voice measure 97 / measure 11]                        %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_RH_Music_Voice measure 98 / measure 12]                    %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_RH_Music_Voice measure 98 / measure 12]                        %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -696,68 +666,38 @@ G_Violin_Music_Voice = {                                                       %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 88 / measure 2]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 88 / measure 2]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_Music_Voice measure 89 / measure 3]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 90 / measure 4]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 90 / measure 4]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_Music_Voice measure 91 / measure 5]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 92 / measure 6]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 92 / measure 6]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_Music_Voice measure 93 / measure 7]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 94 / measure 8]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 94 / measure 8]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_Music_Voice measure 95 / measure 9]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 96 / measure 10]                       %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 96 / measure 10]                           %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Violin_Music_Voice measure 97 / measure 11]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Violin_Music_Voice measure 98 / measure 12]                       %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Violin_Music_Voice measure 98 / measure 12]                           %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -810,68 +750,38 @@ G_Viola_RH_Music_Voice = {                                                     %
     R1 * 7/4                                                                   %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 88 / measure 2]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 88 / measure 2]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_RH_Music_Voice measure 89 / measure 3]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 90 / measure 4]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 90 / measure 4]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_RH_Music_Voice measure 91 / measure 5]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 92 / measure 6]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 92 / measure 6]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_RH_Music_Voice measure 93 / measure 7]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 94 / measure 8]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 94 / measure 8]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_RH_Music_Voice measure 95 / measure 9]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 96 / measure 10]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 96 / measure 10]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_RH_Music_Voice measure 97 / measure 11]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_RH_Music_Voice measure 98 / measure 12]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_RH_Music_Voice measure 98 / measure 12]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -948,68 +858,38 @@ G_Viola_Music_Voice = {                                                        %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 88 / measure 2]                         %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 88 / measure 2]                             %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_Music_Voice measure 89 / measure 3]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 90 / measure 4]                         %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 90 / measure 4]                             %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_Music_Voice measure 91 / measure 5]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 92 / measure 6]                         %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 92 / measure 6]                             %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_Music_Voice measure 93 / measure 7]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 94 / measure 8]                         %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 94 / measure 8]                             %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_Music_Voice measure 95 / measure 9]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 96 / measure 10]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 96 / measure 10]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Viola_Music_Voice measure 97 / measure 11]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Viola_Music_Voice measure 98 / measure 12]                        %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Viola_Music_Voice measure 98 / measure 12]                            %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1064,68 +944,38 @@ G_Cello_RH_Music_Voice = {                                                     %
     \pp                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 88 / measure 2]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 88 / measure 2]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Cello_RH_Music_Voice measure 89 / measure 3]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 90 / measure 4]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 90 / measure 4]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Cello_RH_Music_Voice measure 91 / measure 5]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 92 / measure 6]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 92 / measure 6]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Cello_RH_Music_Voice measure 93 / measure 7]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 94 / measure 8]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 94 / measure 8]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Cello_RH_Music_Voice measure 95 / measure 9]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 96 / measure 10]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 96 / measure 10]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [G Cello_RH_Music_Voice measure 97 / measure 11]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [G Cello_RH_Music_Voice measure 98 / measure 12]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [G Cello_RH_Music_Voice measure 98 / measure 12]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
