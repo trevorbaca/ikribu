@@ -749,13 +749,8 @@ C_Violin_RH_Music_Voice = {                                                    %
     % [C Violin_RH_Music_Voice measure 38 / measure 4]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Violin_RH_Music_Voice measure 39 / measure 5]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Violin_RH_Music_Voice measure 39 / measure 5]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 40 / measure 6]                         %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -766,13 +761,8 @@ C_Violin_RH_Music_Voice = {                                                    %
     % [C Violin_RH_Music_Voice measure 42 / measure 8]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Violin_RH_Music_Voice measure 43 / measure 9]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Violin_RH_Music_Voice measure 43 / measure 9]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 44 / measure 10]                        %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -783,13 +773,8 @@ C_Violin_RH_Music_Voice = {                                                    %
     % [C Violin_RH_Music_Voice measure 46 / measure 12]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Violin_RH_Music_Voice measure 47 / measure 13]                    %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Violin_RH_Music_Voice measure 47 / measure 13]                        %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Violin_RH_Music_Voice measure 48 / measure 14]                        %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -800,13 +785,8 @@ C_Violin_RH_Music_Voice = {                                                    %
     % [C Violin_RH_Music_Voice measure 50 / measure 16]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Violin_RH_Music_Voice measure 51 / measure 17]                    %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Violin_RH_Music_Voice measure 51 / measure 17]                        %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1139,13 +1119,8 @@ C_Viola_RH_Music_Voice = {                                                     %
     % [C Viola_RH_Music_Voice measure 38 / measure 4]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Viola_RH_Music_Voice measure 39 / measure 5]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Viola_RH_Music_Voice measure 39 / measure 5]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 40 / measure 6]                          %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1156,13 +1131,8 @@ C_Viola_RH_Music_Voice = {                                                     %
     % [C Viola_RH_Music_Voice measure 42 / measure 8]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Viola_RH_Music_Voice measure 43 / measure 9]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Viola_RH_Music_Voice measure 43 / measure 9]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 44 / measure 10]                         %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1173,13 +1143,8 @@ C_Viola_RH_Music_Voice = {                                                     %
     % [C Viola_RH_Music_Voice measure 46 / measure 12]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Viola_RH_Music_Voice measure 47 / measure 13]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Viola_RH_Music_Voice measure 47 / measure 13]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Viola_RH_Music_Voice measure 48 / measure 14]                         %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1190,13 +1155,8 @@ C_Viola_RH_Music_Voice = {                                                     %
     % [C Viola_RH_Music_Voice measure 50 / measure 16]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Viola_RH_Music_Voice measure 51 / measure 17]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Viola_RH_Music_Voice measure 51 / measure 17]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1508,13 +1468,8 @@ C_Cello_RH_Music_Voice = {                                                     %
     % [C Cello_RH_Music_Voice measure 38 / measure 4]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Cello_RH_Music_Voice measure 39 / measure 5]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Cello_RH_Music_Voice measure 39 / measure 5]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 40 / measure 6]                          %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1525,13 +1480,8 @@ C_Cello_RH_Music_Voice = {                                                     %
     % [C Cello_RH_Music_Voice measure 42 / measure 8]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Cello_RH_Music_Voice measure 43 / measure 9]                      %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Cello_RH_Music_Voice measure 43 / measure 9]                          %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 44 / measure 10]                         %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1542,13 +1492,8 @@ C_Cello_RH_Music_Voice = {                                                     %
     % [C Cello_RH_Music_Voice measure 46 / measure 12]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Cello_RH_Music_Voice measure 47 / measure 13]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Cello_RH_Music_Voice measure 47 / measure 13]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     % [C Cello_RH_Music_Voice measure 48 / measure 14]                         %! _comment_measure_numbers
     R1 * 1/1                                                                   %! _call_rhythm_commands
@@ -1559,13 +1504,8 @@ C_Cello_RH_Music_Voice = {                                                     %
     % [C Cello_RH_Music_Voice measure 50 / measure 16]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [C Cello_RH_Music_Voice measure 51 / measure 17]                     %! _comment_measure_numbers
-        R1 * 1/4                                                               %! _call_rhythm_commands
-
-    }
+    % [C Cello_RH_Music_Voice measure 51 / measure 17]                         %! _comment_measure_numbers
+    R1 * 1/6                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
