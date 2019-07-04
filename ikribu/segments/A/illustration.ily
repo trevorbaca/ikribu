@@ -299,17 +299,17 @@ A_Violin_RH_Music_Voice = {                                                    %
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Violin_RH_Music_Voice measure 4 / measure 2]                          %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_RH_Music_Voice measure 5 / measure 3]                          %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_RH_Music_Voice measure 6 / measure 4]                          %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_RH_Music_Voice measure 7 / measure 5]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -389,7 +389,7 @@ A_Violin_Music_Voice = {                                                       %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -407,10 +407,10 @@ A_Violin_Music_Voice = {                                                       %
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_Music_Voice measure 5 / measure 3]                             %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_Music_Voice measure 6 / measure 4]                             %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Violin_Music_Voice measure 7 / measure 5]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -476,17 +476,17 @@ A_Viola_RH_Music_Voice = {                                                     %
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Viola_RH_Music_Voice measure 4 / measure 2]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [A Viola_RH_Music_Voice measure 5 / measure 3]                           %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Viola_RH_Music_Voice measure 6 / measure 4]                           %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Viola_RH_Music_Voice measure 7 / measure 5]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -752,17 +752,17 @@ A_Cello_RH_Music_Voice = {                                                     %
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Cello_RH_Music_Voice measure 4 / measure 2]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_RH_Music_Voice measure 5 / measure 3]                           %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_RH_Music_Voice measure 6 / measure 4]                           %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_RH_Music_Voice measure 7 / measure 5]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -836,7 +836,7 @@ A_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \sfz                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -854,10 +854,10 @@ A_Cello_Music_Voice = {                                                        %
     R1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_Music_Voice measure 5 / measure 3]                              %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_Music_Voice measure 6 / measure 4]                              %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A Cello_Music_Voice measure 7 / measure 5]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
