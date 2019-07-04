@@ -556,19 +556,19 @@ J_Violin_RH_Music_Voice = {                                                    %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [J Violin_RH_Music_Voice measure 117 / measure 2]                        %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 118 / measure 3]                        %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 119 / measure 4]                        %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 120 / measure 5]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 121 / measure 6]                        %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 122 / measure 7]                        %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
@@ -586,7 +586,7 @@ J_Violin_RH_Music_Voice = {                                                    %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 126 / measure 11]                       %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(1)
@@ -943,19 +943,19 @@ J_Viola_RH_Music_Voice = {                                                     %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [J Viola_RH_Music_Voice measure 117 / measure 2]                         %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 118 / measure 3]                         %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 119 / measure 4]                         %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 120 / measure 5]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 121 / measure 6]                         %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 122 / measure 7]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
@@ -973,7 +973,7 @@ J_Viola_RH_Music_Voice = {                                                     %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 126 / measure 11]                        %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(1)
@@ -1339,19 +1339,19 @@ J_Cello_RH_Music_Voice = {                                                     %
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [J Cello_RH_Music_Voice measure 117 / measure 2]                         %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 118 / measure 3]                         %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 119 / measure 4]                         %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 120 / measure 5]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 121 / measure 6]                         %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 122 / measure 7]                         %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _call_rhythm_commands
@@ -1369,7 +1369,7 @@ J_Cello_RH_Music_Voice = {                                                     %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 126 / measure 11]                        %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(1)
