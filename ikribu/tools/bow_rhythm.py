@@ -18,6 +18,6 @@ def bow_rhythm(
             rmakers.TupletSpecifier(extract_trivial=True, force_fraction=True),
             denominators=[4],
             extra_counts_per_division=extra_counts_per_division,
-        ),
-        tag="ikribu.bow_rhythm",
+            tag="ikribu.bow_rhythm",
+        )
     )

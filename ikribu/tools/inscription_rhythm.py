@@ -19,7 +19,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
             rmakers.TupletSpecifier(extract_trivial=True),
             rmakers.TieSpecifier(repeat_ties=True),
             extra_counts_per_division=extra_counts_per_division,
+            tag="ikribu.inscription_rhythm",
             talea=rmakers.Talea(counts=counts, denominator=16),
-        ),
-        tag="ikribu.inscription_rhythm",
+        )
     )
