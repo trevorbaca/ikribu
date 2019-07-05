@@ -13,6 +13,7 @@ def bcl_color_rhythm(
     counts = counts.rotate(n=rotation_1)
     extra_counts_per_division = abjad.sequence([2, 4, 0])
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation_2)
+
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
             rmakers.BeamSpecifier(selector=baca.tuplets()),

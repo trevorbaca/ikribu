@@ -13,6 +13,7 @@ def glissando_rhythm(
     counts = counts.rotate(n=rotation_1)
     extra_counts = abjad.sequence([2, 4, 0])
     extra_counts = extra_counts.rotate(n=rotation_2)
+
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
             rmakers.BeamSpecifier(selector=baca.tuplets()),

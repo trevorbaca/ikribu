@@ -13,6 +13,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     counts = counts.helianthate(-1, -1)
     counts = counts.flatten()
     extra_counts_per_division = [2, 4, 0]
+
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
             rmakers.BeamSpecifier(selector=baca.tuplets()),
