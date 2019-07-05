@@ -18,7 +18,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
                 rewrite_dots=True,
                 trivialize=True,
             ),
+            tag="ikribu.triplet_rhythm",
             tuplet_ratios=[(1, 1, 1)],
-        ),
-        tag="ikribu.triplet_rhythm",
+        )
     )

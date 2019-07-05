@@ -21,7 +21,7 @@ def glissando_rhythm(
                 denominator=(1, 8), extract_trivial=True, force_fraction=True
             ),
             extra_counts_per_division=extra_counts,
+            tag="ikribu.glissando_rhythm",
             talea=rmakers.Talea(counts=counts, denominator=16),
-        ),
-        tag="ikribu.glissando_rhythm",
+        )
     )
