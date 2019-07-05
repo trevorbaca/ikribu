@@ -11,6 +11,7 @@ def bow_rhythm(
     """
     extra_counts_per_division = abjad.sequence([-1, 0, 1, 2])
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation)
+
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
             *specifiers,
