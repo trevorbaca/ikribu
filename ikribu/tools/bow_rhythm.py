@@ -13,12 +13,15 @@ def bow_rhythm(
     extra_counts_per_division = extra_counts_per_division.rotate(n=rotation)
 
     return baca.rhythm(
-        rhythm_maker=rmakers.EvenDivisionRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.EvenDivisionRhythmMaker(
+                denominators=[4],
+                extra_counts_per_division=extra_counts_per_division,
+                tag="ikribu.bow_rhythm",
+            ),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True, force_fraction=True),
-            denominators=[4],
-            extra_counts_per_division=extra_counts_per_division,
             tag="ikribu.bow_rhythm",
         )
     )
