@@ -282,7 +282,7 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 
     % [P Bass_Clarinet_Music_Voice measure 245 / measure 7]                    %! _comment_measure_numbers
     cs!2.                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! TieCorrectionCommand
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
