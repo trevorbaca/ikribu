@@ -154,11 +154,9 @@ maker(
     ('bcl', (1, -1)),
     baca.suite(
         baca.untie(baca.leaves()),
-        baca.repeat_tie(
-            selector=baca.pleaves(exclude=abjad.const.HIDDEN),
-        ),
+        baca.repeat_tie(baca.pleaves(exclude=abjad.const.HIDDEN)),
     ),
-)
+),
 
 maker(
     ('vn', (9, 20)),
