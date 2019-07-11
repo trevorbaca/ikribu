@@ -113,11 +113,7 @@ maker(
 maker(
     ('bcl', (6, 10)),
     baca.pitch('<Bb1 D4>'),
-    )
-
-maker(
-    ('bcl', (1, 10)),
-    baca.repeat_tie(selector=baca.tleaves())
+    baca.repeat_tie(selector=baca.phead(0)),
     )
 
 maker(

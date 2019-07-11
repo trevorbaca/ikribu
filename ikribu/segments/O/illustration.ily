@@ -472,6 +472,7 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -483,71 +484,71 @@ O_Bass_Clarinet_Music_Voice = {                                                %
 
     % [O Bass_Clarinet_Music_Voice measure 219 / measure 2]                    %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 220 / measure 3]                    %! _comment_measure_numbers
     <c g''>1
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 221 / measure 4]                    %! _comment_measure_numbers
     <c g''>2.
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 222 / measure 5]                    %! _comment_measure_numbers
     <c g''>2
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 223 / measure 6]                    %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 224 / measure 7]                    %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 225 / measure 8]                    %! _comment_measure_numbers
     c\breve                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 226 / measure 9]                    %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 227 / measure 10]                   %! _comment_measure_numbers
     <c g''>2.
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 228 / measure 11]                   %! _comment_measure_numbers
     <c btqf''!>2
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 229 / measure 12]                   %! _comment_measure_numbers
     <c btqf''!>\breve
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 230 / measure 13]                   %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 231 / measure 14]                   %! _comment_measure_numbers
     c1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 232 / measure 15]                   %! _comment_measure_numbers
     <c e''>1
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 233 / measure 16]                   %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 234 / measure 17]                   %! _comment_measure_numbers
     <c g''>1..
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 235 / measure 18]                   %! _comment_measure_numbers
     <c e''>\breve
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 236 / measure 19]                   %! _comment_measure_numbers
     c2.                                                                        %! baca.make_repeat_tied_notes
@@ -557,11 +558,11 @@ O_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     % [O Bass_Clarinet_Music_Voice measure 237 / measure 20]                   %! _comment_measure_numbers
     c1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.repeat_tie
+    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
 
