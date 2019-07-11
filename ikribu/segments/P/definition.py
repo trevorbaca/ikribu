@@ -62,7 +62,7 @@ maker(
             'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
             exact=True,
             ),
-        baca.tie_to(),
+        baca.tie(baca.lleaf(0)),
         ),
     )
 

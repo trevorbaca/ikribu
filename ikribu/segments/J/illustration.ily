@@ -1497,7 +1497,7 @@ J_Cello_Music_Voice = {                                                        %
     % [J Cello_Music_Voice measure 121 / measure 6]                            %! _comment_measure_numbers
     d,,\breve                                                                  %! baca.make_repeat_tied_notes
     \repeatTie
-    ~                                                                          %! TieCorrectionCommand
+    ~                                                                          %! baca.tie:IndicatorCommand
 
     % [J Cello_Music_Voice measure 122 / measure 7]                            %! _comment_measure_numbers
     d,,1..                                                                     %! baca.make_tied_repeated_durations

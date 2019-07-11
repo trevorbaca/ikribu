@@ -239,7 +239,7 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \repeatTie
-    ~                                                                          %! TieCorrectionCommand
+    ~                                                                          %! baca.tie:IndicatorCommand
 
     % [P Bass_Clarinet_Music_Voice measure 243 / measure 5]                    %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #9                            %! baca.dls_staff_padding:OverrideCommand(1)
