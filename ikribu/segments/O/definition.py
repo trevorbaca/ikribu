@@ -156,7 +156,7 @@ maker(
         baca.untie(baca.leaves()),
         baca.repeat_tie(baca.pleaves(exclude=abjad.const.HIDDEN)),
     ),
-),
+)
 
 maker(
     ('vn', (9, 20)),
