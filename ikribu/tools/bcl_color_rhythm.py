@@ -18,12 +18,11 @@ def bcl_color_rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
                 extra_counts_per_division=extra_counts_per_division,
-                tag="ikribu.bcl_color_rhythm",
                 talea=rmakers.Talea(counts=counts, denominator=8),
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True, trivialize=True),
             rmakers.TieSpecifier(repeat_ties=True),
-            tag="ikribu.bcl_color_rhythm",
-        )
+        ),
+        tag="ikribu.bcl_color_rhythm",
     )

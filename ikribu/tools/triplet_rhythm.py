@@ -9,9 +9,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(
-                tag="ikribu.triplet_rhythm", tuplet_ratios=[(1, 1, 1)]
-            ),
+            rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 denominator=(1, 4),
@@ -21,6 +19,6 @@ def triplet_rhythm() -> baca.RhythmCommand:
                 rewrite_dots=True,
                 trivialize=True,
             ),
-            tag="ikribu.triplet_rhythm",
-        )
+        ),
+        tag="ikribu.triplet_rhythm",
     )

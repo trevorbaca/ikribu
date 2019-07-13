@@ -18,12 +18,11 @@ def inscription_rhythm() -> baca.RhythmCommand:
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
                 extra_counts_per_division=extra_counts_per_division,
-                tag="ikribu.inscription_rhythm",
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
             rmakers.TieSpecifier(repeat_ties=True),
-            tag="ikribu.inscription_rhythm",
-        )
+        ),
+        tag="ikribu.inscription_rhythm",
     )
