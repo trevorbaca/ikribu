@@ -46,9 +46,7 @@ maker(
 maker(
     ('vn_rh', (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.SilenceMask(
-            selector=baca.lts()[abjad.index([0, 8], 12)],
-        ),
+        rmakers.SilenceMask(baca.lts()[abjad.index([0, 8], 12)]),
         rotation=0,
     ),
 )
@@ -64,9 +62,7 @@ pattern = abjad.Pattern([4, 14], period=16)| abjad.Pattern([-1])
 maker(
     ('va_rh', (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.SilenceMask(
-            selector=baca.lts()[pattern],
-        ),
+        rmakers.SilenceMask(baca.lts()[pattern]),
         rotation=-1,
     ),
 )
@@ -80,9 +76,7 @@ maker(
 maker(
     ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.SilenceMask(
-            selector=baca.lts()[abjad.index([8, 20], 20)],
-        ),
+        rmakers.SilenceMask(baca.lts()[abjad.index([8, 20], 20)]),
         rotation=-2,
     ),
 )

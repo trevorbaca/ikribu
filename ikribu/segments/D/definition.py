@@ -52,9 +52,7 @@ maker(
 maker(
     ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.SilenceMask(
-            selector=baca.lts()[abjad.index([8, 20], 20)],
-        ),
+        rmakers.SilenceMask(baca.lts()[abjad.index([8, 20], 20)]),
         rotation=-2,
     ),
 )
