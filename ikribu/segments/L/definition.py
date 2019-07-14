@@ -68,7 +68,7 @@ maker(
 
 maker(
     ('vn', (21, 32)),
-    baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(selector=baca.pheads().exclude([0, 4], 9)),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
     baca.hairpin(
@@ -76,7 +76,7 @@ maker(
         bookend=-1,
         pieces=baca.cmgroups(),
         ),
-    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(selector=baca.pheads().get([0, 4], 9)),
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -112,7 +112,7 @@ maker(
 
 maker(
     ('va', (13, 32)),
-    baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
+    baca.accent(selector=baca.pheads().exclude([0, 5], 11)),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
     baca.hairpin(
@@ -122,7 +122,7 @@ maker(
         pieces=baca.cmgroups(),
         ),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 5], 11)]),
+    baca.stem_tremolo(selector=baca.pheads().get([0, 5], 11)),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     ikribu.triplet_rhythm(),

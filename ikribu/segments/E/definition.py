@@ -120,7 +120,7 @@ maker(
         ],
     baca.accent(
         selector=baca.pheads(
-            exclude=abjad.const.HIDDEN)[~abjad.index([0, 4], 9)],
+            exclude=abjad.const.HIDDEN).exclude([0, 4], 9),
         ),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
@@ -134,7 +134,7 @@ maker(
     baca.staff_position(0),
     baca.stem_tremolo(
         selector=baca.pheads(
-            exclude=abjad.const.HIDDEN)[abjad.index([0, 4], 9)],
+            exclude=abjad.const.HIDDEN).get([0, 4], 9),
         ),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),

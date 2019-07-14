@@ -125,11 +125,11 @@ maker(
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs(exclude=abjad.const.HIDDEN)[abjad.index([0], 2)],
+        map=baca.runs(exclude=abjad.const.HIDDEN).get([0], 2),
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs(exclude=abjad.const.HIDDEN)[abjad.index([1], 2)],
+        map=baca.runs(exclude=abjad.const.HIDDEN).get([1], 2),
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches(
@@ -163,11 +163,11 @@ maker(
         ),
     baca.new(
         baca.hairpin('pp < p'),
-        map=baca.runs(exclude=abjad.const.HIDDEN)[abjad.index([0], 2)],
+        map=baca.runs(exclude=abjad.const.HIDDEN).get([0], 2),
         ),
     baca.new(
         baca.hairpin('p > pp'),
-        map=baca.runs(exclude=abjad.const.HIDDEN)[abjad.index([1], 2)],
+        map=baca.runs(exclude=abjad.const.HIDDEN).get([1], 2),
         ),
     baca.markup('trem. flaut. tast.'),
     baca.pitches(

@@ -211,8 +211,8 @@ maker(
         ['vn', 'va'], 
         [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
         ),
-    baca.accent(selector=baca.pheads()[~abjad.index([0], 2)]),
-    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0], 2)]),
+    baca.accent(selector=baca.pheads().exclude([0], 2)),
+    baca.stem_tremolo(selector=baca.pheads().get([0], 2)),
     )
 
 maker(
