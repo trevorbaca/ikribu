@@ -20,9 +20,9 @@ def glissando_rhythm(
                 extra_counts_per_division=extra_counts,
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
-            rmakers.TupletSpecifier(
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TieCommand(detach_ties=True, selector=baca.notes()),
+            rmakers.TupletCommand(
                 denominator=(1, 8), extract_trivial=True, force_fraction=True
             ),
         ),

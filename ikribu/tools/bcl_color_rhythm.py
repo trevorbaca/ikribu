@@ -20,9 +20,9 @@ def bcl_color_rhythm(
                 extra_counts_per_division=extra_counts_per_division,
                 talea=rmakers.Talea(counts=counts, denominator=8),
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True, trivialize=True),
-            rmakers.TieSpecifier(repeat_ties=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(extract_trivial=True, trivialize=True),
+            rmakers.TieCommand(repeat_ties=True),
         ),
         tag="ikribu.bcl_color_rhythm",
     )
