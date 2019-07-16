@@ -14,7 +14,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
             rmakers.denominator((1, 4)),
             rmakers.force_fraction(),
             rmakers.trivialize(),
-            rmakers.rewrite_tuplet_dots(),
+            rmakers.rewrite_dots(),
             rmakers.extract_trivial(),
             rmakers.force_diminution(),
         ),
