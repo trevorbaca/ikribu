@@ -196,13 +196,13 @@ A_Bass_Clarinet_Music_Voice = {                                                %
     e1..                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [A Bass_Clarinet_Music_Voice measure 5 / measure 3]                      %! _comment_measure_numbers
     e1                                                                         %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -210,11 +210,11 @@ A_Bass_Clarinet_Music_Voice = {                                                %
 
     % [A Bass_Clarinet_Music_Voice measure 6 / measure 4]                      %! _comment_measure_numbers
     e1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [A Bass_Clarinet_Music_Voice measure 7 / measure 5]                      %! _comment_measure_numbers
     e2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -622,58 +622,58 @@ A_Viola_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [A Viola_Music_Voice measure 6 / measure 4]                              %! _comment_measure_numbers
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [A Viola_Music_Voice measure 7 / measure 5]                              %! _comment_measure_numbers
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [A Viola_Music_Voice measure 8 / measure 6]                              %! _comment_measure_numbers
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
 

@@ -650,111 +650,111 @@ L_Bass_Clarinet_Music_Voice = {                                                %
 
     % [L Bass_Clarinet_Music_Voice measure 144 / measure 2]                    %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 145 / measure 3]                    %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 146 / measure 4]                    %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 147 / measure 5]                    %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 148 / measure 6]                    %! _comment_measure_numbers
     d2                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 149 / measure 7]                    %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 150 / measure 8]                    %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 151 / measure 9]                    %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 152 / measure 10]                   %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 153 / measure 11]                   %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 154 / measure 12]                   %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 155 / measure 13]                   %! _comment_measure_numbers
     d2                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 156 / measure 14]                   %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 157 / measure 15]                   %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 158 / measure 16]                   %! _comment_measure_numbers
     d\breve                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 159 / measure 17]                   %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 160 / measure 18]                   %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 161 / measure 19]                   %! _comment_measure_numbers
     d2                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 162 / measure 20]                   %! _comment_measure_numbers
     d\breve                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 163 / measure 21]                   %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 164 / measure 22]                   %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 165 / measure 23]                   %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 166 / measure 24]                   %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 167 / measure 25]                   %! _comment_measure_numbers
     d1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 168 / measure 26]                   %! _comment_measure_numbers
     d\breve                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 169 / measure 27]                   %! _comment_measure_numbers
     d2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [L Bass_Clarinet_Music_Voice measure 170 / measure 28]                   %! _comment_measure_numbers
     d1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3317,82 +3317,82 @@ L_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 144 / measure 2]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 145 / measure 3]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 146 / measure 4]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 147 / measure 5]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
@@ -3412,64 +3412,64 @@ L_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 148 / measure 6]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 149 / measure 7]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 150 / measure 8]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 151 / measure 9]                            %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
@@ -3489,58 +3489,58 @@ L_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 152 / measure 10]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 153 / measure 11]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 154 / measure 12]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 155 / measure 13]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
@@ -3560,88 +3560,88 @@ L_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 156 / measure 14]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 157 / measure 15]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 158 / measure 16]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 159 / measure 17]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
@@ -3661,76 +3661,76 @@ L_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 160 / measure 18]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 161 / measure 19]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 162 / measure 20]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 163 / measure 21]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
@@ -3750,72 +3750,72 @@ L_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 164 / measure 22]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 165 / measure 23]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [L Cello_Music_Voice measure 166 / measure 24]                           %! _comment_measure_numbers
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 

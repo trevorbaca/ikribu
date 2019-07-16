@@ -846,54 +846,54 @@ O_Violin_Music_Voice = {                                                       %
     % [O Violin_Music_Voice measure 227 / measure 10]                          %! _comment_measure_numbers
     <e' fs'!>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 228 / measure 11]                          %! _comment_measure_numbers
     <e' fs'!>2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 229 / measure 12]                          %! _comment_measure_numbers
     <e' fs'!>\breve
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 230 / measure 13]                          %! _comment_measure_numbers
     <e' fs'!>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 231 / measure 14]                          %! _comment_measure_numbers
     <e' fs'!>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 232 / measure 15]                          %! _comment_measure_numbers
     <e' fs'!>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 233 / measure 16]                          %! _comment_measure_numbers
     <e' fs'!>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 234 / measure 17]                          %! _comment_measure_numbers
     <e' fs'!>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 235 / measure 18]                          %! _comment_measure_numbers
     <e' fs'!>\breve
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Violin_Music_Voice measure 236 / measure 19]                          %! _comment_measure_numbers
     <e' fs'!>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -902,7 +902,7 @@ O_Violin_Music_Voice = {                                                       %
     % [O Violin_Music_Voice measure 237 / measure 20]                          %! _comment_measure_numbers
     <e' fs'!>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
 
@@ -1186,54 +1186,54 @@ O_Viola_Music_Voice = {                                                        %
     % [O Viola_Music_Voice measure 227 / measure 10]                           %! _comment_measure_numbers
     <ef'! f'>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 228 / measure 11]                           %! _comment_measure_numbers
     <ef'! f'>2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 229 / measure 12]                           %! _comment_measure_numbers
     <ef'! f'>\breve
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 230 / measure 13]                           %! _comment_measure_numbers
     <ef'! f'>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 231 / measure 14]                           %! _comment_measure_numbers
     <ef'! f'>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 232 / measure 15]                           %! _comment_measure_numbers
     <ef'! f'>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 233 / measure 16]                           %! _comment_measure_numbers
     <ef'! f'>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 234 / measure 17]                           %! _comment_measure_numbers
     <ef'! f'>1..
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 235 / measure 18]                           %! _comment_measure_numbers
     <ef'! f'>\breve
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [O Viola_Music_Voice measure 236 / measure 19]                           %! _comment_measure_numbers
     <ef'! f'>2.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppppp                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -1242,7 +1242,7 @@ O_Viola_Music_Voice = {                                                        %
     % [O Viola_Music_Voice measure 237 / measure 20]                           %! _comment_measure_numbers
     <ef'! f'>1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding:OverrideCommand(2)
 
@@ -1517,7 +1517,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1525,7 +1525,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1533,7 +1533,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
@@ -1542,7 +1542,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
@@ -1556,7 +1556,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1564,7 +1564,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!2                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1572,7 +1572,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
@@ -1581,7 +1581,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
@@ -1595,7 +1595,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1603,7 +1603,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1611,7 +1611,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
@@ -1620,7 +1620,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1..                                                                  %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
@@ -1634,7 +1634,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!\breve                                                               %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1642,7 +1642,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!2.                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1650,7 +1650,7 @@ O_Cello_Music_Voice = {                                                        %
     bf,,,!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
     \revert Staff.OttavaBracket.staff-padding                                  %! baca.ottava_bracket_staff_padding:OverrideCommand(2)
     \ottava 0                                                                  %! baca.ottava_bassa:SpannerIndicatorCommand(2)

@@ -910,10 +910,10 @@ I_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -946,10 +946,10 @@ I_Cello_Music_Voice = {                                                        %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -982,10 +982,10 @@ I_Cello_Music_Voice = {                                                        %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1018,10 +1018,10 @@ I_Cello_Music_Voice = {                                                        %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 

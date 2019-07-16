@@ -228,17 +228,17 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 
     % [P Bass_Clarinet_Music_Voice measure 240 / measure 2]                    %! _comment_measure_numbers
     c'''2                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [P Bass_Clarinet_Music_Voice measure 241 / measure 3]                    %! _comment_measure_numbers
     c'''1..                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [P Bass_Clarinet_Music_Voice measure 242 / measure 4]                    %! _comment_measure_numbers
     c'''1..                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     ~                                                                          %! baca.tie:IndicatorCommand
 
     % [P Bass_Clarinet_Music_Voice measure 243 / measure 5]                    %! _comment_measure_numbers

@@ -308,7 +308,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     a4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -343,7 +343,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     af!4                                                                       %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -378,7 +378,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     g4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -413,7 +413,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     fs!4                                                                       %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -448,7 +448,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     f4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -483,7 +483,7 @@ G_Bass_Clarinet_Music_Voice = {                                                %
     e4                                                                         %! baca.make_tied_repeated_durations
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ffff                                                                      %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
