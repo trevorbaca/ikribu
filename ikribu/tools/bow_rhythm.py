@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def bow_rhythm(
-    *specifiers: rmakers.SpecifierTyping, rotation: int = None
+    *specifiers: rmakers.Command, rotation: int = None
 ) -> baca.RhythmCommand:
     """
     Makes bow rhythm.
