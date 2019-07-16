@@ -20,11 +20,11 @@ def glissando_rhythm(
                 extra_counts_per_division=extra_counts,
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TieCommand(detach_ties=True, selector=baca.notes()),
-            rmakers.TupletCommand(
-                denominator=(1, 8), extract_trivial=True, force_fraction=True
-            ),
+            rmakers.beam(),
+            rmakers.untie(),
+            rmakers.denominator((1, 8)),
+            rmakers.force_fraction(),
+            rmakers.extract_trivial(),
         ),
         tag="ikribu.glissando_rhythm",
     )
