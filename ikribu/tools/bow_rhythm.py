@@ -19,7 +19,7 @@ def bow_rhythm(
                 extra_counts_per_division=extra_counts_per_division,
             ),
             *specifiers,
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.force_fraction(),
             rmakers.extract_trivial(),
         ),
