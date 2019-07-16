@@ -381,13 +381,13 @@ K_Bass_Clarinet_Music_Voice = {                                                %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -440,10 +440,10 @@ K_Bass_Clarinet_Music_Voice = {                                                %
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -496,22 +496,22 @@ K_Bass_Clarinet_Music_Voice = {                                                %
     \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -564,13 +564,13 @@ K_Bass_Clarinet_Music_Voice = {                                                %
     \baca-effort-p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     c'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2019,13 +2019,13 @@ K_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2074,10 +2074,10 @@ K_Cello_Music_Voice = {                                                        %
     \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2126,22 +2126,22 @@ K_Cello_Music_Voice = {                                                        %
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2190,13 +2190,13 @@ K_Cello_Music_Voice = {                                                        %
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     d4                                                                         %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 

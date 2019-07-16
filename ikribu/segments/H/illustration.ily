@@ -227,31 +227,31 @@ H_Bass_Clarinet_Music_Voice = {                                                %
 
     % [H Bass_Clarinet_Music_Voice measure 100 / measure 2]                    %! _comment_measure_numbers
     ef!1..                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 101 / measure 3]                    %! _comment_measure_numbers
     ef!1..                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 102 / measure 4]                    %! _comment_measure_numbers
     ef!2.                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 103 / measure 5]                    %! _comment_measure_numbers
     ef!2                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 104 / measure 6]                    %! _comment_measure_numbers
     ef!1..                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 105 / measure 7]                    %! _comment_measure_numbers
     ef!\breve                                                                  %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Bass_Clarinet_Music_Voice measure 106 / measure 8]                    %! _comment_measure_numbers
     ef!1                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 

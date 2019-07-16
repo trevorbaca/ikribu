@@ -11,14 +11,12 @@ def triplet_rhythm() -> baca.RhythmCommand:
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
             rmakers.beam(),
-            rmakers.TupletCommand(
-                denominator=(1, 4),
-                diminution=True,
-                extract_trivial=True,
-                force_fraction=True,
-                rewrite_dots=True,
-                trivialize=True,
-            ),
+            rmakers.denominator((1, 4)),
+            rmakers.force_fraction(),
+            rmakers.trivialize(),
+            rmakers.rewrite_tuplet_dots(),
+            rmakers.extract_trivial(),
+            rmakers.force_diminution(),
         ),
         tag="ikribu.triplet_rhythm",
     )

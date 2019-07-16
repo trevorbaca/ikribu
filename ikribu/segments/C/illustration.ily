@@ -493,26 +493,26 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! baca.bar_extent:OverrideCommand(1)
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [C Bass_Clarinet_Music_Voice measure 37 / measure 3]                     %! _comment_measure_numbers
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
 
@@ -544,26 +544,26 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [C Bass_Clarinet_Music_Voice measure 41 / measure 7]                     %! _comment_measure_numbers
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -593,26 +593,26 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [C Bass_Clarinet_Music_Voice measure 45 / measure 11]                    %! _comment_measure_numbers
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -642,26 +642,26 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     b'4                                                                        %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     % [C Bass_Clarinet_Music_Voice measure 49 / measure 15]                    %! _comment_measure_numbers
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations
 
     <<                                                                         %! _make_multimeasure_rest_container
 

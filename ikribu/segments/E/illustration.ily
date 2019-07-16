@@ -436,60 +436,60 @@ E_Bass_Clarinet_Music_Voice = {                                                %
 
     % [E Bass_Clarinet_Music_Voice measure 64 / measure 2]                     %! _comment_measure_numbers
     fs'!1..                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 65 / measure 3]                     %! _comment_measure_numbers
     fs'!2.                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 66 / measure 4]                     %! _comment_measure_numbers
     fs'!1                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 67 / measure 5]                     %! _comment_measure_numbers
     ftqs'!2.                                                                   %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 68 / measure 6]                     %! _comment_measure_numbers
     ftqs'!1                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 69 / measure 7]                     %! _comment_measure_numbers
     ftqs'!2.                                                                   %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 70 / measure 8]                     %! _comment_measure_numbers
     ftqs'!2                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 71 / measure 9]                     %! _comment_measure_numbers
     g'1..                                                                      %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 72 / measure 10]                    %! _comment_measure_numbers
     g'\breve                                                                   %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 73 / measure 11]                    %! _comment_measure_numbers
     g'1..                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 74 / measure 12]                    %! _comment_measure_numbers
     g'1..                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 75 / measure 13]                    %! _comment_measure_numbers
     gqs'!2.                                                                    %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 76 / measure 14]                    %! _comment_measure_numbers
     gqs'!2                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 77 / measure 15]                    %! _comment_measure_numbers
     gqs'!1..                                                                   %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [E Bass_Clarinet_Music_Voice measure 78 / measure 16]                    %! _comment_measure_numbers
     gqs'!\breve                                                                %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1593,7 +1593,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1602,7 +1602,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1611,7 +1611,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1628,7 +1628,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1637,7 +1637,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -1646,7 +1646,7 @@ E_Cello_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)
 

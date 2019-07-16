@@ -713,13 +713,13 @@ B_Bass_Clarinet_Music_Voice = {                                                %
     ef!1                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Bass_Clarinet_Music_Voice measure 30 / measure 21]                    %! _comment_measure_numbers
     ef!2.                                                                      %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -1023,14 +1023,14 @@ B_Violin_Music_Voice = {                                                       %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 12 / measure 3]                            %! _comment_measure_numbers
     e'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -1099,14 +1099,14 @@ B_Violin_Music_Voice = {                                                       %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 18 / measure 9]                            %! _comment_measure_numbers
     e'1                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -1175,14 +1175,14 @@ B_Violin_Music_Voice = {                                                       %
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 24 / measure 15]                           %! _comment_measure_numbers
     e'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -1635,31 +1635,31 @@ B_Viola_Music_Voice = {                                                        %
     % [B Viola_Music_Voice measure 29 / measure 20]                            %! _comment_measure_numbers
     ef'!1                                                                      %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Viola_Music_Voice measure 30 / measure 21]                            %! _comment_measure_numbers
     ef'!2.                                                                     %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Viola_Music_Voice measure 31 / measure 22]                            %! _comment_measure_numbers
     ef'!2                                                                      %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Viola_Music_Voice measure 32 / measure 23]                            %! _comment_measure_numbers
     ef'!1..                                                                    %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Viola_Music_Voice measure 33 / measure 24]                            %! _comment_measure_numbers
     ef'!\breve                                                                 %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)

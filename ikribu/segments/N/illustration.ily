@@ -254,19 +254,19 @@ N_Bass_Clarinet_Music_Voice = {                                                %
 
     % [N Bass_Clarinet_Music_Voice measure 209 / measure 2]                    %! _comment_measure_numbers
     c1..                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 210 / measure 3]                    %! _comment_measure_numbers
     c2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 211 / measure 4]                    %! _comment_measure_numbers
     c1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 212 / measure 5]                    %! _comment_measure_numbers
     c2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 %@% \revert TextScript.extra-offset                                            %! +ARCH_A_PARTS_BCL:baca.text_script_extra_offset:OverrideCommand(2)
 
     % [N Bass_Clarinet_Music_Voice measure 213 / measure 6]                    %! _comment_measure_numbers
@@ -275,19 +275,19 @@ N_Bass_Clarinet_Music_Voice = {                                                %
 
     % [N Bass_Clarinet_Music_Voice measure 214 / measure 7]                    %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 215 / measure 8]                    %! _comment_measure_numbers
     <c e''>2
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 216 / measure 9]                    %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [N Bass_Clarinet_Music_Voice measure 217 / measure 10]                   %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
