@@ -20,9 +20,9 @@ def inscription_rhythm() -> baca.RhythmCommand:
                 extra_counts_per_division=extra_counts_per_division,
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TupletCommand(extract_trivial=True),
-            rmakers.TieCommand(repeat_ties=True),
+            rmakers.beam(),
+            rmakers.extract_trivial(),
+            rmakers.to_repeat_tie(),
         ),
         tag="ikribu.inscription_rhythm",
     )

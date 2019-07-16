@@ -19,8 +19,9 @@ def bow_rhythm(
                 extra_counts_per_division=extra_counts_per_division,
             ),
             *specifiers,
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TupletCommand(extract_trivial=True, force_fraction=True),
+            rmakers.beam(),
+            rmakers.force_fraction(),
+            rmakers.extract_trivial(),
         ),
         tag="ikribu.bow_rhythm",
     )
