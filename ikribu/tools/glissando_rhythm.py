@@ -20,7 +20,7 @@ def glissando_rhythm(
                 extra_counts_per_division=extra_counts,
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.untie(),
             rmakers.denominator((1, 8)),
             rmakers.force_fraction(),

@@ -12,7 +12,7 @@ def vigil_rhythm() -> baca.RhythmCommand:
             rmakers.TaleaRhythmMaker(
                 talea=rmakers.Talea(counts=[16, -1], denominator=4)
             ),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.extract_trivial(),
             rmakers.force_repeat_ties(),
         ),
