@@ -20,7 +20,7 @@ def bcl_color_rhythm(
                 extra_counts_per_division=extra_counts_per_division,
                 talea=rmakers.Talea(counts=counts, denominator=8),
             ),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.trivialize(),
             rmakers.extract_trivial(),
             rmakers.force_repeat_ties(),

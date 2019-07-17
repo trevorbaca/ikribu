@@ -10,7 +10,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.denominator((1, 4)),
             rmakers.force_fraction(),
             rmakers.trivialize(),
