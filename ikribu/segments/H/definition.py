@@ -52,7 +52,7 @@ maker(
     ('vn_rh', (1, 8)),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
-        rmakers.rest(baca.lts().get([0, 8], 12)),
+        rmakers.force_rest(baca.lts().get([0, 8], 12)),
         rotation=0,
     ),
 )
@@ -68,7 +68,7 @@ maker(
     ('va_rh', (1, 8)),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
-        rmakers.rest(baca.lts().get([4, 14], 16)),
+        rmakers.force_rest(baca.lts().get([4, 14], 16)),
         rotation=-1,
     ),
 )
