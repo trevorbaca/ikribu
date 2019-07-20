@@ -15,8 +15,8 @@ def bcl_color_rhythm(
     extra_counts = extra_counts.rotate(n=rotation_2)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TaleaRhythmMaker(
+        rmakers.rhythm(
+            rmakers.talea(
                 extra_counts=extra_counts,
                 talea=rmakers.Talea(counts=counts, denominator=8),
             ),
