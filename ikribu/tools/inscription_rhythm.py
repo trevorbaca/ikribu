@@ -12,12 +12,12 @@ def inscription_rhythm() -> baca.RhythmCommand:
     )
     counts = counts.helianthate(-1, -1)
     counts = counts.flatten()
-    extra_counts_per_division = [2, 4, 0]
+    extra_counts = [2, 4, 0]
 
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
-                extra_counts_per_division=extra_counts_per_division,
+                extra_counts=extra_counts,
                 talea=rmakers.Talea(counts=counts, denominator=16),
             ),
             rmakers.beam(),
