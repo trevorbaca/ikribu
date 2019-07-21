@@ -16,10 +16,7 @@ def bcl_color_rhythm(
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.talea(
-                extra_counts=extra_counts,
-                talea=rmakers.Talea(counts=counts, denominator=8),
-            ),
+            rmakers.talea(counts, 8, extra_counts=extra_counts),
             rmakers.beam(),
             rmakers.trivialize(),
             rmakers.extract_trivial(),
