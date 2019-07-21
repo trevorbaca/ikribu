@@ -22,7 +22,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
             ),
             rmakers.beam(),
             rmakers.extract_trivial(),
-            rmakers.force_repeat_ties(),
+            rmakers.force_repeat_tie(),
         ),
         tag="ikribu.inscription_rhythm",
     )

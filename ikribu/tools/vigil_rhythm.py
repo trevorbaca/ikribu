@@ -12,7 +12,7 @@ def vigil_rhythm() -> baca.RhythmCommand:
             rmakers.talea(talea=rmakers.Talea(counts=[16, -1], denominator=4)),
             rmakers.beam(),
             rmakers.extract_trivial(),
-            rmakers.force_repeat_ties(),
+            rmakers.force_repeat_tie(),
         ),
         tag="ikribu.vigil_rhythm",
     )
