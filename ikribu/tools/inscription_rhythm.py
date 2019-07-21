@@ -16,10 +16,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.talea(
-                extra_counts=extra_counts,
-                talea=rmakers.Talea(counts=counts, denominator=16),
-            ),
+            rmakers.talea(counts, 16, extra_counts=extra_counts),
             rmakers.beam(),
             rmakers.extract_trivial(),
             rmakers.force_repeat_tie(),
