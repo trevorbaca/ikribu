@@ -13,7 +13,7 @@ def bow_rhythm(
     extra_counts = extra_counts.rotate(n=rotation)
 
     return baca.rhythm(
-        rmakers.even_division(denominators=[4], extra_counts=extra_counts),
+        rmakers.even_division([4], extra_counts=extra_counts),
         *specifiers,
         rmakers.beam(),
         rmakers.force_fraction(),
