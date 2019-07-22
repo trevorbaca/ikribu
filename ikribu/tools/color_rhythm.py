@@ -9,7 +9,7 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=[tuple(n * [1])]),
+            rmakers.tuplet([tuple(n * [1])]),
             rmakers.force_fraction(),
             rmakers.trivialize(),
             rmakers.rewrite_dots(),
