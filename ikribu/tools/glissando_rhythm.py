@@ -15,13 +15,11 @@ def glissando_rhythm(
     extra_counts = extra_counts.rotate(n=rotation_2)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.talea(counts, 16, extra_counts=extra_counts),
-            rmakers.beam(),
-            rmakers.untie(),
-            rmakers.denominator((1, 8)),
-            rmakers.force_fraction(),
-            rmakers.extract_trivial(),
-        ),
+        rmakers.talea(counts, 16, extra_counts=extra_counts),
+        rmakers.beam(),
+        rmakers.untie(),
+        rmakers.denominator((1, 8)),
+        rmakers.force_fraction(),
+        rmakers.extract_trivial(),
         tag="ikribu.glissando_rhythm",
     )

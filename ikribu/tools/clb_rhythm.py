@@ -8,12 +8,10 @@ def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
     Makes clb rhythm.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.even_division(denominators=[8], extra_counts=extra_counts),
-            rmakers.beam(),
-            rmakers.force_fraction(),
-            rmakers.extract_trivial(),
-            rmakers.force_diminution(),
-        ),
+        rmakers.even_division(denominators=[8], extra_counts=extra_counts),
+        rmakers.beam(),
+        rmakers.force_fraction(),
+        rmakers.extract_trivial(),
+        rmakers.force_diminution(),
         tag="ikribu.clb_rhythm",
     )

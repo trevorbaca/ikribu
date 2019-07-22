@@ -13,12 +13,10 @@ def bow_rhythm(
     extra_counts = extra_counts.rotate(n=rotation)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.even_division(denominators=[4], extra_counts=extra_counts),
-            *specifiers,
-            rmakers.beam(),
-            rmakers.force_fraction(),
-            rmakers.extract_trivial(),
-        ),
+        rmakers.even_division(denominators=[4], extra_counts=extra_counts),
+        *specifiers,
+        rmakers.beam(),
+        rmakers.force_fraction(),
+        rmakers.extract_trivial(),
         tag="ikribu.bow_rhythm",
     )
