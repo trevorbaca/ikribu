@@ -8,11 +8,9 @@ def vigil_rhythm() -> baca.RhythmCommand:
     Makes vigil rhythm.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.talea([16, -1], 4),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-            rmakers.force_repeat_tie(),
-        ),
+        rmakers.talea([16, -1], 4),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        rmakers.force_repeat_tie(),
         tag="ikribu.vigil_rhythm",
     )

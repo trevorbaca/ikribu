@@ -15,12 +15,10 @@ def bcl_color_rhythm(
     extra_counts = extra_counts.rotate(n=rotation_2)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.talea(counts, 8, extra_counts=extra_counts),
-            rmakers.beam(),
-            rmakers.trivialize(),
-            rmakers.extract_trivial(),
-            rmakers.force_repeat_tie(),
-        ),
+        rmakers.talea(counts, 8, extra_counts=extra_counts),
+        rmakers.beam(),
+        rmakers.trivialize(),
+        rmakers.extract_trivial(),
+        rmakers.force_repeat_tie(),
         tag="ikribu.bcl_color_rhythm",
     )

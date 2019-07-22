@@ -15,11 +15,9 @@ def inscription_rhythm() -> baca.RhythmCommand:
     extra_counts = [2, 4, 0]
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.talea(counts, 16, extra_counts=extra_counts),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-            rmakers.force_repeat_tie(),
-        ),
+        rmakers.talea(counts, 16, extra_counts=extra_counts),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        rmakers.force_repeat_tie(),
         tag="ikribu.inscription_rhythm",
     )
