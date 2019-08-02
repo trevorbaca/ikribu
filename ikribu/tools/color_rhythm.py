@@ -15,5 +15,6 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
         rmakers.force_diminution(),
         rmakers.beam(),
         rmakers.extract_trivial(),
+        stack=True,
         tag="ikribu.color_rhythm",
     )

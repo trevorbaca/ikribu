@@ -20,5 +20,6 @@ def bcl_color_rhythm(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
+        stack=True,
         tag="ikribu.bcl_color_rhythm",
     )
