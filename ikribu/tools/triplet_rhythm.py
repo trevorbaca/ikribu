@@ -16,6 +16,5 @@ def triplet_rhythm() -> baca.RhythmCommand:
         rmakers.rewrite_dots(),
         rmakers.extract_trivial(),
         rmakers.force_diminution(),
-        stack=True,
         tag="ikribu.triplet_rhythm",
     )
