@@ -21,6 +21,5 @@ def glissando_rhythm(
         rmakers.denominator((1, 8)),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        stack=True,
         tag="ikribu.glissando_rhythm",
     )

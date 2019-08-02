@@ -18,6 +18,5 @@ def bow_rhythm(
         rmakers.beam(),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        stack=True,
         tag="ikribu.bow_rhythm",
     )
