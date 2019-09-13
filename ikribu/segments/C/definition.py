@@ -136,7 +136,6 @@ maker(
         'F#4 G#4 G#4 F#4',
         selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
-    baca.clef_shift('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(
         selector=baca.pleaves(exclude=abjad.const.HIDDEN),

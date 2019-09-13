@@ -3039,6 +3039,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 177 / measure 2]                            %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_177:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_177:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3114,6 +3116,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 182 / measure 7]                            %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_182:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_182:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3171,6 +3175,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 185 / measure 10]                           %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_185:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_185:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3246,6 +3252,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 190 / measure 15]                           %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_190:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_190:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3321,6 +3329,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 195 / measure 20]                           %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_195:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_195:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3378,6 +3388,8 @@ M_Cello_Music_Voice = {                                                        %
 
     % [M Cello_Music_Voice measure 198 / measure 23]                           %! _comment_measure_numbers
     \ottava -1                                                                 %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_198:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_198:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

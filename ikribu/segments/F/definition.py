@@ -77,7 +77,6 @@ maker(
         ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
-    baca.clef_shift('treble'),
     baca.staff_lines(5),
     )
 
@@ -92,7 +91,6 @@ maker(
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
-    baca.clef_shift('treble'),
     baca.staff_lines(5),
     )
 
@@ -121,6 +119,5 @@ maker(
 maker(
     ('vc', 8),
     baca.clef('treble'),
-    baca.clef_shift('treble'),
     baca.staff_lines(5),
     )
