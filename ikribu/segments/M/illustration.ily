@@ -13,6 +13,7 @@ M_Global_Rests = {                                                             %
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
     % [M Global_Rests measure 180 / measure 5]                                 %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
@@ -24,6 +25,7 @@ M_Global_Rests = {                                                             %
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [M Global_Rests measure 183 / measure 8]                                 %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
@@ -41,6 +43,7 @@ M_Global_Rests = {                                                             %
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [M Global_Rests measure 188 / measure 13]                                %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
@@ -58,6 +61,7 @@ M_Global_Rests = {                                                             %
     R1 * 2                                                                     %! _make_global_rests(1)
 
     % [M Global_Rests measure 193 / measure 18]                                %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
@@ -69,6 +73,7 @@ M_Global_Rests = {                                                             %
     R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [M Global_Rests measure 196 / measure 21]                                %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)
@@ -104,6 +109,7 @@ M_Global_Rests = {                                                             %
     R1 * 1                                                                     %! _make_global_rests(1)
 
     % [M Global_Rests measure 207 / measure 32]                                %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata:GlobalFermataCommand(1)

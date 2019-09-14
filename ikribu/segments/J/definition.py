@@ -16,16 +16,17 @@ stage_markup = (
     ('[J.6]', 10),
     )
 
+fermata_measures = [9, 11]
 maker_ = baca.TimeSignatureMaker(
     ikribu.time_signatures,
-    fermata_measures=[9, 11],
+    fermata_measures=fermata_measures,
     count=11,
     rotation=-10,
     )
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
-    fermata_measure_staff_line_count=0,
+    fermata_measure_empty_overrides=fermata_measures,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
     time_signatures=time_signatures,
