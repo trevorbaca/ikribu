@@ -35,7 +35,6 @@ maker_ = baca.TimeSignatureMaker(
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
-    fermata_measure_staff_line_count=0,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
     time_signatures=time_signatures,

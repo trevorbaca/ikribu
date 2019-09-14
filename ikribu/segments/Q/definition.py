@@ -15,16 +15,17 @@ stage_markup = (
     ('[Q.4]', 10),
     )
 
+fermata_measures = [12]
 maker_ = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     count=12,
-    fermata_measures=[12],
+    fermata_measures=fermata_measures,
     rotation=-17,
     )
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
-    fermata_measure_staff_line_count=0,
+    fermata_measure_empty_overrides=fermata_measures,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),
     final_segment=True,

@@ -4,6 +4,7 @@ i_Global_Rests = {                                                             %
     R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [_ Global_Rests measure 2]                                               %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)

@@ -34,6 +34,7 @@ Q_Global_Rests = {                                                             %
     R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [Q Global_Rests measure 258 / measure 12]                                %! _comment_measure_numbers
+    \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests(1)
     ^ \baca-fermata-markup                                                     %! baca.global_fermata:GlobalFermataCommand(1)
