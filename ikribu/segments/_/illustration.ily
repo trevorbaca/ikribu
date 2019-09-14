@@ -150,6 +150,7 @@ i_Bass_Clarinet_Music_Staff = {                                                %
 i_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern
 
     % [_ Violin_RH_Music_Voice measure 1]                                      %! _comment_measure_numbers
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
@@ -222,6 +223,7 @@ i_Violin_Music_Voice = {                                                       %
             #16                                                                %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
             Violin                                                             %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
@@ -322,6 +324,7 @@ i_Violin_Music_Staff = {                                                       %
 i_Viola_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [_ Viola_RH_Music_Voice measure 1]                                       %! _comment_measure_numbers
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
@@ -461,6 +464,7 @@ i_Viola_Music_Staff = {                                                        %
 i_Cello_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [_ Cello_RH_Music_Voice measure 1]                                       %! _comment_measure_numbers
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
