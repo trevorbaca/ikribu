@@ -34,13 +34,18 @@ maker(
     baca.global_fermata('long', selector=baca.leaf(2 - 1)),
     )
 
+# bcl
+
 maker(
     'bcl',
+    baca.staff_lines(5),
     baca.suite(
         ikribu.margin_markup('B. cl.'),
         baca.start_markup(['Bass', 'clarinet'], hcenter_in=16),
         ),
     )
+
+# vn
 
 maker(
     'vn',
@@ -55,7 +60,21 @@ maker(
     )
 
 maker(
+    ("vn", 1),
+    baca.make_repeat_tied_notes(),
+    baca.clef('percussion'),
+    baca.dynamic('"mf"'),
+    baca.markup('grainfall (1)', boxed=True),
+    baca.staff_lines(1),
+    baca.staff_position(0),
+    ikribu.box_adjustment(),
+)
+
+# va
+
+maker(
     'va',
+    baca.staff_lines(5),
     baca.suite(
         ikribu.margin_markup('Va.', context='SingleStringStaffGroup'),
         baca.start_markup(
@@ -66,8 +85,11 @@ maker(
         ),
     )
 
+# vc
+
 maker(
     'vc',
+    baca.staff_lines(5),
     baca.suite(
         ikribu.margin_markup('Vc.', context='SingleStringStaffGroup'),
         baca.start_markup(
@@ -76,22 +98,6 @@ maker(
             hcenter_in=16,
             ),
         ),
-    )
-
-maker(
-    (['vn_rh', 'va_rh', 'vc_rh'], 1),
-    baca.staff_lines(1),
-    )
-
-maker(
-    ('vn', 1),
-    baca.make_repeat_tied_notes(),
-    baca.clef('percussion'),
-    baca.dynamic('"mf"'),
-    baca.markup('grainfall (1)', boxed=True),
-    baca.staff_lines(1),
-    baca.staff_position(0),
-    ikribu.box_adjustment(),
     )
 
 maker(
@@ -107,4 +113,11 @@ maker(
         ),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
+    )
+
+# vn_rh, va_rh, vc_rh
+
+maker(
+    (['vn_rh', 'va_rh', 'vc_rh'], 1),
+    baca.staff_lines(1),
     )
