@@ -25,6 +25,10 @@ maker_ = baca.TimeSignatureMaker(
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
+    activate=[
+        abjad.const.LOCAL_MEASURE_NUMBER,
+        abjad.const.STAGE_NUMBER,
+    ],
     fermata_measure_empty_overrides=fermata_measures,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),
@@ -48,14 +52,11 @@ maker(
     )
 
 maker(
-    [
-        ('bcl', (1, 3)),
-        ('vn', (1, 3)),
-        ('va', (1, 3)),
-        ('vc', (1, 3)),
-        ],
+    ["bcl", "vn", "va", "vc"],
     baca.staff_lines(1),
-    )
+)
+
+# bcl
 
 maker(
     ('bcl', (1, 6)),
@@ -70,6 +71,8 @@ maker(
     ikribu.box_adjustment(),
     )
 
+# vn
+
 maker(
     ('vn', (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
@@ -80,6 +83,8 @@ maker(
     baca.text_script_padding(2.5),
     )
 
+# va
+
 maker(
     ('va', (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
@@ -89,6 +94,8 @@ maker(
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
     )
+
+# vc
 
 maker(
     ('vc', (1, 11)),
