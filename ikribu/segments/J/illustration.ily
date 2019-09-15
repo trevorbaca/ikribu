@@ -437,6 +437,7 @@ J_Bass_Clarinet_Music_Voice = {                                                %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 %%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_124
 %%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_124
 
@@ -444,6 +445,7 @@ J_Bass_Clarinet_Music_Voice = {                                                %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(2.5)
 %%% \override TextScript.extra-offset = #'(0 . 8)                              %! +ARCH_A_PARTS_BCL:baca.text_script_extra_offset:OverrideCommand(1)
     c'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak X-extent #'(0 . 0)                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -482,6 +484,7 @@ J_Bass_Clarinet_Music_Voice = {                                                %
             \startStaff                                                        %! _style_fermata_measures(1)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
+            \override Staff.BarLine.bar-extent = #'(-2 . 0)                    %! _style_fermata_measures(1.5)
             \revert DynamicLineSpanner.staff-padding                           %! baca.dls_staff_padding:OverrideCommand(2)
             \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
             \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
@@ -540,7 +543,7 @@ J_Bass_Clarinet_Music_Staff = {                                                %
 J_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern
 
     % [J Violin_RH_Music_Voice measure 116 / measure 1]                        %! _comment_measure_numbers
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -580,11 +583,13 @@ J_Violin_RH_Music_Voice = {                                                    %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     % [J Violin_RH_Music_Voice measure 125 / measure 10]                       %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(2.5)
     R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Violin_RH_Music_Voice measure 126 / measure 11]                       %! _comment_measure_numbers
@@ -592,6 +597,7 @@ J_Violin_RH_Music_Voice = {                                                    %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -826,11 +832,13 @@ J_Violin_Music_Voice = {                                                       %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! _style_fermata_measures(1.5)
 
     % [J Violin_Music_Voice measure 125 / measure 10]                          %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! _style_fermata_measures(2.5)
     c'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak X-extent #'(0 . 0)                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -867,6 +875,7 @@ J_Violin_Music_Voice = {                                                       %
             \startStaff                                                        %! _style_fermata_measures(1)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+            \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! _style_fermata_measures(1.5)
             \revert DynamicLineSpanner.staff-padding                           %! baca.dls_staff_padding:OverrideCommand(2)
             \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
             \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
@@ -923,7 +932,7 @@ J_Violin_Music_Staff = {                                                       %
 J_Viola_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [J Viola_RH_Music_Voice measure 116 / measure 1]                         %! _comment_measure_numbers
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -963,11 +972,13 @@ J_Viola_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     % [J Viola_RH_Music_Voice measure 125 / measure 10]                        %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(2.5)
     R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Viola_RH_Music_Voice measure 126 / measure 11]                        %! _comment_measure_numbers
@@ -975,6 +986,7 @@ J_Viola_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1218,11 +1230,13 @@ J_Viola_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! _style_fermata_measures(1.5)
 
     % [J Viola_Music_Voice measure 125 / measure 10]                           %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! _style_fermata_measures(2.5)
     c'4                                                                        %! baca.make_tied_repeated_durations
     - \tweak X-extent #'(0 . 0)                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1259,6 +1273,7 @@ J_Viola_Music_Voice = {                                                        %
             \startStaff                                                        %! _style_fermata_measures(1)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+            \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! _style_fermata_measures(1.5)
             \revert DynamicLineSpanner.staff-padding                           %! baca.dls_staff_padding:OverrideCommand(2)
             \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
             \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
@@ -1315,7 +1330,7 @@ J_Viola_Music_Staff = {                                                        %
 J_Cello_RH_Music_Voice = {                                                     %! abjad.Path.extern
 
     % [J Cello_RH_Music_Voice measure 116 / measure 1]                         %! _comment_measure_numbers
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:REAPPLIED_BAR_EXTENT:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1355,11 +1370,13 @@ J_Cello_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     % [J Cello_RH_Music_Voice measure 125 / measure 10]                        %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override RHStaff.StaffSymbol.line-count = 1                         %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(2.5)
     R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [J Cello_RH_Music_Voice measure 126 / measure 11]                        %! _comment_measure_numbers
@@ -1367,6 +1384,7 @@ J_Cello_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1517,6 +1535,7 @@ J_Cello_Music_Voice = {                                                        %
             \startStaff                                                        %! _style_fermata_measures(1)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+            \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! _style_fermata_measures(1.5)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -1534,6 +1553,7 @@ J_Cello_Music_Voice = {                                                        %
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
+    \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! _style_fermata_measures(2.5)
     R1 * 1                                                                     %! _make_measure_silences
 
     % [J Cello_Music_Voice measure 126 / measure 11]                           %! _comment_measure_numbers
@@ -1541,6 +1561,7 @@ J_Cello_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! _style_fermata_measures(1.5)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
