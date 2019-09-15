@@ -264,7 +264,6 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
             #16                                                                %! _clone_segment_initial_short_instrument_name
             "B. cl."                                                           %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.bar_extent:OverrideCommand(1)
     \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
     \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -449,7 +448,6 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
             % [Q Bass_Clarinet_Music_Voice measure 259 / measure 13]           %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca.bar_extent:OverrideCommand(2)
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1301,7 +1299,6 @@ Q_Cello_Music_Voice = {                                                        %
                 #16                                                            %! _clone_segment_initial_short_instrument_name
                 Vc.                                                            %! _clone_segment_initial_short_instrument_name
             }                                                                  %! _clone_segment_initial_short_instrument_name
-        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! baca.bar_extent:OverrideCommand(1)
         \override TextScript.padding = #2.5                                    %! text.script_padding:OverrideCommand(1)
         \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x:OverrideCommand(1)
         \clef "tenor"                                                          %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1667,7 +1664,6 @@ Q_Cello_Music_Voice = {                                                        %
             % [Q Cello_Music_Voice measure 259 / measure 13]                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-            \revert Staff.BarLine.bar-extent                                   %! PHANTOM:_style_phantom_measures(5):baca.bar_extent:OverrideCommand(2)
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 

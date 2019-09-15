@@ -45,8 +45,6 @@ maker(
 
 maker(
     ('bcl', (1, 5)),
-    baca.tag('+ARCH_A_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
-    baca.tag('+LEDGER_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
     baca.staff_lines(5),
     )
 
