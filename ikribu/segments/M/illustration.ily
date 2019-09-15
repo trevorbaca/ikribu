@@ -898,10 +898,10 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 180 / measure 5]            %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \!                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
@@ -937,10 +937,10 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 183 / measure 8]            %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
         %%% \once \override Score.BarLine.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_183
         %%% \once \override Score.SpanBar.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_183
@@ -992,10 +992,10 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 188 / measure 13]           %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \!                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
@@ -1049,10 +1049,10 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 193 / measure 18]           %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \!                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
@@ -1088,10 +1088,10 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 196 / measure 21]           %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
         %%% \once \override Score.BarLine.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_196
         %%% \once \override Score.SpanBar.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_196
@@ -1161,14 +1161,11 @@ M_Bass_Clarinet_Music_Voice = {                                                %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Bass_Clarinet_Music_Voice measure 207 / measure 32]           %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             d''1 * 1/4                                                         %! _make_multimeasure_rest_container
-            \stopStaff                                                         %! _style_fermata_measures(3)
-            \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(3)
-            \startStaff                                                        %! _style_fermata_measures(3)
             \once \override Score.BarLine.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_207
             \once \override Score.SpanBar.transparent = ##t                    %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_207
 
@@ -1363,9 +1360,6 @@ M_Violin_RH_Music_Voice = {                                                    %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1516,10 +1510,10 @@ M_Violin_Music_Voice = {                                                       %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Violin_Music_Voice measure 180 / measure 5]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1580,10 +1574,10 @@ M_Violin_Music_Voice = {                                                       %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Violin_Music_Voice measure 183 / measure 8]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1693,10 +1687,10 @@ M_Violin_Music_Voice = {                                                       %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Violin_Music_Voice measure 188 / measure 13]                  %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1788,10 +1782,10 @@ M_Violin_Music_Voice = {                                                       %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Violin_Music_Voice measure 193 / measure 18]                  %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1852,10 +1846,10 @@ M_Violin_Music_Voice = {                                                       %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Violin_Music_Voice measure 196 / measure 21]                  %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2040,9 +2034,6 @@ M_Violin_Music_Voice = {                                                       %
     \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2223,9 +2214,6 @@ M_Viola_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2378,10 +2366,10 @@ M_Viola_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Viola_Music_Voice measure 180 / measure 5]                    %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2429,10 +2417,10 @@ M_Viola_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Viola_Music_Voice measure 183 / measure 8]                    %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2500,10 +2488,10 @@ M_Viola_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Viola_Music_Voice measure 188 / measure 13]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2585,10 +2573,10 @@ M_Viola_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Viola_Music_Voice measure 193 / measure 18]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2636,10 +2624,10 @@ M_Viola_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Viola_Music_Voice measure 196 / measure 21]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -2775,9 +2763,6 @@ M_Viola_Music_Voice = {                                                        %
     \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2958,9 +2943,6 @@ M_Cello_RH_Music_Voice = {                                                     %
     \once \override RHStaff.StaffSymbol.line-count = 0                         %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -3083,10 +3065,10 @@ M_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Cello_Music_Voice measure 180 / measure 5]                    %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -3102,6 +3084,9 @@ M_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Cello_Music_Voice measure 181 / measure 6]                            %! _comment_measure_numbers
+    \stopStaff                                                                 %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
+    \startStaff                                                                %! _style_fermata_measures(2)
     \once \override NoteHead.style = #'harmonic                                %! baca.note_head_style_harmonic:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_181:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_181:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -3109,9 +3094,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    \stopStaff                                                                 %! _style_fermata_measures(2)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
-    \startStaff                                                                %! _style_fermata_measures(2)
     g''1..                                                                     %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \sfz                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -3141,10 +3123,10 @@ M_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Cello_Music_Voice measure 183 / measure 8]                    %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -3160,6 +3142,9 @@ M_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Cello_Music_Voice measure 184 / measure 9]                            %! _comment_measure_numbers
+    \stopStaff                                                                 %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
+    \startStaff                                                                %! _style_fermata_measures(2)
     \once \override NoteHead.style = #'harmonic                                %! baca.note_head_style_harmonic:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_184:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_184:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -3167,9 +3152,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    \stopStaff                                                                 %! _style_fermata_measures(2)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
-    \startStaff                                                                %! _style_fermata_measures(2)
     fqf''!1                                                                    %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -3217,10 +3199,10 @@ M_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Cello_Music_Voice measure 188 / measure 13]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -3236,6 +3218,9 @@ M_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Cello_Music_Voice measure 189 / measure 14]                           %! _comment_measure_numbers
+    \stopStaff                                                                 %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
+    \startStaff                                                                %! _style_fermata_measures(2)
     \once \override NoteHead.style = #'harmonic                                %! baca.note_head_style_harmonic:OverrideCommand(1)
 %%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_189:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_189:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -3243,9 +3228,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    \stopStaff                                                                 %! _style_fermata_measures(2)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
-    \startStaff                                                                %! _style_fermata_measures(2)
     g''2                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-sffz                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -3293,10 +3275,10 @@ M_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Cello_Music_Voice measure 193 / measure 18]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -3312,6 +3294,9 @@ M_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Cello_Music_Voice measure 194 / measure 19]                           %! _comment_measure_numbers
+    \stopStaff                                                                 %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
+    \startStaff                                                                %! _style_fermata_measures(2)
     \once \override NoteHead.style = #'harmonic                                %! baca.note_head_style_harmonic:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_194:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_194:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -3319,9 +3304,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    \stopStaff                                                                 %! _style_fermata_measures(2)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
-    \startStaff                                                                %! _style_fermata_measures(2)
     a''1..                                                                     %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-sfffz                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -3351,10 +3333,10 @@ M_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [M Cello_Music_Voice measure 196 / measure 21]                   %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \stopStaff                                                         %! _style_fermata_measures(1)
             \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
             \startStaff                                                        %! _style_fermata_measures(1)
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -3370,6 +3352,9 @@ M_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [M Cello_Music_Voice measure 197 / measure 22]                           %! _comment_measure_numbers
+    \stopStaff                                                                 %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
+    \startStaff                                                                %! _style_fermata_measures(2)
     \once \override NoteHead.style = #'harmonic                                %! baca.note_head_style_harmonic:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_197:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_197:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -3377,9 +3362,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    \stopStaff                                                                 %! _style_fermata_measures(2)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
-    \startStaff                                                                %! _style_fermata_measures(2)
     cqs'''!2                                                                   %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-sfffz                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -3464,9 +3446,6 @@ M_Cello_Music_Voice = {                                                        %
     \once \override Staff.StaffSymbol.line-count = 0                           %! _style_fermata_measures(1)
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _make_measure_silences
-    \stopStaff                                                                 %! _style_fermata_measures(3)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(3)
-    \startStaff                                                                %! _style_fermata_measures(3)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
