@@ -53,6 +53,12 @@ persist = abjad.OrderedDict(
                                 ),
                             abjad.Momento(
                                 context='Bass_Clarinet_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='baca.BarExtent',
+                                value=5,
+                                ),
+                            abjad.Momento(
+                                context='Bass_Clarinet_Music_Voice',
                                 manifest='instruments',
                                 value='BassClarinet',
                                 ),
@@ -71,6 +77,12 @@ persist = abjad.OrderedDict(
                     (
                         'Cello_Music_Staff',
                         [
+                            abjad.Momento(
+                                context='Cello_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='baca.BarExtent',
+                                value=5,
+                                ),
                             abjad.Momento(
                                 context='Cello_Music_Voice',
                                 prototype='abjad.Clef',
@@ -148,6 +160,12 @@ persist = abjad.OrderedDict(
                     (
                         'Viola_Music_Staff',
                         [
+                            abjad.Momento(
+                                context='Viola_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='baca.BarExtent',
+                                value=5,
+                                ),
                             abjad.Momento(
                                 context='Viola_Music_Voice',
                                 prototype='abjad.Clef',
