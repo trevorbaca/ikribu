@@ -241,8 +241,6 @@ D_Bass_Clarinet_Music_Voice = {                                                %
             #16                                                                %! _clone_segment_initial_short_instrument_name
             "B. cl."                                                           %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-%@% \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! +ARCH_A_SCORE:baca.bar_extent:OverrideCommand(1)
-%@% \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! +LEDGER_SCORE:baca.bar_extent:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)

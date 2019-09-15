@@ -65,9 +65,6 @@ maker(
 
 maker(
     ('bcl', (2, 17)),
-    baca.bar_extent((-2, 2)),
-    baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
-    baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.dynamic(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,

@@ -136,7 +136,6 @@ maker(
 
 maker(
     'vc',
-    baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.hairpin(
         'p < f >',
         bookend=-1,

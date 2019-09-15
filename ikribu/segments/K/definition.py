@@ -108,7 +108,6 @@ maker(
 
 maker(
     ('bcl', (1, 16)),
-    baca.bar_extent((-2, 0), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
     )
@@ -161,7 +160,6 @@ maker(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,
         ),
-    baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
     ikribu.box_adjustment(),

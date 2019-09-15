@@ -470,7 +470,6 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! baca.bar_extent:OverrideCommand(1)
     \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
     \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
@@ -496,7 +495,6 @@ C_Bass_Clarinet_Music_Voice = {                                                %
                     }                                                          %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
         }                                                                      %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
-    \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! baca.bar_extent:OverrideCommand(1)
 
     b'4                                                                        %! baca.make_tied_repeated_durations
     \repeatTie                                                                 %! baca.make_tied_repeated_durations
@@ -692,8 +690,6 @@ C_Bass_Clarinet_Music_Voice = {                                                %
 
     % [C Bass_Clarinet_Music_Voice measure 51 / measure 17]                    %! _comment_measure_numbers
     R1 * 1/6                                                                   %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                           %! baca.bar_extent:OverrideCommand(2)
-    \once \override Staff.BarLine.bar-extent = #'(0 . 0)                       %! baca.bar_extent:OverrideCommand(1)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

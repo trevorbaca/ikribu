@@ -63,11 +63,6 @@ maker(
     )
 
 maker(
-    'bcl',
-    baca.bar_extent((-2, 0), selector=baca.rleaves()),
-    )
-
-maker(
     ('bcl', (1, 11)),
     baca.dynamic('"mf"'),
     baca.markup('graincircle: π/3 every quarter note', boxed=True),
@@ -102,7 +97,6 @@ maker(
 
 maker(
     'vc',
-    baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accent(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
