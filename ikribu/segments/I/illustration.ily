@@ -233,14 +233,14 @@ I_Bass_Clarinet_Music_Voice = {                                                %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
-%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_109
-%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_109
 
     % [I Bass_Clarinet_Music_Voice measure 110 / measure 3]                    %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! _style_fermata_measures(2.5)
+%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_109
+%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_109
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [I Bass_Clarinet_Music_Voice measure 111 / measure 4]                    %! _comment_measure_numbers
@@ -249,14 +249,14 @@ I_Bass_Clarinet_Music_Voice = {                                                %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
-%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_111
-%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_111
 
     % [I Bass_Clarinet_Music_Voice measure 112 / measure 5]                    %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! _style_fermata_measures(2.5)
+%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_111
+%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_111
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [I Bass_Clarinet_Music_Voice measure 113 / measure 6]                    %! _comment_measure_numbers
@@ -265,14 +265,14 @@ I_Bass_Clarinet_Music_Voice = {                                                %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
-%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_113
-%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_113
 
     % [I Bass_Clarinet_Music_Voice measure 114 / measure 7]                    %! _comment_measure_numbers
     \stopStaff                                                                 %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                           %! _style_fermata_measures(2)
     \startStaff                                                                %! _style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! _style_fermata_measures(2.5)
+%%% \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_113
+%%% \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_113
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [I Bass_Clarinet_Music_Voice measure 115 / measure 8]                    %! _comment_measure_numbers
@@ -281,8 +281,6 @@ I_Bass_Clarinet_Music_Voice = {                                                %
     \startStaff                                                                %! _style_fermata_measures(1)
     R1 * 1/4                                                                   %! _call_rhythm_commands
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! _style_fermata_measures(1.5)
-    \once \override Score.BarLine.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_115
-    \once \override Score.SpanBar.transparent = ##t                            %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_115
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -291,6 +289,8 @@ I_Bass_Clarinet_Music_Voice = {                                                %
 
             % [I Bass_Clarinet_Music_Voice measure 116 / measure 9]            %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
+            \once \override Score.BarLine.transparent = ##t                    %! PHANTOM:_style_phantom_measures(5):_style_fermata_measures(4):EOL_FERMATA:MEASURE_115
+            \once \override Score.SpanBar.transparent = ##t                    %! PHANTOM:_style_phantom_measures(5):_style_fermata_measures(4):EOL_FERMATA:MEASURE_115
             R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
