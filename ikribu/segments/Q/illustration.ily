@@ -264,8 +264,8 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
             #16                                                                %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
             "B. cl."                                                           %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
         }                                                                      %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
-    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! baca.text_script_padding():OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x():OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -431,8 +431,8 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
     % [Q Bass_Clarinet_Music_Voice measure 257 / measure 11]                   %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 7/4                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! baca.text_script_padding():OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():OverrideCommand(2)
 
     % [Q Bass_Clarinet_Music_Voice measure 258 / measure 12]                   %! baca.SegmentMaker._comment_measure_numbers()
     \stopStaff                                                                 %! baca.SegmentMaker._style_fermata_measures(1)
@@ -588,7 +588,7 @@ Q_Violin_Music_Voice = {                                                       %
             #16                                                                %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
             Vn.                                                                %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
         }                                                                      %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
-    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! baca.text_script_padding():OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -765,7 +765,7 @@ Q_Violin_Music_Voice = {                                                       %
 
     b'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
-    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! baca.text_script_padding():OverrideCommand(2)
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -945,7 +945,7 @@ Q_Viola_Music_Voice = {                                                        %
             #16                                                                %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
             Va.                                                                %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
         }                                                                      %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
-    \override TextScript.padding = #2.5                                        %! text.script_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                        %! baca.text_script_padding():OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -1122,7 +1122,7 @@ Q_Viola_Music_Voice = {                                                        %
 
     a'4                                                                        %! baca.make_repeated_duration_notes
     - \baca-staccati #2                                                        %! baca.double_staccato:IndicatorCommand
-    \revert TextScript.padding                                                 %! text.script_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                 %! baca.text_script_padding():OverrideCommand(2)
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1305,8 +1305,8 @@ Q_Cello_Music_Voice = {                                                        %
                 #16                                                            %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
                 Vc.                                                            %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
             }                                                                  %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
-        \override TextScript.padding = #2.5                                    %! text.script_padding:OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                    %! baca.text_script_padding():OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                           %! baca.text_script_parent_alignment_x():OverrideCommand(1)
         \clef "tenor"                                                          %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -1648,8 +1648,8 @@ Q_Cello_Music_Voice = {                                                        %
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
             \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! baca.SegmentMaker._style_fermata_measures(3)
-            \revert TextScript.padding                                         %! text.script_padding:OverrideCommand(2)
-            \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x:OverrideCommand(2)
+            \revert TextScript.padding                                         %! baca.text_script_padding():OverrideCommand(2)
+            \revert TextScript.parent-alignment-X                              %! baca.text_script_parent_alignment_x():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
