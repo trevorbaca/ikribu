@@ -29,6 +29,7 @@ maker = baca.SegmentMaker(
         abjad.const.LOCAL_MEASURE_NUMBER,
         abjad.const.STAGE_NUMBER,
     ],
+    check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),

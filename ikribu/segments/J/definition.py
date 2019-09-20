@@ -30,6 +30,7 @@ maker = baca.SegmentMaker(
         abjad.const.LOCAL_MEASURE_NUMBER,
         abjad.const.STAGE_NUMBER,
     ],
+    check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
@@ -118,14 +119,6 @@ maker(
         baca.markups.lines(['stonecircle:', 'π/3 every quarter note']),
         boxed=True,
         ),
-    )
-
-maker(
-    [
-        'vn',
-        'va',
-        ],
-    baca.staff_position(0),
     )
 
 maker(
