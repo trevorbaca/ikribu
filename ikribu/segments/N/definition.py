@@ -26,6 +26,7 @@ maker = baca.SegmentMaker(
         abjad.const.LOCAL_MEASURE_NUMBER,
         abjad.const.STAGE_NUMBER,
     ],
+    check_all_are_pitched=True,
     # TODO: find and eliminate two incomplete spanners
     do_not_check_wellformedness=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
