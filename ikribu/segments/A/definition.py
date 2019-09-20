@@ -9,9 +9,9 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[A.1]', 1),
-    ('[A.2]', 3),
-    ('[A.3]', 6),
+    ("[A.1]", 1),
+    ("[A.2]", 3),
+    ("[A.3]", 6),
 )
 
 fermata_measures = [7]
@@ -38,33 +38,33 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
-    baca.rehearsal_mark('A'),
+    "Global_Skips",
+    baca.metronome_mark("night", selector=baca.leaf(1 - 1)),
+    baca.rehearsal_mark("A"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('long', selector=baca.leaf(7 - 1)),
+    "Global_Rests",
+    baca.global_fermata("long", selector=baca.leaf(7 - 1)),
 )
 
 maker(
-    ('bcl', (1, 5)),
-    baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
-    baca.hairpin('f >o niente', selector=baca.rleaves()[-4:]),
+    ("bcl", (1, 5)),
+    baca.hairpin("ppp < f", selector=baca.leaves()[:2]),
+    baca.hairpin("f >o niente", selector=baca.rleaves()[-4:]),
     baca.make_repeat_tied_notes(),
-    baca.pitch('D2'),
+    baca.pitch("D2"),
 )
 
 maker(
-    ('vn', (1, 2)),
-    baca.clef('treble'),
+    ("vn", (1, 2)),
+    baca.clef("treble"),
     baca.staff_lines(5),
 )
 
 maker(
-    ('va', (3, 6)),
-    baca.clef('percussion'),
+    ("va", (3, 6)),
+    baca.clef("percussion"),
     baca.dynamic(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
@@ -72,7 +72,7 @@ maker(
     ),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
+        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
         boxed=True,
     ),
     baca.staff_position(0),

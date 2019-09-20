@@ -9,10 +9,10 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[Q.1]', 1),
-    ('[Q.2]', 4),
-    ('[Q.3]', 7),
-    ('[Q.4]', 10),
+    ("[Q.1]", 1),
+    ("[Q.2]", 4),
+    ("[Q.3]", 7),
+    ("[Q.4]", 10),
 )
 
 fermata_measures = [12]
@@ -31,7 +31,7 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
-    final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
+    final_markup=(["Madison, WI."], ["January", "March 2016."]),
     final_markup_extra_offset=(-16, -4),
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -42,14 +42,14 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('inscription', selector=baca.leaf(1 - 1)),
-    baca.rehearsal_mark('Q'),
+    "Global_Skips",
+    baca.metronome_mark("inscription", selector=baca.leaf(1 - 1)),
+    baca.rehearsal_mark("Q"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('fermata', selector=baca.leaf(-1)),
+    "Global_Rests",
+    baca.global_fermata("fermata", selector=baca.leaf(-1)),
 )
 
 maker(
@@ -60,14 +60,14 @@ maker(
 # bcl
 
 maker(
-    ('bcl', (1, 6)),
+    ("bcl", (1, 6)),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
 maker(
-    ('bcl', (1, 11)),
+    ("bcl", (1, 11)),
     baca.dynamic('"mf"'),
-    baca.markup('graincircle: π/3 every quarter note', boxed=True),
+    baca.markup("graincircle: π/3 every quarter note", boxed=True),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )
@@ -75,11 +75,11 @@ maker(
 # vn
 
 maker(
-    ('vn', (1, 9)),
+    ("vn", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup('col legno battuto meccanico: strike each note twice'),
+    baca.markup("col legno battuto meccanico: strike each note twice"),
     baca.staff_positions([-1, 0, 1]),
     baca.text_script_padding(2.5),
 )
@@ -87,11 +87,11 @@ maker(
 # va
 
 maker(
-    ('va', (1, 9)),
+    ("va", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup('col legno battuto meccanico: strike each note twice'),
+    baca.markup("col legno battuto meccanico: strike each note twice"),
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
 )
@@ -99,17 +99,17 @@ maker(
 # vc
 
 maker(
-    ('vc', (1, 11)),
+    ("vc", (1, 11)),
     ikribu.inscription_rhythm(),
 )
 
 maker(
-    'vc',
+    "vc",
     baca.accent(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
     ),
     baca.dynamic('"mf"'),
-    baca.markup('stonescratch: one short stroke for each attack', boxed=True),
+    baca.markup("stonescratch: one short stroke for each attack", boxed=True),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )

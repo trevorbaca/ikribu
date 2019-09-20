@@ -9,14 +9,14 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[K.1]', 1),
-    ('[K.3]', 3),
-    ('[K.5]', 5),
-    ('[K.7]', 7),
-    ('[K.9]', 9),
-    ('[K.11]', 11),
-    ('[K.13]', 13),
-    ('[K.15]', 15),
+    ("[K.1]", 1),
+    ("[K.3]", 3),
+    ("[K.5]", 5),
+    ("[K.7]", 7),
+    ("[K.9]", 9),
+    ("[K.11]", 11),
+    ("[K.13]", 13),
+    ("[K.15]", 15),
 )
 
 fermata_measures = [2, 4, 6, 8, 10, 12, 14, 16]
@@ -43,49 +43,49 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.rehearsal_mark('K'),
+    "Global_Skips",
+    baca.rehearsal_mark("K"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('short', selector=baca.leaf(2 - 1)),
-    baca.global_fermata('fermata', selector=baca.leaf(4 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(6 - 1)),
-    baca.global_fermata('fermata', selector=baca.leaf(8 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(10 - 1)),
-    baca.global_fermata('fermata', selector=baca.leaf(12 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(14 - 1)),
-    baca.global_fermata('fermata', selector=baca.leaf(16 - 1)),
+    "Global_Rests",
+    baca.global_fermata("short", selector=baca.leaf(2 - 1)),
+    baca.global_fermata("fermata", selector=baca.leaf(4 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(6 - 1)),
+    baca.global_fermata("fermata", selector=baca.leaf(8 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(10 - 1)),
+    baca.global_fermata("fermata", selector=baca.leaf(12 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(14 - 1)),
+    baca.global_fermata("fermata", selector=baca.leaf(16 - 1)),
 )
 
 maker(
-    ('bcl', [1, 5, 9, 13]),
+    ("bcl", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
 maker(
-    ('vn', [3, 7, 11, 15]),
+    ("vn", [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[4]),
 )
 
 maker(
-    ('va', [3, 7, 11, 15]),
+    ("va", [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[2]),
 )
 
 maker(
-    ('vc', [1, 5, 9, 13]),
+    ("vc", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
 maker(
-    ('vc', 1),
+    ("vc", 1),
     baca.staff_lines(1),
 )
 
 maker(
-    ('bcl', 5),
+    ("bcl", 5),
     baca.dynamic(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
@@ -94,7 +94,7 @@ maker(
 )
 
 maker(
-    ('bcl', 9),
+    ("bcl", 9),
     baca.dynamic(
         '"mp"',
         abjad.tweak((0, 0)).X_extent,
@@ -103,7 +103,7 @@ maker(
 )
 
 maker(
-    ('bcl', 13),
+    ("bcl", 13),
     baca.dynamic(
         '"p"',
         abjad.tweak((0, 0)).X_extent,
@@ -112,13 +112,13 @@ maker(
 )
 
 maker(
-    ('bcl', (1, 16)),
+    ("bcl", (1, 16)),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
 )
 
 maker(
-    ('vn', (1, 16)),
+    ("vn", (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
         baca.dynamic(
@@ -127,7 +127,7 @@ maker(
             abjad.tweak((-3, 0)).extra_offset,
         ),
         baca.markup(
-            'col legno battuto',
+            "col legno battuto",
         ),
         selector=baca.phead(0, exclude=abjad.const.HIDDEN),
     ),
@@ -139,7 +139,7 @@ maker(
 )
 
 maker(
-    ('va', (1, 16)),
+    ("va", (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
         baca.dynamic(
@@ -148,7 +148,7 @@ maker(
             abjad.tweak((-3, 0)).extra_offset,
         ),
         baca.markup(
-            'col legno battuto',
+            "col legno battuto",
         ),
         selector=baca.phead(0, exclude=abjad.const.HIDDEN),
     ),
@@ -160,9 +160,9 @@ maker(
 )
 
 maker(
-    ('vc', (1, 16)),
+    ("vc", (1, 16)),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
         boxed=True,
     ),
     baca.dls_staff_padding(6),
@@ -171,12 +171,12 @@ maker(
 )
 
 maker(
-    ('vc', 1),
+    ("vc", 1),
     baca.dynamic('"p"'),
 )
 
 maker(
-    ('vc', 5),
+    ("vc", 5),
     baca.dynamic(
         '"mp"',
         abjad.tweak((0, 0)).X_extent,
@@ -185,7 +185,7 @@ maker(
 )
 
 maker(
-    ('vc', 9),
+    ("vc", 9),
     baca.dynamic(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
@@ -194,7 +194,7 @@ maker(
 )
 
 maker(
-    ('vc', 13),
+    ("vc", 13),
     baca.dynamic(
         '"f"',
         abjad.tweak((0, 0)).X_extent,

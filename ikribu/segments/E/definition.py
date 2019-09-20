@@ -9,22 +9,22 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[E.1]', 1),
-    ('[E.2]', 2),
-    ('[E.3]', 3),
-    ('[E.4]', 4),
-    ('[E.5]', 5),
-    ('[E.6]', 6),
-    ('[E.7]', 7),
-    ('[E.8]', 8),
-    ('[E.9]', 9),
-    ('[E.10]', 10),
-    ('[E.11]', 12),
-    ('[E.12]', 13),
-    ('[E.13]', 14),
-    ('[E.14]', 15),
-    ('[E.15]', 16),
-    ('[E.16]', 17),
+    ("[E.1]", 1),
+    ("[E.2]", 2),
+    ("[E.3]", 3),
+    ("[E.4]", 4),
+    ("[E.5]", 5),
+    ("[E.6]", 6),
+    ("[E.7]", 7),
+    ("[E.8]", 8),
+    ("[E.9]", 9),
+    ("[E.10]", 10),
+    ("[E.11]", 12),
+    ("[E.12]", 13),
+    ("[E.13]", 14),
+    ("[E.14]", 15),
+    ("[E.15]", 16),
+    ("[E.16]", 17),
 )
 
 maker_ = baca.TimeSignatureMaker(
@@ -48,88 +48,88 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
+    "Global_Skips",
+    baca.metronome_mark("night", selector=baca.leaf(1 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(1 - 1)),
-    baca.metronome_mark('incisions', selector=baca.leaf(3 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(3 - 1)),
 
-    baca.metronome_mark('incisions', selector=baca.leaf(5 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(5 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(5 - 1)),
-    baca.metronome_mark('night', selector=baca.leaf(7 - 1)),
+    baca.metronome_mark("night", selector=baca.leaf(7 - 1)),
 
-    baca.metronome_mark('night', selector=baca.leaf(9 - 1)),
+    baca.metronome_mark("night", selector=baca.leaf(9 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(9 - 1)),
-    baca.metronome_mark('incisions', selector=baca.leaf(11 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(11 - 1)),
 
-    baca.metronome_mark('incisions', selector=baca.leaf(13 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(13 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(13 - 1)),
-    baca.metronome_mark('night', selector=baca.leaf(15 - 1)),
+    baca.metronome_mark("night", selector=baca.leaf(15 - 1)),
 
-    baca.rehearsal_mark('E'),
+    baca.rehearsal_mark("E"),
 )
 
 maker(
-    ('bcl', [(1, 4), (5, 8), (9, 12), (13, 16)]),
+    ("bcl", [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
 )
 
 maker(
     [
-        ('vn', 1),
-        ('va', 1),
+        ("vn", 1),
+        ("va", 1),
         ],
-    baca.clef('percussion'),
+    baca.clef("percussion"),
 )
 
 maker(
-    ('vn', [(1, 2), (5, 6), (9, 10), (13, 14)]),
+    ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.triplet_rhythm(),
 )
 
 maker(
-    ('va', [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.triplet_rhythm(),
 )
 
 maker(
-    ('vc', [(9, 12), (13, 16)]),
+    ("vc", [(9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
 )
 
 maker(
-    ('bcl', (1, 4)),
-    baca.dynamic('ppp'),
-    baca.pitch('E3'),
+    ("bcl", (1, 4)),
+    baca.dynamic("ppp"),
+    baca.pitch("E3"),
 )
 
 maker(
-    ('bcl', (5, 8)),
-    baca.pitch('E+3'),
+    ("bcl", (5, 8)),
+    baca.pitch("E+3"),
 )
 
 maker(
-    ('bcl', (9, 12)),
-    baca.pitch('F3'),
+    ("bcl", (9, 12)),
+    baca.pitch("F3"),
 )
 
 maker(
-    ('bcl', (13, 16)),
-    baca.pitch('F+3'),
+    ("bcl", (13, 16)),
+    baca.pitch("F+3"),
 )
 
 maker(
     [
-        'vn',
-        'va',
+        "vn",
+        "va",
         ],
     baca.accent(
         selector=baca.pheads(
             exclude=abjad.const.HIDDEN).exclude([0, 4], 9),
     ),
     baca.dls_staff_padding(8),
-    baca.markup('sponges on BD', boxed=True),
+    baca.markup("sponges on BD", boxed=True),
     baca.hairpin(
-        'f > p <',
+        "f > p <",
         bookend=True,
         pieces=baca.runs(
             exclude=abjad.const.HIDDEN).map(baca.enchain([4, 3])).flatten(),
@@ -145,16 +145,16 @@ maker(
 )
 
 maker(
-    ('vc', (1, 16)),
-    baca.clef('bass'),
+    ("vc", (1, 16)),
+    baca.clef("bass"),
 )
 
 maker(
-    ('vc', (9, 16)),
+    ("vc", (9, 16)),
     baca.dls_staff_padding(4),
-    baca.markup('trem. flaut. tast.'),
+    baca.markup("trem. flaut. tast."),
     baca.hairpin(
-        'p < mp >',
+        "p < mp >",
         final_hairpin=False,
         pieces=baca.cmgroups(),
     ),
@@ -163,11 +163,11 @@ maker(
 )
 
 maker(
-    ('vc', (9, 12)),
-    baca.pitch('F3'),
+    ("vc", (9, 12)),
+    baca.pitch("F3"),
 )
 
 maker(
-    ('vc', (13, 16)),
-    baca.pitch('F+3'),
+    ("vc", (13, 16)),
+    baca.pitch("F+3"),
 )

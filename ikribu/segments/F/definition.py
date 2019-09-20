@@ -9,14 +9,14 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[F.1]', 1),
-    ('[F.2]', 2),
-    ('[F.3]', 3),
-    ('[F.4]', 4),
-    ('[F.5]', 5),
-    ('[F.6]', 6),
-    ('[F.7]', 7),
-    ('[F.8]', 8),
+    ("[F.1]", 1),
+    ("[F.2]", 2),
+    ("[F.3]", 3),
+    ("[F.4]", 4),
+    ("[F.5]", 5),
+    ("[F.6]", 6),
+    ("[F.7]", 7),
+    ("[F.8]", 8),
 )
 
 maker_ = baca.TimeSignatureMaker(
@@ -40,32 +40,32 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.rehearsal_mark('F'),
+    "Global_Skips",
+    baca.rehearsal_mark("F"),
 )
 
 maker(
-    ('bcl', (1, 4)),
+    ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.pitch('F#3'),
+    baca.pitch("F#3"),
 )
 
 maker(
-    ('bcl', (6, 8)),
+    ("bcl", (6, 8)),
     baca.make_repeat_tied_notes(),
-    baca.hairpin('sfp > ppp'),
-    baca.pitch('G2'),
+    baca.hairpin("sfp > ppp"),
+    baca.pitch("G2"),
 )
 
 maker(
     [
-        ('vn', (6, 7)),
-        ('va', (6, 7)),
+        ("vn", (6, 7)),
+        ("va", (6, 7)),
         ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
     baca.hairpin(
-        'sfpp < p >o niente',
+        "sfpp < p >o niente",
         pieces=baca.rleaves().omgroups([1, 1]),
     ),
     baca.stem_tremolo(selector=baca.pleaves()),
@@ -73,46 +73,46 @@ maker(
 )
 
 maker(
-    ('vn', (6, 7)),
-    baca.clef('treble'),
+    ("vn", (6, 7)),
+    baca.clef("treble"),
     baca.markup(
-        'II+III',
+        "II+III",
         direction=abjad.Down,
     ),
-    baca.pitch('<E4 F#4>'),
-    baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
+    baca.pitch("<E4 F#4>"),
+    baca.text_spanner("trem. flaut. XP => trem. flaut. tast."),
     baca.staff_lines(5),
 )
 
 maker(
-    ('va', (6, 7)),
+    ("va", (6, 7)),
     baca.markup(
-        'I+II',
+        "I+II",
         direction=abjad.Down,
     ),
-    baca.clef('treble'),
+    baca.clef("treble"),
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
-    baca.pitch('<Eb4 F4>'),
-    baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
+    baca.pitch("<Eb4 F4>"),
+    baca.text_spanner("trem. flaut. XP => trem. flaut. tast."),
     baca.staff_lines(5),
 )
 
 maker(
-    ('vc', (1, 4)),
+    ("vc", (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.hairpin('p < ff'),
-    baca.pitch('F#3'),
+    baca.hairpin("p < ff"),
+    baca.pitch("F#3"),
     baca.stem_tremolo(selector=baca.pleaves()),
-    baca.text_spanner('(trem. flaut. tast.) => trem. XP (non. flaut.)'),
+    baca.text_spanner("(trem. flaut. tast.) => trem. XP (non. flaut.)"),
     baca.text_spanner_staff_padding(3.5),
 )
 
 maker(
-    ('vc', (6, 7)),
+    ("vc", (6, 7)),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
         boxed=True,
     ),
     baca.staff_lines(1),
@@ -121,7 +121,7 @@ maker(
 )
 
 maker(
-    ('vc', 8),
-    baca.clef('treble'),
+    ("vc", 8),
+    baca.clef("treble"),
     baca.staff_lines(5),
 )
