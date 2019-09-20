@@ -9,23 +9,23 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[M.1]', 1),
-    ('[M.2]', 2),
-    ('[M.3]', 4),
-    ('[M.5]', 6),
-    ('[M.6]', 7),
-    ('[M.8]', 9),
-    ('[M.9]', 10),
-    ('[M.10]', 12),
-    ('[M.12]', 14),
-    ('[M.13]', 15),
-    ('[M.14]', 17),
-    ('[M.16]', 19),
-    ('[M.17]', 20),
-    ('[M.19]', 22),
-    ('[M.20]', 23),
-    ('[M.21]', 27),
-    ('[M.22]', 28),
+    ("[M.1]", 1),
+    ("[M.2]", 2),
+    ("[M.3]", 4),
+    ("[M.5]", 6),
+    ("[M.6]", 7),
+    ("[M.8]", 9),
+    ("[M.9]", 10),
+    ("[M.10]", 12),
+    ("[M.12]", 14),
+    ("[M.13]", 15),
+    ("[M.14]", 17),
+    ("[M.16]", 19),
+    ("[M.17]", 20),
+    ("[M.19]", 22),
+    ("[M.20]", 23),
+    ("[M.21]", 27),
+    ("[M.22]", 28),
 )
 
 fermata_measures = [5, 8, 13, 18, 21, 32]
@@ -52,141 +52,141 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('incisions', selector=baca.leaf(1 - 1)),
+    "Global_Skips",
+    baca.metronome_mark("incisions", selector=baca.leaf(1 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(1 - 1)),
-    baca.metronome_mark('windows', selector=baca.leaf(4 - 1)),
+    baca.metronome_mark("windows", selector=baca.leaf(4 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(6 - 1)),
-    baca.metronome_mark('incisions', selector=baca.leaf(7 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(7 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(9 - 1)),
-    baca.metronome_mark('windows', selector=baca.leaf(12 - 1)),
+    baca.metronome_mark("windows", selector=baca.leaf(12 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(14 - 1)),
-    baca.metronome_mark('incisions', selector=baca.leaf(17 - 1)),
+    baca.metronome_mark("incisions", selector=baca.leaf(17 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(19 - 1)),
-    baca.metronome_mark('windows', selector=baca.leaf(20 - 1)),
+    baca.metronome_mark("windows", selector=baca.leaf(20 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(22 - 1)),
-    baca.metronome_mark('incisions', selector=baca.leaf(27 - 1)),
-    baca.rehearsal_mark('M'),
+    baca.metronome_mark("incisions", selector=baca.leaf(27 - 1)),
+    baca.rehearsal_mark("M"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('short', selector=baca.leaf(5 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(8 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(13 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(18 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(21 - 1)),
-    baca.global_fermata('short', selector=baca.leaf(32 - 1)),
+    "Global_Rests",
+    baca.global_fermata("short", selector=baca.leaf(5 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(8 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(13 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(18 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(21 - 1)),
+    baca.global_fermata("short", selector=baca.leaf(32 - 1)),
 )
 
 maker(
-    ('bcl', [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)]),
+    ("bcl", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)]),
     baca.make_repeat_tied_notes(),
 )
 
 maker(
-    ('vn', [1, 6, 9, 14, 19, 22]),
+    ("vn", [1, 6, 9, 14, 19, 22]),
     baca.make_repeat_tied_notes(),
 )
 
 maker(
-    ('vn', (2, 4)),
+    ("vn", (2, 4)),
     ikribu.color_rhythm(3),
 )
 
 maker(
-    ('vn', 7),
+    ("vn", 7),
     ikribu.color_rhythm(4),
 )
 
 maker(
-    ('vn', (10, 12)),
+    ("vn", (10, 12)),
     ikribu.color_rhythm(5),
 )
 
 maker(
-    ('vn', (15, 17)),
+    ("vn", (15, 17)),
     ikribu.color_rhythm(3),
 )
 
 maker(
-    ('vn', 20),
+    ("vn", 20),
     ikribu.color_rhythm(4),
 )
 
 maker(
-    ('vn', (23, 27)),
+    ("vn", (23, 27)),
     ikribu.color_rhythm(5),
 )
 
 maker(
-    ('va', (2, 4)),
+    ("va", (2, 4)),
     ikribu.color_rhythm(4),
 )
 
 maker(
-    ('va', 7),
+    ("va", 7),
     ikribu.color_rhythm(5),
 )
 
 maker(
-    ('va', (10, 12)),
+    ("va", (10, 12)),
     ikribu.color_rhythm(3),
 )
 
 maker(
-    ('va', (15, 17)),
+    ("va", (15, 17)),
     ikribu.color_rhythm(4),
 )
 
 maker(
-    ('va', 20),
+    ("va", 20),
     ikribu.color_rhythm(5),
 )
 
 maker(
-    ('va', (23, 27)),
+    ("va", (23, 27)),
     ikribu.color_rhythm(3),
 )
 
 maker(
-    ('vc', 1),
+    ("vc", 1),
     baca.staff_lines(5),
 )
 
 maker(
     (
-        'vc',
+        "vc",
         [1, (2, 4), 6, 7, 9, (10, 12), 14, (15, 17), 19, 20, 22, (23, 27)],
     ),
     baca.make_repeat_tied_notes(),
 )
 
 maker(
-    'bcl',
-    baca.pitch('B1'),
+    "bcl",
+    baca.pitch("B1"),
 )
 
 maker(
-    ('bcl', [(2, 4), (10, 12), (15, 17)]),
-    baca.hairpin('p < fff', selector=baca.leaves()[:2]),
-    baca.hairpin('fff >o niente', selector=baca.rleaves()[-2:]),
+    ("bcl", [(2, 4), (10, 12), (15, 17)]),
+    baca.hairpin("p < fff", selector=baca.leaves()[:2]),
+    baca.hairpin("fff >o niente", selector=baca.rleaves()[-2:]),
 )
 
 maker(
-    ('bcl', (23, 31)),
-    baca.hairpin('ppp < fff', selector=baca.leaves()[:-1]),
+    ("bcl", (23, 31)),
+    baca.hairpin("ppp < fff", selector=baca.leaves()[:-1]),
 )
 
 maker(
-    ('bcl', [7, 20]),
-    baca.dynamic('p'),
+    ("bcl", [7, 20]),
+    baca.dynamic("p"),
 )
 
 maker(
     [
-        'vn',
-        'va',
+        "vn",
+        "va",
         ],
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(3),
@@ -194,27 +194,27 @@ maker(
 )
 
 maker(
-    ('vn', 1),
+    ("vn", 1),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (3)', boxed=True),
+    baca.markup("grainfall (3)", boxed=True),
 )
 
 maker(
     [
-        ('vn', (1, 27)),
-        ('va', (1, 27)),
+        ("vn", (1, 27)),
+        ("va", (1, 27)),
         ],
     baca.staff_position(0),
 )
 
 maker(
-    ('vn', [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-    baca.markup('sponges on BD', boxed=True),
+    ("vn", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
+    baca.markup("sponges on BD", boxed=True),
 )
 
 maker(
     (
-        ['vn', 'va'], 
+        ["vn", "va"], 
         [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
     ),
     baca.accent(selector=baca.pheads().exclude([0], 2)),
@@ -222,150 +222,150 @@ maker(
 )
 
 maker(
-    ('vn', 6),
+    ("vn", 6),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (4)', boxed=True),
+    baca.markup("grainfall (4)", boxed=True),
 )
 
 maker(
-    ('vn', 9),
+    ("vn", 9),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (5)', boxed=True),
+    baca.markup("grainfall (5)", boxed=True),
 )
 
 maker(
-    ('vn', 14),
+    ("vn", 14),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (6)', boxed=True),
+    baca.markup("grainfall (6)", boxed=True),
 )
 
 maker(
-    ('vn', 19),
+    ("vn", 19),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (7)', boxed=True),
+    baca.markup("grainfall (7)", boxed=True),
 )
 
 maker(
-    ('vn', 22),
+    ("vn", 22),
     baca.dynamic('"f"'),
-    baca.markup('grainfall (8)', boxed=True),
+    baca.markup("grainfall (8)", boxed=True),
 )
 
 maker(
-    ('vc', [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-    baca.clef('bass'),
+    ("vc", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
+    baca.clef("bass"),
     baca.ottava_bassa(),
-    baca.pitch('C1'),
+    baca.pitch("C1"),
 )
 
 maker(
     (
-        ['vn', 'va', 'vc'], 
+        ["vn", "va", "vc"], 
         [(2, 4), (10, 12), (15, 17), (23, 27)],
     ),
-    baca.hairpin('mf < fff'),
+    baca.hairpin("mf < fff"),
 )
 
 maker(
-    ('vc', [(2, 4), (10, 12), (15, 17), (23, 27)]),
-    baca.text_spanner('tasto => XP'),
+    ("vc", [(2, 4), (10, 12), (15, 17), (23, 27)]),
+    baca.text_spanner("tasto => XP"),
 )
 
 maker(
     [
-        ('vn', 7),
-        ('vn', 20),
-        ('vc', 7),
-        ('vc', 20),
+        ("vn", 7),
+        ("vn", 20),
+        ("vc", 7),
+        ("vc", 20),
         ],
-    baca.dynamic('fff'),
+    baca.dynamic("fff"),
 )
 
 maker(
-    ('vc', [7, 20]),
-    baca.markup('XP'),
+    ("vc", [7, 20]),
+    baca.markup("XP"),
 )
 
 maker(
-    ('vc', 1),
-    baca.clef('treble'),
-    baca.dynamic('sfz'),
+    ("vc", 1),
+    baca.clef("treble"),
+    baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('F~5'),
+    baca.pitch("F~5"),
 )
 
 maker(
-    ('vc', 6),
-    baca.clef('treble'),
-    baca.dynamic('sfz'),
+    ("vc", 6),
+    baca.clef("treble"),
+    baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('G5'),
+    baca.pitch("G5"),
 )
 
 maker(
-    ('vc', 9),
-    baca.clef('treble'),
-    baca.dynamic('sffz'),
+    ("vc", 9),
+    baca.clef("treble"),
+    baca.dynamic("sffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('F~5'),
+    baca.pitch("F~5"),
 )
 
 maker(
-    ('vc', 14),
-    baca.clef('treble'),
-    baca.dynamic('sffz'),
+    ("vc", 14),
+    baca.clef("treble"),
+    baca.dynamic("sffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('G5'),
+    baca.pitch("G5"),
 )
 
 maker(
-    ('vc', 19),
-    baca.clef('treble'),
-    baca.dynamic('sfffz'),
+    ("vc", 19),
+    baca.clef("treble"),
+    baca.dynamic("sfffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('A5'),
+    baca.pitch("A5"),
 )
 
 maker(
-    ('vc', 22),
-    baca.clef('treble'),
-    baca.dynamic('sfffz'),
+    ("vc", 22),
+    baca.clef("treble"),
+    baca.dynamic("sfffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('C+6'),
+    baca.pitch("C+6"),
 )

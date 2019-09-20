@@ -9,10 +9,10 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[I.1]', 1),
-    ('[I.3]', 3),
-    ('[I.5]', 5),
-    ('[I.7]', 7),
+    ("[I.1]", 1),
+    ("[I.3]", 3),
+    ("[I.5]", 5),
+    ("[I.7]", 7),
 )
 
 fermata_measures = [2, 4, 6, 8]
@@ -38,29 +38,29 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
-    baca.rehearsal_mark('I'),
+    "Global_Skips",
+    baca.metronome_mark("night", selector=baca.leaf(1 - 1)),
+    baca.rehearsal_mark("I"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('long', selector=baca.leaf(2 - 1)),
-    baca.global_fermata('long', selector=baca.leaf(4 - 1)),
-    baca.global_fermata('long', selector=baca.leaf(6 - 1)),
-    baca.global_fermata('long', selector=baca.leaf(8 - 1)),
+    "Global_Rests",
+    baca.global_fermata("long", selector=baca.leaf(2 - 1)),
+    baca.global_fermata("long", selector=baca.leaf(4 - 1)),
+    baca.global_fermata("long", selector=baca.leaf(6 - 1)),
+    baca.global_fermata("long", selector=baca.leaf(8 - 1)),
 )
 
 maker(
-    ('vc', [1, 3, 5, 7]),
+    ("vc", [1, 3, 5, 7]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
 maker(
-    ('vc', (1, 8)),
+    ("vc", (1, 8)),
     baca.dynamic('"mf"'),
     baca.markup(
-        baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
+        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
         boxed=True,
     ),
     baca.staff_lines(1),

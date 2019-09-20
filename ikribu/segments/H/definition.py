@@ -10,8 +10,8 @@ from abjadext import rmakers
 ###############################################################################
 
 stage_markup = (
-    ('[H.1]', 1),
-    ('[H.2]', 5),
+    ("[H.1]", 1),
+    ("[H.2]", 5),
 )
 
 fermata_measures = [9]
@@ -38,24 +38,24 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.rehearsal_mark('H'),
+    "Global_Skips",
+    baca.rehearsal_mark("H"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('fermata', selector=baca.leaf(9 - 1)),
+    "Global_Rests",
+    baca.global_fermata("fermata", selector=baca.leaf(9 - 1)),
 )
 
 maker(
-    ('bcl', (1, 8)),
-    baca.dynamic('ppp'),
+    ("bcl", (1, 8)),
+    baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
-    baca.pitch('Db2'),
+    baca.pitch("Db2"),
 )
 
 maker(
-    ('vn_rh', (1, 8)),
+    ("vn_rh", (1, 8)),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([0, 8], 12)),
@@ -64,14 +64,14 @@ maker(
 )
 
 maker(
-    ('vn', (1, 8)),
+    ("vn", (1, 8)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
 maker(
-    ('va_rh', (1, 8)),
+    ("va_rh", (1, 8)),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([4, 14], 16)),
@@ -80,7 +80,7 @@ maker(
 )
 
 maker(
-    ('va', (1, 8)),
+    ("va", (1, 8)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
@@ -88,13 +88,13 @@ maker(
 
 maker(
     [
-        ('vn_rh', (1, 8)),
-        ('va_rh', (1, 8)),
+        ("vn_rh", (1, 8)),
+        ("va_rh", (1, 8)),
         ],
     baca.dls_staff_padding(10),
-    baca.markup('1/2 clt', boxed=True),
+    baca.markup("1/2 clt", boxed=True),
     baca.hairpin(
-        'ff > p < f > pp < p > ppp <',
+        "ff > p < f > pp < p > ppp <",
         bookend=True,
         pieces=baca.runs().map(baca.enchain([3, 4])).flatten(),
     ),

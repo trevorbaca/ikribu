@@ -30,35 +30,35 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.metronome_mark('incisions', selector=baca.leaf(1 - 1)),
+    "Global_Skips",
+    baca.metronome_mark("incisions", selector=baca.leaf(1 - 1)),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('long', selector=baca.leaf(2 - 1)),
+    "Global_Rests",
+    baca.global_fermata("long", selector=baca.leaf(2 - 1)),
 )
 
 # bcl
 
 maker(
-    'bcl',
+    "bcl",
     baca.staff_lines(5),
     baca.suite(
-        ikribu.margin_markup('B. cl.'),
-        baca.start_markup(['Bass', 'clarinet'], hcenter_in=16),
+        ikribu.margin_markup("B. cl."),
+        baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
     ),
 )
 
 # vn
 
 maker(
-    'vn',
+    "vn",
     baca.suite(
-        ikribu.margin_markup('Vn.', context='SingleStringStaffGroup'),
+        ikribu.margin_markup("Vn.", context="SingleStringStaffGroup"),
         baca.start_markup(
-            'Violin',
-            context='SingleStringStaffGroup',
+            "Violin",
+            context="SingleStringStaffGroup",
             hcenter_in=16,
         ),
     ),
@@ -67,9 +67,9 @@ maker(
 maker(
     ("vn", 1),
     baca.make_repeat_tied_notes(),
-    baca.clef('percussion'),
+    baca.clef("percussion"),
     baca.dynamic('"mf"'),
-    baca.markup('grainfall (1)', boxed=True),
+    baca.markup("grainfall (1)", boxed=True),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
@@ -78,13 +78,13 @@ maker(
 # va
 
 maker(
-    'va',
+    "va",
     baca.staff_lines(5),
     baca.suite(
-        ikribu.margin_markup('Va.', context='SingleStringStaffGroup'),
+        ikribu.margin_markup("Va.", context="SingleStringStaffGroup"),
         baca.start_markup(
-            'Viola',
-            context='SingleStringStaffGroup',
+            "Viola",
+            context="SingleStringStaffGroup",
             hcenter_in=16,
         ),
     ),
@@ -93,36 +93,36 @@ maker(
 # vc
 
 maker(
-    'vc',
+    "vc",
     baca.staff_lines(5),
     baca.suite(
-        ikribu.margin_markup('Vc.', context='SingleStringStaffGroup'),
+        ikribu.margin_markup("Vc.", context="SingleStringStaffGroup"),
         baca.start_markup(
-            'Cello',
-            context='SingleStringStaffGroup',
+            "Cello",
+            context="SingleStringStaffGroup",
             hcenter_in=16,
         ),
     ),
 )
 
 maker(
-    ('vc', 1),
+    ("vc", 1),
     baca.make_repeat_tied_notes(),
-    baca.clef('treble'),
-    baca.dynamic('sfz'),
+    baca.clef("treble"),
+    baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup('pizz.'),
+    baca.markup("pizz."),
     baca.markup(
-        'III',
+        "III",
         direction=abjad.Down,
     ),
     baca.note_head_style_harmonic(),
-    baca.pitch('F~5'),
+    baca.pitch("F~5"),
 )
 
 # vn_rh, va_rh, vc_rh
 
 maker(
-    (['vn_rh', 'va_rh', 'vc_rh'], 1),
+    (["vn_rh", "va_rh", "vc_rh"], 1),
     baca.staff_lines(1),
 )

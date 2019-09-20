@@ -9,14 +9,14 @@ import os
 ###############################################################################
 
 stage_markup = (
-    ('[L.1]', 1),
-    ('[L.2]', 5),
-    ('[L.3]', 9),
-    ('[L.4]', 13),
-    ('[L.5]', 17),
-    ('[L.6]', 21),
-    ('[L.7]', 25),
-    ('[L.8]', 29),
+    ("[L.1]", 1),
+    ("[L.2]", 5),
+    ("[L.3]", 9),
+    ("[L.4]", 13),
+    ("[L.5]", 17),
+    ("[L.6]", 21),
+    ("[L.7]", 25),
+    ("[L.8]", 29),
 )
 
 fermata_measures = [33]
@@ -43,42 +43,42 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
-    baca.rehearsal_mark('L'),
+    "Global_Skips",
+    baca.rehearsal_mark("L"),
 )
 
 maker(
-    'Global_Rests',
-    baca.global_fermata('short', selector=baca.leaf(33 - 1)),
+    "Global_Rests",
+    baca.global_fermata("short", selector=baca.leaf(33 - 1)),
 )
 
 maker(
-    ('bcl', (1, 28)),
-    baca.clef('treble'),
-    baca.dynamic('ppp'),
+    ("bcl", (1, 28)),
+    baca.clef("treble"),
+    baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
     baca.markup(
-        'breathe discreetly before any downbeat as needed'
-        ' (but do not circular breathe)'
+        "breathe discreetly before any downbeat as needed"
+        " (but do not circular breathe)"
     ),
-    baca.pitch('C2'),
+    baca.pitch("C2"),
     baca.staff_lines(5),
 )
 
 maker(
-    ('vn', (1, 16)),
+    ("vn", (1, 16)),
     baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm(extra_counts=[4]),
     ikribu.clb_staff_positions(rotation=-1),
 )
 
 maker(
-    ('vn', (21, 32)),
+    ("vn", (21, 32)),
     baca.accent(selector=baca.pheads().exclude([0, 4], 9)),
     baca.dls_staff_padding(8),
-    baca.markup('sponges on BD', boxed=True),
+    baca.markup("sponges on BD", boxed=True),
     baca.hairpin(
-        'mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff',
+        "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
         bookend=-1,
         pieces=baca.cmgroups(),
     ),
@@ -90,7 +90,7 @@ maker(
 )
 
 maker(
-    ('vn', (13, 16)),
+    ("vn", (13, 16)),
     baca.dls_staff_padding(8),
     baca.hairpin(
         '"mp" >o niente',
@@ -100,14 +100,14 @@ maker(
 )
 
 maker(
-    ('va', (1, 8)),
+    ("va", (1, 8)),
     baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm(extra_counts=[2]),
     ikribu.clb_staff_positions(rotation=-1),
 )
 
 maker(
-    ('va', (5, 8)),
+    ("va", (5, 8)),
     baca.dls_staff_padding(8),
     baca.hairpin(
         '"mp" >o niente',
@@ -117,13 +117,13 @@ maker(
 )
 
 maker(
-    ('va', (13, 32)),
+    ("va", (13, 32)),
     baca.accent(selector=baca.pheads().exclude([0, 5], 11)),
     baca.dls_staff_padding(8),
-    baca.markup('sponges on BD', boxed=True),
+    baca.markup("sponges on BD", boxed=True),
     baca.hairpin(
-        'p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <'
-        ' f > mf < f > mf < ff > f < ff > f < fff',
+        "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
+        " f > mf < f > mf < ff > f < ff > f < fff",
         bookend=-1,
         pieces=baca.cmgroups(),
     ),
@@ -135,14 +135,14 @@ maker(
 )
 
 maker(
-    ('vc', [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
+    ("vc", [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
 maker(
-    'vc',
+    "vc",
     baca.hairpin(
-        'p < f >',
+        "p < f >",
         bookend=-1,
         pieces=baca.cmgroups(),
         selector=baca.tleaves(exclude=abjad.const.HIDDEN),
@@ -152,41 +152,41 @@ maker(
 )
 
 maker(
-    ('vc', 5),
+    ("vc", 5),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
         boxed=True,
     ),
 )
 
 maker(
-    ('vc', 9),
+    ("vc", 9),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/4 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/4 every quarter note"]),
         boxed=True,
     ),
 )
 
 maker(
-    ('vc', 13),
+    ("vc", 13),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
         boxed=True,
     ),
 )
 
 maker(
-    ('vc', 17),
+    ("vc", 17),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
         boxed=True,
     ),
 )
 
 maker(
-    ('vc', 21),
+    ("vc", 21),
     baca.markup(
-        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
         boxed=True,
     ),
 )
