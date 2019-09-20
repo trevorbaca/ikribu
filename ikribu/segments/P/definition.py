@@ -15,7 +15,7 @@ stage_markup = (
     ('[P.3]', 5),
     ('[P.4]', 6),
     ('[P.5]', 7),
-    )
+)
 
 fermata_measures = [8]
 maker_ = baca.TimeSignatureMaker(
@@ -23,7 +23,7 @@ maker_ = baca.TimeSignatureMaker(
     count=8,
     fermata_measures=fermata_measures,
     rotation=-16,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -38,7 +38,7 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=8,
-    )
+)
 
 maker(
     'Global_Skips',
@@ -46,18 +46,18 @@ maker(
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(1 - 1)),
     baca.metronome_mark('night', selector=baca.leaf(6 - 1)),
     baca.rehearsal_mark('P'),
-    )
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata('long', selector=baca.leaf(-1)),
-    )
+)
 
 maker(
     ('bcl', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch('Bb4'),
-    )
+)
 
 maker(
     ('bcl', (5, 6)),
@@ -67,10 +67,10 @@ maker(
         baca.pitches(
             'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
             exact=True,
-            ),
-        baca.tie(baca.lleaf(0)),
         ),
-    )
+        baca.tie(baca.lleaf(0)),
+    ),
+)
 
 maker(
     ('bcl', 7),
@@ -78,19 +78,19 @@ maker(
     baca.suite(
         baca.pitch('B1'),
         baca.repeat_tie(baca.phead(0)),
-        ),
-    )
+    ),
+)
 
 maker(
     ('bcl', (1, 7)),
     baca.hairpin('pp < mf', selector=baca.leaves()[:4]),
     baca.hairpin('mf >o niente', selector=baca.rleaves()[4:]),
-    )
+)
 
 maker(
     ('bcl', (5, 7)),
     baca.dls_staff_padding(9),
-    )
+)
 
 maker(
     ('vn_rh', (1, 5)),
@@ -100,7 +100,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([0, 8], 12)),
         rotation=0,
-    ),
+),
 )
 
 maker(
@@ -108,7 +108,7 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
-    )
+)
 
 maker(
     ('va_rh', (1, 5)),
@@ -118,7 +118,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([4, 14], 16)),
         rotation=-1,
-    ),
+),
 )
 
 maker(
@@ -126,7 +126,7 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    )
+)
 
 maker(
     ('vc_rh', (1, 5)),
@@ -136,7 +136,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([8, 20], 20)),
         rotation=-2,
-    ),
+),
 )
 
 maker(
@@ -145,7 +145,7 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
-    )
+)
 
 maker(
     [
@@ -159,6 +159,6 @@ maker(
         'p > pp < p > ppp < pp > ppp <',
         bookend=True,
         pieces=baca.runs().map(baca.enchain([3, 4])).flatten(),
-        ),
+    ),
     baca.staff_position(0),
-    )
+)

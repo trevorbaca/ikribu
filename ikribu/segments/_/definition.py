@@ -14,7 +14,7 @@ maker_ = baca.TimeSignatureMaker(
     count=2,
     fermata_measures=fermata_measures,
     rotation=0,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -27,17 +27,17 @@ maker = baca.SegmentMaker(
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=2,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.metronome_mark('incisions', selector=baca.leaf(1 - 1)),
-    )
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata('long', selector=baca.leaf(2 - 1)),
-    )
+)
 
 # bcl
 
@@ -47,8 +47,8 @@ maker(
     baca.suite(
         ikribu.margin_markup('B. cl.'),
         baca.start_markup(['Bass', 'clarinet'], hcenter_in=16),
-        ),
-    )
+    ),
+)
 
 # vn
 
@@ -60,9 +60,9 @@ maker(
             'Violin',
             context='SingleStringStaffGroup',
             hcenter_in=16,
-            ),
         ),
-    )
+    ),
+)
 
 maker(
     ("vn", 1),
@@ -86,9 +86,9 @@ maker(
             'Viola',
             context='SingleStringStaffGroup',
             hcenter_in=16,
-            ),
         ),
-    )
+    ),
+)
 
 # vc
 
@@ -101,9 +101,9 @@ maker(
             'Cello',
             context='SingleStringStaffGroup',
             hcenter_in=16,
-            ),
         ),
-    )
+    ),
+)
 
 maker(
     ('vc', 1),
@@ -115,14 +115,14 @@ maker(
     baca.markup(
         'III',
         direction=abjad.Down,
-        ),
+    ),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
-    )
+)
 
 # vn_rh, va_rh, vc_rh
 
 maker(
     (['vn_rh', 'va_rh', 'vc_rh'], 1),
     baca.staff_lines(1),
-    )
+)

@@ -17,13 +17,13 @@ stage_markup = (
     ('[F.6]', 6),
     ('[F.7]', 7),
     ('[F.8]', 8),
-    )
+)
 
 maker_ = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     count=8,
     rotation=-6,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -37,25 +37,25 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=8,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.rehearsal_mark('F'),
-    )
+)
 
 maker(
     ('bcl', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch('F#3'),
-    )
+)
 
 maker(
     ('bcl', (6, 8)),
     baca.make_repeat_tied_notes(),
     baca.hairpin('sfp > ppp'),
     baca.pitch('G2'),
-    )
+)
 
 maker(
     [
@@ -67,10 +67,10 @@ maker(
     baca.hairpin(
         'sfpp < p >o niente',
         pieces=baca.rleaves().omgroups([1, 1]),
-        ),
+    ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(3.5),
-    )
+)
 
 maker(
     ('vn', (6, 7)),
@@ -78,25 +78,25 @@ maker(
     baca.markup(
         'II+III',
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('va', (6, 7)),
     baca.markup(
         'I+II',
         direction=abjad.Down,
-        ),
+    ),
     baca.clef('treble'),
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('vc', (1, 4)),
@@ -106,7 +106,7 @@ maker(
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner('(trem. flaut. tast.) => trem. XP (non. flaut.)'),
     baca.text_spanner_staff_padding(3.5),
-    )
+)
 
 maker(
     ('vc', (6, 7)),
@@ -114,14 +114,14 @@ maker(
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,
-        ),
+    ),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
-    )
+)
 
 maker(
     ('vc', 8),
     baca.clef('treble'),
     baca.staff_lines(5),
-    )
+)

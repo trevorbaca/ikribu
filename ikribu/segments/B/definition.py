@@ -17,7 +17,7 @@ stage_markup = (
     ('[B.11]', 17),
     ('[B.13]', 19),
     ('[B.14]', 22),
-    )
+)
 
 fermata_measures = [4, 6, 10, 12, 16, 18, 25]
 maker_ = baca.TimeSignatureMaker(
@@ -25,7 +25,7 @@ maker_ = baca.TimeSignatureMaker(
     count=25,
     fermata_measures=fermata_measures,
     rotation=-2,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -40,12 +40,12 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=25,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.rehearsal_mark('B'),
-    )
+)
 
 maker(
     'Global_Rests',
@@ -56,17 +56,17 @@ maker(
     baca.global_fermata('long', selector=baca.leaf(16 - 1)),
     baca.global_fermata('short', selector=baca.leaf(18 - 1)),
     baca.global_fermata('short', selector=baca.leaf(25 - 1)),
-    )
+)
 
 maker(
     ('bcl', [5, 11, 17, (19, 21)]),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('vn', [(1, 3), (7, 9), (13, 15)]),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     [
@@ -75,79 +75,79 @@ maker(
         ],
     baca.text_script_staff_padding(3, allow_mmrests=True),
     baca.text_spanner_staff_padding(3.5),
-    )
+)
 
 maker(
     ('va', (1, 3)),
     baca.clef('alto'),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('va', (19, 24)),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('bcl', (5, 25)),
     baca.pitch(
         'Db2',
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('bcl', 5),
     baca.dynamic('ppp'),
-    )
+)
 
 maker(
     ('bcl', (19, 21)),
     baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
     baca.hairpin('f >o niente', selector=baca.rleaves()[-2:]),
-    )
+)
 
 maker(
     ('vn', (1, 15)),
     baca.markup(
         'III',
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch(
         'E4',
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vn', [(1, 3), (7, 9), (13, 15)]),
     baca.suite(
         baca.hairpin('ppp < p', selector=baca.leaves()[:2]),
         baca.hairpin('p >o niente', selector=baca.rleaves()[-2:]),
-        ),
+    ),
     baca.text_spanner('trem. flaut. pont. => trem. flaut. tast.'),
-    )
+)
 
 maker(
     ('va', (19, 24)),
     baca.markup(
         'II',
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('Eb4'),
     baca.stem_tremolo(
         selector=baca.pleaves(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('va', (19, 24)),
     baca.suite(
         baca.hairpin('ppp < mf', selector=baca.leaves()[:5]),
         baca.hairpin('mf >o niente', selector=baca.rleaves()[-2:]),
-        ),
+    ),
     baca.text_spanner('trem. flaut. pont. => trem. flaut. tast.'),
-    )
+)

@@ -12,7 +12,7 @@ from abjadext import rmakers
 stage_markup = (
     ('[H.1]', 1),
     ('[H.2]', 5),
-    )
+)
 
 fermata_measures = [9]
 maker_ = baca.TimeSignatureMaker(
@@ -20,7 +20,7 @@ maker_ = baca.TimeSignatureMaker(
     count=9,
     fermata_measures=fermata_measures,
     rotation=-8,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -35,24 +35,24 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=9,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.rehearsal_mark('H'),
-    )
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata('fermata', selector=baca.leaf(9 - 1)),
-    )
+)
 
 maker(
     ('bcl', (1, 8)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('Db2'),
-    )
+)
 
 maker(
     ('vn_rh', (1, 8)),
@@ -60,7 +60,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([0, 8], 12)),
         rotation=0,
-    ),
+),
 )
 
 maker(
@@ -68,7 +68,7 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
-    )
+)
 
 maker(
     ('va_rh', (1, 8)),
@@ -76,7 +76,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([4, 14], 16)),
         rotation=-1,
-    ),
+),
 )
 
 maker(
@@ -84,7 +84,7 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    )
+)
 
 maker(
     [
@@ -97,9 +97,9 @@ maker(
         'ff > p < f > pp < p > ppp <',
         bookend=True,
         pieces=baca.runs().map(baca.enchain([3, 4])).flatten(),
-        ),
+    ),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
-    )
+)

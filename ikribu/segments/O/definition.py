@@ -29,7 +29,7 @@ stage_markup = (
     ('[O.18]', 18),
     ('[O.19]', 19),
     ('[O.20]', 20),
-    )
+)
 
 fermata_measures = [21]
 maker_ = baca.TimeSignatureMaker(
@@ -37,7 +37,7 @@ maker_ = baca.TimeSignatureMaker(
     count=21,
     fermata_measures=fermata_measures,
     rotation=-15,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -52,116 +52,116 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=21,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('O'),
-    )
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata('fermata', selector=baca.leaf(21 - 1)),
-    )
+)
 
 maker(
     (
         'bcl',
         [(1, 2), (3, 6), 7, 8, 9, 10,
         (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
-        ),
+    ),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('vn', (9, 20)),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('va', (9, 20)),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('vc', (5, 20)),
     baca.make_repeat_tied_notes(),
     baca.ottava_bracket_staff_padding(10),
-    )
+)
 
 maker(
     ('bcl', (1, 2)),
     baca.pitch('<Bb1 D4>'),
-    )
+)
 
 maker(
     ('bcl', (3, 6)),
     baca.pitch('<Bb1 F4>'),
-    )
+)
 
 maker(
     ('bcl', 7),
     baca.pitch('<Bb1 D4>'),
-    )
+)
 
 maker(
     ('bcl', 8),
     baca.pitch('Bb1'),
-    )
+)
 
 maker(
     ('bcl', 9),
     baca.pitch('<Bb1 D4>'),
-    )
+)
 
 maker(
     ('bcl', 10),
     baca.pitch('<Bb1 F4>'),
-    )
+)
 
 maker(
     ('bcl', (11, 12)),
     baca.pitch('<Bb1 Ab~4>'),
-    )
+)
 
 maker(
     ('bcl', 13),
     baca.pitch('<Bb1 F4>'),
-    )
+)
 
 maker(
     ('bcl', 14),
     baca.pitch('Bb1'),
-    )
+)
 
 maker(
     ('bcl', (15, 16)),
     baca.pitch('<Bb1 D4>'),
-    )
+)
 
 maker(
     ('bcl', 17),
     baca.pitch('<Bb1 F4>'),
-    )
+)
 
 maker(
     ('bcl', 18),
     baca.pitch('<Bb1 D4>'),
-    )
+)
 
 maker(
     ('bcl', (19, 20)),
     baca.hairpin('p >o niente', selector=baca.rleaves()[-3:]),
     baca.pitch('Bb1'),
-    )
+)
 
 maker(
     ('bcl', (1, -1)),
     baca.suite(
         baca.untie(baca.leaves()),
         baca.repeat_tie(baca.pleaves(exclude=abjad.const.HIDDEN)),
-    ),
+),
 )
 
 maker(
@@ -171,12 +171,12 @@ maker(
     baca.markup(
         'II+III',
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. nut'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
-    )
+)
 
 maker(
     ('va', (9, 20)),
@@ -185,46 +185,46 @@ maker(
     baca.markup(
         'II+III',
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner('trem. flaut. XP => trem. flaut. nut'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
-    )
+)
 
 maker(
     ('vc', (5, 20)),
     baca.new(
         baca.clef('bass'),
         measures=1,
-        ),
+    ),
     baca.ottava_bassa(),
     baca.hairpin(
         'mp > p <',
         final_hairpin=False,
         pieces=baca.cmgroups(),
         selector=baca.tleaves(),
-        ),
+    ),
     baca.pitch('Bb0'),
     baca.text_spanner_staff_padding(2.5),
-    )
+)
 
 maker(
     ('vc', (5, 8)),
     baca.text_spanner('tasto poss. => pos. ord.'),
-    )
+)
 
 maker(
     ('vc', (9, 12)),
     baca.text_spanner('pos. ord. => XP'),
-    )
+)
 
 maker(
     ('vc', (13, 16)),
     baca.text_spanner('XP => pos. ord.'),
-    )
+)
 
 maker(
     ('vc', (17, 20)),
     baca.text_spanner('pos. ord. => tasto poss.'),
-    )
+)
