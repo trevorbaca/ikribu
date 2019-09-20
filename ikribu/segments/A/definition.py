@@ -12,7 +12,7 @@ stage_markup = (
     ('[A.1]', 1),
     ('[A.2]', 3),
     ('[A.3]', 6),
-    )
+)
 
 fermata_measures = [7]
 maker_ = baca.TimeSignatureMaker(
@@ -20,7 +20,7 @@ maker_ = baca.TimeSignatureMaker(
     count=7,
     fermata_measures=fermata_measures,
     rotation=-1,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -35,18 +35,18 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=7,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('A'),
-    )
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata('long', selector=baca.leaf(7 - 1)),
-    )
+)
 
 maker(
     ('bcl', (1, 5)),
@@ -54,13 +54,13 @@ maker(
     baca.hairpin('f >o niente', selector=baca.rleaves()[-4:]),
     baca.make_repeat_tied_notes(),
     baca.pitch('D2'),
-    )
+)
 
 maker(
     ('vn', (1, 2)),
     baca.clef('treble'),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('va', (3, 6)),
@@ -69,13 +69,13 @@ maker(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
-        ),
+    ),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,
-        ),
+    ),
     baca.staff_position(0),
     baca.staff_lines(1),
     ikribu.box_adjustment(),
-    )
+)

@@ -17,7 +17,7 @@ stage_markup = (
     ('[K.11]', 11),
     ('[K.13]', 13),
     ('[K.15]', 15),
-    )
+)
 
 fermata_measures = [2, 4, 6, 8, 10, 12, 14, 16]
 maker_ = baca.TimeSignatureMaker(
@@ -25,7 +25,7 @@ maker_ = baca.TimeSignatureMaker(
     count=16,
     fermata_measures=fermata_measures,
     rotation=-11,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -40,12 +40,12 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=16,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.rehearsal_mark('K'),
-    )
+)
 
 maker(
     'Global_Rests',
@@ -57,32 +57,32 @@ maker(
     baca.global_fermata('fermata', selector=baca.leaf(12 - 1)),
     baca.global_fermata('short', selector=baca.leaf(14 - 1)),
     baca.global_fermata('fermata', selector=baca.leaf(16 - 1)),
-    )
+)
 
 maker(
     ('bcl', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
-    )
+)
 
 maker(
     ('vn', [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[4]),
-    )
+)
 
 maker(
     ('va', [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[2]),
-    )
+)
 
 maker(
     ('vc', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
-    )
+)
 
 maker(
     ('vc', 1),
     baca.staff_lines(1),
-    )
+)
 
 maker(
     ('bcl', 5),
@@ -90,8 +90,8 @@ maker(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
-        ),
-    )
+    ),
+)
 
 maker(
     ('bcl', 9),
@@ -99,8 +99,8 @@ maker(
         '"mp"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
-        ),
-    )
+    ),
+)
 
 maker(
     ('bcl', 13),
@@ -108,14 +108,14 @@ maker(
         '"p"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-2, 0)).extra_offset,
-        ),
-    )
+    ),
+)
 
 maker(
     ('bcl', (1, 16)),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
-    )
+)
 
 maker(
     ('vn', (1, 16)),
@@ -125,18 +125,18 @@ maker(
             '"mp"',
             abjad.tweak((0, 0)).X_extent,
             abjad.tweak((-3, 0)).extra_offset,
-            ),
+        ),
         baca.markup(
             'col legno battuto',
-            ),
-        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
         ),
+        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
+    ),
     baca.staccato(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
-    )
+)
 
 maker(
     ('va', (1, 16)),
@@ -146,34 +146,34 @@ maker(
             '"mp"',
             abjad.tweak((0, 0)).X_extent,
             abjad.tweak((-3, 0)).extra_offset,
-            ),
+        ),
         baca.markup(
             'col legno battuto',
-            ),
-        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
         ),
+        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
+    ),
     baca.staccato(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
-    )
+)
 
 maker(
     ('vc', (1, 16)),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,
-        ),
+    ),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
     ikribu.box_adjustment(),
-    )
+)
 
 maker(
     ('vc', 1),
     baca.dynamic('"p"'),
-    )
+)
 
 maker(
     ('vc', 5),
@@ -181,8 +181,8 @@ maker(
         '"mp"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
-        ),
-    )
+    ),
+)
 
 maker(
     ('vc', 9),
@@ -190,8 +190,8 @@ maker(
         '"mf"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-3, 0)).extra_offset,
-        ),
-    )
+    ),
+)
 
 maker(
     ('vc', 13),
@@ -199,5 +199,5 @@ maker(
         '"f"',
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-2, 0)).extra_offset,
-        ),
-    )
+    ),
+)
