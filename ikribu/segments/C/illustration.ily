@@ -64,7 +64,7 @@ C_Global_Skips = {                                                             %
     \bar ""                                                                    %! baca.SegmentMaker._make_global_skips(4):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 7/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
-    - \baca-rehearsal-mark-markup "C"                                          %! baca.rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "C"                                          %! baca.rehearsal_mark():IndicatorCommand
     - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "35"                                            %! MEASURE_NUMBER
@@ -467,56 +467,56 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
     % [C Bass_Clarinet_Music_Voice measure 36 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
     \override TextScript.padding = #2.5                                        %! baca.text_script_padding():OverrideCommand(1)
     \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x():OverrideCommand(1)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    b'4                                                                        %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
     - \tweak X-extent #'(0 . 0)                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak extra-offset #'(-3 . 0)                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
-%@% ^ \markup {                                                                %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-%@%     \override                                                              %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-%@%         #'(box-padding . 0.5)                                              %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-%@%         \box                                                               %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-%@%             "stonecircle: π/2 every quarter note"                          %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-%@%     }                                                                      %! baca.markup:+ARCH_A_PARTS_BCL:IndicatorCommand
-    ^ \markup {                                                                %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-        \override                                                              %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-            \box                                                               %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-                \column                                                        %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-                    {                                                          %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-                        stonecircle:                                           %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-                        "π/2 every quarter note"                               %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-                    }                                                          %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
-        }                                                                      %! baca.markup:-ARCH_A_PARTS_BCL:IndicatorCommand
+%@% ^ \markup {                                                                %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+%@%     \override                                                              %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+%@%         #'(box-padding . 0.5)                                              %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+%@%         \box                                                               %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+%@%             "stonecircle: π/2 every quarter note"                          %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+%@%     }                                                                      %! baca.markup():+ARCH_A_PARTS_BCL:IndicatorCommand
+    ^ \markup {                                                                %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+        \override                                                              %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+            \box                                                               %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+                \column                                                        %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+                    {                                                          %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+                        stonecircle:                                           %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+                        "π/2 every quarter note"                               %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+                    }                                                          %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
+        }                                                                      %! baca.markup():-ARCH_A_PARTS_BCL:IndicatorCommand
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     % [C Bass_Clarinet_Music_Voice measure 37 / measure 3]                     %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
     \revert TextScript.padding                                                 %! baca.text_script_padding():OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():OverrideCommand(2)
 
@@ -545,29 +545,29 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     R1 * 1/6                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [C Bass_Clarinet_Music_Voice measure 40 / measure 6]                     %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     % [C Bass_Clarinet_Music_Voice measure 41 / measure 7]                     %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -594,29 +594,29 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     R1 * 1/6                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [C Bass_Clarinet_Music_Voice measure 44 / measure 10]                    %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     % [C Bass_Clarinet_Music_Voice measure 45 / measure 11]                    %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -643,29 +643,29 @@ C_Bass_Clarinet_Music_Voice = {                                                %
     R1 * 1/6                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [C Bass_Clarinet_Music_Voice measure 48 / measure 14]                    %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     % [C Bass_Clarinet_Music_Voice measure 49 / measure 15]                    %! baca.SegmentMaker._comment_measure_numbers()
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
-    b'4                                                                        %! baca.make_tied_repeated_durations
-    \repeatTie                                                                 %! baca.make_tied_repeated_durations
+    b'4                                                                        %! baca.make_tied_repeated_durations()
+    \repeatTie                                                                 %! baca.make_tied_repeated_durations()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -838,9 +838,9 @@ C_Violin_Music_Voice = {                                                       %
             Vn.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
     \set SingleStringStaffGroup.instrumentName =                               %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
     \markup {                                                                  %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
         \hcenter-in                                                            %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
@@ -851,23 +851,23 @@ C_Violin_Music_Voice = {                                                       %
     \once \override TextScript.parent-alignment-X = #0                         %! baca.text_script_parent_alignment_x():OverrideCommand(1)
 %%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_35:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_35:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
-    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
+    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef():IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef:IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    c'1..                                                                      %! baca.make_repeat_tied_notes
+    c'1..                                                                      %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Violin”)"                            %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-    ^ \markup {                                                                %! baca.markup:IndicatorCommand
-        \override                                                              %! baca.markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
-            \box                                                               %! baca.markup:IndicatorCommand
-                "grainfall (2)"                                                %! baca.markup:IndicatorCommand
-        }                                                                      %! baca.markup:IndicatorCommand
+    ^ \markup {                                                                %! baca.markup():IndicatorCommand
+        \override                                                              %! baca.markup():IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup():IndicatorCommand
+            \box                                                               %! baca.markup():IndicatorCommand
+                "grainfall (2)"                                                %! baca.markup():IndicatorCommand
+        }                                                                      %! baca.markup():IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -884,21 +884,21 @@ C_Violin_Music_Voice = {                                                       %
 
             % [C Violin_Music_Voice measure 36 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
             \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
-            \stopStaff                                                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-            \once \override Staff.StaffSymbol.line-count = 5                   %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-            \startStaff                                                        %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+            \stopStaff                                                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+            \once \override Staff.StaffSymbol.line-count = 5                   %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
+            \startStaff                                                        %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines():IndicatorCommand
             \override DynamicLineSpanner.staff-padding = #3                    %! baca.dls_staff_padding():OverrideCommand(1)
             \override TextScript.staff-padding = #2.5                          %! baca.text_script_staff_padding():OverrideCommand(1)
             \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_36:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
             \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)             %! MEASURE_36:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
-            \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
+            \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca.clef():IndicatorCommand
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
         %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-            \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef:IndicatorCommand
+            \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():IndicatorCommand
             \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
             c'1 * 1                                                            %! baca.SegmentMaker._make_multimeasure_rest_container()
-            ^ \markup { "trem. flaut. tast." }                                 %! baca.markup:IndicatorCommand
+            ^ \markup { "trem. flaut. tast." }                                 %! baca.markup():IndicatorCommand
             \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -914,16 +914,16 @@ C_Violin_Music_Voice = {                                                       %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
     % [C Violin_Music_Voice measure 37 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
-    fs'!1                                                                      %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    fs'!1                                                                      %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Violin_Music_Voice measure 38 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
-    gs'!2.                                                                     %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    gs'!2.                                                                     %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -952,16 +952,16 @@ C_Violin_Music_Voice = {                                                       %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Violin_Music_Voice measure 41 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
-    gs'!1                                                                      %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    gs'!1                                                                      %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Violin_Music_Voice measure 42 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
-    fs'!2.                                                                     %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    fs'!2.                                                                     %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -990,16 +990,16 @@ C_Violin_Music_Voice = {                                                       %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Violin_Music_Voice measure 45 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
-    fs'!1                                                                      %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    fs'!1                                                                      %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Violin_Music_Voice measure 46 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers()
-    gs'!2.                                                                     %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    gs'!2.                                                                     %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -1028,16 +1028,16 @@ C_Violin_Music_Voice = {                                                       %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Violin_Music_Voice measure 49 / measure 15]                           %! baca.SegmentMaker._comment_measure_numbers()
-    gs'!1                                                                      %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    gs'!1                                                                      %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Violin_Music_Voice measure 50 / measure 16]                           %! baca.SegmentMaker._comment_measure_numbers()
-    fs'!2.                                                                     %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    fs'!2.                                                                     %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():OverrideCommand(2)
@@ -1264,17 +1264,17 @@ C_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Viola_Music_Voice measure 37 / measure 3]                             %! baca.SegmentMaker._comment_measure_numbers()
-    f'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    f'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    ^ \markup { "trem. flaut. tast." }                                         %! baca.markup:IndicatorCommand
+    ^ \markup { "trem. flaut. tast." }                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Viola_Music_Voice measure 38 / measure 4]                             %! baca.SegmentMaker._comment_measure_numbers()
-    e'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    e'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -1303,16 +1303,16 @@ C_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Viola_Music_Voice measure 41 / measure 7]                             %! baca.SegmentMaker._comment_measure_numbers()
-    e'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    e'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Viola_Music_Voice measure 42 / measure 8]                             %! baca.SegmentMaker._comment_measure_numbers()
-    f'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    f'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -1341,16 +1341,16 @@ C_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Viola_Music_Voice measure 45 / measure 11]                            %! baca.SegmentMaker._comment_measure_numbers()
-    f'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    f'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Viola_Music_Voice measure 46 / measure 12]                            %! baca.SegmentMaker._comment_measure_numbers()
-    e'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    e'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
 
@@ -1379,16 +1379,16 @@ C_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [C Viola_Music_Voice measure 49 / measure 15]                            %! baca.SegmentMaker._comment_measure_numbers()
-    e'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    e'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Viola_Music_Voice measure 50 / measure 16]                            %! baca.SegmentMaker._comment_measure_numbers()
-    f'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    f'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():OverrideCommand(2)
@@ -1578,14 +1578,14 @@ C_Cello_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    fqf''!1..                                                                  %! baca.make_repeat_tied_notes
+    fqf''!1..                                                                  %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \sfz                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
-    - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
+    - \laissezVibrer                                                           %! baca.laissez_vibrer():IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-    ^ \markup { pizz. }                                                        %! baca.markup:IndicatorCommand
-    _ \markup { III }                                                          %! baca.markup:IndicatorCommand
+    ^ \markup { pizz. }                                                        %! baca.markup():IndicatorCommand
+    _ \markup { III }                                                          %! baca.markup():IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \set SingleStringStaffGroup.shortInstrumentName =                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -1600,8 +1600,8 @@ C_Cello_Music_Voice = {                                                        %
     \override NoteHead.style = #'harmonic                                      %! baca.note_head_style_harmonic():OverrideCommand(1)
     \override TextSpanner.staff-padding = #3.5                                 %! baca.text_spanner_staff_padding():OverrideCommand(1)
     \override TupletBracket.direction = #down                                  %! baca.tuplet_bracket_down():OverrideCommand(1)
-    d''1                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    d''1                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1614,16 +1614,16 @@ C_Cello_Music_Voice = {                                                        %
     \startTextSpan                                                             %! baca.text_spanner:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 37 / measure 3]                             %! baca.SegmentMaker._comment_measure_numbers()
-    fqf''!1                                                                    %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    fqf''!1                                                                    %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 38 / measure 4]                             %! baca.SegmentMaker._comment_measure_numbers()
-    d''2.                                                                      %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    d''2.                                                                      %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1633,8 +1633,8 @@ C_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [C Cello_Music_Voice measure 39 / measure 5]                         %! baca.SegmentMaker._comment_measure_numbers()
-        b'4                                                                    %! baca.make_notes
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        b'4                                                                    %! baca.make_notes()
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1643,24 +1643,24 @@ C_Cello_Music_Voice = {                                                        %
     }
 
     % [C Cello_Music_Voice measure 40 / measure 6]                             %! baca.SegmentMaker._comment_measure_numbers()
-    d''1                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    d''1                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 41 / measure 7]                             %! baca.SegmentMaker._comment_measure_numbers()
-    b'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    b'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 42 / measure 8]                             %! baca.SegmentMaker._comment_measure_numbers()
-    g'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    g'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1670,8 +1670,8 @@ C_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [C Cello_Music_Voice measure 43 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
-        b'4                                                                    %! baca.make_notes
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        b'4                                                                    %! baca.make_notes()
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1680,24 +1680,24 @@ C_Cello_Music_Voice = {                                                        %
     }
 
     % [C Cello_Music_Voice measure 44 / measure 10]                            %! baca.SegmentMaker._comment_measure_numbers()
-    g'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    g'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 45 / measure 11]                            %! baca.SegmentMaker._comment_measure_numbers()
-    d'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    d'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 46 / measure 12]                            %! baca.SegmentMaker._comment_measure_numbers()
-    g'2.                                                                       %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    g'2.                                                                       %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1707,8 +1707,8 @@ C_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [C Cello_Music_Voice measure 47 / measure 13]                        %! baca.SegmentMaker._comment_measure_numbers()
-        d'4                                                                    %! baca.make_notes
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        d'4                                                                    %! baca.make_notes()
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1717,24 +1717,24 @@ C_Cello_Music_Voice = {                                                        %
     }
 
     % [C Cello_Music_Voice measure 48 / measure 14]                            %! baca.SegmentMaker._comment_measure_numbers()
-    g1                                                                         %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    g1                                                                         %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 49 / measure 15]                            %! baca.SegmentMaker._comment_measure_numbers()
-    d'1                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    d'1                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [C Cello_Music_Voice measure 50 / measure 16]                            %! baca.SegmentMaker._comment_measure_numbers()
-    g2.                                                                        %! baca.make_notes
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    g2.                                                                        %! baca.make_notes()
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(2)
