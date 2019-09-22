@@ -23,9 +23,9 @@ P_Global_Rests = {                                                             %
 
     % [P Global_Rests measure 246 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
-    \baca-fermata-measure                                                      %! baca.global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca.global_fermata():GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
-    ^ \baca-long-fermata-markup                                                %! baca.global_fermata:GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! baca.global_fermata():GlobalFermataCommand(1)
 
     % [P Global_Rests measure 247 / measure 9]                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(4):baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! PHANTOM:baca.SegmentMaker._make_global_rests(2)
@@ -40,7 +40,7 @@ P_Global_Skips = {                                                             %
     \bar ""                                                                    %! baca.SegmentMaker._make_global_skips(4):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
-    - \baca-rehearsal-mark-markup "P"                                          %! baca.rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "P"                                          %! baca.rehearsal_mark():IndicatorCommand
     - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "239"                                           %! MEASURE_NUMBER
@@ -212,7 +212,7 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    c'''2.                                                                     %! baca.make_repeat_tied_notes
+    c'''2.                                                                     %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                            %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -229,23 +229,23 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     % [P Bass_Clarinet_Music_Voice measure 240 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
-    c'''2                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.make_repeat_tied_notes
+    c'''2                                                                      %! baca.make_repeat_tied_notes()
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes()
 
     % [P Bass_Clarinet_Music_Voice measure 241 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
-    c'''1..                                                                    %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.make_repeat_tied_notes
+    c'''1..                                                                    %! baca.make_repeat_tied_notes()
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes()
 
     % [P Bass_Clarinet_Music_Voice measure 242 / measure 4]                    %! baca.SegmentMaker._comment_measure_numbers()
-    c'''1..                                                                    %! baca.make_repeat_tied_notes
+    c'''1..                                                                    %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-    \repeatTie                                                                 %! baca.make_repeat_tied_notes
-    ~                                                                          %! baca.tie:IndicatorCommand
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes()
+    ~                                                                          %! baca.tie():IndicatorCommand
 
     % [P Bass_Clarinet_Music_Voice measure 243 / measure 5]                    %! baca.SegmentMaker._comment_measure_numbers()
     \override DynamicLineSpanner.staff-padding = #9                            %! baca.dls_staff_padding():OverrideCommand(1)
-    c'''4                                                                      %! baca.make_repeated_duration_notes
+    c'''4                                                                      %! baca.make_repeated_duration_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -253,38 +253,38 @@ P_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak circled-tip ##t                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
-    a''4                                                                       %! baca.make_repeated_duration_notes
+    a''4                                                                       %! baca.make_repeated_duration_notes()
 
-    f''4                                                                       %! baca.make_repeated_duration_notes
+    f''4                                                                       %! baca.make_repeated_duration_notes()
 
-    d''4                                                                       %! baca.make_repeated_duration_notes
+    d''4                                                                       %! baca.make_repeated_duration_notes()
 
-    b'4                                                                        %! baca.make_repeated_duration_notes
+    b'4                                                                        %! baca.make_repeated_duration_notes()
 
-    g'4                                                                        %! baca.make_repeated_duration_notes
+    g'4                                                                        %! baca.make_repeated_duration_notes()
 
-    e'4                                                                        %! baca.make_repeated_duration_notes
+    e'4                                                                        %! baca.make_repeated_duration_notes()
 
-    c'4                                                                        %! baca.make_repeated_duration_notes
+    c'4                                                                        %! baca.make_repeated_duration_notes()
 
     % [P Bass_Clarinet_Music_Voice measure 244 / measure 6]                    %! baca.SegmentMaker._comment_measure_numbers()
-    b4                                                                         %! baca.make_repeated_duration_notes
+    b4                                                                         %! baca.make_repeated_duration_notes()
 
-    a4                                                                         %! baca.make_repeated_duration_notes
+    a4                                                                         %! baca.make_repeated_duration_notes()
 
-    g4                                                                         %! baca.make_repeated_duration_notes
+    g4                                                                         %! baca.make_repeated_duration_notes()
 
-    f4                                                                         %! baca.make_repeated_duration_notes
+    f4                                                                         %! baca.make_repeated_duration_notes()
 
-    e4                                                                         %! baca.make_repeated_duration_notes
+    e4                                                                         %! baca.make_repeated_duration_notes()
 
-    d4                                                                         %! baca.make_repeated_duration_notes
+    d4                                                                         %! baca.make_repeated_duration_notes()
 
-    cs!4                                                                       %! baca.make_repeated_duration_notes
+    cs!4                                                                       %! baca.make_repeated_duration_notes()
 
     % [P Bass_Clarinet_Music_Voice measure 245 / measure 7]                    %! baca.SegmentMaker._comment_measure_numbers()
-    cs!2.                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
+    cs!2.                                                                      %! baca.make_repeat_tied_notes()
+    \repeatTie                                                                 %! baca.repeat_tie():IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():OverrideCommand(2)
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -379,107 +379,107 @@ P_Violin_RH_Music_Voice = {                                                    %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
-        ^ \markup {                                                            %! baca.markup:IndicatorCommand
-            \override                                                          %! baca.markup:IndicatorCommand
-                #'(box-padding . 0.5)                                          %! baca.markup:IndicatorCommand
-                \box                                                           %! baca.markup:IndicatorCommand
-                    "1/2 clt"                                                  %! baca.markup:IndicatorCommand
-            }                                                                  %! baca.markup:IndicatorCommand
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
+        ^ \markup {                                                            %! baca.markup():IndicatorCommand
+            \override                                                          %! baca.markup():IndicatorCommand
+                #'(box-padding . 0.5)                                          %! baca.markup():IndicatorCommand
+                \box                                                           %! baca.markup():IndicatorCommand
+                    "1/2 clt"                                                  %! baca.markup():IndicatorCommand
+            }                                                                  %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
     % [P Violin_RH_Music_Voice measure 240 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
     c'4                                                                        %! ikribu.bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
     \times 7/8 {                                                               %! ikribu.bow_rhythm
 
         % [P Violin_RH_Music_Voice measure 241 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
@@ -488,76 +488,76 @@ P_Violin_RH_Music_Voice = {                                                    %
 
         % [P Violin_RH_Music_Voice measure 242 / measure 4]                    %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \upbow                                                               %! baca.bcps:BCPCommand(5)
+        - \upbow                                                               %! baca.bcps():BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
@@ -568,57 +568,57 @@ P_Violin_RH_Music_Voice = {                                                    %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \upbow                                                               %! baca.bcps:BCPCommand(5)
+        - \upbow                                                               %! baca.bcps():BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \upbow                                                               %! baca.bcps:BCPCommand(5)
+        - \upbow                                                               %! baca.bcps():BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-right-text #0 #7                                   %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-right-text #0 #7                                   %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(1)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(1)
         \revert Script.staff-padding                                           %! baca.script_staff_padding():OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding():OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():OverrideCommand(2)
@@ -888,37 +888,37 @@ P_Viola_RH_Music_Voice = {                                                     %
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    - \upbow                                                                   %! baca.bcps:BCPCommand(5)
-    ^ \markup {                                                                %! baca.markup:IndicatorCommand
-        \override                                                              %! baca.markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
-            \box                                                               %! baca.markup:IndicatorCommand
-                "1/2 clt"                                                      %! baca.markup:IndicatorCommand
-        }                                                                      %! baca.markup:IndicatorCommand
+    - \upbow                                                                   %! baca.bcps():BCPCommand(5)
+    ^ \markup {                                                                %! baca.markup():IndicatorCommand
+        \override                                                              %! baca.markup():IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup():IndicatorCommand
+            \box                                                               %! baca.markup():IndicatorCommand
+                "1/2 clt"                                                      %! baca.markup():IndicatorCommand
+        }                                                                      %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \downbow                                                                 %! baca.bcps:BCPCommand(8)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
     \times 2/3 {                                                               %! ikribu.bow_rhythm
@@ -927,28 +927,28 @@ P_Viola_RH_Music_Voice = {                                                     %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \upbow                                                               %! baca.bcps:BCPCommand(5)
+        - \upbow                                                               %! baca.bcps():BCPCommand(5)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
@@ -957,77 +957,77 @@ P_Viola_RH_Music_Voice = {                                                     %
 
         % [P Viola_RH_Music_Voice measure 241 / measure 3]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
@@ -1038,51 +1038,51 @@ P_Viola_RH_Music_Voice = {                                                     %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
@@ -1090,68 +1090,68 @@ P_Viola_RH_Music_Voice = {                                                     %
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    - \downbow                                                                 %! baca.bcps:BCPCommand(6)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(6)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \downbow                                                                 %! baca.bcps:BCPCommand(8)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-    - \downbow                                                                 %! baca.bcps:BCPCommand(8)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(8)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-right-text #0 #7                                       %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-right-text #0 #7                                       %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(1)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(1)
     \revert Script.staff-padding                                               %! baca.script_staff_padding():OverrideCommand(2)
     \revert TextSpanner.staff-padding                                          %! baca.text_spanner_staff_padding():OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():OverrideCommand(2)
@@ -1410,50 +1410,50 @@ P_Cello_RH_Music_Voice = {                                                     %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
-        ^ \markup {                                                            %! baca.markup:IndicatorCommand
-            \override                                                          %! baca.markup:IndicatorCommand
-                #'(box-padding . 0.5)                                          %! baca.markup:IndicatorCommand
-                \box                                                           %! baca.markup:IndicatorCommand
-                    "1/2 clt"                                                  %! baca.markup:IndicatorCommand
-            }                                                                  %! baca.markup:IndicatorCommand
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
+        ^ \markup {                                                            %! baca.markup():IndicatorCommand
+            \override                                                          %! baca.markup():IndicatorCommand
+                #'(box-padding . 0.5)                                          %! baca.markup():IndicatorCommand
+                \box                                                           %! baca.markup():IndicatorCommand
+                    "1/2 clt"                                                  %! baca.markup():IndicatorCommand
+            }                                                                  %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
     % [P Cello_RH_Music_Voice measure 240 / measure 2]                         %! baca.SegmentMaker._comment_measure_numbers()
     c'4                                                                        %! ikribu.bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
     \times 7/6 {                                                               %! ikribu.bow_rhythm
@@ -1462,112 +1462,112 @@ P_Cello_RH_Music_Voice = {                                                     %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
     }                                                                          %! ikribu.bow_rhythm
 
     % [P Cello_RH_Music_Voice measure 242 / measure 4]                         %! baca.SegmentMaker._comment_measure_numbers()
     c'4                                                                        %! ikribu.bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #1 #4                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #1 #4                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \downbow                                                                 %! baca.bcps:BCPCommand(8)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \upbow                                                                   %! baca.bcps:BCPCommand(7)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \upbow                                                                   %! baca.bcps():BCPCommand(7)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     c'4                                                                        %! ikribu.bow_rhythm
-    - \downbow                                                                 %! baca.bcps:BCPCommand(8)
-    \bacaStopTextSpanBCP                                                       %! baca.bcps:BCPCommand(3)
-    - \abjad-solid-line-with-arrow                                             %! baca.bcps:BCPCommand(2)
-    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps:BCPCommand(2)
-    \bacaStartTextSpanBCP                                                      %! baca.bcps:BCPCommand(2)
+    - \downbow                                                                 %! baca.bcps():BCPCommand(8)
+    \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
+    - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
+    - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
+    \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
     \times 8/9 {                                                               %! ikribu.bow_rhythm
@@ -1576,76 +1576,76 @@ P_Cello_RH_Music_Voice = {                                                     %
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         r4                                                                     %! ikribu.bow_rhythm
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-invisible-line                                                %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        - \downbow                                                             %! baca.bcps:BCPCommand(6)
+        - \downbow                                                             %! baca.bcps():BCPCommand(6)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \upbow                                                               %! baca.bcps:BCPCommand(7)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \upbow                                                               %! baca.bcps():BCPCommand(7)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
-        - \downbow                                                             %! baca.bcps:BCPCommand(8)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        - \downbow                                                             %! baca.bcps():BCPCommand(8)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(3)
-        - \abjad-solid-line-with-arrow                                         %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps:BCPCommand(2)
-        - \baca-bcp-spanner-right-text #5 #7                                   %! baca.bcps:BCPCommand(2)
-        \bacaStartTextSpanBCP                                                  %! baca.bcps:BCPCommand(2)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
+        - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
+        - \baca-bcp-spanner-right-text #5 #7                                   %! baca.bcps():BCPCommand(2)
+        \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
         c'4                                                                    %! ikribu.bow_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \bacaStopTextSpanBCP                                                   %! baca.bcps:BCPCommand(1)
+        \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(1)
         \revert Script.staff-padding                                           %! baca.script_staff_padding():OverrideCommand(2)
         \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding():OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():OverrideCommand(2)
@@ -1741,12 +1741,12 @@ P_Cello_Music_Voice = {                                                        %
         }                                                                      %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
 %%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_239:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_239:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
-    \clef "tenor"                                                              %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
+    \clef "tenor"                                                              %! EXPLICIT_CLEF:_set_status_tag:baca.clef():IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef:IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():IndicatorCommand
     a,8                                                                        %! ikribu.glissando_rhythm
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
