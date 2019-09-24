@@ -836,7 +836,7 @@ L_Bass_Clarinet_Music_Voice = {                                                %
 
 L_Bass_Clarinet_Music_Staff = {                                                %! abjad.Path.extern()
 
-    \context Voice = "Bass_Clarinet_Music_Voice"                               %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Bass_Clarinet_Music_Voice"                               %! ikribu.ScoreTemplate.__call__()
     \L_Bass_Clarinet_Music_Voice                                               %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -1025,7 +1025,7 @@ L_Violin_RH_Music_Voice = {                                                    %
 
 L_Violin_RH_Music_Staff = {                                                    %! abjad.Path.extern()
 
-    \context Voice = "Violin_RH_Music_Voice"                                   %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Violin_RH_Music_Voice"                                   %! ikribu.ScoreTemplate.__call__()
     \L_Violin_RH_Music_Voice                                                   %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -2147,7 +2147,7 @@ L_Violin_Music_Voice = {                                                       %
 
 L_Violin_Music_Staff = {                                                       %! abjad.Path.extern()
 
-    \context Voice = "Violin_Music_Voice"                                      %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Violin_Music_Voice"                                      %! ikribu.ScoreTemplate.__call__()
     \L_Violin_Music_Voice                                                      %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -2336,7 +2336,7 @@ L_Viola_RH_Music_Voice = {                                                     %
 
 L_Viola_RH_Music_Staff = {                                                     %! abjad.Path.extern()
 
-    \context Voice = "Viola_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Viola_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
     \L_Viola_RH_Music_Voice                                                    %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -3203,7 +3203,7 @@ L_Viola_Music_Voice = {                                                        %
 
 L_Viola_Music_Staff = {                                                        %! abjad.Path.extern()
 
-    \context Voice = "Viola_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Viola_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
     \L_Viola_Music_Voice                                                       %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -3392,7 +3392,7 @@ L_Cello_RH_Music_Voice = {                                                     %
 
 L_Cello_RH_Music_Staff = {                                                     %! abjad.Path.extern()
 
-    \context Voice = "Cello_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Cello_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
     \L_Cello_RH_Music_Voice                                                    %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -4036,7 +4036,7 @@ L_Cello_Music_Voice = {                                                        %
 
 L_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
 
-    \context Voice = "Cello_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__
+    \context Voice = "Cello_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
     \L_Cello_Music_Voice                                                       %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()

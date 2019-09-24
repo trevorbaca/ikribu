@@ -23,8 +23,8 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.LOCAL_MEASURE_NUMBER,
-        abjad.const.STAGE_NUMBER,
+        abjad.tags.LOCAL_MEASURE_NUMBER,
+        abjad.tags.STAGE_NUMBER,
     ],
     check_all_are_pitched=True,
     # TODO: find and eliminate two incomplete spanners
@@ -93,7 +93,7 @@ maker(
 maker(
     ("bcl", (1, 5)),
     baca.tag(
-        "+ARCH_A_PARTS_BCL",
+        abjad.Tag("+ARCH_A_PARTS_BCL"),
         baca.text_script_extra_offset((0, 7)),
         deactivate=True,
     ),

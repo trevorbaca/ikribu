@@ -16,5 +16,5 @@ def triplet_rhythm() -> baca.RhythmCommand:
         rmakers.rewrite_dots(),
         rmakers.extract_trivial(),
         rmakers.force_diminution(),
-        tag="ikribu.triplet_rhythm",
+        tag=abjad.Tag("ikribu.triplet_rhythm"),
     )
