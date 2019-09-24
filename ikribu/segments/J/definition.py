@@ -27,8 +27,8 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.LOCAL_MEASURE_NUMBER,
-        abjad.const.STAGE_NUMBER,
+        abjad.tags.LOCAL_MEASURE_NUMBER,
+        abjad.tags.STAGE_NUMBER,
     ],
     check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
@@ -190,7 +190,10 @@ maker(
 
 maker(
     ("bcl", 10),
-    baca.tag("+ARCH_A_PARTS_BCL", baca.text_script_extra_offset((0, 8))),
+    baca.tag(
+        abjad.Tag("+ARCH_A_PARTS_BCL"),
+        baca.text_script_extra_offset((0, 8)),
+    ),
 )
 
 maker(

@@ -18,5 +18,5 @@ def bow_rhythm(
         rmakers.beam(),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        tag="ikribu.bow_rhythm",
+        tag=abjad.Tag("ikribu.bow_rhythm"),
     )
