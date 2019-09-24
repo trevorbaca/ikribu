@@ -22,84 +22,84 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score], strict=89)
         \context Score = "Score"                                                                 %! ikribu.ScoreTemplate.__call__
         <<                                                                                       %! ikribu.ScoreTemplate.__call__
-            \context GlobalContext = "Global_Context"                                            %! abjad.ScoreTemplate._make_global_context
-            <<                                                                                   %! abjad.ScoreTemplate._make_global_context
-                \context GlobalRests = "Global_Rests"                                            %! abjad.ScoreTemplate._make_global_context
-                {                                                                                %! abjad.ScoreTemplate._make_global_context
-                }                                                                                %! abjad.ScoreTemplate._make_global_context
-                \context GlobalSkips = "Global_Skips"                                            %! abjad.ScoreTemplate._make_global_context
-                {                                                                                %! abjad.ScoreTemplate._make_global_context
-                }                                                                                %! abjad.ScoreTemplate._make_global_context
-            >>                                                                                   %! abjad.ScoreTemplate._make_global_context
+            \context GlobalContext = "Global_Context"                                            %! abjad.ScoreTemplate._make_global_context()
+            <<                                                                                   %! abjad.ScoreTemplate._make_global_context()
+                \context GlobalRests = "Global_Rests"                                            %! abjad.ScoreTemplate._make_global_context()
+                {                                                                                %! abjad.ScoreTemplate._make_global_context()
+                }                                                                                %! abjad.ScoreTemplate._make_global_context()
+                \context GlobalSkips = "Global_Skips"                                            %! abjad.ScoreTemplate._make_global_context()
+                {                                                                                %! abjad.ScoreTemplate._make_global_context()
+                }                                                                                %! abjad.ScoreTemplate._make_global_context()
+            >>                                                                                   %! abjad.ScoreTemplate._make_global_context()
             \context MusicContext = "Music_Context"                                              %! ikribu.ScoreTemplate.__call__
             {                                                                                    %! ikribu.ScoreTemplate.__call__
                 \context EnsembleStaffGroup = "Ensemble_Staff_Group"                             %! ikribu.ScoreTemplate.__call__
                 <<                                                                               %! ikribu.ScoreTemplate.__call__
-                    \tag Bass_Clarinet                                                           %! baca.ScoreTemplate._attach_liypond_tag
+                    \tag Bass_Clarinet                                                           %! baca.ScoreTemplate._attach_liypond_tag()
                     \context Staff = "Bass_Clarinet_Music_Staff"                                 %! ikribu.ScoreTemplate.__call__
                     {                                                                            %! ikribu.ScoreTemplate.__call__
                         \context Voice = "Bass_Clarinet_Music_Voice"                             %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
-                            \clef "treble"                                                       %! abjad.ScoreTemplate.attach_defaults
-                            s1                                                                   %! abjad.ScoreTemplate.__illustrate__
+                            \clef "treble"                                                       %! abjad.ScoreTemplate.attach_defaults(3)
+                            s1                                                                   %! abjad.ScoreTemplate.__illustrate__()
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                     }                                                                            %! ikribu.ScoreTemplate.__call__
-                    \tag Violin                                                                  %! baca.ScoreTemplate._attach_liypond_tag
+                    \tag Violin                                                                  %! baca.ScoreTemplate._attach_liypond_tag()
                     \context SingleStringStaffGroup = "Violin_Staff_Group"                       %! ikribu.ScoreTemplate.__call__
                     <<                                                                           %! ikribu.ScoreTemplate.__call__
                         \context RHStaff = "Violin_RH_Music_Staff"                               %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Violin_RH_Music_Voice"                             %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults(3)
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                         \context Staff = "Violin_Music_Staff"                                    %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Violin_Music_Voice"                                %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                \clef "treble"                                                   %! abjad.ScoreTemplate.attach_defaults
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                \clef "treble"                                                   %! abjad.ScoreTemplate.attach_defaults(3)
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                     >>                                                                           %! ikribu.ScoreTemplate.__call__
-                    \tag Viola                                                                   %! baca.ScoreTemplate._attach_liypond_tag
+                    \tag Viola                                                                   %! baca.ScoreTemplate._attach_liypond_tag()
                     \context SingleStringStaffGroup = "Viola_Staff_Group"                        %! ikribu.ScoreTemplate.__call__
                     <<                                                                           %! ikribu.ScoreTemplate.__call__
                         \context RHStaff = "Viola_RH_Music_Staff"                                %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Viola_RH_Music_Voice"                              %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults(3)
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                         \context Staff = "Viola_Music_Staff"                                     %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Viola_Music_Voice"                                 %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                \clef "alto"                                                     %! abjad.ScoreTemplate.attach_defaults
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                \clef "alto"                                                     %! abjad.ScoreTemplate.attach_defaults(3)
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                     >>                                                                           %! ikribu.ScoreTemplate.__call__
-                    \tag Cello                                                                   %! baca.ScoreTemplate._attach_liypond_tag
+                    \tag Cello                                                                   %! baca.ScoreTemplate._attach_liypond_tag()
                     \context SingleStringStaffGroup = "Cello_Staff_Group"                        %! ikribu.ScoreTemplate.__call__
                     <<                                                                           %! ikribu.ScoreTemplate.__call__
                         \context RHStaff = "Cello_RH_Music_Staff"                                %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Cello_RH_Music_Voice"                              %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                \clef "percussion"                                               %! abjad.ScoreTemplate.attach_defaults(3)
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                         \context Staff = "Cello_Music_Staff"                                     %! ikribu.ScoreTemplate.__call__
                         {                                                                        %! ikribu.ScoreTemplate.__call__
                             \context Voice = "Cello_Music_Voice"                                 %! ikribu.ScoreTemplate.__call__
                             {                                                                    %! ikribu.ScoreTemplate.__call__
-                                s1                                                               %! abjad.ScoreTemplate.__illustrate__
+                                s1                                                               %! abjad.ScoreTemplate.__illustrate__()
                             }                                                                    %! ikribu.ScoreTemplate.__call__
                         }                                                                        %! ikribu.ScoreTemplate.__call__
                     >>                                                                           %! ikribu.ScoreTemplate.__call__
