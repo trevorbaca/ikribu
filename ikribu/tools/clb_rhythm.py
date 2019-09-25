@@ -13,5 +13,5 @@ def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
         rmakers.force_diminution(),
-        tag=abjad.Tag("ikribu.clb_rhythm"),
+        tag=abjad.Tag("ikribu.clb_rhythm()"),
     )

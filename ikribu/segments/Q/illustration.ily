@@ -406,7 +406,7 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
             % [Q Bass_Clarinet_Music_Voice measure 253 / measure 7]            %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            d''1 * 7/4                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
+            d''1 * 7/4                                                         %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -455,7 +455,7 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
             % [Q Bass_Clarinet_Music_Voice measure 259 / measure 13]           %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -560,7 +560,7 @@ Q_Violin_RH_Music_Voice = {                                                    %
 
             % [Q Violin_RH_Music_Voice measure 259 / measure 13]               %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -797,7 +797,7 @@ Q_Violin_Music_Voice = {                                                       %
 
             % [Q Violin_Music_Voice measure 256 / measure 10]                  %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 3/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 3/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -832,7 +832,7 @@ Q_Violin_Music_Voice = {                                                       %
 
             % [Q Violin_Music_Voice measure 259 / measure 13]                  %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -937,7 +937,7 @@ Q_Viola_RH_Music_Voice = {                                                     %
 
             % [Q Viola_RH_Music_Voice measure 259 / measure 13]                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1174,7 +1174,7 @@ Q_Viola_Music_Voice = {                                                        %
 
             % [Q Viola_Music_Voice measure 256 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 3/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 3/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1209,7 +1209,7 @@ Q_Viola_Music_Voice = {                                                        %
 
             % [Q Viola_Music_Voice measure 259 / measure 13]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1314,7 +1314,7 @@ Q_Cello_RH_Music_Voice = {                                                     %
 
             % [Q Cello_RH_Music_Voice measure 259 / measure 13]                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1348,8 +1348,8 @@ Q_Cello_RH_Music_Staff = {                                                     %
 
 Q_Cello_Music_Voice = {                                                        %! abjad.Path.extern()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 14/15 {                                                             %! ikribu.inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
+    \times 14/15 {                                                             %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 247 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers()
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -1376,7 +1376,7 @@ Q_Cello_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-        a8                                                                     %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-effort-mf                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
@@ -1388,7 +1388,7 @@ Q_Cello_Music_Voice = {                                                        %
                 \box                                                           %! baca.markup():baca.IndicatorCommand._call()
                     "stonescratch: one short stroke for each attack"           %! baca.markup():baca.IndicatorCommand._call()
             }                                                                  %! baca.markup():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -1398,306 +1398,306 @@ Q_Cello_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        a8                                                                     %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-        r16                                                                    %! ikribu.inscription_rhythm
+        r16                                                                    %! ikribu.inscription_rhythm()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-
-        r1                                                                     %! ikribu.inscription_rhythm
-
-        r8                                                                     %! ikribu.inscription_rhythm
-
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
-
-        a16                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        r1                                                                     %! ikribu.inscription_rhythm()
+
+        r8                                                                     %! ikribu.inscription_rhythm()
+
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-    }                                                                          %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-    \times 8/9 {                                                               %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        ]                                                                      %! ikribu.inscription_rhythm()
+
+    }                                                                          %! ikribu.inscription_rhythm()
+
+    \times 8/9 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 248 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
-        r8                                                                     %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
 
-        a8                                                                     %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-        r2                                                                     %! ikribu.inscription_rhythm
+        r2                                                                     %! ikribu.inscription_rhythm()
 
-        r8                                                                     %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
 
-        r1                                                                     %! ikribu.inscription_rhythm
+        r1                                                                     %! ikribu.inscription_rhythm()
 
-        r8                                                                     %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-    }                                                                          %! ikribu.inscription_rhythm
+    }                                                                          %! ikribu.inscription_rhythm()
 
     % [Q Cello_Music_Voice measure 249 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
-    r8                                                                         %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a8.                                                                        %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    r2                                                                         %! ikribu.inscription_rhythm
+    r2                                                                         %! ikribu.inscription_rhythm()
 
-    r8                                                                         %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    r16                                                                        %! ikribu.inscription_rhythm
+    r16                                                                        %! ikribu.inscription_rhythm()
 
-    a8.                                                                        %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 6/7 {                                                               %! ikribu.inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
+    \times 6/7 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 250 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-
-        a8                                                                     %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
 
-        r8                                                                     %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-        r4                                                                     %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
 
-    }                                                                          %! ikribu.inscription_rhythm
+        r4                                                                     %! ikribu.inscription_rhythm()
 
-    \times 2/3 {                                                               %! ikribu.inscription_rhythm
+    }                                                                          %! ikribu.inscription_rhythm()
+
+    \times 2/3 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 251 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
-        r4.                                                                    %! ikribu.inscription_rhythm
+        r4.                                                                    %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        r16                                                                    %! ikribu.inscription_rhythm
+        r16                                                                    %! ikribu.inscription_rhythm()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-    }                                                                          %! ikribu.inscription_rhythm
+    }                                                                          %! ikribu.inscription_rhythm()
 
     % [Q Cello_Music_Voice measure 252 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     \repeatTie
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    r1                                                                         %! ikribu.inscription_rhythm
+    r1                                                                         %! ikribu.inscription_rhythm()
 
-    r8                                                                         %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm()
 
-    a8.                                                                        %! ikribu.inscription_rhythm
+    a8.                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    r8                                                                         %! ikribu.inscription_rhythm
+    r8                                                                         %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
-    r8.                                                                        %! ikribu.inscription_rhythm
+    r8.                                                                        %! ikribu.inscription_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 14/15 {                                                             %! ikribu.inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
+    \times 14/15 {                                                             %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 253 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
-        r4..                                                                   %! ikribu.inscription_rhythm
+        r4..                                                                   %! ikribu.inscription_rhythm()
 
-        r16                                                                    %! ikribu.inscription_rhythm
+        r16                                                                    %! ikribu.inscription_rhythm()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-
-        a8                                                                     %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
 
-        r2..                                                                   %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-    }                                                                          %! ikribu.inscription_rhythm
+        r2..                                                                   %! ikribu.inscription_rhythm()
 
-    \times 4/5 {                                                               %! ikribu.inscription_rhythm
+    }                                                                          %! ikribu.inscription_rhythm()
+
+    \times 4/5 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 254 / measure 8]                        %! baca.SegmentMaker._comment_measure_numbers()
-        r4                                                                     %! ikribu.inscription_rhythm
+        r4                                                                     %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-        r2                                                                     %! ikribu.inscription_rhythm
+        r2                                                                     %! ikribu.inscription_rhythm()
 
-        r8                                                                     %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
 
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-    }                                                                          %! ikribu.inscription_rhythm
+    }                                                                          %! ikribu.inscription_rhythm()
 
     % [Q Cello_Music_Voice measure 255 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     \repeatTie
-    [                                                                          %! ikribu.inscription_rhythm
+    [                                                                          %! ikribu.inscription_rhythm()
 
-    a8                                                                         %! ikribu.inscription_rhythm
+    a8                                                                         %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
-    a16                                                                        %! ikribu.inscription_rhythm
+    a16                                                                        %! ikribu.inscription_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ]                                                                          %! ikribu.inscription_rhythm
+    ]                                                                          %! ikribu.inscription_rhythm()
 
-    r16                                                                        %! ikribu.inscription_rhythm
+    r16                                                                        %! ikribu.inscription_rhythm()
 
-    r2                                                                         %! ikribu.inscription_rhythm
+    r2                                                                         %! ikribu.inscription_rhythm()
 
-    r8.                                                                        %! ikribu.inscription_rhythm
+    r8.                                                                        %! ikribu.inscription_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 6/7 {                                                               %! ikribu.inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
+    \times 6/7 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 256 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
-        r4..                                                                   %! ikribu.inscription_rhythm
+        r4..                                                                   %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
-
-        r8                                                                     %! ikribu.inscription_rhythm
-
-        a8                                                                     %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-    }                                                                          %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm
-    \times 7/8 {                                                               %! ikribu.inscription_rhythm
+        r8                                                                     %! ikribu.inscription_rhythm()
+
+        a8                                                                     %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+
+    }                                                                          %! ikribu.inscription_rhythm()
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
+    \times 7/8 {                                                               %! ikribu.inscription_rhythm()
 
         % [Q Cello_Music_Voice measure 257 / measure 11]                       %! baca.SegmentMaker._comment_measure_numbers()
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        [                                                                      %! ikribu.inscription_rhythm()
 
-        a8                                                                     %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-
-        a8                                                                     %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        a16                                                                    %! ikribu.inscription_rhythm
-        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
-
-        r16                                                                    %! ikribu.inscription_rhythm
-
-        a8.                                                                    %! ikribu.inscription_rhythm
+        a8                                                                     %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
-        r1                                                                     %! ikribu.inscription_rhythm
-
-        r8                                                                     %! ikribu.inscription_rhythm
-
-        a16                                                                    %! ikribu.inscription_rhythm
+        a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        [                                                                      %! ikribu.inscription_rhythm
+        ]                                                                      %! ikribu.inscription_rhythm()
 
-        a16                                                                    %! ikribu.inscription_rhythm
+        r16                                                                    %! ikribu.inscription_rhythm()
+
+        a8.                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
-        ]                                                                      %! ikribu.inscription_rhythm
 
-    }                                                                          %! ikribu.inscription_rhythm
+        r1                                                                     %! ikribu.inscription_rhythm()
+
+        r8                                                                     %! ikribu.inscription_rhythm()
+
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        [                                                                      %! ikribu.inscription_rhythm()
+
+        a16                                                                    %! ikribu.inscription_rhythm()
+        - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
+        ]                                                                      %! ikribu.inscription_rhythm()
+
+    }                                                                          %! ikribu.inscription_rhythm()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1709,7 +1709,7 @@ Q_Cello_Music_Voice = {                                                        %
             \once \override Staff.StaffSymbol.line-count = 0                   %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! baca.SegmentMaker._style_fermata_measures(3)
             \revert TextScript.padding                                         %! baca.text_script_padding():baca.OverrideCommand._call(2)
@@ -1735,7 +1735,7 @@ Q_Cello_Music_Voice = {                                                        %
 
             % [Q Cello_Music_Voice measure 259 / measure 13]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()

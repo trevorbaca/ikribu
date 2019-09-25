@@ -265,7 +265,7 @@ H_Bass_Clarinet_Music_Voice = {                                                %
             \once \override Staff.StaffSymbol.line-count = 0                   %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            d''1 * 1/4                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
+            d''1 * 1/4                                                         %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(-2 . 0)                    %! baca.SegmentMaker._style_fermata_measures(3)
 
@@ -291,7 +291,7 @@ H_Bass_Clarinet_Music_Voice = {                                                %
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
             \once \override Score.BarLine.transparent = ##t                    %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._style_fermata_measures(4):FERMATA_MEASURE:MEASURE_107
             \once \override Score.SpanBar.transparent = ##t                    %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._style_fermata_measures(4):FERMATA_MEASURE:MEASURE_107
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -325,8 +325,8 @@ H_Bass_Clarinet_Music_Staff = {                                                %
 
 H_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 8/7 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 8/7 {                                                               %! ikribu.bow_rhythm()
 
         % [H Violin_RH_Music_Voice measure 99 / measure 1]                     %! baca.SegmentMaker._comment_measure_numbers()
         \override Staff.BarLine.bar-extent = #'(-2 . 0)                        %! EXPLICIT_BAR_EXTENT:baca.SegmentMaker._set_status_tag():REAPPLIED_BAR_EXTENT:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -342,10 +342,10 @@ H_Violin_RH_Music_Voice = {                                                    %
     %@% \override RHStaff.Clef.color = ##f                                     %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set RHStaff.forceClef = ##t                                           %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)       %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                 %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -361,13 +361,13 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -377,20 +377,20 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
@@ -401,10 +401,10 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
     % [H Violin_RH_Music_Voice measure 100 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
@@ -413,13 +413,13 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    r4                                                                         %! ikribu.bow_rhythm
+    r4                                                                         %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     - \downbow                                                                 %! baca.bcps():BCPCommand(6)
@@ -430,14 +430,14 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
@@ -446,13 +446,13 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    r4                                                                         %! ikribu.bow_rhythm
+    r4                                                                         %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     - \upbow                                                                   %! baca.bcps():BCPCommand(5)
@@ -463,18 +463,18 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 7/8 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 7/8 {                                                               %! ikribu.bow_rhythm()
 
         % [H Violin_RH_Music_Voice measure 101 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -484,19 +484,19 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -507,7 +507,7 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
@@ -516,13 +516,13 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \upbow                                                               %! baca.bcps():BCPCommand(5)
@@ -533,20 +533,20 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 3/5 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 3/5 {                                                               %! ikribu.bow_rhythm()
 
         % [H Violin_RH_Music_Voice measure 102 / measure 4]                    %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
@@ -554,13 +554,13 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \upbow                                                               %! baca.bcps():BCPCommand(5)
@@ -571,16 +571,16 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
     % [H Violin_RH_Music_Voice measure 103 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
@@ -591,20 +591,20 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
     % [H Violin_RH_Music_Voice measure 104 / measure 6]                        %! baca.SegmentMaker._comment_measure_numbers()
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #5 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -614,7 +614,7 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
@@ -623,13 +623,13 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    r4                                                                         %! ikribu.bow_rhythm
+    r4                                                                         %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     - \downbow                                                                 %! baca.bcps():BCPCommand(6)
@@ -640,14 +640,14 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #6 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
@@ -656,17 +656,17 @@ H_Violin_RH_Music_Voice = {                                                    %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 8/9 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 8/9 {                                                               %! ikribu.bow_rhythm()
 
         % [H Violin_RH_Music_Voice measure 105 / measure 7]                    %! baca.SegmentMaker._comment_measure_numbers()
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \upbow                                                               %! baca.bcps():BCPCommand(5)
@@ -677,14 +677,14 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -695,20 +695,20 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -718,7 +718,7 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
@@ -726,19 +726,19 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 4/6 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 4/6 {                                                               %! ikribu.bow_rhythm()
 
         % [H Violin_RH_Music_Voice measure 106 / measure 8]                    %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \upbow                                                               %! baca.bcps():BCPCommand(5)
@@ -749,14 +749,14 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -765,13 +765,13 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -783,7 +783,7 @@ H_Violin_RH_Music_Voice = {                                                    %
         - \baca-bcp-spanner-right-text #1 #4                                   %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(1)
@@ -792,7 +792,7 @@ H_Violin_RH_Music_Voice = {                                                    %
         \revert TextScript.staff-padding                                       %! baca.text_script_staff_padding():baca.OverrideCommand._call(2)
         \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -804,7 +804,7 @@ H_Violin_RH_Music_Voice = {                                                    %
             \once \override RHStaff.StaffSymbol.line-count = 0                 %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(-2 . 0)                    %! baca.SegmentMaker._style_fermata_measures(3)
 
@@ -828,7 +828,7 @@ H_Violin_RH_Music_Voice = {                                                    %
 
             % [H Violin_RH_Music_Voice measure 108 / measure 10]               %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -862,8 +862,8 @@ H_Violin_RH_Music_Staff = {                                                    %
 
 H_Violin_Music_Voice = {                                                       %! abjad.Path.extern()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 16/17 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 16/17 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 99 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers()
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -888,12 +888,12 @@ H_Violin_Music_Voice = {                                                       %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-        c''8                                                                   %! ikribu.glissando_rhythm
+        c''8                                                                   %! ikribu.glissando_rhythm()
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._reapply_persistent_indicators(3)
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-        [                                                                      %! ikribu.glissando_rhythm
+        [                                                                      %! ikribu.glissando_rhythm()
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -903,106 +903,106 @@ H_Violin_Music_Voice = {                                                       %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        b''8.                                                                  %! ikribu.glissando_rhythm
+        b''8.                                                                  %! ikribu.glissando_rhythm()
 
-        a'8                                                                    %! ikribu.glissando_rhythm
+        a'8                                                                    %! ikribu.glissando_rhythm()
 
-        b'8.                                                                   %! ikribu.glissando_rhythm
-        ]                                                                      %! ikribu.glissando_rhythm
+        b'8.                                                                   %! ikribu.glissando_rhythm()
+        ]                                                                      %! ikribu.glissando_rhythm()
 
-        g'2..                                                                  %! ikribu.glissando_rhythm
+        g'2..                                                                  %! ikribu.glissando_rhythm()
 
-        g''2                                                                   %! ikribu.glissando_rhythm
+        g''2                                                                   %! ikribu.glissando_rhythm()
 
-        e''8                                                                   %! ikribu.glissando_rhythm
+        e''8                                                                   %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 14/16 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 14/16 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 100 / measure 2]                       %! baca.SegmentMaker._comment_measure_numbers()
-        f'''4.                                                                 %! ikribu.glissando_rhythm
+        f'''4.                                                                 %! ikribu.glissando_rhythm()
 
-        e'''2..                                                                %! ikribu.glissando_rhythm
+        e'''2..                                                                %! ikribu.glissando_rhythm()
 
-        d''2.                                                                  %! ikribu.glissando_rhythm
+        d''2.                                                                  %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     % [H Violin_Music_Voice measure 101 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c''4                                                                       %! ikribu.glissando_rhythm
+    c''4                                                                       %! ikribu.glissando_rhythm()
 
-    d'8                                                                        %! ikribu.glissando_rhythm
-    [                                                                          %! ikribu.glissando_rhythm
+    d'8                                                                        %! ikribu.glissando_rhythm()
+    [                                                                          %! ikribu.glissando_rhythm()
 
-    e''8.                                                                      %! ikribu.glissando_rhythm
+    e''8.                                                                      %! ikribu.glissando_rhythm()
 
-    d''8                                                                       %! ikribu.glissando_rhythm
+    d''8                                                                       %! ikribu.glissando_rhythm()
 
-    f''8.                                                                      %! ikribu.glissando_rhythm
-    ]                                                                          %! ikribu.glissando_rhythm
+    f''8.                                                                      %! ikribu.glissando_rhythm()
+    ]                                                                          %! ikribu.glissando_rhythm()
 
-    f'2..                                                                      %! ikribu.glissando_rhythm
+    f'2..                                                                      %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 6/7 {                                                               %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 6/7 {                                                               %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 102 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
-        a'2..                                                                  %! ikribu.glissando_rhythm
+        a'2..                                                                  %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 4/6 {                                                               %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 4/6 {                                                               %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 103 / measure 5]                       %! baca.SegmentMaker._comment_measure_numbers()
-        g8                                                                     %! ikribu.glissando_rhythm
+        g8                                                                     %! ikribu.glissando_rhythm()
 
-        a2                                                                     %! ikribu.glissando_rhythm
+        a2                                                                     %! ikribu.glissando_rhythm()
 
-        b'8                                                                    %! ikribu.glissando_rhythm
+        b'8                                                                    %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     % [H Violin_Music_Voice measure 104 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
-    a4                                                                         %! ikribu.glissando_rhythm
+    a4                                                                         %! ikribu.glissando_rhythm()
 
-    g1                                                                         %! ikribu.glissando_rhythm
+    g1                                                                         %! ikribu.glissando_rhythm()
 
-    a'8                                                                        %! ikribu.glissando_rhythm
-    [                                                                          %! ikribu.glissando_rhythm
+    a'8                                                                        %! ikribu.glissando_rhythm()
+    [                                                                          %! ikribu.glissando_rhythm()
 
-    f'8.                                                                       %! ikribu.glissando_rhythm
+    f'8.                                                                       %! ikribu.glissando_rhythm()
 
-    f''8                                                                       %! ikribu.glissando_rhythm
+    f''8                                                                       %! ikribu.glissando_rhythm()
 
-    d''16                                                                      %! ikribu.glissando_rhythm
-    ]                                                                          %! ikribu.glissando_rhythm
+    d''16                                                                      %! ikribu.glissando_rhythm()
+    ]                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 16/17 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 16/17 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 105 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
-        e''8                                                                   %! ikribu.glissando_rhythm
+        e''8                                                                   %! ikribu.glissando_rhythm()
 
-        d'2..                                                                  %! ikribu.glissando_rhythm
+        d'2..                                                                  %! ikribu.glissando_rhythm()
 
-        c''1                                                                   %! ikribu.glissando_rhythm
+        c''1                                                                   %! ikribu.glissando_rhythm()
 
-        d''8                                                                   %! ikribu.glissando_rhythm
+        d''8                                                                   %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 8/10 {                                                              %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 8/10 {                                                              %! ikribu.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 106 / measure 8]                       %! baca.SegmentMaker._comment_measure_numbers()
-        e'''2.                                                                 %! ikribu.glissando_rhythm
+        e'''2.                                                                 %! ikribu.glissando_rhythm()
 
-        f'''2                                                                  %! ikribu.glissando_rhythm
+        f'''2                                                                  %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1014,7 +1014,7 @@ H_Violin_Music_Voice = {                                                       %
             \once \override Staff.StaffSymbol.line-count = 0                   %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! baca.SegmentMaker._style_fermata_measures(3)
 
@@ -1038,7 +1038,7 @@ H_Violin_Music_Voice = {                                                       %
 
             % [H Violin_Music_Voice measure 108 / measure 10]                  %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1086,7 +1086,7 @@ H_Viola_RH_Music_Voice = {                                                     %
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     - \upbow                                                                   %! baca.bcps():BCPCommand(5)
@@ -1103,14 +1103,14 @@ H_Viola_RH_Music_Voice = {                                                     %
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
@@ -1121,7 +1121,7 @@ H_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
@@ -1130,13 +1130,13 @@ H_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    r4                                                                         %! ikribu.bow_rhythm
+    r4                                                                         %! ikribu.bow_rhythm()
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-invisible-line                                                    %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     - \upbow                                                                   %! baca.bcps():BCPCommand(5)
@@ -1147,14 +1147,14 @@ H_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1164,23 +1164,23 @@ H_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #4 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 7/8 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 7/8 {                                                               %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 100 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -1191,14 +1191,14 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -1209,7 +1209,7 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
@@ -1218,13 +1218,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -1235,20 +1235,20 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 7/9 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 7/9 {                                                               %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 101 / measure 3]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1258,14 +1258,14 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
@@ -1273,13 +1273,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -1290,13 +1290,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -1307,27 +1307,27 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 3/2 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 3/2 {                                                               %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 102 / measure 4]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
@@ -1338,17 +1338,17 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
     % [H Viola_RH_Music_Voice measure 103 / measure 5]                         %! baca.SegmentMaker._comment_measure_numbers()
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \upbow                                                                   %! baca.bcps():BCPCommand(7)
     \bacaStopTextSpanBCP                                                       %! baca.bcps():BCPCommand(3)
     - \abjad-solid-line-with-arrow                                             %! baca.bcps():BCPCommand(2)
     - \baca-bcp-spanner-left-text #7 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    c'4                                                                        %! ikribu.bow_rhythm
+    c'4                                                                        %! ikribu.bow_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     - \downbow                                                                 %! baca.bcps():BCPCommand(8)
@@ -1359,11 +1359,11 @@ H_Viola_RH_Music_Voice = {                                                     %
     - \baca-bcp-spanner-left-text #0 #7                                        %! baca.bcps():BCPCommand(2)
     \bacaStartTextSpanBCP                                                      %! baca.bcps():BCPCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 7/8 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 7/8 {                                                               %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 104 / measure 6]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -1372,13 +1372,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -1389,13 +1389,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1405,13 +1405,13 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
@@ -1420,19 +1420,19 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 8/10 {                                                              %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 8/10 {                                                              %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 105 / measure 7]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -1443,14 +1443,14 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #7 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
@@ -1461,20 +1461,20 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #0 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #2 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1484,14 +1484,14 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #1 #4                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \downbow                                                             %! baca.bcps():BCPCommand(8)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #0 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1501,7 +1501,7 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #4 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
@@ -1509,19 +1509,19 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #5 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        r4                                                                     %! ikribu.bow_rhythm
+        r4                                                                     %! ikribu.bow_rhythm()
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-invisible-line                                                %! baca.bcps():BCPCommand(2)
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm
-    \times 4/3 {                                                               %! ikribu.bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
+    \times 4/3 {                                                               %! ikribu.bow_rhythm()
 
         % [H Viola_RH_Music_Voice measure 106 / measure 8]                     %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         - \downbow                                                             %! baca.bcps():BCPCommand(6)
@@ -1532,7 +1532,7 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-left-text #6 #7                                    %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \upbow                                                               %! baca.bcps():BCPCommand(7)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(3)
         - \abjad-solid-line-with-arrow                                         %! baca.bcps():BCPCommand(2)
@@ -1540,7 +1540,7 @@ H_Viola_RH_Music_Voice = {                                                     %
         - \baca-bcp-spanner-right-text #6 #7                                   %! baca.bcps():BCPCommand(2)
         \bacaStartTextSpanBCP                                                  %! baca.bcps():BCPCommand(2)
 
-        c'4                                                                    %! ikribu.bow_rhythm
+        c'4                                                                    %! ikribu.bow_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \bacaStopTextSpanBCP                                                   %! baca.bcps():BCPCommand(1)
@@ -1549,7 +1549,7 @@ H_Viola_RH_Music_Voice = {                                                     %
         \revert TextScript.staff-padding                                       %! baca.text_script_staff_padding():baca.OverrideCommand._call(2)
         \revert TextSpanner.staff-padding                                      %! baca.text_spanner_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! ikribu.bow_rhythm
+    }                                                                          %! ikribu.bow_rhythm()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1561,7 +1561,7 @@ H_Viola_RH_Music_Voice = {                                                     %
             \once \override RHStaff.StaffSymbol.line-count = 0                 %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(-2 . 0)                    %! baca.SegmentMaker._style_fermata_measures(3)
 
@@ -1585,7 +1585,7 @@ H_Viola_RH_Music_Voice = {                                                     %
 
             % [H Viola_RH_Music_Voice measure 108 / measure 10]                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1619,8 +1619,8 @@ H_Viola_RH_Music_Staff = {                                                     %
 
 H_Viola_Music_Voice = {                                                        %! abjad.Path.extern()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 16/18 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 16/18 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Viola_Music_Voice measure 99 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
         \set SingleStringStaffGroup.shortInstrumentName =                      %! REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -1645,7 +1645,7 @@ H_Viola_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-        c''2..                                                                 %! ikribu.glissando_rhythm
+        c''2..                                                                 %! ikribu.glissando_rhythm()
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._reapply_persistent_indicators(3)
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -1659,94 +1659,94 @@ H_Viola_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        d'1                                                                    %! ikribu.glissando_rhythm
+        d'1                                                                    %! ikribu.glissando_rhythm()
 
-        e''4.                                                                  %! ikribu.glissando_rhythm
+        e''4.                                                                  %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     % [H Viola_Music_Voice measure 100 / measure 2]                            %! baca.SegmentMaker._comment_measure_numbers()
-    d''2                                                                       %! ikribu.glissando_rhythm
+    d''2                                                                       %! ikribu.glissando_rhythm()
 
-    f''1                                                                       %! ikribu.glissando_rhythm
+    f''1                                                                       %! ikribu.glissando_rhythm()
 
-    f'8                                                                        %! ikribu.glissando_rhythm
-    [                                                                          %! ikribu.glissando_rhythm
+    f'8                                                                        %! ikribu.glissando_rhythm()
+    [                                                                          %! ikribu.glissando_rhythm()
 
-    a'8                                                                        %! ikribu.glissando_rhythm
-    ]                                                                          %! ikribu.glissando_rhythm
+    a'8                                                                        %! ikribu.glissando_rhythm()
+    ]                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 14/15 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 14/15 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Viola_Music_Voice measure 101 / measure 3]                        %! baca.SegmentMaker._comment_measure_numbers()
-        g16                                                                    %! ikribu.glissando_rhythm
-        [                                                                      %! ikribu.glissando_rhythm
+        g16                                                                    %! ikribu.glissando_rhythm()
+        [                                                                      %! ikribu.glissando_rhythm()
 
-        a8                                                                     %! ikribu.glissando_rhythm
+        a8                                                                     %! ikribu.glissando_rhythm()
 
-        b'8.                                                                   %! ikribu.glissando_rhythm
-        ]                                                                      %! ikribu.glissando_rhythm
+        b'8.                                                                   %! ikribu.glissando_rhythm()
+        ]                                                                      %! ikribu.glissando_rhythm()
 
-        a2..                                                                   %! ikribu.glissando_rhythm
+        a2..                                                                   %! ikribu.glissando_rhythm()
 
-        g2                                                                     %! ikribu.glissando_rhythm
+        g2                                                                     %! ikribu.glissando_rhythm()
 
-        a'8                                                                    %! ikribu.glissando_rhythm
+        a'8                                                                    %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 6/8 {                                                               %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 6/8 {                                                               %! ikribu.glissando_rhythm()
 
         % [H Viola_Music_Voice measure 102 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
-        f'4.                                                                   %! ikribu.glissando_rhythm
+        f'4.                                                                   %! ikribu.glissando_rhythm()
 
-        f''2                                                                   %! ikribu.glissando_rhythm
+        f''2                                                                   %! ikribu.glissando_rhythm()
 
-        d''8                                                                   %! ikribu.glissando_rhythm
+        d''8                                                                   %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     % [H Viola_Music_Voice measure 103 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers()
-    e''4                                                                       %! ikribu.glissando_rhythm
+    e''4                                                                       %! ikribu.glissando_rhythm()
 
-    d'4                                                                        %! ikribu.glissando_rhythm
+    d'4                                                                        %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 14/15 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 14/15 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Viola_Music_Voice measure 104 / measure 6]                        %! baca.SegmentMaker._comment_measure_numbers()
-        c''2.                                                                  %! ikribu.glissando_rhythm
+        c''2.                                                                  %! ikribu.glissando_rhythm()
 
-        d''8                                                                   %! ikribu.glissando_rhythm
-        [                                                                      %! ikribu.glissando_rhythm
+        d''8                                                                   %! ikribu.glissando_rhythm()
+        [                                                                      %! ikribu.glissando_rhythm()
 
-        e'''8.                                                                 %! ikribu.glissando_rhythm
+        e'''8.                                                                 %! ikribu.glissando_rhythm()
 
-        f'''8                                                                  %! ikribu.glissando_rhythm
+        f'''8                                                                  %! ikribu.glissando_rhythm()
 
-        e''8.                                                                  %! ikribu.glissando_rhythm
-        ]                                                                      %! ikribu.glissando_rhythm
+        e''8.                                                                  %! ikribu.glissando_rhythm()
+        ]                                                                      %! ikribu.glissando_rhythm()
 
-        g''2                                                                   %! ikribu.glissando_rhythm
+        g''2                                                                   %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm
-    \times 16/18 {                                                             %! ikribu.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
+    \times 16/18 {                                                             %! ikribu.glissando_rhythm()
 
         % [H Viola_Music_Voice measure 105 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
-        g'4.                                                                   %! ikribu.glissando_rhythm
+        g'4.                                                                   %! ikribu.glissando_rhythm()
 
-        b'1                                                                    %! ikribu.glissando_rhythm
+        b'1                                                                    %! ikribu.glissando_rhythm()
 
-        a'2..                                                                  %! ikribu.glissando_rhythm
+        a'2..                                                                  %! ikribu.glissando_rhythm()
 
-    }                                                                          %! ikribu.glissando_rhythm
+    }                                                                          %! ikribu.glissando_rhythm()
 
     % [H Viola_Music_Voice measure 106 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
-    b''1                                                                       %! ikribu.glissando_rhythm
+    b''1                                                                       %! ikribu.glissando_rhythm()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1758,7 +1758,7 @@ H_Viola_Music_Voice = {                                                        %
             \once \override Staff.StaffSymbol.line-count = 0                   %! baca.SegmentMaker._style_fermata_measures(1)
             \startStaff                                                        %! baca.SegmentMaker._style_fermata_measures(1)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! baca.SegmentMaker._style_fermata_measures(3)
 
@@ -1782,7 +1782,7 @@ H_Viola_Music_Voice = {                                                        %
 
             % [H Viola_Music_Voice measure 108 / measure 10]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1875,7 +1875,7 @@ H_Cello_RH_Music_Voice = {                                                     %
 
             % [H Cello_RH_Music_Voice measure 108 / measure 10]                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1990,7 +1990,7 @@ H_Cello_Music_Voice = {                                                        %
 
             % [H Cello_Music_Voice measure 108 / measure 10]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()

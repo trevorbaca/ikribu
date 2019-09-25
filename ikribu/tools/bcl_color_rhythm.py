@@ -20,5 +20,5 @@ def bcl_color_rhythm(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
-        tag=abjad.Tag("ikribu.bcl_color_rhythm"),
+        tag=abjad.Tag("ikribu.bcl_color_rhythm()"),
     )
