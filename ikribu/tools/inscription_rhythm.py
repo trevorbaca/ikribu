@@ -19,5 +19,5 @@ def inscription_rhythm() -> baca.RhythmCommand:
         rmakers.beam(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
-        tag=abjad.Tag("ikribu.inscription_rhythm"),
+        tag=abjad.Tag("ikribu.inscription_rhythm()"),
     )

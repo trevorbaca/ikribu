@@ -21,5 +21,5 @@ def glissando_rhythm(
         rmakers.denominator((1, 8)),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("ikribu.glissando_rhythm"),
+        tag=abjad.Tag("ikribu.glissando_rhythm()"),
     )
