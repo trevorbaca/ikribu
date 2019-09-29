@@ -43,6 +43,7 @@ maker(
     "Global_Skips",
     baca.metronome_mark("inscription", selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark("Q"),
+    baca.bar_line("|.", baca.skip(-1)),
 )
 
 maker(
