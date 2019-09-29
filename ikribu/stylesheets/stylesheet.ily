@@ -3,6 +3,7 @@
 
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
 \include "contexts.ily"
+\include "markups.ily"
 
 \paper {
     evenFooterMarkup = \markup

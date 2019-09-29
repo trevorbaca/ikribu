@@ -31,8 +31,6 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
-    final_markup=(["Madison, WI."], ["January", "March 2016."]),
-    final_markup_extra_offset=(-16, -4),
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
@@ -112,4 +110,15 @@ maker(
     baca.markup("stonescratch: one short stroke for each attack", boxed=True),
     baca.staff_position(0),
     ikribu.box_adjustment(),
+)
+
+maker(
+    ("vc", -1),
+    baca.chunk(
+        baca.mark(r"\ikribu-colophon-markup"),
+        baca.rehearsal_mark_down(),
+        baca.rehearsal_mark_padding(12),
+        baca.rehearsal_mark_self_alignment_x(abjad.Right),
+        selector=baca.leaves().rleak()[-1],
+    ),
 )

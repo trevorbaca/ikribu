@@ -136,7 +136,6 @@
         \accepts GlobalContext
         \accepts MusicContext
         \remove Bar_number_engraver
-        \remove Mark_engraver
         \remove System_start_delimiter_engraver
 
         \override BarLine.hair-thickness = 0.5
