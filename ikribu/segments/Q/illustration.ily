@@ -288,6 +288,8 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
     \set Staff.shortInstrumentName =                                           %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \markup {                                                                  %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
@@ -299,107 +301,173 @@ Q_Bass_Clarinet_Music_Voice = {                                                %
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [Q Bass_Clarinet_Music_Voice measure 248 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [Q Bass_Clarinet_Music_Voice measure 249 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [Q Bass_Clarinet_Music_Voice measure 250 / measure 4]                    %! baca.SegmentMaker._comment_measure_numbers()
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [Q Bass_Clarinet_Music_Voice measure 251 / measure 5]                    %! baca.SegmentMaker._comment_measure_numbers()
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [Q Bass_Clarinet_Music_Voice measure 252 / measure 6]                    %! baca.SegmentMaker._comment_measure_numbers()
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
@@ -1562,6 +1630,8 @@ Q_Cello_Music_Voice = {                                                        %
         a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.inscription_rhythm()
+        - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
+        ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     }                                                                          %! ikribu.inscription_rhythm()
 
@@ -1643,6 +1713,8 @@ Q_Cello_Music_Voice = {                                                        %
         a16                                                                    %! ikribu.inscription_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.inscription_rhythm()
+        - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
+        ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     }                                                                          %! ikribu.inscription_rhythm()
 

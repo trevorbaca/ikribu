@@ -992,6 +992,8 @@ I_Cello_Music_Voice = {                                                        %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
     \set SingleStringStaffGroup.shortInstrumentName =                          %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \markup {                                                                  %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
@@ -1003,6 +1005,8 @@ I_Cello_Music_Voice = {                                                        %
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
@@ -1049,9 +1053,13 @@ I_Cello_Music_Voice = {                                                        %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
@@ -1098,9 +1106,13 @@ I_Cello_Music_Voice = {                                                        %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
@@ -1147,9 +1159,13 @@ I_Cello_Music_Voice = {                                                        %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     b'4                                                                        %! baca.make_tied_repeated_durations()
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
