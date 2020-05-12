@@ -14,4 +14,3 @@ from ikribu.materials.instruments.definition import instruments
 from ikribu.materials.margin_markups.definition import margin_markups
 from ikribu.materials.metronome_marks.definition import metronome_marks
 from ikribu.materials.time_signatures.definition import time_signatures
-from ikribu import segments
