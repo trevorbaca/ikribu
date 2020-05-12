@@ -8,6 +8,7 @@ if not (
     raise ImportError("Requires Python 3.7.")
 del distutils
 del platform
+from ikribu.ScoreTemplate import ScoreTemplate
 
 from ikribu.tools import *
 from ikribu.materials.instruments.definition import instruments
