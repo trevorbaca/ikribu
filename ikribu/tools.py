@@ -61,7 +61,7 @@ def bow_rhythm(
         tag=abjad.Tag("ikribu.bow_rhythm()"),
     )
 
-    
+
 def box_adjustment() -> baca.Suite:
     """
     Makes suite of boxed text script adjustment commands.
