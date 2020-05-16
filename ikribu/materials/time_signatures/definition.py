@@ -1,7 +1,6 @@
 import abjad
 import baca
 
-
 numerators = baca.sequence([[7, 3, 2], [8, 7], [4, 4, 3]])
 numerator_groups = numerators.helianthate(-1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))

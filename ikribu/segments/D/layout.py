@@ -1,6 +1,5 @@
 import baca
 
-
 breaks = baca.breaks(
     baca.page(
         [52, 20, (15, 15, 15, 20, 22.5)],
