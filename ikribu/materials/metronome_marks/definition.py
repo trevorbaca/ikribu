@@ -1,6 +1,5 @@
 import abjad
 
-
 metronome_marks = abjad.OrderedDict(
     [
         ("incisions", abjad.MetronomeMark((1, 4), 58)),

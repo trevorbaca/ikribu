@@ -1,6 +1,7 @@
+import typing
+
 import abjad
 import baca
-import typing
 from abjadext import rmakers
 from ikribu.materials import margin_markups
 
