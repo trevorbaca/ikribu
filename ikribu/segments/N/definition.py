@@ -52,7 +52,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([0, 8], 12)),
         rotation=0,
-),
+    ),
 )
 
 maker(
@@ -62,13 +62,13 @@ maker(
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
-pattern = abjad.Pattern([4, 14], period=16)| abjad.Pattern([-1])
+pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
 maker(
     ("va_rh", (1, 10)),
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get(pattern)),
         rotation=-1,
-),
+    ),
 )
 
 maker(
@@ -82,7 +82,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([8, 20], 20)),
         rotation=-2,
-),
+    ),
 )
 
 maker(
@@ -102,7 +102,7 @@ maker(
         baca.markups.lines([
             "introduce upper partials gradually;",
             "breathe as necessary before downbeats",
-            ]),
+        ]),
         boxed=True,
     ),
     baca.pitch("Bb1"),
@@ -119,7 +119,7 @@ maker(
         ("vn_rh", (1, 10)),
         ("va_rh", (1, 10)),
         ("vc_rh", (1, 10)),
-        ],
+    ],
     baca.markup("1/2 clt", boxed=True),
     baca.hairpin(
         "ff > p < f > pp < p > ppp <",
@@ -175,6 +175,6 @@ maker(
         "vn_rh",
         "va_rh",
         "vc_rh",
-        ],
+    ],
     baca.dls_staff_padding(9),
 )

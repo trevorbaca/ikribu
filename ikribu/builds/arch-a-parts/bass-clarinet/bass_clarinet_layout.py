@@ -4,15 +4,15 @@ part_abbreviation = 'BCL'
 
 padding = 0
 breaks = baca.breaks(
-    baca.page( # 1
+    baca.page(  # 1
         [1, 38, (padding,)],
         [10, 66, (padding,)],
         [22, 94, (padding,)],
         [35, 122, (padding,)],
         [42, 150, (padding,)],
         [50, 178, (padding,)],
-        ),
-    baca.page( # 2
+    ),
+    baca.page(  # 2
         [63, 10, (padding,)],
         [74, 38, (padding,)],
         [85, 66, (padding,)],
@@ -20,8 +20,8 @@ breaks = baca.breaks(
         [104, 122, (padding,)],
         [116, 150, (padding,)],
         [121, 178, (padding,)],
-        ),
-    baca.page( # 3
+    ),
+    baca.page(  # 3
         [131, 10, (padding,)],
         [143, 38, (padding,)],
         [153, 66, (padding,)],
@@ -29,8 +29,8 @@ breaks = baca.breaks(
         [173, 122, (padding,)],
         [184, 150, (padding,)],
         [194, 178, (padding,)],
-        ),
-    baca.page( # 4
+    ),
+    baca.page(  # 4
         [203, 10, (padding,)],
         [212, 38, (padding,)],
         [222, 66, (padding,)],
@@ -38,14 +38,14 @@ breaks = baca.breaks(
         [239, 122, (padding,)],
         [247, 150, (padding,)],
         [250, 178, (padding,)],
-        ),
-    )
+    ),
+)
 
 spacing = baca.scorewide_spacing(
     __file__,
     (1, 2),
     breaks=breaks,
-    )
+)
 spacing.override((32, 33), 2),
 spacing.override((36, 51), (1, 10))
 spacing.override([42, 46, 50], (1, 4)),

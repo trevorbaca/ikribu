@@ -60,7 +60,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([0, 8], 12)),
         rotation=0,
-),
+    ),
 )
 
 maker(
@@ -76,7 +76,7 @@ maker(
     ikribu.bow_rhythm(
         rmakers.force_rest(baca.lts().get([4, 14], 16)),
         rotation=-1,
-),
+    ),
 )
 
 maker(
@@ -90,7 +90,7 @@ maker(
     [
         ("vn_rh", (1, 8)),
         ("va_rh", (1, 8)),
-        ],
+    ],
     baca.dls_staff_padding(10),
     baca.markup("1/2 clt", boxed=True),
     baca.hairpin(

@@ -71,7 +71,7 @@ maker(
         ("bcl", 10),
         ("vn", 10),
         ("va", 10),
-        ],
+    ],
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
@@ -97,7 +97,7 @@ maker(
         "bcl",
         "vn",
         "va",
-        ],
+    ],
     baca.clef("percussion"),
     baca.dls_staff_padding(6),
     baca.dynamic('"mf"'),
@@ -176,7 +176,7 @@ maker(
         ("bcl", 10),
         ("vn", 10),
         ("va", 10),
-        ],
+    ],
     baca.dynamic(
         '"f"',
         abjad.tweak((0, 0)).X_extent,
@@ -201,6 +201,6 @@ maker(
         "bcl",
         "vn",
         "va",
-        ],
+    ],
     ikribu.box_adjustment()
 )
