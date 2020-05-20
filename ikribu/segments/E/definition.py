@@ -77,7 +77,7 @@ maker(
     [
         ("vn", 1),
         ("va", 1),
-        ],
+    ],
     baca.clef("percussion"),
 )
 
@@ -121,7 +121,7 @@ maker(
     [
         "vn",
         "va",
-        ],
+    ],
     baca.accent(
         selector=baca.pheads(
             exclude=abjad.const.HIDDEN).exclude([0, 4], 9),

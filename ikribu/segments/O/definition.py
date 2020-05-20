@@ -68,8 +68,7 @@ maker(
 maker(
     (
         "bcl",
-        [(1, 2), (3, 6), 7, 8, 9, 10,
-        (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
+        [(1, 2), (3, 6), 7, 8, 9, 10, (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
     ),
     baca.make_repeat_tied_notes(),
 )
@@ -161,7 +160,7 @@ maker(
     baca.suite(
         baca.untie(baca.leaves()),
         baca.repeat_tie(baca.pleaves(exclude=abjad.const.HIDDEN)),
-),
+    ),
 )
 
 maker(

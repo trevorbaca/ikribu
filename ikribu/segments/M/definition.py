@@ -187,7 +187,7 @@ maker(
     [
         "vn",
         "va",
-        ],
+    ],
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -203,7 +203,7 @@ maker(
     [
         ("vn", (1, 27)),
         ("va", (1, 27)),
-        ],
+    ],
     baca.staff_position(0),
 )
 
@@ -214,7 +214,7 @@ maker(
 
 maker(
     (
-        ["vn", "va"], 
+        ["vn", "va"],
         [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
     ),
     baca.accent(selector=baca.pheads().exclude([0], 2)),
@@ -260,7 +260,7 @@ maker(
 
 maker(
     (
-        ["vn", "va", "vc"], 
+        ["vn", "va", "vc"],
         [(2, 4), (10, 12), (15, 17), (23, 27)],
     ),
     baca.hairpin("mf < fff"),
@@ -277,7 +277,7 @@ maker(
         ("vn", 20),
         ("vc", 7),
         ("vc", 20),
-        ],
+    ],
     baca.dynamic("fff"),
 )
 

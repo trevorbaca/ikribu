@@ -61,7 +61,7 @@ maker(
     [
         ("vn", (6, 7)),
         ("va", (6, 7)),
-        ],
+    ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
     baca.hairpin(
