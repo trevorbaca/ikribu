@@ -1,7 +1,66 @@
 import abjad
 import baca
 from abjadext import rmakers
-from ikribu.materials import margin_markups
+
+# instruments & margin markups
+
+instruments = abjad.OrderedDict(
+    [
+        ("BassClarinet", abjad.BassClarinet()),
+        (
+            "Violin",
+            abjad.Violin(context="StaffGroup", pitch_range="[G3, +inf]"),
+        ),
+        ("Viola", abjad.Viola(context="StaffGroup", pitch_range="[C3, +inf]")),
+        (
+            "Cello",
+            abjad.Cello(context="StaffGroup", pitch_range="[Bb0, +inf]"),
+        ),
+    ]
+)
+
+
+def _make_margin_markup(markup, context="Staff"):
+    return abjad.MarginMarkup(
+        context=context, markup=baca.markups.instrument(markup, hcenter_in=16)
+    )
+
+
+margin_markups = abjad.OrderedDict(
+    [
+        ("B. cl.", _make_margin_markup("B. cl.")),
+        ("Va.", _make_margin_markup("Va.", context="SingleStringStaffGroup")),
+        ("Vc.", _make_margin_markup("Vc.", context="SingleStringStaffGroup")),
+        ("Vn.", _make_margin_markup("Vn.", context="SingleStringStaffGroup")),
+    ]
+)
+
+# metronome marks
+
+metronome_marks = abjad.OrderedDict(
+    [
+        ("incisions", abjad.MetronomeMark((1, 4), 58)),
+        ("inscription", abjad.MetronomeMark((1, 4), 66)),
+        ("night", abjad.MetronomeMark((1, 4), 42)),
+        ("windows", abjad.MetronomeMark((1, 4), 104)),
+    ]
+)
+
+
+# time signatures
+
+numerators = baca.sequence([[7, 3, 2], [8, 7], [4, 4, 3]])
+numerator_groups = numerators.helianthate(-1, 1)
+assert len(numerator_groups) == 18, repr(len(numerator_groups))
+lengths = [len(_) for _ in numerator_groups]
+numerators = baca.sequence(numerator_groups).flatten()
+time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
+time_signature_groups = baca.sequence(time_signatures).partition_by_counts(
+    lengths
+)
+time_signatures = time_signature_groups
+
+# functions
 
 
 def bcl_color_rhythm(

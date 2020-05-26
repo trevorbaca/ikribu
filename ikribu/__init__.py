@@ -2,7 +2,6 @@ import distutils.version
 import platform
 
 from .ScoreTemplate import ScoreTemplate
-from .materials import instruments, margin_markups, metronome_marks, time_signatures
 from .tools import (
     bcl_color_rhythm,
     bcps,
@@ -14,7 +13,11 @@ from .tools import (
     glissando_pitches,
     glissando_rhythm,
     inscription_rhythm,
+    instruments,
     margin_markup,
+    margin_markups,
+    metronome_marks,
+    time_signatures,
     triplet_rhythm,
     vigil_rhythm,
 )
