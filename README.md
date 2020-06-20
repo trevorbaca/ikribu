@@ -2,8 +2,8 @@ Ikribu
 ======
 
 [![Build Status](
-    https://travis-ci.org/trevorbaca/ikribu.svg)](
-    https://travis-ci.org/trevorbaca/ikribu)
+    https://api.travis-ci.org/trevorbaca/ikribu.svg)](
+    https://api.travis-ci.org/trevorbaca/ikribu)
 <!---
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](
