@@ -1,5 +1,6 @@
 import abjad
 import baca
+import ide
 import ikribu
 
 
@@ -22,11 +23,11 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     _always_make_global_rests = True
 
-    _part_manifest = abjad.PartManifest(
-        abjad.Part(section="Bass_Clarinet", section_abbreviation="BCL"),
-        abjad.Part(section="Violin", section_abbreviation="VN"),
-        abjad.Part(section="Viola", section_abbreviation="VA"),
-        abjad.Part(section="Cello", section_abbreviation="VC"),
+    _part_manifest = ide.PartManifest(
+        ide.Part(section="Bass_Clarinet", section_abbreviation="BCL"),
+        ide.Part(section="Violin", section_abbreviation="VN"),
+        ide.Part(section="Viola", section_abbreviation="VA"),
+        ide.Part(section="Cello", section_abbreviation="VC"),
     )
 
     ### INITIALIZER ###
@@ -251,25 +252,25 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> score_template = ikribu.ScoreTemplate()
             >>> for part in score_template.part_manifest.parts:
             ...     abjad.f(part)
-            abjad.Part(
+            ide.Part(
                 instrument='Bass_Clarinet',
                 number=1,
                 section='Bass_Clarinet',
                 section_abbreviation='BCL',
                 )
-            abjad.Part(
+            ide.Part(
                 instrument='Violin',
                 number=2,
                 section='Violin',
                 section_abbreviation='VN',
                 )
-            abjad.Part(
+            ide.Part(
                 instrument='Viola',
                 number=3,
                 section='Viola',
                 section_abbreviation='VA',
                 )
-            abjad.Part(
+            ide.Part(
                 instrument='Cello',
                 number=4,
                 section='Cello',
