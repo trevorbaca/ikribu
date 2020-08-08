@@ -32,8 +32,8 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.tags.LOCAL_MEASURE_NUMBER,
-        abjad.tags.STAGE_NUMBER,
+        baca.tags.LOCAL_MEASURE_NUMBER,
+        baca.tags.STAGE_NUMBER,
     ],
     check_all_are_pitched=True,
     segment_directory=abjad.Path(__file__).resolve().parent,
