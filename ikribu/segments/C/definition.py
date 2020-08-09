@@ -36,7 +36,7 @@ maker = baca.SegmentMaker(
         baca.tags.STAGE_NUMBER,
     ],
     check_all_are_pitched=True,
-    segment_directory=abjad.Path(__file__).resolve().parent,
+    segment_directory=baca.Path(__file__).resolve().parent,
     stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
