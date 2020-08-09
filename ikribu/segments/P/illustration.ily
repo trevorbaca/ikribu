@@ -1,4 +1,4 @@
-P_Global_Rests = {                                                             %! abjad.Path.extern()
+P_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [P Global_Rests measure 239 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
@@ -30,10 +30,10 @@ P_Global_Rests = {                                                             %
     % [P Global_Rests measure 247 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Global_Skips = {                                                             %! abjad.Path.extern()
+P_Global_Skips = {                                                             %! ide.Path.extern()
 
     % [P Global_Skips measure 239 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
@@ -182,10 +182,10 @@ P_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Bass_Clarinet_Music_Voice = {                                                %! abjad.Path.extern()
+P_Bass_Clarinet_Music_Voice = {                                                %! ide.Path.extern()
 
     % [P Bass_Clarinet_Music_Voice measure 239 / measure 1]                    %! baca.SegmentMaker._comment_measure_numbers()
     \set Staff.shortInstrumentName =                                           %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -376,18 +376,18 @@ P_Bass_Clarinet_Music_Voice = {                                                %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Bass_Clarinet_Music_Staff = {                                                %! abjad.Path.extern()
+P_Bass_Clarinet_Music_Staff = {                                                %! ide.Path.extern()
 
     \context Voice = "Bass_Clarinet_Music_Voice"                               %! ikribu.ScoreTemplate.__call__()
-    \P_Bass_Clarinet_Music_Voice                                               %! abjad.Path.extern()
+    \P_Bass_Clarinet_Music_Voice                                               %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Violin_RH_Music_Voice = {                                                    %! abjad.Path.extern()
+P_Violin_RH_Music_Voice = {                                                    %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
     \times 3/2 {                                                               %! ikribu.bow_rhythm()
@@ -725,18 +725,18 @@ P_Violin_RH_Music_Voice = {                                                    %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Violin_RH_Music_Staff = {                                                    %! abjad.Path.extern()
+P_Violin_RH_Music_Staff = {                                                    %! ide.Path.extern()
 
     \context Voice = "Violin_RH_Music_Voice"                                   %! ikribu.ScoreTemplate.__call__()
-    \P_Violin_RH_Music_Voice                                                   %! abjad.Path.extern()
+    \P_Violin_RH_Music_Voice                                                   %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Violin_Music_Voice = {                                                       %! abjad.Path.extern()
+P_Violin_Music_Voice = {                                                       %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
     \times 6/7 {                                                               %! ikribu.glissando_rhythm()
@@ -911,18 +911,18 @@ P_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Violin_Music_Staff = {                                                       %! abjad.Path.extern()
+P_Violin_Music_Staff = {                                                       %! ide.Path.extern()
 
     \context Voice = "Violin_Music_Voice"                                      %! ikribu.ScoreTemplate.__call__()
-    \P_Violin_Music_Voice                                                      %! abjad.Path.extern()
+    \P_Violin_Music_Voice                                                      %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Viola_RH_Music_Voice = {                                                     %! abjad.Path.extern()
+P_Viola_RH_Music_Voice = {                                                     %! ide.Path.extern()
 
     % [P Viola_RH_Music_Voice measure 239 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():EXPLICIT_BAR_EXTENT:baca.SegmentMaker._reanalyze_reapplied_synthetic_wrappers()
@@ -1274,18 +1274,18 @@ P_Viola_RH_Music_Voice = {                                                     %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Viola_RH_Music_Staff = {                                                     %! abjad.Path.extern()
+P_Viola_RH_Music_Staff = {                                                     %! ide.Path.extern()
 
     \context Voice = "Viola_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
-    \P_Viola_RH_Music_Voice                                                    %! abjad.Path.extern()
+    \P_Viola_RH_Music_Voice                                                    %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Viola_Music_Voice = {                                                        %! abjad.Path.extern()
+P_Viola_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
     \times 6/8 {                                                               %! ikribu.glissando_rhythm()
@@ -1443,18 +1443,18 @@ P_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Viola_Music_Staff = {                                                        %! abjad.Path.extern()
+P_Viola_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Viola_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
-    \P_Viola_Music_Voice                                                       %! abjad.Path.extern()
+    \P_Viola_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Cello_RH_Music_Voice = {                                                     %! abjad.Path.extern()
+P_Cello_RH_Music_Voice = {                                                     %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
     \times 3/4 {                                                               %! ikribu.bow_rhythm()
@@ -1788,18 +1788,18 @@ P_Cello_RH_Music_Voice = {                                                     %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Cello_RH_Music_Staff = {                                                     %! abjad.Path.extern()
+P_Cello_RH_Music_Staff = {                                                     %! ide.Path.extern()
 
     \context Voice = "Cello_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
-    \P_Cello_RH_Music_Voice                                                    %! abjad.Path.extern()
+    \P_Cello_RH_Music_Voice                                                    %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Cello_Music_Voice = {                                                        %! abjad.Path.extern()
+P_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     % [P Cello_Music_Voice measure 239 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
     \set SingleStringStaffGroup.shortInstrumentName =                          %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -1965,12 +1965,12 @@ P_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-P_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
+P_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Cello_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
-    \P_Cello_Music_Voice                                                       %! abjad.Path.extern()
+    \P_Cello_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
