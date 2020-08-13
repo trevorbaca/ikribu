@@ -87,7 +87,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             tag=tag,
         )
         abjad.annotate(
-            violin_rh_music_staff, abjad.const.REMOVE_ALL_EMPTY_STAVES, True
+            violin_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
         )
         abjad.annotate(
             violin_rh_music_staff, "default_clef", abjad.Clef("percussion")
@@ -123,7 +123,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             tag=tag,
         )
         abjad.annotate(
-            viola_rh_music_staff, abjad.const.REMOVE_ALL_EMPTY_STAVES, True
+            viola_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
         )
         abjad.annotate(
             viola_rh_music_staff, "default_clef", abjad.Clef("percussion")
@@ -157,7 +157,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             tag=tag,
         )
         abjad.annotate(
-            cello_rh_music_staff, abjad.const.REMOVE_ALL_EMPTY_STAVES, True
+            cello_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
         )
         abjad.annotate(
             cello_rh_music_staff, "default_clef", abjad.Clef("percussion")

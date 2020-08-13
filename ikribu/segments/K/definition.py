@@ -127,10 +127,10 @@ maker(
         baca.markup(
             "col legno battuto",
         ),
-        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
+        selector=baca.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
@@ -148,10 +148,10 @@ maker(
         baca.markup(
             "col legno battuto",
         ),
-        selector=baca.phead(0, exclude=abjad.const.HIDDEN),
+        selector=baca.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),

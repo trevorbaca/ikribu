@@ -153,7 +153,7 @@ def clb_staff_positions(*, rotation: int = None) -> baca.StaffPositionCommand:
     return baca.staff_positions(
         positions,
         allow_repeats=True,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     )
 
 
