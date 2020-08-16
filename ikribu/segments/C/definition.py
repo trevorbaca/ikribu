@@ -77,20 +77,22 @@ maker(
     baca.staff_position(0),
 )
 
-markup_2 = baca.markups.lines(
-    ["stonecircle:", "π/2 every quarter note"],
-    boxed=True,
-)
 maker(
     ("bcl", (2, 3)),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
-        baca.markup("stonecircle: π/2 every quarter note", boxed=True),
+        baca.markup(
+            r"\ikribu-stonecircle-pi-two",
+            literal=True,
+        ),
         deactivate=True,
     ),
     baca.tag(
         abjad.Tag("-ARCH_A_PARTS_BCL"),
-        baca.markup(markup_2),
+        baca.markup(
+            r"\ikribu-stonecircle-pi-two",
+            literal=True,
+        ),
     ),
     ikribu.box_adjustment(),
 )

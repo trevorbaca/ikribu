@@ -70,8 +70,8 @@ maker(
     ),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-four",
+        literal=True,
     ),
     baca.staff_position(0),
     baca.staff_lines(1),

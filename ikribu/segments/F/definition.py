@@ -110,8 +110,8 @@ maker(
     ("vc", (6, 7)),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-two",
+        literal=True,
     ),
     baca.staff_lines(1),
     baca.staff_position(0),

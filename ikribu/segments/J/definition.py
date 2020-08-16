@@ -106,56 +106,56 @@ maker(
 maker(
     ("bcl", (1, 2)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-four",
+        literal=True,
     ),
 )
 
 maker(
     ("bcl", (3, 4)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/3 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-three",
+        literal=True,
     ),
 )
 
 maker(
     ("vn", (1, 4)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-two",
+        literal=True,
     ),
 )
 
 maker(
     ("vn", (5, 6)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi",
+        literal=True,
     ),
 )
 
 maker(
     ("va", (1, 2)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/3 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-three",
+        literal=True,
     ),
 )
 
 maker(
     ("va", (3, 4)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-four",
+        literal=True,
     ),
 )
 
 maker(
     ("va", (5, 6)),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-two",
+        literal=True,
     ),
 )
 
@@ -181,8 +181,8 @@ maker(
         abjad.tweak((-2, 0)).extra_offset,
     ),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-two",
+        literal=True,
     ),
 )
 

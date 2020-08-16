@@ -671,16 +671,7 @@ A_Viola_Music_Voice = {                                                        %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak extra-offset #'(-3 . 0)                                           %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \baca-effort-mf                                                            %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup {                                                                %! baca.markup():baca.IndicatorCommand._call()
-        \override                                                              %! baca.markup():baca.IndicatorCommand._call()
-            #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
-            \box                                                               %! baca.markup():baca.IndicatorCommand._call()
-                \column                                                        %! baca.markup():baca.IndicatorCommand._call()
-                    {                                                          %! baca.markup():baca.IndicatorCommand._call()
-                        stonecircle:                                           %! baca.markup():baca.IndicatorCommand._call()
-                        "π/4 every quarter note"                               %! baca.markup():baca.IndicatorCommand._call()
-                    }                                                          %! baca.markup():baca.IndicatorCommand._call()
-        }                                                                      %! baca.markup():baca.IndicatorCommand._call()
+    ^ \ikribu-stonecircle-pi-four                                              %! baca.markup():baca.IndicatorCommand._call()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "make_tied_repeated_durations([(1, 4)])"    %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START

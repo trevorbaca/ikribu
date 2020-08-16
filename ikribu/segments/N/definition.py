@@ -97,11 +97,8 @@ maker(
     ),
     baca.dynamic("p"),
     baca.markup(
-        baca.markups.lines([
-            "introduce upper partials gradually;",
-            "breathe as necessary before downbeats",
-        ]),
-        boxed=True,
+        r"\ikribu-introduce-upper-partials-gradually",
+        literal=True,
     ),
     baca.pitch("Bb1"),
 )
