@@ -151,39 +151,39 @@ maker(
 maker(
     ("vc", 5),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-three",
+        literal=True,
     ),
 )
 
 maker(
     ("vc", 9),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/4 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-four",
+        literal=True,
     ),
 )
 
 maker(
     ("vc", 13),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-three",
+        literal=True,
     ),
 )
 
 maker(
     ("vc", 17),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-two",
+        literal=True,
     ),
 )
 
 maker(
     ("vc", 21),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/3 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-three",
+        literal=True,
     ),
 )

@@ -57,8 +57,8 @@ maker(
     ("vc", (1, 8)),
     baca.dynamic('"mf"'),
     baca.markup(
-        baca.markups.lines(["stonecircle:", "π/4 every quarter note"]),
-        boxed=True,
+        r"\ikribu-stonecircle-pi-four",
+        literal=True,
     ),
     baca.staff_lines(1),
     baca.staff_position(0),

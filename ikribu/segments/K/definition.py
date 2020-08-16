@@ -160,8 +160,8 @@ maker(
 maker(
     ("vc", (1, 16)),
     baca.markup(
-        baca.markups.lines(["graincircle:", "π/2 every quarter note"]),
-        boxed=True,
+        r"\ikribu-graincircle-pi-two",
+        literal=True,
     ),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
