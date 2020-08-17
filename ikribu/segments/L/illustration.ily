@@ -1905,12 +1905,7 @@ L_Violin_Music_Voice = {                                                       %
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup {                                                            %! baca.markup():baca.IndicatorCommand._call()
-            \override                                                          %! baca.markup():baca.IndicatorCommand._call()
-                #'(box-padding . 0.5)                                          %! baca.markup():baca.IndicatorCommand._call()
-                \box                                                           %! baca.markup():baca.IndicatorCommand._call()
-                    "sponges on BD"                                            %! baca.markup():baca.IndicatorCommand._call()
-            }                                                                  %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-boxed-markup "sponges on BD"                                   %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
@@ -2805,12 +2800,7 @@ L_Viola_Music_Voice = {                                                        %
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup {                                                            %! baca.markup():baca.IndicatorCommand._call()
-            \override                                                          %! baca.markup():baca.IndicatorCommand._call()
-                #'(box-padding . 0.5)                                          %! baca.markup():baca.IndicatorCommand._call()
-                \box                                                           %! baca.markup():baca.IndicatorCommand._call()
-                    "sponges on BD"                                            %! baca.markup():baca.IndicatorCommand._call()
-            }                                                                  %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-boxed-markup "sponges on BD"                                   %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 

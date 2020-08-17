@@ -64,7 +64,10 @@ maker(
 maker(
     ("bcl", (1, 11)),
     baca.dynamic('"mf"'),
-    baca.markup("graincircle: π/3 every quarter note", boxed=True),
+    baca.markup(
+        r'\baca-boxed-markup "graincircle: π/3 every quarter note"',
+        literal=True,
+    ),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )
@@ -106,7 +109,10 @@ maker(
         selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.dynamic('"mf"'),
-    baca.markup("stonescratch: one short stroke for each attack", boxed=True),
+    baca.markup(
+        r'\baca-boxed-markup "stonescratch: one short stroke for each attack"',
+        literal=True,
+    ),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )

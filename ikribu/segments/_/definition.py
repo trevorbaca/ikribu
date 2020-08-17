@@ -67,7 +67,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
-    baca.markup("grainfall (1)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (1)"', literal=True),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),

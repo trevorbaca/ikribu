@@ -124,7 +124,7 @@ maker(
             exclude=baca.const.HIDDEN).exclude([0, 4], 9),
     ),
     baca.dls_staff_padding(8),
-    baca.markup("sponges on BD", boxed=True),
+    baca.markup(r'\baca-boxed-markup "sponges on BD"', literal=True),
     baca.hairpin(
         "f > p <",
         bookend=True,
