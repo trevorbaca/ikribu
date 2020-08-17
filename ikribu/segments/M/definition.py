@@ -194,7 +194,7 @@ maker(
 maker(
     ("vn", 1),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (3)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (3)"', literal=True),
 )
 
 maker(
@@ -207,7 +207,7 @@ maker(
 
 maker(
     ("vn", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-    baca.markup("sponges on BD", boxed=True),
+    baca.markup(r'\baca-boxed-markup "sponges on BD"', literal=True),
 )
 
 maker(
@@ -222,31 +222,31 @@ maker(
 maker(
     ("vn", 6),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (4)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (4)"', literal=True),
 )
 
 maker(
     ("vn", 9),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (5)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (5)"', literal=True),
 )
 
 maker(
     ("vn", 14),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (6)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (6)"', literal=True),
 )
 
 maker(
     ("vn", 19),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (7)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (7)"', literal=True),
 )
 
 maker(
     ("vn", 22),
     baca.dynamic('"f"'),
-    baca.markup("grainfall (8)", boxed=True),
+    baca.markup(r'\baca-boxed-markup "grainfall (8)"', literal=True),
 )
 
 maker(

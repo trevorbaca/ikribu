@@ -115,7 +115,7 @@ maker(
         ("va_rh", (1, 10)),
         ("vc_rh", (1, 10)),
     ],
-    baca.markup("1/2 clt", boxed=True),
+    baca.markup(r'\baca-boxed-markup "1/2 clt"', literal=True),
     baca.hairpin(
         "ff > p < f > pp < p > ppp <",
         bookend=True,
