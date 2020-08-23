@@ -987,7 +987,7 @@ K_Violin_Music_Voice = {                                                       %
         - \tweak extra-offset #'(-3 . 0)                                       %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \baca-effort-mp                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ^ \markup { "col legno battuto" }                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-col-legno-battuto-markup                                       %! baca.markup():baca.IndicatorCommand._call()
         [                                                                      %! ikribu.clb_rhythm()
 
         c'8                                                                    %! ikribu.clb_rhythm()
@@ -1642,7 +1642,7 @@ K_Viola_Music_Voice = {                                                        %
         - \tweak extra-offset #'(-3 . 0)                                       %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \baca-effort-mp                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ^ \markup { "col legno battuto" }                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-col-legno-battuto-markup                                       %! baca.markup():baca.IndicatorCommand._call()
         [                                                                      %! ikribu.clb_rhythm()
 
         c'8                                                                    %! ikribu.clb_rhythm()

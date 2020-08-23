@@ -124,7 +124,10 @@ maker(
             exclude=baca.const.HIDDEN).exclude([0, 4], 9),
     ),
     baca.dls_staff_padding(8),
-    baca.markup(r'\baca-boxed-markup "sponges on BD"', literal=True),
+    baca.markup(
+        r"\ikribu-sponges-on-bd-markup",
+        literal=True,
+    ),
     baca.hairpin(
         "f > p <",
         bookend=True,
@@ -149,7 +152,10 @@ maker(
 maker(
     ("vc", (9, 16)),
     baca.dls_staff_padding(4),
-    baca.markup("trem. flaut. tast."),
+    baca.markup(
+        r"\ikribu-trem-flaut-tast-markup",
+        literal=True,
+    ),
     baca.hairpin(
         "p < mp >",
         final_hairpin=False,

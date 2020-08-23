@@ -163,7 +163,10 @@ maker(
     ("vc", (3, 8)),
     baca.dynamic("p"),
     baca.hairpin("p < mf", selector=baca.leaves()[-2:]),
-    baca.markup("poco vib."),
+    baca.markup(
+        r"\baca-poco-vib-markup",
+        literal=True,
+    ),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),
     baca.pitch("D1"),

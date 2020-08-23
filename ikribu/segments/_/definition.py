@@ -67,7 +67,10 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (1)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-one-markup",
+        literal=True,
+    ),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
@@ -111,8 +114,9 @@ maker(
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),

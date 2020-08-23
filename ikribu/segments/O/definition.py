@@ -166,8 +166,9 @@ maker(
     baca.dynamic("ppppp"),
     baca.hairpin("ppppp >o niente", selector=baca.rleaves()[-3:]),
     baca.markup(
-        "II+III",
+        r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("<E4 F#4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
@@ -180,8 +181,9 @@ maker(
     baca.dynamic("ppppp"),
     baca.hairpin("ppppp >o niente", selector=baca.rleaves()[-3:]),
     baca.markup(
-        "II+III",
+        r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("<Eb4 F4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
