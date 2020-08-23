@@ -194,7 +194,10 @@ maker(
 maker(
     ("vn", 1),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (3)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-three-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -207,7 +210,10 @@ maker(
 
 maker(
     ("vn", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-    baca.markup(r'\baca-boxed-markup "sponges on BD"', literal=True),
+    baca.markup(
+        r"\ikribu-sponges-on-bd-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -222,31 +228,46 @@ maker(
 maker(
     ("vn", 6),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (4)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-four-markup",
+        literal=True,
+    ),
 )
 
 maker(
     ("vn", 9),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (5)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-five-markup",
+        literal=True,
+    ),
 )
 
 maker(
     ("vn", 14),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (6)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-six-markup",
+        literal=True,
+    ),
 )
 
 maker(
     ("vn", 19),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (7)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-seven-markup",
+        literal=True,
+    ),
 )
 
 maker(
     ("vn", 22),
     baca.dynamic('"f"'),
-    baca.markup(r'\baca-boxed-markup "grainfall (8)"', literal=True),
+    baca.markup(
+        r"\ikribu-grainfall-eight-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -281,7 +302,10 @@ maker(
 
 maker(
     ("vc", [7, 20]),
-    baca.markup("XP"),
+    baca.markup(
+        r"\baca-xp-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -289,10 +313,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
@@ -303,10 +331,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("G5"),
@@ -317,10 +349,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
@@ -331,10 +367,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("G5"),
@@ -345,10 +385,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sfffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("A5"),
@@ -359,10 +403,14 @@ maker(
     baca.clef("treble"),
     baca.dynamic("sfffz"),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("C+6"),

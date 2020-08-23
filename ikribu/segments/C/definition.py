@@ -103,7 +103,7 @@ maker(
     baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
     baca.markup(
-        r'\baca-boxed-markup "grainfall (2)"',
+        r"\ikribu-grainfall-two-markup",
         literal=True,
     ),
     baca.staff_lines(1),
@@ -135,7 +135,10 @@ maker(
         baca.hairpin("p > pp"),
         map=baca.runs(exclude=baca.const.HIDDEN).get([1], 2),
     ),
-    baca.markup("trem. flaut. tast."),
+    baca.markup(
+        r"\ikribu-trem-flaut-tast-markup",
+        literal=True,
+    ),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -172,7 +175,10 @@ maker(
         baca.hairpin("p > pp"),
         map=baca.runs(exclude=baca.const.HIDDEN).get([1], 2),
     ),
-    baca.markup("trem. flaut. tast."),
+    baca.markup(
+        r"\ikribu-trem-flaut-tast-markup",
+        literal=True,
+    ),
     baca.pitches(
         "F4 E4 E4 F4",
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -186,10 +192,14 @@ maker(
 maker(
     ("vc", 1),
     baca.dynamic("sfz"),
-    baca.markup("pizz."),
     baca.markup(
-        "III",
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.note_head_style_harmonic(),

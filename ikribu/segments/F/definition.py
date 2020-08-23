@@ -74,8 +74,9 @@ maker(
     ("vn", (6, 7)),
     baca.clef("treble"),
     baca.markup(
-        "II+III",
+        r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("<E4 F#4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. tast."),
@@ -85,8 +86,9 @@ maker(
 maker(
     ("va", (6, 7)),
     baca.markup(
-        "I+II",
+        r"\ikribu-strings-one-plus-two-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.clef("treble"),
     baca.clef_extra_offset((-2.5, 0)),

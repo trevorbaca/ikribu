@@ -65,7 +65,7 @@ maker(
     ("bcl", (1, 11)),
     baca.dynamic('"mf"'),
     baca.markup(
-        r'\baca-boxed-markup "graincircle: π/3 every quarter note"',
+        r"\ikribu-graincircle-pi-three-markup",
         literal=True,
     ),
     baca.staff_position(0),
@@ -79,7 +79,10 @@ maker(
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup("col legno battuto meccanico: strike each note twice"),
+    baca.markup(
+        r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
+        literal=True,
+    ),
     baca.staff_positions([-1, 0, 1]),
     baca.text_script_padding(2.5),
 )
@@ -91,7 +94,10 @@ maker(
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup("col legno battuto meccanico: strike each note twice"),
+    baca.markup(
+        r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
+        literal=True,
+    ),
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
 )
@@ -110,7 +116,7 @@ maker(
     ),
     baca.dynamic('"mf"'),
     baca.markup(
-        r'\baca-boxed-markup "stonescratch: one short stroke for each attack"',
+        r"\ikribu-stonescratch-markup",
         literal=True,
     ),
     baca.staff_position(0),

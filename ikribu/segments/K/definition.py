@@ -125,7 +125,8 @@ maker(
             abjad.tweak((-3, 0)).extra_offset,
         ),
         baca.markup(
-            "col legno battuto",
+            r"\baca-col-legno-battuto-markup",
+            literal=True,
         ),
         selector=baca.phead(0, exclude=baca.const.HIDDEN),
     ),
@@ -146,7 +147,8 @@ maker(
             abjad.tweak((-3, 0)).extra_offset,
         ),
         baca.markup(
-            "col legno battuto",
+            r"\baca-col-legno-battuto-markup",
+            literal=True,
         ),
         selector=baca.phead(0, exclude=baca.const.HIDDEN),
     ),
