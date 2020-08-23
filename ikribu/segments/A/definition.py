@@ -70,7 +70,7 @@ maker(
     ),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        r"\ikribu-stonecircle-pi-four",
+        r"\ikribu-stonecircle-pi-four-markup",
         literal=True,
     ),
     baca.staff_position(0),

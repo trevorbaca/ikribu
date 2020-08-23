@@ -57,7 +57,7 @@ maker(
     ("vc", (1, 8)),
     baca.dynamic('"mf"'),
     baca.markup(
-        r"\ikribu-stonecircle-pi-four",
+        r"\ikribu-stonecircle-pi-four-markup",
         literal=True,
     ),
     baca.staff_lines(1),

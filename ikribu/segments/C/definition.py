@@ -82,7 +82,7 @@ maker(
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
         baca.markup(
-            r"\ikribu-stonecircle-pi-two",
+            r"\ikribu-stonecircle-pi-two-markup",
             literal=True,
         ),
         deactivate=True,
@@ -90,7 +90,7 @@ maker(
     baca.tag(
         abjad.Tag("-ARCH_A_PARTS_BCL"),
         baca.markup(
-            r"\ikribu-stonecircle-pi-two",
+            r"\ikribu-stonecircle-pi-two-markup",
             literal=True,
         ),
     ),
@@ -102,7 +102,10 @@ maker(
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
-    baca.markup(r'\baca-boxed-markup "grainfall (2)"', literal=True),
+    baca.markup(
+        r'\baca-boxed-markup "grainfall (2)"',
+        literal=True,
+    ),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),

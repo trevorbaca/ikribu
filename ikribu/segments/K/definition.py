@@ -160,7 +160,7 @@ maker(
 maker(
     ("vc", (1, 16)),
     baca.markup(
-        r"\ikribu-graincircle-pi-two",
+        r"\ikribu-graincircle-pi-two-markup",
         literal=True,
     ),
     baca.dls_staff_padding(6),

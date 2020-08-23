@@ -151,7 +151,7 @@ maker(
 maker(
     ("vc", 5),
     baca.markup(
-        r"\ikribu-graincircle-pi-three",
+        r"\ikribu-graincircle-pi-three-markup",
         literal=True,
     ),
 )
@@ -159,7 +159,7 @@ maker(
 maker(
     ("vc", 9),
     baca.markup(
-        r"\ikribu-graincircle-pi-four",
+        r"\ikribu-graincircle-pi-four-markup",
         literal=True,
     ),
 )
@@ -167,7 +167,7 @@ maker(
 maker(
     ("vc", 13),
     baca.markup(
-        r"\ikribu-graincircle-pi-three",
+        r"\ikribu-graincircle-pi-three-markup",
         literal=True,
     ),
 )
@@ -175,7 +175,7 @@ maker(
 maker(
     ("vc", 17),
     baca.markup(
-        r"\ikribu-graincircle-pi-two",
+        r"\ikribu-graincircle-pi-two-markup",
         literal=True,
     ),
 )
@@ -183,7 +183,7 @@ maker(
 maker(
     ("vc", 21),
     baca.markup(
-        r"\ikribu-graincircle-pi-three",
+        r"\ikribu-graincircle-pi-three-markup",
         literal=True,
     ),
 )

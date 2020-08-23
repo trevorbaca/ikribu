@@ -108,8 +108,9 @@ maker(
 maker(
     ("vn", (1, 15)),
     baca.markup(
-        "III",
+        r"\baca-string-iii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch(
         "E4",
@@ -132,8 +133,9 @@ maker(
 maker(
     ("va", (19, 24)),
     baca.markup(
-        "II",
+        r"\baca-string-ii-markup",
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("Eb4"),
     baca.stem_tremolo(

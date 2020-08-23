@@ -110,7 +110,7 @@ maker(
     ("vc", (6, 7)),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
-        r"\ikribu-graincircle-pi-two",
+        r"\ikribu-graincircle-pi-two-markup",
         literal=True,
     ),
     baca.staff_lines(1),
