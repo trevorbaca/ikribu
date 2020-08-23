@@ -106,7 +106,7 @@ maker(
 maker(
     ("bcl", (1, 2)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-four",
+        r"\ikribu-stonecircle-pi-four-markup",
         literal=True,
     ),
 )
@@ -114,7 +114,7 @@ maker(
 maker(
     ("bcl", (3, 4)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-three",
+        r"\ikribu-stonecircle-pi-three-markup",
         literal=True,
     ),
 )
@@ -122,7 +122,7 @@ maker(
 maker(
     ("vn", (1, 4)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-two",
+        r"\ikribu-stonecircle-pi-two-markup",
         literal=True,
     ),
 )
@@ -130,7 +130,7 @@ maker(
 maker(
     ("vn", (5, 6)),
     baca.markup(
-        r"\ikribu-stonecircle-pi",
+        r"\ikribu-stonecircle-pi-markup",
         literal=True,
     ),
 )
@@ -138,7 +138,7 @@ maker(
 maker(
     ("va", (1, 2)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-three",
+        r"\ikribu-stonecircle-pi-three-markup",
         literal=True,
     ),
 )
@@ -146,7 +146,7 @@ maker(
 maker(
     ("va", (3, 4)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-four",
+        r"\ikribu-stonecircle-pi-four-markup",
         literal=True,
     ),
 )
@@ -154,7 +154,7 @@ maker(
 maker(
     ("va", (5, 6)),
     baca.markup(
-        r"\ikribu-stonecircle-pi-two",
+        r"\ikribu-stonecircle-pi-two-markup",
         literal=True,
     ),
 )
@@ -181,7 +181,7 @@ maker(
         abjad.tweak((-2, 0)).extra_offset,
     ),
     baca.markup(
-        r"\ikribu-stonecircle-pi-two",
+        r"\ikribu-stonecircle-pi-two-markup",
         literal=True,
     ),
 )

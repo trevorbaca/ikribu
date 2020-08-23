@@ -97,7 +97,7 @@ maker(
     ),
     baca.dynamic("p"),
     baca.markup(
-        r"\ikribu-introduce-upper-partials-gradually",
+        r"\ikribu-introduce-upper-partials-gradually-markup",
         literal=True,
     ),
     baca.pitch("Bb1"),
