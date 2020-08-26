@@ -203,5 +203,5 @@ maker(
         "vn",
         "va",
     ],
-    ikribu.box_adjustment()
+    ikribu.box_adjustment(),
 )
