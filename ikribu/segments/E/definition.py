@@ -49,19 +49,15 @@ maker(
     baca.metronome_mark("night", selector=baca.leaf(1 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(1 - 1)),
     baca.metronome_mark("incisions", selector=baca.leaf(3 - 1)),
-
     baca.metronome_mark("incisions", selector=baca.leaf(5 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(5 - 1)),
     baca.metronome_mark("night", selector=baca.leaf(7 - 1)),
-
     baca.metronome_mark("night", selector=baca.leaf(9 - 1)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(9 - 1)),
     baca.metronome_mark("incisions", selector=baca.leaf(11 - 1)),
-
     baca.metronome_mark("incisions", selector=baca.leaf(13 - 1)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(13 - 1)),
     baca.metronome_mark("night", selector=baca.leaf(15 - 1)),
-
     baca.rehearsal_mark("E"),
 )
 
@@ -120,8 +116,7 @@ maker(
         "va",
     ],
     baca.accent(
-        selector=baca.pheads(
-            exclude=baca.const.HIDDEN).exclude([0, 4], 9),
+        selector=baca.pheads(exclude=baca.const.HIDDEN).exclude([0, 4], 9),
     ),
     baca.dls_staff_padding(8),
     baca.markup(
@@ -131,14 +126,12 @@ maker(
     baca.hairpin(
         "f > p <",
         bookend=True,
-        pieces=baca.runs(
-            exclude=baca.const.HIDDEN).map(baca.enchain([4, 3])).flatten(),
+        pieces=baca.runs(exclude=baca.const.HIDDEN).map(baca.enchain([4, 3])).flatten(),
     ),
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(
-        selector=baca.pheads(
-            exclude=baca.const.HIDDEN).get([0, 4], 9),
+        selector=baca.pheads(exclude=baca.const.HIDDEN).get([0, 4], 9),
     ),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
