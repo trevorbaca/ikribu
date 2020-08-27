@@ -1,6 +1,6 @@
 import baca
 
-part_abbreviation = 'BCL'
+part_abbreviation = "BCL"
 
 padding = 0
 breaks = baca.breaks(

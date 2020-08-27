@@ -4,11 +4,11 @@ import abjad
 metadata = abjad.OrderedDict(
     [
         (
-            'ARCH_A_PARTS_BCL',
+            "ARCH_A_PARTS_BCL",
             abjad.OrderedDict(
                 [
                     (
-                        'bol_measure_numbers',
+                        "bol_measure_numbers",
                         [
                             1,
                             10,
@@ -37,13 +37,13 @@ metadata = abjad.OrderedDict(
                             239,
                             247,
                             250,
-                            ],
-                        ),
-                    ]
-                ),
+                        ],
+                    ),
+                ]
             ),
-        ('catalog_number_suffix', 'A'),
-        ('paper_size', 'arch a'),
-        ('parts_directory', True),
-        ]
-    )
+        ),
+        ("catalog_number_suffix", "A"),
+        ("paper_size", "arch a"),
+        ("parts_directory", True),
+    ]
+)
