@@ -71,34 +71,24 @@ class ScoreTemplate(baca.ScoreTemplate):
             "default_instrument",
             ikribu.instruments["BassClarinet"],
         )
-        abjad.annotate(
-            bass_clarinet_music_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(bass_clarinet_music_staff, "default_clef", abjad.Clef("treble"))
         self._attach_lilypond_tag("Bass_Clarinet", bass_clarinet_music_staff)
 
         # VIOLIN
-        violin_rh_music_voice = abjad.Voice(
-            name="Violin_RH_Music_Voice", tag=tag
-        )
+        violin_rh_music_voice = abjad.Voice(name="Violin_RH_Music_Voice", tag=tag)
         violin_rh_music_staff = abjad.Staff(
             [violin_rh_music_voice],
             lilypond_type="RHStaff",
             name="Violin_RH_Music_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            violin_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
-        )
-        abjad.annotate(
-            violin_rh_music_staff, "default_clef", abjad.Clef("percussion")
-        )
+        abjad.annotate(violin_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+        abjad.annotate(violin_rh_music_staff, "default_clef", abjad.Clef("percussion"))
         violin_music_voice = abjad.Voice(name="Violin_Music_Voice", tag=tag)
         violin_music_staff = abjad.Staff(
             [violin_music_voice], name="Violin_Music_Staff", tag=tag
         )
-        abjad.annotate(
-            violin_music_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(violin_music_staff, "default_clef", abjad.Clef("treble"))
         violin_staff_group = abjad.StaffGroup(
             [violin_rh_music_staff, violin_music_staff],
             lilypond_type="SingleStringStaffGroup",
@@ -113,21 +103,15 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._attach_lilypond_tag("Violin", violin_staff_group)
 
         # VIOLA
-        viola_rh_music_voice = abjad.Voice(
-            name="Viola_RH_Music_Voice", tag=tag
-        )
+        viola_rh_music_voice = abjad.Voice(name="Viola_RH_Music_Voice", tag=tag)
         viola_rh_music_staff = abjad.Staff(
             [viola_rh_music_voice],
             lilypond_type="RHStaff",
             name="Viola_RH_Music_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            viola_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
-        )
-        abjad.annotate(
-            viola_rh_music_staff, "default_clef", abjad.Clef("percussion")
-        )
+        abjad.annotate(viola_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+        abjad.annotate(viola_rh_music_staff, "default_clef", abjad.Clef("percussion"))
         viola_music_voice = abjad.Voice(name="Viola_Music_Voice", tag=tag)
         viola_music_staff = abjad.Staff(
             [viola_music_voice], name="Viola_Music_Staff", tag=tag
@@ -147,21 +131,15 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._attach_lilypond_tag("Viola", viola_staff_group)
 
         # CELLO
-        cello_rh_music_voice = abjad.Voice(
-            name="Cello_RH_Music_Voice", tag=tag
-        )
+        cello_rh_music_voice = abjad.Voice(name="Cello_RH_Music_Voice", tag=tag)
         cello_rh_music_staff = abjad.Staff(
             [cello_rh_music_voice],
             lilypond_type="RHStaff",
             name="Cello_RH_Music_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            cello_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
-        )
-        abjad.annotate(
-            cello_rh_music_staff, "default_clef", abjad.Clef("percussion")
-        )
+        abjad.annotate(cello_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+        abjad.annotate(cello_rh_music_staff, "default_clef", abjad.Clef("percussion"))
         cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
         cello_music_staff = abjad.Staff(
             [cello_music_voice], name="Cello_Music_Staff", tag=tag
@@ -202,9 +180,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
 
         # SCORE
-        score = abjad.Score(
-            [global_context, music_context], name="Score", tag=tag
-        )
+        score = abjad.Score([global_context, music_context], name="Score", tag=tag)
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
         # self._assert_matching_custom_context_names(score)

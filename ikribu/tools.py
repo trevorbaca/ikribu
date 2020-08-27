@@ -56,9 +56,7 @@ assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
 numerators = baca.sequence(numerator_groups).flatten()
 time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
-time_signature_groups = baca.sequence(time_signatures).partition_by_counts(
-    lengths
-)
+time_signature_groups = baca.sequence(time_signatures).partition_by_counts(lengths)
 time_signatures = time_signature_groups
 
 # functions
@@ -102,9 +100,7 @@ def bcps(rotation: int = None) -> baca.BCPCommand:
     return baca.bcps(bcps)
 
 
-def bow_rhythm(
-    *commands: rmakers.Command, rotation: int = None
-) -> baca.RhythmCommand:
+def bow_rhythm(*commands: rmakers.Command, rotation: int = None) -> baca.RhythmCommand:
     """
     Makes bow rhythm.
     """
@@ -174,9 +170,7 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
     )
 
 
-def glissando_pitches(
-    octave: int = 4, rotation: int = None
-) -> baca.PitchCommand:
+def glissando_pitches(octave: int = 4, rotation: int = None) -> baca.PitchCommand:
     """
     Makes glissando pitches.
     """
@@ -218,9 +212,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     """
     Makes inscription rhythm.
     """
-    counts = baca.sequence(
-        [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
-    )
+    counts = baca.sequence([[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]])
     counts = counts.helianthate(-1, -1)
     counts = counts.flatten()
     extra_counts = [2, 4, 0]
