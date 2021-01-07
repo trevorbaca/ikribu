@@ -1,5 +1,6 @@
 import abjad
 import baca
+from abjadext import rmakers
 
 ###############################################################################
 ##################################### [G] #####################################
@@ -49,7 +50,10 @@ maker(
 
 maker(
     ("vc", (1, 11)),
-    baca.make_notes(repeat_ties=True),
+    baca.make_notes(
+        rmakers.reduce_multiplier(),
+        repeat_ties=True,
+    ),
 )
 
 maker(
