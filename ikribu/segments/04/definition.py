@@ -1,5 +1,6 @@
 import abjad
 import baca
+from abjadext import rmakers
 
 import ikribu
 
@@ -158,7 +159,7 @@ maker(
 
 maker(
     ("vc", (2, 16)),
-    baca.make_notes(),
+    baca.make_notes(rmakers.reduce_multiplier()),
 )
 
 maker(
