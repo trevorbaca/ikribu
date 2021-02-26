@@ -228,7 +228,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
             >>> score_template = ikribu.ScoreTemplate()
             >>> for part in score_template.part_manifest.parts:
-            ...     abjad.f(part)
+            ...     string = abjad.storage(part)
+            ...     print(string)
             ide.Part(
                 instrument='Bass_Clarinet',
                 number=1,
