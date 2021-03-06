@@ -1,14 +1,11 @@
 Ikribu
 ======
 
-[![Build Status](
-    https://api.travis-ci.org/trevorbaca/ikribu.svg)](
-    https://api.travis-ci.org/trevorbaca/ikribu)
-<!---
+![Build Status](
+    https://github.com/trevorbaca/ikribu/actions/workflows/test.yml/badge.svg)
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](
     https://github.com/ambv/black)
--->
 
 Ikribu (2015) for clarinet, violin, viola & cello.
 
