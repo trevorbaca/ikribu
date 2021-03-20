@@ -1,6 +1,89 @@
-% Ikribu (2016)
+#(set-default-paper-size "11x17landscape")
+#(set-global-staff-size 12)
+
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
 
+\paper {
+    evenFooterMarkup = \markup
+        \on-the-fly #print-page-number-check-first
+        \fill-line {
+            " "
+            \bold
+            \fontsize #3
+            \override #'(font-name . "Palatino")
+            \concat {
+                Ikribu
+                \hspace #3
+                —
+                \hspace #3
+                \on-the-fly #print-page-number-check-first
+                \fromproperty #'page:page-number-string
+                \hspace #3
+                —
+                \hspace #3
+                Bača
+            }
+            " "
+        }
+    evenHeaderMarkup = \markup \fill-line { " " }
+    left-margin = 20\mm
+    oddFooterMarkup = \evenFooterMarkup
+    oddHeaderMarkup = \markup \fill-line { " " }
+    print-first-page-number = ##f
+    print-page-number = ##t
+    right-margin = 5\mm
+    markup-system-spacing.minimum-distance = 90
+
+    % SEEMS TO BE IMPORTANT TO SET TO ZERO WITH EXPLICIT SYSTEM POSITIONS:
+    system-system-spacing.minimum-distance = 0
+
+    top-markup-spacing.minimum-distance = 24
+    top-system-spacing.minimum-distance = 26
+    top-margin = 0\mm
+}
+
+\layout {
+    \accidentalStyle neo-modern
+    indent = 10
+    ragged-bottom = ##t
+    ragged-last = ##t
+    ragged-right = ##t
+}
+
+\header {
+    composer = \markup {
+        \override #'(font-name . "Palatino")
+        \fontsize #5
+        \line { Trevor Bača (*1975) \hspace #39 }
+    }
+    tagline = \markup { "" }
+    title = \markup \column {
+        \center-align {
+            \override #'(font-name . "Palatino")
+            \fontsize #16
+            \line {
+                I
+                \hspace #0
+                K
+                \hspace #-2
+                R
+                \hspace #-1
+                I
+                \hspace #0
+                B
+                \hspace #-3
+                U
+            }
+            " "
+            " "
+            \override #'(font-name . "Palatino Italic")
+            \fontsize #3
+            \line { for \hspace #1 Distractfold }
+        }
+    }
+}
+
+%%% CONTEXT
 
 \layout {
 
@@ -195,3 +278,106 @@
         tupletFullLength = ##t
     }
 }
+
+%%% MARKUP
+
+ikribu-breathe-discreetly-markup = \markup
+  \column {
+      "breathe discreetly before any downbeat as needed"
+      " (but do not circular breathe)"
+    }
+
+ikribu-colophon-markup = \markup
+  \override #'(font-name . "Palatino")
+  \with-color #black
+  \override #'(baseline-skip . 4)
+  \right-column {
+    \line { Madison, Wisc. }
+    \line { Jan. \hspace #0.75 – \hspace #0.75 Mar. 2016. }
+    }
+
+ikribu-col-legno-battuto-meccanico-explanation-markup = \markup
+    "col legno battuto meccanico: strike each note twice"
+
+ikribu-graincircle-pi-four-markup = \baca-boxed-markup
+  \markup
+  \column {
+    graincircle:
+    "π/4 every quarter note"
+    }
+
+ikribu-graincircle-pi-three-markup = \baca-boxed-markup
+  \markup
+  \column {
+    graincircle:
+    "π/3 every quarter note"
+    }
+
+ikribu-graincircle-pi-two-markup = \baca-boxed-markup
+  \markup
+  \column {
+    graincircle:
+    "π/2 every quarter note"
+    }
+
+ikribu-grainfall-eight-markup = \baca-boxed-markup "grainfall (8)"
+
+ikribu-grainfall-five-markup = \baca-boxed-markup "grainfall (5)"
+
+ikribu-grainfall-four-markup = \baca-boxed-markup "grainfall (4)"
+
+ikribu-grainfall-one-markup = \baca-boxed-markup "grainfall (1)"
+
+ikribu-grainfall-seven-markup = \baca-boxed-markup "grainfall (7)"
+
+ikribu-grainfall-six-markup = \baca-boxed-markup "grainfall (6)"
+
+ikribu-grainfall-three-markup = \baca-boxed-markup "grainfall (3)"
+
+ikribu-grainfall-two-markup = \baca-boxed-markup "grainfall (2)"
+
+ikribu-introduce-upper-partials-gradually-markup = \baca-boxed-markup
+  \markup
+  \column {
+    "introduce upper partials gradually;"
+    "breathe as necessary before downbeats"
+    }
+
+ikribu-sponges-on-bd-markup = \baca-boxed-markup "sponges on BD"
+
+ikribu-stonecircle-pi-markup = \baca-boxed-markup
+  \markup
+  \column {
+    stonecircle:
+    "π every quarter note"
+    }
+
+ikribu-stonecircle-pi-four-markup = \baca-boxed-markup
+  \markup
+  \column {
+    stonecircle:
+    "π/4 every quarter note"
+    }
+
+ikribu-stonecircle-pi-three-markup = \baca-boxed-markup
+  \markup
+  \column {
+    stonecircle:
+    "π/3 every quarter note"
+    }
+
+ikribu-stonecircle-pi-two-markup = \baca-boxed-markup
+  \markup
+  \column {
+    stonecircle:
+    "π/2 every quarter note"
+    }
+
+ikribu-stonescratch-markup = \markup
+    "stonescratch: one short stroke for each attack"
+
+ikribu-strings-one-plus-two-markup = \markup "I+II"
+
+ikribu-strings-two-plus-three-markup = \markup "II+III"
+
+ikribu-trem-flaut-tast-markup = \markup "trem. flaut. tast."
