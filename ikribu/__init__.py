@@ -1,7 +1,7 @@
 import distutils.version
 import platform
 
-from .tools import (
+from .library import (
     ScoreTemplate,
     bcl_color_rhythm,
     bcps,
