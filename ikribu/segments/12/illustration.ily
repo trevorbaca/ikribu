@@ -974,7 +974,8 @@ l_Violin_Music_Voice = {                                                       %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 8/12 {                                                              %! ikribu.clb_rhythm()
+    \times 8/12                                                                %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Violin_Music_Voice measure 129 / measure 3]                      %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1072,7 +1073,8 @@ l_Violin_Music_Voice = {                                                       %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 16/20 {                                                             %! ikribu.clb_rhythm()
+    \times 16/20                                                               %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Violin_Music_Voice measure 133 / measure 7]                      %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1189,7 +1191,8 @@ l_Violin_Music_Voice = {                                                       %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 6/10 {                                                              %! ikribu.clb_rhythm()
+    \times 6/10                                                                %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Violin_Music_Voice measure 137 / measure 11]                     %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1276,7 +1279,8 @@ l_Violin_Music_Voice = {                                                       %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 8/12 {                                                              %! ikribu.clb_rhythm()
+    \times 8/12                                                                %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Violin_Music_Voice measure 141 / measure 15]                     %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1629,7 +1633,8 @@ l_Viola_Music_Voice = {                                                        %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 8/10 {                                                              %! ikribu.clb_rhythm()
+    \times 8/10                                                                %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Viola_Music_Voice measure 129 / measure 3]                       %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1721,7 +1726,8 @@ l_Viola_Music_Voice = {                                                        %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 16/18 {                                                             %! ikribu.clb_rhythm()
+    \times 16/18                                                               %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Viola_Music_Voice measure 133 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1832,7 +1838,8 @@ l_Viola_Music_Voice = {                                                        %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 6/8 {                                                               %! ikribu.clb_rhythm()
+    \times 6/8                                                                 %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Viola_Music_Voice measure 137 / measure 11]                      %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)
@@ -1913,7 +1920,8 @@ l_Viola_Music_Voice = {                                                        %
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
-    \times 8/10 {                                                              %! ikribu.clb_rhythm()
+    \times 8/10                                                                %! ikribu.clb_rhythm()
+    {                                                                          %! ikribu.clb_rhythm()
 
         % [12 Viola_Music_Voice measure 141 / measure 15]                      %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.SegmentMaker._style_fermata_measures(3)

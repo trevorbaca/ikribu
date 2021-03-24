@@ -986,7 +986,8 @@ h_Cello_Music_Voice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 88 / measure 2]
         fqf''!4
@@ -1007,7 +1008,8 @@ h_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 90 / measure 4]
         b'4
@@ -1028,7 +1030,8 @@ h_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 92 / measure 6]
         b'4
@@ -1049,7 +1052,8 @@ h_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 94 / measure 8]
         b'4
@@ -1070,7 +1074,8 @@ h_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 96 / measure 10]
         d'4

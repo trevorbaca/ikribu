@@ -1167,7 +1167,8 @@ h_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 88 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
         fqf''!4                                                                %! baca.make_notes()
@@ -1188,7 +1189,8 @@ h_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 90 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
         b'4                                                                    %! baca.make_notes()
@@ -1209,7 +1211,8 @@ h_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 92 / measure 6]                        %! baca.SegmentMaker._comment_measure_numbers()
         b'4                                                                    %! baca.make_notes()
@@ -1230,7 +1233,8 @@ h_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 94 / measure 8]                        %! baca.SegmentMaker._comment_measure_numbers()
         b'4                                                                    %! baca.make_notes()
@@ -1251,7 +1255,8 @@ h_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [08 Cello_Music_Voice measure 96 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
         d'4                                                                    %! baca.make_notes()

@@ -1501,7 +1501,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 177 / measure 2]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -1521,7 +1522,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 178 / measure 3]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -1536,7 +1538,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 179 / measure 4]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1599,7 +1602,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/4 {                                                               %! ikribu.color_rhythm()
+    \times 3/4                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 182 / measure 7]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1666,7 +1670,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/5 {                                                               %! ikribu.color_rhythm()
+    \times 3/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 185 / measure 10]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1692,7 +1697,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 4/5 {                                                               %! ikribu.color_rhythm()
+    \times 4/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 186 / measure 11]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1713,7 +1719,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/5 {                                                               %! ikribu.color_rhythm()
+    \times 3/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 187 / measure 12]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1782,7 +1789,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/12 {                                                              %! ikribu.color_rhythm()
+    \times 7/12                                                                %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 190 / measure 15]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'1                                                                    %! ikribu.color_rhythm()
@@ -1802,7 +1810,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/12 {                                                              %! ikribu.color_rhythm()
+    \times 7/12                                                                %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 191 / measure 16]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'1                                                                    %! ikribu.color_rhythm()
@@ -1817,7 +1826,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 192 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'1                                                                    %! ikribu.color_rhythm()
@@ -1880,7 +1890,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/4 {                                                               %! ikribu.color_rhythm()
+    \times 3/4                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 195 / measure 20]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -1947,7 +1958,8 @@ n_Violin_Music_Voice = {                                                       %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 4/5 {                                                               %! ikribu.color_rhythm()
+    \times 4/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 198 / measure 23]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -1973,7 +1985,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/10 {                                                              %! ikribu.color_rhythm()
+    \times 7/10                                                                %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 199 / measure 24]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -1994,7 +2007,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 4/5 {                                                               %! ikribu.color_rhythm()
+    \times 4/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 200 / measure 25]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -2015,7 +2029,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 4/5 {                                                               %! ikribu.color_rhythm()
+    \times 4/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 201 / measure 26]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -2036,7 +2051,8 @@ n_Violin_Music_Voice = {                                                       %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/5 {                                                               %! ikribu.color_rhythm()
+    \times 3/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Violin_Music_Voice measure 202 / measure 27]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -2508,7 +2524,8 @@ n_Viola_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"7" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/5 {                                                               %! ikribu.color_rhythm()
+    \times 3/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 182 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -2580,7 +2597,8 @@ n_Viola_Music_Voice = {                                                        %
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 186 / measure 11]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -2644,7 +2662,8 @@ n_Viola_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/8 {                                                               %! ikribu.color_rhythm()
+    \times 7/8                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 190 / measure 15]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -2666,7 +2685,8 @@ n_Viola_Music_Voice = {                                                        %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/8 {                                                               %! ikribu.color_rhythm()
+    \times 7/8                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 191 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -2736,7 +2756,8 @@ n_Viola_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"7" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 3/5 {                                                               %! ikribu.color_rhythm()
+    \times 3/5                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 195 / measure 20]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.color_rhythm()
@@ -2794,7 +2815,8 @@ n_Viola_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 198 / measure 23]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'1                                                                    %! ikribu.color_rhythm()
@@ -2813,7 +2835,8 @@ n_Viola_Music_Voice = {                                                        %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 7/12 {                                                              %! ikribu.color_rhythm()
+    \times 7/12                                                                %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 199 / measure 24]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'1                                                                    %! ikribu.color_rhythm()
@@ -2828,7 +2851,8 @@ n_Viola_Music_Voice = {                                                        %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 200 / measure 25]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()
@@ -2843,7 +2867,8 @@ n_Viola_Music_Voice = {                                                        %
     }                                                                          %! ikribu.color_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.color_rhythm()
-    \times 2/3 {                                                               %! ikribu.color_rhythm()
+    \times 2/3                                                                 %! ikribu.color_rhythm()
+    {                                                                          %! ikribu.color_rhythm()
 
         % [14 Viola_Music_Voice measure 201 / measure 26]                      %! baca.SegmentMaker._comment_measure_numbers()
         c'2                                                                    %! ikribu.color_rhythm()

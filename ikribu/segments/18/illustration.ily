@@ -1393,7 +1393,8 @@ r_Cello_RH_Music_Staff = {                                                     %
 r_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
-    \times 14/15 {                                                             %! ikribu.inscription_rhythm()
+    \times 14/15                                                               %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 247 / measure 1]                       %! baca.SegmentMaker._comment_measure_numbers()
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc." %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -1451,7 +1452,8 @@ r_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm()
 
-    \times 8/9 {                                                               %! ikribu.inscription_rhythm()
+    \times 8/9                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 248 / measure 2]                       %! baca.SegmentMaker._comment_measure_numbers()
         r8                                                                     %! ikribu.inscription_rhythm()
@@ -1517,7 +1519,8 @@ r_Cello_Music_Voice = {                                                        %
     ]                                                                          %! ikribu.inscription_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
-    \times 6/7 {                                                               %! ikribu.inscription_rhythm()
+    \times 6/7                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 250 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
         a16                                                                    %! ikribu.inscription_rhythm()
@@ -1543,7 +1546,8 @@ r_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm()
 
-    \times 2/3 {                                                               %! ikribu.inscription_rhythm()
+    \times 2/3                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 251 / measure 5]                       %! baca.SegmentMaker._comment_measure_numbers()
         r4.                                                                    %! ikribu.inscription_rhythm()
@@ -1594,7 +1598,8 @@ r_Cello_Music_Voice = {                                                        %
     r8.                                                                        %! ikribu.inscription_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
-    \times 14/15 {                                                             %! ikribu.inscription_rhythm()
+    \times 14/15                                                               %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 253 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
         r4..                                                                   %! ikribu.inscription_rhythm()
@@ -1619,7 +1624,8 @@ r_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! ikribu.inscription_rhythm()
 
-    \times 4/5 {                                                               %! ikribu.inscription_rhythm()
+    \times 4/5                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 254 / measure 8]                       %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! ikribu.inscription_rhythm()
@@ -1667,7 +1673,8 @@ r_Cello_Music_Voice = {                                                        %
     r8.                                                                        %! ikribu.inscription_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
-    \times 6/7 {                                                               %! ikribu.inscription_rhythm()
+    \times 6/7                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 256 / measure 10]                      %! baca.SegmentMaker._comment_measure_numbers()
         r4..                                                                   %! ikribu.inscription_rhythm()
@@ -1691,7 +1698,8 @@ r_Cello_Music_Voice = {                                                        %
     }                                                                          %! ikribu.inscription_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.inscription_rhythm()
-    \times 7/8 {                                                               %! ikribu.inscription_rhythm()
+    \times 7/8                                                                 %! ikribu.inscription_rhythm()
+    {                                                                          %! ikribu.inscription_rhythm()
 
         % [18 Cello_Music_Voice measure 257 / measure 11]                      %! baca.SegmentMaker._comment_measure_numbers()
         a8.                                                                    %! ikribu.inscription_rhythm()

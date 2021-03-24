@@ -314,7 +314,8 @@ q_Bass_Clarinet_Music_Staff = {
 q_Violin_RH_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    \times 3/2
+    {
 
         % [17 Violin_RH_Music_Voice measure 239 / measure 1]
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -364,7 +365,8 @@ q_Violin_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [17 Violin_RH_Music_Voice measure 241 / measure 3]
         c'4
@@ -436,7 +438,8 @@ q_Violin_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 7/9
+    {
 
         % [17 Violin_RH_Music_Voice measure 242 / measure 4]
         r4
@@ -514,7 +517,8 @@ q_Violin_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    \times 8/7
+    {
 
         % [17 Violin_RH_Music_Voice measure 243 / measure 5]
         c'4
@@ -649,7 +653,8 @@ q_Violin_RH_Music_Staff = {
 q_Violin_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [17 Violin_Music_Voice measure 239 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -685,7 +690,8 @@ q_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    \times 4/6
+    {
 
         % [17 Violin_Music_Voice measure 240 / measure 2]
         g''2
@@ -704,7 +710,8 @@ q_Violin_Music_Voice = {
     d''2..
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [17 Violin_Music_Voice measure 242 / measure 4]
         c''1
@@ -724,7 +731,8 @@ q_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \times 16/18
+    {
 
         % [17 Violin_Music_Voice measure 243 / measure 5]
         a'2
@@ -853,7 +861,8 @@ q_Viola_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [17 Viola_RH_Music_Voice measure 240 / measure 2]
         c'4
@@ -885,7 +894,8 @@ q_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 7/9
+    {
 
         % [17 Viola_RH_Music_Voice measure 241 / measure 3]
         c'4
@@ -964,7 +974,8 @@ q_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \times 7/6
+    {
 
         % [17 Viola_RH_Music_Voice measure 242 / measure 4]
         c'4
@@ -1160,7 +1171,8 @@ q_Viola_RH_Music_Staff = {
 q_Viola_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    \times 6/8
+    {
 
         % [17 Viola_Music_Voice measure 239 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
@@ -1191,7 +1203,8 @@ q_Viola_Music_Voice = {
     e''2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [17 Viola_Music_Voice measure 241 / measure 3]
         d''4.
@@ -1205,7 +1218,8 @@ q_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+    \times 14/16
+    {
 
         % [17 Viola_Music_Voice measure 242 / measure 4]
         g4.
@@ -1305,7 +1319,8 @@ q_Viola_Music_Staff = {
 q_Cello_RH_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [17 Cello_RH_Music_Voice measure 239 / measure 1]
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -1368,7 +1383,8 @@ q_Cello_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \times 7/6
+    {
 
         % [17 Cello_RH_Music_Voice measure 241 / measure 3]
         c'4
@@ -1482,7 +1498,8 @@ q_Cello_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9 {
+    \times 8/9
+    {
 
         % [17 Cello_RH_Music_Voice measure 243 / measure 5]
         c'4
@@ -1669,7 +1686,8 @@ q_Cello_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [17 Cello_Music_Voice measure 240 / measure 2]
         d'2
@@ -1679,7 +1697,8 @@ q_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+    \times 14/16
+    {
 
         % [17 Cello_Music_Voice measure 241 / measure 3]
         d8
@@ -1706,7 +1725,8 @@ q_Cello_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/17 {
+    \times 16/17
+    {
 
         % [17 Cello_Music_Voice measure 243 / measure 5]
         a2.
