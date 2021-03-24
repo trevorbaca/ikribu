@@ -1849,7 +1849,8 @@ d_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 39 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
         b'4                                                                    %! baca.make_notes()
@@ -1886,7 +1887,8 @@ d_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 43 / measure 9]                        %! baca.SegmentMaker._comment_measure_numbers()
         b'4                                                                    %! baca.make_notes()
@@ -1923,7 +1925,8 @@ d_Cello_Music_Voice = {                                                        %
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 47 / measure 13]                       %! baca.SegmentMaker._comment_measure_numbers()
         d'4                                                                    %! baca.make_notes()

@@ -826,7 +826,8 @@ l_Violin_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    \times 8/12
+    {
 
         % [12 Violin_Music_Voice measure 129 / measure 3]
         \stopStaff
@@ -919,7 +920,8 @@ l_Violin_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/20 {
+    \times 16/20
+    {
 
         % [12 Violin_Music_Voice measure 133 / measure 7]
         \stopStaff
@@ -1031,7 +1033,8 @@ l_Violin_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \times 6/10
+    {
 
         % [12 Violin_Music_Voice measure 137 / measure 11]
         \stopStaff
@@ -1113,7 +1116,8 @@ l_Violin_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    \times 8/12
+    {
 
         % [12 Violin_Music_Voice measure 141 / measure 15]
         \stopStaff
@@ -1435,7 +1439,8 @@ l_Viola_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \times 8/10
+    {
 
         % [12 Viola_Music_Voice measure 129 / measure 3]
         \stopStaff
@@ -1522,7 +1527,8 @@ l_Viola_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \times 16/18
+    {
 
         % [12 Viola_Music_Voice measure 133 / measure 7]
         \stopStaff
@@ -1628,7 +1634,8 @@ l_Viola_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    \times 6/8
+    {
 
         % [12 Viola_Music_Voice measure 137 / measure 11]
         \stopStaff
@@ -1704,7 +1711,8 @@ l_Viola_Music_Voice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \times 8/10
+    {
 
         % [12 Viola_Music_Voice measure 141 / measure 15]
         \stopStaff

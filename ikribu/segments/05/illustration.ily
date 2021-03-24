@@ -752,7 +752,8 @@ e_Viola_Music_Staff = {                                                        %
 e_Cello_RH_Music_Voice = {                                                     %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 3/4 {                                                               %! ikribu.bow_rhythm()
+    \times 3/4                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 52 / measure 1]                     %! baca.SegmentMaker._comment_measure_numbers()
         \override Staff.BarLine.bar-extent = #'(-2 . 0)                        %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_BAR_EXTENT:EXPLICIT_BAR_EXTENT
@@ -801,7 +802,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     }                                                                          %! ikribu.bow_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 4/6 {                                                               %! ikribu.bow_rhythm()
+    \times 4/6                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 53 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -857,7 +859,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     }                                                                          %! ikribu.bow_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 4/3 {                                                               %! ikribu.bow_rhythm()
+    \times 4/3                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 54 / measure 3]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -904,7 +907,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     \bacaStartTextSpanBCP                                                      %! baca.bcps():baca.BCPCommand._call(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 7/8 {                                                               %! ikribu.bow_rhythm()
+    \times 7/8                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 56 / measure 5]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -973,7 +977,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     }                                                                          %! ikribu.bow_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 3/5 {                                                               %! ikribu.bow_rhythm()
+    \times 3/5                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 57 / measure 6]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -1022,7 +1027,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     }                                                                          %! ikribu.bow_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 4/3 {                                                               %! ikribu.bow_rhythm()
+    \times 4/3                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 58 / measure 7]                     %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! ikribu.bow_rhythm()
@@ -1078,7 +1084,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     \bacaStartTextSpanBCP                                                      %! baca.bcps():baca.BCPCommand._call(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 4/5 {                                                               %! ikribu.bow_rhythm()
+    \times 4/5                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 60 / measure 9]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -1124,7 +1131,8 @@ e_Cello_RH_Music_Voice = {                                                     %
     }                                                                          %! ikribu.bow_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.bow_rhythm()
-    \times 3/5 {                                                               %! ikribu.bow_rhythm()
+    \times 3/5                                                                 %! ikribu.bow_rhythm()
+    {                                                                          %! ikribu.bow_rhythm()
 
         % [05 Cello_RH_Music_Voice measure 61 / measure 10]                    %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! ikribu.bow_rhythm()
@@ -1243,7 +1251,8 @@ e_Cello_RH_Music_Staff = {                                                     %
 e_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 6/7 {                                                               %! ikribu.glissando_rhythm()
+    \times 6/7                                                                 %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 52 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers()
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc." %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -1282,7 +1291,8 @@ e_Cello_Music_Voice = {                                                        %
     }                                                                          %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 8/10 {                                                              %! ikribu.glissando_rhythm()
+    \times 8/10                                                                %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 53 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
         d'2                                                                    %! ikribu.glissando_rhythm()
@@ -1303,7 +1313,8 @@ e_Cello_Music_Voice = {                                                        %
     f''8                                                                       %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 4/5 {                                                               %! ikribu.glissando_rhythm()
+    \times 4/5                                                                 %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 55 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
         e'4                                                                    %! ikribu.glissando_rhythm()
@@ -1313,7 +1324,8 @@ e_Cello_Music_Voice = {                                                        %
     }                                                                          %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 14/16 {                                                             %! ikribu.glissando_rhythm()
+    \times 14/16                                                               %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 56 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
         g2                                                                     %! ikribu.glissando_rhythm()
@@ -1342,7 +1354,8 @@ e_Cello_Music_Voice = {                                                        %
     g'8                                                                        %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 8/9 {                                                               %! ikribu.glissando_rhythm()
+    \times 8/9                                                                 %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 58 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
         e'4.                                                                   %! ikribu.glissando_rhythm()
@@ -1352,7 +1365,8 @@ e_Cello_Music_Voice = {                                                        %
     }                                                                          %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 6/8 {                                                               %! ikribu.glissando_rhythm()
+    \times 6/8                                                                 %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 59 / measure 8]                        %! baca.SegmentMaker._comment_measure_numbers()
         e''8                                                                   %! ikribu.glissando_rhythm()
@@ -1377,7 +1391,8 @@ e_Cello_Music_Voice = {                                                        %
     f4                                                                         %! ikribu.glissando_rhythm()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.glissando_rhythm()
-    \times 6/7 {                                                               %! ikribu.glissando_rhythm()
+    \times 6/7                                                                 %! ikribu.glissando_rhythm()
+    {                                                                          %! ikribu.glissando_rhythm()
 
         % [05 Cello_Music_Voice measure 61 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
         a2                                                                     %! ikribu.glissando_rhythm()

@@ -1586,7 +1586,8 @@ d_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 39 / measure 5]
         b'4
@@ -1623,7 +1624,8 @@ d_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 43 / measure 9]
         b'4
@@ -1660,7 +1662,8 @@ d_Cello_Music_Voice = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [04 Cello_Music_Voice measure 47 / measure 13]
         d'4

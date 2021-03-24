@@ -1240,7 +1240,8 @@ r_Cello_RH_Music_Staff = {
 r_Cello_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [18 Cello_Music_Voice measure 247 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
@@ -1297,7 +1298,8 @@ r_Cello_Music_Voice = {
 
     }
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         % [18 Cello_Music_Voice measure 248 / measure 2]
         r8
@@ -1363,7 +1365,8 @@ r_Cello_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [18 Cello_Music_Voice measure 250 / measure 4]
         a16
@@ -1389,7 +1392,8 @@ r_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [18 Cello_Music_Voice measure 251 / measure 5]
         r4.
@@ -1440,7 +1444,8 @@ r_Cello_Music_Voice = {
     r8.
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [18 Cello_Music_Voice measure 253 / measure 7]
         r4..
@@ -1465,7 +1470,8 @@ r_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [18 Cello_Music_Voice measure 254 / measure 8]
         r4
@@ -1513,7 +1519,8 @@ r_Cello_Music_Voice = {
     r8.
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [18 Cello_Music_Voice measure 256 / measure 10]
         r4..
@@ -1537,7 +1544,8 @@ r_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [18 Cello_Music_Voice measure 257 / measure 11]
         a8.

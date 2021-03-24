@@ -269,7 +269,8 @@ i_Bass_Clarinet_Music_Staff = {
 i_Violin_RH_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    \times 8/7
+    {
 
         % [09 Violin_RH_Music_Voice measure 99 / measure 1]
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -401,7 +402,8 @@ i_Violin_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [09 Violin_RH_Music_Voice measure 101 / measure 3]
         c'4
@@ -473,7 +475,8 @@ i_Violin_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [09 Violin_RH_Music_Voice measure 102 / measure 4]
         c'4
@@ -594,7 +597,8 @@ i_Violin_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9 {
+    \times 8/9
+    {
 
         % [09 Violin_RH_Music_Voice measure 105 / measure 7]
         r4
@@ -672,7 +676,8 @@ i_Violin_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    \times 4/6
+    {
 
         % [09 Violin_RH_Music_Voice measure 106 / measure 8]
         c'4
@@ -797,7 +802,8 @@ i_Violin_RH_Music_Staff = {
 i_Violin_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/17 {
+    \times 16/17
+    {
 
         % [09 Violin_Music_Voice measure 99 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -837,7 +843,8 @@ i_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+    \times 14/16
+    {
 
         % [09 Violin_Music_Voice measure 100 / measure 2]
         f'''4.
@@ -864,7 +871,8 @@ i_Violin_Music_Voice = {
     f'2..
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [09 Violin_Music_Voice measure 102 / measure 4]
         a'2..
@@ -872,7 +880,8 @@ i_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    \times 4/6
+    {
 
         % [09 Violin_Music_Voice measure 103 / measure 5]
         g8
@@ -899,7 +908,8 @@ i_Violin_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/17 {
+    \times 16/17
+    {
 
         % [09 Violin_Music_Voice measure 105 / measure 7]
         e''8
@@ -913,7 +923,8 @@ i_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \times 8/10
+    {
 
         % [09 Violin_Music_Voice measure 106 / measure 8]
         e'''2.
@@ -1074,7 +1085,8 @@ i_Viola_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [09 Viola_RH_Music_Voice measure 100 / measure 2]
         c'4
@@ -1147,7 +1159,8 @@ i_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 7/9
+    {
 
         % [09 Viola_RH_Music_Voice measure 101 / measure 3]
         c'4
@@ -1226,7 +1239,8 @@ i_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    \times 3/2
+    {
 
         % [09 Viola_RH_Music_Voice measure 102 / measure 4]
         c'4
@@ -1269,7 +1283,8 @@ i_Viola_RH_Music_Voice = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [09 Viola_RH_Music_Voice measure 104 / measure 6]
         c'4
@@ -1338,7 +1353,8 @@ i_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \times 8/10
+    {
 
         % [09 Viola_RH_Music_Voice measure 105 / measure 7]
         c'4
@@ -1427,7 +1443,8 @@ i_Viola_RH_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    \times 4/3
+    {
 
         % [09 Viola_RH_Music_Voice measure 106 / measure 8]
         c'4
@@ -1526,7 +1543,8 @@ i_Viola_RH_Music_Staff = {
 i_Viola_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \times 16/18
+    {
 
         % [09 Viola_Music_Voice measure 99 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
@@ -1567,7 +1585,8 @@ i_Viola_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [09 Viola_Music_Voice measure 101 / measure 3]
         g16
@@ -1587,7 +1606,8 @@ i_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    \times 6/8
+    {
 
         % [09 Viola_Music_Voice measure 102 / measure 4]
         f'4.
@@ -1604,7 +1624,8 @@ i_Viola_Music_Voice = {
     d'4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \times 14/15
+    {
 
         % [09 Viola_Music_Voice measure 104 / measure 6]
         c''2.
@@ -1624,7 +1645,8 @@ i_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \times 16/18
+    {
 
         % [09 Viola_Music_Voice measure 105 / measure 7]
         g'4.
