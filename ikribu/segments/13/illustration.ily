@@ -140,6 +140,7 @@ m_Global_Rests = {                                                             %
     %! PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -673,6 +674,7 @@ m_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -900,9 +902,12 @@ m_Bass_Clarinet_Music_Voice = {                                                %
     \repeatTie                                                                 %! baca.make_repeat_tied_notes()
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Bass_Clarinet_Music_Voice"                           %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Bass_Clarinet_Music_Voice measure 171 / measure 29]          %! baca.SegmentMaker._comment_measure_numbers()
@@ -915,9 +920,12 @@ m_Bass_Clarinet_Music_Voice = {                                                %
             b'1 * 1                                                            %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"1"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Bass_Clarinet_Rest_Voice"                            %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Bass_Clarinet_Rest_Voice measure 171 / measure 29]           %! baca.SegmentMaker._comment_measure_numbers()
@@ -927,8 +935,10 @@ m_Bass_Clarinet_Music_Voice = {                                                %
             R1 * 1                                                             %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"1"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [13 Bass_Clarinet_Music_Voice measure 172 / measure 30]                  %! baca.SegmentMaker._comment_measure_numbers()
@@ -955,9 +965,15 @@ m_Bass_Clarinet_Music_Voice = {                                                %
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Bass_Clarinet_Music_Voice"                           %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Bass_Clarinet_Music_Voice measure 176 / measure 34]          %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -972,9 +988,15 @@ m_Bass_Clarinet_Music_Voice = {                                                %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Bass_Clarinet_Rest_Voice"                            %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Bass_Clarinet_Rest_Voice measure 176 / measure 34]           %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -990,18 +1012,26 @@ m_Bass_Clarinet_Music_Voice = {                                                %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Bass_Clarinet_Music_Staff = {                                                %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Bass_Clarinet_Music_Voice"                               %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Bass_Clarinet_Music_Voice                                               %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
@@ -1188,9 +1218,15 @@ m_Violin_RH_Music_Voice = {                                                    %
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Violin_RH_Music_Voice"                               %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Violin_RH_Music_Voice measure 176 / measure 34]              %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1203,9 +1239,15 @@ m_Violin_RH_Music_Voice = {                                                    %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Violin_RH_Rest_Voice"                                %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Violin_RH_Rest_Voice measure 176 / measure 34]               %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1221,25 +1263,36 @@ m_Violin_RH_Music_Voice = {                                                    %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Violin_RH_Music_Staff = {                                                    %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_RH_Music_Voice"                                   %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Violin_RH_Music_Voice                                                   %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Violin_Music_Voice = {                                                       %! ide.Path.extern()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 16/20                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 143 / measure 1]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1344,10 +1397,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/18                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 144 / measure 2]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1425,10 +1482,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 145 / measure 3]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1474,10 +1535,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/12                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 146 / measure 4]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1531,10 +1596,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/12                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 147 / measure 5]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1588,6 +1657,7 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
     % [13 Violin_Music_Voice measure 148 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -1609,8 +1679,11 @@ m_Violin_Music_Voice = {                                                       %
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     ]                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/18                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 149 / measure 7]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1688,10 +1761,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 150 / measure 8]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1737,10 +1814,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/12                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 151 / measure 9]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -1794,10 +1875,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 152 / measure 10]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1843,10 +1928,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/12                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 153 / measure 11]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1900,10 +1989,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 154 / measure 12]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1949,6 +2042,7 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
     % [13 Violin_Music_Voice measure 155 / measure 13]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -1980,8 +2074,11 @@ m_Violin_Music_Voice = {                                                       %
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     ]                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/18                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 156 / measure 14]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2059,10 +2156,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/18                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 157 / measure 15]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2140,10 +2241,14 @@ m_Violin_Music_Voice = {                                                       %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 16/20                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Violin_Music_Voice measure 158 / measure 16]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2233,11 +2338,15 @@ m_Violin_Music_Voice = {                                                       %
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert Hairpin.shorten-pair                                           %! baca.hairpin_shorten_pair():baca.hairpin_start_shift():baca.OverrideCommand._call(2)
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Violin_Music_Voice"                                  %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Violin_Music_Voice measure 159 / measure 17]                 %! baca.SegmentMaker._comment_measure_numbers()
@@ -2250,9 +2359,12 @@ m_Violin_Music_Voice = {                                                       %
             c'1 * 7/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Violin_Rest_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Violin_Rest_Voice measure 159 / measure 17]                  %! baca.SegmentMaker._comment_measure_numbers()
@@ -2262,8 +2374,10 @@ m_Violin_Music_Voice = {                                                       %
             R1 * 7/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [13 Violin_Music_Voice measure 160 / measure 18]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -2281,8 +2395,11 @@ m_Violin_Music_Voice = {                                                       %
     R1 * 2                                                                     %! baca.SegmentMaker._make_measure_silences()
 %@% ^ \baca-duration-multiplier-markup #"2" #"1"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 163 / measure 21]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2307,10 +2424,14 @@ m_Violin_Music_Voice = {                                                       %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 164 / measure 22]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2330,10 +2451,14 @@ m_Violin_Music_Voice = {                                                       %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 165 / measure 23]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2353,6 +2478,7 @@ m_Violin_Music_Voice = {                                                       %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Violin_Music_Voice measure 166 / measure 24]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -2372,8 +2498,11 @@ m_Violin_Music_Voice = {                                                       %
     c'4                                                                        %! ikribu.triplet_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 167 / measure 25]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2393,10 +2522,14 @@ m_Violin_Music_Voice = {                                                       %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 8/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 168 / measure 26]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2416,6 +2549,7 @@ m_Violin_Music_Voice = {                                                       %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Violin_Music_Voice measure 169 / measure 27]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -2435,8 +2569,11 @@ m_Violin_Music_Voice = {                                                       %
     c'4                                                                        %! ikribu.triplet_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 170 / measure 28]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2456,10 +2593,14 @@ m_Violin_Music_Voice = {                                                       %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 171 / measure 29]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2479,10 +2620,14 @@ m_Violin_Music_Voice = {                                                       %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 2/3                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 172 / measure 30]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2502,10 +2647,14 @@ m_Violin_Music_Voice = {                                                       %
         c'4                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Violin_Music_Voice measure 173 / measure 31]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2525,6 +2674,7 @@ m_Violin_Music_Voice = {                                                       %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Violin_Music_Voice measure 174 / measure 32]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -2550,9 +2700,12 @@ m_Violin_Music_Voice = {                                                       %
     \revert TextScript.padding                                                 %! baca.text_script_padding():baca.OverrideCommand._call(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():baca.OverrideCommand._call(2)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Violin_Music_Voice"                                  %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Violin_Music_Voice measure 175 / measure 33]                 %! baca.SegmentMaker._comment_measure_numbers()
@@ -2569,9 +2722,12 @@ m_Violin_Music_Voice = {                                                       %
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
             \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Violin_Rest_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Violin_Rest_Voice measure 175 / measure 33]                  %! baca.SegmentMaker._comment_measure_numbers()
@@ -2581,13 +2737,21 @@ m_Violin_Music_Voice = {                                                       %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Violin_Music_Voice"                                  %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Violin_Music_Voice measure 176 / measure 34]                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -2600,9 +2764,15 @@ m_Violin_Music_Voice = {                                                       %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Violin_Rest_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Violin_Rest_Voice measure 176 / measure 34]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -2618,18 +2788,26 @@ m_Violin_Music_Voice = {                                                       %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Violin_Music_Staff = {                                                       %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_Music_Voice"                                      %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Violin_Music_Voice                                                      %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
@@ -2816,9 +2994,15 @@ m_Viola_RH_Music_Voice = {                                                     %
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Viola_RH_Music_Voice"                                %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Viola_RH_Music_Voice measure 176 / measure 34]               %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -2831,9 +3015,15 @@ m_Viola_RH_Music_Voice = {                                                     %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Viola_RH_Rest_Voice"                                 %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Viola_RH_Rest_Voice measure 176 / measure 34]                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -2849,25 +3039,36 @@ m_Viola_RH_Music_Voice = {                                                     %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Viola_RH_Music_Staff = {                                                     %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Viola_RH_Music_Voice                                                    %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Viola_Music_Voice = {                                                        %! ide.Path.extern()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 16/18                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 143 / measure 1]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -2964,10 +3165,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/16                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 144 / measure 2]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3037,10 +3242,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/8                                                                 %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 145 / measure 3]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3078,10 +3287,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 146 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3127,10 +3340,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 8/10                                                                %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 147 / measure 5]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3186,10 +3403,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 4/6                                                                 %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 148 / measure 6]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3219,10 +3440,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 14/16                                                               %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 149 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3292,10 +3517,14 @@ m_Viola_Music_Voice = {                                                        %
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     \times 6/8                                                                 %! ikribu.clb_rhythm()
+    %! ikribu.clb_rhythm()
     {                                                                          %! ikribu.clb_rhythm()
 
         % [13 Viola_Music_Voice measure 150 / measure 8]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -3337,11 +3566,15 @@ m_Viola_Music_Voice = {                                                        %
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert Hairpin.shorten-pair                                           %! baca.hairpin_shorten_pair():baca.hairpin_start_shift():baca.OverrideCommand._call(2)
 
+    %! ikribu.clb_rhythm()
     }                                                                          %! ikribu.clb_rhythm()
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Viola_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Viola_Music_Voice measure 151 / measure 9]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -3354,9 +3587,12 @@ m_Viola_Music_Voice = {                                                        %
             c'1 * 1                                                            %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"1"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Viola_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Viola_Rest_Voice measure 151 / measure 9]                    %! baca.SegmentMaker._comment_measure_numbers()
@@ -3366,8 +3602,10 @@ m_Viola_Music_Voice = {                                                        %
             R1 * 1                                                             %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"1"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [13 Viola_Music_Voice measure 152 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -3385,8 +3623,11 @@ m_Viola_Music_Voice = {                                                        %
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 2/3                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 155 / measure 13]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3411,10 +3652,14 @@ m_Viola_Music_Voice = {                                                        %
         c'4                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 156 / measure 14]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3434,10 +3679,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 157 / measure 15]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3457,10 +3706,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 8/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 158 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3480,10 +3733,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 159 / measure 17]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3503,6 +3760,7 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Viola_Music_Voice measure 160 / measure 18]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -3522,8 +3780,11 @@ m_Viola_Music_Voice = {                                                        %
     c'4                                                                        %! ikribu.triplet_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 2/3                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 161 / measure 19]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3543,10 +3804,14 @@ m_Viola_Music_Voice = {                                                        %
         c'4                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 8/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 162 / measure 20]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3566,10 +3831,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 163 / measure 21]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3589,10 +3858,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 164 / measure 22]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3612,10 +3885,14 @@ m_Viola_Music_Voice = {                                                        %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 165 / measure 23]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3635,6 +3912,7 @@ m_Viola_Music_Voice = {                                                        %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Viola_Music_Voice measure 166 / measure 24]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -3654,8 +3932,11 @@ m_Viola_Music_Voice = {                                                        %
     c'4                                                                        %! ikribu.triplet_rhythm()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 167 / measure 25]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3675,10 +3956,14 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 8/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 168 / measure 26]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3698,6 +3983,7 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Viola_Music_Voice measure 169 / measure 27]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -3717,8 +4003,11 @@ m_Viola_Music_Voice = {                                                        %
     c'4                                                                        %! ikribu.triplet_rhythm()
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 170 / measure 28]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3738,10 +4027,14 @@ m_Viola_Music_Voice = {                                                        %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 4/6                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 171 / measure 29]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3761,10 +4054,14 @@ m_Viola_Music_Voice = {                                                        %
         c'2                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 2/3                                                                 %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 172 / measure 30]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3784,10 +4081,14 @@ m_Viola_Music_Voice = {                                                        %
         c'4                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
+    %! ikribu.triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text                             %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     \times 7/12                                                                %! ikribu.triplet_rhythm()
+    %! ikribu.triplet_rhythm()
     {                                                                          %! ikribu.triplet_rhythm()
 
         % [13 Viola_Music_Voice measure 173 / measure 31]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -3807,6 +4108,7 @@ m_Viola_Music_Voice = {                                                        %
         c'1                                                                    %! ikribu.triplet_rhythm()
         - \accent                                                              %! baca.accent():baca.IndicatorCommand._call()
 
+    %! ikribu.triplet_rhythm()
     }                                                                          %! ikribu.triplet_rhythm()
 
     % [13 Viola_Music_Voice measure 174 / measure 32]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -3832,9 +4134,12 @@ m_Viola_Music_Voice = {                                                        %
     \revert TextScript.padding                                                 %! baca.text_script_padding():baca.OverrideCommand._call(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():baca.OverrideCommand._call(2)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Viola_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Viola_Music_Voice measure 175 / measure 33]                  %! baca.SegmentMaker._comment_measure_numbers()
@@ -3851,9 +4156,12 @@ m_Viola_Music_Voice = {                                                        %
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
             \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Viola_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Viola_Rest_Voice measure 175 / measure 33]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -3863,13 +4171,21 @@ m_Viola_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Viola_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Viola_Music_Voice measure 176 / measure 34]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -3882,9 +4198,15 @@ m_Viola_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Viola_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Viola_Rest_Voice measure 176 / measure 34]                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -3900,18 +4222,26 @@ m_Viola_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Viola_Music_Staff = {                                                        %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Viola_Music_Voice                                                       %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
@@ -4098,9 +4428,15 @@ m_Cello_RH_Music_Voice = {                                                     %
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! baca.SegmentMaker._style_fermata_measures(2):FERMATA_MEASURE_EMPTY_BAR_EXTENT
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Cello_RH_Music_Voice"                                %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Cello_RH_Music_Voice measure 176 / measure 34]               %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -4113,9 +4449,15 @@ m_Cello_RH_Music_Voice = {                                                     %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Cello_RH_Rest_Voice"                                 %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Cello_RH_Rest_Voice measure 176 / measure 34]                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -4131,18 +4473,26 @@ m_Cello_RH_Music_Voice = {                                                     %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Cello_RH_Music_Staff = {                                                     %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_RH_Music_Voice"                                    %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Cello_RH_Music_Voice                                                    %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
@@ -5002,9 +5352,12 @@ m_Cello_Music_Voice = {                                                        %
     \repeatTie                                                                 %! baca.make_tied_repeated_durations()
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [13 Cello_Music_Voice measure 167 / measure 25]                  %! baca.SegmentMaker._comment_measure_numbers()
@@ -5017,9 +5370,12 @@ m_Cello_Music_Voice = {                                                        %
             d1 * 7/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [13 Cello_Rest_Voice measure 167 / measure 25]                   %! baca.SegmentMaker._comment_measure_numbers()
@@ -5029,8 +5385,10 @@ m_Cello_Music_Voice = {                                                        %
             R1 * 7/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [13 Cello_Music_Voice measure 168 / measure 26]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -5079,9 +5437,15 @@ m_Cello_Music_Voice = {                                                        %
     \revert TextScript.padding                                                 %! baca.text_script_padding():baca.OverrideCommand._call(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():baca.OverrideCommand._call(2)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [13 Cello_Music_Voice measure 176 / measure 34]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -5094,9 +5458,15 @@ m_Cello_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [13 Cello_Rest_Voice measure 176 / measure 34]                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -5112,16 +5482,24 @@ m_Cello_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 m_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
+    %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"                                       %! ikribu.ScoreTemplate.__call__()
+    %! ikribu.ScoreTemplate.__call__()
     \m_Cello_Music_Voice                                                       %! ide.Path.extern()
 
+                                                                               %! ikribu.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
