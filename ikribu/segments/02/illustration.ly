@@ -11,78 +11,121 @@
 \score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 {                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     <<                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
+        %! baca.SegmentMaker._make_lilypond_file()
         {                                                                      %! baca.SegmentMaker._make_lilypond_file()
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
+        %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
+        %! ikribu.ScoreTemplate.__call__()
         \context Score = "Score"                                               %! ikribu.ScoreTemplate.__call__()
+        %! ikribu.ScoreTemplate.__call__()
         <<                                                                     %! ikribu.ScoreTemplate.__call__()
 
+            %! abjad.ScoreTemplate._make_global_context()
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context()
+            %! abjad.ScoreTemplate._make_global_context()
             <<                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \b_Global_Rests                                                %! ide.Path.extern()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \b_Global_Skips                                                %! ide.Path.extern()
 
+            %! abjad.ScoreTemplate._make_global_context()
             >>                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+            %! ikribu.ScoreTemplate.__call__()
             \context MusicContext = "Music_Context"                            %! ikribu.ScoreTemplate.__call__()
+            %! ikribu.ScoreTemplate.__call__()
             {                                                                  %! ikribu.ScoreTemplate.__call__()
 
+                %! ikribu.ScoreTemplate.__call__()
                 \context EnsembleStaffGroup = "Ensemble_Staff_Group"           %! ikribu.ScoreTemplate.__call__()
+                %! ikribu.ScoreTemplate.__call__()
                 <<                                                             %! ikribu.ScoreTemplate.__call__()
 
                     \tag Bass_Clarinet                                         %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! ikribu.ScoreTemplate.__call__()
                     \context Staff = "Bass_Clarinet_Music_Staff"               %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.ScoreTemplate.__call__()
                     \b_Bass_Clarinet_Music_Staff                               %! ide.Path.extern()
 
                     \tag Violin                                                %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Violin_Staff_Group"     %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.ScoreTemplate.__call__()
                     <<                                                         %! ikribu.ScoreTemplate.__call__()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Violin_RH_Music_Staff"             %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Violin_RH_Music_Staff                               %! ide.Path.extern()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Violin_Music_Staff"                  %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Violin_Music_Staff                                  %! ide.Path.extern()
 
+                    %! ikribu.ScoreTemplate.__call__()
                     >>                                                         %! ikribu.ScoreTemplate.__call__()
 
                     \tag Viola                                                 %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Viola_Staff_Group"      %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.ScoreTemplate.__call__()
                     <<                                                         %! ikribu.ScoreTemplate.__call__()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Viola_RH_Music_Staff"              %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Viola_RH_Music_Staff                                %! ide.Path.extern()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Viola_Music_Staff"                   %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Viola_Music_Staff                                   %! ide.Path.extern()
 
+                    %! ikribu.ScoreTemplate.__call__()
                     >>                                                         %! ikribu.ScoreTemplate.__call__()
 
                     \tag Cello                                                 %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Cello_Staff_Group"      %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.ScoreTemplate.__call__()
                     <<                                                         %! ikribu.ScoreTemplate.__call__()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Cello_RH_Music_Staff"              %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Cello_RH_Music_Staff                                %! ide.Path.extern()
 
+                        %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Cello_Music_Staff"                   %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.ScoreTemplate.__call__()
                         \b_Cello_Music_Staff                                   %! ide.Path.extern()
 
+                    %! ikribu.ScoreTemplate.__call__()
                     >>                                                         %! ikribu.ScoreTemplate.__call__()
 
+                %! ikribu.ScoreTemplate.__call__()
                 >>                                                             %! ikribu.ScoreTemplate.__call__()
 
+            %! ikribu.ScoreTemplate.__call__()
             }                                                                  %! ikribu.ScoreTemplate.__call__()
 
+        %! ikribu.ScoreTemplate.__call__()
         >>                                                                     %! ikribu.ScoreTemplate.__call__()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
 }                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
