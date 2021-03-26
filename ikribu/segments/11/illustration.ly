@@ -1,5 +1,11 @@
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_format_pieces()
 \version "2.23.1"                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_format_pieces()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_format_pieces()
 \language "english"                                                            %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_format_pieces()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"                                                %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_includes()
 \include "illustration.ily"                                                    %! ide.Path.extern()
 
@@ -8,7 +14,12 @@
 \paper { print-first-page-number = ##t }                                       %! baca.SegmentMaker._make_lilypond_file()
 \paper { first-page-number = #11 }                                             %! __make_segment_pdf__
 
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
+
 \score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
 {                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
     %! baca.SegmentMaker._make_lilypond_file()
@@ -16,6 +27,7 @@
 
         %! baca.SegmentMaker._make_lilypond_file()
         {                                                                      %! baca.SegmentMaker._make_lilypond_file()
+            %! baca.SegmentMaker._make_lilypond_file()
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
         %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
@@ -53,12 +65,14 @@
                 %! ikribu.ScoreTemplate.__call__()
                 <<                                                             %! ikribu.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Bass_Clarinet                                         %! baca.ScoreTemplate._attach_liypond_tag()
                     %! ikribu.ScoreTemplate.__call__()
                     \context Staff = "Bass_Clarinet_Music_Staff"               %! ikribu.ScoreTemplate.__call__()
                     %! ikribu.ScoreTemplate.__call__()
                     \k_Bass_Clarinet_Music_Staff                               %! ide.Path.extern()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Violin                                                %! baca.ScoreTemplate._attach_liypond_tag()
                     %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Violin_Staff_Group"     %! ikribu.ScoreTemplate.__call__()
@@ -78,6 +92,7 @@
                     %! ikribu.ScoreTemplate.__call__()
                     >>                                                         %! ikribu.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola                                                 %! baca.ScoreTemplate._attach_liypond_tag()
                     %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Viola_Staff_Group"      %! ikribu.ScoreTemplate.__call__()
@@ -97,6 +112,7 @@
                     %! ikribu.ScoreTemplate.__call__()
                     >>                                                         %! ikribu.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello                                                 %! baca.ScoreTemplate._attach_liypond_tag()
                     %! ikribu.ScoreTemplate.__call__()
                     \context SingleStringStaffGroup = "Cello_Staff_Group"      %! ikribu.ScoreTemplate.__call__()
@@ -128,4 +144,6 @@
     %! baca.SegmentMaker._make_lilypond_file()
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
 }                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
