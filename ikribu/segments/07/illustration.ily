@@ -1,3 +1,4 @@
+%! ide.Path.extern()
 g_Global_Rests = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -49,9 +50,11 @@ g_Global_Rests = { %! ide.Path.extern()
     R1 * 1/4 %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
 %! abjad.ScoreTemplate._make_global_context()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Global_Skips = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -506,9 +509,11 @@ g_Global_Skips = { %! ide.Path.extern()
     \once \override Score.SpanBar.transparent = ##t %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
 %! abjad.ScoreTemplate._make_global_context()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Bass_Clarinet_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -929,20 +934,25 @@ g_Bass_Clarinet_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Bass_Clarinet_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Bass_Clarinet_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Bass_Clarinet_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Violin_RH_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1139,20 +1149,25 @@ g_Violin_RH_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Violin_RH_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_RH_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Violin_RH_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Violin_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._make_multimeasure_rest_container(7)
@@ -1711,20 +1726,25 @@ g_Violin_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Violin_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Violin_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Viola_RH_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1921,20 +1941,25 @@ g_Viola_RH_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Viola_RH_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_RH_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Viola_RH_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Viola_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._make_multimeasure_rest_container(7)
@@ -2499,20 +2524,25 @@ g_Viola_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Viola_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Viola_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Cello_RH_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2719,20 +2749,25 @@ g_Cello_RH_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Cello_RH_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_RH_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Cello_RH_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Cello_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3440,15 +3475,19 @@ g_Cello_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 g_Cello_Music_Staff = { %! ide.Path.extern()
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice" %! ikribu.ScoreTemplate.__call__()
     %! ikribu.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \g_Cello_Music_Voice %! ide.Path.extern()
 
 %! ikribu.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
