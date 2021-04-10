@@ -51,13 +51,13 @@ metronome_marks = abjad.OrderedDict(
 
 # time signatures
 
-numerators = baca.sequence([[7, 3, 2], [8, 7], [4, 4, 3]])
+numerators = baca.Sequence([[7, 3, 2], [8, 7], [4, 4, 3]])
 numerator_groups = numerators.helianthate(-1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
-numerators = baca.sequence(numerator_groups).flatten()
+numerators = baca.Sequence(numerator_groups).flatten()
 time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
-time_signature_groups = baca.sequence(time_signatures).partition_by_counts(lengths)
+time_signature_groups = baca.Sequence(time_signatures).partition_by_counts(lengths)
 time_signatures = time_signature_groups
 
 # functions
@@ -88,7 +88,7 @@ def bcps(rotation: int = None) -> baca.BCPCommand:
     """
     Makes bow contact points.
     """
-    bcps = baca.sequence(
+    bcps = baca.Sequence(
         [
             [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
             [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
@@ -146,7 +146,7 @@ def clb_staff_positions(*, rotation: int = None) -> baca.StaffPositionCommand:
     """
     Makes clb staff positions.
     """
-    positions = baca.sequence([[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]])
+    positions = baca.Sequence([[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]])
     positions = positions.helianthate(-1, -1).rotate(rotation).flatten()
     return baca.staff_positions(
         positions,
@@ -213,7 +213,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     """
     Makes inscription rhythm.
     """
-    counts = baca.sequence([[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]])
+    counts = baca.Sequence([[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]])
     counts = counts.helianthate(-1, -1)
     counts = counts.flatten()
     extra_counts = [2, 4, 0]
