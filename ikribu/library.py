@@ -69,9 +69,9 @@ def bcl_color_rhythm(
     """
     Makes bass clarinet color rhythm.
     """
-    counts = abjad.sequence([2, 3, 2, 3, 14, 16, 14, 16])
+    counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
-    extra_counts = abjad.sequence([2, 4, 0])
+    extra_counts = abjad.Sequence([2, 4, 0])
     extra_counts = extra_counts.rotate(n=rotation_2)
 
     return baca.rhythm(
@@ -105,7 +105,7 @@ def bow_rhythm(*commands: rmakers.Command, rotation: int = None) -> baca.RhythmC
     """
     Makes bow rhythm.
     """
-    extra_counts = abjad.sequence([-1, 0, 1, 2])
+    extra_counts = abjad.Sequence([-1, 0, 1, 2])
     extra_counts = extra_counts.rotate(n=rotation)
 
     return baca.rhythm(
@@ -182,7 +182,7 @@ def glissando_pitches(octave: int = 4, rotation: int = None) -> baca.PitchComman
     pitches = left[:] + right[1:-1]
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
-    pitches_ = abjad.sequence(pitches)
+    pitches_ = abjad.Sequence(pitches)
     pitches_ = pitches_.rotate(n=rotation)
     return baca.pitches(pitches_, allow_repeats=True)
 
@@ -193,9 +193,9 @@ def glissando_rhythm(
     """
     Makes glissando rhythm.
     """
-    counts = abjad.sequence([2, 3, 2, 3, 14, 16, 14, 16])
+    counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
-    extra_counts = abjad.sequence([2, 4, 0])
+    extra_counts = abjad.Sequence([2, 4, 0])
     extra_counts = extra_counts.rotate(n=rotation_2)
 
     return baca.rhythm(
