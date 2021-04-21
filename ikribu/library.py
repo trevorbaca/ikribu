@@ -63,6 +63,15 @@ time_signatures = time_signature_groups
 # functions
 
 
+def enchain_runs(counts, exclude=None):
+    def selector(argument):
+        selection = baca.Selection(argument).runs(exclude=exclude)
+        selection = [baca.Selection(_).enchain(counts) for _ in selection]
+        return baca.Selection(selection).flatten()
+
+    return selector
+
+
 def bcl_color_rhythm(
     rotation_1: int = None, rotation_2: int = None
 ) -> baca.RhythmCommand:

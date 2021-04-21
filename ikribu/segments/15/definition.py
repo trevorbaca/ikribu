@@ -123,7 +123,7 @@ maker(
     baca.hairpin(
         "ff > p < f > pp < p > ppp <",
         bookend=True,
-        pieces=baca.runs().map(baca.enchain([3, 4])).flatten(),
+        pieces=ikribu.enchain_runs([3, 4]),
     ),
     baca.staff_position(0),
 )

@@ -70,7 +70,7 @@ maker(
     baca.hairpin(
         "ff > p < f > pp < f > ppp <",
         bookend=True,
-        pieces=baca.runs().map(baca.enchain([3, 4])).flatten(),
+        pieces=ikribu.enchain_runs([3, 4]),
     ),
     baca.markup(
         r"\baca-half-clt-markup",
