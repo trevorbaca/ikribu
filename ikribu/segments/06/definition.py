@@ -127,7 +127,7 @@ maker(
     baca.hairpin(
         "f > p <",
         bookend=True,
-        pieces=baca.runs(exclude=baca.const.HIDDEN).map(baca.enchain([4, 3])).flatten(),
+        pieces=ikribu.enchain_runs([4, 3], exclude=baca.const.HIDDEN),
     ),
     baca.staff_lines(1),
     baca.staff_position(0),
