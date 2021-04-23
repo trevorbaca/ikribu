@@ -153,7 +153,7 @@ maker(
     baca.hairpin(
         "p < mp >",
         final_hairpin=False,
-        pieces=baca.cmgroups(),
+        pieces=baca.selectors.cmgroups(),
     ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_script_staff_padding(2.5),

@@ -202,7 +202,7 @@ maker(
     baca.hairpin(
         "mp > p <",
         final_hairpin=False,
-        pieces=baca.cmgroups(),
+        pieces=baca.selectors.cmgroups(),
         selector=baca.tleaves(),
     ),
     baca.pitch("Bb0"),
