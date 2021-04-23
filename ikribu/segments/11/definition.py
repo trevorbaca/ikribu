@@ -88,7 +88,7 @@ maker(
 maker(
     ("vc", (7, 8)),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
-    baca.tie(baca.lleaf(0)),
+    baca.tie(baca.selectors.lleaf(0)),
 )
 
 maker(
