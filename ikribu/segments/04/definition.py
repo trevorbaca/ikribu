@@ -127,15 +127,15 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
-        map=baca.runs(exclude=baca.const.HIDDEN).get([0], 2),
+        map=baca.selectors.runs(([0], 2), exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("p > pp"),
-        map=baca.runs(exclude=baca.const.HIDDEN).get([1], 2),
+        map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
     ),
     baca.markup(
         r"\ikribu-trem-flaut-tast-markup",
@@ -167,15 +167,15 @@ maker(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
-        map=baca.runs(exclude=baca.const.HIDDEN).get([0], 2),
+        map=baca.selectors.runs(([0], 2), exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("p > pp"),
-        map=baca.runs(exclude=baca.const.HIDDEN).get([1], 2),
+        map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
     ),
     baca.markup(
         r"\ikribu-trem-flaut-tast-markup",
