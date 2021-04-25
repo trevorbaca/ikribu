@@ -49,7 +49,9 @@ maker(
 maker(
     ("vn_rh", (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get([0, 8], 12)),
+        rmakers.force_rest(
+            baca.lts().get([0, 8], 12),
+        ),
         rotation=0,
     ),
 )
@@ -65,7 +67,9 @@ pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
 maker(
     ("va_rh", (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get(pattern)),
+        rmakers.force_rest(
+            baca.lts().get(pattern),
+        ),
         rotation=-1,
     ),
 )
@@ -79,7 +83,9 @@ maker(
 maker(
     ("vc_rh", (1, 10)),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get([8, 20], 20)),
+        rmakers.force_rest(
+            baca.lts().get([8, 20], 20),
+        ),
         rotation=-2,
     ),
 )
