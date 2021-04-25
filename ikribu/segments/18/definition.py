@@ -78,7 +78,7 @@ maker(
 maker(
     ("vn", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.double_staccato(selector=baca.pheads()),
+    baca.double_staccato(selector=baca.selectors.pheads()),
     baca.dynamic('"mf"'),
     baca.markup(
         r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
@@ -93,7 +93,7 @@ maker(
 maker(
     ("va", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.double_staccato(selector=baca.pheads()),
+    baca.double_staccato(selector=baca.selectors.pheads()),
     baca.dynamic('"mf"'),
     baca.markup(
         r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
@@ -113,7 +113,7 @@ maker(
 maker(
     "vc",
     baca.accent(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.dynamic('"mf"'),
     baca.markup(

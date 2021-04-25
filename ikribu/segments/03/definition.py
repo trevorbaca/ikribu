@@ -118,7 +118,7 @@ maker(
         selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -140,7 +140,7 @@ maker(
     ),
     baca.pitch("Eb4"),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
 )
 
