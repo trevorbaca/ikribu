@@ -40,15 +40,15 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("windows", selector=baca.leaf(1 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(1 - 1)),
-    baca.metronome_mark("night", selector=baca.leaf(6 - 1)),
+    baca.metronome_mark("windows", selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark("night", selector=baca.selectors.leaf(6 - 1)),
     baca.rehearsal_mark("P"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("long", selector=baca.leaf(-1)),
+    baca.global_fermata("long", selector=baca.selectors.leaf(-1)),
 )
 
 maker(

@@ -37,13 +37,13 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("windows", selector=baca.leaf(1 - 1)),
+    baca.metronome_mark("windows", selector=baca.selectors.leaf(1 - 1)),
     baca.rehearsal_mark("D"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.leaf(11 - 1)),
+    baca.global_fermata("short", selector=baca.selectors.leaf(11 - 1)),
 )
 
 maker(
