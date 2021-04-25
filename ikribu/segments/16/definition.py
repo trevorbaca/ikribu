@@ -203,7 +203,7 @@ maker(
         "mp > p <",
         final_hairpin=False,
         pieces=baca.selectors.cmgroups(),
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.pitch("Bb0"),
     baca.text_spanner_staff_padding(2.5),

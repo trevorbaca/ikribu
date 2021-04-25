@@ -100,7 +100,7 @@ maker(
         "ppp < pp >",
         final_hairpin=False,
         pieces=baca.selectors.cmgroups(),
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.markup(
         r"\baca-string-iii-markup",
