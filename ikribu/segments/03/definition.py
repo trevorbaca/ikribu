@@ -103,7 +103,7 @@ maker(
 maker(
     ("bcl", (19, 21)),
     baca.hairpin("ppp < f", selector=baca.leaves()[:2]),
-    baca.hairpin("f >o niente", selector=baca.rleaves()[-2:]),
+    baca.hairpin("f >o niente", selector=baca.selectors.rleaves((-2, None))),
 )
 
 maker(
@@ -126,7 +126,7 @@ maker(
     ("vn", [(1, 3), (7, 9), (13, 15)]),
     baca.suite(
         baca.hairpin("ppp < p", selector=baca.leaves()[:2]),
-        baca.hairpin("p >o niente", selector=baca.rleaves()[-2:]),
+        baca.hairpin("p >o niente", selector=baca.selectors.rleaves((-2, None))),
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
 )
@@ -148,7 +148,7 @@ maker(
     ("va", (19, 24)),
     baca.suite(
         baca.hairpin("ppp < mf", selector=baca.leaves()[:5]),
-        baca.hairpin("mf >o niente", selector=baca.rleaves()[-2:]),
+        baca.hairpin("mf >o niente", selector=baca.selectors.rleaves((-2, None))),
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
 )

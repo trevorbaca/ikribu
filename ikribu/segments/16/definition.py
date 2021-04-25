@@ -150,7 +150,7 @@ maker(
 
 maker(
     ("bcl", (19, 20)),
-    baca.hairpin("p >o niente", selector=baca.rleaves()[-3:]),
+    baca.hairpin("p >o niente", selector=baca.selectors.rleaves((-3, None))),
     baca.pitch("Bb1"),
 )
 
@@ -165,7 +165,7 @@ maker(
 maker(
     ("vn", (9, 20)),
     baca.dynamic("ppppp"),
-    baca.hairpin("ppppp >o niente", selector=baca.rleaves()[-3:]),
+    baca.hairpin("ppppp >o niente", selector=baca.selectors.rleaves((-3, None))),
     baca.markup(
         r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
@@ -180,7 +180,7 @@ maker(
 maker(
     ("va", (9, 20)),
     baca.dynamic("ppppp"),
-    baca.hairpin("ppppp >o niente", selector=baca.rleaves()[-3:]),
+    baca.hairpin("ppppp >o niente", selector=baca.selectors.rleaves((-3, None))),
     baca.markup(
         r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
