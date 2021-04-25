@@ -96,7 +96,9 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get([0, 8], 12)),
+        rmakers.force_rest(
+            baca.lts().get([0, 8], 12),
+        ),
         rotation=0,
     ),
 )
@@ -114,7 +116,9 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get([4, 14], 16)),
+        rmakers.force_rest(
+            baca.lts().get([4, 14], 16),
+        ),
         rotation=-1,
     ),
 )
@@ -132,7 +136,9 @@ maker(
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-2),
     ikribu.bow_rhythm(
-        rmakers.force_rest(baca.lts().get([8, 20], 20)),
+        rmakers.force_rest(
+            baca.lts().get([8, 20], 20),
+        ),
         rotation=-2,
     ),
 )
