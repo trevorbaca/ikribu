@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 import ikribu
@@ -117,7 +118,10 @@ maker(
         "va",
     ],
     baca.accent(
-        selector=baca.pheads(exclude=baca.const.HIDDEN).exclude([0, 4], 9),
+        selector=baca.selectors.pheads(
+            ~abjad.Pattern([0, 4], period=9),
+            exclude=baca.const.HIDDEN,
+        ),
     ),
     baca.dls_staff_padding(8),
     baca.markup(
@@ -132,7 +136,10 @@ maker(
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(
-        selector=baca.pheads(exclude=baca.const.HIDDEN).get([0, 4], 9),
+        selector=baca.selectors.pheads(
+            abjad.Pattern([0, 4], period=9),
+            exclude=baca.const.HIDDEN,
+        ),
     ),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -155,7 +162,7 @@ maker(
         final_hairpin=False,
         pieces=baca.selectors.cmgroups(),
     ),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.text_script_staff_padding(2.5),
 )
 

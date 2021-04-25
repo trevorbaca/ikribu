@@ -158,7 +158,7 @@ maker(
     ("bcl", (1, -1)),
     baca.suite(
         baca.untie(baca.leaves()),
-        baca.repeat_tie(baca.pleaves(exclude=baca.const.HIDDEN)),
+        baca.repeat_tie(baca.selectors.pleaves(exclude=baca.const.HIDDEN)),
     ),
 )
 
@@ -173,7 +173,7 @@ maker(
     ),
     baca.pitch("<E4 F#4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.text_spanner_staff_padding(2.5),
 )
 
@@ -188,7 +188,7 @@ maker(
     ),
     baca.pitch("<Eb4 F4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.text_spanner_staff_padding(2.5),
 )
 

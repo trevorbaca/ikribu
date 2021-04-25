@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 import ikribu
@@ -65,14 +66,16 @@ maker(
 
 maker(
     ("vn", (1, 16)),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(selector=baca.selectors.pheads()),
     ikribu.clb_rhythm(extra_counts=[4]),
     ikribu.clb_staff_positions(rotation=-1),
 )
 
 maker(
     ("vn", (21, 32)),
-    baca.accent(selector=baca.pheads().exclude([0, 4], 9)),
+    baca.accent(
+        selector=baca.selectors.pheads(~abjad.Pattern([0, 4], period=9)),
+    ),
     baca.dls_staff_padding(8),
     baca.markup(
         r"\ikribu-sponges-on-bd-markup",
@@ -83,7 +86,9 @@ maker(
         bookend=-1,
         pieces=baca.selectors.cmgroups(),
     ),
-    baca.stem_tremolo(selector=baca.pheads().get([0, 4], 9)),
+    baca.stem_tremolo(
+        selector=baca.selectors.pheads(([0, 4], 9)),
+    ),
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -102,7 +107,7 @@ maker(
 
 maker(
     ("va", (1, 8)),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(selector=baca.selectors.pheads()),
     ikribu.clb_rhythm(extra_counts=[2]),
     ikribu.clb_staff_positions(rotation=-1),
 )
@@ -119,7 +124,9 @@ maker(
 
 maker(
     ("va", (13, 32)),
-    baca.accent(selector=baca.pheads().exclude([0, 5], 11)),
+    baca.accent(
+        selector=baca.selectors.pheads(~abjad.Pattern([0, 5], period=11)),
+    ),
     baca.dls_staff_padding(8),
     baca.markup(
         r"\ikribu-sponges-on-bd-markup",
@@ -132,7 +139,9 @@ maker(
         pieces=baca.selectors.cmgroups(),
     ),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.pheads().get([0, 5], 11)),
+    baca.stem_tremolo(
+        selector=baca.selectors.pheads(([0, 5], 11)),
+    ),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     ikribu.triplet_rhythm(),
