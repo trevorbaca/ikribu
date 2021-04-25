@@ -48,7 +48,7 @@ maker(
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.leaf(33 - 1)),
+    baca.global_fermata("short", selector=baca.selectors.leaf(33 - 1)),
 )
 
 maker(
