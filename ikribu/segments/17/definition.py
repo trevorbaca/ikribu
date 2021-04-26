@@ -92,7 +92,7 @@ maker(
 
 maker(
     ("vn_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
@@ -112,7 +112,7 @@ maker(
 
 maker(
     ("va_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
@@ -132,7 +132,7 @@ maker(
 
 maker(
     ("vc_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-2),
     ikribu.bow_rhythm(

@@ -78,7 +78,7 @@ maker(
         r"\baca-half-clt-markup",
         literal=True,
     ),
-    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
     baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
