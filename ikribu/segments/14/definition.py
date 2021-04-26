@@ -317,7 +317,7 @@ maker(
     ("vc", 1),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,
@@ -335,7 +335,7 @@ maker(
     ("vc", 6),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,
@@ -353,7 +353,7 @@ maker(
     ("vc", 9),
     baca.clef("treble"),
     baca.dynamic("sffz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,
@@ -371,7 +371,7 @@ maker(
     ("vc", 14),
     baca.clef("treble"),
     baca.dynamic("sffz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,
@@ -389,7 +389,7 @@ maker(
     ("vc", 19),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,
@@ -407,7 +407,7 @@ maker(
     ("vc", 22),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup(
         r"\baca-pizz-markup",
         literal=True,

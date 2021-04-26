@@ -203,7 +203,7 @@ maker(
         direction=abjad.Down,
         literal=True,
     ),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
 )
