@@ -112,7 +112,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.markup("pizz."),
     baca.markup(
         r"\baca-string-iii-markup",
