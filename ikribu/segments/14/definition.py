@@ -169,7 +169,10 @@ maker(
 maker(
     ("bcl", [(2, 4), (10, 12), (15, 17)]),
     baca.hairpin("p < fff", selector=baca.leaves()[:2]),
-    baca.hairpin("fff >o niente", selector=baca.selectors.rleaves((-2, None))),
+    baca.hairpin(
+        "fff >o niente",
+        selector=lambda _: baca.Selection(_).rleaves()[-2:],
+    ),
 )
 
 maker(
