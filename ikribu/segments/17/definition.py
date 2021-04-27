@@ -40,9 +40,18 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("windows", selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark("night", selector=baca.selectors.leaf(6 - 1)),
+    baca.metronome_mark(
+        "windows",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(6 - 1),
+    ),
     baca.rehearsal_mark("P"),
 )
 
@@ -81,7 +90,10 @@ maker(
 
 maker(
     ("bcl", (1, 7)),
-    baca.hairpin("pp < mf", selector=baca.leaves()[:4]),
+    baca.hairpin(
+        "pp < mf",
+        selector=baca.leaves()[:4],
+    ),
     baca.hairpin(
         "mf >o niente",
         selector=lambda _: baca.Selection(_).rleaves()[4:],
@@ -95,7 +107,10 @@ maker(
 
 maker(
     ("vn_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
@@ -115,7 +130,10 @@ maker(
 
 maker(
     ("va_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
@@ -135,7 +153,10 @@ maker(
 
 maker(
     ("vc_rh", (1, 5)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-2),
     ikribu.bow_rhythm(

@@ -38,18 +38,27 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("night", selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
     baca.rehearsal_mark("A"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("long", selector=baca.selectors.leaf(7 - 1)),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(7 - 1),
+    ),
 )
 
 maker(
     ("bcl", (1, 5)),
-    baca.hairpin("ppp < f", selector=baca.leaves()[:2]),
+    baca.hairpin(
+        "ppp < f",
+        selector=baca.leaves()[:2],
+    ),
     baca.hairpin(
         "f >o niente",
         selector=lambda _: baca.Selection(_).rleaves()[-4:],

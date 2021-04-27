@@ -37,7 +37,10 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("windows", selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark(
+        "windows",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
     baca.rehearsal_mark("N"),
 )
 
@@ -136,21 +139,30 @@ maker(
 
 maker(
     ("vn_rh", (1, 10)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(3.5),
     ikribu.bcps(rotation=0),
 )
 
 maker(
     ("va_rh", (1, 10)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(3.5),
     ikribu.bcps(rotation=-1),
 )
 
 maker(
     ("vc_rh", (1, 10)),
-    baca.script_staff_padding(7, selector=baca.selectors.leaves()),
+    baca.script_staff_padding(
+        7,
+        selector=baca.selectors.leaves(),
+    ),
     baca.text_spanner_staff_padding(3.5),
     ikribu.bcps(rotation=-2),
 )

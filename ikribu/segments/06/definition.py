@@ -48,18 +48,54 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("night", selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(3 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(5 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(5 - 1)),
-    baca.metronome_mark("night", selector=baca.selectors.leaf(7 - 1)),
-    baca.metronome_mark("night", selector=baca.selectors.leaf(9 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(9 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(11 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(13 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(13 - 1)),
-    baca.metronome_mark("night", selector=baca.selectors.leaf(15 - 1)),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(3 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(5 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(5 - 1),
+    ),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(7 - 1),
+    ),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(11 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(13 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(13 - 1),
+    ),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(15 - 1),
+    ),
     baca.rehearsal_mark("E"),
 )
 
