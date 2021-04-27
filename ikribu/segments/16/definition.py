@@ -55,13 +55,19 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("night", selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark(
+        "night",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
     baca.rehearsal_mark("O"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("fermata", selector=baca.selectors.leaf(21 - 1)),
+    baca.global_fermata(
+        "fermata",
+        selector=baca.selectors.leaf(21 - 1),
+    ),
 )
 
 maker(
@@ -169,7 +175,7 @@ maker(
     ("vn", (9, 20)),
     baca.dynamic("ppppp"),
     baca.hairpin(
-        "ppppp >o niente", 
+        "ppppp >o niente",
         selector=lambda _: baca.Selection(_).rleaves()[-3:],
     ),
     baca.markup(

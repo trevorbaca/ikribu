@@ -48,14 +48,38 @@ maker(
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.selectors.leaf(2 - 1)),
-    baca.global_fermata("fermata", selector=baca.selectors.leaf(4 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(6 - 1)),
-    baca.global_fermata("fermata", selector=baca.selectors.leaf(8 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(10 - 1)),
-    baca.global_fermata("fermata", selector=baca.selectors.leaf(12 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(14 - 1)),
-    baca.global_fermata("fermata", selector=baca.selectors.leaf(16 - 1)),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(2 - 1),
+    ),
+    baca.global_fermata(
+        "fermata",
+        selector=baca.selectors.leaf(4 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(6 - 1),
+    ),
+    baca.global_fermata(
+        "fermata",
+        selector=baca.selectors.leaf(8 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(10 - 1),
+    ),
+    baca.global_fermata(
+        "fermata",
+        selector=baca.selectors.leaf(12 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(14 - 1),
+    ),
+    baca.global_fermata(
+        "fermata",
+        selector=baca.selectors.leaf(16 - 1),
+    ),
 )
 
 maker(

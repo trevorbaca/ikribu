@@ -52,30 +52,87 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(1 - 1)),
-    baca.metronome_mark("windows", selector=baca.selectors.leaf(4 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(6 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(7 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(9 - 1)),
-    baca.metronome_mark("windows", selector=baca.selectors.leaf(12 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(14 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(17 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(19 - 1)),
-    baca.metronome_mark("windows", selector=baca.selectors.leaf(20 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(22 - 1)),
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(27 - 1)),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(1 - 1),
+    ),
+    baca.metronome_mark(
+        "windows",
+        selector=baca.selectors.leaf(4 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(6 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(7 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.metronome_mark(
+        "windows",
+        selector=baca.selectors.leaf(12 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(14 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(17 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(19 - 1),
+    ),
+    baca.metronome_mark(
+        "windows",
+        selector=baca.selectors.leaf(20 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(22 - 1),
+    ),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(27 - 1),
+    ),
     baca.rehearsal_mark("M"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.selectors.leaf(5 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(8 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(13 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(18 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(21 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(32 - 1)),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(5 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(8 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(13 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(18 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(21 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(32 - 1),
+    ),
 )
 
 maker(
@@ -168,7 +225,10 @@ maker(
 
 maker(
     ("bcl", [(2, 4), (10, 12), (15, 17)]),
-    baca.hairpin("p < fff", selector=baca.leaves()[:2]),
+    baca.hairpin(
+        "p < fff",
+        selector=baca.leaves()[:2],
+    ),
     baca.hairpin(
         "fff >o niente",
         selector=lambda _: baca.Selection(_).rleaves()[-2:],
@@ -177,7 +237,10 @@ maker(
 
 maker(
     ("bcl", (23, 31)),
-    baca.hairpin("ppp < fff", selector=baca.leaves()[:-1]),
+    baca.hairpin(
+        "ppp < fff",
+        selector=baca.leaves()[:-1],
+    ),
 )
 
 maker(

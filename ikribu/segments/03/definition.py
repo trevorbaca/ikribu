@@ -48,13 +48,34 @@ maker(
 
 maker(
     "Global_Rests",
-    baca.global_fermata("long", selector=baca.selectors.leaf(4 - 1)),
-    baca.global_fermata("long", selector=baca.selectors.leaf(6 - 1)),
-    baca.global_fermata("long", selector=baca.selectors.leaf(10 - 1)),
-    baca.global_fermata("long", selector=baca.selectors.leaf(12 - 1)),
-    baca.global_fermata("long", selector=baca.selectors.leaf(16 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(18 - 1)),
-    baca.global_fermata("short", selector=baca.selectors.leaf(25 - 1)),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(4 - 1),
+    ),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(6 - 1),
+    ),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(10 - 1),
+    ),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(12 - 1),
+    ),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(16 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(18 - 1),
+    ),
+    baca.global_fermata(
+        "short",
+        selector=baca.selectors.leaf(25 - 1),
+    ),
 )
 
 maker(
@@ -104,7 +125,8 @@ maker(
     ("bcl", (19, 21)),
     baca.hairpin(
         "ppp < f",
-        selector=baca.leaves()[:2]),
+        selector=baca.leaves()[:2],
+    ),
     baca.hairpin(
         "f >o niente",
         selector=lambda _: baca.Selection(_).rleaves()[-2:],

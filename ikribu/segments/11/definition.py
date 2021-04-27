@@ -40,14 +40,23 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("incisions", selector=baca.selectors.leaf(10 - 1)),
+    baca.metronome_mark(
+        "incisions",
+        selector=baca.selectors.leaf(10 - 1),
+    ),
     baca.rehearsal_mark("J"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("long", selector=baca.selectors.leaf(9 - 1)),
-    baca.global_fermata("long", selector=baca.selectors.leaf(11 - 1)),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.global_fermata(
+        "long",
+        selector=baca.selectors.leaf(11 - 1),
+    ),
 )
 
 maker(
@@ -163,7 +172,10 @@ maker(
 maker(
     ("vc", (3, 8)),
     baca.dynamic("p"),
-    baca.hairpin("p < mf", selector=baca.leaves()[-2:]),
+    baca.hairpin(
+        "p < mf",
+        selector=baca.leaves()[-2:],
+    ),
     baca.markup(
         r"\baca-poco-vib-markup",
         literal=True,
