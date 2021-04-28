@@ -57,7 +57,7 @@ maker(
     ("bcl", (1, 5)),
     baca.hairpin(
         "ppp < f",
-        selector=baca.leaves()[:2],
+        selector=baca.selectors.leaves((None, 2)),
     ),
     baca.hairpin(
         "f >o niente",
