@@ -174,7 +174,7 @@ maker(
     baca.dynamic("p"),
     baca.hairpin(
         "p < mf",
-        selector=baca.leaves()[-2:],
+        selector=baca.selectors.leaves((-2, None)),
     ),
     baca.markup(
         r"\baca-poco-vib-markup",
