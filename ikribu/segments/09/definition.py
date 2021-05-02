@@ -60,7 +60,7 @@ maker(
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
         rmakers.force_rest(
-            baca.lts().get([0, 8], 12),
+            baca.selectors.lts(([0, 8], 12)),
         ),
         rotation=0,
     ),
@@ -78,7 +78,7 @@ maker(
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
         rmakers.force_rest(
-            baca.lts().get([4, 14], 16),
+            baca.selectors.lts(([4, 14], 16)),
         ),
         rotation=-1,
     ),
