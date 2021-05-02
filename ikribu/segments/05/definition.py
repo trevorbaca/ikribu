@@ -61,7 +61,7 @@ maker(
     ("vc_rh", (1, 10)),
     ikribu.bow_rhythm(
         rmakers.force_rest(
-            baca.lts().get([8, 20], 20),
+            baca.selectors.lts(([8, 20], 20)),
         ),
         rotation=-2,
     ),
