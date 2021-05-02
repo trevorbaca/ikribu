@@ -182,7 +182,7 @@ maker(
     ),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
     baca.staff_lines(5),
     baca.stem_tremolo(
@@ -222,7 +222,7 @@ maker(
     ),
     baca.pitches(
         "F4 E4 E4 F4",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
