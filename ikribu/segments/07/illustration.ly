@@ -7,7 +7,7 @@
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
-%! ide.Path.extern()
+%! baca.Path.extern()
 \include "illustration.ily"
 
 %! baca.SegmentMaker._make_lilypond_file()
@@ -49,13 +49,13 @@
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! ide.Path.extern()
+                %! baca.Path.extern()
                 \g_Global_Rests
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! ide.Path.extern()
+                %! baca.Path.extern()
                 \g_Global_Skips
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -76,7 +76,7 @@
                     %! ikribu.ScoreTemplate.__call__()
                     \context Staff = "Bass_Clarinet_Music_Staff"
                     %! ikribu.ScoreTemplate.__call__()
-                    %! ide.Path.extern()
+                    %! baca.Path.extern()
                     \g_Bass_Clarinet_Music_Staff
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
@@ -89,13 +89,13 @@
                         %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Violin_RH_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Violin_RH_Music_Staff
 
                         %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Violin_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Violin_Music_Staff
 
                     %! ikribu.ScoreTemplate.__call__()
@@ -111,13 +111,13 @@
                         %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Viola_RH_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Viola_RH_Music_Staff
 
                         %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Viola_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Viola_Music_Staff
 
                     %! ikribu.ScoreTemplate.__call__()
@@ -133,13 +133,13 @@
                         %! ikribu.ScoreTemplate.__call__()
                         \context RHStaff = "Cello_RH_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Cello_RH_Music_Staff
 
                         %! ikribu.ScoreTemplate.__call__()
                         \context Staff = "Cello_Music_Staff"
                         %! ikribu.ScoreTemplate.__call__()
-                        %! ide.Path.extern()
+                        %! baca.Path.extern()
                         \g_Cello_Music_Staff
 
                     %! ikribu.ScoreTemplate.__call__()
