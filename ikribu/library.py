@@ -1,6 +1,5 @@
 import abjad
 import baca
-import ide
 from abjadext import rmakers
 
 # instruments & margin markups
@@ -297,11 +296,11 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     _always_make_global_rests = True
 
-    _part_manifest = ide.PartManifest(
-        ide.Part(section="Bass_Clarinet", section_abbreviation="BCL"),
-        ide.Part(section="Violin", section_abbreviation="VN"),
-        ide.Part(section="Viola", section_abbreviation="VA"),
-        ide.Part(section="Cello", section_abbreviation="VC"),
+    _part_manifest = baca.PartManifest(
+        baca.Part(section="Bass_Clarinet", section_abbreviation="BCL"),
+        baca.Part(section="Violin", section_abbreviation="VN"),
+        baca.Part(section="Viola", section_abbreviation="VA"),
+        baca.Part(section="Cello", section_abbreviation="VC"),
     )
 
     ### INITIALIZER ###
@@ -503,25 +502,25 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> for part in score_template.part_manifest.parts:
             ...     string = abjad.storage(part)
             ...     print(string)
-            ide.Part(
+            baca.Part(
                 instrument='Bass_Clarinet',
                 number=1,
                 section='Bass_Clarinet',
                 section_abbreviation='BCL',
                 )
-            ide.Part(
+            baca.Part(
                 instrument='Violin',
                 number=2,
                 section='Violin',
                 section_abbreviation='VN',
                 )
-            ide.Part(
+            baca.Part(
                 instrument='Viola',
                 number=3,
                 section='Viola',
                 section_abbreviation='VA',
                 )
-            ide.Part(
+            baca.Part(
                 instrument='Cello',
                 number=4,
                 section='Cello',
