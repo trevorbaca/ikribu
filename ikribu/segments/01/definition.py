@@ -25,7 +25,6 @@ maker = baca.SegmentMaker(
     fermata_measure_empty_overrides=fermata_measures,
     segment_directory=baca.Path(__file__).resolve().parent,
     time_signatures=time_signatures,
-    validate_measure_count=2,
 )
 
 maker(
