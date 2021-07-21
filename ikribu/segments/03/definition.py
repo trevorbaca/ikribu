@@ -192,3 +192,6 @@ maker(
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

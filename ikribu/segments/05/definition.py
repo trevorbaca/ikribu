@@ -101,3 +101,6 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

@@ -91,3 +91,6 @@ maker(
     baca.staff_lines(1),
     ikribu.box_adjustment(),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
