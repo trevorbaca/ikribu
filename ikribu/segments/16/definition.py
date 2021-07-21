@@ -244,3 +244,6 @@ maker(
     ("vc", (17, 20)),
     baca.text_spanner("pos. ord. => tasto poss."),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

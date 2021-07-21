@@ -136,3 +136,6 @@ maker(
     (["vn_rh", "va_rh", "vc_rh"], 1),
     baca.staff_lines(1),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
