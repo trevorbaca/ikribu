@@ -4,7 +4,7 @@ import abjad
 import baca
 from abjadext import rmakers
 
-import ikribu
+from ikribu import library as ikribu
 
 ###############################################################################
 ##################################### [C] #####################################
