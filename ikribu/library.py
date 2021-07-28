@@ -287,9 +287,6 @@ def vigil_rhythm() -> baca.RhythmCommand:
 class ScoreTemplate(baca.ScoreTemplate):
     """
     Score template.
-
-    >>> import ikribu
-
     """
 
     ### CLASS VARIABLES ###
@@ -468,7 +465,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ..  container:: example
 
-            >>> score_template = ikribu.ScoreTemplate()
+            >>> import ikribu
+            >>> score_template = ikribu.library.ScoreTemplate()
             >>> for document_name in score_template.known_documents:
             ...     document_name
             ...
@@ -498,7 +496,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ..  container:: example
 
-            >>> score_template = ikribu.ScoreTemplate()
+            >>> score_template = ikribu.library.ScoreTemplate()
             >>> for part in score_template.part_manifest.parts:
             ...     string = abjad.storage(part)
             ...     print(string)

@@ -3,7 +3,7 @@ import pathlib
 import abjad
 import baca
 
-import ikribu
+from ikribu import library as ikribu
 
 ###############################################################################
 ##################################### [B] #####################################
