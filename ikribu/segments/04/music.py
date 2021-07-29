@@ -38,6 +38,7 @@ maker = baca.SegmentMaker(
         baca.tags.STAGE_NUMBER,
     ],
     check_all_are_pitched=True,
+    score_template=ikribu.ScoreTemplate(),
     stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
