@@ -1,5 +1,3 @@
-import pathlib
-
 import baca
 from abjadext import rmakers
 
