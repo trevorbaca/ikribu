@@ -28,6 +28,7 @@ maker = baca.SegmentMaker(
     check_all_are_pitched=True,
     # TODO: find and eliminate two incomplete spanners
     do_not_check_wellformedness=True,
+    score_template=ikribu.ScoreTemplate(),
     stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
