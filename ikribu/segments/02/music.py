@@ -31,7 +31,6 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
-    segment_directory=pathlib.Path(__file__).resolve().parent,
     stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
