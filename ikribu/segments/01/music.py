@@ -23,6 +23,9 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
+    instruments=ikribu.instruments,
+    margin_markups=ikribu.margin_markups,
+    metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
     time_signatures=time_signatures,
 )
