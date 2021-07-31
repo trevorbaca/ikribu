@@ -71,9 +71,7 @@ def enchain_runs(counts, exclude=None):
     return selector
 
 
-def bcl_color_rhythm(
-    rotation_1: int = None, rotation_2: int = None
-) -> baca.RhythmCommand:
+def bcl_color_rhythm(rotation_1=0, rotation_2=0):
     """
     Makes bass clarinet color rhythm.
     """
@@ -92,7 +90,7 @@ def bcl_color_rhythm(
     )
 
 
-def bcps(rotation: int = None) -> baca.BCPCommand:
+def bcps(rotation=0):
     """
     Makes bow contact points.
     """
@@ -109,7 +107,7 @@ def bcps(rotation: int = None) -> baca.BCPCommand:
     return baca.bcps(bcps)
 
 
-def bow_rhythm(*commands: rmakers.Command, rotation: int = None) -> baca.RhythmCommand:
+def bow_rhythm(*commands, rotation=0):
     """
     Makes bow rhythm.
     """
@@ -150,7 +148,7 @@ def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
     )
 
 
-def clb_staff_positions(*, rotation: int = None) -> baca.StaffPositionCommand:
+def clb_staff_positions(*, rotation=0):
     """
     Makes clb staff positions.
     """
@@ -179,7 +177,7 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
     )
 
 
-def glissando_pitches(octave: int = 4, rotation: int = None) -> baca.PitchCommand:
+def glissando_pitches(octave=4, rotation=0):
     """
     Makes glissando pitches.
     """
@@ -195,9 +193,7 @@ def glissando_pitches(octave: int = 4, rotation: int = None) -> baca.PitchComman
     return baca.pitches(pitches_, allow_repeats=True)
 
 
-def glissando_rhythm(
-    rotation_1: int = None, rotation_2: int = None
-) -> baca.RhythmCommand:
+def glissando_rhythm(rotation_1=0, rotation_2=0):
     """
     Makes glissando rhythm.
     """
@@ -236,11 +232,11 @@ def inscription_rhythm() -> baca.RhythmCommand:
 
 
 def margin_markup(
-    key: str,
-    alert: baca.IndicatorCommand = None,
-    context: str = "Staff",
-    selector: abjad.Expression = baca.selectors.leaf(0),
-) -> baca.CommandTyping:
+    key,
+    alert=None,
+    context="Staff",
+    selector=baca.selectors.leaf(0),
+):
     """
     Makes tagged margin markup indicator command.
     """
