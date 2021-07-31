@@ -1,42 +1,42 @@
 e_Global_Rests = {
 
-    % [05 Global_Rests measure 52 / measure 1]
+    % [Global_Rests measure 52 / measure 1]
     R1 * 3/4
 
-    % [05 Global_Rests measure 53 / measure 2]
+    % [Global_Rests measure 53 / measure 2]
     R1 * 1
 
-    % [05 Global_Rests measure 54 / measure 3]
+    % [Global_Rests measure 54 / measure 3]
     R1 * 1
 
-    % [05 Global_Rests measure 55 / measure 4]
+    % [Global_Rests measure 55 / measure 4]
     R1 * 1/2
 
-    % [05 Global_Rests measure 56 / measure 5]
+    % [Global_Rests measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Global_Rests measure 57 / measure 6]
+    % [Global_Rests measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Global_Rests measure 58 / measure 7]
+    % [Global_Rests measure 58 / measure 7]
     R1 * 1
 
-    % [05 Global_Rests measure 59 / measure 8]
+    % [Global_Rests measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Global_Rests measure 60 / measure 9]
+    % [Global_Rests measure 60 / measure 9]
     R1 * 1
 
-    % [05 Global_Rests measure 61 / measure 10]
+    % [Global_Rests measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Global_Rests measure 62 / measure 11]
+    % [Global_Rests measure 62 / measure 11]
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [05 Global_Rests measure 63 / measure 12]
+    % [Global_Rests measure 63 / measure 12]
     R1 * 1/4
 
 }
@@ -44,7 +44,7 @@ e_Global_Rests = {
 
 e_Global_Skips = {
 
-    % [05 Global_Skips measure 52 / measure 1]
+    % [Global_Skips measure 52 / measure 1]
     \time 3/4
     \bar ""
     \baca-time-signature-color #'blue
@@ -58,7 +58,7 @@ e_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "104" #'blue
     \bacaStartTextSpanMM
 
-    % [05 Global_Skips measure 53 / measure 2]
+    % [Global_Skips measure 53 / measure 2]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -66,13 +66,13 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "2"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 54 / measure 3]
+    % [Global_Skips measure 54 / measure 3]
     s1 * 1
     \bacaStopTextSpanLMN
     - \baca-start-lmn-left-only "3"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 55 / measure 4]
+    % [Global_Skips measure 55 / measure 4]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -80,7 +80,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "4"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 56 / measure 5]
+    % [Global_Skips measure 56 / measure 5]
     \time 7/4
     \baca-time-signature-color #'blue
     s1 * 7/4
@@ -88,7 +88,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "5"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 57 / measure 6]
+    % [Global_Skips measure 57 / measure 6]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -99,7 +99,7 @@ e_Global_Skips = {
     - \baca-start-snm-left-only "[D.2]"
     \bacaStartTextSpanSNM
 
-    % [05 Global_Skips measure 58 / measure 7]
+    % [Global_Skips measure 58 / measure 7]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -107,7 +107,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "7"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 59 / measure 8]
+    % [Global_Skips measure 59 / measure 8]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -115,7 +115,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "8"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 60 / measure 9]
+    % [Global_Skips measure 60 / measure 9]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -123,7 +123,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "9"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 61 / measure 10]
+    % [Global_Skips measure 61 / measure 10]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -131,7 +131,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "10"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 62 / measure 11]
+    % [Global_Skips measure 62 / measure 11]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -139,7 +139,7 @@ e_Global_Skips = {
     - \baca-start-lmn-left-only "11"
     \bacaStartTextSpanLMN
 
-    % [05 Global_Skips measure 63 / measure 12]
+    % [Global_Skips measure 63 / measure 12]
     \baca-time-signature-transparent
     s1 * 1/4
     \bacaStopTextSpanLMN
@@ -153,7 +153,7 @@ e_Global_Skips = {
 
 e_Bass_Clarinet_Music_Voice = {
 
-    % [05 Bass_Clarinet_Music_Voice measure 52 / measure 1]
+    % [Bass_Clarinet_Music_Voice measure 52 / measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
     \stopStaff
@@ -174,34 +174,34 @@ e_Bass_Clarinet_Music_Voice = {
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Bass_Clarinet_Music_Voice measure 53 / measure 2]
+    % [Bass_Clarinet_Music_Voice measure 53 / measure 2]
     R1 * 4/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 54 / measure 3]
+    % [Bass_Clarinet_Music_Voice measure 54 / measure 3]
     R1 * 4/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 55 / measure 4]
+    % [Bass_Clarinet_Music_Voice measure 55 / measure 4]
     R1 * 2/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 56 / measure 5]
+    % [Bass_Clarinet_Music_Voice measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 57 / measure 6]
+    % [Bass_Clarinet_Music_Voice measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 58 / measure 7]
+    % [Bass_Clarinet_Music_Voice measure 58 / measure 7]
     R1 * 4/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 59 / measure 8]
+    % [Bass_Clarinet_Music_Voice measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 60 / measure 9]
+    % [Bass_Clarinet_Music_Voice measure 60 / measure 9]
     R1 * 4/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 61 / measure 10]
+    % [Bass_Clarinet_Music_Voice measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Bass_Clarinet_Music_Voice measure 62 / measure 11]
+    % [Bass_Clarinet_Music_Voice measure 62 / measure 11]
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -213,7 +213,7 @@ e_Bass_Clarinet_Music_Voice = {
         \context Voice = "Bass_Clarinet_Music_Voice"
         {
 
-            % [05 Bass_Clarinet_Music_Voice measure 63 / measure 12]
+            % [Bass_Clarinet_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             \once \override Score.BarLine.transparent = ##t
             \once \override Score.SpanBar.transparent = ##t
@@ -224,7 +224,7 @@ e_Bass_Clarinet_Music_Voice = {
         \context Voice = "Bass_Clarinet_Rest_Voice"
         {
 
-            % [05 Bass_Clarinet_Rest_Voice measure 63 / measure 12]
+            % [Bass_Clarinet_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -249,7 +249,7 @@ e_Bass_Clarinet_Music_Staff = {
 
 e_Violin_RH_Music_Voice = {
 
-    % [05 Violin_RH_Music_Voice measure 52 / measure 1]
+    % [Violin_RH_Music_Voice measure 52 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 1
@@ -261,34 +261,34 @@ e_Violin_RH_Music_Voice = {
     R1 * 3/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Violin_RH_Music_Voice measure 53 / measure 2]
+    % [Violin_RH_Music_Voice measure 53 / measure 2]
     R1 * 4/4
 
-    % [05 Violin_RH_Music_Voice measure 54 / measure 3]
+    % [Violin_RH_Music_Voice measure 54 / measure 3]
     R1 * 4/4
 
-    % [05 Violin_RH_Music_Voice measure 55 / measure 4]
+    % [Violin_RH_Music_Voice measure 55 / measure 4]
     R1 * 2/4
 
-    % [05 Violin_RH_Music_Voice measure 56 / measure 5]
+    % [Violin_RH_Music_Voice measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Violin_RH_Music_Voice measure 57 / measure 6]
+    % [Violin_RH_Music_Voice measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Violin_RH_Music_Voice measure 58 / measure 7]
+    % [Violin_RH_Music_Voice measure 58 / measure 7]
     R1 * 4/4
 
-    % [05 Violin_RH_Music_Voice measure 59 / measure 8]
+    % [Violin_RH_Music_Voice measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Violin_RH_Music_Voice measure 60 / measure 9]
+    % [Violin_RH_Music_Voice measure 60 / measure 9]
     R1 * 4/4
 
-    % [05 Violin_RH_Music_Voice measure 61 / measure 10]
+    % [Violin_RH_Music_Voice measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Violin_RH_Music_Voice measure 62 / measure 11]
+    % [Violin_RH_Music_Voice measure 62 / measure 11]
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 0
     \startStaff
@@ -300,7 +300,7 @@ e_Violin_RH_Music_Voice = {
         \context Voice = "Violin_RH_Music_Voice"
         {
 
-            % [05 Violin_RH_Music_Voice measure 63 / measure 12]
+            % [Violin_RH_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -309,7 +309,7 @@ e_Violin_RH_Music_Voice = {
         \context Voice = "Violin_RH_Rest_Voice"
         {
 
-            % [05 Violin_RH_Rest_Voice measure 63 / measure 12]
+            % [Violin_RH_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -334,7 +334,7 @@ e_Violin_RH_Music_Staff = {
 
 e_Violin_Music_Voice = {
 
-    % [05 Violin_Music_Voice measure 52 / measure 1]
+    % [Violin_Music_Voice measure 52 / measure 1]
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
     \stopStaff
@@ -355,34 +355,34 @@ e_Violin_Music_Voice = {
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Violin_Music_Voice measure 53 / measure 2]
+    % [Violin_Music_Voice measure 53 / measure 2]
     R1 * 4/4
 
-    % [05 Violin_Music_Voice measure 54 / measure 3]
+    % [Violin_Music_Voice measure 54 / measure 3]
     R1 * 4/4
 
-    % [05 Violin_Music_Voice measure 55 / measure 4]
+    % [Violin_Music_Voice measure 55 / measure 4]
     R1 * 2/4
 
-    % [05 Violin_Music_Voice measure 56 / measure 5]
+    % [Violin_Music_Voice measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Violin_Music_Voice measure 57 / measure 6]
+    % [Violin_Music_Voice measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Violin_Music_Voice measure 58 / measure 7]
+    % [Violin_Music_Voice measure 58 / measure 7]
     R1 * 4/4
 
-    % [05 Violin_Music_Voice measure 59 / measure 8]
+    % [Violin_Music_Voice measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Violin_Music_Voice measure 60 / measure 9]
+    % [Violin_Music_Voice measure 60 / measure 9]
     R1 * 4/4
 
-    % [05 Violin_Music_Voice measure 61 / measure 10]
+    % [Violin_Music_Voice measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Violin_Music_Voice measure 62 / measure 11]
+    % [Violin_Music_Voice measure 62 / measure 11]
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -394,7 +394,7 @@ e_Violin_Music_Voice = {
         \context Voice = "Violin_Music_Voice"
         {
 
-            % [05 Violin_Music_Voice measure 63 / measure 12]
+            % [Violin_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -403,7 +403,7 @@ e_Violin_Music_Voice = {
         \context Voice = "Violin_Rest_Voice"
         {
 
-            % [05 Violin_Rest_Voice measure 63 / measure 12]
+            % [Violin_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -428,7 +428,7 @@ e_Violin_Music_Staff = {
 
 e_Viola_RH_Music_Voice = {
 
-    % [05 Viola_RH_Music_Voice measure 52 / measure 1]
+    % [Viola_RH_Music_Voice measure 52 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 1
@@ -440,34 +440,34 @@ e_Viola_RH_Music_Voice = {
     R1 * 3/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Viola_RH_Music_Voice measure 53 / measure 2]
+    % [Viola_RH_Music_Voice measure 53 / measure 2]
     R1 * 4/4
 
-    % [05 Viola_RH_Music_Voice measure 54 / measure 3]
+    % [Viola_RH_Music_Voice measure 54 / measure 3]
     R1 * 4/4
 
-    % [05 Viola_RH_Music_Voice measure 55 / measure 4]
+    % [Viola_RH_Music_Voice measure 55 / measure 4]
     R1 * 2/4
 
-    % [05 Viola_RH_Music_Voice measure 56 / measure 5]
+    % [Viola_RH_Music_Voice measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Viola_RH_Music_Voice measure 57 / measure 6]
+    % [Viola_RH_Music_Voice measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Viola_RH_Music_Voice measure 58 / measure 7]
+    % [Viola_RH_Music_Voice measure 58 / measure 7]
     R1 * 4/4
 
-    % [05 Viola_RH_Music_Voice measure 59 / measure 8]
+    % [Viola_RH_Music_Voice measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Viola_RH_Music_Voice measure 60 / measure 9]
+    % [Viola_RH_Music_Voice measure 60 / measure 9]
     R1 * 4/4
 
-    % [05 Viola_RH_Music_Voice measure 61 / measure 10]
+    % [Viola_RH_Music_Voice measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Viola_RH_Music_Voice measure 62 / measure 11]
+    % [Viola_RH_Music_Voice measure 62 / measure 11]
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 0
     \startStaff
@@ -479,7 +479,7 @@ e_Viola_RH_Music_Voice = {
         \context Voice = "Viola_RH_Music_Voice"
         {
 
-            % [05 Viola_RH_Music_Voice measure 63 / measure 12]
+            % [Viola_RH_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -488,7 +488,7 @@ e_Viola_RH_Music_Voice = {
         \context Voice = "Viola_RH_Rest_Voice"
         {
 
-            % [05 Viola_RH_Rest_Voice measure 63 / measure 12]
+            % [Viola_RH_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -513,7 +513,7 @@ e_Viola_RH_Music_Staff = {
 
 e_Viola_Music_Voice = {
 
-    % [05 Viola_Music_Voice measure 52 / measure 1]
+    % [Viola_Music_Voice measure 52 / measure 1]
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
     \stopStaff
@@ -534,34 +534,34 @@ e_Viola_Music_Voice = {
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Viola_Music_Voice measure 53 / measure 2]
+    % [Viola_Music_Voice measure 53 / measure 2]
     R1 * 4/4
 
-    % [05 Viola_Music_Voice measure 54 / measure 3]
+    % [Viola_Music_Voice measure 54 / measure 3]
     R1 * 4/4
 
-    % [05 Viola_Music_Voice measure 55 / measure 4]
+    % [Viola_Music_Voice measure 55 / measure 4]
     R1 * 2/4
 
-    % [05 Viola_Music_Voice measure 56 / measure 5]
+    % [Viola_Music_Voice measure 56 / measure 5]
     R1 * 7/4
 
-    % [05 Viola_Music_Voice measure 57 / measure 6]
+    % [Viola_Music_Voice measure 57 / measure 6]
     R1 * 3/4
 
-    % [05 Viola_Music_Voice measure 58 / measure 7]
+    % [Viola_Music_Voice measure 58 / measure 7]
     R1 * 4/4
 
-    % [05 Viola_Music_Voice measure 59 / measure 8]
+    % [Viola_Music_Voice measure 59 / measure 8]
     R1 * 3/4
 
-    % [05 Viola_Music_Voice measure 60 / measure 9]
+    % [Viola_Music_Voice measure 60 / measure 9]
     R1 * 4/4
 
-    % [05 Viola_Music_Voice measure 61 / measure 10]
+    % [Viola_Music_Voice measure 61 / measure 10]
     R1 * 3/4
 
-    % [05 Viola_Music_Voice measure 62 / measure 11]
+    % [Viola_Music_Voice measure 62 / measure 11]
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -573,7 +573,7 @@ e_Viola_Music_Voice = {
         \context Voice = "Viola_Music_Voice"
         {
 
-            % [05 Viola_Music_Voice measure 63 / measure 12]
+            % [Viola_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -582,7 +582,7 @@ e_Viola_Music_Voice = {
         \context Voice = "Viola_Rest_Voice"
         {
 
-            % [05 Viola_Rest_Voice measure 63 / measure 12]
+            % [Viola_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -611,7 +611,7 @@ e_Cello_RH_Music_Voice = {
     \times 3/4
     {
 
-        % [05 Cello_RH_Music_Voice measure 52 / measure 1]
+        % [Cello_RH_Music_Voice measure 52 / measure 1]
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
         \stopStaff
         \once \override RHStaff.StaffSymbol.line-count = 1
@@ -660,7 +660,7 @@ e_Cello_RH_Music_Voice = {
     \times 4/6
     {
 
-        % [05 Cello_RH_Music_Voice measure 53 / measure 2]
+        % [Cello_RH_Music_Voice measure 53 / measure 2]
         c'4
         \bacaStopTextSpanBCP
         - \abjad-solid-line-with-arrow
@@ -717,7 +717,7 @@ e_Cello_RH_Music_Voice = {
     \times 4/3
     {
 
-        % [05 Cello_RH_Music_Voice measure 54 / measure 3]
+        % [Cello_RH_Music_Voice measure 54 / measure 3]
         c'4
         \bacaStopTextSpanBCP
         - \abjad-solid-line-with-arrow
@@ -743,7 +743,7 @@ e_Cello_RH_Music_Voice = {
 
     }
 
-    % [05 Cello_RH_Music_Voice measure 55 / measure 4]
+    % [Cello_RH_Music_Voice measure 55 / measure 4]
     c'4
     - \downbow
     \bacaStopTextSpanBCP
@@ -765,7 +765,7 @@ e_Cello_RH_Music_Voice = {
     \times 7/8
     {
 
-        % [05 Cello_RH_Music_Voice measure 56 / measure 5]
+        % [Cello_RH_Music_Voice measure 56 / measure 5]
         c'4
         \bacaStopTextSpanBCP
         - \abjad-solid-line-with-arrow
@@ -835,7 +835,7 @@ e_Cello_RH_Music_Voice = {
     \times 3/5
     {
 
-        % [05 Cello_RH_Music_Voice measure 57 / measure 6]
+        % [Cello_RH_Music_Voice measure 57 / measure 6]
         c'4
         - \tweak color #(x11-color 'blue)
         \f
@@ -885,7 +885,7 @@ e_Cello_RH_Music_Voice = {
     \times 4/3
     {
 
-        % [05 Cello_RH_Music_Voice measure 58 / measure 7]
+        % [Cello_RH_Music_Voice measure 58 / measure 7]
         r4
         \bacaStopTextSpanBCP
         - \abjad-invisible-line
@@ -912,7 +912,7 @@ e_Cello_RH_Music_Voice = {
 
     }
 
-    % [05 Cello_RH_Music_Voice measure 59 / measure 8]
+    % [Cello_RH_Music_Voice measure 59 / measure 8]
     c'4
     - \tweak color #(x11-color 'blue)
     \ppp
@@ -942,7 +942,7 @@ e_Cello_RH_Music_Voice = {
     \times 4/5
     {
 
-        % [05 Cello_RH_Music_Voice measure 60 / measure 9]
+        % [Cello_RH_Music_Voice measure 60 / measure 9]
         c'4
         - \tweak color #(x11-color 'blue)
         \ff
@@ -989,7 +989,7 @@ e_Cello_RH_Music_Voice = {
     \times 3/5
     {
 
-        % [05 Cello_RH_Music_Voice measure 61 / measure 10]
+        % [Cello_RH_Music_Voice measure 61 / measure 10]
         c'4
         - \tweak color #(x11-color 'blue)
         \f
@@ -1039,7 +1039,7 @@ e_Cello_RH_Music_Voice = {
         \context Voice = "Cello_RH_Music_Voice"
         {
 
-            % [05 Cello_RH_Music_Voice measure 62 / measure 11]
+            % [Cello_RH_Music_Voice measure 62 / measure 11]
             \stopStaff
             \once \override RHStaff.StaffSymbol.line-count = 0
             \startStaff
@@ -1053,7 +1053,7 @@ e_Cello_RH_Music_Voice = {
         \context Voice = "Cello_RH_Rest_Voice"
         {
 
-            % [05 Cello_RH_Rest_Voice measure 62 / measure 11]
+            % [Cello_RH_Rest_Voice measure 62 / measure 11]
             R1 * 1/4
 
         }
@@ -1065,7 +1065,7 @@ e_Cello_RH_Music_Voice = {
         \context Voice = "Cello_RH_Music_Voice"
         {
 
-            % [05 Cello_RH_Music_Voice measure 63 / measure 12]
+            % [Cello_RH_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1074,7 +1074,7 @@ e_Cello_RH_Music_Voice = {
         \context Voice = "Cello_RH_Rest_Voice"
         {
 
-            % [05 Cello_RH_Rest_Voice measure 63 / measure 12]
+            % [Cello_RH_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -1103,7 +1103,7 @@ e_Cello_Music_Voice = {
     \times 6/7
     {
 
-        % [05 Cello_Music_Voice measure 52 / measure 1]
+        % [Cello_Music_Voice measure 52 / measure 1]
         \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
         \override Staff.BarLine.bar-extent = #'(-2 . 2)
         \stopStaff
@@ -1142,7 +1142,7 @@ e_Cello_Music_Voice = {
     \times 8/10
     {
 
-        % [05 Cello_Music_Voice measure 53 / measure 2]
+        % [Cello_Music_Voice measure 53 / measure 2]
         d'2
 
         e'8
@@ -1153,7 +1153,7 @@ e_Cello_Music_Voice = {
 
     }
 
-    % [05 Cello_Music_Voice measure 54 / measure 3]
+    % [Cello_Music_Voice measure 54 / measure 3]
     d'4.
 
     e''2
@@ -1164,7 +1164,7 @@ e_Cello_Music_Voice = {
     \times 4/5
     {
 
-        % [05 Cello_Music_Voice measure 55 / measure 4]
+        % [Cello_Music_Voice measure 55 / measure 4]
         e'4
 
         g'4.
@@ -1175,7 +1175,7 @@ e_Cello_Music_Voice = {
     \times 14/16
     {
 
-        % [05 Cello_Music_Voice measure 56 / measure 5]
+        % [Cello_Music_Voice measure 56 / measure 5]
         g2
 
         b8
@@ -1194,7 +1194,7 @@ e_Cello_Music_Voice = {
 
     }
 
-    % [05 Cello_Music_Voice measure 57 / measure 6]
+    % [Cello_Music_Voice measure 57 / measure 6]
     b8
 
     g2
@@ -1205,7 +1205,7 @@ e_Cello_Music_Voice = {
     \times 8/9
     {
 
-        % [05 Cello_Music_Voice measure 58 / measure 7]
+        % [Cello_Music_Voice measure 58 / measure 7]
         e'4.
 
         f''2.
@@ -1216,14 +1216,14 @@ e_Cello_Music_Voice = {
     \times 6/8
     {
 
-        % [05 Cello_Music_Voice measure 59 / measure 8]
+        % [Cello_Music_Voice measure 59 / measure 8]
         e''8
 
         d'2..
 
     }
 
-    % [05 Cello_Music_Voice measure 60 / measure 9]
+    % [Cello_Music_Voice measure 60 / measure 9]
     c'8
     [
 
@@ -1242,7 +1242,7 @@ e_Cello_Music_Voice = {
     \times 6/7
     {
 
-        % [05 Cello_Music_Voice measure 61 / measure 10]
+        % [Cello_Music_Voice measure 61 / measure 10]
         a2
 
         g,8
@@ -1256,7 +1256,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [05 Cello_Music_Voice measure 62 / measure 11]
+            % [Cello_Music_Voice measure 62 / measure 11]
             \stopStaff
             \once \override Staff.StaffSymbol.line-count = 0
             \startStaff
@@ -1270,7 +1270,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [05 Cello_Rest_Voice measure 62 / measure 11]
+            % [Cello_Rest_Voice measure 62 / measure 11]
             R1 * 1/4
 
         }
@@ -1282,7 +1282,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [05 Cello_Music_Voice measure 63 / measure 12]
+            % [Cello_Music_Voice measure 63 / measure 12]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1291,7 +1291,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [05 Cello_Rest_Voice measure 63 / measure 12]
+            % [Cello_Rest_Voice measure 63 / measure 12]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
