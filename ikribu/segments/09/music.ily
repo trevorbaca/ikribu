@@ -1,4 +1,4 @@
-i_Global_Rests = {
+segment.09.Global.Rests = {
 
     % [Global_Rests measure 99 / measure 1]
     R1 * 2
@@ -36,7 +36,7 @@ i_Global_Rests = {
 }
 
 
-i_Global_Skips = {
+segment.09.Global.Skips = {
 
     % [Global_Skips measure 99 / measure 1]
     \time 8/4
@@ -129,7 +129,7 @@ i_Global_Skips = {
 }
 
 
-i_Bass_Clarinet_Music_Voice = {
+segment.09.Bass.Clarinet.Music.Voice = {
 
     % [Bass_Clarinet_Music_Voice measure 99 / measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
@@ -258,15 +258,15 @@ i_Bass_Clarinet_Music_Voice = {
 }
 
 
-i_Bass_Clarinet_Music_Staff = {
+segment.09.Bass.Clarinet.Music.Staff = {
 
     \context Voice = "Bass_Clarinet_Music_Voice"
-    \i_Bass_Clarinet_Music_Voice
+    { \segment.09.Bass.Clarinet.Music.Voice }
 
 }
 
 
-i_Violin_RH_Music_Voice = {
+segment.09.Violin.RH.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7
@@ -791,15 +791,15 @@ i_Violin_RH_Music_Voice = {
 }
 
 
-i_Violin_RH_Music_Staff = {
+segment.09.Violin.RH.Music.Staff = {
 
     \context Voice = "Violin_RH_Music_Voice"
-    \i_Violin_RH_Music_Voice
+    { \segment.09.Violin.RH.Music.Voice }
 
 }
 
 
-i_Violin_Music_Voice = {
+segment.09.Violin.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 16/17
@@ -988,15 +988,15 @@ i_Violin_Music_Voice = {
 }
 
 
-i_Violin_Music_Staff = {
+segment.09.Violin.Music.Staff = {
 
     \context Voice = "Violin_Music_Voice"
-    \i_Violin_Music_Voice
+    { \segment.09.Violin.Music.Voice }
 
 }
 
 
-i_Viola_RH_Music_Voice = {
+segment.09.Viola.RH.Music.Voice = {
 
     % [Viola_RH_Music_Voice measure 99 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -1532,15 +1532,15 @@ i_Viola_RH_Music_Voice = {
 }
 
 
-i_Viola_RH_Music_Staff = {
+segment.09.Viola.RH.Music.Staff = {
 
     \context Voice = "Viola_RH_Music_Voice"
-    \i_Viola_RH_Music_Voice
+    { \segment.09.Viola.RH.Music.Voice }
 
 }
 
 
-i_Viola_Music_Voice = {
+segment.09.Viola.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 16/18
@@ -1715,15 +1715,15 @@ i_Viola_Music_Voice = {
 }
 
 
-i_Viola_Music_Staff = {
+segment.09.Viola.Music.Staff = {
 
     \context Voice = "Viola_Music_Voice"
-    \i_Viola_Music_Voice
+    { \segment.09.Viola.Music.Voice }
 
 }
 
 
-i_Cello_RH_Music_Voice = {
+segment.09.Cello.RH.Music.Voice = {
 
     % [Cello_RH_Music_Voice measure 99 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -1796,15 +1796,15 @@ i_Cello_RH_Music_Voice = {
 }
 
 
-i_Cello_RH_Music_Staff = {
+segment.09.Cello.RH.Music.Staff = {
 
     \context Voice = "Cello_RH_Music_Voice"
-    \i_Cello_RH_Music_Voice
+    { \segment.09.Cello.RH.Music.Voice }
 
 }
 
 
-i_Cello_Music_Voice = {
+segment.09.Cello.Music.Voice = {
 
     % [Cello_Music_Voice measure 99 / measure 1]
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
@@ -1884,9 +1884,9 @@ i_Cello_Music_Voice = {
 }
 
 
-i_Cello_Music_Staff = {
+segment.09.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \i_Cello_Music_Voice
+    { \segment.09.Cello.Music.Voice }
 
 }
