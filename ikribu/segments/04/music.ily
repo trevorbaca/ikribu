@@ -1,4 +1,4 @@
-d_Global_Rests = {
+segment.04.Global.Rests = {
 
     % [Global_Rests measure 35 / measure 1]
     R1 * 7/4
@@ -57,7 +57,7 @@ d_Global_Rests = {
 }
 
 
-d_Global_Skips = {
+segment.04.Global.Skips = {
 
     % [Global_Skips measure 35 / measure 1]
     \time 7/4
@@ -278,7 +278,7 @@ d_Global_Skips = {
 }
 
 
-d_Bass_Clarinet_Music_Voice = {
+segment.04.Bass.Clarinet.Music.Voice = {
 
     <<
 
@@ -647,15 +647,15 @@ d_Bass_Clarinet_Music_Voice = {
 }
 
 
-d_Bass_Clarinet_Music_Staff = {
+segment.04.Bass.Clarinet.Music.Staff = {
 
     \context Voice = "Bass_Clarinet_Music_Voice"
-    \d_Bass_Clarinet_Music_Voice
+    { \segment.04.Bass.Clarinet.Music.Voice }
 
 }
 
 
-d_Violin_RH_Music_Voice = {
+segment.04.Violin.RH.Music.Voice = {
 
     % [Violin_RH_Music_Voice measure 35 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -746,15 +746,15 @@ d_Violin_RH_Music_Voice = {
 }
 
 
-d_Violin_RH_Music_Staff = {
+segment.04.Violin.RH.Music.Staff = {
 
     \context Voice = "Violin_RH_Music_Voice"
-    \d_Violin_RH_Music_Voice
+    { \segment.04.Violin.RH.Music.Voice }
 
 }
 
 
-d_Violin_Music_Voice = {
+segment.04.Violin.Music.Voice = {
 
     % [Violin_Music_Voice measure 35 / measure 1]
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -1037,15 +1037,15 @@ d_Violin_Music_Voice = {
 }
 
 
-d_Violin_Music_Staff = {
+segment.04.Violin.Music.Staff = {
 
     \context Voice = "Violin_Music_Voice"
-    \d_Violin_Music_Voice
+    { \segment.04.Violin.Music.Voice }
 
 }
 
 
-d_Viola_RH_Music_Voice = {
+segment.04.Viola.RH.Music.Voice = {
 
     % [Viola_RH_Music_Voice measure 35 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -1136,15 +1136,15 @@ d_Viola_RH_Music_Voice = {
 }
 
 
-d_Viola_RH_Music_Staff = {
+segment.04.Viola.RH.Music.Staff = {
 
     \context Voice = "Viola_RH_Music_Voice"
-    \d_Viola_RH_Music_Voice
+    { \segment.04.Viola.RH.Music.Voice }
 
 }
 
 
-d_Viola_Music_Voice = {
+segment.04.Viola.Music.Voice = {
 
     <<
 
@@ -1404,15 +1404,15 @@ d_Viola_Music_Voice = {
 }
 
 
-d_Viola_Music_Staff = {
+segment.04.Viola.Music.Staff = {
 
     \context Voice = "Viola_Music_Voice"
-    \d_Viola_Music_Voice
+    { \segment.04.Viola.Music.Voice }
 
 }
 
 
-d_Cello_RH_Music_Voice = {
+segment.04.Cello.RH.Music.Voice = {
 
     % [Cello_RH_Music_Voice measure 35 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -1503,15 +1503,15 @@ d_Cello_RH_Music_Voice = {
 }
 
 
-d_Cello_RH_Music_Staff = {
+segment.04.Cello.RH.Music.Staff = {
 
     \context Voice = "Cello_RH_Music_Voice"
-    \d_Cello_RH_Music_Voice
+    { \segment.04.Cello.RH.Music.Voice }
 
 }
 
 
-d_Cello_Music_Voice = {
+segment.04.Cello.Music.Voice = {
 
     % [Cello_Music_Voice measure 35 / measure 1]
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
@@ -1754,9 +1754,9 @@ d_Cello_Music_Voice = {
 }
 
 
-d_Cello_Music_Staff = {
+segment.04.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \d_Cello_Music_Voice
+    { \segment.04.Cello.Music.Voice }
 
 }

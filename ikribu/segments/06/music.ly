@@ -24,10 +24,10 @@
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \f_Global_Rests
+                { \segment.06.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \f_Global_Skips
+                { \segment.06.Global.Skips }
 
             >>
 
@@ -39,17 +39,17 @@
 
                     \tag Bass_Clarinet
                     \context Staff = "Bass_Clarinet_Music_Staff"
-                    \f_Bass_Clarinet_Music_Staff
+                    { \segment.06.Bass.Clarinet.Music.Staff }
 
                     \tag Violin
                     \context SingleStringStaffGroup = "Violin_Staff_Group"
                     <<
 
                         \context RHStaff = "Violin_RH_Music_Staff"
-                        \f_Violin_RH_Music_Staff
+                        { \segment.06.Violin.RH.Music.Staff }
 
                         \context Staff = "Violin_Music_Staff"
-                        \f_Violin_Music_Staff
+                        { \segment.06.Violin.Music.Staff }
 
                     >>
 
@@ -58,10 +58,10 @@
                     <<
 
                         \context RHStaff = "Viola_RH_Music_Staff"
-                        \f_Viola_RH_Music_Staff
+                        { \segment.06.Viola.RH.Music.Staff }
 
                         \context Staff = "Viola_Music_Staff"
-                        \f_Viola_Music_Staff
+                        { \segment.06.Viola.Music.Staff }
 
                     >>
 
@@ -70,10 +70,10 @@
                     <<
 
                         \context RHStaff = "Cello_RH_Music_Staff"
-                        \f_Cello_RH_Music_Staff
+                        { \segment.06.Cello.RH.Music.Staff }
 
                         \context Staff = "Cello_Music_Staff"
-                        \f_Cello_Music_Staff
+                        { \segment.06.Cello.Music.Staff }
 
                     >>
 

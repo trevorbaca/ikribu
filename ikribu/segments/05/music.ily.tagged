@@ -1,5 +1,5 @@
-%! baca.Path.extern()
-e_Global_Rests = {
+%! baca.path.extern()
+segment.05.Global.Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Rests measure 52 / measure 1]
@@ -72,12 +72,12 @@ e_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Global_Skips = {
+%! baca.path.extern()
+segment.05.Global.Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Skips measure 52 / measure 1]
@@ -578,12 +578,12 @@ e_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Bass_Clarinet_Music_Voice = {
+%! baca.path.extern()
+segment.05.Bass.Clarinet.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Bass_Clarinet_Music_Voice measure 52 / measure 1]
@@ -862,26 +862,26 @@ e_Bass_Clarinet_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Bass_Clarinet_Music_Staff = {
+%! baca.path.extern()
+segment.05.Bass.Clarinet.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Bass_Clarinet_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Bass_Clarinet_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Bass.Clarinet.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Violin_RH_Music_Voice = {
+%! baca.path.extern()
+segment.05.Violin.RH.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 52 / measure 1]
@@ -1110,26 +1110,26 @@ e_Violin_RH_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Violin_RH_Music_Staff = {
+%! baca.path.extern()
+segment.05.Violin.RH.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_RH_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Violin_RH_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Violin.RH.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Violin_Music_Voice = {
+%! baca.path.extern()
+segment.05.Violin.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Violin_Music_Voice measure 52 / measure 1]
@@ -1394,26 +1394,26 @@ e_Violin_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Violin_Music_Staff = {
+%! baca.path.extern()
+segment.05.Violin.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Violin_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Violin_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Violin.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Viola_RH_Music_Voice = {
+%! baca.path.extern()
+segment.05.Viola.RH.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 52 / measure 1]
@@ -1642,26 +1642,26 @@ e_Viola_RH_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Viola_RH_Music_Staff = {
+%! baca.path.extern()
+segment.05.Viola.RH.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_RH_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Viola_RH_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Viola.RH.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Viola_Music_Voice = {
+%! baca.path.extern()
+segment.05.Viola.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Viola_Music_Voice measure 52 / measure 1]
@@ -1925,26 +1925,26 @@ e_Viola_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Viola_Music_Staff = {
+%! baca.path.extern()
+segment.05.Viola.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Viola_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Viola_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Viola.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_RH_Music_Voice = {
+%! baca.path.extern()
+segment.05.Cello.RH.Music.Voice = {
 
     %! ikribu.bow_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -3472,26 +3472,26 @@ e_Cello_RH_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_RH_Music_Staff = {
+%! baca.path.extern()
+segment.05.Cello.RH.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_RH_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Cello_RH_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Cello.RH.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_Music_Voice = {
+%! baca.path.extern()
+segment.05.Cello.Music.Voice = {
 
     %! ikribu.glissando_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -3953,19 +3953,19 @@ e_Cello_Music_Voice = {
     >>
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_Music_Staff = {
+%! baca.path.extern()
+segment.05.Cello.Music.Staff = {
 
     %! ikribu.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"
     %! ikribu.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Cello_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Cello.Music.Voice }
 
 %! ikribu.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
