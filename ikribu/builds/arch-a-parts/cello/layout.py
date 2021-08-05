@@ -3,12 +3,14 @@ import baca
 part_abbreviation = "VC"
 
 breaks = baca.breaks(
-    baca.page(  # 1
-        [1, 75, (15, 20)],
-        [16, 170, (15, 20)],
+    baca.page(
+        baca.system((15, 20), measure=1, y_offset=75),
+        baca.system((15, 20), measure=16, y_offset=170),
+        number=1,
     ),
-    baca.page(  # 2
-        [33, 20, (15, 20)],
-        [49, 130, (15, 20)],
+    baca.page(
+        baca.system((15, 20), measure=33, y_offset=20),
+        baca.system((15, 20), measure=49, y_offset=130),
+        number=2,
     ),
 )

@@ -1,7 +1,9 @@
 import baca
 
 breaks = baca.breaks(
-    baca.page([3, 20, (15, 20)]),
+    baca.page(
+        baca.system((15, 20), measure=3, y_offset=20),
+    ),
 )
 
 spacing = baca.scorewide_spacing(
