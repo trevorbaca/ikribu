@@ -2,7 +2,7 @@ import baca
 
 breaks = baca.breaks(
     baca.page(
-        baca.system(measure=35, y_offset=20, distances=(15, 20)),
+        baca.system(measure=1, y_offset=20, distances=(15, 20)),
     ),
 )
 
@@ -11,7 +11,7 @@ spacing = baca.scorewide_spacing(
     breaks=breaks,
     fallback_duration=(1, 12),
 )
-spacing.override([39, 43, 47, 51], (1, 24))
+spacing.override([5, 9, 13, 17], (1, 24))
 
 if __name__ == "__main__":
     baca.build.make_layout_ly(__file__, breaks, spacing)
