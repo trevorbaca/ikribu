@@ -1,7 +1,13 @@
 import baca
 
 breaks = baca.breaks(
-    baca.system((15, 20, 22.5, 25, 22.5, 25, 22.5), measure=208, y_offset=20),
+    baca.page(
+        baca.system(
+            measure=208,
+            y_offset=20,
+            distances=(15, 20, 22.5, 25, 22.5, 25, 22.5),
+        ),
+    ),
 )
 
 spacing = baca.scorewide_spacing(
