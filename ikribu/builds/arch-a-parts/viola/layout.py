@@ -4,13 +4,13 @@ part_abbreviation = "VA"
 
 breaks = baca.breaks(
     baca.page(
-        baca.system((15, 20), measure=1, y_offset=75),
-        baca.system((15, 20), measure=16, y_offset=170),
+        baca.system(measure=1, y_offset=75, distances=(15, 20)),
+        baca.system(measure=16, y_offset=170, distances=(15, 20)),
         number=1,
     ),
     baca.page(
-        baca.system((15, 20), measure=33, y_offset=20),
-        baca.system((15, 20), measure=49, y_offset=130),
+        baca.system(measure=33, y_offset=20, distances=(15, 20)),
+        baca.system(measure=49, y_offset=130, distances=(15, 20)),
         number=2,
     ),
 )
