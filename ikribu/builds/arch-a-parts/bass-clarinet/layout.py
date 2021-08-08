@@ -45,7 +45,7 @@ breaks = baca.breaks(
     ),
 )
 
-spacing = baca.scorewide_spacing(
+spacing = baca.spacing(
     __file__,
     (1, 2),
     breaks=breaks,
