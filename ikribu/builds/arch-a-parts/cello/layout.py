@@ -16,4 +16,4 @@ breaks = baca.breaks(
 )
 
 if __name__ == "__main__":
-    baca.build.make_layout_ly(__file__, breaks)
+    baca.build.make_layout_ly(breaks)
