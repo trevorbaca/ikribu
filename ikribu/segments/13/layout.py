@@ -12,7 +12,6 @@ breaks = baca.breaks(
 )
 
 spacing = baca.spacing(
-    __file__,
     breaks=breaks,
     fallback_duration=(1, 16),
 )
