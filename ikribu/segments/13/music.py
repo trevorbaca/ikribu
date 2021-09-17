@@ -32,7 +32,7 @@ maker = baca.SegmentMaker(
         baca.tags.LOCAL_MEASURE_NUMBER,
         baca.tags.STAGE_NUMBER,
     ],
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     fermata_measure_empty_overrides=fermata_measures,
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
