@@ -37,308 +37,252 @@ abjad.OrderedDict(
         ),
         (
             "persistent_indicators",
-            abjad.OrderedDict(
-                [
-                    (
-                        "Bass_Clarinet_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                edition=abjad.Tag("-PARTS"),
-                                manifest="margin_markups",
-                                value="B. cl.",
-                            ),
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                manifest="instruments",
-                                value="BassClarinet",
-                            ),
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                        ],
+            {
+                "Bass_Clarinet_Music_Staff": [
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        edition=abjad.Tag("-PARTS"),
+                        manifest="margin_markups",
+                        value="B. cl.",
                     ),
-                    (
-                        "Bass_Clarinet_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Bass_Clarinet_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="niente",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        manifest="instruments",
+                        value="BassClarinet",
                     ),
-                    (
-                        "Cello_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="tenor",
-                            ),
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="treble",
                     ),
-                    (
-                        "Cello_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="p",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
                     ),
-                    (
-                        "Cello_RH_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Cello_RH_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="percussion",
-                            ),
-                            baca.Memento(
-                                context="Cello_RH_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                            baca.Memento(
-                                context="Cello_RH_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
                     ),
-                    (
-                        "Cello_RH_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Cello_RH_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="pp",
-                            ),
-                        ],
+                ],
+                "Bass_Clarinet_Music_Voice": [
+                    baca.Memento(
+                        context="Bass_Clarinet_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="niente",
                     ),
-                    (
-                        "Cello_Staff_Group",
-                        [
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                edition=abjad.Tag("-PARTS"),
-                                manifest="margin_markups",
-                                value="Vc.",
-                            ),
-                            baca.Memento(
-                                context="Cello_Music_Voice",
-                                manifest="instruments",
-                                value="Cello",
-                            ),
-                        ],
+                ],
+                "Cello_Music_Staff": [
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="tenor",
                     ),
-                    (
-                        "Score",
-                        [
-                            baca.Memento(
-                                context="Global_Skips",
-                                manifest="metronome_marks",
-                                value="night",
-                            ),
-                            baca.Memento(
-                                context="Global_Skips",
-                                prototype="abjad.TimeSignature",
-                                value="1/4",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
                     ),
-                    (
-                        "Viola_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
                     ),
-                    (
-                        "Viola_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="niente",
-                            ),
-                        ],
+                ],
+                "Cello_Music_Voice": [
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="p",
                     ),
-                    (
-                        "Viola_RH_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Viola_RH_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="percussion",
-                            ),
-                            baca.Memento(
-                                context="Viola_RH_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                            baca.Memento(
-                                context="Viola_RH_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                        ],
+                ],
+                "Cello_RH_Music_Staff": [
+                    baca.Memento(
+                        context="Cello_RH_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="percussion",
                     ),
-                    (
-                        "Viola_RH_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Viola_RH_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="ppp",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Cello_RH_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
                     ),
-                    (
-                        "Viola_Staff_Group",
-                        [
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                edition=abjad.Tag("-PARTS"),
-                                manifest="margin_markups",
-                                value="Va.",
-                            ),
-                            baca.Memento(
-                                context="Viola_Music_Voice",
-                                manifest="instruments",
-                                value="Viola",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Cello_RH_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
                     ),
-                    (
-                        "Violin_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=5,
-                            ),
-                        ],
+                ],
+                "Cello_RH_Music_Voice": [
+                    baca.Memento(
+                        context="Cello_RH_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="pp",
                     ),
-                    (
-                        "Violin_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="niente",
-                            ),
-                        ],
+                ],
+                "Cello_Staff_Group": [
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        edition=abjad.Tag("-PARTS"),
+                        manifest="margin_markups",
+                        value="Vc.",
                     ),
-                    (
-                        "Violin_RH_Music_Staff",
-                        [
-                            baca.Memento(
-                                context="Violin_RH_Music_Voice",
-                                prototype="abjad.Clef",
-                                value="percussion",
-                            ),
-                            baca.Memento(
-                                context="Violin_RH_Music_Voice",
-                                prototype="baca.BarExtent",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                            baca.Memento(
-                                context="Violin_RH_Music_Voice",
-                                prototype="baca.StaffLines",
-                                synthetic_offset=abjad.Offset((99, 1)),
-                                value=1,
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Cello_Music_Voice",
+                        manifest="instruments",
+                        value="Cello",
                     ),
-                    (
-                        "Violin_RH_Music_Voice",
-                        [
-                            baca.Memento(
-                                context="Violin_RH_Music_Voice",
-                                prototype="abjad.Dynamic",
-                                value="ppp",
-                            ),
-                        ],
+                ],
+                "Score": [
+                    baca.Memento(
+                        context="Global_Skips",
+                        manifest="metronome_marks",
+                        value="night",
                     ),
-                    (
-                        "Violin_Staff_Group",
-                        [
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                edition=abjad.Tag("-PARTS"),
-                                manifest="margin_markups",
-                                value="Vn.",
-                            ),
-                            baca.Memento(
-                                context="Violin_Music_Voice",
-                                manifest="instruments",
-                                value="Violin",
-                            ),
-                        ],
+                    baca.Memento(
+                        context="Global_Skips",
+                        prototype="abjad.TimeSignature",
+                        value="1/4",
                     ),
-                ]
-            ),
+                ],
+                "Viola_Music_Staff": [
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="treble",
+                    ),
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
+                    ),
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
+                    ),
+                ],
+                "Viola_Music_Voice": [
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="niente",
+                    ),
+                ],
+                "Viola_RH_Music_Staff": [
+                    baca.Memento(
+                        context="Viola_RH_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="percussion",
+                    ),
+                    baca.Memento(
+                        context="Viola_RH_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
+                    ),
+                    baca.Memento(
+                        context="Viola_RH_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
+                    ),
+                ],
+                "Viola_RH_Music_Voice": [
+                    baca.Memento(
+                        context="Viola_RH_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="ppp",
+                    ),
+                ],
+                "Viola_Staff_Group": [
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        edition=abjad.Tag("-PARTS"),
+                        manifest="margin_markups",
+                        value="Va.",
+                    ),
+                    baca.Memento(
+                        context="Viola_Music_Voice",
+                        manifest="instruments",
+                        value="Viola",
+                    ),
+                ],
+                "Violin_Music_Staff": [
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="treble",
+                    ),
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
+                    ),
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=5,
+                    ),
+                ],
+                "Violin_Music_Voice": [
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="niente",
+                    ),
+                ],
+                "Violin_RH_Music_Staff": [
+                    baca.Memento(
+                        context="Violin_RH_Music_Voice",
+                        prototype="abjad.Clef",
+                        value="percussion",
+                    ),
+                    baca.Memento(
+                        context="Violin_RH_Music_Voice",
+                        prototype="baca.BarExtent",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
+                    ),
+                    baca.Memento(
+                        context="Violin_RH_Music_Voice",
+                        prototype="baca.StaffLines",
+                        synthetic_offset=abjad.Offset((99, 1)),
+                        value=1,
+                    ),
+                ],
+                "Violin_RH_Music_Voice": [
+                    baca.Memento(
+                        context="Violin_RH_Music_Voice",
+                        prototype="abjad.Dynamic",
+                        value="ppp",
+                    ),
+                ],
+                "Violin_Staff_Group": [
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        edition=abjad.Tag("-PARTS"),
+                        manifest="margin_markups",
+                        value="Vn.",
+                    ),
+                    baca.Memento(
+                        context="Violin_Music_Voice",
+                        manifest="instruments",
+                        value="Violin",
+                    ),
+                ],
+            },
         ),
     ]
 )
