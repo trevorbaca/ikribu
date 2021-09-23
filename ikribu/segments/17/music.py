@@ -25,6 +25,7 @@ maker_ = baca.TimeSignatureMaker(
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.LOCAL_MEASURE_NUMBER,
         baca.tags.STAGE_NUMBER,
