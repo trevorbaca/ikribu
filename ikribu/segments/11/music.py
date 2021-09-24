@@ -26,15 +26,11 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    fermata_measure_empty_overrides=fermata_measures,
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    stage_markup=stage_markup,
     time_signatures=time_signatures,
-    transpose_score=True,
 )
 
 maker(
@@ -226,4 +222,8 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
         ],
+        error_on_not_yet_pitched=True,
+        fermata_measure_empty_overrides=fermata_measures,
+        stage_markup=stage_markup,
+        transpose_score=True,
     )

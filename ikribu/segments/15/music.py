@@ -22,16 +22,11 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    # TODO: find and eliminate two incomplete spanners
-    do_not_check_wellformedness=True,
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    stage_markup=stage_markup,
     time_signatures=time_signatures,
-    transpose_score=True,
 )
 
 maker(
@@ -203,4 +198,9 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
         ],
+        # TODO: find and eliminate two incomplete spanners
+        do_not_check_wellformedness=True,
+        error_on_not_yet_pitched=True,
+        stage_markup=stage_markup,
+        transpose_score=True,
     )
