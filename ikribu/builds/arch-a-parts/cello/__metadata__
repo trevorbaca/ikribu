@@ -1,8 +1,5 @@
-abjad.OrderedDict(
-    [
-        (
-            "bol_measure_numbers",
-            [1, 16, 33, 49],
-        ),
-    ]
+dict(
+    {
+        "bol_measure_numbers": [1, 16, 33, 49],
+    }
 )
