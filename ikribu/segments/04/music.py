@@ -32,7 +32,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -41,7 +41,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
@@ -98,12 +98,12 @@ maker(
     baca.rehearsal_mark("C"),
 )
 
-maker(
+commands(
     ("bcl", [(2, 3), (6, 7), (10, 11), (14, 15)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("bcl", (2, 17)),
     baca.dynamic(
         '"mf"',
@@ -114,7 +114,7 @@ maker(
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("bcl", (2, 3)),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
@@ -134,7 +134,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vn", 1),
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
@@ -148,7 +148,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     (
         ["vn", "va"],
         [(3, 4), (7, 8), (11, 12), (15, 16)],
@@ -156,7 +156,7 @@ maker(
     baca.make_notes(repeat_ties=True),
 )
 
-maker(
+commands(
     ("vn", (2, 16)),
     baca.clef("treble"),
     baca.dls_staff_padding(3),
@@ -187,17 +187,17 @@ maker(
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vc", (2, 16)),
     baca.make_notes(rmakers.reduce_multiplier()),
 )
 
-maker(
+commands(
     ("va", (2, 16)),
     baca.dls_staff_padding(3),
     baca.new(
@@ -226,7 +226,7 @@ maker(
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.dynamic("sfz"),
     baca.markup(
@@ -243,7 +243,7 @@ maker(
     baca.pitch("F~5"),
 )
 
-maker(
+commands(
     ("vc", (2, 16)),
     baca.dls_staff_padding(7),
     baca.glissando(),
@@ -265,7 +265,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

@@ -39,7 +39,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -48,7 +48,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
@@ -57,7 +57,7 @@ maker(
     baca.rehearsal_mark("O"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
@@ -65,7 +65,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (
         "bcl",
         [(1, 2), (3, 6), 7, 8, 9, 10, (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
@@ -73,83 +73,83 @@ maker(
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vn", (9, 20)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("va", (9, 20)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vc", (5, 20)),
     baca.make_repeat_tied_notes(),
     baca.ottava_bracket_staff_padding(10),
 )
 
-maker(
+commands(
     ("bcl", (1, 2)),
     baca.pitch("<Bb1 D4>"),
 )
 
-maker(
+commands(
     ("bcl", (3, 6)),
     baca.pitch("<Bb1 F4>"),
 )
 
-maker(
+commands(
     ("bcl", 7),
     baca.pitch("<Bb1 D4>"),
 )
 
-maker(
+commands(
     ("bcl", 8),
     baca.pitch("Bb1"),
 )
 
-maker(
+commands(
     ("bcl", 9),
     baca.pitch("<Bb1 D4>"),
 )
 
-maker(
+commands(
     ("bcl", 10),
     baca.pitch("<Bb1 F4>"),
 )
 
-maker(
+commands(
     ("bcl", (11, 12)),
     baca.pitch("<Bb1 Ab~4>"),
 )
 
-maker(
+commands(
     ("bcl", 13),
     baca.pitch("<Bb1 F4>"),
 )
 
-maker(
+commands(
     ("bcl", 14),
     baca.pitch("Bb1"),
 )
 
-maker(
+commands(
     ("bcl", (15, 16)),
     baca.pitch("<Bb1 D4>"),
 )
 
-maker(
+commands(
     ("bcl", 17),
     baca.pitch("<Bb1 F4>"),
 )
 
-maker(
+commands(
     ("bcl", 18),
     baca.pitch("<Bb1 D4>"),
 )
 
-maker(
+commands(
     ("bcl", (19, 20)),
     baca.hairpin(
         "p >o niente",
@@ -158,7 +158,7 @@ maker(
     baca.pitch("Bb1"),
 )
 
-maker(
+commands(
     ("bcl", (1, -1)),
     baca.suite(
         baca.untie(baca.selectors.leaves()),
@@ -166,7 +166,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (9, 20)),
     baca.dynamic("ppppp"),
     baca.hairpin(
@@ -184,7 +184,7 @@ maker(
     baca.text_spanner_staff_padding(2.5),
 )
 
-maker(
+commands(
     ("va", (9, 20)),
     baca.dynamic("ppppp"),
     baca.hairpin(
@@ -202,7 +202,7 @@ maker(
     baca.text_spanner_staff_padding(2.5),
 )
 
-maker(
+commands(
     ("vc", (5, 20)),
     baca.new(
         baca.clef("bass"),
@@ -219,29 +219,29 @@ maker(
     baca.text_spanner_staff_padding(2.5),
 )
 
-maker(
+commands(
     ("vc", (5, 8)),
     baca.text_spanner("tasto poss. => pos. ord."),
 )
 
-maker(
+commands(
     ("vc", (9, 12)),
     baca.text_spanner("pos. ord. => XP"),
 )
 
-maker(
+commands(
     ("vc", (13, 16)),
     baca.text_spanner("XP => pos. ord."),
 )
 
-maker(
+commands(
     ("vc", (17, 20)),
     baca.text_spanner("pos. ord. => tasto poss."),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

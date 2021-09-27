@@ -24,7 +24,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -33,7 +33,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "windows",
@@ -50,18 +50,18 @@ maker(
     baca.rehearsal_mark("P"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata("long", selector=baca.selectors.leaf(-1)),
 )
 
-maker(
+commands(
     ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch("Bb4"),
 )
 
-maker(
+commands(
     ("bcl", (5, 6)),
     baca.glissando(),
     baca.make_repeated_duration_notes([(1, 4)]),
@@ -74,7 +74,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", 7),
     baca.make_repeat_tied_notes(),
     baca.suite(
@@ -83,7 +83,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (1, 7)),
     baca.hairpin(
         "pp < mf",
@@ -95,12 +95,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (5, 7)),
     baca.dls_staff_padding(9),
 )
 
-maker(
+commands(
     ("vn_rh", (1, 5)),
     baca.script_staff_padding(
         7,
@@ -116,14 +116,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (1, 5)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
-maker(
+commands(
     ("va_rh", (1, 5)),
     baca.script_staff_padding(
         7,
@@ -139,14 +139,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (1, 5)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
 )
 
-maker(
+commands(
     ("vc_rh", (1, 5)),
     baca.script_staff_padding(
         7,
@@ -162,7 +162,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (1, 5)),
     baca.clef("tenor"),
     baca.glissando(),
@@ -170,7 +170,7 @@ maker(
     ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
 )
 
-maker(
+commands(
     [
         ("vn_rh", (1, 5)),
         ("va_rh", (1, 5)),
@@ -191,7 +191,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

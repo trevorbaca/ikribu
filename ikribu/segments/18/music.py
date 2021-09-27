@@ -23,7 +23,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -32,7 +32,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "inscription",
@@ -42,7 +42,7 @@ maker(
     baca.bar_line("|.", baca.selectors.skip(-1)),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
@@ -50,19 +50,19 @@ maker(
     ),
 )
 
-maker(
+commands(
     ["bcl", "vn", "va", "vc"],
     baca.staff_lines(1),
 )
 
 # bcl
 
-maker(
+commands(
     ("bcl", (1, 6)),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("bcl", (1, 11)),
     baca.dynamic('"mf"'),
     baca.markup(
@@ -75,7 +75,7 @@ maker(
 
 # vn
 
-maker(
+commands(
     ("vn", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.selectors.pheads()),
@@ -90,7 +90,7 @@ maker(
 
 # va
 
-maker(
+commands(
     ("va", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.selectors.pheads()),
@@ -105,12 +105,12 @@ maker(
 
 # vc
 
-maker(
+commands(
     ("vc", (1, 11)),
     ikribu.inscription_rhythm(),
 )
 
-maker(
+commands(
     "vc",
     baca.accent(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
@@ -124,7 +124,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vc", -1),
     baca.chunk(
         baca.mark(r"\ikribu-colophon-markup"),
@@ -137,7 +137,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

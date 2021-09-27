@@ -36,7 +36,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -45,7 +45,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
@@ -102,7 +102,7 @@ maker(
     baca.rehearsal_mark("M"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
@@ -130,82 +130,82 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vn", [1, 6, 9, 14, 19, 22]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vn", (2, 4)),
     ikribu.color_rhythm(3),
 )
 
-maker(
+commands(
     ("vn", 7),
     ikribu.color_rhythm(4),
 )
 
-maker(
+commands(
     ("vn", (10, 12)),
     ikribu.color_rhythm(5),
 )
 
-maker(
+commands(
     ("vn", (15, 17)),
     ikribu.color_rhythm(3),
 )
 
-maker(
+commands(
     ("vn", 20),
     ikribu.color_rhythm(4),
 )
 
-maker(
+commands(
     ("vn", (23, 27)),
     ikribu.color_rhythm(5),
 )
 
-maker(
+commands(
     ("va", (2, 4)),
     ikribu.color_rhythm(4),
 )
 
-maker(
+commands(
     ("va", 7),
     ikribu.color_rhythm(5),
 )
 
-maker(
+commands(
     ("va", (10, 12)),
     ikribu.color_rhythm(3),
 )
 
-maker(
+commands(
     ("va", (15, 17)),
     ikribu.color_rhythm(4),
 )
 
-maker(
+commands(
     ("va", 20),
     ikribu.color_rhythm(5),
 )
 
-maker(
+commands(
     ("va", (23, 27)),
     ikribu.color_rhythm(3),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.staff_lines(5),
 )
 
-maker(
+commands(
     (
         "vc",
         [1, (2, 4), 6, 7, 9, (10, 12), 14, (15, 17), 19, 20, 22, (23, 27)],
@@ -213,12 +213,12 @@ maker(
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     "bcl",
     baca.pitch("B1"),
 )
 
-maker(
+commands(
     ("bcl", [(2, 4), (10, 12), (15, 17)]),
     baca.hairpin(
         "p < fff",
@@ -230,7 +230,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (23, 31)),
     baca.hairpin(
         "ppp < fff",
@@ -238,12 +238,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", [7, 20]),
     baca.dynamic("p"),
 )
 
-maker(
+commands(
     [
         "vn",
         "va",
@@ -253,7 +253,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vn", 1),
     baca.dynamic('"f"'),
     baca.markup(
@@ -262,7 +262,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     [
         ("vn", (1, 27)),
         ("va", (1, 27)),
@@ -270,7 +270,7 @@ maker(
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("vn", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
     baca.markup(
         r"\ikribu-sponges-on-bd-markup",
@@ -278,7 +278,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (
         ["vn", "va"],
         [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
@@ -291,7 +291,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 6),
     baca.dynamic('"f"'),
     baca.markup(
@@ -300,7 +300,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 9),
     baca.dynamic('"f"'),
     baca.markup(
@@ -309,7 +309,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 14),
     baca.dynamic('"f"'),
     baca.markup(
@@ -318,7 +318,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 19),
     baca.dynamic('"f"'),
     baca.markup(
@@ -327,7 +327,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 22),
     baca.dynamic('"f"'),
     baca.markup(
@@ -336,14 +336,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
     baca.clef("bass"),
     baca.ottava_bassa(),
     baca.pitch("C1"),
 )
 
-maker(
+commands(
     (
         ["vn", "va", "vc"],
         [(2, 4), (10, 12), (15, 17), (23, 27)],
@@ -351,12 +351,12 @@ maker(
     baca.hairpin("mf < fff"),
 )
 
-maker(
+commands(
     ("vc", [(2, 4), (10, 12), (15, 17), (23, 27)]),
     baca.text_spanner("tasto => XP"),
 )
 
-maker(
+commands(
     [
         ("vn", 7),
         ("vn", 20),
@@ -366,7 +366,7 @@ maker(
     baca.dynamic("fff"),
 )
 
-maker(
+commands(
     ("vc", [7, 20]),
     baca.markup(
         r"\baca-xp-markup",
@@ -374,7 +374,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.clef("treble"),
     baca.dynamic("sfz"),
@@ -392,7 +392,7 @@ maker(
     baca.pitch("F~5"),
 )
 
-maker(
+commands(
     ("vc", 6),
     baca.clef("treble"),
     baca.dynamic("sfz"),
@@ -410,7 +410,7 @@ maker(
     baca.pitch("G5"),
 )
 
-maker(
+commands(
     ("vc", 9),
     baca.clef("treble"),
     baca.dynamic("sffz"),
@@ -428,7 +428,7 @@ maker(
     baca.pitch("F~5"),
 )
 
-maker(
+commands(
     ("vc", 14),
     baca.clef("treble"),
     baca.dynamic("sffz"),
@@ -446,7 +446,7 @@ maker(
     baca.pitch("G5"),
 )
 
-maker(
+commands(
     ("vc", 19),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
@@ -464,7 +464,7 @@ maker(
     baca.pitch("A5"),
 )
 
-maker(
+commands(
     ("vc", 22),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
@@ -484,7 +484,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

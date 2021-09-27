@@ -25,7 +25,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -34,25 +34,25 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.rehearsal_mark("F"),
 )
 
-maker(
+commands(
     ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch("F#3"),
 )
 
-maker(
+commands(
     ("bcl", (6, 8)),
     baca.make_repeat_tied_notes(),
     baca.hairpin("sfp > ppp"),
     baca.pitch("G2"),
 )
 
-maker(
+commands(
     [
         ("vn", (6, 7)),
         ("va", (6, 7)),
@@ -67,7 +67,7 @@ maker(
     baca.text_spanner_staff_padding(3.5),
 )
 
-maker(
+commands(
     ("vn", (6, 7)),
     baca.clef("treble"),
     baca.markup(
@@ -80,7 +80,7 @@ maker(
     baca.staff_lines(5),
 )
 
-maker(
+commands(
     ("va", (6, 7)),
     baca.markup(
         r"\ikribu-strings-one-plus-two-markup",
@@ -95,7 +95,7 @@ maker(
     baca.staff_lines(5),
 )
 
-maker(
+commands(
     ("vc", (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.hairpin("p < ff"),
@@ -105,7 +105,7 @@ maker(
     baca.text_spanner_staff_padding(3.5),
 )
 
-maker(
+commands(
     ("vc", (6, 7)),
     baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(
@@ -117,7 +117,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vc", 8),
     baca.clef("treble"),
     baca.staff_lines(5),
@@ -125,7 +125,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

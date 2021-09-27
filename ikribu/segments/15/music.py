@@ -20,7 +20,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -29,7 +29,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "windows",
@@ -38,12 +38,12 @@ maker(
     baca.rehearsal_mark("N"),
 )
 
-maker(
+commands(
     ("bcl", [(1, 5), (6, 10)]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vn_rh", (1, 10)),
     ikribu.bow_rhythm(
         rmakers.force_rest(
@@ -53,7 +53,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (1, 10)),
     baca.clef("treble"),
     baca.staff_lines(5),
@@ -61,7 +61,7 @@ maker(
 )
 
 pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
-maker(
+commands(
     ("va_rh", (1, 10)),
     ikribu.bow_rhythm(
         rmakers.force_rest(
@@ -71,13 +71,13 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (1, 10)),
     baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
 )
 
-maker(
+commands(
     ("vc_rh", (1, 10)),
     ikribu.bow_rhythm(
         rmakers.force_rest(
@@ -87,12 +87,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (1, 10)),
     ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
 )
 
-maker(
+commands(
     ("bcl", (1, 5)),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
@@ -107,13 +107,13 @@ maker(
     baca.pitch("Bb1"),
 )
 
-maker(
+commands(
     ("bcl", (6, 10)),
     baca.pitch("<Bb1 D4>"),
     baca.repeat_tie(baca.selectors.phead(0)),
 )
 
-maker(
+commands(
     [
         ("vn_rh", (1, 10)),
         ("va_rh", (1, 10)),
@@ -131,7 +131,7 @@ maker(
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("vn_rh", (1, 10)),
     baca.script_staff_padding(
         7,
@@ -141,7 +141,7 @@ maker(
     ikribu.bcps(rotation=0),
 )
 
-maker(
+commands(
     ("va_rh", (1, 10)),
     baca.script_staff_padding(
         7,
@@ -151,7 +151,7 @@ maker(
     ikribu.bcps(rotation=-1),
 )
 
-maker(
+commands(
     ("vc_rh", (1, 10)),
     baca.script_staff_padding(
         7,
@@ -161,27 +161,27 @@ maker(
     ikribu.bcps(rotation=-2),
 )
 
-maker(
+commands(
     ("vn", (1, 10)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
 )
 
-maker(
+commands(
     ("va", (1, 10)),
     baca.clef("treble"),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
 )
 
-maker(
+commands(
     ("vc", (1, 10)),
     baca.clef("tenor"),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
 )
 
-maker(
+commands(
     [
         "vn_rh",
         "va_rh",
@@ -192,7 +192,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

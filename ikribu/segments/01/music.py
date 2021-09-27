@@ -16,7 +16,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -25,7 +25,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
@@ -33,7 +33,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
@@ -43,7 +43,7 @@ maker(
 
 # bcl
 
-maker(
+commands(
     "bcl",
     baca.staff_lines(5),
     baca.suite(
@@ -54,7 +54,7 @@ maker(
 
 # vn
 
-maker(
+commands(
     "vn",
     baca.suite(
         ikribu.margin_markup("Vn.", context="SingleStringStaffGroup"),
@@ -66,7 +66,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", 1),
     baca.make_repeat_tied_notes(),
     baca.clef("percussion"),
@@ -82,7 +82,7 @@ maker(
 
 # va
 
-maker(
+commands(
     "va",
     baca.staff_lines(5),
     baca.suite(
@@ -97,7 +97,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.staff_lines(5),
     baca.suite(
@@ -110,7 +110,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.make_repeat_tied_notes(),
     baca.clef("treble"),
@@ -128,14 +128,14 @@ maker(
 
 # vn_rh, va_rh, vc_rh
 
-maker(
+commands(
     (["vn_rh", "va_rh", "vc_rh"], 1),
     baca.staff_lines(1),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
