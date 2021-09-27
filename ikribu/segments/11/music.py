@@ -24,7 +24,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -33,7 +33,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
@@ -42,7 +42,7 @@ maker(
     baca.rehearsal_mark("J"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
@@ -54,22 +54,22 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", [(1, 2), (3, 6)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("vn", [(1, 4), (5, 6)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("va", [(1, 2), (3, 4), (5, 6)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     [
         ("bcl", 10),
         ("vn", 10),
@@ -78,24 +78,24 @@ maker(
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("vc", (1, 2)),
     baca.clef("bass"),
     baca.staff_lines(5),
 )
 
-maker(
+commands(
     ("vc", (3, 6)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vc", (7, 8)),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
     baca.tie(baca.selectors.lleaf(0)),
 )
 
-maker(
+commands(
     [
         "bcl",
         "vn",
@@ -108,7 +108,7 @@ maker(
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("bcl", (1, 2)),
     baca.markup(
         r"\ikribu-stonecircle-pi-four-markup",
@@ -116,7 +116,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (3, 4)),
     baca.markup(
         r"\ikribu-stonecircle-pi-three-markup",
@@ -124,7 +124,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (1, 4)),
     baca.markup(
         r"\ikribu-stonecircle-pi-two-markup",
@@ -132,7 +132,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (5, 6)),
     baca.markup(
         r"\ikribu-stonecircle-pi-markup",
@@ -140,7 +140,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (1, 2)),
     baca.markup(
         r"\ikribu-stonecircle-pi-three-markup",
@@ -148,7 +148,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (3, 4)),
     baca.markup(
         r"\ikribu-stonecircle-pi-four-markup",
@@ -156,7 +156,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (5, 6)),
     baca.markup(
         r"\ikribu-stonecircle-pi-two-markup",
@@ -164,7 +164,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (3, 8)),
     baca.dynamic("p"),
     baca.hairpin(
@@ -180,7 +180,7 @@ maker(
     baca.pitch("D1"),
 )
 
-maker(
+commands(
     [
         ("bcl", 10),
         ("vn", 10),
@@ -197,7 +197,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", 10),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
@@ -205,7 +205,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     [
         "bcl",
         "vn",
@@ -216,7 +216,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

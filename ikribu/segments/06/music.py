@@ -33,7 +33,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -42,7 +42,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
@@ -95,12 +95,12 @@ maker(
     baca.rehearsal_mark("E"),
 )
 
-maker(
+commands(
     ("bcl", [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     [
         ("vn", 1),
         ("va", 1),
@@ -108,43 +108,43 @@ maker(
     baca.clef("percussion"),
 )
 
-maker(
+commands(
     ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.triplet_rhythm(),
 )
 
-maker(
+commands(
     ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.triplet_rhythm(),
 )
 
-maker(
+commands(
     ("vc", [(9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("bcl", (1, 4)),
     baca.dynamic("ppp"),
     baca.pitch("E3"),
 )
 
-maker(
+commands(
     ("bcl", (5, 8)),
     baca.pitch("E+3"),
 )
 
-maker(
+commands(
     ("bcl", (9, 12)),
     baca.pitch("F3"),
 )
 
-maker(
+commands(
     ("bcl", (13, 16)),
     baca.pitch("F+3"),
 )
 
-maker(
+commands(
     [
         "vn",
         "va",
@@ -177,12 +177,12 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vc", (1, 16)),
     baca.clef("bass"),
 )
 
-maker(
+commands(
     ("vc", (9, 16)),
     baca.dls_staff_padding(4),
     baca.markup(
@@ -198,19 +198,19 @@ maker(
     baca.text_script_staff_padding(2.5),
 )
 
-maker(
+commands(
     ("vc", (9, 12)),
     baca.pitch("F3"),
 )
 
-maker(
+commands(
     ("vc", (13, 16)),
     baca.pitch("F+3"),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

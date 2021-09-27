@@ -23,7 +23,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -32,7 +32,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
@@ -49,13 +49,13 @@ maker(
     baca.rehearsal_mark("G"),
 )
 
-maker(
+commands(
     ("bcl", [1, 3, 5, 7, 9, 11]),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
     baca.dls_staff_padding(7),
 )
 
-maker(
+commands(
     ("vc", (1, 11)),
     baca.make_notes(
         rmakers.reduce_multiplier(),
@@ -63,43 +63,43 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", 1),
     baca.hairpin("ppp < mp"),
     baca.pitch("G2"),
 )
 
-maker(
+commands(
     ("bcl", 3),
     baca.hairpin("pp < mf"),
     baca.pitch("Gb2"),
 )
 
-maker(
+commands(
     ("bcl", 5),
     baca.hairpin("p < f"),
     baca.pitch("F2"),
 )
 
-maker(
+commands(
     ("bcl", 7),
     baca.hairpin("mf < ff"),
     baca.pitch("E2"),
 )
 
-maker(
+commands(
     ("bcl", 9),
     baca.hairpin("f < fff"),
     baca.pitch("Eb2"),
 )
 
-maker(
+commands(
     ("bcl", 11),
     baca.hairpin("ff < ffff"),
     baca.pitch("D2"),
 )
 
-maker(
+commands(
     ("vc", (1, 11)),
     baca.dls_staff_padding(7),
     baca.glissando(),
@@ -122,7 +122,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

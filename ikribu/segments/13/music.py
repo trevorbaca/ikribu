@@ -27,7 +27,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -36,12 +36,12 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.rehearsal_mark("L"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
@@ -49,7 +49,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (1, 28)),
     baca.clef("treble"),
     baca.dynamic("ppp"),
@@ -62,14 +62,14 @@ maker(
     baca.staff_lines(5),
 )
 
-maker(
+commands(
     ("vn", (1, 16)),
     baca.staccato(selector=baca.selectors.pheads()),
     ikribu.clb_rhythm(extra_counts=[4]),
     ikribu.clb_staff_positions(rotation=-1),
 )
 
-maker(
+commands(
     ("vn", (21, 32)),
     baca.accent(
         selector=baca.selectors.pheads(~abjad.Pattern([0, 4], period=9)),
@@ -93,7 +93,7 @@ maker(
     ikribu.triplet_rhythm(),
 )
 
-maker(
+commands(
     ("vn", (13, 16)),
     baca.dls_staff_padding(8),
     baca.hairpin(
@@ -103,14 +103,14 @@ maker(
     baca.hairpin_start_shift('"mp"'),
 )
 
-maker(
+commands(
     ("va", (1, 8)),
     baca.staccato(selector=baca.selectors.pheads()),
     ikribu.clb_rhythm(extra_counts=[2]),
     ikribu.clb_staff_positions(rotation=-1),
 )
 
-maker(
+commands(
     ("va", (5, 8)),
     baca.dls_staff_padding(8),
     baca.hairpin(
@@ -120,7 +120,7 @@ maker(
     baca.hairpin_start_shift('"mp"'),
 )
 
-maker(
+commands(
     ("va", (13, 32)),
     baca.accent(
         selector=baca.selectors.pheads(~abjad.Pattern([0, 5], period=11)),
@@ -145,12 +145,12 @@ maker(
     ikribu.triplet_rhythm(),
 )
 
-maker(
+commands(
     ("vc", [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     "vc",
     baca.hairpin(
         "p < f >",
@@ -162,7 +162,7 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vc", 5),
     baca.markup(
         r"\ikribu-graincircle-pi-three-markup",
@@ -170,7 +170,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 9),
     baca.markup(
         r"\ikribu-graincircle-pi-four-markup",
@@ -178,7 +178,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 13),
     baca.markup(
         r"\ikribu-graincircle-pi-three-markup",
@@ -186,7 +186,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 17),
     baca.markup(
         r"\ikribu-graincircle-pi-two-markup",
@@ -194,7 +194,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 21),
     baca.markup(
         r"\ikribu-graincircle-pi-three-markup",
@@ -204,7 +204,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

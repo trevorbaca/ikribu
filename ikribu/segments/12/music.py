@@ -27,7 +27,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -36,12 +36,12 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.rehearsal_mark("K"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
@@ -77,32 +77,32 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("vn", [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[4]),
 )
 
-maker(
+commands(
     ("va", [3, 7, 11, 15]),
     ikribu.clb_rhythm(extra_counts=[2]),
 )
 
-maker(
+commands(
     ("vc", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.staff_lines(1),
 )
 
-maker(
+commands(
     ("bcl", 5),
     baca.dynamic(
         '"mf"',
@@ -111,7 +111,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", 9),
     baca.dynamic(
         '"mp"',
@@ -120,7 +120,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", 13),
     baca.dynamic(
         '"p"',
@@ -129,13 +129,13 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (1, 16)),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("vn", (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
@@ -157,7 +157,7 @@ maker(
     ikribu.clb_staff_positions(),
 )
 
-maker(
+commands(
     ("va", (1, 16)),
     baca.dls_staff_padding(8),
     baca.new(
@@ -179,7 +179,7 @@ maker(
     ikribu.clb_staff_positions(),
 )
 
-maker(
+commands(
     ("vc", (1, 16)),
     baca.markup(
         r"\ikribu-graincircle-pi-two-markup",
@@ -190,12 +190,12 @@ maker(
     ikribu.box_adjustment(),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.dynamic('"p"'),
 )
 
-maker(
+commands(
     ("vc", 5),
     baca.dynamic(
         '"mp"',
@@ -204,7 +204,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 9),
     baca.dynamic(
         '"mf"',
@@ -213,7 +213,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 13),
     baca.dynamic(
         '"f"',
@@ -224,7 +224,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

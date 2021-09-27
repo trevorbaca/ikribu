@@ -21,7 +21,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -30,7 +30,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
@@ -39,7 +39,7 @@ maker(
     baca.rehearsal_mark("I"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
@@ -59,12 +59,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", [1, 3, 5, 7]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
 
-maker(
+commands(
     ("vc", (1, 8)),
     baca.dynamic('"mf"'),
     baca.markup(
@@ -78,7 +78,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

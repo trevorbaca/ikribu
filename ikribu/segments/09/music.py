@@ -21,7 +21,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
@@ -30,12 +30,12 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.rehearsal_mark("H"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
@@ -43,14 +43,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("bcl", (1, 8)),
     baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
     baca.pitch("Db2"),
 )
 
-maker(
+commands(
     ("vn_rh", (1, 8)),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
@@ -61,14 +61,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (1, 8)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
-maker(
+commands(
     ("va_rh", (1, 8)),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
@@ -79,14 +79,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (1, 8)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
 )
 
-maker(
+commands(
     [
         ("vn_rh", (1, 8)),
         ("va_rh", (1, 8)),
@@ -112,7 +112,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
