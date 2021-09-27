@@ -28,7 +28,7 @@ maker_ = baca.TimeSignatureMaker(
 time_signatures = maker_.run()
 
 commands = baca.CommandAccumulator(
-    **baca.segments(),
+    **baca.segment_accumulation_defaults(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
     metronome_marks=ikribu.metronome_marks,
@@ -190,7 +190,7 @@ commands(
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segments(runtime=True),
+        **baca.segment_interpretation_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
