@@ -192,7 +192,7 @@ commands(
 
 # TODO: find and eliminate 1 unterminated text spanner
 defaults = baca.segment_interpretation_defaults()
-del(defaults["check_wellformedness"])
+del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
