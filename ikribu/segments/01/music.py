@@ -3,9 +3,9 @@ import baca
 
 from ikribu import library as ikribu
 
-###############################################################################
-##################################### [_] #####################################
-###############################################################################
+#########################################################################################
+######################################### 01 [_] ########################################
+#########################################################################################
 
 fermata_measures = [2]
 maker_ = baca.TimeSignatureMaker(
@@ -16,14 +16,17 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
+score = ikribu.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
     metronome_marks=ikribu.metronome_marks,
-    score_template=ikribu.make_empty_score,
     time_signatures=time_signatures,
     voice_abbreviations=ikribu.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -138,12 +141,13 @@ if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
         **baca.segment_interpretation_defaults(),
-        activate=[
+        activate=(
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
-        ],
+        ),
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=ikribu.part_manifest,
+        score=score,
     )
