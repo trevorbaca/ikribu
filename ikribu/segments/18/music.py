@@ -3,9 +3,9 @@ import baca
 
 from ikribu import library as ikribu
 
-###############################################################################
-##################################### [Q] #####################################
-###############################################################################
+#########################################################################################
+######################################### 18 [Q] ########################################
+#########################################################################################
 
 stage_markup = (
     ("[Q.1]", 1),
@@ -23,14 +23,17 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
+score = ikribu.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=ikribu.instruments,
     margin_markups=ikribu.margin_markups,
     metronome_marks=ikribu.metronome_marks,
-    score_template=ikribu.make_empty_score,
     time_signatures=time_signatures,
     voice_abbreviations=ikribu.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -149,6 +152,7 @@ if __name__ == "__main__":
         fermata_measure_empty_overrides=fermata_measures,
         final_segment=True,
         part_manifest=ikribu.part_manifest,
+        score=score,
         stage_markup=stage_markup,
         transpose_score=True,
     )
