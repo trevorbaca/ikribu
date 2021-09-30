@@ -33,9 +33,9 @@
         %! baca._make_lilypond_file()
         }
 
-        %! ikribu.ScoreTemplate.__call__()
+        %! ikribu.make_empty_score()
         \context Score = "Score"
-        %! ikribu.ScoreTemplate.__call__()
+        %! ikribu.make_empty_score()
         <<
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -58,97 +58,97 @@
             %! abjad.ScoreTemplate._make_global_context()
             >>
 
-            %! ikribu.ScoreTemplate.__call__()
+            %! ikribu.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! ikribu.ScoreTemplate.__call__()
+            %! ikribu.make_empty_score()
             {
 
-                %! ikribu.ScoreTemplate.__call__()
+                %! ikribu.make_empty_score()
                 \context EnsembleStaffGroup = "Ensemble_Staff_Group"
-                %! ikribu.ScoreTemplate.__call__()
+                %! ikribu.make_empty_score()
                 <<
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Bass_Clarinet
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     \context Staff = "Bass_Clarinet_Music_Staff"
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     %! baca.path.extern()
                     { \segment.09.Bass.Clarinet.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Violin
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Violin_Staff_Group"
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     <<
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context RHStaff = "Violin_RH_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Violin.RH.Music.Staff }
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context Staff = "Violin_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Violin.Music.Staff }
 
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     >>
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Viola_Staff_Group"
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     <<
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context RHStaff = "Viola_RH_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Viola.RH.Music.Staff }
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context Staff = "Viola_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Viola.Music.Staff }
 
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     >>
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Cello_Staff_Group"
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     <<
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context RHStaff = "Cello_RH_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Cello.RH.Music.Staff }
 
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         \context Staff = "Cello_Music_Staff"
-                        %! ikribu.ScoreTemplate.__call__()
+                        %! ikribu.make_empty_score()
                         %! baca.path.extern()
                         { \segment.09.Cello.Music.Staff }
 
-                    %! ikribu.ScoreTemplate.__call__()
+                    %! ikribu.make_empty_score()
                     >>
 
-                %! ikribu.ScoreTemplate.__call__()
+                %! ikribu.make_empty_score()
                 >>
 
-            %! ikribu.ScoreTemplate.__call__()
+            %! ikribu.make_empty_score()
             }
 
-        %! ikribu.ScoreTemplate.__call__()
+        %! ikribu.make_empty_score()
         >>
 
     %! baca._make_lilypond_file()
