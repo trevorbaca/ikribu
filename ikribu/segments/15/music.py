@@ -199,7 +199,9 @@ defaults = baca.score_interpretation_defaults()
 del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
-    keywords = baca.interpret.make_keyword_dictionary(
+    metadata, persist, score, timing = baca.build.interpret_segment(
+        score,
+        commands,
         **defaults,
         activate=(
             baca.tags.LOCAL_MEASURE_NUMBER,
@@ -208,13 +210,8 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         part_manifest=ikribu.part_manifest,
-        score=score,
         stage_markup=stage_markup,
         transpose_score=True,
-    )
-    metadata, persist, score, timing = baca.build.interpret_segment(
-        commands,
-        **keywords,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
