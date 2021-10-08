@@ -6,7 +6,7 @@ from abjadext import rmakers
 
 # instruments & margin markups
 
-instruments = abjad.OrderedDict(
+instruments = dict(
     [
         ("BassClarinet", abjad.BassClarinet()),
         (
@@ -29,7 +29,7 @@ def _make_margin_markup(markup, context="Staff"):
     )
 
 
-margin_markups = abjad.OrderedDict(
+margin_markups = dict(
     [
         ("B. cl.", _make_margin_markup("B. cl.")),
         ("Va.", _make_margin_markup("Va.", context="SingleStringStaffGroup")),
@@ -40,7 +40,7 @@ margin_markups = abjad.OrderedDict(
 
 # metronome marks
 
-metronome_marks = abjad.OrderedDict(
+metronome_marks = dict(
     [
         ("incisions", abjad.MetronomeMark((1, 4), 58)),
         ("inscription", abjad.MetronomeMark((1, 4), 66)),
