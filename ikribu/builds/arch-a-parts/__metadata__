@@ -1,8 +1,8 @@
-abjad.OrderedDict(
+dict(
     [
         (
             "ARCH_A_PARTS_BCL",
-            abjad.OrderedDict(
+            dict(
                 [
                     (
                         "bol_measure_numbers",
