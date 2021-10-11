@@ -120,7 +120,7 @@ commands(
     baca.clef("treble"),
     baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=baca.selectors.ptails()),
-    baca.markup("pizz."),
+    baca.markup(r"\markup pizz.", literal=True),
     baca.markup(
         r"\baca-string-iii-markup",
         direction=abjad.Down,
