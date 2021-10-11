@@ -1552,7 +1552,7 @@ segment.01.Cello.Music.Voice = {
     ^ \baca-default-indicator-markup "(“Cello”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
-    ^ \markup { pizz. }
+    ^ \markup pizz.
     %! EXPLICIT_MARGIN_MARKUP_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vc.”]"
