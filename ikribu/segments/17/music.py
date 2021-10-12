@@ -181,10 +181,7 @@ commands(
         ("vc_rh", (1, 5)),
     ],
     baca.dls_staff_padding(9),
-    baca.markup(
-        r"\baca-half-clt-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-half-clt-markup"),
     baca.hairpin(
         "p > pp < p > ppp < pp > ppp <",
         bookend=True,

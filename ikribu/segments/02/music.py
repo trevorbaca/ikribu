@@ -81,10 +81,7 @@ commands(
         abjad.tweak((-3, 0)).extra_offset,
     ),
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-four-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
     baca.staff_position(0),
     baca.staff_lines(1),
     ikribu.box_adjustment(),

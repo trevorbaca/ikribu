@@ -137,7 +137,6 @@ commands(
     baca.markup(
         r"\baca-string-iii-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.pitch(
         "E4",
@@ -168,7 +167,6 @@ commands(
     baca.markup(
         r"\baca-string-ii-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.pitch("Eb4"),
     baca.stem_tremolo(

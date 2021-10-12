@@ -69,10 +69,7 @@ commands(
 commands(
     ("bcl", (1, 11)),
     baca.dynamic('"mf"'),
-    baca.markup(
-        r"\ikribu-graincircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )
@@ -84,10 +81,7 @@ commands(
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.selectors.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup(
-        r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
     baca.staff_positions([-1, 0, 1]),
     baca.text_script_padding(2.5),
 )
@@ -99,10 +93,7 @@ commands(
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.double_staccato(selector=baca.selectors.pheads()),
     baca.dynamic('"mf"'),
-    baca.markup(
-        r"\ikribu-col-legno-battuto-meccanico-explanation-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
 )
@@ -120,10 +111,7 @@ commands(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.dynamic('"mf"'),
-    baca.markup(
-        r"\ikribu-stonescratch-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonescratch-markup"),
     baca.staff_position(0),
     ikribu.box_adjustment(),
 )

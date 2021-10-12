@@ -104,10 +104,7 @@ commands(
         deactivate=True,
     ),
     baca.dynamic("p"),
-    baca.markup(
-        r"\ikribu-introduce-upper-partials-gradually-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-introduce-upper-partials-gradually-markup"),
     baca.pitch("Bb1"),
 )
 
@@ -123,10 +120,7 @@ commands(
         ("va_rh", (1, 10)),
         ("vc_rh", (1, 10)),
     ],
-    baca.markup(
-        r"\baca-half-clt-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-half-clt-markup"),
     baca.hairpin(
         "ff > p < f > pp < p > ppp <",
         bookend=True,

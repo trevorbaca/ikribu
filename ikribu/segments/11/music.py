@@ -114,58 +114,37 @@ commands(
 
 commands(
     ("bcl", (1, 2)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-four-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
 )
 
 commands(
     ("bcl", (3, 4)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-three-markup"),
 )
 
 commands(
     ("vn", (1, 4)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
 )
 
 commands(
     ("vn", (5, 6)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-markup"),
 )
 
 commands(
     ("va", (1, 2)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-three-markup"),
 )
 
 commands(
     ("va", (3, 4)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-four-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
 )
 
 commands(
     ("va", (5, 6)),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
 )
 
 commands(
@@ -175,10 +154,7 @@ commands(
         "p < mf",
         selector=baca.selectors.leaves((-2, None)),
     ),
-    baca.markup(
-        r"\baca-poco-vib-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-poco-vib-markup"),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),
     baca.pitch("D1"),
@@ -195,10 +171,7 @@ commands(
         abjad.tweak((0, 0)).X_extent,
         abjad.tweak((-2, 0)).extra_offset,
     ),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
 )
 
 commands(
