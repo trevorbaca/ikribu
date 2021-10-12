@@ -77,7 +77,6 @@ commands(
     baca.markup(
         r"\ikribu-strings-two-plus-three-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.pitch("<E4 F#4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. tast."),
@@ -89,7 +88,6 @@ commands(
     baca.markup(
         r"\ikribu-strings-one-plus-two-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.clef("treble"),
     baca.clef_extra_offset((-2.5, 0)),
@@ -112,10 +110,7 @@ commands(
 commands(
     ("vc", (6, 7)),
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.markup(
-        r"\ikribu-graincircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-two-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),

@@ -79,10 +79,7 @@ commands(
         bookend=True,
         pieces=ikribu.enchain_runs([3, 4]),
     ),
-    baca.markup(
-        r"\baca-half-clt-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-half-clt-markup"),
     baca.script_staff_padding(
         7,
         selector=baca.selectors.leaves(),

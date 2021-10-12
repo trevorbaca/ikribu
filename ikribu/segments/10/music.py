@@ -71,10 +71,7 @@ commands(
 commands(
     ("vc", (1, 8)),
     baca.dynamic('"mf"'),
-    baca.markup(
-        r"\ikribu-stonecircle-pi-four-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),

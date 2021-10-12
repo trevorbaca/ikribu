@@ -160,10 +160,7 @@ commands(
         ),
     ),
     baca.dls_staff_padding(8),
-    baca.markup(
-        r"\ikribu-sponges-on-bd-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-sponges-on-bd-markup"),
     baca.hairpin(
         "f > p <",
         bookend=True,
@@ -189,10 +186,7 @@ commands(
 commands(
     ("vc", (9, 16)),
     baca.dls_staff_padding(4),
-    baca.markup(
-        r"\ikribu-trem-flaut-tast-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.hairpin(
         "p < mp >",
         final_hairpin=False,

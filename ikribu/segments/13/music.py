@@ -58,10 +58,7 @@ commands(
     baca.clef("treble"),
     baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\ikribu-breathe-discreetly-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-breathe-discreetly-markup"),
     baca.pitch("C2"),
     baca.staff_lines(5),
 )
@@ -79,10 +76,7 @@ commands(
         selector=baca.selectors.pheads(~abjad.Pattern([0, 4], period=9)),
     ),
     baca.dls_staff_padding(8),
-    baca.markup(
-        r"\ikribu-sponges-on-bd-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-sponges-on-bd-markup"),
     baca.hairpin(
         "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
         bookend=-1,
@@ -130,10 +124,7 @@ commands(
         selector=baca.selectors.pheads(~abjad.Pattern([0, 5], period=11)),
     ),
     baca.dls_staff_padding(8),
-    baca.markup(
-        r"\ikribu-sponges-on-bd-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-sponges-on-bd-markup"),
     baca.hairpin(
         "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
         " f > mf < f > mf < ff > f < ff > f < fff",
@@ -168,42 +159,27 @@ commands(
 
 commands(
     ("vc", 5),
-    baca.markup(
-        r"\ikribu-graincircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
 )
 
 commands(
     ("vc", 9),
-    baca.markup(
-        r"\ikribu-graincircle-pi-four-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-four-markup"),
 )
 
 commands(
     ("vc", 13),
-    baca.markup(
-        r"\ikribu-graincircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
 )
 
 commands(
     ("vc", 17),
-    baca.markup(
-        r"\ikribu-graincircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-two-markup"),
 )
 
 commands(
     ("vc", 21),
-    baca.markup(
-        r"\ikribu-graincircle-pi-three-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
 )
 
 if __name__ == "__main__":

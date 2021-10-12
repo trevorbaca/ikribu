@@ -148,10 +148,7 @@ commands(
             abjad.tweak((0, 0)).X_extent,
             abjad.tweak((-3, 0)).extra_offset,
         ),
-        baca.markup(
-            r"\baca-col-legno-battuto-markup",
-            literal=True,
-        ),
+        baca.markup(r"\baca-col-legno-battuto-markup"),
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
@@ -170,10 +167,7 @@ commands(
             abjad.tweak((0, 0)).X_extent,
             abjad.tweak((-3, 0)).extra_offset,
         ),
-        baca.markup(
-            r"\baca-col-legno-battuto-markup",
-            literal=True,
-        ),
+        baca.markup(r"\baca-col-legno-battuto-markup"),
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
@@ -185,10 +179,7 @@ commands(
 
 commands(
     ("vc", (1, 16)),
-    baca.markup(
-        r"\ikribu-graincircle-pi-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-graincircle-pi-two-markup"),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
     ikribu.box_adjustment(),

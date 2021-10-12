@@ -122,18 +122,12 @@ commands(
     ("bcl", (2, 3)),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
-        baca.markup(
-            r"\ikribu-stonecircle-pi-two-markup",
-            literal=True,
-        ),
+        baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
         deactivate=True,
     ),
     baca.tag(
         abjad.Tag("-ARCH_A_PARTS_BCL"),
-        baca.markup(
-            r"\ikribu-stonecircle-pi-two-markup",
-            literal=True,
-        ),
+        baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
     ),
     ikribu.box_adjustment(),
 )
@@ -143,10 +137,7 @@ commands(
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\ikribu-grainfall-two-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-grainfall-two-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
@@ -176,10 +167,7 @@ commands(
         baca.hairpin("p > pp"),
         map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
     ),
-    baca.markup(
-        r"\ikribu-trem-flaut-tast-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
         selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
@@ -216,10 +204,7 @@ commands(
         baca.hairpin("p > pp"),
         map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
     ),
-    baca.markup(
-        r"\ikribu-trem-flaut-tast-markup",
-        literal=True,
-    ),
+    baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F4 E4 E4 F4",
         selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
@@ -233,14 +218,10 @@ commands(
 commands(
     ("vc", 1),
     baca.dynamic("sfz"),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.note_head_style_harmonic(),
