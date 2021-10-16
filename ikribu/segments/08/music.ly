@@ -4,8 +4,6 @@
 %! baca._make_lilypond_file()
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
 %! baca.path.extern()
 \include "music.ily"
@@ -17,10 +15,10 @@
 \paper { first-page-number = #8 }
 
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 \score
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 {
 
     %! baca._make_lilypond_file()
@@ -155,5 +153,5 @@
     >>
 
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 }
