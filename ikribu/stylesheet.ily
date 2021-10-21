@@ -12,6 +12,11 @@
             \fontsize #3
             \override #'(font-name . "Palatino")
             \concat {
+                \override #'(font-name . "Assurbanipal")
+                { 𒅅𒊑𒁍  }
+                \hspace #1
+                /
+                \hspace #0.5
                 Ikribu
                 \hspace #3
                 —

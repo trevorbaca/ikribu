@@ -9,5 +9,9 @@ Ikribu
 
 Ikribu (2015) for clarinet, violin, viola & cello.
 
-World premiere 2 April 2016 by Distractfold in Paine Hall on the campus of
-Harvard University.
+World premiere 2 April 2016 by Distractfold in Paine Hall on the campus of Harvard
+University.
+
+Cuneiform rendered in the Assurpanibal font created by Sylvie Vanséveren.
+
+Available at http://www.hethport.uni-wuerzburg.de/cuneifont/download/Assurbanipal.zip.
