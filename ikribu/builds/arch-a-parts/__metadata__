@@ -39,8 +39,5 @@ dict(
                 ]
             ),
         ),
-        ("catalog_number_suffix", "A"),
-        ("paper_size", "arch a"),
-        ("parts_directory", True),
     ]
 )

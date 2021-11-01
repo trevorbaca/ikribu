@@ -37,8 +37,5 @@ dict(
             250,
             254,
         ],
-        "catalog_number_suffix": "A",
-        "paper_size": "arch a",
-        "price": "\\$60 / \\euro 60",
     }
 )
