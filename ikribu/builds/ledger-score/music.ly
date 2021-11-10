@@ -1,7 +1,6 @@
 % Ikribu (2016) for bass clarinet, violin, viola & cello
 
 \version "2.19.82"
-\language "english"
 
 \include "stylesheet.ily"
 \include "_segments/01.ily"

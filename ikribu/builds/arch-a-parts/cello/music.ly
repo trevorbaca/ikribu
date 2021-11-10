@@ -1,7 +1,6 @@
 % Ikribu (2016) cello part
 
 \version "2.19.82"
-\language "english"
 
 \include "stylesheet.ily"
 
