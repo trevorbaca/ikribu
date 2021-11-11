@@ -33,24 +33,24 @@
         %! ikribu.make_empty_score()
         <<
 
-            %! abjad.ScoreTemplate._make_global_context()
+            %! baca.make_global_context()
             \context GlobalContext = "Global_Context"
-            %! abjad.ScoreTemplate._make_global_context()
+            %! baca.make_global_context()
             <<
 
-                %! abjad.ScoreTemplate._make_global_context()
+                %! baca.make_global_context()
                 \context GlobalRests = "Global_Rests"
-                %! abjad.ScoreTemplate._make_global_context()
+                %! baca.make_global_context()
                 %! baca.path.extern()
                 { \segment.04.Global.Rests }
 
-                %! abjad.ScoreTemplate._make_global_context()
+                %! baca.make_global_context()
                 \context GlobalSkips = "Global_Skips"
-                %! abjad.ScoreTemplate._make_global_context()
+                %! baca.make_global_context()
                 %! baca.path.extern()
                 { \segment.04.Global.Skips }
 
-            %! abjad.ScoreTemplate._make_global_context()
+            %! baca.make_global_context()
             >>
 
             %! ikribu.make_empty_score()
@@ -63,7 +63,7 @@
                 %! ikribu.make_empty_score()
                 <<
 
-                    %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! baca.attach_lilypond_tag()
                     \tag Bass_Clarinet
                     %! ikribu.make_empty_score()
                     \context Staff = "Bass_Clarinet_Music_Staff"
@@ -71,7 +71,7 @@
                     %! baca.path.extern()
                     { \segment.04.Bass.Clarinet.Music.Staff }
 
-                    %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! baca.attach_lilypond_tag()
                     \tag Violin
                     %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Violin_Staff_Group"
@@ -93,7 +93,7 @@
                     %! ikribu.make_empty_score()
                     >>
 
-                    %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! baca.attach_lilypond_tag()
                     \tag Viola
                     %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Viola_Staff_Group"
@@ -115,7 +115,7 @@
                     %! ikribu.make_empty_score()
                     >>
 
-                    %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! baca.attach_lilypond_tag()
                     \tag Cello
                     %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Cello_Staff_Group"
