@@ -1,6 +1,6 @@
 import baca
 
-from ikribu import library as ikribu
+from ikribu import library
 
 #########################################################################################
 ######################################### 10 [I] ########################################
@@ -21,16 +21,16 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-score = ikribu.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=ikribu.instruments,
-    margin_markups=ikribu.margin_markups,
-    metronome_marks=ikribu.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=ikribu.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -74,7 +74,7 @@ commands(
     baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
-    ikribu.box_adjustment(),
+    library.box_adjustment(),
 )
 
 if __name__ == "__main__":
@@ -89,7 +89,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        part_manifest=ikribu.part_manifest,
+        part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
     )

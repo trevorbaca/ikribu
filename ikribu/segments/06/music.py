@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from ikribu import library as ikribu
+from ikribu import library
 
 #########################################################################################
 ######################################### 06 [E] ########################################
@@ -27,22 +27,22 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    ikribu.time_signatures,
+    library.time_signatures,
     count=16,
     rotation=-5,
 )
 time_signatures = maker_.run()
 
-score = ikribu.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=ikribu.instruments,
-    margin_markups=ikribu.margin_markups,
-    metronome_marks=ikribu.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=ikribu.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -114,12 +114,12 @@ commands(
 
 commands(
     ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
-    ikribu.triplet_rhythm(),
+    library.triplet_rhythm(),
 )
 
 commands(
     ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
-    ikribu.triplet_rhythm(),
+    library.triplet_rhythm(),
 )
 
 commands(
@@ -164,7 +164,7 @@ commands(
     baca.hairpin(
         "f > p <",
         bookend=True,
-        pieces=ikribu.enchain_runs([4, 3], exclude=baca.const.HIDDEN),
+        pieces=library.enchain_runs([4, 3], exclude=baca.const.HIDDEN),
     ),
     baca.staff_lines(1),
     baca.staff_position(0),
@@ -175,7 +175,7 @@ commands(
         ),
     ),
     baca.tuplet_bracket_staff_padding(3),
-    ikribu.box_adjustment(),
+    library.box_adjustment(),
 )
 
 commands(
@@ -217,7 +217,7 @@ if __name__ == "__main__":
         ),
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
-        part_manifest=ikribu.part_manifest,
+        part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
     )
