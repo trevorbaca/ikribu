@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from ikribu import library as ikribu
+from ikribu import library
 
 #########################################################################################
 ######################################### 14 [M] ########################################
@@ -29,23 +29,23 @@ stage_markup = (
 
 fermata_measures = [5, 8, 13, 18, 21, 32]
 maker_ = baca.TimeSignatureMaker(
-    ikribu.time_signatures,
+    library.time_signatures,
     count=32,
     fermata_measures=fermata_measures,
     rotation=-13,
 )
 time_signatures = maker_.run()
 
-score = ikribu.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=ikribu.instruments,
-    margin_markups=ikribu.margin_markups,
-    metronome_marks=ikribu.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=ikribu.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -146,62 +146,62 @@ commands(
 
 commands(
     ("vn", (2, 4)),
-    ikribu.color_rhythm(3),
+    library.color_rhythm(3),
 )
 
 commands(
     ("vn", 7),
-    ikribu.color_rhythm(4),
+    library.color_rhythm(4),
 )
 
 commands(
     ("vn", (10, 12)),
-    ikribu.color_rhythm(5),
+    library.color_rhythm(5),
 )
 
 commands(
     ("vn", (15, 17)),
-    ikribu.color_rhythm(3),
+    library.color_rhythm(3),
 )
 
 commands(
     ("vn", 20),
-    ikribu.color_rhythm(4),
+    library.color_rhythm(4),
 )
 
 commands(
     ("vn", (23, 27)),
-    ikribu.color_rhythm(5),
+    library.color_rhythm(5),
 )
 
 commands(
     ("va", (2, 4)),
-    ikribu.color_rhythm(4),
+    library.color_rhythm(4),
 )
 
 commands(
     ("va", 7),
-    ikribu.color_rhythm(5),
+    library.color_rhythm(5),
 )
 
 commands(
     ("va", (10, 12)),
-    ikribu.color_rhythm(3),
+    library.color_rhythm(3),
 )
 
 commands(
     ("va", (15, 17)),
-    ikribu.color_rhythm(4),
+    library.color_rhythm(4),
 )
 
 commands(
     ("va", 20),
-    ikribu.color_rhythm(5),
+    library.color_rhythm(5),
 )
 
 commands(
     ("va", (23, 27)),
-    ikribu.color_rhythm(3),
+    library.color_rhythm(3),
 )
 
 commands(
@@ -254,7 +254,7 @@ commands(
     ],
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(3),
-    ikribu.box_adjustment(),
+    library.box_adjustment(),
 )
 
 commands(
@@ -450,7 +450,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        part_manifest=ikribu.part_manifest,
+        part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
     )

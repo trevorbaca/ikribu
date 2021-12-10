@@ -1,7 +1,7 @@
 import baca
 from abjadext import rmakers
 
-from ikribu import library as ikribu
+from ikribu import library
 
 #########################################################################################
 ######################################### 09 [H] ########################################
@@ -14,23 +14,23 @@ stage_markup = (
 
 fermata_measures = [9]
 maker_ = baca.TimeSignatureMaker(
-    ikribu.time_signatures,
+    library.time_signatures,
     count=9,
     fermata_measures=fermata_measures,
     rotation=-8,
 )
 time_signatures = maker_.run()
 
-score = ikribu.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=ikribu.instruments,
-    margin_markups=ikribu.margin_markups,
-    metronome_marks=ikribu.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=ikribu.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -56,8 +56,8 @@ commands(
 
 commands(
     ("vn_rh", (1, 8)),
-    ikribu.bcps(rotation=0),
-    ikribu.bow_rhythm(
+    library.bcps(rotation=0),
+    library.bow_rhythm(
         rmakers.force_rest(
             baca.selectors.lts(([0, 8], 12)),
         ),
@@ -68,14 +68,14 @@ commands(
 commands(
     ("vn", (1, 8)),
     baca.glissando(),
-    ikribu.glissando_pitches(octave=5, rotation=0),
-    ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
+    library.glissando_pitches(octave=5, rotation=0),
+    library.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
 commands(
     ("va_rh", (1, 8)),
-    ikribu.bcps(rotation=-1),
-    ikribu.bow_rhythm(
+    library.bcps(rotation=-1),
+    library.bow_rhythm(
         rmakers.force_rest(
             baca.selectors.lts(([4, 14], 16)),
         ),
@@ -86,8 +86,8 @@ commands(
 commands(
     ("va", (1, 8)),
     baca.glissando(),
-    ikribu.glissando_pitches(octave=5, rotation=-10),
-    ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
+    library.glissando_pitches(octave=5, rotation=-10),
+    library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
 )
 
 commands(
@@ -100,7 +100,7 @@ commands(
     baca.hairpin(
         "ff > p < f > pp < p > ppp <",
         bookend=True,
-        pieces=ikribu.enchain_runs([3, 4]),
+        pieces=library.enchain_runs([3, 4]),
     ),
     baca.script_staff_padding(
         7,
@@ -123,7 +123,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        part_manifest=ikribu.part_manifest,
+        part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
     )

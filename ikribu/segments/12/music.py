@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from ikribu import library as ikribu
+from ikribu import library
 
 #########################################################################################
 ######################################### 12 [K] ########################################
@@ -20,23 +20,23 @@ stage_markup = (
 
 fermata_measures = [2, 4, 6, 8, 10, 12, 14, 16]
 maker_ = baca.TimeSignatureMaker(
-    ikribu.time_signatures,
+    library.time_signatures,
     count=16,
     fermata_measures=fermata_measures,
     rotation=-11,
 )
 time_signatures = maker_.run()
 
-score = ikribu.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=ikribu.instruments,
-    margin_markups=ikribu.margin_markups,
-    metronome_marks=ikribu.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=ikribu.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -88,12 +88,12 @@ commands(
 
 commands(
     ("vn", [3, 7, 11, 15]),
-    ikribu.clb_rhythm(extra_counts=[4]),
+    library.clb_rhythm(extra_counts=[4]),
 )
 
 commands(
     ("va", [3, 7, 11, 15]),
-    ikribu.clb_rhythm(extra_counts=[2]),
+    library.clb_rhythm(extra_counts=[2]),
 )
 
 commands(
@@ -155,7 +155,7 @@ commands(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
-    ikribu.clb_staff_positions(),
+    library.clb_staff_positions(),
 )
 
 commands(
@@ -174,7 +174,7 @@ commands(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
-    ikribu.clb_staff_positions(),
+    library.clb_staff_positions(),
 )
 
 commands(
@@ -182,7 +182,7 @@ commands(
     baca.markup(r"\ikribu-graincircle-pi-two-markup"),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
-    ikribu.box_adjustment(),
+    library.box_adjustment(),
 )
 
 commands(
@@ -229,7 +229,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        part_manifest=ikribu.part_manifest,
+        part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
     )
