@@ -55,39 +55,6 @@
     ragged-right = ##t
 }
 
-\header {
-    composer = \markup {
-        \override #'(font-name . "Palatino")
-        \fontsize #5
-        \line { Trevor Bača (*1975) \hspace #39 }
-    }
-    tagline = \markup { "" }
-    title = \markup \column {
-        \center-align {
-            \override #'(font-name . "Palatino")
-            \fontsize #16
-            \line {
-                I
-                \hspace #0
-                K
-                \hspace #-2
-                R
-                \hspace #-1
-                I
-                \hspace #0
-                B
-                \hspace #-3
-                U
-            }
-            " "
-            " "
-            \override #'(font-name . "Palatino Italic")
-            \fontsize #3
-            \line { for \hspace #1 Distractfold }
-        }
-    }
-}
-
 %%% CONTEXT
 
 \layout {
