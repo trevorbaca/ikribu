@@ -1057,11 +1057,6 @@ segment.06.Global.Skips = {
     %! baca._style_phantom_measures(1)
     %! PHANTOM
     \bacaStopTextSpanSNM
-    %! STAGE_NUMBER
-    %! baca._label_stage_numbers()
-    %! baca._style_phantom_measures(1)
-    %! PHANTOM
-    \bacaStopTextSpanSNM
     %! EOS_STOP_MM_SPANNER
     %! baca._attach_metronome_marks(4)
     %! baca._style_phantom_measures(1)
