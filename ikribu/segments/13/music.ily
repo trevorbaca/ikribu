@@ -1667,12 +1667,12 @@ segment.13.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \ppp
-    %! REAPPLIED_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "[“B. cl.”]"
     %! REAPPLIED_INSTRUMENT_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+    %! REAPPLIED_MARGIN_MARKUP_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "[“B. cl.”]"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \ikribu-breathe-discreetly-markup
@@ -2755,12 +2755,12 @@ segment.13.Violin.Music.Voice = {
         %! baca.staccato()
         %! baca.IndicatorCommand._call()
         - \staccato
-        %! REAPPLIED_MARGIN_MARKUP_ALERT
-        %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "[“Vn.”]"
         %! REAPPLIED_INSTRUMENT_ALERT
         %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“Violin”)"
+        %! REAPPLIED_MARGIN_MARKUP_ALERT
+        %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "[“Vn.”]"
         %! ikribu.clb_rhythm()
         [
         %! baca.attach_color_literal(2)
@@ -5789,12 +5789,12 @@ segment.13.Viola.Music.Voice = {
         %! baca.staccato()
         %! baca.IndicatorCommand._call()
         - \staccato
-        %! REAPPLIED_MARGIN_MARKUP_ALERT
-        %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "[“Va.”]"
         %! REAPPLIED_INSTRUMENT_ALERT
         %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“Viola”)"
+        %! REAPPLIED_MARGIN_MARKUP_ALERT
+        %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "[“Va.”]"
         %! ikribu.clb_rhythm()
         [
         %! baca.attach_color_literal(2)
@@ -8473,12 +8473,12 @@ segment.13.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! REAPPLIED_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "[“Vc.”]"
     %! REAPPLIED_INSTRUMENT_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Cello”)"
+    %! REAPPLIED_MARGIN_MARKUP_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "[“Vc.”]"
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.hairpin()

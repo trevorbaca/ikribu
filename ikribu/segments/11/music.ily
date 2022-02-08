@@ -732,12 +732,12 @@ segment.11.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \baca-effort-mf
-    %! REAPPLIED_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "[“B. cl.”]"
     %! REAPPLIED_INSTRUMENT_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“BassClarinet”)"
+    %! REAPPLIED_MARGIN_MARKUP_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "[“B. cl.”]"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \ikribu-stonecircle-pi-four-markup
@@ -1902,12 +1902,12 @@ segment.11.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \baca-effort-mf
-    %! REAPPLIED_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "[“Vn.”]"
     %! REAPPLIED_INSTRUMENT_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Violin”)"
+    %! REAPPLIED_MARGIN_MARKUP_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "[“Vn.”]"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \ikribu-stonecircle-pi-two-markup
@@ -3044,12 +3044,12 @@ segment.11.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \baca-effort-mf
-    %! REAPPLIED_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "[“Va.”]"
     %! REAPPLIED_INSTRUMENT_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Viola”)"
+    %! REAPPLIED_MARGIN_MARKUP_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "[“Va.”]"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \ikribu-stonecircle-pi-three-markup
@@ -4230,12 +4230,12 @@ segment.11.Cello.Music.Voice = {
             %! baca._set_status_tag()
             %! REAPPLIED_DYNAMIC
             \baca-effort-mf
-            %! REAPPLIED_MARGIN_MARKUP_ALERT
-            %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "[“Vc.”]"
             %! REAPPLIED_INSTRUMENT_ALERT
             %! baca._attach_latent_indicator_alert()
             ^ \baca-reapplied-indicator-markup "(“Cello”)"
+            %! REAPPLIED_MARGIN_MARKUP_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "[“Vc.”]"
             %! baca._label_duration_multipliers()
             %! DURATION_MULTIPLIER
             %! HIDDEN
