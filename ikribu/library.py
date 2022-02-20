@@ -53,7 +53,7 @@ metronome_marks = dict(
 # time signatures
 
 numerators = baca.Sequence([[7, 3, 2], [8, 7], [4, 4, 3]])
-numerator_groups = numerators.helianthate(-1, 1)
+numerator_groups = baca.sequence.helianthate(numerators, -1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
 numerators = baca.Sequence(numerator_groups).flatten()
@@ -155,7 +155,8 @@ def clb_staff_positions(*, rotation=0):
     Makes clb staff positions.
     """
     positions = baca.Sequence([[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]])
-    positions = positions.helianthate(-1, -1).rotate(rotation).flatten()
+    positions = baca.sequence.helianthate(positions, -1, -1)
+    positions = abjad.Sequence(positions).rotate(rotation).flatten()
     return baca.staff_positions(
         positions,
         allow_repeats=True,
@@ -220,7 +221,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     Makes inscription rhythm.
     """
     counts = baca.Sequence([[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]])
-    counts = counts.helianthate(-1, -1)
+    counts = baca.sequence.helianthate(counts, -1, -1)
     counts = counts.flatten()
     extra_counts = [2, 4, 0]
 
