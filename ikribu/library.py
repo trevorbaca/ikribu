@@ -58,7 +58,7 @@ assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
 numerators = abjad.sequence.flatten(numerator_groups)
 time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
-time_signature_groups = abjad.Sequence(time_signatures).partition_by_counts(lengths)
+time_signature_groups = abjad.sequence.partition_by_counts(time_signatures, lengths)
 time_signatures = time_signature_groups
 
 # functions
@@ -96,14 +96,12 @@ def bcps(rotation=0):
     """
     Makes bow contact points.
     """
-    bcps = abjad.Sequence(
-        [
-            [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
-            [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
-            [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7), (7, 7)],
-            [(0, 4), (1, 4), (2, 4), (1, 4)],
-        ]
-    )
+    bcps = [
+        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
+        [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
+        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7), (7, 7)],
+        [(0, 4), (1, 4), (2, 4), (1, 4)],
+    ]
     bcps = abjad.sequence.rotate(bcps, n=rotation)
     bcps = abjad.sequence.flatten(bcps, depth=1)
     return baca.bcps(bcps)
@@ -113,7 +111,7 @@ def bow_rhythm(*commands, rotation=0):
     """
     Makes bow rhythm.
     """
-    extra_counts = abjad.Sequence([-1, 0, 1, 2])
+    extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
 
     return baca.rhythm(
@@ -192,7 +190,7 @@ def glissando_pitches(octave=4, rotation=0):
     pitches = left[:] + right[1:-1]
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
-    pitches_ = abjad.Sequence(pitches)
+    pitches_ = pitches[:]
     pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
     return baca.pitches(pitches_, allow_repeats=True)
 
@@ -201,9 +199,9 @@ def glissando_rhythm(rotation_1=0, rotation_2=0):
     """
     Makes glissando rhythm.
     """
-    counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
+    counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
-    extra_counts = abjad.Sequence([2, 4, 0])
+    extra_counts = [2, 4, 0]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
 
     return baca.rhythm(
