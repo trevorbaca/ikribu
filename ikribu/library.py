@@ -56,7 +56,7 @@ numerators = [[7, 3, 2], [8, 7], [4, 4, 3]]
 numerator_groups = baca.sequence.helianthate(numerators, -1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
-numerators = abjad.Sequence(numerator_groups).flatten()
+numerators = abjad.sequence.flatten(numerator_groups)
 time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
 time_signature_groups = abjad.Sequence(time_signatures).partition_by_counts(lengths)
 time_signatures = time_signature_groups
@@ -77,10 +77,10 @@ def bcl_color_rhythm(rotation_1=0, rotation_2=0):
     """
     Makes bass clarinet color rhythm.
     """
-    counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
-    counts = counts.rotate(n=rotation_1)
-    extra_counts = abjad.Sequence([2, 4, 0])
-    extra_counts = extra_counts.rotate(n=rotation_2)
+    counts = [2, 3, 2, 3, 14, 16, 14, 16]
+    counts = abjad.sequence.rotate(counts, n=rotation_1)
+    extra_counts = [2, 4, 0]
+    extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
 
     return baca.rhythm(
         rmakers.talea(counts, 8, extra_counts=extra_counts),
@@ -104,8 +104,8 @@ def bcps(rotation=0):
             [(0, 4), (1, 4), (2, 4), (1, 4)],
         ]
     )
-    bcps = bcps.rotate(n=rotation)
-    bcps = bcps.flatten(depth=1)
+    bcps = abjad.sequence.rotate(bcps, n=rotation)
+    bcps = abjad.sequence.flatten(bcps, depth=1)
     return baca.bcps(bcps)
 
 
@@ -114,7 +114,7 @@ def bow_rhythm(*commands, rotation=0):
     Makes bow rhythm.
     """
     extra_counts = abjad.Sequence([-1, 0, 1, 2])
-    extra_counts = extra_counts.rotate(n=rotation)
+    extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
 
     return baca.rhythm(
         rmakers.even_division([4], extra_counts=extra_counts),
@@ -156,7 +156,8 @@ def clb_staff_positions(*, rotation=0):
     """
     positions = [[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]]
     positions = baca.sequence.helianthate(positions, -1, -1)
-    positions = abjad.Sequence(positions).rotate(rotation).flatten()
+    positions = abjad.sequence.rotate(positions, rotation)
+    positions = abjad.sequence.flatten(positions)
     return baca.staff_positions(
         positions,
         allow_repeats=True,
@@ -192,7 +193,7 @@ def glissando_pitches(octave=4, rotation=0):
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
     pitches_ = abjad.Sequence(pitches)
-    pitches_ = pitches_.rotate(n=rotation)
+    pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
     return baca.pitches(pitches_, allow_repeats=True)
 
 
@@ -201,9 +202,9 @@ def glissando_rhythm(rotation_1=0, rotation_2=0):
     Makes glissando rhythm.
     """
     counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
-    counts = counts.rotate(n=rotation_1)
+    counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = abjad.Sequence([2, 4, 0])
-    extra_counts = extra_counts.rotate(n=rotation_2)
+    extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
 
     return baca.rhythm(
         rmakers.talea(counts, 16, extra_counts=extra_counts),
@@ -222,7 +223,7 @@ def inscription_rhythm() -> baca.RhythmCommand:
     """
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
-    counts = abjad.Sequence(counts).flatten()
+    counts = abjad.sequence.flatten(counts)
     extra_counts = [2, 4, 0]
 
     return baca.rhythm(
