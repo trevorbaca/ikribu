@@ -39,33 +39,33 @@ IKRIBU
 
 [C]
 (... tempo of night)
-(accelerando governs segment)
+(accelerando governs section)
 (repetition cell: x4)
     > bcl circles slate 3/2 π and then freezes
     + ppppp vn, va tremolo overlaps halfway
-... ppppp vc tremolo tasto at C1 during segment
+... ppppp vc tremolo tasto at C1 during section
 (vc attaca parametric window)
 
 
 [D]
 (subito tempo of parametric window)
 > unaccompanied parametric vc window
-  (vn, va, bcl tacet segment)
+  (vn, va, bcl tacet section)
   (attaca)
 
 
 [E]
 (subito tempo of incisions ...)
-(accelerando governs segment)
+(accelerando governs section)
 (repetition cell: x4)
     > vn, va game of doubles
     + ppppp vc tremolo tasto enters at start of third repetition ...
-bcl C3 arpeggiation during segment ...
+bcl C3 arpeggiation during section ...
 
 
 [F]
 (... tempo of incisions ritards to tempo of night ...)
-(ritardando governs segment)
+(ritardando governs section)
 ... bcl C3 arpeggiation transitions downward to vigil ...
 ... ppppp vc tremolo tasto continues and then ends
     [vn, va retake instruments]
@@ -73,7 +73,7 @@ bcl C3 arpeggiation during segment ...
 
 [G]
 (... tempo of night)
-(vn, va, vc tacet segment)
+(vn, va, vc tacet section)
 > bcl vigil and then breath
 > bcl vigil louder and then breath
 > bcl vigil even louder and then breath
@@ -85,13 +85,13 @@ bcl C3 arpeggiation during segment ...
 (subito tempo of parametric window)
 > vn, va parameterized window
   + bcl vigil subito pianissimo again
-  (vc tacet during segment)
+  (vc tacet during section)
 > fermata
 
 
 [I]
 (tempo of night ...)
-(bcl, vn, va tacet during segment)
+(bcl, vn, va tacet during section)
 (repetition cell x4):
     > va circles slate 1π
     > long fermata
@@ -113,7 +113,7 @@ bcl C3 arpeggiation during segment ...
 
 [K]
 (tempo of incisions ...)
-(bcl tacet during segment)
+(bcl tacet during section)
 (repetition cell x4):
     > vc circles hand in basket of grain 1π
     > fermata
@@ -158,7 +158,7 @@ bcl C3 arpeggiation during segment ...
 
 [M]
 (... tempo of incisions)
-(staged accelerandi govern segment)
+(staged accelerandi govern section)
 (written-out process of increasing tension: x6):
     > vc harmonic pizzicato + vn grainfall
         + bcl, vn, va read what is exposed
@@ -189,7 +189,7 @@ bcl C3 arpeggiation during segment ...
 [N]
 (subito tempo of parameterized window)
 > vn, va, vc parameterized window
-  + bcl falls to Bb1 at start of segment and begins song of harmonics
+  + bcl falls to Bb1 at start of section and begins song of harmonics
   (attaca)
 
 
