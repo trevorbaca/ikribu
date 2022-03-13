@@ -157,7 +157,7 @@ commands(
     ("bcl", (19, 20)),
     baca.hairpin(
         "p >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-3:],
+        selector=lambda _: baca.rleaves(_)[-3:],
     ),
     baca.pitch("Bb1"),
 )
@@ -175,7 +175,7 @@ commands(
     baca.dynamic("ppppp"),
     baca.hairpin(
         "ppppp >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-3:],
+        selector=lambda _: baca.rleaves(_)[-3:],
     ),
     baca.markup(
         r"\ikribu-strings-two-plus-three-markup",
@@ -192,7 +192,7 @@ commands(
     baca.dynamic("ppppp"),
     baca.hairpin(
         "ppppp >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-3:],
+        selector=lambda _: baca.rleaves(_)[-3:],
     ),
     baca.markup(
         r"\ikribu-strings-two-plus-three-markup",

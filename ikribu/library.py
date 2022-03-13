@@ -4,8 +4,6 @@ import abjad
 import baca
 from abjadext import rmakers
 
-# instruments & margin markups
-
 instruments = dict(
     [
         ("BassClarinet", abjad.BassClarinet()),
@@ -38,8 +36,6 @@ margin_markups = dict(
     ]
 )
 
-# metronome marks
-
 metronome_marks = dict(
     [
         ("incisions", abjad.MetronomeMark((1, 4), 58)),
@@ -50,8 +46,6 @@ metronome_marks = dict(
 )
 
 
-# time signatures
-
 numerators = [[7, 3, 2], [8, 7], [4, 4, 3]]
 numerator_groups = baca.sequence.helianthate(numerators, -1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))
@@ -61,22 +55,18 @@ time_signatures = [abjad.TimeSignature((_, 4)) for _ in numerators]
 time_signature_groups = abjad.sequence.partition_by_counts(time_signatures, lengths)
 time_signatures = time_signature_groups
 
-# functions
-
 
 def enchain_runs(counts, exclude=None):
     def selector(argument):
-        selection = baca.Selection(argument).runs(exclude=exclude)
-        selection = [baca.Selection(_).enchain(counts) for _ in selection]
-        return baca.Selection(selection).flatten()
+        selection = abjad.select.runs(argument, exclude=exclude)
+        selection = [baca.enchain(_, counts) for _ in selection]
+        selection = abjad.sequence.flatten(selection)
+        return selection
 
     return selector
 
 
 def bcl_color_rhythm(rotation_1=0, rotation_2=0):
-    """
-    Makes bass clarinet color rhythm.
-    """
     counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
@@ -93,9 +83,6 @@ def bcl_color_rhythm(rotation_1=0, rotation_2=0):
 
 
 def bcps(rotation=0):
-    """
-    Makes bow contact points.
-    """
     bcps = [
         [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
         [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
@@ -108,9 +95,6 @@ def bcps(rotation=0):
 
 
 def bow_rhythm(*commands, rotation=0):
-    """
-    Makes bow rhythm.
-    """
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
 
@@ -125,9 +109,6 @@ def bow_rhythm(*commands, rotation=0):
 
 
 def box_adjustment() -> baca.Suite:
-    """
-    Makes suite of boxed text script adjustment commands.
-    """
     return baca.suite(
         baca.text_script_padding(2.5, allow_mmrests=True),
         baca.text_script_parent_alignment_x(0, allow_mmrests=True),
@@ -135,9 +116,6 @@ def box_adjustment() -> baca.Suite:
 
 
 def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
-    """
-    Makes clb rhythm.
-    """
     return baca.rhythm(
         rmakers.even_division([8], extra_counts=extra_counts),
         rmakers.beam(),
@@ -149,9 +127,6 @@ def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
 
 
 def clb_staff_positions(*, rotation=0):
-    """
-    Makes clb staff positions.
-    """
     positions = [[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]]
     positions = baca.sequence.helianthate(positions, -1, -1)
     positions = abjad.sequence.rotate(positions, rotation)
@@ -164,9 +139,6 @@ def clb_staff_positions(*, rotation=0):
 
 
 def color_rhythm(n: int) -> baca.RhythmCommand:
-    """
-    Makes color rhythm.
-    """
     return baca.rhythm(
         rmakers.tuplet([tuple(n * [1])]),
         rmakers.force_fraction(),
@@ -180,9 +152,6 @@ def color_rhythm(n: int) -> baca.RhythmCommand:
 
 
 def glissando_pitches(octave=4, rotation=0):
-    """
-    Makes glissando pitches.
-    """
     segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
     inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
     left = segment[:] + inversion[:]
@@ -196,9 +165,6 @@ def glissando_pitches(octave=4, rotation=0):
 
 
 def glissando_rhythm(rotation_1=0, rotation_2=0):
-    """
-    Makes glissando rhythm.
-    """
     counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
@@ -216,9 +182,6 @@ def glissando_rhythm(rotation_1=0, rotation_2=0):
 
 
 def inscription_rhythm() -> baca.RhythmCommand:
-    """
-    Makes inscription rhythm.
-    """
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
@@ -239,9 +202,6 @@ def margin_markup(
     context="Staff",
     selector=baca.selectors.leaf(0),
 ):
-    """
-    Makes tagged margin markup indicator command.
-    """
     margin_markup = margin_markups[key]
     command = baca.margin_markup(
         margin_markup,
@@ -253,9 +213,6 @@ def margin_markup(
 
 
 def triplet_rhythm() -> baca.RhythmCommand:
-    """
-    Makes triplet rhythm.
-    """
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1)]),
         rmakers.beam(),
@@ -270,9 +227,6 @@ def triplet_rhythm() -> baca.RhythmCommand:
 
 
 def vigil_rhythm() -> baca.RhythmCommand:
-    """
-    Makes vigil rhythm.
-    """
     return baca.rhythm(
         rmakers.talea([16, -1], 4),
         rmakers.beam(),
@@ -303,7 +257,6 @@ voice_abbreviations = {
 def make_empty_score():
     tag = baca.site(inspect.currentframe())
     global_context = baca.score.make_global_context()
-
     # BASS CLARINET
     bass_clarinet_music_voice = abjad.Voice(name="Bass_Clarinet_Music_Voice", tag=tag)
     bass_clarinet_music_staff = abjad.Staff(
@@ -318,7 +271,6 @@ def make_empty_score():
     )
     abjad.annotate(bass_clarinet_music_staff, "default_clef", abjad.Clef("treble"))
     baca.score.attach_lilypond_tag("Bass_Clarinet", bass_clarinet_music_staff)
-
     # VIOLIN
     violin_rh_music_voice = abjad.Voice(name="Violin_RH_Music_Voice", tag=tag)
     violin_rh_music_staff = abjad.Staff(
@@ -346,7 +298,6 @@ def make_empty_score():
         instruments["Violin"],
     )
     baca.score.attach_lilypond_tag("Violin", violin_staff_group)
-
     # VIOLA
     viola_rh_music_voice = abjad.Voice(name="Viola_RH_Music_Voice", tag=tag)
     viola_rh_music_staff = abjad.Staff(
@@ -374,7 +325,6 @@ def make_empty_score():
         instruments["Viola"],
     )
     baca.score.attach_lilypond_tag("Viola", viola_staff_group)
-
     # CELLO
     cello_rh_music_voice = abjad.Voice(name="Cello_RH_Music_Voice", tag=tag)
     cello_rh_music_staff = abjad.Staff(
@@ -402,7 +352,6 @@ def make_empty_score():
     )
     abjad.annotate(cello_staff_group, "default_clef", abjad.Clef("bass"))
     baca.score.attach_lilypond_tag("Cello", cello_staff_group)
-
     # ENSEMBLE STAFF GROUP
     ensemble_staff_group = abjad.StaffGroup(
         [
@@ -415,7 +364,6 @@ def make_empty_score():
         name="Ensemble_Staff_Group",
         tag=tag,
     )
-
     # MUSIC CONTEXT
     music_context = abjad.Context(
         [ensemble_staff_group],
@@ -423,7 +371,6 @@ def make_empty_score():
         name="Music_Context",
         tag=tag,
     )
-
     # SCORE
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
     baca.score.assert_lilypond_identifiers(score)

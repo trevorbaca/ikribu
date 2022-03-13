@@ -65,7 +65,7 @@ commands(
     baca.dls_staff_padding(4),
     baca.hairpin(
         "sfpp < p >o niente",
-        pieces=lambda _: baca.Selection(_).rleaves().omgroups([1, 1]),
+        pieces=lambda _: baca.omgroups(baca.rleaves(_), [1, 1]),
     ),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.text_spanner_staff_padding(3.5),

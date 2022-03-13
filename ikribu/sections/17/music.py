@@ -95,7 +95,7 @@ commands(
     ),
     baca.hairpin(
         "mf >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[4:],
+        selector=lambda _: baca.rleaves(_)[4:],
     ),
 )
 
