@@ -128,7 +128,7 @@ commands(
     ),
     baca.hairpin(
         "f >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-2:],
+        selector=lambda _: baca.rleaves(_)[-2:],
     ),
 )
 
@@ -156,7 +156,7 @@ commands(
         ),
         baca.hairpin(
             "p >o niente",
-            selector=lambda _: baca.Selection(_).rleaves()[-2:],
+            selector=lambda _: baca.rleaves(_)[-2:],
         ),
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
@@ -183,7 +183,7 @@ commands(
         ),
         baca.hairpin(
             "mf >o niente",
-            selector=lambda _: baca.Selection(_).rleaves()[-2:],
+            selector=lambda _: baca.rleaves(_)[-2:],
         ),
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),

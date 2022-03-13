@@ -230,7 +230,7 @@ commands(
     ),
     baca.hairpin(
         "fff >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-2:],
+        selector=lambda _: baca.rleaves(_)[-2:],
     ),
 )
 

@@ -60,7 +60,7 @@ commands(
     ),
     baca.hairpin(
         "f >o niente",
-        selector=lambda _: baca.Selection(_).rleaves()[-4:],
+        selector=lambda _: baca.rleaves(_)[-4:],
     ),
     baca.make_repeat_tied_notes(),
     baca.pitch("D2"),
