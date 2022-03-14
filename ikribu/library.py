@@ -58,10 +58,10 @@ time_signatures = time_signature_groups
 
 def enchain_runs(counts, exclude=None):
     def selector(argument):
-        selection = abjad.select.runs(argument, exclude=exclude)
-        selection = [baca.enchain(_, counts) for _ in selection]
-        selection = abjad.sequence.flatten(selection)
-        return selection
+        result = abjad.select.runs(argument, exclude=exclude)
+        result = [baca.enchain(_, counts) for _ in result]
+        result = abjad.sequence.flatten(result)
+        return result
 
     return selector
 
