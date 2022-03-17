@@ -115,7 +115,7 @@ commands(
     ),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitches("D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3"),

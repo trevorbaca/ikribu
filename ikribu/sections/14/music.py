@@ -362,7 +362,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
@@ -376,7 +376,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("G5"),
@@ -390,7 +390,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
@@ -404,7 +404,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("G5"),
@@ -418,7 +418,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("A5"),
@@ -432,7 +432,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("C+6"),

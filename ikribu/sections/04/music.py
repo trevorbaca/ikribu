@@ -221,7 +221,7 @@ commands(
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.laissez_vibrer(selector=baca.selectors.ptails()),
     baca.note_head_style_harmonic(),
