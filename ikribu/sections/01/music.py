@@ -120,7 +120,7 @@ commands(
     baca.markup(r"\markup pizz."),
     baca.markup(
         r"\baca-string-iii-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
