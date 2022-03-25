@@ -111,8 +111,8 @@ commands(
     ("bcl", (2, 17)),
     baca.dynamic(
         '"mf"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-3, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
     baca.staff_lines(1),
     baca.staff_position(0),
