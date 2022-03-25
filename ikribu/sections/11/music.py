@@ -168,8 +168,8 @@ commands(
     ],
     baca.dynamic(
         '"f"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-2, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
     ),
     baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
 )

@@ -110,8 +110,8 @@ commands(
     ("bcl", 5),
     baca.dynamic(
         '"mf"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-3, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
 )
 
@@ -119,8 +119,8 @@ commands(
     ("bcl", 9),
     baca.dynamic(
         '"mp"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-3, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
 )
 
@@ -128,8 +128,8 @@ commands(
     ("bcl", 13),
     baca.dynamic(
         '"p"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-2, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
     ),
 )
 
@@ -145,8 +145,8 @@ commands(
     baca.new(
         baca.dynamic(
             '"mp"',
-            abjad.tweak((0, 0)).X_extent,
-            abjad.tweak((-3, 0)).extra_offset,
+            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
         baca.markup(r"\baca-col-legno-battuto-markup"),
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
@@ -164,8 +164,8 @@ commands(
     baca.new(
         baca.dynamic(
             '"mp"',
-            abjad.tweak((0, 0)).X_extent,
-            abjad.tweak((-3, 0)).extra_offset,
+            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
         baca.markup(r"\baca-col-legno-battuto-markup"),
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
@@ -194,8 +194,8 @@ commands(
     ("vc", 5),
     baca.dynamic(
         '"mp"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-3, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
 )
 
@@ -203,8 +203,8 @@ commands(
     ("vc", 9),
     baca.dynamic(
         '"mf"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-3, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
 )
 
@@ -212,8 +212,8 @@ commands(
     ("vc", 13),
     baca.dynamic(
         '"f"',
-        abjad.tweak((0, 0)).X_extent,
-        abjad.tweak((-2, 0)).extra_offset,
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
     ),
 )
 
