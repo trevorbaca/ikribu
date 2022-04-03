@@ -7862,10 +7862,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 2]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -7878,6 +7874,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_177
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -8132,10 +8132,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 7]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -8148,6 +8144,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_182
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -8182,13 +8182,13 @@ segment.14.Cello.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-xp-markup
+    %! baca.attach_color_literal(2)
+    %! EXPLICIT_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
-    %! baca.attach_color_literal(2)
-    %! EXPLICIT_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     %! baca._make_multimeasure_rest_container(7)
     <<
@@ -8325,10 +8325,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 10]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -8341,6 +8337,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_185
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -8595,10 +8595,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 15]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -8611,6 +8607,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_190
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -8865,10 +8865,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 20]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -8881,6 +8877,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_195
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -8915,13 +8915,13 @@ segment.14.Cello.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-xp-markup
+    %! baca.attach_color_literal(2)
+    %! EXPLICIT_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
-    %! baca.attach_color_literal(2)
-    %! EXPLICIT_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     %! baca._make_multimeasure_rest_container(7)
     <<
@@ -9058,10 +9058,6 @@ segment.14.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 23]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -9074,6 +9070,10 @@ segment.14.Cello.Music.Voice = {
     %! MEASURE_198
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
