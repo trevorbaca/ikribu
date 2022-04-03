@@ -4125,13 +4125,13 @@ segment.16.Cello.Music.Voice = {
     %! baca.ottava_bracket_staff_padding()
     %! baca.OverrideCommand._call(1)
     \override Staff.OttavaBracket.staff-padding = 10
+    %! baca.text_spanner_staff_padding()
+    %! baca.OverrideCommand._call(1)
+    \override TextSpanner.staff-padding = 2.5
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(2)
     %! SPANNER_START
     \ottava -1
-    %! baca.text_spanner_staff_padding()
-    %! baca.OverrideCommand._call(1)
-    \override TextSpanner.staff-padding = 2.5
     %! baca.make_repeat_tied_notes()
     bf,,,!2
     %! EXPLICIT_DYNAMIC_COLOR
@@ -4848,13 +4848,13 @@ segment.16.Cello.Music.Voice = {
     %! baca.ottava_bracket_staff_padding()
     %! baca.OverrideCommand._call(2)
     \revert Staff.OttavaBracket.staff-padding
+    %! baca.text_spanner_staff_padding()
+    %! baca.OverrideCommand._call(2)
+    \revert TextSpanner.staff-padding
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
-    %! baca.text_spanner_staff_padding()
-    %! baca.OverrideCommand._call(2)
-    \revert TextSpanner.staff-padding
 
     %! baca._make_multimeasure_rest_container(7)
     <<

@@ -3890,13 +3890,13 @@ segment.11.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 3]
+    %! baca.ottava_bracket_staff_padding()
+    %! baca.OverrideCommand._call(1)
+    \override Staff.OttavaBracket.staff-padding = 8
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(2)
     %! SPANNER_START
     \ottava -1
-    %! baca.ottava_bracket_staff_padding()
-    %! baca.OverrideCommand._call(1)
-    \override Staff.OttavaBracket.staff-padding = 8
     %! baca.make_repeat_tied_notes()
     d,,1
     %! EXPLICIT_DYNAMIC_COLOR
@@ -4017,13 +4017,13 @@ segment.11.Cello.Music.Voice = {
     \mf
     %! baca.make_tied_repeated_durations()
     \repeatTie
+    %! baca.ottava_bracket_staff_padding()
+    %! baca.OverrideCommand._call(2)
+    \revert Staff.OttavaBracket.staff-padding
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
-    %! baca.ottava_bracket_staff_padding()
-    %! baca.OverrideCommand._call(2)
-    \revert Staff.OttavaBracket.staff-padding
 
     %! baca._make_multimeasure_rest_container(7)
     <<
