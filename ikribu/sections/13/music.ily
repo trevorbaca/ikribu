@@ -3825,6 +3825,8 @@ segment.13.Violin.Music.Voice = {
     %! baca.staccato()
     %! baca.IndicatorCommand._call()
     - \staccato
+    %! ikribu.clb_rhythm()
+    [
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -3851,8 +3853,6 @@ segment.13.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \>
-    %! ikribu.clb_rhythm()
-    [
 
     %! ikribu.clb_rhythm()
     d'8
@@ -6172,6 +6172,8 @@ segment.13.Viola.Music.Voice = {
         %! baca.staccato()
         %! baca.IndicatorCommand._call()
         - \staccato
+        %! ikribu.clb_rhythm()
+        [
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -6198,8 +6200,6 @@ segment.13.Viola.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! ikribu.clb_rhythm()
-        [
 
         %! ikribu.clb_rhythm()
         c'8

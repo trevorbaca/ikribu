@@ -2085,6 +2085,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \p
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2099,9 +2102,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2176,6 +2176,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(8)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2190,9 +2193,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2269,6 +2269,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(6)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2283,9 +2286,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2342,6 +2342,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(7)
         - \upbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2356,9 +2359,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2423,6 +2423,9 @@ segment.05.Cello.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \ppp
+    %! baca.bcps()
+    %! baca.BCPCommand._call(3)
+    \bacaStopTextSpanBCP
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -2437,9 +2440,6 @@ segment.05.Cello.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \<
-    %! baca.bcps()
-    %! baca.BCPCommand._call(3)
-    \bacaStopTextSpanBCP
     %! baca.bcps()
     %! baca.BCPCommand._call(2)
     - \abjad-solid-line-with-arrow
@@ -2490,6 +2490,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \ff
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2504,9 +2507,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2619,6 +2619,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(6)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2633,9 +2636,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2695,6 +2695,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(8)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2709,9 +2712,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2774,6 +2774,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \pp
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2788,9 +2791,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2876,6 +2876,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(6)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2890,9 +2893,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -2945,6 +2945,9 @@ segment.05.Cello.RH.Music.Voice = {
     %! baca.bcps()
     %! baca.BCPCommand._call(8)
     - \downbow
+    %! baca.bcps()
+    %! baca.BCPCommand._call(3)
+    \bacaStopTextSpanBCP
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -2959,9 +2962,6 @@ segment.05.Cello.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \<
-    %! baca.bcps()
-    %! baca.BCPCommand._call(3)
-    \bacaStopTextSpanBCP
     %! baca.bcps()
     %! baca.BCPCommand._call(2)
     - \abjad-solid-line-with-arrow
@@ -3033,6 +3033,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \ff
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -3047,9 +3050,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -3094,6 +3094,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \p
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -3108,9 +3111,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
@@ -3229,6 +3229,9 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca.bcps()
         %! baca.BCPCommand._call(6)
         - \downbow
+        %! baca.bcps()
+        %! baca.BCPCommand._call(3)
+        \bacaStopTextSpanBCP
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -3243,9 +3246,6 @@ segment.05.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! baca.bcps()
-        %! baca.BCPCommand._call(3)
-        \bacaStopTextSpanBCP
         %! baca.bcps()
         %! baca.BCPCommand._call(2)
         - \abjad-solid-line-with-arrow
