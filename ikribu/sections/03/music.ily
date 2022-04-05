@@ -2857,12 +2857,12 @@ segment.03.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -3123,12 +3123,12 @@ segment.03.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -3389,12 +3389,12 @@ segment.03.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -4749,12 +4749,12 @@ segment.03.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \mf
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()

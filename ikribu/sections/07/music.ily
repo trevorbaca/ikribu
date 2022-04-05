@@ -1385,12 +1385,12 @@ segment.07.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -2133,12 +2133,12 @@ segment.07.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -2757,12 +2757,12 @@ segment.07.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \ff
-    %! baca.make_repeat_tied_notes()
-    \repeatTie
     %! baca.text_spanner()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
     \stopTextSpan
+    %! baca.make_repeat_tied_notes()
+    \repeatTie
     %! baca.text_spanner_staff_padding()
     %! baca.OverrideCommand._call(2)
     \revert TextSpanner.staff-padding

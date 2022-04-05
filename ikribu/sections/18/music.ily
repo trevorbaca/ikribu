@@ -3640,9 +3640,9 @@ segment.18.Cello.Music.Voice = {
     % [Cello_Music_Voice measure 6]
     %! ikribu.inscription_rhythm()
     a16
-    \repeatTie
     %! ikribu.inscription_rhythm()
     [
+    \repeatTie
 
     %! ikribu.inscription_rhythm()
     a8
@@ -3794,9 +3794,9 @@ segment.18.Cello.Music.Voice = {
     % [Cello_Music_Voice measure 9]
     %! ikribu.inscription_rhythm()
     a16
-    \repeatTie
     %! ikribu.inscription_rhythm()
     [
+    \repeatTie
 
     %! ikribu.inscription_rhythm()
     a8
