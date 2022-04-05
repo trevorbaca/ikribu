@@ -8182,13 +8182,13 @@ segment.14.Cello.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-xp-markup
-    %! baca.attach_color_literal(2)
-    %! EXPLICIT_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
+    %! baca.attach_color_literal(2)
+    %! EXPLICIT_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     %! baca._make_multimeasure_rest_container(7)
     <<
@@ -8915,13 +8915,13 @@ segment.14.Cello.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-xp-markup
-    %! baca.attach_color_literal(2)
-    %! EXPLICIT_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
+    %! baca.attach_color_literal(2)
+    %! EXPLICIT_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     %! baca._make_multimeasure_rest_container(7)
     <<
