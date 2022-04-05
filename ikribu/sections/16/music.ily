@@ -1187,6 +1187,11 @@ segment.16.Bass.Clarinet.Music.Voice = {
     %! REAPPLIED_BAR_EXTENT
     %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    %! -PARTS
+    %! baca._reapply_persistent_indicators(3)
+    %! baca._set_status_tag()
+    %! REAPPLIED_MARGIN_MARKUP
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_STAFF_LINES
@@ -1199,11 +1204,6 @@ segment.16.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! REAPPLIED_STAFF_LINES
     \startStaff
-    %! -PARTS
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_MARGIN_MARKUP
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     %! baca._clone_segment_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "B. cl."
     %! baca._reapply_persistent_indicators(3)
@@ -1471,6 +1471,9 @@ segment.16.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \p
+    %! baca.repeat_tie()
+    %! baca.IndicatorCommand._call()
+    \repeatTie
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -1497,9 +1500,6 @@ segment.16.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \>
-    %! baca.repeat_tie()
-    %! baca.IndicatorCommand._call()
-    \repeatTie
     %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
     %! baca._attach_shadow_tie_indicators()
@@ -2066,6 +2066,12 @@ segment.16.Violin.Music.Voice = {
             %! -PARTS
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
+            %! REAPPLIED_BAR_EXTENT
+            %! EXPLICIT_BAR_EXTENT
+            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            %! -PARTS
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
             %! REAPPLIED_MARGIN_MARKUP
             \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
             %! baca._reapply_persistent_indicators(3)
@@ -2080,12 +2086,6 @@ segment.16.Violin.Music.Voice = {
             %! baca._set_status_tag()
             %! REAPPLIED_STAFF_LINES
             \startStaff
-            %! -PARTS
-            %! baca._reapply_persistent_indicators(3)
-            %! baca._set_status_tag()
-            %! REAPPLIED_BAR_EXTENT
-            %! EXPLICIT_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
             %! baca._clone_segment_initial_short_instrument_name()
             \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Vn."
             %! baca._make_multimeasure_rest_container(2)
@@ -3017,6 +3017,12 @@ segment.16.Viola.Music.Voice = {
             %! -PARTS
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
+            %! REAPPLIED_BAR_EXTENT
+            %! EXPLICIT_BAR_EXTENT
+            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            %! -PARTS
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
             %! REAPPLIED_MARGIN_MARKUP
             \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
             %! baca._reapply_persistent_indicators(3)
@@ -3031,12 +3037,6 @@ segment.16.Viola.Music.Voice = {
             %! baca._set_status_tag()
             %! REAPPLIED_STAFF_LINES
             \startStaff
-            %! -PARTS
-            %! baca._reapply_persistent_indicators(3)
-            %! baca._set_status_tag()
-            %! REAPPLIED_BAR_EXTENT
-            %! EXPLICIT_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
             %! baca._clone_segment_initial_short_instrument_name()
             \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Va."
             %! baca._make_multimeasure_rest_container(2)
@@ -3965,16 +3965,16 @@ segment.16.Cello.Music.Voice = {
 
             %! baca._comment_measure_numbers()
             % [Cello_Music_Voice measure 1]
-            %! -PARTS
-            %! baca._reapply_persistent_indicators(3)
-            %! baca._set_status_tag()
-            %! REAPPLIED_MARGIN_MARKUP
-            \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
             %! REAPPLIED_BAR_EXTENT
             %! EXPLICIT_BAR_EXTENT
             \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            %! -PARTS
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_MARGIN_MARKUP
+            \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
             %! REAPPLIED_STAFF_LINES

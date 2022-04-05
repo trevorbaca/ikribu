@@ -176,6 +176,12 @@ segment.01.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    %! baca.margin_markup()
+    %! -PARTS
+    %! baca.IndicatorCommand._call()
+    %! baca._set_status_tag()
+    %! EXPLICIT_MARGIN_MARKUP
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     %! baca.staff_lines()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -191,12 +197,6 @@ segment.01.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_STAFF_LINES
     \startStaff
-    %! baca.margin_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca._set_status_tag()
-    %! EXPLICIT_MARGIN_MARKUP
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     %! baca.start_markup()
     %! -PARTS
     %! baca.IndicatorCommand._call()
@@ -570,21 +570,17 @@ segment.01.Violin.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 1]
+    %! -PARTS
+    %! baca.IndicatorCommand._call()
+    %! baca._set_status_tag()
+    %! EXPLICIT_BAR_EXTENT
+    \override Staff.BarLine.bar-extent = #'(-2 . 2)
     %! baca.margin_markup()
     %! -PARTS
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
     %! EXPLICIT_MARGIN_MARKUP
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
-    %! baca.start_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Violin"
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca._set_status_tag()
-    %! EXPLICIT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
     %! baca.staff_lines()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -600,6 +596,10 @@ segment.01.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_STAFF_LINES
     \startStaff
+    %! baca.start_markup()
+    %! -PARTS
+    %! baca.IndicatorCommand._call()
+    \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Violin"
     %! baca.text_script_padding()
     %! baca.OverrideCommand._call(1)
     \once \override TextScript.padding = 2.5
@@ -1040,6 +1040,12 @@ segment.01.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    %! baca.margin_markup()
+    %! -PARTS
+    %! baca.IndicatorCommand._call()
+    %! baca._set_status_tag()
+    %! EXPLICIT_MARGIN_MARKUP
+    \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
     %! baca.staff_lines()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -1055,12 +1061,6 @@ segment.01.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_STAFF_LINES
     \startStaff
-    %! baca.margin_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca._set_status_tag()
-    %! EXPLICIT_MARGIN_MARKUP
-    \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Va."
     %! baca.start_markup()
     %! -PARTS
     %! baca.IndicatorCommand._call()
@@ -1427,6 +1427,12 @@ segment.01.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    %! baca.margin_markup()
+    %! -PARTS
+    %! baca.IndicatorCommand._call()
+    %! baca._set_status_tag()
+    %! EXPLICIT_MARGIN_MARKUP
+    \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
     %! baca.staff_lines()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
@@ -1442,12 +1448,6 @@ segment.01.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_STAFF_LINES
     \startStaff
-    %! baca.margin_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca._set_status_tag()
-    %! EXPLICIT_MARGIN_MARKUP
-    \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
     %! baca.start_markup()
     %! -PARTS
     %! baca.IndicatorCommand._call()
