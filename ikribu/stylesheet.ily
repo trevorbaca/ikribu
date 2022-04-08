@@ -5,7 +5,7 @@
 
 \paper {
     evenFooterMarkup = \markup
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \fill-line {
             " "
             \bold
@@ -21,7 +21,7 @@
                 \hspace #3
                 —
                 \hspace #3
-                \on-the-fly #print-page-number-check-first
+                \if \should-print-page-number
                 \fromproperty #'page:page-number-string
                 \hspace #3
                 —
@@ -245,7 +245,7 @@
         barNumberFormatter = #baca-oval-bar-numbers
         explicitClefVisibility = #end-of-line-invisible
         forceClef = ##t
-        markFormatter = #format-mark-box-alphabet
+        rehearsalMarkFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
