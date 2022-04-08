@@ -7,7 +7,7 @@
 \paper {
     %bottom-margin = 10\mm
     evenFooterMarkup = \markup
-        \on-the-fly #print-page-number-check-first
+        \if \should-print-page-number
         \fill-line {
             " "
             \bold
@@ -23,7 +23,7 @@
                 \hspace #3
                 —
                 \hspace #3
-                \on-the-fly #print-page-number-check-first
+                \if \should-print-page-number
                 \fromproperty #'page:page-number-string
                 \hspace #3
                 —
