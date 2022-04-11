@@ -174,7 +174,7 @@ commands(
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.staff_lines(5),
     baca.stem_tremolo(
@@ -215,7 +215,7 @@ commands(
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F4 E4 E4 F4",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
