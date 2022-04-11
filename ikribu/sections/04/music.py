@@ -231,7 +231,7 @@ commands(
         r"\baca-string-iii-markup",
         direction=abjad.DOWN,
     ),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.note_head_style_harmonic(),
     baca.pitch("F~5"),
 )

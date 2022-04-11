@@ -358,7 +358,7 @@ commands(
     ("vc", 1),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -372,7 +372,7 @@ commands(
     ("vc", 6),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -386,7 +386,7 @@ commands(
     ("vc", 9),
     baca.clef("treble"),
     baca.dynamic("sffz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -400,7 +400,7 @@ commands(
     ("vc", 14),
     baca.clef("treble"),
     baca.dynamic("sffz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -414,7 +414,7 @@ commands(
     ("vc", 19),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -428,7 +428,7 @@ commands(
     ("vc", 22),
     baca.clef("treble"),
     baca.dynamic("sfffz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\baca-pizz-markup"),
     baca.markup(
         r"\baca-string-iii-markup",
