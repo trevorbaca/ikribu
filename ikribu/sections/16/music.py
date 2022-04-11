@@ -215,7 +215,9 @@ commands(
         "mp > p <",
         final_hairpin=False,
         pieces=baca.selectors.cmgroups(),
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.pitch("Bb0"),
     baca.text_spanner_staff_padding(2.5),
