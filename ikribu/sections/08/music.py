@@ -111,7 +111,9 @@ commands(
         "ppp < pp >",
         final_hairpin=False,
         pieces=baca.selectors.cmgroups(),
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.markup(
         r"\baca-string-iii-markup",

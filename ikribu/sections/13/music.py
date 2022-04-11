@@ -96,7 +96,9 @@ commands(
     baca.dls_staff_padding(8),
     baca.hairpin(
         '"mp" >o niente',
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.hairpin_start_shift('"mp"'),
 )
@@ -113,7 +115,9 @@ commands(
     baca.dls_staff_padding(8),
     baca.hairpin(
         '"mp" >o niente',
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.hairpin_start_shift('"mp"'),
 )
@@ -151,7 +155,7 @@ commands(
         "p < f >",
         bookend=-1,
         pieces=baca.selectors.cmgroups(),
-        selector=baca.selectors.tleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.tleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.staff_position(0),
     library.box_adjustment(),
