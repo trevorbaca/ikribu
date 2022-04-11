@@ -116,7 +116,7 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.clef("treble"),
     baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(r"\markup pizz."),
     baca.markup(
         r"\baca-string-iii-markup",
