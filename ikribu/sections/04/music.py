@@ -157,15 +157,19 @@ commands(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
-        map=baca.selectors.runs(([0], 2), exclude=baca.const.HIDDEN),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.const.HIDDEN), [0], 2
+        ),
     ),
     baca.new(
         baca.hairpin("p > pp"),
-        map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.const.HIDDEN), [1], 2
+        ),
     ),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
@@ -194,15 +198,19 @@ commands(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
-        map=baca.selectors.runs(([0], 2), exclude=baca.const.HIDDEN),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.const.HIDDEN), [0], 2
+        ),
     ),
     baca.new(
         baca.hairpin("p > pp"),
-        map=baca.selectors.runs(([1], 2), exclude=baca.const.HIDDEN),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.const.HIDDEN), [1], 2
+        ),
     ),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
