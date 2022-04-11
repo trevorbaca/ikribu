@@ -111,7 +111,7 @@ commands(
     ("bcl", (5, 25)),
     baca.pitch(
         "Db2",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -140,7 +140,7 @@ commands(
     ),
     baca.pitch(
         "E4",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
