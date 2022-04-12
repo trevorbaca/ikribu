@@ -282,10 +282,13 @@ commands(
         [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
     ),
     baca.accent(
-        selector=baca.selectors.pheads(~abjad.Pattern([0], period=2)),
+        selector=lambda _: abjad.select.get(
+            baca.select.pheads(_),
+            ~abjad.Pattern([0], period=2),
+        ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pheads(([0], 2)),
+        selector=lambda _: abjad.select.get(baca.select.pheads(_), [0], 2),
     ),
 )
 

@@ -154,9 +154,9 @@ commands(
         "va",
     ],
     baca.accent(
-        selector=baca.selectors.pheads(
+        selector=lambda _: abjad.select.get(
+            baca.select.pheads(_, exclude=baca.const.HIDDEN),
             ~abjad.Pattern([0, 4], period=9),
-            exclude=baca.const.HIDDEN,
         ),
     ),
     baca.dls_staff_padding(8),
@@ -169,9 +169,10 @@ commands(
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(
-        selector=baca.selectors.pheads(
-            abjad.Pattern([0, 4], period=9),
-            exclude=baca.const.HIDDEN,
+        selector=lambda _: abjad.select.get(
+            baca.select.pheads(_, exclude=baca.const.HIDDEN),
+            [0, 4],
+            9,
         ),
     ),
     baca.tuplet_bracket_staff_padding(3),

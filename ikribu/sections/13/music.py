@@ -73,7 +73,10 @@ commands(
 commands(
     ("vn", (21, 32)),
     baca.accent(
-        selector=baca.selectors.pheads(~abjad.Pattern([0, 4], period=9)),
+        selector=lambda _: abjad.select.get(
+            baca.select.pheads(_),
+            ~abjad.Pattern([0, 4], period=9),
+        ),
     ),
     baca.dls_staff_padding(8),
     baca.markup(r"\ikribu-sponges-on-bd-markup"),
@@ -85,7 +88,7 @@ commands(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pheads(([0, 4], 9)),
+        selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 4], 9),
     ),
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
@@ -127,7 +130,10 @@ commands(
 commands(
     ("va", (13, 32)),
     baca.accent(
-        selector=baca.selectors.pheads(~abjad.Pattern([0, 5], period=11)),
+        selector=lambda _: abjad.select.get(
+            baca.select.pheads(_),
+            ~abjad.Pattern([0, 5], period=11),
+        ),
     ),
     baca.dls_staff_padding(8),
     baca.markup(r"\ikribu-sponges-on-bd-markup"),
@@ -141,7 +147,7 @@ commands(
     ),
     baca.staff_position(0),
     baca.stem_tremolo(
-        selector=baca.selectors.pheads(([0, 5], 11)),
+        selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 5], 11),
     ),
     baca.tuplet_bracket_staff_padding(3),
     library.box_adjustment(),
