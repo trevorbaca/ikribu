@@ -50,51 +50,51 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(3 - 1),
+        selector=lambda _: abjad.select.leaf(_, 3 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(5 - 1),
+        selector=lambda _: abjad.select.leaf(_, 5 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(5 - 1),
+        selector=lambda _: abjad.select.leaf(_, 5 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(7 - 1),
+        selector=lambda _: abjad.select.leaf(_, 7 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(13 - 1),
+        selector=lambda _: abjad.select.leaf(_, 13 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(13 - 1),
+        selector=lambda _: abjad.select.leaf(_, 13 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(15 - 1),
+        selector=lambda _: abjad.select.leaf(_, 15 - 1),
     ),
     baca.rehearsal_mark("E"),
 )

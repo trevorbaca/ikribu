@@ -49,31 +49,31 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(4 - 1),
+        selector=lambda _: abjad.select.leaf(_, 4 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(10 - 1),
+        selector=lambda _: abjad.select.leaf(_, 10 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(12 - 1),
+        selector=lambda _: abjad.select.leaf(_, 12 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(16 - 1),
+        selector=lambda _: abjad.select.leaf(_, 16 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(18 - 1),
+        selector=lambda _: abjad.select.leaf(_, 18 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(25 - 1),
+        selector=lambda _: abjad.select.leaf(_, 25 - 1),
     ),
 )
 

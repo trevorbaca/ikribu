@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -41,22 +42,22 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.rehearsal_mark("P"),
 )
 
 commands(
     "Global_Rests",
-    baca.global_fermata("long", selector=baca.selectors.leaf(-1)),
+    baca.global_fermata("long", selector=lambda _: abjad.select.leaf(_, -1)),
 )
 
 commands(
@@ -83,7 +84,7 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.suite(
         baca.pitch("B1"),
-        baca.repeat_tie(baca.selectors.phead(0)),
+        baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
     ),
 )
 
@@ -108,7 +109,7 @@ commands(
     ("vn_rh", (1, 5)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(4),
     library.bcps(rotation=0),
@@ -131,7 +132,7 @@ commands(
     ("va_rh", (1, 5)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(4),
     library.bcps(rotation=-1),
@@ -154,7 +155,7 @@ commands(
     ("vc_rh", (1, 5)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(4),
     library.bcps(rotation=-2),

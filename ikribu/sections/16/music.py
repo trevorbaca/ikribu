@@ -56,7 +56,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.rehearsal_mark("O"),
 )
@@ -65,7 +65,7 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
-        selector=baca.selectors.leaf(21 - 1),
+        selector=lambda _: abjad.select.leaf(_, 21 - 1),
     ),
 )
 
@@ -165,7 +165,7 @@ commands(
 commands(
     ("bcl", (1, -1)),
     baca.suite(
-        baca.untie(baca.selectors.leaves()),
+        baca.untie(lambda _: baca.select.leaves(_)),
         baca.repeat_tie(lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN)),
     ),
 )
