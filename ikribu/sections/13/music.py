@@ -65,7 +65,7 @@ commands(
 
 commands(
     ("vn", (1, 16)),
-    baca.staccato(selector=baca.selectors.pheads()),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_rhythm(extra_counts=[4]),
     library.clb_staff_positions(rotation=-1),
 )
@@ -80,7 +80,9 @@ commands(
     baca.hairpin(
         "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
         bookend=-1,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pheads(([0, 4], 9)),
@@ -105,7 +107,7 @@ commands(
 
 commands(
     ("va", (1, 8)),
-    baca.staccato(selector=baca.selectors.pheads()),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_rhythm(extra_counts=[2]),
     library.clb_staff_positions(rotation=-1),
 )
@@ -133,7 +135,9 @@ commands(
         "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
         " f > mf < f > mf < ff > f < ff > f < fff",
         bookend=-1,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
     ),
     baca.staff_position(0),
     baca.stem_tremolo(
@@ -154,7 +158,9 @@ commands(
     baca.hairpin(
         "p < f >",
         bookend=-1,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
         selector=lambda _: baca.select.tleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.staff_position(0),

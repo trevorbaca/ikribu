@@ -190,9 +190,11 @@ commands(
     baca.hairpin(
         "p < mp >",
         final_hairpin=False,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
     ),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_script_staff_padding(2.5),
 )
 

@@ -110,7 +110,9 @@ commands(
     baca.hairpin(
         "ppp < pp >",
         final_hairpin=False,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
         selector=lambda _: baca.select.tleaves(
             _,
         ),
@@ -121,7 +123,7 @@ commands(
     ),
     baca.note_head_style_harmonic(),
     baca.pitches("D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_down(),
 )
 

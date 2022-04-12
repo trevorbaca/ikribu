@@ -178,7 +178,7 @@ commands(
     ),
     baca.staff_lines(5),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )
@@ -218,7 +218,7 @@ commands(
         selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )
@@ -248,9 +248,11 @@ commands(
     baca.hairpin(
         "ppp < pp >",
         final_hairpin=False,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
     ),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_spanner("trem. flaut. tasto. (arco) => trem. flaut. XP"),
     baca.text_spanner_staff_padding(3.5),
     baca.tuplet_bracket_down(),

@@ -166,7 +166,7 @@ commands(
     ("bcl", (1, -1)),
     baca.suite(
         baca.untie(baca.selectors.leaves()),
-        baca.repeat_tie(baca.selectors.pleaves(exclude=baca.const.HIDDEN)),
+        baca.repeat_tie(lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN)),
     ),
 )
 
@@ -183,7 +183,7 @@ commands(
     ),
     baca.pitch("<E4 F#4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_spanner_staff_padding(2.5),
 )
 
@@ -200,7 +200,7 @@ commands(
     ),
     baca.pitch("<Eb4 F4>"),
     baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_spanner_staff_padding(2.5),
 )
 
@@ -214,7 +214,9 @@ commands(
     baca.hairpin(
         "mp > p <",
         final_hairpin=False,
-        pieces=baca.selectors.cmgroups(),
+        pieces=lambda _: baca.select.cmgroups(
+            _,
+        ),
         selector=lambda _: baca.select.tleaves(
             _,
         ),

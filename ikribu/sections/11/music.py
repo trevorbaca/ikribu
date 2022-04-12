@@ -96,7 +96,7 @@ commands(
 commands(
     ("vc", (7, 8)),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
-    baca.tie(baca.selectors.lleaf(0)),
+    baca.tie(lambda _: baca.select.lleaf(_, 0)),
 )
 
 commands(

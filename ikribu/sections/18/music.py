@@ -79,7 +79,7 @@ commands(
 commands(
     ("vn", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.double_staccato(selector=baca.selectors.pheads()),
+    baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
     baca.staff_positions([-1, 0, 1]),
@@ -91,7 +91,7 @@ commands(
 commands(
     ("va", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.double_staccato(selector=baca.selectors.pheads()),
+    baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
     baca.staff_positions([0, -1, 1]),
@@ -108,7 +108,7 @@ commands(
 commands(
     "vc",
     baca.accent(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-stonescratch-markup"),
