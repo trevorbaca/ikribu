@@ -41,7 +41,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(10 - 1),
+        selector=lambda _: abjad.select.leaf(_, 10 - 1),
     ),
     baca.rehearsal_mark("J"),
 )
@@ -50,11 +50,11 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
 )
 

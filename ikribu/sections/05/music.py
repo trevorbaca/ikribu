@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -38,7 +39,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.rehearsal_mark("D"),
 )
@@ -47,7 +48,7 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
 )
 
@@ -82,7 +83,7 @@ commands(
     baca.markup(r"\baca-half-clt-markup"),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.staff_position(0),
     baca.text_script_staff_padding(8),

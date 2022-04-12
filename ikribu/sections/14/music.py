@@ -53,55 +53,55 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(4 - 1),
+        selector=lambda _: abjad.select.leaf(_, 4 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(7 - 1),
+        selector=lambda _: abjad.select.leaf(_, 7 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(12 - 1),
+        selector=lambda _: abjad.select.leaf(_, 12 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(14 - 1),
+        selector=lambda _: abjad.select.leaf(_, 14 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(17 - 1),
+        selector=lambda _: abjad.select.leaf(_, 17 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(19 - 1),
+        selector=lambda _: abjad.select.leaf(_, 19 - 1),
     ),
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(20 - 1),
+        selector=lambda _: abjad.select.leaf(_, 20 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(22 - 1),
+        selector=lambda _: abjad.select.leaf(_, 22 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(27 - 1),
+        selector=lambda _: abjad.select.leaf(_, 27 - 1),
     ),
     baca.rehearsal_mark("M"),
 )
@@ -110,27 +110,27 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(5 - 1),
+        selector=lambda _: abjad.select.leaf(_, 5 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(8 - 1),
+        selector=lambda _: abjad.select.leaf(_, 8 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(13 - 1),
+        selector=lambda _: abjad.select.leaf(_, 13 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(18 - 1),
+        selector=lambda _: abjad.select.leaf(_, 18 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(21 - 1),
+        selector=lambda _: abjad.select.leaf(_, 21 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.selectors.leaf(32 - 1),
+        selector=lambda _: abjad.select.leaf(_, 32 - 1),
     ),
 )
 

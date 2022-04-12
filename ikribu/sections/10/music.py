@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from ikribu import library
@@ -38,7 +39,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.rehearsal_mark("I"),
 )
@@ -47,19 +48,19 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(2 - 1),
+        selector=lambda _: abjad.select.leaf(_, 2 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(4 - 1),
+        selector=lambda _: abjad.select.leaf(_, 4 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.global_fermata(
         "long",
-        selector=baca.selectors.leaf(8 - 1),
+        selector=lambda _: abjad.select.leaf(_, 8 - 1),
     ),
 )
 

@@ -37,7 +37,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.rehearsal_mark("N"),
 )
@@ -111,7 +111,7 @@ commands(
 commands(
     ("bcl", (6, 10)),
     baca.pitch("<Bb1 D4>"),
-    baca.repeat_tie(baca.selectors.phead(0)),
+    baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
 )
 
 commands(
@@ -133,7 +133,7 @@ commands(
     ("vn_rh", (1, 10)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(3.5),
     library.bcps(rotation=0),
@@ -143,7 +143,7 @@ commands(
     ("va_rh", (1, 10)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(3.5),
     library.bcps(rotation=-1),
@@ -153,7 +153,7 @@ commands(
     ("vc_rh", (1, 10)),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.text_spanner_staff_padding(3.5),
     library.bcps(rotation=-2),

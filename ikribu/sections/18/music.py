@@ -40,7 +40,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "inscription",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.rehearsal_mark("Q"),
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
@@ -50,7 +50,7 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
-        selector=baca.selectors.leaf(-1),
+        selector=lambda _: abjad.select.leaf(_, -1),
     ),
 )
 

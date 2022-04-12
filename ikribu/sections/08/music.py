@@ -40,15 +40,15 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "windows",
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
     baca.rehearsal_mark("G"),
 )

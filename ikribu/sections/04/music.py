@@ -49,55 +49,55 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(2 - 1),
+        selector=lambda _: abjad.select.leaf(_, 2 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(2 - 1),
+        selector=lambda _: abjad.select.leaf(_, 2 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(4 - 1),
+        selector=lambda _: abjad.select.leaf(_, 4 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(6 - 1),
+        selector=lambda _: abjad.select.leaf(_, 6 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(8 - 1),
+        selector=lambda _: abjad.select.leaf(_, 8 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(10 - 1),
+        selector=lambda _: abjad.select.leaf(_, 10 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(10 - 1),
+        selector=lambda _: abjad.select.leaf(_, 10 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(12 - 1),
+        selector=lambda _: abjad.select.leaf(_, 12 - 1),
     ),
     baca.metronome_mark(
         "incisions",
-        selector=baca.selectors.leaf(14 - 1),
+        selector=lambda _: abjad.select.leaf(_, 14 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(14 - 1),
+        selector=lambda _: abjad.select.leaf(_, 14 - 1),
     ),
     baca.metronome_mark(
         "night",
-        selector=baca.selectors.leaf(16 - 1),
+        selector=lambda _: abjad.select.leaf(_, 16 - 1),
     ),
     baca.rehearsal_mark("C"),
 )

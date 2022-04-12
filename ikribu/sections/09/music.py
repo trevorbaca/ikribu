@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -43,7 +44,7 @@ commands(
     "Global_Rests",
     baca.global_fermata(
         "fermata",
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
 )
 
@@ -104,7 +105,7 @@ commands(
     ),
     baca.script_staff_padding(
         7,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.staff_position(0),
     baca.text_script_staff_padding(8),
