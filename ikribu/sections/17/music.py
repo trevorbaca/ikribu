@@ -92,7 +92,7 @@ commands(
     ("bcl", (1, 7)),
     baca.hairpin(
         "pp < mf",
-        selector=baca.selectors.leaves((None, 4)),
+        selector=lambda _: baca.select.leaves(_)[:4],
     ),
     baca.hairpin(
         "mf >o niente",
@@ -115,7 +115,7 @@ commands(
     library.bcps(rotation=0),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([0, 8], 12)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
         rotation=0,
     ),
@@ -138,7 +138,7 @@ commands(
     library.bcps(rotation=-1),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([4, 14], 16)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
         ),
         rotation=-1,
     ),
@@ -161,7 +161,7 @@ commands(
     library.bcps(rotation=-2),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([8, 20], 20)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
         rotation=-2,
     ),

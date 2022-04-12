@@ -60,7 +60,7 @@ commands(
     library.bcps(rotation=0),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([0, 8], 12)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
         rotation=0,
     ),
@@ -78,7 +78,7 @@ commands(
     library.bcps(rotation=-1),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([4, 14], 16)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
         ),
         rotation=-1,
     ),
