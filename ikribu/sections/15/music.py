@@ -51,7 +51,7 @@ commands(
     ("vn_rh", (1, 10)),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([0, 8], 12)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
         rotation=0,
     ),
@@ -69,7 +69,7 @@ commands(
     ("va_rh", (1, 10)),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(pattern),
+            lambda _: abjad.select.get(baca.select.lts(_), pattern),
         ),
         rotation=-1,
     ),
@@ -85,7 +85,7 @@ commands(
     ("vc_rh", (1, 10)),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([8, 20], 20)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
         rotation=-2,
     ),

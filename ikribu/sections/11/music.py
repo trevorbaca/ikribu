@@ -152,7 +152,7 @@ commands(
     baca.dynamic("p"),
     baca.hairpin(
         "p < mf",
-        selector=baca.selectors.leaves((-2, None)),
+        selector=lambda _: baca.select.leaves(_)[-2:],
     ),
     baca.markup(r"\baca-poco-vib-markup"),
     baca.ottava_bassa(),

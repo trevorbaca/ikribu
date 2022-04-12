@@ -61,7 +61,7 @@ commands(
     ("vc_rh", (1, 10)),
     library.bow_rhythm(
         rmakers.force_rest(
-            baca.selectors.lts(([8, 20], 20)),
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
         rotation=-2,
     ),

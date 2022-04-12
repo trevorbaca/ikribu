@@ -226,7 +226,7 @@ commands(
     ("bcl", [(2, 4), (10, 12), (15, 17)]),
     baca.hairpin(
         "p < fff",
-        selector=baca.selectors.leaves((None, 2)),
+        selector=lambda _: baca.select.leaves(_)[:2],
     ),
     baca.hairpin(
         "fff >o niente",
@@ -238,7 +238,7 @@ commands(
     ("bcl", (23, 31)),
     baca.hairpin(
         "ppp < fff",
-        selector=baca.selectors.leaves((None, -1)),
+        selector=lambda _: baca.select.leaves(_)[:-1],
     ),
 )
 
