@@ -143,7 +143,7 @@ commands(
         selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -170,7 +170,7 @@ commands(
     ),
     baca.pitch("Eb4"),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
 )
 

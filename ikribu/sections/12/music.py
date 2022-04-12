@@ -152,7 +152,7 @@ commands(
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     library.clb_staff_positions(),
@@ -171,7 +171,7 @@ commands(
         selector=baca.selectors.phead(0, exclude=baca.const.HIDDEN),
     ),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.text_script_padding(2.5, allow_mmrests=True),
     library.clb_staff_positions(),

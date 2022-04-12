@@ -67,7 +67,7 @@ commands(
         "sfpp < p >o niente",
         pieces=lambda _: baca.omgroups(baca.rleaves(_), [1, 1]),
     ),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_spanner_staff_padding(3.5),
 )
 
@@ -102,7 +102,7 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.hairpin("p < ff"),
     baca.pitch("F#3"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.text_spanner("(trem. flaut. tast.) => trem. XP (non. flaut.)"),
     baca.text_spanner_staff_padding(3.5),
 )
