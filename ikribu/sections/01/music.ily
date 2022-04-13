@@ -40,7 +40,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 7/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -91,7 +91,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 1/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -205,10 +205,10 @@ segment.01.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "treble"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
     %! baca._attach_default_indicators(3)
@@ -216,10 +216,10 @@ segment.01.Bass.Clarinet.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \set Staff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_MARGIN_MARKUP_COLOR
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)
     %! baca._call_rhythm_commands()
@@ -233,10 +233,10 @@ segment.01.Bass.Clarinet.Music.Voice = {
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'violet)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     %! baca.margin_markup()
@@ -415,10 +415,10 @@ segment.01.Violin.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "percussion"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override RHStaff.Clef.color = ##f
     %! baca._attach_default_indicators(3)
@@ -426,7 +426,7 @@ segment.01.Violin.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \set RHStaff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
     %! baca._call_rhythm_commands()
@@ -434,7 +434,7 @@ segment.01.Violin.RH.Music.Voice = {
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'violet)
 
@@ -623,13 +623,13 @@ segment.01.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_CLEF
     \clef "percussion"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_MARGIN_MARKUP_COLOR
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
     %! baca.clef()
@@ -638,7 +638,7 @@ segment.01.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_CLEF
     \set Staff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
     %! baca.make_repeat_tied_notes()
@@ -664,7 +664,7 @@ segment.01.Violin.Music.Voice = {
     %! EXPLICIT_MARGIN_MARKUP_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vn.”]"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     %! baca.margin_markup()
@@ -674,7 +674,7 @@ segment.01.Violin.Music.Voice = {
     %! baca._set_status_tag()
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vn."
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
@@ -880,10 +880,10 @@ segment.01.Viola.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "percussion"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override RHStaff.Clef.color = ##f
     %! baca._attach_default_indicators(3)
@@ -891,7 +891,7 @@ segment.01.Viola.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \set RHStaff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
     %! baca._call_rhythm_commands()
@@ -899,7 +899,7 @@ segment.01.Viola.RH.Music.Voice = {
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'violet)
 
@@ -1069,10 +1069,10 @@ segment.01.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "alto"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
     %! baca._attach_default_indicators(3)
@@ -1080,10 +1080,10 @@ segment.01.Viola.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \set Staff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_MARGIN_MARKUP_COLOR
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue)
     %! baca._call_rhythm_commands()
@@ -1097,10 +1097,10 @@ segment.01.Viola.Music.Voice = {
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'violet)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     %! baca.margin_markup()
@@ -1267,10 +1267,10 @@ segment.01.Cello.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "percussion"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override RHStaff.Clef.color = ##f
     %! baca._attach_default_indicators(3)
@@ -1278,7 +1278,7 @@ segment.01.Cello.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \set RHStaff.forceClef = ##t
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
     %! baca._call_rhythm_commands()
@@ -1286,7 +1286,7 @@ segment.01.Cello.RH.Music.Voice = {
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! DEFAULT_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'violet)
 
@@ -1472,16 +1472,16 @@ segment.01.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_CLEF
     \clef "treble"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_MARGIN_MARKUP_COLOR
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
     %! baca.clef()
@@ -1519,7 +1519,7 @@ segment.01.Cello.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-string-iii-markup
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     %! baca.margin_markup()
@@ -1529,7 +1529,7 @@ segment.01.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! REDRAWN_EXPLICIT_MARGIN_MARKUP
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
