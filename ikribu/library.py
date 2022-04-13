@@ -255,7 +255,7 @@ voice_abbreviations = {
 
 
 def make_empty_score():
-    tag = baca.function_name(inspect.currentframe())
+    tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     # BASS CLARINET
     bass_clarinet_music_voice = abjad.Voice(name="Bass_Clarinet_Music_Voice", tag=tag)
