@@ -108,14 +108,14 @@ def bow_rhythm(*commands, rotation=0):
     )
 
 
-def box_adjustment() -> baca.Suite:
+def box_adjustment():
     return baca.suite(
         baca.text_script_padding(2.5, allow_mmrests=True),
         baca.text_script_parent_alignment_x(0, allow_mmrests=True),
     )
 
 
-def clb_rhythm(*, extra_counts: abjad.IntegerSequence) -> baca.RhythmCommand:
+def clb_rhythm(*, extra_counts):
     return baca.rhythm(
         rmakers.even_division([8], extra_counts=extra_counts),
         rmakers.beam(),
@@ -138,7 +138,7 @@ def clb_staff_positions(*, rotation=0):
     )
 
 
-def color_rhythm(n: int) -> baca.RhythmCommand:
+def color_rhythm(n):
     return baca.rhythm(
         rmakers.tuplet([tuple(n * [1])]),
         rmakers.force_fraction(),
@@ -181,7 +181,7 @@ def glissando_rhythm(rotation_1=0, rotation_2=0):
     )
 
 
-def inscription_rhythm() -> baca.RhythmCommand:
+def inscription_rhythm():
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
@@ -212,7 +212,7 @@ def margin_markup(
     return baca.not_parts(command)
 
 
-def triplet_rhythm() -> baca.RhythmCommand:
+def triplet_rhythm():
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1)]),
         rmakers.beam(),
@@ -226,7 +226,7 @@ def triplet_rhythm() -> baca.RhythmCommand:
     )
 
 
-def vigil_rhythm() -> baca.RhythmCommand:
+def vigil_rhythm():
     return baca.rhythm(
         rmakers.talea([16, -1], 4),
         rmakers.beam(),
