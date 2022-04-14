@@ -157,28 +157,28 @@ commands(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
         map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.const.HIDDEN), [0], 2
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
         ),
     ),
     baca.new(
         baca.hairpin("p > pp"),
         map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.const.HIDDEN), [1], 2
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
         ),
     ),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
     baca.staff_lines(5),
     baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )
@@ -198,27 +198,27 @@ commands(
     baca.dls_staff_padding(3),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     baca.new(
         baca.hairpin("pp < p"),
         map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.const.HIDDEN), [0], 2
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
         ),
     ),
     baca.new(
         baca.hairpin("p > pp"),
         map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.const.HIDDEN), [1], 2
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
         ),
     ),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.pitches(
         "F4 E4 E4 F4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
     baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
 )

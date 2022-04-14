@@ -167,7 +167,7 @@ commands(
         pieces=lambda _: baca.select.cmgroups(
             _,
         ),
-        selector=lambda _: baca.select.tleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.staff_position(0),
     library.box_adjustment(),
