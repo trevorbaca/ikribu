@@ -1808,64 +1808,113 @@ segment.12.Bass.Clarinet.Music.Staff = {
 %! baca.path.extern()
 segment.12.Violin.RH.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Violin_RH_Music_Voice measure 1]
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_BAR_EXTENT
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \stopStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \once \override RHStaff.StaffSymbol.line-count = 1
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \startStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "percussion"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \ppp
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Violin_RH_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Violin_RH_Music_Voice measure 1]
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_BAR_EXTENT
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \override Staff.BarLine.bar-extent = #'(-2 . 0)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \stopStaff
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \once \override RHStaff.StaffSymbol.line-count = 1
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \startStaff
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "percussion"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override RHStaff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override RHStaff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set RHStaff.forceClef = ##t
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_STAFF_LINES_COLOR
+            \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            c'1 * 1
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \ppp
+            %! REAPPLIED_INSTRUMENT_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "(“Violin”)"
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Violin_RH_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Violin_RH_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 2]
@@ -1875,7 +1924,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1895,11 +1944,11 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 4]
@@ -1909,7 +1958,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1929,7 +1978,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1943,7 +1992,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1963,11 +2012,11 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 8/4
+    %! baca._make_measure_silences()
+    R1 * 2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
 
     %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 8]
@@ -1977,7 +2026,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1997,7 +2046,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 7/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2011,7 +2060,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2031,7 +2080,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2045,7 +2094,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2065,11 +2114,11 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 14]
@@ -2079,7 +2128,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2099,11 +2148,11 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 16]
@@ -2113,7 +2162,7 @@ segment.12.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -2249,7 +2298,7 @@ segment.12.Violin.Music.Voice = {
             %! baca._set_status_tag()
             %! EXPLICIT_BAR_EXTENT
             %! baca._reanalyze_reapplied_synthetic_wrappers()
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
             %! -PARTS
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
@@ -2321,9 +2370,6 @@ segment.12.Violin.Music.Voice = {
             %! baca._set_status_tag()
             %! REAPPLIED_DYNAMIC
             \baca-effort-f
-            %! REAPPLIED_INSTRUMENT_ALERT
-            %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "(“Violin”)"
             %! REAPPLIED_MARGIN_MARKUP_ALERT
             %! baca._attach_latent_indicator_alert()
             ^ \baca-reapplied-indicator-markup "[“Vn.”]"
@@ -2386,7 +2432,7 @@ segment.12.Violin.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -2399,7 +2445,7 @@ segment.12.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 3]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -2545,7 +2591,7 @@ segment.12.Violin.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -2577,7 +2623,7 @@ segment.12.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 5]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -2605,7 +2651,7 @@ segment.12.Violin.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -2618,7 +2664,7 @@ segment.12.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 7]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -2787,7 +2833,7 @@ segment.12.Violin.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -2819,7 +2865,7 @@ segment.12.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 9]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -2847,7 +2893,7 @@ segment.12.Violin.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -2860,7 +2906,7 @@ segment.12.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 11]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -2969,7 +3015,7 @@ segment.12.Violin.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -3001,7 +3047,7 @@ segment.12.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 13]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -3029,7 +3075,7 @@ segment.12.Violin.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -3042,7 +3088,7 @@ segment.12.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 15]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -3163,7 +3209,7 @@ segment.12.Violin.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
             %! baca.dls_staff_padding()
             %! baca.OverrideCommand._call(2)
             \revert DynamicLineSpanner.staff-padding
@@ -3310,64 +3356,113 @@ segment.12.Violin.Music.Staff = {
 %! baca.path.extern()
 segment.12.Viola.RH.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Viola_RH_Music_Voice measure 1]
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_BAR_EXTENT
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \stopStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \once \override RHStaff.StaffSymbol.line-count = 1
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \startStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "percussion"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \p
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Viola_RH_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Viola_RH_Music_Voice measure 1]
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_BAR_EXTENT
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \override Staff.BarLine.bar-extent = #'(-2 . 0)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \stopStaff
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \once \override RHStaff.StaffSymbol.line-count = 1
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \startStaff
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "percussion"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override RHStaff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override RHStaff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set RHStaff.forceClef = ##t
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_STAFF_LINES_COLOR
+            \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            c'1 * 1
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \p
+            %! REAPPLIED_INSTRUMENT_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "(“Viola”)"
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Viola_RH_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Viola_RH_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 2]
@@ -3377,7 +3472,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3397,11 +3492,11 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 4]
@@ -3411,7 +3506,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3431,7 +3526,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3445,7 +3540,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3465,11 +3560,11 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 8/4
+    %! baca._make_measure_silences()
+    R1 * 2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
 
     %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 8]
@@ -3479,7 +3574,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3499,7 +3594,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 7/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3513,7 +3608,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3533,7 +3628,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3547,7 +3642,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3567,11 +3662,11 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 14]
@@ -3581,7 +3676,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3601,11 +3696,11 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 16]
@@ -3615,7 +3710,7 @@ segment.12.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3751,7 +3846,7 @@ segment.12.Viola.Music.Voice = {
             %! baca._set_status_tag()
             %! EXPLICIT_BAR_EXTENT
             %! baca._reanalyze_reapplied_synthetic_wrappers()
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
             %! -PARTS
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
@@ -3823,9 +3918,6 @@ segment.12.Viola.Music.Voice = {
             %! baca._set_status_tag()
             %! REAPPLIED_DYNAMIC
             \baca-effort-f
-            %! REAPPLIED_INSTRUMENT_ALERT
-            %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "(“Viola”)"
             %! REAPPLIED_MARGIN_MARKUP_ALERT
             %! baca._attach_latent_indicator_alert()
             ^ \baca-reapplied-indicator-markup "[“Va.”]"
@@ -3888,7 +3980,7 @@ segment.12.Viola.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -3901,7 +3993,7 @@ segment.12.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 3]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -4035,7 +4127,7 @@ segment.12.Viola.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -4067,7 +4159,7 @@ segment.12.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 5]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -4095,7 +4187,7 @@ segment.12.Viola.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -4108,7 +4200,7 @@ segment.12.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 7]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -4265,7 +4357,7 @@ segment.12.Viola.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -4297,7 +4389,7 @@ segment.12.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 9]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -4325,7 +4417,7 @@ segment.12.Viola.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -4338,7 +4430,7 @@ segment.12.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 11]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -4435,7 +4527,7 @@ segment.12.Viola.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
 
         %! baca._make_multimeasure_rest_container(4)
         }
@@ -4467,7 +4559,7 @@ segment.12.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 13]
     %! baca._style_fermata_measures(4)
     %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
     %! baca._style_fermata_measures(3)
     \stopStaff
     %! baca._style_fermata_measures(3)
@@ -4495,7 +4587,7 @@ segment.12.Viola.Music.Voice = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     %! baca._style_fermata_measures(2)
     %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)
 
     %! ikribu.clb_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
@@ -4508,7 +4600,7 @@ segment.12.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 15]
         %! baca._style_fermata_measures(4)
         %! FERMATA_MEASURE_NEXT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)
         %! baca._style_fermata_measures(3)
         \stopStaff
         %! baca._style_fermata_measures(3)
@@ -4617,7 +4709,7 @@ segment.12.Viola.Music.Voice = {
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             %! baca._style_fermata_measures(2)
             %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
-            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+            \override Staff.BarLine.bar-extent = #'(0 . 2)
             %! baca.dls_staff_padding()
             %! baca.OverrideCommand._call(2)
             \revert DynamicLineSpanner.staff-padding
@@ -4764,64 +4856,113 @@ segment.12.Viola.Music.Staff = {
 %! baca.path.extern()
 segment.12.Cello.RH.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Cello_RH_Music_Voice measure 1]
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_BAR_EXTENT
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \stopStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \once \override RHStaff.StaffSymbol.line-count = 1
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! EXPLICIT_STAFF_LINES
-    %! baca._reanalyze_reapplied_synthetic_wrappers()
-    \startStaff
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "percussion"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \pp
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Cello_RH_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_RH_Music_Voice measure 1]
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_BAR_EXTENT
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \override Staff.BarLine.bar-extent = #'(-2 . 0)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \stopStaff
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \once \override RHStaff.StaffSymbol.line-count = 1
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! EXPLICIT_STAFF_LINES
+            %! baca._reanalyze_reapplied_synthetic_wrappers()
+            \startStaff
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "percussion"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override RHStaff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override RHStaff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set RHStaff.forceClef = ##t
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_STAFF_LINES_COLOR
+            \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            c'1 * 1
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \pp
+            %! REAPPLIED_INSTRUMENT_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "(“Cello”)"
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Cello_RH_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_RH_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 2]
@@ -4831,7 +4972,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4851,11 +4992,11 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 4]
@@ -4865,7 +5006,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4885,7 +5026,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4899,7 +5040,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4919,11 +5060,11 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 8/4
+    %! baca._make_measure_silences()
+    R1 * 2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
 
     %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 8]
@@ -4933,7 +5074,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4953,7 +5094,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 7/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4967,7 +5108,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -4987,7 +5128,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -5001,7 +5142,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -5021,11 +5162,11 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 14]
@@ -5035,7 +5176,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -5055,11 +5196,11 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 1
     %! baca._style_fermata_measures(3)
     \startStaff
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 16]
@@ -5069,7 +5210,7 @@ segment.12.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
     %! baca._style_fermata_measures(1)
     \startStaff
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -5264,9 +5405,6 @@ segment.12.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \baca-effort-p
-    %! REAPPLIED_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! REAPPLIED_MARGIN_MARKUP_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"
