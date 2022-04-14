@@ -134,7 +134,7 @@ def clb_staff_positions(*, rotation=0):
     return baca.staff_positions(
         positions,
         allow_repeats=True,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
 
 
@@ -279,7 +279,7 @@ def make_empty_score():
         name="Violin_RH_Music_Staff",
         tag=tag,
     )
-    abjad.annotate(violin_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+    abjad.annotate(violin_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     abjad.annotate(violin_rh_music_staff, "default_clef", abjad.Clef("percussion"))
     violin_music_voice = abjad.Voice(name="Violin_Music_Voice", tag=tag)
     violin_music_staff = abjad.Staff(
@@ -306,7 +306,7 @@ def make_empty_score():
         name="Viola_RH_Music_Staff",
         tag=tag,
     )
-    abjad.annotate(viola_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+    abjad.annotate(viola_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     abjad.annotate(viola_rh_music_staff, "default_clef", abjad.Clef("percussion"))
     viola_music_voice = abjad.Voice(name="Viola_Music_Voice", tag=tag)
     viola_music_staff = abjad.Staff(
@@ -333,7 +333,7 @@ def make_empty_score():
         name="Cello_RH_Music_Staff",
         tag=tag,
     )
-    abjad.annotate(cello_rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+    abjad.annotate(cello_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     abjad.annotate(cello_rh_music_staff, "default_clef", abjad.Clef("percussion"))
     cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
     cello_music_staff = abjad.Staff(

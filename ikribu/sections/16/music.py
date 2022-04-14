@@ -166,7 +166,7 @@ commands(
     ("bcl", (1, -1)),
     baca.suite(
         baca.untie(lambda _: baca.select.leaves(_)),
-        baca.repeat_tie(lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN)),
+        baca.repeat_tie(lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN)),
     ),
 )
 

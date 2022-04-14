@@ -155,7 +155,7 @@ commands(
     ],
     baca.accent(
         selector=lambda _: abjad.select.get(
-            baca.select.pheads(_, exclude=baca.const.HIDDEN),
+            baca.select.pheads(_, exclude=baca.enums.HIDDEN),
             ~abjad.Pattern([0, 4], period=9),
         ),
     ),
@@ -164,13 +164,13 @@ commands(
     baca.hairpin(
         "f > p <",
         bookend=True,
-        pieces=library.enchain_runs([4, 3], exclude=baca.const.HIDDEN),
+        pieces=library.enchain_runs([4, 3], exclude=baca.enums.HIDDEN),
     ),
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(
         selector=lambda _: abjad.select.get(
-            baca.select.pheads(_, exclude=baca.const.HIDDEN),
+            baca.select.pheads(_, exclude=baca.enums.HIDDEN),
             [0, 4],
             9,
         ),

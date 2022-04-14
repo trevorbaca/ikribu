@@ -108,7 +108,7 @@ commands(
 commands(
     "vc",
     baca.accent(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-stonescratch-markup"),
