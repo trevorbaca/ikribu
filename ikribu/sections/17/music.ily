@@ -1029,6 +1029,9 @@ segment.17.Violin.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! REAPPLIED_DYNAMIC
         \pp
+        %! REAPPLIED_INSTRUMENT_ALERT
+        %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "(“Violin”)"
         %! baca._attach_color_literal(2)
         %! REAPPLIED_CLEF_REDRAW_COLOR
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -2107,9 +2110,6 @@ segment.17.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! REAPPLIED_DYNAMIC
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
-        %! REAPPLIED_INSTRUMENT_ALERT
-        %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“Violin”)"
         %! REAPPLIED_MARGIN_MARKUP_ALERT
         %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"
@@ -2499,6 +2499,9 @@ segment.17.Viola.RH.Music.Voice = {
     %! baca.bcps()
     %! baca.BCPCommand._call(5)
     - \upbow
+    %! REAPPLIED_INSTRUMENT_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Viola”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-half-clt-markup
@@ -3641,9 +3644,6 @@ segment.17.Viola.Music.Voice = {
         %! baca._set_status_tag()
         %! REAPPLIED_DYNAMIC
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
-        %! REAPPLIED_INSTRUMENT_ALERT
-        %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“Viola”)"
         %! REAPPLIED_MARGIN_MARKUP_ALERT
         %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "[“Va.”]"
@@ -4003,6 +4003,9 @@ segment.17.Cello.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! REAPPLIED_DYNAMIC
         \ppp
+        %! REAPPLIED_INSTRUMENT_ALERT
+        %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "(“Cello”)"
         %! baca._attach_color_literal(2)
         %! REAPPLIED_CLEF_REDRAW_COLOR
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -5081,9 +5084,6 @@ segment.17.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
     \p
-    %! REAPPLIED_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! REAPPLIED_MARGIN_MARKUP_ALERT
     %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"
