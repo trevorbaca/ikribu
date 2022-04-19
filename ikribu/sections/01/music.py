@@ -49,6 +49,8 @@ commands(
 
 commands(
     "bcl",
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(5),
     baca.suite(
         library.margin_markup("B. cl."),
@@ -73,6 +75,7 @@ commands(
 commands(
     ("vn", 1),
     baca.make_repeat_tied_notes(),
+    baca.attach_first_segment_default_indicators(),
     baca.clef("percussion"),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-grainfall-one-markup"),
@@ -85,6 +88,8 @@ commands(
 
 commands(
     "va",
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(5),
     baca.suite(
         library.margin_markup("Va.", context="SingleStringStaffGroup"),
@@ -97,6 +102,12 @@ commands(
 )
 
 # vc
+
+commands(
+    ("vc", 1),
+    baca.make_repeat_tied_notes(),
+    baca.attach_first_segment_default_indicators(),
+)
 
 commands(
     "vc",
@@ -113,7 +124,6 @@ commands(
 
 commands(
     ("vc", 1),
-    baca.make_repeat_tied_notes(),
     baca.clef("treble"),
     baca.dynamic("sfz"),
     baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
@@ -129,7 +139,9 @@ commands(
 # vn_rh, va_rh, vc_rh
 
 commands(
-    (["vn_rh", "va_rh", "vc_rh"], 1),
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(1),
 )
 
