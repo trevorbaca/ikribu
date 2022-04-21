@@ -45,6 +45,10 @@ commands(
 commands(
     ("bcl", [(1, 5), (6, 10)]),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
@@ -55,13 +59,15 @@ commands(
         ),
         rotation=0,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vn", (1, 10)),
+    library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.staff_lines(5),
-    library.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
 pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
@@ -73,12 +79,14 @@ commands(
         ),
         rotation=-1,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("va", (1, 10)),
-    baca.staff_lines(5),
     library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
+    baca.reapply_persistent_indicators(),
+    baca.staff_lines(5),
 )
 
 commands(
@@ -89,11 +97,13 @@ commands(
         ),
         rotation=-2,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (1, 10)),
     library.glissando_rhythm(rotation_1=-8, rotation_2=-2),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

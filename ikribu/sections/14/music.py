@@ -135,13 +135,29 @@ commands(
 )
 
 commands(
+    ("bcl", 1),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("bcl", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)]),
     baca.make_repeat_tied_notes(),
 )
 
 commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vn", [1, 6, 9, 14, 19, 22]),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
@@ -175,6 +191,12 @@ commands(
 )
 
 commands(
+    ("va", 1),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("va", (2, 4)),
     library.color_rhythm(4),
 )
@@ -205,16 +227,20 @@ commands(
 )
 
 commands(
-    ("vc", 1),
-    baca.staff_lines(5),
-)
-
-commands(
     (
         "vc",
         [1, (2, 4), 6, 7, 9, (10, 12), 14, (15, 17), 19, 20, 22, (23, 27)],
     ),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    ("vc", 1),
+    baca.staff_lines(5),
 )
 
 commands(

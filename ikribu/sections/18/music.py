@@ -54,16 +54,12 @@ commands(
     ),
 )
 
-commands(
-    ["bcl", "vn", "va", "vc"],
-    baca.staff_lines(1),
-)
-
 # bcl
 
 commands(
     ("bcl", (1, 6)),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -74,11 +70,20 @@ commands(
     library.box_adjustment(),
 )
 
+# vn rh, va rh, vc rh
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
 # vn
 
 commands(
     ("vn", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
+    baca.reapply_persistent_indicators(),
     baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
@@ -91,6 +96,7 @@ commands(
 commands(
     ("va", (1, 9)),
     baca.make_repeated_duration_notes([(1, 4)]),
+    baca.reapply_persistent_indicators(),
     baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
@@ -103,6 +109,7 @@ commands(
 commands(
     ("vc", (1, 11)),
     library.inscription_rhythm(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -125,6 +132,11 @@ commands(
         baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
         selector=lambda _: baca.select.rleaf(_, -1),
     ),
+)
+
+commands(
+    ["bcl", "vn", "va", "vc"],
+    baca.staff_lines(1),
 )
 
 if __name__ == "__main__":

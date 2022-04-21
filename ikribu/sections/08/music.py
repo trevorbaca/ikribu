@@ -56,7 +56,17 @@ commands(
 commands(
     ("bcl", [1, 3, 5, 7, 9, 11]),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
     baca.dls_staff_padding(7),
+)
+
+commands(
+    ["vn_rh", "vn", "va_rh", "va", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -65,6 +75,7 @@ commands(
         rmakers.reduce_multiplier(),
         repeat_ties=True,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

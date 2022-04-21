@@ -103,6 +103,12 @@ commands(
 )
 
 commands(
+    ("bcl", 1),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("bcl", [(2, 3), (6, 7), (10, 11), (14, 15)]),
     baca.make_tied_repeated_durations([(1, 4)]),
 )
@@ -130,6 +136,12 @@ commands(
         baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
     ),
     library.box_adjustment(),
+)
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -186,11 +198,24 @@ commands(
 commands(
     ("vc", 1),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (2, 16)),
     baca.make_notes(rmakers.reduce_multiplier()),
+)
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (1, 2)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -221,6 +246,12 @@ commands(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
+)
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

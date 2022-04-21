@@ -65,8 +65,18 @@ commands(
 )
 
 commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vc", [1, 3, 5, 7]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(

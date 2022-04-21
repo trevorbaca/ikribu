@@ -102,6 +102,40 @@ commands(
 commands(
     ("bcl", [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
+    library.triplet_rhythm(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    library.triplet_rhythm(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
@@ -113,13 +147,15 @@ commands(
 )
 
 commands(
-    ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
-    library.triplet_rhythm(),
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
-    library.triplet_rhythm(),
+    ("vc", (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
