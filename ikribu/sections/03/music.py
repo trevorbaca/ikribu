@@ -78,13 +78,29 @@ commands(
 )
 
 commands(
+    ("bcl", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("bcl", [5, 11, 17, (19, 21)]),
     baca.make_repeat_tied_notes(),
 )
 
 commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vn", [(1, 3), (7, 9), (13, 15)]),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
@@ -97,7 +113,15 @@ commands(
 )
 
 commands(
-    ("va", (1, 3)),
+    "va_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (1, 18)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
     baca.clef("alto"),
     baca.staff_lines(5),
 )
@@ -187,6 +211,12 @@ commands(
         ),
     ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
+)
+
+commands(
+    ["vc_rh", "vc"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 if __name__ == "__main__":

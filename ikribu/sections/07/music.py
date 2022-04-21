@@ -46,6 +46,7 @@ commands(
 commands(
     ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.pitch("F#3"),
 )
 
@@ -54,6 +55,18 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.hairpin("sfp > ppp"),
     baca.pitch("G2"),
+)
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    (["vn", "va"], (1, 5)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -100,6 +113,7 @@ commands(
 commands(
     ("vc", (1, 4)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.hairpin("p < ff"),
     baca.pitch("F#3"),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),

@@ -75,6 +75,22 @@ commands(
         [(1, 2), (3, 6), 7, 8, 9, 10, (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
     ),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    (["vn", "va"], (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -85,6 +101,12 @@ commands(
 commands(
     ("va", (9, 20)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

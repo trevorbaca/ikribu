@@ -55,18 +55,26 @@ commands(
 
 commands(
     ("bcl", (1, 28)),
+    baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.dynamic("ppp"),
-    baca.make_repeat_tied_notes(),
     baca.markup(r"\ikribu-breathe-discreetly-markup"),
     baca.pitch("C2"),
     baca.staff_lines(5),
 )
 
 commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vn", (1, 16)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_rhythm(extra_counts=[4]),
+    baca.reapply_persistent_indicators(),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
 )
 
@@ -110,8 +118,9 @@ commands(
 
 commands(
     ("va", (1, 8)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_rhythm(extra_counts=[2]),
+    baca.reapply_persistent_indicators(),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
 )
 
@@ -157,6 +166,10 @@ commands(
 commands(
     ("vc", [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(

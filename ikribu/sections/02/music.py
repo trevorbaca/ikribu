@@ -54,6 +54,8 @@ commands(
 
 commands(
     ("bcl", (1, 5)),
+    baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.hairpin(
         "ppp < f",
         selector=lambda _: baca.select.leaves(_)[:2],
@@ -62,14 +64,33 @@ commands(
         "f >o niente",
         selector=lambda _: baca.rleaves(_)[-4:],
     ),
-    baca.make_repeat_tied_notes(),
     baca.pitch("D2"),
 )
 
 commands(
-    ("vn", (1, 2)),
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    "vn",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.staff_lines(5),
+)
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (1, 2)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -85,6 +106,18 @@ commands(
     baca.staff_position(0),
     baca.staff_lines(1),
     library.box_adjustment(),
+)
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    "vc",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 if __name__ == "__main__":

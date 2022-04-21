@@ -53,7 +53,13 @@ commands(
 )
 
 commands(
-    ("bcl", (1, 5)),
+    ["bcl", "vn_rh", "vn", "va_rh", "va"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    "bcl",
     baca.staff_lines(5),
 )
 
@@ -65,11 +71,13 @@ commands(
         ),
         rotation=-2,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (1, 10)),
     library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

@@ -4563,9 +4563,6 @@ segment.04.Cello.Music.Voice = {
     %! REAPPLIED_CLEF
     \clef "treble"
     %! baca._attach_color_literal(2)
-    %! REAPPLIED_MARGIN_MARKUP_COLOR
-    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(2)
     %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
     %! baca._attach_color_literal(1)
@@ -4579,6 +4576,9 @@ segment.04.Cello.Music.Voice = {
     %! baca._attach_color_literal(2)
     %! REAPPLIED_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)
+    %! baca._attach_color_literal(2)
+    %! REAPPLIED_MARGIN_MARKUP_COLOR
+    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)
     %! baca.make_repeat_tied_notes()
     fqf''!1..
     %! EXPLICIT_DYNAMIC_COLOR
@@ -4606,6 +4606,9 @@ segment.04.Cello.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-string-iii-markup
     %! baca._attach_color_literal(2)
+    %! REAPPLIED_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._attach_color_literal(2)
     %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)
     %! -PARTS
@@ -4614,9 +4617,6 @@ segment.04.Cello.Music.Voice = {
     %! baca._set_status_tag()
     %! REDRAWN_REAPPLIED_MARGIN_MARKUP
     \set SingleStringStaffGroup.shortInstrumentName = \markup \hcenter-in #16 "Vc."
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 2]

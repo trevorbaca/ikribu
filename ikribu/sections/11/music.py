@@ -61,11 +61,31 @@ commands(
 commands(
     ("bcl", [(1, 2), (3, 6)]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vn", [(1, 4), (5, 6)]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -83,7 +103,15 @@ commands(
 )
 
 commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vc", (1, 2)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
     baca.clef("bass"),
     baca.staff_lines(5),
 )

@@ -50,45 +50,50 @@ commands(
 
 commands(
     ("bcl", (1, 8)),
-    baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
+    baca.dynamic("ppp"),
     baca.pitch("Db2"),
 )
 
 commands(
     ("vn_rh", (1, 8)),
-    library.bcps(rotation=0),
     library.bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
         rotation=0,
     ),
+    baca.reapply_persistent_indicators(),
+    library.bcps(rotation=0),
 )
 
 commands(
     ("vn", (1, 8)),
+    library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=0),
-    library.glissando_rhythm(rotation_1=0, rotation_2=0),
 )
 
 commands(
     ("va_rh", (1, 8)),
-    library.bcps(rotation=-1),
     library.bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
         ),
         rotation=-1,
     ),
+    baca.reapply_persistent_indicators(),
+    library.bcps(rotation=-1),
 )
 
 commands(
     ("va", (1, 8)),
+    library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
+    baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=-10),
-    library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
 )
 
 commands(
@@ -110,6 +115,12 @@ commands(
     baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
+)
+
+commands(
+    ["vc_rh", "vc"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 if __name__ == "__main__":

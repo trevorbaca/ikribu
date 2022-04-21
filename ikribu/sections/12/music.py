@@ -84,11 +84,33 @@ commands(
 commands(
     ("bcl", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", (1, 2)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vn", [3, 7, 11, 15]),
     library.clb_rhythm(extra_counts=[4]),
+)
+
+commands(
+    ("va", (1, 2)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -99,6 +121,10 @@ commands(
 commands(
     ("vc", [1, 5, 9, 13]),
     baca.make_tied_repeated_durations([(1, 4)]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
