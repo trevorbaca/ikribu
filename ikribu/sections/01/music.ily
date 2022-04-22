@@ -297,14 +297,14 @@ segment.01.Bass.Clarinet.Music.Voice = {
               %! DEFAULT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“BassClarinet”)"
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“B. cl.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"7" #"4"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“B. cl.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! DEFAULT_CLEF_REDRAW_COLOR
@@ -955,12 +955,12 @@ segment.01.Violin.Music.Voice = {
       %! baca.dynamic()
     \baca-effort-mf
     % MARKUP:
-      %! baca.IndicatorCommand._call()
-      %! baca.markup()
-    ^ \ikribu-grainfall-one-markup
       %! EXPLICIT_MARGIN_MARKUP_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vn.”]"
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    ^ \ikribu-grainfall-one-markup
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
@@ -1614,14 +1614,14 @@ segment.01.Viola.Music.Voice = {
             c'1 * 7/4
             % AFTER:
             % MARKUP:
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“Va.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"7" #"4"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“Va.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
@@ -2258,12 +2258,12 @@ segment.01.Cello.Music.Voice = {
       %! baca.laissez_vibrer()
     \laissezVibrer
     % MARKUP:
-      %! baca.IndicatorCommand._call()
-      %! baca.markup()
-    ^ \markup pizz.
       %! EXPLICIT_MARGIN_MARKUP_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vc.”]"
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    ^ \markup pizz.
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-iii-markup

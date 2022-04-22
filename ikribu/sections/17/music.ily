@@ -3167,12 +3167,12 @@ segment.17.Viola.RH.Music.Voice = {
       %! baca.bcps()
     - \upbow
     % MARKUP:
-      %! REAPPLIED_INSTRUMENT_ALERT
-      %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Viola”)"
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-half-clt-markup
+      %! REAPPLIED_INSTRUMENT_ALERT
+      %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Viola”)"
     % SPANNER_STARTS:
       %! baca.BCPCommand._call(2)
       %! baca.bcps()
