@@ -265,6 +265,9 @@ segment.01.Bass.Clarinet.Music.Voice = {
               %! baca._set_status_tag()
               %! baca.staff_lines()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! DEFAULT_CLEF
@@ -601,6 +604,9 @@ segment.01.Violin.RH.Music.Voice = {
               %! baca._set_status_tag()
               %! baca.staff_lines()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! DEFAULT_CLEF
@@ -1011,6 +1017,9 @@ segment.01.Violin.Music.Voice = {
             \once \override Staff.StaffSymbol.line-count = 0
               %! baca._style_fermata_measures(1)
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
@@ -1269,6 +1278,9 @@ segment.01.Viola.RH.Music.Voice = {
               %! baca._set_status_tag()
               %! baca.staff_lines()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! DEFAULT_CLEF
@@ -1585,6 +1597,9 @@ segment.01.Viola.Music.Voice = {
               %! baca._set_status_tag()
               %! baca.staff_lines()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! DEFAULT_CLEF
@@ -1904,6 +1919,9 @@ segment.01.Cello.RH.Music.Voice = {
               %! baca._set_status_tag()
               %! baca.staff_lines()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! DEFAULT_CLEF
@@ -2317,6 +2335,9 @@ segment.01.Cello.Music.Voice = {
             \once \override Staff.StaffSymbol.line-count = 0
               %! baca._style_fermata_measures(1)
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
