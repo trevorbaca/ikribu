@@ -52,16 +52,15 @@ commands(
     ),
 )
 
+# BCLR, VN_RHR, VNR, VA_RHR, VAR
+
 commands(
     ["bcl", "vn_rh", "vn", "va_rh", "va"],
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
 )
 
-commands(
-    "bcl",
-    baca.staff_lines(5),
-)
+# VC_RHR
 
 commands(
     ("vc_rh", (1, 10)),
@@ -71,39 +70,68 @@ commands(
         ),
         rotation=-2,
     ),
-    baca.reapply_persistent_indicators(),
 )
+
+commands(
+    ("vc_rh", 11),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
 
 commands(
     ("vc", (1, 10)),
     library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
+    ("vc", 11),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# bcl, vn_rh, vn, va_rh, va
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va"],
+    baca.reapply_persistent_indicators(),
+    baca.new(
+        baca.staff_lines(5),
+        match=0,
+    ),
+)
+
+# vc_rh
+
+commands(
     ("vc_rh", (1, 10)),
-    baca.dls_staff_padding(9),
+    baca.reapply_persistent_indicators(),
+    baca.markup(r"\baca-half-clt-markup"),
+    baca.staff_position(0),
+    library.bcps(rotation=-2),
+    baca.script_staff_padding(
+        7,
+        selector=lambda _: baca.select.leaves(_),
+    ),
+    baca.text_script_staff_padding(8),
+    baca.text_spanner_staff_padding(4),
     baca.hairpin(
         "ff > p < f > pp < f > ppp <",
         bookend=True,
         pieces=library.enchain_runs([3, 4]),
     ),
-    baca.markup(r"\baca-half-clt-markup"),
-    baca.script_staff_padding(
-        7,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.staff_position(0),
-    baca.text_script_staff_padding(8),
-    baca.text_spanner_staff_padding(4),
-    library.bcps(rotation=-2),
+    baca.dls_staff_padding(9),
 )
+
+# vc
 
 commands(
     ("vc", (1, 10)),
+    baca.reapply_persistent_indicators(),
     baca.clef("tenor"),
-    baca.glissando(),
     library.glissando_pitches(octave=4, rotation=-20),
+    baca.glissando(),
 )
 
 if __name__ == "__main__":
@@ -116,8 +144,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
