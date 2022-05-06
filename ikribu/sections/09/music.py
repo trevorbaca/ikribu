@@ -58,7 +58,7 @@ commands(
 
 commands(
     ("vn_rh", (1, 8)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
@@ -70,7 +70,7 @@ commands(
 
 commands(
     ("vn", (1, 8)),
-    library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
     baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=0),
@@ -78,7 +78,7 @@ commands(
 
 commands(
     ("va_rh", (1, 8)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
         ),
@@ -90,7 +90,7 @@ commands(
 
 commands(
     ("va", (1, 8)),
-    library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
+    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
     baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=-10),

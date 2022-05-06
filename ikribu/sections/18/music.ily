@@ -4715,11 +4715,11 @@ segment.18.Cello.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 14/15
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4784,7 +4784,7 @@ segment.18.Cello.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4811,7 +4811,7 @@ segment.18.Cello.Music.Voice = {
           %! baca.markup()
         ^ \ikribu-stonescratch-markup
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -4830,7 +4830,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4840,7 +4840,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4848,17 +4848,17 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -4868,17 +4868,17 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4886,12 +4886,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4901,7 +4901,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4909,33 +4909,33 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 8/9
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 2]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4943,12 +4943,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -4956,32 +4956,32 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4992,14 +4992,14 @@ segment.18.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 3]
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -5009,12 +5009,12 @@ segment.18.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5022,12 +5022,12 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
@@ -5037,7 +5037,7 @@ segment.18.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -5045,22 +5045,22 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5068,12 +5068,12 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -5081,17 +5081,17 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
@@ -5099,12 +5099,12 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5112,24 +5112,24 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 6/7
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 4]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5137,12 +5137,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5152,7 +5152,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5162,7 +5162,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5172,7 +5172,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5180,43 +5180,43 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 2/3
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 5]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5226,12 +5226,12 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5239,12 +5239,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5252,7 +5252,7 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -5263,25 +5263,25 @@ segment.18.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 6]
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % SPANNER_STARTS:
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5289,22 +5289,22 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
@@ -5312,12 +5312,12 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -5325,17 +5325,17 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5345,34 +5345,34 @@ segment.18.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 14/15
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 7]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r4..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5380,12 +5380,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5395,7 +5395,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5405,7 +5405,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5413,38 +5413,38 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r2..
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 4/5
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 8]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5452,12 +5452,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5465,22 +5465,22 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5488,12 +5488,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5501,7 +5501,7 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -5512,25 +5512,25 @@ segment.18.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 9]
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % START_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     [
     % SPANNER_STARTS:
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -5540,7 +5540,7 @@ segment.18.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -5548,44 +5548,44 @@ segment.18.Cello.Music.Voice = {
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 6/7
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 10]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r4..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5593,12 +5593,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5608,7 +5608,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5616,17 +5616,17 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5637,24 +5637,24 @@ segment.18.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     \times 7/8
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 11]
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5662,12 +5662,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5677,7 +5677,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -5687,7 +5687,7 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5695,17 +5695,17 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -5715,17 +5715,17 @@ segment.18.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5733,12 +5733,12 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -5746,13 +5746,13 @@ segment.18.Cello.Music.Voice = {
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.inscription_rhythm()
+          %! ikribu.make_inscription_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.inscription_rhythm()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

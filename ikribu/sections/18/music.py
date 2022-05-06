@@ -108,7 +108,7 @@ commands(
 
 commands(
     ("vc", (1, 11)),
-    library.inscription_rhythm(),
+    library.make_inscription_rhythm(),
     baca.reapply_persistent_indicators(),
 )
 

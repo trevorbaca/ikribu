@@ -77,53 +77,108 @@ commands(
     ),
 )
 
+# BCLR
+
 commands(
     ("bcl", (1, 4)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("bcl", [5, 11, 17, (19, 21)]),
+    ("bcl", 5),
     baca.make_repeat_tied_notes(),
 )
+
+commands(
+    ("bcl", (6, 10)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 11),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (12, 16)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 17),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", 18),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", (19, 21)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (22, 25)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VN_RHR
 
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
 )
 
+# VNR
+
 commands(
-    ("vn", [(1, 3), (7, 9), (13, 15)]),
+    ("vn", (1, 3)),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
 
 commands(
-    [
-        "vn",
-        "va",
-    ],
-    baca.text_script_staff_padding(3, allow_mmrests=True),
-    baca.text_spanner_staff_padding(3.5),
+    ("vn", (4, 6)),
+    baca.make_mmrests(),
 )
+
+commands(
+    ("vn", (7, 9)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", (10, 12)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (13, 15)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", (16, 25)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VA_RHR
 
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
 )
+
+# VAR
 
 commands(
     ("va", (1, 18)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-    baca.clef("alto"),
-    baca.staff_lines(5),
 )
 
 commands(
@@ -132,15 +187,40 @@ commands(
 )
 
 commands(
+    ("va", 25),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VC_RHR
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
+
+commands(
+    "vc",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# bcl
+
+commands(
+    "bcl",
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("bcl", (5, 25)),
     baca.pitch(
         "Db2",
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
-)
-
-commands(
-    ("bcl", 5),
     baca.dynamic("ppp"),
 )
 
@@ -154,6 +234,22 @@ commands(
         "f >o niente",
         selector=lambda _: baca.rleaves(_)[-2:],
     ),
+)
+
+# vn_rh
+
+commands(
+    "vn_rh",
+    baca.reapply_persistent_indicators(),
+)
+
+# vn
+
+commands(
+    "vn",
+    baca.reapply_persistent_indicators(),
+    baca.text_script_staff_padding(3, allow_mmrests=True),
+    baca.text_spanner_staff_padding(3.5),
 )
 
 commands(
@@ -172,18 +268,60 @@ commands(
 )
 
 commands(
-    ("vn", [(1, 3), (7, 9), (13, 15)]),
-    baca.suite(
-        baca.hairpin(
-            "ppp < p",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "p >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    ),
+    ("vn", (1, 3)),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
+    baca.hairpin(
+        "ppp < p",
+        selector=lambda _: baca.select.leaves(_)[:2],
+    ),
+    baca.hairpin(
+        "p >o niente",
+        selector=lambda _: baca.rleaves(_)[-2:],
+    ),
+)
+
+commands(
+    ("vn", (7, 9)),
+    baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
+    baca.hairpin(
+        "ppp < p",
+        selector=lambda _: baca.select.leaves(_)[:2],
+    ),
+    baca.hairpin(
+        "p >o niente",
+        selector=lambda _: baca.rleaves(_)[-2:],
+    ),
+)
+
+commands(
+    ("vn", (13, 15)),
+    baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
+    baca.hairpin(
+        "ppp < p",
+        selector=lambda _: baca.select.leaves(_)[:2],
+    ),
+    baca.hairpin(
+        "p >o niente",
+        selector=lambda _: baca.rleaves(_)[-2:],
+    ),
+)
+
+# va_rh
+
+commands(
+    "va_rh",
+    baca.reapply_persistent_indicators(),
+)
+
+# va
+
+commands(
+    "va",
+    baca.reapply_persistent_indicators(),
+    baca.clef("alto"),
+    baca.staff_lines(5),
+    baca.text_script_staff_padding(3, allow_mmrests=True),
+    baca.text_spanner_staff_padding(3.5),
 )
 
 commands(
@@ -196,26 +334,28 @@ commands(
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
-)
-
-commands(
-    ("va", (19, 24)),
-    baca.suite(
-        baca.hairpin(
-            "ppp < mf",
-            selector=lambda _: baca.select.leaves(_)[:5],
-        ),
-        baca.hairpin(
-            "mf >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    ),
     baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
+    baca.hairpin(
+        "ppp < mf",
+        selector=lambda _: baca.select.leaves(_)[:5],
+    ),
+    baca.hairpin(
+        "mf >o niente",
+        selector=lambda _: baca.rleaves(_)[-2:],
+    ),
 )
 
+# vc_rh
+
 commands(
-    ["vc_rh", "vc"],
-    baca.make_mmrests(),
+    "vc_rh",
+    baca.reapply_persistent_indicators(),
+)
+
+# vc
+
+commands(
+    "vc",
     baca.reapply_persistent_indicators(),
 )
 
@@ -229,8 +369,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

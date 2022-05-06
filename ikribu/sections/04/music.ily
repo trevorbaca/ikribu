@@ -1619,13 +1619,6 @@ segment.04.Bass.Clarinet.Music.Voice = {
     % SPANNER_STARTS:
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_padding()
-    \revert TextScript.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
-    \revert TextScript.parent-alignment-X
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2320,6 +2313,13 @@ segment.04.Bass.Clarinet.Music.Voice = {
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"6"
+    % COMMANDS:
+      %! baca.OverrideCommand._call(2)
+      %! baca.text_script_padding()
+    \revert TextScript.padding
+      %! baca.OverrideCommand._call(2)
+      %! baca.text_script_parent_alignment_x()
+    \revert TextScript.parent-alignment-X
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3166,9 +3166,6 @@ segment.04.Violin.Music.Voice = {
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"1" #"1"
-              %! baca.IndicatorCommand._call()
-              %! baca.markup()
-            ^ \ikribu-trem-flaut-tast-markup
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! EXPLICIT_CLEF_REDRAW_COLOR
@@ -3243,6 +3240,10 @@ segment.04.Violin.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \pp
+    % MARKUP:
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    ^ \ikribu-trem-flaut-tast-markup
     % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3258,6 +3259,9 @@ segment.04.Violin.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3424,6 +3428,9 @@ segment.04.Violin.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3590,6 +3597,9 @@ segment.04.Violin.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3756,6 +3766,9 @@ segment.04.Violin.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4733,6 +4746,9 @@ segment.04.Viola.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4899,6 +4915,9 @@ segment.04.Viola.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5065,6 +5084,9 @@ segment.04.Viola.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5231,6 +5253,9 @@ segment.04.Viola.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6162,6 +6187,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6204,6 +6232,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6246,6 +6277,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6295,6 +6329,9 @@ segment.04.Cello.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \>
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -6342,6 +6379,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6384,6 +6424,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6426,6 +6469,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6475,6 +6521,9 @@ segment.04.Cello.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \>
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -6522,6 +6571,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6564,6 +6616,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6606,6 +6661,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6655,6 +6713,9 @@ segment.04.Cello.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \>
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -6702,6 +6763,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6744,6 +6808,9 @@ segment.04.Cello.Music.Voice = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

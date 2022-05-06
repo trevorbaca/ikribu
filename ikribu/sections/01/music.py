@@ -45,104 +45,162 @@ commands(
     ),
 )
 
-# bcl
+# BCLR
 
 commands(
     "bcl",
     baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VNR_RH
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VNR
+
+commands(
+    ("vn", 1),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", 2),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VAR_RH
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VAR
+
+commands(
+    "va",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR_RH
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
+
+commands(
+    ("vc", 1),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", 2),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# bcl
+
+commands(
+    "bcl",
     baca.attach_first_segment_default_indicators(),
+    library.margin_markup("B. cl."),
+    baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
     baca.staff_lines(5),
-    baca.suite(
-        library.margin_markup("B. cl."),
-        baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
-    ),
+)
+
+
+# vn_rh
+
+commands(
+    "vn_rh",
+    baca.attach_first_segment_default_indicators(),
+    baca.staff_lines(1),
 )
 
 # vn
 
 commands(
-    "vn",
-    baca.suite(
-        library.margin_markup("Vn.", context="SingleStringStaffGroup"),
-        baca.start_markup(
-            "Violin",
-            context="SingleStringStaffGroup",
-            hcenter_in=16,
-        ),
+    ("vn", 1),
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Vn.", context="SingleStringStaffGroup"),
+    baca.start_markup(
+        "Violin",
+        context="SingleStringStaffGroup",
+        hcenter_in=16,
     ),
+    baca.clef("percussion"),
+    baca.staff_lines(1),
+    baca.markup(r"\ikribu-grainfall-one-markup"),
+    library.box_adjustment(),
+    baca.staff_position(0),
+    baca.dynamic('"mf"'),
 )
 
+# va_rh
+
 commands(
-    ("vn", 1),
-    baca.make_repeat_tied_notes(),
+    "va_rh",
     baca.attach_first_segment_default_indicators(),
-    baca.clef("percussion"),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-grainfall-one-markup"),
     baca.staff_lines(1),
-    baca.staff_position(0),
-    library.box_adjustment(),
 )
 
 # va
 
 commands(
     "va",
-    baca.make_mmrests(),
     baca.attach_first_segment_default_indicators(),
-    baca.staff_lines(5),
-    baca.suite(
-        library.margin_markup("Va.", context="SingleStringStaffGroup"),
-        baca.start_markup(
-            "Viola",
-            context="SingleStringStaffGroup",
-            hcenter_in=16,
-        ),
+    library.margin_markup("Va.", context="SingleStringStaffGroup"),
+    baca.start_markup(
+        "Viola",
+        context="SingleStringStaffGroup",
+        hcenter_in=16,
     ),
+    baca.staff_lines(5),
+)
+
+# vc_rh
+
+commands(
+    "vc_rh",
+    baca.attach_first_segment_default_indicators(),
+    baca.staff_lines(1),
 )
 
 # vc
 
 commands(
     ("vc", 1),
-    baca.make_repeat_tied_notes(),
     baca.attach_first_segment_default_indicators(),
-)
-
-commands(
-    "vc",
-    baca.staff_lines(5),
-    baca.suite(
-        library.margin_markup("Vc.", context="SingleStringStaffGroup"),
-        baca.start_markup(
-            "Cello",
-            context="SingleStringStaffGroup",
-            hcenter_in=16,
-        ),
+    library.margin_markup("Vc.", context="SingleStringStaffGroup"),
+    baca.start_markup(
+        "Cello",
+        context="SingleStringStaffGroup",
+        hcenter_in=16,
     ),
-)
-
-commands(
-    ("vc", 1),
     baca.clef("treble"),
-    baca.dynamic("sfz"),
-    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
+    baca.staff_lines(5),
     baca.markup(r"\markup pizz."),
+    baca.pitch("F~5"),
+    baca.note_head_style_harmonic(),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(
         r"\baca-string-iii-markup",
         direction=abjad.DOWN,
     ),
-    baca.note_head_style_harmonic(),
-    baca.pitch("F~5"),
-)
-
-# vn_rh, va_rh, vc_rh
-
-commands(
-    ["vn_rh", "va_rh", "vc_rh"],
-    baca.make_mmrests(),
-    baca.attach_first_segment_default_indicators(),
-    baca.staff_lines(1),
+    baca.dynamic("sfz"),
 )
 
 if __name__ == "__main__":
@@ -155,8 +213,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
     )
     lilypond_file = baca.make_lilypond_file(

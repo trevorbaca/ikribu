@@ -162,32 +162,32 @@ commands(
 
 commands(
     ("vn", (2, 4)),
-    library.color_rhythm(3),
+    library.make_color_rhythm(3),
 )
 
 commands(
     ("vn", 7),
-    library.color_rhythm(4),
+    library.make_color_rhythm(4),
 )
 
 commands(
     ("vn", (10, 12)),
-    library.color_rhythm(5),
+    library.make_color_rhythm(5),
 )
 
 commands(
     ("vn", (15, 17)),
-    library.color_rhythm(3),
+    library.make_color_rhythm(3),
 )
 
 commands(
     ("vn", 20),
-    library.color_rhythm(4),
+    library.make_color_rhythm(4),
 )
 
 commands(
     ("vn", (23, 27)),
-    library.color_rhythm(5),
+    library.make_color_rhythm(5),
 )
 
 commands(
@@ -198,32 +198,32 @@ commands(
 
 commands(
     ("va", (2, 4)),
-    library.color_rhythm(4),
+    library.make_color_rhythm(4),
 )
 
 commands(
     ("va", 7),
-    library.color_rhythm(5),
+    library.make_color_rhythm(5),
 )
 
 commands(
     ("va", (10, 12)),
-    library.color_rhythm(3),
+    library.make_color_rhythm(3),
 )
 
 commands(
     ("va", (15, 17)),
-    library.color_rhythm(4),
+    library.make_color_rhythm(4),
 )
 
 commands(
     ("va", 20),
-    library.color_rhythm(5),
+    library.make_color_rhythm(5),
 )
 
 commands(
     ("va", (23, 27)),
-    library.color_rhythm(3),
+    library.make_color_rhythm(3),
 )
 
 commands(

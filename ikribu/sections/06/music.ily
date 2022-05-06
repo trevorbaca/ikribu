@@ -2175,11 +2175,11 @@ segment.06.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2264,7 +2264,7 @@ segment.06.Violin.Music.Voice = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2325,7 +2325,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2335,7 +2335,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2346,24 +2346,24 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 2]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2402,7 +2402,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -2412,7 +2412,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2437,7 +2437,7 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2541,7 +2541,7 @@ segment.06.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 5]
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2580,7 +2580,7 @@ segment.06.Violin.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2590,7 +2590,7 @@ segment.06.Violin.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2601,18 +2601,18 @@ segment.06.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 4/6
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 6]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -2652,7 +2652,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2662,7 +2662,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2687,7 +2687,7 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2790,18 +2790,18 @@ segment.06.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 9]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2840,7 +2840,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -2850,7 +2850,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2861,24 +2861,24 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 8/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 10]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2917,7 +2917,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2927,7 +2927,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2952,7 +2952,7 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3056,7 +3056,7 @@ segment.06.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 13]
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -3096,7 +3096,7 @@ segment.06.Violin.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3106,7 +3106,7 @@ segment.06.Violin.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3117,18 +3117,18 @@ segment.06.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 14]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3167,7 +3167,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3177,7 +3177,7 @@ segment.06.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3202,7 +3202,7 @@ segment.06.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4127,18 +4127,18 @@ segment.06.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 2]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -4178,7 +4178,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4188,7 +4188,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4199,14 +4199,14 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 3]
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4245,7 +4245,7 @@ segment.06.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -4255,7 +4255,7 @@ segment.06.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4377,18 +4377,18 @@ segment.06.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 4/6
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 6]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4427,7 +4427,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4437,7 +4437,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4448,14 +4448,14 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 7]
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -4495,7 +4495,7 @@ segment.06.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4505,7 +4505,7 @@ segment.06.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4627,18 +4627,18 @@ segment.06.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 8/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 10]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4677,7 +4677,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -4687,7 +4687,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4698,24 +4698,24 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 11]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4754,7 +4754,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4764,7 +4764,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -4789,7 +4789,7 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4892,18 +4892,18 @@ segment.06.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 14]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4943,7 +4943,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4953,7 +4953,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4964,24 +4964,24 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 15]
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5020,7 +5020,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5030,7 +5030,7 @@ segment.06.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.triplet_rhythm()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5055,7 +5055,7 @@ segment.06.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.triplet_rhythm()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

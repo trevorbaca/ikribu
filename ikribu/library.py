@@ -66,20 +66,21 @@ def enchain_runs(counts, exclude=None):
     return selector
 
 
-def bcl_color_rhythm(rotation_1=0, rotation_2=0):
-    counts = [2, 3, 2, 3, 14, 16, 14, 16]
-    counts = abjad.sequence.rotate(counts, n=rotation_1)
-    extra_counts = [2, 4, 0]
-    extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
-
-    return baca.rhythm(
-        rmakers.talea(counts, 8, extra_counts=extra_counts),
-        rmakers.beam(),
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-        rmakers.force_repeat_tie(),
-        tag=abjad.Tag("ikribu.bcl_color_rhythm()"),
-    )
+# TODO: remove
+# def bcl_color_rhythm(rotation_1=0, rotation_2=0):
+#    counts = [2, 3, 2, 3, 14, 16, 14, 16]
+#    counts = abjad.sequence.rotate(counts, n=rotation_1)
+#    extra_counts = [2, 4, 0]
+#    extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
+#
+#    return baca.rhythm(
+#        rmakers.talea(counts, 8, extra_counts=extra_counts),
+#        rmakers.beam(),
+#        rmakers.trivialize(),
+#        rmakers.extract_trivial(),
+#        rmakers.force_repeat_tie(),
+#        tag=baca.tags.function_name(inspect.currentframe()),
+#    )
 
 
 def bcps(rotation=0):
@@ -94,7 +95,7 @@ def bcps(rotation=0):
     return baca.bcps(bcps)
 
 
-def bow_rhythm(*commands, rotation=0):
+def make_bow_rhythm(*commands, rotation=0):
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
 
@@ -104,7 +105,7 @@ def bow_rhythm(*commands, rotation=0):
         rmakers.beam(),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("ikribu.bow_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
@@ -115,14 +116,14 @@ def box_adjustment():
     )
 
 
-def clb_rhythm(*, extra_counts):
+def make_clb_rhythm(*, extra_counts):
     return baca.rhythm(
         rmakers.even_division([8], extra_counts=extra_counts),
         rmakers.beam(),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
         rmakers.force_diminution(),
-        tag=abjad.Tag("ikribu.clb_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
@@ -138,7 +139,7 @@ def clb_staff_positions(*, rotation=0):
     )
 
 
-def color_rhythm(n):
+def make_color_rhythm(n):
     return baca.rhythm(
         rmakers.tuplet([tuple(n * [1])]),
         rmakers.force_fraction(),
@@ -147,7 +148,7 @@ def color_rhythm(n):
         rmakers.force_diminution(),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("ikribu.color_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
@@ -164,12 +165,11 @@ def glissando_pitches(octave=4, rotation=0):
     return baca.pitches(pitches_, allow_repeats=True)
 
 
-def glissando_rhythm(rotation_1=0, rotation_2=0):
+def make_glissando_rhythm(rotation_1=0, rotation_2=0):
     counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
-
     return baca.rhythm(
         rmakers.talea(counts, 16, extra_counts=extra_counts),
         rmakers.beam(),
@@ -177,22 +177,21 @@ def glissando_rhythm(rotation_1=0, rotation_2=0):
         rmakers.denominator((1, 8)),
         rmakers.force_fraction(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("ikribu.glissando_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def inscription_rhythm():
+def make_inscription_rhythm():
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
     extra_counts = [2, 4, 0]
-
     return baca.rhythm(
         rmakers.talea(counts, 16, extra_counts=extra_counts),
         rmakers.beam(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
-        tag=abjad.Tag("ikribu.inscription_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
@@ -212,7 +211,7 @@ def margin_markup(
     return baca.not_parts(command)
 
 
-def triplet_rhythm():
+def make_triplet_rhythm():
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1)]),
         rmakers.beam(),
@@ -222,17 +221,17 @@ def triplet_rhythm():
         rmakers.rewrite_dots(),
         rmakers.extract_trivial(),
         rmakers.force_diminution(),
-        tag=abjad.Tag("ikribu.triplet_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def vigil_rhythm():
+def make_vigil_rhythm():
     return baca.rhythm(
         rmakers.talea([16, -1], 4),
         rmakers.beam(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
-        tag=abjad.Tag("ikribu.vigil_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 

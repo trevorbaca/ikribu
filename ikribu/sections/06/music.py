@@ -116,7 +116,7 @@ commands(
 
 commands(
     ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
-    library.triplet_rhythm(),
+    library.make_triplet_rhythm(),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -131,7 +131,7 @@ commands(
 
 commands(
     ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
-    library.triplet_rhythm(),
+    library.make_triplet_rhythm(),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,

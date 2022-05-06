@@ -53,7 +53,7 @@ commands(
 
 commands(
     ("vn_rh", (1, 10)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
@@ -64,7 +64,7 @@ commands(
 
 commands(
     ("vn", (1, 10)),
-    library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
     baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.staff_lines(5),
@@ -73,7 +73,7 @@ commands(
 pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
 commands(
     ("va_rh", (1, 10)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), pattern),
         ),
@@ -84,14 +84,14 @@ commands(
 
 commands(
     ("va", (1, 10)),
-    library.glissando_rhythm(rotation_1=-4, rotation_2=-1),
+    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
     baca.reapply_persistent_indicators(),
     baca.staff_lines(5),
 )
 
 commands(
     ("vc_rh", (1, 10)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
@@ -102,7 +102,7 @@ commands(
 
 commands(
     ("vc", (1, 10)),
-    library.glissando_rhythm(rotation_1=-8, rotation_2=-2),
+    library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
     baca.reapply_persistent_indicators(),
 )
 
