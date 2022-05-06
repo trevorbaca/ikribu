@@ -99,69 +99,170 @@ commands(
     baca.rehearsal_mark("E"),
 )
 
+# BCLR
+
 commands(
-    ("bcl", [(1, 4), (5, 8), (9, 12), (13, 16)]),
+    ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
+
+commands(
+    ("bcl", (5, 8)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (9, 12)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (13, 16)),
+    baca.make_repeat_tied_notes(),
+    baca.append_phantom_measure(),
+)
+
+# VN_RHR
 
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
+)
+
+# VNR
+
+commands(
+    ("vn", (1, 2)),
+    library.make_triplet_rhythm(),
 )
 
 commands(
-    ("vn", [(1, 2), (5, 6), (9, 10), (13, 14)]),
-    library.make_triplet_rhythm(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
+    ("vn", (3, 4)),
+    baca.make_mmrests(),
 )
+
+commands(
+    ("vn", (5, 6)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("vn", (7, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (9, 10)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("vn", (11, 12)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (13, 14)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("vn", (15, 16)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VA_RHR
 
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
+)
+
+# VAR
+
+commands(
+    ("va", 1),
+    baca.make_mmrests(),
 )
 
 commands(
-    ("va", [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    ("va", (2, 3)),
     library.make_triplet_rhythm(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
 
 commands(
-    [
-        ("vn", 1),
-        ("va", 1),
-    ],
-    baca.clef("percussion"),
+    ("va", (4, 5)),
+    baca.make_mmrests(),
 )
+
+commands(
+    ("va", (6, 7)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("va", (8, 9)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (10, 11)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("va", (12, 13)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (14, 15)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("va", 16),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VC_RHR
 
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
 )
+
+#  VCR
 
 commands(
     ("vc", (1, 8)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("vc", [(9, 12), (13, 16)]),
+    ("vc", (9, 12)),
     baca.make_repeat_tied_notes(),
 )
+
+commands(
+    ("vc", (13, 16)),
+    baca.make_repeat_tied_notes(),
+    baca.append_phantom_measure(),
+)
+
+#
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.reapply_persistent_indicators(),
+)
+
+# bcl
 
 commands(
     ("bcl", (1, 4)),
@@ -184,11 +285,11 @@ commands(
     baca.pitch("F+3"),
 )
 
+# vn, va
+
 commands(
-    [
-        "vn",
-        "va",
-    ],
+    ["vn", "va"],
+    baca.clef("percussion"),
     baca.accent(
         selector=lambda _: abjad.select.get(
             baca.select.pheads(_, exclude=baca.enums.HIDDEN),
@@ -215,8 +316,10 @@ commands(
     library.box_adjustment(),
 )
 
+# vc
+
 commands(
-    ("vc", (1, 16)),
+    "vc",
     baca.clef("bass"),
 )
 
@@ -255,7 +358,10 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

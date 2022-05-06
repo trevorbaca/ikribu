@@ -43,30 +43,110 @@ commands(
     baca.rehearsal_mark("F"),
 )
 
+# BCLR
+
 commands(
     ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.reapply_persistent_indicators(),
-    baca.pitch("F#3"),
+)
+
+
+commands(
+    ("bcl", 5),
+    baca.make_mmrests(),
 )
 
 commands(
     ("bcl", (6, 8)),
     baca.make_repeat_tied_notes(),
-    baca.hairpin("sfp > ppp"),
-    baca.pitch("G2"),
 )
+
+# VN_RHR, VA_RHR, VC_RHR
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
     baca.make_mmrests(),
+)
+
+# VNR
+
+commands(
+    ("vn", (1, 5)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (6, 7)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", 8),
+    baca.make_mmrests(),
+)
+
+# VAR
+
+commands(
+    ("va", (1, 5)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (6, 7)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("va", 8),
+    baca.make_mmrests(),
+)
+
+# VCR
+
+commands(
+    ("vc", (1, 4)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", 5),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (6, 7)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("vc", 8),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
 )
 
 commands(
-    (["vn", "va"], (1, 5)),
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    ("bcl", (1, 4)),
+    baca.pitch("F#3"),
+)
+
+commands(
+    ("bcl", (6, 8)),
+    baca.hairpin("sfp > ppp"),
+    baca.pitch("G2"),
 )
 
 commands(
@@ -74,7 +154,6 @@ commands(
         ("vn", (6, 7)),
         ("va", (6, 7)),
     ],
-    baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
     baca.hairpin(
         "sfpp < p >o niente",
@@ -112,8 +191,6 @@ commands(
 
 commands(
     ("vc", (1, 4)),
-    baca.make_repeat_tied_notes(),
-    baca.reapply_persistent_indicators(),
     baca.hairpin("p < ff"),
     baca.pitch("F#3"),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
@@ -123,7 +200,6 @@ commands(
 
 commands(
     ("vc", (6, 7)),
-    baca.make_tied_repeated_durations([(1, 4)]),
     baca.markup(r"\ikribu-graincircle-pi-two-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
@@ -146,7 +222,10 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

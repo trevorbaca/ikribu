@@ -54,11 +54,72 @@ commands(
     ),
 )
 
-# bcl
+# BCL
 
 commands(
     ("bcl", (1, 6)),
     baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (7, 12)),
+    baca.make_mmrests(),
+)
+
+# VN_RH, VA_RH, VC_RH
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+)
+
+# VN
+
+commands(
+    ("vn", (1, 9)),
+    baca.make_repeated_duration_notes([(1, 4)]),
+)
+
+commands(
+    ("vn", (10, 12)),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 9)),
+    baca.make_repeated_duration_notes([(1, 4)]),
+)
+
+commands(
+    ("va", (10, 12)),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", (1, 11)),
+    library.make_inscription_rhythm(),
+)
+
+commands(
+    ("vc", 12),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
 )
 
@@ -70,20 +131,8 @@ commands(
     library.box_adjustment(),
 )
 
-# vn rh, va rh, vc rh
-
-commands(
-    ["vn_rh", "va_rh", "vc_rh"],
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-)
-
-# vn
-
 commands(
     ("vn", (1, 9)),
-    baca.make_repeated_duration_notes([(1, 4)]),
-    baca.reapply_persistent_indicators(),
     baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
@@ -91,25 +140,13 @@ commands(
     baca.text_script_padding(2.5),
 )
 
-# va
-
 commands(
     ("va", (1, 9)),
-    baca.make_repeated_duration_notes([(1, 4)]),
-    baca.reapply_persistent_indicators(),
     baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"mf"'),
     baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
-)
-
-# vc
-
-commands(
-    ("vc", (1, 11)),
-    library.make_inscription_rhythm(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -149,9 +186,12 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         final_segment=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

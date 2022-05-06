@@ -134,108 +134,218 @@ commands(
     ),
 )
 
-commands(
-    ("bcl", 1),
+
+def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
+    if grainfall is True:
+        commands(
+            (voice_name, 1),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, 1),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, (2, 4)),
+        library.make_color_rhythm(color_rhythm_n[0]),
+    )
+    if grainfall is True:
+        commands(
+            (voice_name, 5),
+            baca.make_mmrests(),
+        )
+        commands(
+            (voice_name, 6),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, (5, 6)),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, 7),
+        library.make_color_rhythm(color_rhythm_n[1]),
+    )
+    if grainfall is True:
+        commands(
+            (voice_name, 8),
+            baca.make_mmrests(),
+        )
+        commands(
+            (voice_name, 9),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, (8, 9)),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, (10, 12)),
+        library.make_color_rhythm(color_rhythm_n[2]),
+    )
+    if grainfall is True:
+        commands(
+            (voice_name, 13),
+            baca.make_mmrests(),
+        )
+        commands(
+            (voice_name, 14),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, (13, 14)),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, (15, 17)),
+        library.make_color_rhythm(color_rhythm_n[3]),
+    )
+    if grainfall is True:
+        commands(
+            (voice_name, 18),
+            baca.make_mmrests(),
+        )
+        commands(
+            (voice_name, 19),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, (18, 19)),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, 20),
+        library.make_color_rhythm(color_rhythm_n[4]),
+    )
+    if grainfall is True:
+        commands(
+            (voice_name, 21),
+            baca.make_mmrests(),
+        )
+        commands(
+            (voice_name, 22),
+            baca.make_repeat_tied_notes(),
+        )
+    else:
+        commands(
+            (voice_name, (21, 22)),
+            baca.make_mmrests(),
+        )
+    commands(
+        (voice_name, (23, 27)),
+        library.make_color_rhythm(color_rhythm_n[5]),
+    )
+    commands(
+        (voice_name, (28, 33)),
+        baca.make_mmrests(),
+    )
+
+
+# BCL
+
+baca.alternate_makers(
+    commands,
+    "bcl",
+    [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)],
+    baca.make_repeat_tied_notes(),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    total=32,
 )
 
-commands(
-    ("bcl", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)]),
-    baca.make_repeat_tied_notes(),
-)
+# VN_RH, VA_RH, VC_RH
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
+# VN
+
+make_vn_va_rhythm(commands, "vn", [3, 4, 5, 3, 4, 5], grainfall=True)
+
+# VA
+
+make_vn_va_rhythm(commands, "va", [4, 5, 3, 4, 5, 3], grainfall=False)
+
+# VC
+
 commands(
-    ("vn", [1, 6, 9, 14, 19, 22]),
+    ("vc", [1, (2, 4)]),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
 
 commands(
-    ("vn", (2, 4)),
-    library.make_color_rhythm(3),
-)
-
-commands(
-    ("vn", 7),
-    library.make_color_rhythm(4),
-)
-
-commands(
-    ("vn", (10, 12)),
-    library.make_color_rhythm(5),
-)
-
-commands(
-    ("vn", (15, 17)),
-    library.make_color_rhythm(3),
-)
-
-commands(
-    ("vn", 20),
-    library.make_color_rhythm(4),
-)
-
-commands(
-    ("vn", (23, 27)),
-    library.make_color_rhythm(5),
-)
-
-commands(
-    ("va", 1),
+    ("vc", 5),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("va", (2, 4)),
-    library.make_color_rhythm(4),
-)
-
-commands(
-    ("va", 7),
-    library.make_color_rhythm(5),
-)
-
-commands(
-    ("va", (10, 12)),
-    library.make_color_rhythm(3),
-)
-
-commands(
-    ("va", (15, 17)),
-    library.make_color_rhythm(4),
-)
-
-commands(
-    ("va", 20),
-    library.make_color_rhythm(5),
-)
-
-commands(
-    ("va", (23, 27)),
-    library.make_color_rhythm(3),
-)
-
-commands(
-    (
-        "vc",
-        [1, (2, 4), 6, 7, 9, (10, 12), 14, (15, 17), 19, 20, 22, (23, 27)],
-    ),
+    ("vc", [6, 7]),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
+)
+
+commands(
+    ("vc", 8),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", [9, (10, 12)]),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", 13),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", [14, (15, 17)]),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", 18),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", [19, 20]),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", 21),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", [22, (23, 27)]),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", (28, 32)),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -477,8 +587,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

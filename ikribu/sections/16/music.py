@@ -69,28 +69,30 @@ commands(
     ),
 )
 
+# BCL
+
 commands(
-    (
-        "bcl",
-        [(1, 2), (3, 6), 7, 8, 9, 10, (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
-    ),
+    ("bcl", [(1, 2), (3, 6), 7, 8, 9, 10, (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)]),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
+
+commands(
+    ("bcl", 21),
+    baca.make_mmrests(),
+)
+
+# VN_RH, VA_RH, VC_RH
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
+# VN
+
 commands(
-    (["vn", "va"], (1, 8)),
+    ("vn", (1, 8)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -99,20 +101,56 @@ commands(
 )
 
 commands(
+    ("vn", 21),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
     ("va", (9, 20)),
     baca.make_repeat_tied_notes(),
 )
 
 commands(
+    ("va", 21),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
     ("vc", (1, 4)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (5, 20)),
     baca.make_repeat_tied_notes(),
-    baca.ottava_bracket_staff_padding(10),
+)
+
+commands(
+    ("vc", 21),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -267,6 +305,11 @@ commands(
     baca.text_spanner("pos. ord. => tasto poss."),
 )
 
+commands(
+    ("vc", (5, 20)),
+    baca.ottava_bracket_staff_padding(10),
+)
+
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_segment(
         score,
@@ -277,8 +320,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

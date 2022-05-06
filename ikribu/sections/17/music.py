@@ -60,17 +60,137 @@ commands(
     baca.global_fermata("long", selector=lambda _: abjad.select.leaf(_, -1)),
 )
 
+# BCL
+
 commands(
     ("bcl", (1, 4)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (5, 6)),
+    baca.make_repeated_duration_notes([(1, 4)]),
+)
+
+commands(
+    ("bcl", 7),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", 8),
+    baca.make_mmrests(),
+)
+
+# VN_RH
+
+commands(
+    ("vn_rh", (1, 5)),
+    library.make_bow_rhythm(
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
+        ),
+        rotation=0,
+    ),
+)
+
+commands(
+    ("vn_rh", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# VN
+
+commands(
+    ("vn", (1, 5)),
+    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
+)
+
+commands(
+    ("vn", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# VA_RH
+
+commands(
+    ("va_rh", (1, 5)),
+    library.make_bow_rhythm(
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
+        ),
+        rotation=-1,
+    ),
+)
+
+commands(
+    ("va_rh", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 5)),
+    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
+)
+
+commands(
+    ("va", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# VC_RH
+
+commands(
+    ("vc_rh", (1, 5)),
+    library.make_bow_rhythm(
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
+        ),
+        rotation=-2,
+    ),
+)
+
+commands(
+    ("vc_rh", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", (1, 5)),
+    library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
+)
+
+commands(
+    ("vc", (6, 8)),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", (1, 4)),
     baca.pitch("Bb4"),
 )
 
 commands(
     ("bcl", (5, 6)),
     baca.glissando(),
-    baca.make_repeated_duration_notes([(1, 4)]),
     baca.suite(
         baca.pitches(
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
@@ -82,7 +202,6 @@ commands(
 
 commands(
     ("bcl", 7),
-    baca.make_repeat_tied_notes(),
     baca.suite(
         baca.pitch("B1"),
         baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
@@ -107,14 +226,13 @@ commands(
 )
 
 commands(
+    ("vn", (1, 5)),
+    baca.glissando(),
+    library.glissando_pitches(octave=5, rotation=0),
+)
+
+commands(
     ("vn_rh", (1, 5)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
-        ),
-        rotation=0,
-    ),
-    baca.reapply_persistent_indicators(),
     baca.script_staff_padding(
         7,
         selector=lambda _: baca.select.leaves(_),
@@ -124,22 +242,7 @@ commands(
 )
 
 commands(
-    ("vn", (1, 5)),
-    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
-    baca.reapply_persistent_indicators(),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=0),
-)
-
-commands(
     ("va_rh", (1, 5)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
-        ),
-        rotation=-1,
-    ),
-    baca.reapply_persistent_indicators(),
     baca.script_staff_padding(
         7,
         selector=lambda _: baca.select.leaves(_),
@@ -150,21 +253,12 @@ commands(
 
 commands(
     ("va", (1, 5)),
-    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=-10),
 )
 
 commands(
     ("vc_rh", (1, 5)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
-        ),
-        rotation=-2,
-    ),
-    baca.reapply_persistent_indicators(),
     baca.script_staff_padding(
         7,
         selector=lambda _: baca.select.leaves(_),
@@ -175,8 +269,6 @@ commands(
 
 commands(
     ("vc", (1, 5)),
-    library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
-    baca.reapply_persistent_indicators(),
     baca.clef("tenor"),
     baca.glissando(),
     library.glissando_pitches(octave=4, rotation=-20),
@@ -208,8 +300,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
