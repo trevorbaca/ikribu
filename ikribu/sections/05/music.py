@@ -65,7 +65,7 @@ commands(
 
 commands(
     ("vc_rh", (1, 10)),
-    library.bow_rhythm(
+    library.make_bow_rhythm(
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
@@ -76,7 +76,7 @@ commands(
 
 commands(
     ("vc", (1, 10)),
-    library.glissando_rhythm(rotation_1=0, rotation_2=0),
+    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
     baca.reapply_persistent_indicators(),
 )
 

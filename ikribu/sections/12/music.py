@@ -104,7 +104,7 @@ commands(
 
 commands(
     ("vn", [3, 7, 11, 15]),
-    library.clb_rhythm(extra_counts=[4]),
+    library.make_clb_rhythm(extra_counts=[4]),
 )
 
 commands(
@@ -115,7 +115,7 @@ commands(
 
 commands(
     ("va", [3, 7, 11, 15]),
-    library.clb_rhythm(extra_counts=[2]),
+    library.make_clb_rhythm(extra_counts=[2]),
 )
 
 commands(

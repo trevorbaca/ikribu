@@ -102,30 +102,209 @@ commands(
     baca.rehearsal_mark("C"),
 )
 
+# BCLR
+
 commands(
     ("bcl", 1),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("bcl", [(2, 3), (6, 7), (10, 11), (14, 15)]),
-    baca.make_tied_repeated_durations([(1, 4)]),
-)
-
-commands(
-    ("bcl", (2, 17)),
-    baca.dynamic(
-        '"mf"',
-        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
-        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-    ),
-    baca.staff_lines(1),
-    baca.staff_position(0),
 )
 
 commands(
     ("bcl", (2, 3)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (4, 5)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", (6, 7)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (8, 9)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", (10, 11)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (12, 13)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", (14, 15)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (16, 17)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VN_RHR
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VNR
+
+commands(
+    ("vn", 1),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", 2),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (3, 4)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("vn", (5, 6)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (7, 8)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("vn", (9, 10)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (11, 12)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("vn", (13, 14)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (15, 16)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("vn", 17),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VA_RHR
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VAR
+
+commands(
+    ("va", (1, 2)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (3, 4)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("va", (5, 6)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (7, 8)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("va", (9, 10)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (11, 12)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("va", (13, 14)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (15, 16)),
+    baca.make_notes(repeat_ties=True),
+)
+
+commands(
+    ("va", 17),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VC_RHR
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
+
+commands(
+    ("vc", 1),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", (2, 16)),
+    baca.make_notes(rmakers.reduce_multiplier()),
+)
+
+commands(
+    ("vc", 17),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+
+# bcl
+
+commands(
+    "bcl",
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", (2, 17)),
+    baca.staff_lines(1),
+    baca.staff_position(0),
     baca.tag(
         abjad.Tag("+ARCH_A_PARTS_BCL"),
         baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
@@ -136,37 +315,55 @@ commands(
         baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
     ),
     library.box_adjustment(),
+    baca.dynamic(
+        '"mf"',
+        abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+        abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
+    ),
 )
+
+# vn_rh
 
 commands(
     "vn_rh",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
+
+# va_rh
+
+commands(
+    "va_rh",
+    baca.reapply_persistent_indicators(),
+)
+
+# vn
 
 commands(
     ("vn", 1),
     baca.clef("percussion"),
-    baca.dynamic('"mf"'),
-    baca.make_repeat_tied_notes(),
-    baca.markup(r"\ikribu-grainfall-two-markup"),
     baca.staff_lines(1),
-    baca.staff_position(0),
+    baca.markup(r"\ikribu-grainfall-two-markup"),
     library.box_adjustment(),
-)
-
-commands(
-    (
-        ["vn", "va"],
-        [(3, 4), (7, 8), (11, 12), (15, 16)],
-    ),
-    baca.make_notes(repeat_ties=True),
+    baca.staff_position(0),
+    baca.dynamic('"mf"'),
 )
 
 commands(
     ("vn", (2, 16)),
     baca.clef("treble"),
-    baca.dls_staff_padding(3),
+    baca.staff_lines(5),
+    baca.markup(
+        r"\ikribu-trem-flaut-tast-markup",
+        selector=lambda _: baca.select.pleaf(_, 0, exclude=baca.enums.HIDDEN),
+    ),
+    baca.text_script_staff_padding(2.5, allow_mmrests=True),
+    baca.pitches(
+        "F#4 G#4 G#4 F#4",
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+    ),
+    baca.stem_tremolo(
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
+    ),
     baca.new(
         baca.glissando(),
         map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
@@ -183,61 +380,20 @@ commands(
             baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
         ),
     ),
-    baca.markup(r"\ikribu-trem-flaut-tast-markup"),
-    baca.pitches(
-        "F#4 G#4 G#4 F#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.staff_lines(5),
-    baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.text_script_staff_padding(2.5, allow_mmrests=True),
+    baca.dls_staff_padding(3),
 )
 
-commands(
-    ("vc", 1),
-    baca.make_repeat_tied_notes(),
-    baca.reapply_persistent_indicators(),
-)
+# va
 
 commands(
-    ("vc", (2, 16)),
-    baca.make_notes(rmakers.reduce_multiplier()),
-)
-
-commands(
-    "va_rh",
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (1, 2)),
-    baca.make_mmrests(),
+    "va",
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("va", (2, 16)),
-    baca.dls_staff_padding(3),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.new(
-        baca.hairpin("pp < p"),
-        map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
-        ),
-    ),
-    baca.new(
-        baca.hairpin("p > pp"),
-        map=lambda _: abjad.select.get(
-            baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
-        ),
-    ),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
+    baca.text_script_staff_padding(2.5, allow_mmrests=True),
     baca.pitches(
         "F4 E4 E4 F4",
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
@@ -245,37 +401,60 @@ commands(
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
-    baca.text_script_staff_padding(2.5, allow_mmrests=True),
+    baca.new(
+        baca.glissando(),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+    ),
+    baca.new(
+        baca.hairpin("pp < p"),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
+        ),
+    ),
+    baca.new(
+        baca.hairpin("p > pp"),
+        map=lambda _: abjad.select.get(
+            baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
+        ),
+    ),
+    baca.dls_staff_padding(3),
 )
+
+# vc_rh
 
 commands(
     "vc_rh",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
+# vc
+
 commands(
     ("vc", 1),
-    baca.dynamic("sfz"),
+    baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-pizz-markup"),
+    baca.pitch("F~5"),
+    baca.note_head_style_harmonic(),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
     baca.markup(
         r"\baca-string-iii-markup",
         direction=abjad.DOWN,
     ),
-    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-    baca.note_head_style_harmonic(),
-    baca.pitch("F~5"),
+    baca.dynamic("sfz"),
 )
 
 commands(
     ("vc", (2, 16)),
-    baca.dls_staff_padding(7),
-    baca.glissando(),
-    baca.note_head_style_harmonic(),
+    baca.text_spanner("trem. flaut. tasto. (arco) => trem. flaut. XP"),
+    baca.text_spanner_staff_padding(3.5),
     baca.pitches(
         "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
         exact=True,
     ),
+    baca.note_head_style_harmonic(),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+    baca.glissando(),
+    baca.tuplet_bracket_down(),
     baca.hairpin(
         "ppp < pp >",
         final_hairpin=False,
@@ -283,10 +462,7 @@ commands(
             _,
         ),
     ),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-    baca.text_spanner("trem. flaut. tasto. (arco) => trem. flaut. XP"),
-    baca.text_spanner_staff_padding(3.5),
-    baca.tuplet_bracket_down(),
+    baca.dls_staff_padding(7),
 )
 
 if __name__ == "__main__":
@@ -299,7 +475,10 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

@@ -52,10 +52,87 @@ commands(
     ),
 )
 
+# BCLR
+
 commands(
     ("bcl", (1, 5)),
     baca.make_repeat_tied_notes(),
+    # baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", (6, 7)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VN_RHR
+
+commands(
+    "vn_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VNR
+
+commands(
+    "vn",
+    baca.make_mmrests(),
+    # baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
+)
+
+# VA_RHR
+
+commands(
+    "va_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VAR
+
+commands(
+    ("va", (1, 2)),
+    baca.make_mmrests(),
+    # baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (3, 6)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("va", 7),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VC_RHR
+
+commands(
+    "vc_rh",
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
+
+commands(
+    "vc",
+    baca.make_mmrests(),
+    # baca.reapply_persistent_indicators(),
+    baca.append_phantom_measure(),
+)
+
+# bcl
+
+commands(
+    ("bcl", (1, 5)),
     baca.reapply_persistent_indicators(),
+    baca.pitch("D2"),
     baca.hairpin(
         "ppp < f",
         selector=lambda _: baca.select.leaves(_)[:2],
@@ -64,59 +141,63 @@ commands(
         "f >o niente",
         selector=lambda _: baca.rleaves(_)[-4:],
     ),
-    baca.pitch("D2"),
 )
+
+# vn_rh
 
 commands(
     "vn_rh",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
+# vn
+
 commands(
     "vn",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.staff_lines(5),
 )
 
+# va_rh
+
 commands(
     "va_rh",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
+# va
+
 commands(
-    ("va", (1, 2)),
-    baca.make_mmrests(),
+    "va",
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("va", (3, 6)),
     baca.clef("percussion"),
+    baca.staff_lines(1),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
+    library.box_adjustment(),
+    baca.staff_position(0),
     baca.dynamic(
         '"mf"',
         abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
         abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
     ),
-    baca.make_tied_repeated_durations([(1, 4)]),
-    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
-    baca.staff_position(0),
-    baca.staff_lines(1),
-    library.box_adjustment(),
 )
+
+# vc_rh
 
 commands(
     "vc_rh",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
+# vc
+
 commands(
     "vc",
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
@@ -130,8 +211,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

@@ -72,7 +72,7 @@ commands(
 
 commands(
     ("vn", (1, 16)),
-    library.clb_rhythm(extra_counts=[4]),
+    library.make_clb_rhythm(extra_counts=[4]),
     baca.reapply_persistent_indicators(),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
@@ -101,7 +101,7 @@ commands(
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     library.box_adjustment(),
-    library.triplet_rhythm(),
+    library.make_triplet_rhythm(),
 )
 
 commands(
@@ -118,7 +118,7 @@ commands(
 
 commands(
     ("va", (1, 8)),
-    library.clb_rhythm(extra_counts=[2]),
+    library.make_clb_rhythm(extra_counts=[2]),
     baca.reapply_persistent_indicators(),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
@@ -160,7 +160,7 @@ commands(
     ),
     baca.tuplet_bracket_staff_padding(3),
     library.box_adjustment(),
-    library.triplet_rhythm(),
+    library.make_triplet_rhythm(),
 )
 
 commands(
