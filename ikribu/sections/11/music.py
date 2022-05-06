@@ -58,62 +58,104 @@ commands(
     ),
 )
 
+# BCL
+
 commands(
-    ("bcl", [(1, 2), (3, 6)]),
+    ("bcl", (1, 2)),
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
 
 commands(
-    "vn_rh",
+    ("bcl", (3, 6)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("bcl", (7, 9)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("vn", [(1, 4), (5, 6)]),
+    ("bcl", 10),
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
 
 commands(
-    "va_rh",
+    ("bcl", 11),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
-commands(
-    ("va", [(1, 2), (3, 4), (5, 6)]),
-    baca.make_tied_repeated_durations([(1, 4)]),
-)
+# VN_RH, VA_RH, VC_RH
 
 commands(
-    [
-        ("bcl", 10),
-        ("vn", 10),
-        ("va", 10),
-    ],
-    baca.make_tied_repeated_durations([(1, 4)]),
-)
-
-commands(
-    "vc_rh",
+    ["vn_rh", "va_rh", "vc_rh"],
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
+
+# VN
+
+commands(
+    ("vn", (1, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("vn", (5, 6)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("vn", (7, 9)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", 10),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("vn", 11),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 2)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("va", (3, 4)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("va", (5, 6)),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("va", (7, 9)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", 10),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("va", 11),
+    baca.make_mmrests(),
+)
+
+# VC
 
 commands(
     ("vc", (1, 2)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-    baca.clef("bass"),
-    baca.staff_lines(5),
 )
 
 commands(
@@ -125,6 +167,31 @@ commands(
     ("vc", (7, 8)),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
     baca.tie(lambda _: baca.select.lleaf(_, 0)),
+)
+
+commands(
+    ("vc", (9, 11)),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (1, 2)),
+    baca.clef("bass"),
+    baca.staff_lines(5),
 )
 
 commands(
@@ -229,8 +296,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         error_on_not_yet_pitched=True,
+        do_not_sort_commands=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

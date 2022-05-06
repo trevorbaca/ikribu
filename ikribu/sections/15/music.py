@@ -42,14 +42,14 @@ commands(
     baca.rehearsal_mark("N"),
 )
 
+# BCL
+
 commands(
     ("bcl", [(1, 5), (6, 10)]),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
 )
+
+# VN_RH
 
 commands(
     ("vn_rh", (1, 10)),
@@ -59,16 +59,16 @@ commands(
         ),
         rotation=0,
     ),
-    baca.reapply_persistent_indicators(),
 )
+
+# VN
 
 commands(
     ("vn", (1, 10)),
     library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
-    baca.reapply_persistent_indicators(),
-    baca.clef("treble"),
-    baca.staff_lines(5),
 )
+
+# VA_RH
 
 pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
 commands(
@@ -79,15 +79,16 @@ commands(
         ),
         rotation=-1,
     ),
-    baca.reapply_persistent_indicators(),
 )
+
+# VA
 
 commands(
     ("va", (1, 10)),
     library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    baca.reapply_persistent_indicators(),
-    baca.staff_lines(5),
 )
+
+# VC_RH
 
 commands(
     ("vc_rh", (1, 10)),
@@ -97,13 +98,38 @@ commands(
         ),
         rotation=-2,
     ),
-    baca.reapply_persistent_indicators(),
 )
+
+# VC
 
 commands(
     ("vc", (1, 10)),
     library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    "vn",
+    baca.clef("treble"),
+    baca.staff_lines(5),
+)
+
+commands(
+    "va",
+    baca.staff_lines(5),
 )
 
 commands(
@@ -212,7 +238,10 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

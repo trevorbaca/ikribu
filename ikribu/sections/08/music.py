@@ -53,21 +53,76 @@ commands(
     baca.rehearsal_mark("G"),
 )
 
+# BCLR
+
 commands(
-    ("bcl", [1, 3, 5, 7, 9, 11]),
+    ("bcl", 1),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-    baca.dls_staff_padding(7),
 )
+
+commands(
+    ("bcl", 2),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 3),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+)
+
+commands(
+    ("bcl", 4),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 5),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+)
+
+commands(
+    ("bcl", 6),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 7),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+)
+
+commands(
+    ("bcl", 8),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 9),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+)
+
+commands(
+    ("bcl", 10),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("bcl", 11),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
+)
+
+commands(
+    ("bcl", 12),
+    baca.make_mmrests(),
+)
+
+# VN_RH, VN, VA_RH, VA, VC_RH
 
 commands(
     ["vn_rh", "vn", "va_rh", "va", "vc_rh"],
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
+
+# VCR
 
 commands(
     ("vc", (1, 11)),
@@ -75,7 +130,30 @@ commands(
         rmakers.reduce_multiplier(),
         repeat_ties=True,
     ),
+)
+
+commands(
+    ("vc", 12),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", [1, 3, 5, 7, 9, 11]),
+    baca.dls_staff_padding(7),
 )
 
 commands(
@@ -148,7 +226,10 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

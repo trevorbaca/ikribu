@@ -48,13 +48,19 @@ commands(
     ),
 )
 
+# BCL
+
 commands(
     ("bcl", (1, 8)),
     baca.make_repeat_tied_notes(),
-    baca.reapply_persistent_indicators(),
-    baca.dynamic("ppp"),
-    baca.pitch("Db2"),
 )
+
+commands(
+    ("bcl", 9),
+    baca.make_mmrests(),
+)
+
+# VN_RH
 
 commands(
     ("vn_rh", (1, 8)),
@@ -64,17 +70,26 @@ commands(
         ),
         rotation=0,
     ),
-    baca.reapply_persistent_indicators(),
-    library.bcps(rotation=0),
 )
+
+commands(
+    ("vn_rh", 9),
+    baca.make_mmrests(),
+)
+
+# VN
 
 commands(
     ("vn", (1, 8)),
     library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
-    baca.reapply_persistent_indicators(),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=0),
 )
+
+commands(
+    ("vn", 9),
+    baca.make_mmrests(),
+)
+
+# VA_RH
 
 commands(
     ("va_rh", (1, 8)),
@@ -84,23 +99,76 @@ commands(
         ),
         rotation=-1,
     ),
+)
+
+commands(
+    ("va_rh", 9),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 8)),
+    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
+)
+
+commands(
+    ("va", 9),
+    baca.make_mmrests(),
+)
+
+# VC_RH, VC
+
+commands(
+    ["vc_rh", "vc"],
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", (1, 8)),
+    baca.dynamic("ppp"),
+    baca.pitch("Db2"),
+)
+
+commands(
+    ("vn_rh", (1, 8)),
+    library.bcps(rotation=0),
+)
+
+commands(
+    ("vn", (1, 8)),
+    baca.glissando(),
+    library.glissando_pitches(octave=5, rotation=0),
+)
+
+commands(
+    ("va_rh", (1, 8)),
     library.bcps(rotation=-1),
 )
 
 commands(
     ("va", (1, 8)),
-    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    baca.reapply_persistent_indicators(),
     baca.glissando(),
     library.glissando_pitches(octave=5, rotation=-10),
 )
 
 commands(
-    [
-        ("vn_rh", (1, 8)),
-        ("va_rh", (1, 8)),
-    ],
+    (["vn_rh", "va_rh"], (1, 8)),
     baca.dls_staff_padding(10),
     baca.markup(r"\baca-half-clt-markup"),
     baca.hairpin(
@@ -117,12 +185,6 @@ commands(
     baca.text_spanner_staff_padding(4),
 )
 
-commands(
-    ["vc_rh", "vc"],
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-)
-
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_segment(
         score,
@@ -133,8 +195,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

@@ -64,28 +64,48 @@ commands(
     ),
 )
 
+# BCL, VN_RH, VN, VA_RH, VA, VC_RH
+
 commands(
     ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh"],
     baca.make_mmrests(),
+)
+
+# VC
+
+for n in range(1, 8 + 1):
+    if n % 2 == 1:
+        commands(
+            ("vc", n),
+            baca.make_tied_repeated_durations([(1, 4)]),
+        )
+    else:
+        commands(
+            ("vc", n),
+            baca.make_mmrests(),
+        )
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("vc", [1, 3, 5, 7]),
-    baca.make_tied_repeated_durations([(1, 4)]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
-
-commands(
     ("vc", (1, 8)),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
     baca.staff_lines(1),
     baca.staff_position(0),
+    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
     library.box_adjustment(),
+    baca.dynamic('"mf"'),
 )
 
 if __name__ == "__main__":
@@ -98,8 +118,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         error_on_not_yet_pitched=True,
+        do_not_sort_commands=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,

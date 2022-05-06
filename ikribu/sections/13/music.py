@@ -53,10 +53,97 @@ commands(
     ),
 )
 
+# BCL
+
 commands(
     ("bcl", (1, 28)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("bcl", (29, 33)),
+    baca.make_mmrests(),
+)
+
+# VN_RH, VA_RH, VC_RH
+
+commands(
+    ["vn_rh", "va_rh", "vc_rh"],
+    baca.make_mmrests(),
+)
+
+# VN
+
+commands(
+    ("vn", (1, 16)),
+    library.make_clb_rhythm(extra_counts=[4]),
+)
+
+commands(
+    ("vn", (17, 20)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (21, 32)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("vn", 33),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 8)),
+    library.make_clb_rhythm(extra_counts=[2]),
+)
+
+commands(
+    ("va", (9, 12)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (13, 32)),
+    library.make_triplet_rhythm(),
+)
+
+commands(
+    ("va", 33),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
+    baca.make_tied_repeated_durations([(1, 4)]),
+)
+
+commands(
+    ("vc", (25, 33)),
+    baca.make_mmrests(),
+)
+
+# phantom
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    baca.append_phantom_measure(),
+)
+
+# after
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("bcl", (1, 28)),
     baca.clef("treble"),
     baca.dynamic("ppp"),
     baca.markup(r"\ikribu-breathe-discreetly-markup"),
@@ -65,15 +152,7 @@ commands(
 )
 
 commands(
-    ["vn_rh", "va_rh", "vc_rh"],
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("vn", (1, 16)),
-    library.make_clb_rhythm(extra_counts=[4]),
-    baca.reapply_persistent_indicators(),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
 )
@@ -101,7 +180,6 @@ commands(
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     library.box_adjustment(),
-    library.make_triplet_rhythm(),
 )
 
 commands(
@@ -118,8 +196,6 @@ commands(
 
 commands(
     ("va", (1, 8)),
-    library.make_clb_rhythm(extra_counts=[2]),
-    baca.reapply_persistent_indicators(),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     library.clb_staff_positions(rotation=-1),
 )
@@ -160,17 +236,8 @@ commands(
     ),
     baca.tuplet_bracket_staff_padding(3),
     library.box_adjustment(),
-    library.make_triplet_rhythm(),
 )
 
-commands(
-    ("vc", [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
-    baca.make_tied_repeated_durations([(1, 4)]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
 
 commands(
     "vc",
@@ -221,8 +288,11 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
+        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
