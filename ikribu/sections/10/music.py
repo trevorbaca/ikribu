@@ -109,7 +109,7 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_segment(
+    metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
         **baca.score_interpretation_defaults(),
@@ -118,11 +118,8 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        append_phantom_measures_by_hand=True,
         error_on_not_yet_pitched=True,
-        do_not_sort_commands=True,
         fermata_measure_empty_overrides=fermata_measures,
-        intercalate_mmrests_by_hand=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
