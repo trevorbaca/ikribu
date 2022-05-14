@@ -57,7 +57,6 @@ commands(
 commands(
     ("bcl", (1, 5)),
     baca.make_repeat_tied_notes(),
-    # baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -79,7 +78,6 @@ commands(
 commands(
     "vn",
     baca.make_mmrests(),
-    # baca.reapply_persistent_indicators(),
     baca.append_phantom_measure(),
 )
 
@@ -96,7 +94,6 @@ commands(
 commands(
     ("va", (1, 2)),
     baca.make_mmrests(),
-    # baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -123,7 +120,6 @@ commands(
 commands(
     "vc",
     baca.make_mmrests(),
-    # baca.reapply_persistent_indicators(),
     baca.append_phantom_measure(),
 )
 
