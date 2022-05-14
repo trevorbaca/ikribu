@@ -2358,7 +2358,7 @@ segment.17.Violin.RH.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_RH_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -2378,7 +2378,7 @@ segment.17.Violin.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -2915,7 +2915,7 @@ segment.17.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -2935,7 +2935,7 @@ segment.17.Violin.Music.Voice = {
     \once \override Staff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -4332,7 +4332,7 @@ segment.17.Viola.RH.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_RH_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -4352,7 +4352,7 @@ segment.17.Viola.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -4838,7 +4838,7 @@ segment.17.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -4858,7 +4858,7 @@ segment.17.Viola.Music.Voice = {
     \once \override Staff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6176,7 +6176,7 @@ segment.17.Cello.RH.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_RH_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -6196,7 +6196,7 @@ segment.17.Cello.RH.Music.Voice = {
     \once \override RHStaff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6713,7 +6713,7 @@ segment.17.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -6733,7 +6733,7 @@ segment.17.Cello.Music.Voice = {
     \once \override Staff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
