@@ -147,7 +147,6 @@ commands(
 commands(
     ("bcl", (16, 17)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VN_RHR
@@ -155,7 +154,6 @@ commands(
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -208,7 +206,6 @@ commands(
 commands(
     ("vn", 17),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VA_RHR
@@ -216,7 +213,6 @@ commands(
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -264,7 +260,6 @@ commands(
 commands(
     ("va", 17),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VC_RHR
@@ -272,7 +267,6 @@ commands(
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VCR
@@ -290,16 +284,19 @@ commands(
 commands(
     ("vc", 17),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
+# phantom & reapply
 
-# bcl
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    "bcl",
+    music_voices,
+    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
+
+# bcl
 
 commands(
     ("bcl", (2, 17)),
@@ -324,17 +321,7 @@ commands(
 
 # vn_rh
 
-commands(
-    "vn_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # va_rh
-
-commands(
-    "va_rh",
-    baca.reapply_persistent_indicators(),
-)
 
 # vn
 
@@ -386,11 +373,6 @@ commands(
 # va
 
 commands(
-    "va",
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("va", (2, 16)),
     baca.markup(r"\ikribu-trem-flaut-tast-markup"),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
@@ -422,16 +404,10 @@ commands(
 
 # vc_rh
 
-commands(
-    "vc_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # vc
 
 commands(
     ("vc", 1),
-    baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-pizz-markup"),
     baca.pitch("F~5"),
     baca.note_head_style_harmonic(),

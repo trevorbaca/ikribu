@@ -62,7 +62,6 @@ commands(
 commands(
     ("bcl", (6, 7)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VN_RHR
@@ -70,7 +69,6 @@ commands(
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -78,7 +76,6 @@ commands(
 commands(
     "vn",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VA_RHR
@@ -86,7 +83,6 @@ commands(
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -104,7 +100,6 @@ commands(
 commands(
     ("va", 7),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VC_RHR
@@ -112,7 +107,6 @@ commands(
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VCR
@@ -120,14 +114,22 @@ commands(
 commands(
     "vc",
     baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voices,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # bcl
 
 commands(
     ("bcl", (1, 5)),
-    baca.reapply_persistent_indicators(),
     baca.pitch("D2"),
     baca.hairpin(
         "ppp < f",
@@ -141,33 +143,17 @@ commands(
 
 # vn_rh
 
-commands(
-    "vn_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # vn
 
 commands(
     "vn",
-    baca.reapply_persistent_indicators(),
     baca.clef("treble"),
     baca.staff_lines(5),
 )
 
 # va_rh
 
-commands(
-    "va_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # va
-
-commands(
-    "va",
-    baca.reapply_persistent_indicators(),
-)
 
 commands(
     ("va", (3, 6)),
@@ -185,17 +171,7 @@ commands(
 
 # vc_rh
 
-commands(
-    "vc_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # vc
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
-)
 
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_section(

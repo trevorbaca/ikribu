@@ -85,19 +85,17 @@ for n in range(1, 8 + 1):
             baca.make_mmrests(),
         )
 
-# phantom
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    music_voices,
     baca.append_phantom_measure(),
-)
-
-# after
-
-commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
 )
+
+# bcl
 
 commands(
     ("vc", (1, 8)),
