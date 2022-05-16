@@ -119,7 +119,6 @@ commands(
 commands(
     ("bcl", (13, 16)),
     baca.make_repeat_tied_notes(),
-    baca.append_phantom_measure(),
 )
 
 # VN_RHR
@@ -127,7 +126,6 @@ commands(
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -170,7 +168,6 @@ commands(
 commands(
     ("vn", (15, 16)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VA_RHR
@@ -178,7 +175,6 @@ commands(
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -226,7 +222,6 @@ commands(
 commands(
     ("va", 16),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VC_RHR
@@ -234,7 +229,6 @@ commands(
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 #  VCR
@@ -252,13 +246,15 @@ commands(
 commands(
     ("vc", (13, 16)),
     baca.make_repeat_tied_notes(),
-    baca.append_phantom_measure(),
 )
 
-#
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    music_voices,
+    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 

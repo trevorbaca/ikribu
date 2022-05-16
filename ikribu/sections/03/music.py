@@ -122,7 +122,6 @@ commands(
 commands(
     ("bcl", (22, 25)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VN_RHR
@@ -130,7 +129,6 @@ commands(
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -163,7 +161,6 @@ commands(
 commands(
     ("vn", (16, 25)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VA_RHR
@@ -171,7 +168,6 @@ commands(
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -189,7 +185,6 @@ commands(
 commands(
     ("va", 25),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VC_RHR
@@ -197,7 +192,6 @@ commands(
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VCR
@@ -205,15 +199,19 @@ commands(
 commands(
     "vc",
     baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voices,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # bcl
-
-commands(
-    "bcl",
-    baca.reapply_persistent_indicators(),
-)
 
 commands(
     ("bcl", (5, 25)),
@@ -238,16 +236,10 @@ commands(
 
 # vn_rh
 
-commands(
-    "vn_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # vn
 
 commands(
     "vn",
-    baca.reapply_persistent_indicators(),
     baca.text_script_staff_padding(3, allow_mmrests=True),
     baca.text_spanner_staff_padding(3.5),
 )
@@ -308,16 +300,10 @@ commands(
 
 # va_rh
 
-commands(
-    "va_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # va
 
 commands(
     "va",
-    baca.reapply_persistent_indicators(),
     baca.clef("alto"),
     baca.staff_lines(5),
     baca.text_script_staff_padding(3, allow_mmrests=True),
@@ -347,17 +333,7 @@ commands(
 
 # vc_rh
 
-commands(
-    "vc_rh",
-    baca.reapply_persistent_indicators(),
-)
-
 # vc
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
-)
 
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_section(

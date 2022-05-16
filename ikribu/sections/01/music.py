@@ -50,7 +50,6 @@ commands(
 commands(
     "bcl",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR_RH
@@ -58,7 +57,6 @@ commands(
 commands(
     "vn_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -71,7 +69,6 @@ commands(
 commands(
     ("vn", 2),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR_RH
@@ -79,7 +76,6 @@ commands(
 commands(
     "va_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -87,7 +83,6 @@ commands(
 commands(
     "va",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VCR_RH
@@ -95,7 +90,6 @@ commands(
 commands(
     "vc_rh",
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
 # VCR
@@ -108,14 +102,22 @@ commands(
 commands(
     ("vc", 2),
     baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voices,
     baca.append_phantom_measure(),
+    baca.attach_first_segment_default_indicators(),
 )
 
 # bcl
 
 commands(
     "bcl",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("B. cl."),
     baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
     baca.staff_lines(5),
@@ -126,7 +128,6 @@ commands(
 
 commands(
     "vn_rh",
-    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(1),
 )
 
@@ -134,7 +135,6 @@ commands(
 
 commands(
     ("vn", 1),
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Vn.", context="SingleStringStaffGroup"),
     baca.start_markup(
         "Violin",
@@ -153,7 +153,6 @@ commands(
 
 commands(
     "va_rh",
-    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(1),
 )
 
@@ -161,7 +160,6 @@ commands(
 
 commands(
     "va",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Va.", context="SingleStringStaffGroup"),
     baca.start_markup(
         "Viola",
@@ -175,7 +173,6 @@ commands(
 
 commands(
     "vc_rh",
-    baca.attach_first_segment_default_indicators(),
     baca.staff_lines(1),
 )
 
@@ -183,7 +180,6 @@ commands(
 
 commands(
     ("vc", 1),
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Vc.", context="SingleStringStaffGroup"),
     baca.start_markup(
         "Cello",

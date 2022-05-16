@@ -107,19 +107,17 @@ commands(
     library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
 )
 
-# phantom
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
+    music_voices,
     baca.append_phantom_measure(),
-)
-
-# after
-
-commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh", "vc"],
     baca.reapply_persistent_indicators(),
 )
+
+# vn
 
 commands(
     "vn",

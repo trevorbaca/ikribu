@@ -57,6 +57,10 @@ commands(
 commands(
     ["bcl", "vn_rh", "vn", "va_rh", "va"],
     baca.make_mmrests(),
+)
+
+commands(
+    ["bcl", "vn_rh", "vn", "va_rh", "va"],
     baca.append_phantom_measure(),
 )
 
@@ -75,6 +79,10 @@ commands(
 commands(
     ("vc_rh", 11),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc_rh", 11),
     baca.append_phantom_measure(),
 )
 
@@ -88,6 +96,10 @@ commands(
 commands(
     ("vc", 11),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 11),
     baca.append_phantom_measure(),
 )
 
