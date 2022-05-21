@@ -4,7 +4,7 @@ import baca
 from ikribu import library
 
 #########################################################################################
-######################################### 07 [F] ########################################
+########################################### 07 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -38,12 +38,7 @@ commands = baca.CommandAccumulator(
     voice_names=voice_names,
 )
 
-commands(
-    "Global_Skips",
-    baca.rehearsal_mark("F"),
-)
-
-# BCLR
+# BCL
 
 commands(
     ("bcl", (1, 4)),
@@ -61,14 +56,14 @@ commands(
     baca.make_repeat_tied_notes(),
 )
 
-# VN_RHR, VA_RHR, VC_RHR
+# VN_RH, VA_RH, VC_RH
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
     baca.make_mmrests(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", (1, 5)),
@@ -85,7 +80,7 @@ commands(
     baca.make_mmrests(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 5)),
@@ -102,7 +97,7 @@ commands(
     baca.make_mmrests(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", (1, 4)),

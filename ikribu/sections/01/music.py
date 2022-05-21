@@ -4,7 +4,7 @@ import baca
 from ikribu import library
 
 #########################################################################################
-######################################### 01 [_] ########################################
+########################################### 01 ##########################################
 #########################################################################################
 
 fermata_measures = [2]
@@ -45,21 +45,21 @@ commands(
     ),
 )
 
-# BCLR
+# BCL
 
 commands(
     "bcl",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VNR_RH
 
 commands(
     "vn_rh",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", 1),
@@ -68,31 +68,31 @@ commands(
 
 commands(
     ("vn", 2),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VAR_RH
 
 commands(
     "va_rh",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
-# VAR
+# VA
 
 commands(
     "va",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VCR_RH
 
 commands(
     "vc_rh",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", 1),
@@ -101,7 +101,7 @@ commands(
 
 commands(
     ("vc", 2),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # phantom & reapply

@@ -4,7 +4,7 @@ import baca
 from ikribu import library
 
 #########################################################################################
-######################################### 03 [B] ########################################
+########################################### 03 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -41,11 +41,6 @@ commands = baca.CommandAccumulator(
 )
 
 commands(
-    "Global_Skips",
-    baca.rehearsal_mark("B"),
-)
-
-commands(
     "Global_Rests",
     baca.global_fermata(
         "long",
@@ -77,7 +72,7 @@ commands(
     ),
 )
 
-# BCLR
+# BCL
 
 commands(
     ("bcl", (1, 4)),
@@ -124,14 +119,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VN_RHR
+# VN_RH
 
 commands(
     "vn_rh",
     baca.make_mmrests(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", (1, 3)),
@@ -163,14 +158,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VA_RHR
+# VA_RH
 
 commands(
     "va_rh",
     baca.make_mmrests(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 18)),
@@ -187,14 +182,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VC_RHR
+# VC_RH
 
 commands(
     "vc_rh",
     baca.make_mmrests(),
 )
 
-# VCR
+# VC
 
 commands(
     "vc",

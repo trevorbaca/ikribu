@@ -4,7 +4,7 @@ import baca
 from ikribu import library
 
 #########################################################################################
-######################################### 12 [K] ########################################
+########################################### 12 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -38,11 +38,6 @@ commands = baca.CommandAccumulator(
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
-)
-
-commands(
-    "Global_Skips",
-    baca.rehearsal_mark("K"),
 )
 
 commands(
