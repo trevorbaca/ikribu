@@ -78,7 +78,7 @@ commands(
 
 commands(
     ("bcl", 8),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VN_RH
@@ -95,7 +95,7 @@ commands(
 
 commands(
     ("vn_rh", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VN
@@ -107,7 +107,7 @@ commands(
 
 commands(
     ("vn", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VA_RH
@@ -124,7 +124,7 @@ commands(
 
 commands(
     ("va_rh", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VA
@@ -136,7 +136,7 @@ commands(
 
 commands(
     ("va", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VC_RH
@@ -153,7 +153,7 @@ commands(
 
 commands(
     ("vc_rh", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VC
@@ -165,7 +165,7 @@ commands(
 
 commands(
     ("vc", (6, 8)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # phantom & reapply
@@ -187,13 +187,13 @@ commands(
 
 commands(
     ("bcl", (5, 6)),
-    baca.glissando(),
     baca.suite(
         baca.pitches(
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
             exact=True,
         ),
-        baca.tie(lambda _: baca.select.lleaf(_, 0)),
+        baca.repeat_tie(lambda _: abjad.select.leaf(_, 0)),
+        baca.glissando(),
     ),
 )
 
@@ -224,8 +224,10 @@ commands(
 
 commands(
     ("vn", (1, 5)),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=0),
+    baca.suite(
+        library.glissando_pitches(octave=5, rotation=0),
+        baca.glissando(),
+    ),
 )
 
 commands(
@@ -250,8 +252,10 @@ commands(
 
 commands(
     ("va", (1, 5)),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=-10),
+    baca.suite(
+        library.glissando_pitches(octave=5, rotation=-10),
+        baca.glissando(),
+    ),
 )
 
 commands(
@@ -267,8 +271,10 @@ commands(
 commands(
     ("vc", (1, 5)),
     baca.clef("tenor"),
-    baca.glissando(),
-    library.glissando_pitches(octave=4, rotation=-20),
+    baca.suite(
+        library.glissando_pitches(octave=4, rotation=-20),
+        baca.glissando(),
+    ),
 )
 
 commands(
