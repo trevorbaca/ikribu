@@ -5,7 +5,7 @@ from abjadext import rmakers
 from ikribu import library
 
 #########################################################################################
-######################################### 04 [C] ########################################
+########################################### 04 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -99,10 +99,9 @@ commands(
         "night",
         selector=lambda _: abjad.select.leaf(_, 16 - 1),
     ),
-    baca.rehearsal_mark("C"),
 )
 
-# BCLR
+# BCL
 
 commands(
     ("bcl", 1),
@@ -149,14 +148,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VN_RHR
+# VN_RH
 
 commands(
     "vn_rh",
     baca.make_mmrests(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", 1),
@@ -208,14 +207,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VA_RHR
+# VA_RH
 
 commands(
     "va_rh",
     baca.make_mmrests(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 2)),
@@ -262,14 +261,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VC_RHR
+# VC_RH
 
 commands(
     "vc_rh",
     baca.make_mmrests(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", 1),

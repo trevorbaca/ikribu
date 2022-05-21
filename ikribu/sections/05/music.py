@@ -5,7 +5,7 @@ from abjadext import rmakers
 from ikribu import library
 
 #########################################################################################
-######################################### 05 [D] ########################################
+########################################### 05 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -41,7 +41,6 @@ commands(
         "windows",
         selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
-    baca.rehearsal_mark("D"),
 )
 
 commands(
@@ -52,7 +51,7 @@ commands(
     ),
 )
 
-# BCLR, VN_RHR, VNR, VA_RHR, VAR
+# BCL, VN_RH, VN, VA_RH, VA
 
 commands(
     ["bcl", "vn_rh", "vn", "va_rh", "va"],
@@ -64,7 +63,7 @@ commands(
     baca.append_phantom_measure(),
 )
 
-# VC_RHR
+# VC_RH
 
 commands(
     ("vc_rh", (1, 10)),
@@ -86,7 +85,7 @@ commands(
     baca.append_phantom_measure(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", (1, 10)),

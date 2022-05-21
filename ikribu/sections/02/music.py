@@ -4,7 +4,7 @@ import baca
 from ikribu import library
 
 #########################################################################################
-######################################### 02 [A] ########################################
+########################################### 02 ##########################################
 #########################################################################################
 
 stage_markup = (
@@ -41,7 +41,6 @@ commands(
         "night",
         selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
-    baca.rehearsal_mark("A"),
 )
 
 commands(
@@ -52,7 +51,7 @@ commands(
     ),
 )
 
-# BCLR
+# BCL
 
 commands(
     ("bcl", (1, 5)),
@@ -64,28 +63,28 @@ commands(
     baca.make_mmrests(),
 )
 
-# VN_RHR
+# VN_RH
 
 commands(
     "vn_rh",
     baca.make_mmrests(),
 )
 
-# VNR
+# VN
 
 commands(
     "vn",
     baca.make_mmrests(),
 )
 
-# VA_RHR
+# VA_RH
 
 commands(
     "va_rh",
     baca.make_mmrests(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 2)),
@@ -102,14 +101,14 @@ commands(
     baca.make_mmrests(),
 )
 
-# VC_RHR
+# VC_RH
 
 commands(
     "vc_rh",
     baca.make_mmrests(),
 )
 
-# VCR
+# VC
 
 commands(
     "vc",
