@@ -172,7 +172,7 @@
             % [Page_Layout measure 8]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca._apply_breaks(2)
             \noBreak
@@ -183,7 +183,7 @@
             %@% \bacaStopTextSpanSPM
               %! SPACING
               %! baca.SpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/24]"
               %! SPACING
               %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -192,7 +192,7 @@
             % [Page_Layout measure 9]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #24
+            \baca-new-spacing-section #1 #12
               %! BREAK
               %! baca._apply_breaks(2)
             \noBreak
@@ -203,7 +203,7 @@
             %@% \bacaStopTextSpanSPM
               %! SPACING
               %! baca.SpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/24]"
+            %@% - \baca-start-spm-left-only "[1/12]"
               %! SPACING
               %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM

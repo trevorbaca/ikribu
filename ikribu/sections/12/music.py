@@ -83,7 +83,7 @@ baca.alternate_makers(
     "bcl",
     [1, 5, 9, 13],
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
     total=16,
 )
 
@@ -91,7 +91,7 @@ baca.alternate_makers(
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # VN
@@ -101,7 +101,7 @@ baca.alternate_makers(
     "vn",
     [3, 7, 11, 15],
     library.make_clb_rhythm(extra_counts=[4]),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
     total=16,
 )
 
@@ -112,7 +112,7 @@ baca.alternate_makers(
     "va",
     [3, 7, 11, 15],
     library.make_clb_rhythm(extra_counts=[2]),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
     total=16,
 )
 
@@ -123,7 +123,7 @@ baca.alternate_makers(
     "vc",
     [1, 5, 9, 13],
     baca.make_tied_repeated_durations([(1, 4)]),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
     total=16,
 )
 

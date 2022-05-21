@@ -2943,6 +2943,10 @@ segment.15.Violin.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
@@ -2962,11 +2966,21 @@ segment.15.Violin.Music.Voice = {
 
           %! ikribu.make_glissando_rhythm()
         b''8.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -2976,6 +2990,10 @@ segment.15.Violin.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -2999,16 +3017,31 @@ segment.15.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 2]
           %! ikribu.make_glissando_rhythm()
         g'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g''1
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         e''8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -3022,6 +3055,11 @@ segment.15.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 3]
       %! ikribu.make_glissando_rhythm()
     f'''2.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3039,11 +3077,21 @@ segment.15.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 4]
           %! ikribu.make_glissando_rhythm()
         e'''1
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         d''8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -3071,11 +3119,20 @@ segment.15.Violin.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         d'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -3085,11 +3142,20 @@ segment.15.Violin.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         d''2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -3103,16 +3169,31 @@ segment.15.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 6]
       %! ikribu.make_glissando_rhythm()
     f''4.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     f'2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     a'8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3130,11 +3211,21 @@ segment.15.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 7]
           %! ikribu.make_glissando_rhythm()
         g4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -3158,11 +3249,21 @@ segment.15.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 8]
           %! ikribu.make_glissando_rhythm()
         b'4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -3176,6 +3277,11 @@ segment.15.Violin.Music.Voice = {
     % [Violin_Music_Voice measure 9]
       %! ikribu.make_glissando_rhythm()
     g2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3185,21 +3291,40 @@ segment.15.Violin.Music.Voice = {
     % START_BEAM:
       %! ikribu.make_glissando_rhythm()
     [
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     f'8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     f''8.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     d''8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3209,11 +3334,20 @@ segment.15.Violin.Music.Voice = {
     % STOP_BEAM:
       %! ikribu.make_glissando_rhythm()
     ]
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     d'2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3231,11 +3365,21 @@ segment.15.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 10]
           %! ikribu.make_glissando_rhythm()
         c''4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         d''1
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -5487,6 +5631,10 @@ segment.15.Viola.Music.Voice = {
           %! REAPPLIED_MARGIN_MARKUP_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "[“Va.”]"
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
@@ -5514,21 +5662,41 @@ segment.15.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 2]
       %! ikribu.make_glissando_rhythm()
     d'8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     e''1
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     d''2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     f''8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5546,16 +5714,31 @@ segment.15.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 3]
           %! ikribu.make_glissando_rhythm()
         f'4
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a'2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -5579,6 +5762,11 @@ segment.15.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 4]
           %! ikribu.make_glissando_rhythm()
         a4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -5588,16 +5776,30 @@ segment.15.Viola.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a8.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -5607,11 +5809,20 @@ segment.15.Viola.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         f'4
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -5625,6 +5836,11 @@ segment.15.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 5]
       %! ikribu.make_glissando_rhythm()
     f''2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5634,6 +5850,10 @@ segment.15.Viola.Music.Voice = {
     % START_BEAM:
       %! ikribu.make_glissando_rhythm()
     [
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5643,6 +5863,10 @@ segment.15.Viola.Music.Voice = {
     % STOP_BEAM:
       %! ikribu.make_glissando_rhythm()
     ]
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5660,11 +5884,21 @@ segment.15.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 6]
           %! ikribu.make_glissando_rhythm()
         d'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         c''4
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -5688,16 +5922,31 @@ segment.15.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 7]
           %! ikribu.make_glissando_rhythm()
         d''2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         e'''8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         f'''4.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -5711,6 +5960,11 @@ segment.15.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 8]
       %! ikribu.make_glissando_rhythm()
     e''2
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5732,21 +5986,40 @@ segment.15.Viola.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         b'8.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -5756,16 +6029,30 @@ segment.15.Viola.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         c''2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         b''4
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -5789,11 +6076,21 @@ segment.15.Viola.Music.Voice = {
         % [Viola_Music_Voice measure 10]
           %! ikribu.make_glissando_rhythm()
         a'2.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         b'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -8074,6 +8371,10 @@ segment.15.Cello.Music.Voice = {
     % START_BEAM:
       %! ikribu.make_glissando_rhythm()
     [
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
@@ -8093,11 +8394,21 @@ segment.15.Cello.Music.Voice = {
 
       %! ikribu.make_glissando_rhythm()
     g,8.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     a8
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -8107,6 +8418,10 @@ segment.15.Cello.Music.Voice = {
     % STOP_BEAM:
       %! ikribu.make_glissando_rhythm()
     ]
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -8124,16 +8439,31 @@ segment.15.Cello.Music.Voice = {
         % [Cello_Music_Voice measure 2]
           %! ikribu.make_glissando_rhythm()
         f'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         d'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         e'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8157,11 +8487,21 @@ segment.15.Cello.Music.Voice = {
         % [Cello_Music_Voice measure 3]
           %! ikribu.make_glissando_rhythm()
         d8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         c'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8175,6 +8515,11 @@ segment.15.Cello.Music.Voice = {
     % [Cello_Music_Voice measure 4]
       %! ikribu.make_glissando_rhythm()
     d'1
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -8196,16 +8541,30 @@ segment.15.Cello.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         f''8.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         e'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -8215,11 +8574,20 @@ segment.15.Cello.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g4
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8243,21 +8611,41 @@ segment.15.Cello.Music.Voice = {
         % [Cello_Music_Voice measure 6]
           %! ikribu.make_glissando_rhythm()
         b2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         a8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         b'2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         c'8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8271,11 +8659,21 @@ segment.15.Cello.Music.Voice = {
     % [Cello_Music_Voice measure 7]
       %! ikribu.make_glissando_rhythm()
     b'4.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     a4.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -8293,11 +8691,21 @@ segment.15.Cello.Music.Voice = {
         % [Cello_Music_Voice measure 8]
           %! ikribu.make_glissando_rhythm()
         b2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         g8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8321,6 +8729,11 @@ segment.15.Cello.Music.Voice = {
         % [Cello_Music_Voice measure 9]
           %! ikribu.make_glissando_rhythm()
         g'2..
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -8330,16 +8743,30 @@ segment.15.Cello.Music.Voice = {
         % START_BEAM:
           %! ikribu.make_glissando_rhythm()
         [
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         f''8.
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         e''8
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -8349,11 +8776,20 @@ segment.15.Cello.Music.Voice = {
         % STOP_BEAM:
           %! ikribu.make_glissando_rhythm()
         ]
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! ikribu.make_glissando_rhythm()
         c'2
+        % AFTER:
+        % SPANNER_STARTS:
+          %! abjad.glissando(7)
+          %! baca.glissando()
+        \glissando
         % CLOSING:
         % COMMANDS:
 
@@ -8367,11 +8803,21 @@ segment.15.Cello.Music.Voice = {
     % [Cello_Music_Voice measure 10]
       %! ikribu.make_glissando_rhythm()
     d4.
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! ikribu.make_glissando_rhythm()
     e'1
+    % AFTER:
+    % SPANNER_STARTS:
+      %! abjad.glissando(7)
+      %! baca.glissando()
+    \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

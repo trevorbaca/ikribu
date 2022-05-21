@@ -194,22 +194,28 @@ commands(
 
 commands(
     ("vn", (1, 10)),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=0),
+    baca.suite(
+        library.glissando_pitches(octave=5, rotation=0),
+        baca.glissando(),
+    ),
 )
 
 commands(
     ("va", (1, 10)),
     baca.clef("treble"),
-    baca.glissando(),
-    library.glissando_pitches(octave=5, rotation=-10),
+    baca.suite(
+        library.glissando_pitches(octave=5, rotation=-10),
+        baca.glissando(),
+    ),
 )
 
 commands(
     ("vc", (1, 10)),
     baca.clef("tenor"),
-    baca.glissando(),
-    library.glissando_pitches(octave=4, rotation=-20),
+    baca.suite(
+        library.glissando_pitches(octave=4, rotation=-20),
+        baca.glissando(),
+    ),
 )
 
 commands(

@@ -18,3 +18,8 @@
   oddFooterMarkup = \evenFooterMarkup
   print-first-page-number = ##t
 }
+
+\layout
+{
+  indent = 0
+}
