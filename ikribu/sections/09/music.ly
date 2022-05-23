@@ -83,7 +83,7 @@
 
                 % OPEN_BRACKETS:
                   %! ikribu.make_empty_score()
-                \context EnsembleStaffGroup = "Ensemble_Staff_Group"
+                \context EnsembleStaffGroup = "Ensemble.Staff_Group"
                   %! ikribu.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
@@ -95,7 +95,7 @@
                     \tag Bass_Clarinet
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
-                    \context Staff = "Bass_Clarinet_Music_Staff"
+                    \context Staff = "Bass_Clarinet.Music_Staff"
                       %! ikribu.make_empty_score()
                       %! baca.path.extern()
                     { \segment.09.Bass.Clarinet.Music.Staff }
@@ -108,7 +108,7 @@
                     \tag Violin
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
-                    \context SingleStringStaffGroup = "Violin_Staff_Group"
+                    \context SingleStringStaffGroup = "Violin.Staff_Group"
                       %! ikribu.make_empty_score()
                     <<
                         % ABSOLUTE_BEFORE:
@@ -116,7 +116,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context RHStaff = "Violin_RH_Music_Staff"
+                        \context RHStaff = "Violin_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Violin.RH.Music.Staff }
@@ -125,7 +125,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context Staff = "Violin_Music_Staff"
+                        \context Staff = "Violin.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Violin.Music.Staff }
@@ -144,7 +144,7 @@
                     \tag Viola
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
-                    \context SingleStringStaffGroup = "Viola_Staff_Group"
+                    \context SingleStringStaffGroup = "Viola.Staff_Group"
                       %! ikribu.make_empty_score()
                     <<
                         % ABSOLUTE_BEFORE:
@@ -152,7 +152,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context RHStaff = "Viola_RH_Music_Staff"
+                        \context RHStaff = "Viola_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Viola.RH.Music.Staff }
@@ -161,7 +161,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context Staff = "Viola_Music_Staff"
+                        \context Staff = "Viola.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Viola.Music.Staff }
@@ -180,7 +180,7 @@
                     \tag Cello
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
-                    \context SingleStringStaffGroup = "Cello_Staff_Group"
+                    \context SingleStringStaffGroup = "Cello.Staff_Group"
                       %! ikribu.make_empty_score()
                     <<
                         % ABSOLUTE_BEFORE:
@@ -188,7 +188,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context RHStaff = "Cello_RH_Music_Staff"
+                        \context RHStaff = "Cello_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Cello.RH.Music.Staff }
@@ -197,7 +197,7 @@
 
                         % OPEN_BRACKETS:
                           %! ikribu.make_empty_score()
-                        \context Staff = "Cello_Music_Staff"
+                        \context Staff = "Cello.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
                         { \segment.09.Cello.Music.Staff }
