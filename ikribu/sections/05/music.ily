@@ -1,5 +1,5 @@
   %! baca.path.extern()
-segment.05.Global.Rests = {
+segment.05.Global_Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -110,7 +110,7 @@ segment.05.Global.Rests = {
 
 
   %! baca.path.extern()
-segment.05.Global.Skips = {
+segment.05.Global_Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -697,7 +697,7 @@ segment.05.Global.Skips = {
 
 
   %! baca.path.extern()
-segment.05.Bass.Clarinet.Music.Voice = {
+segment.05.Bass_Clarinet_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1079,7 +1079,7 @@ segment.05.Bass.Clarinet.Music.Staff = {
     \context Voice = "Bass_Clarinet_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Bass.Clarinet.Music.Voice }
+    { \segment.05.Bass_Clarinet_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -1090,7 +1090,7 @@ segment.05.Bass.Clarinet.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Violin.RH.Music.Voice = {
+segment.05.Violin_RH_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1419,7 +1419,7 @@ segment.05.Violin.RH.Music.Staff = {
     \context Voice = "Violin_RH_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Violin.RH.Music.Voice }
+    { \segment.05.Violin_RH_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -1430,7 +1430,7 @@ segment.05.Violin.RH.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Violin.Music.Voice = {
+segment.05.Violin_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1796,7 +1796,7 @@ segment.05.Violin.Music.Staff = {
     \context Voice = "Violin_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Violin.Music.Voice }
+    { \segment.05.Violin_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -1807,7 +1807,7 @@ segment.05.Violin.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Viola.RH.Music.Voice = {
+segment.05.Viola_RH_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2136,7 +2136,7 @@ segment.05.Viola.RH.Music.Staff = {
     \context Voice = "Viola_RH_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Viola.RH.Music.Voice }
+    { \segment.05.Viola_RH_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -2147,7 +2147,7 @@ segment.05.Viola.RH.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Viola.Music.Voice = {
+segment.05.Viola_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2512,7 +2512,7 @@ segment.05.Viola.Music.Staff = {
     \context Voice = "Viola_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Viola.Music.Voice }
+    { \segment.05.Viola_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -2523,7 +2523,7 @@ segment.05.Viola.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Cello.RH.Music.Voice = {
+segment.05.Cello_RH_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4358,7 +4358,7 @@ segment.05.Cello.RH.Music.Staff = {
     \context Voice = "Cello_RH_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Cello.RH.Music.Voice }
+    { \segment.05.Cello_RH_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -4369,7 +4369,7 @@ segment.05.Cello.RH.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.05.Cello.Music.Voice = {
+segment.05.Cello_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5144,7 +5144,7 @@ segment.05.Cello.Music.Staff = {
     \context Voice = "Cello_Music_Voice"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \segment.05.Cello.Music.Voice }
+    { \segment.05.Cello_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
