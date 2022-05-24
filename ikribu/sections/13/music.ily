@@ -1918,7 +1918,7 @@ section_number.13.Bass_Clarinet.Music_Voice = {
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "B. cl."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -3289,7 +3289,7 @@ section_number.13.Violin.Music_Voice = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \override Staff.BarLine.bar-extent = #'(-2 . 2)
-          %! baca._clone_segment_initial_short_instrument_name()
+          %! baca._clone_section_initial_short_instrument_name()
         \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Vn."
           %! -PARTS
           %! REAPPLIED_MARGIN_MARKUP
@@ -7724,7 +7724,7 @@ section_number.13.Viola.Music_Voice = {
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \override Staff.BarLine.bar-extent = #'(-2 . 2)
-          %! baca._clone_segment_initial_short_instrument_name()
+          %! baca._clone_section_initial_short_instrument_name()
         \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Va."
           %! -PARTS
           %! REAPPLIED_MARGIN_MARKUP
@@ -11434,7 +11434,7 @@ section_number.13.Cello.Music_Voice = {
       %! baca.OverrideCommand._call(1)
       %! baca.text_script_parent_alignment_x()
     \override TextScript.parent-alignment-X = 0
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set SingleStringStaffGroup.instrumentName = \markup \hcenter-in #16 "Vc."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
