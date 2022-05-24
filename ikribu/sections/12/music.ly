@@ -54,7 +54,7 @@
                 \context GlobalRests = "Global_Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \segment.12.Global_Rests }
+                { \section_number.12.Global_Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
@@ -63,7 +63,7 @@
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \segment.12.Global_Skips }
+                { \section_number.12.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -98,7 +98,7 @@
                     \context Staff = "Bass_Clarinet.Music_Staff"
                       %! ikribu.make_empty_score()
                       %! baca.path.extern()
-                    { \segment.12.Bass.Clarinet.Music.Staff }
+                    { \section_number.12.Bass_Clarinet.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -119,7 +119,7 @@
                         \context RHStaff = "Violin_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Violin.RH.Music.Staff }
+                        { \section_number.12.Violin_RH.Music_Staff }
                         % ABSOLUTE_BEFORE:
                         % COMMANDS:
 
@@ -128,7 +128,7 @@
                         \context Staff = "Violin.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Violin.Music.Staff }
+                        { \section_number.12.Violin.Music_Staff }
                         % CLOSING:
                         % COMMANDS:
 
@@ -155,7 +155,7 @@
                         \context RHStaff = "Viola_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Viola.RH.Music.Staff }
+                        { \section_number.12.Viola_RH.Music_Staff }
                         % ABSOLUTE_BEFORE:
                         % COMMANDS:
 
@@ -164,7 +164,7 @@
                         \context Staff = "Viola.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Viola.Music.Staff }
+                        { \section_number.12.Viola.Music_Staff }
                         % CLOSING:
                         % COMMANDS:
 
@@ -191,7 +191,7 @@
                         \context RHStaff = "Cello_RH.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Cello.RH.Music.Staff }
+                        { \section_number.12.Cello_RH.Music_Staff }
                         % ABSOLUTE_BEFORE:
                         % COMMANDS:
 
@@ -200,7 +200,7 @@
                         \context Staff = "Cello.Music_Staff"
                           %! ikribu.make_empty_score()
                           %! baca.path.extern()
-                        { \segment.12.Cello.Music.Staff }
+                        { \section_number.12.Cello.Music_Staff }
                         % CLOSING:
                         % COMMANDS:
 
