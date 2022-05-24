@@ -183,7 +183,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        final_segment=True,
+        final_section=True,
         part_manifest=library.part_manifest,
         stage_markup=stage_markup,
         transpose_score=True,
