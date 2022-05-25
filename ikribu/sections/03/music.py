@@ -20,7 +20,7 @@ stage_markup = (
 
 fermata_measures = [4, 6, 10, 12, 16, 18, 25]
 maker_ = baca.TimeSignatureMaker(
-    library.time_signatures,
+    library.time_signatures(),
     count=25,
     fermata_measures=fermata_measures,
     rotation=-2,
@@ -32,11 +32,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -342,7 +342,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
-        part_manifest=library.part_manifest,
+        part_manifest=library.part_manifest(),
         stage_markup=stage_markup,
         transpose_score=True,
     )
