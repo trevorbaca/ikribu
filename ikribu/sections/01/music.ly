@@ -93,7 +93,7 @@
                     % BEFORE:
                     % COMMANDS:
                       %! baca.attach_lilypond_tag()
-                    \tag Bass_Clarinet
+                    \tag #'Bass_Clarinet
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
                     \context Staff = "Bass_Clarinet.Music_Staff"
@@ -106,7 +106,7 @@
                     % BEFORE:
                     % COMMANDS:
                       %! baca.attach_lilypond_tag()
-                    \tag Violin
+                    \tag #'Violin
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Violin.Staff_Group"
@@ -142,7 +142,7 @@
                     % BEFORE:
                     % COMMANDS:
                       %! baca.attach_lilypond_tag()
-                    \tag Viola
+                    \tag #'Viola
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Viola.Staff_Group"
@@ -178,7 +178,7 @@
                     % BEFORE:
                     % COMMANDS:
                       %! baca.attach_lilypond_tag()
-                    \tag Cello
+                    \tag #'Cello
                     % OPEN_BRACKETS:
                       %! ikribu.make_empty_score()
                     \context SingleStringStaffGroup = "Cello.Staff_Group"
