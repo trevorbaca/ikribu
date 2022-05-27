@@ -106,7 +106,7 @@ commands(
 
 # phantom & reapply
 
-music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+music_voices = [_ for _ in voice_names if "MusicVoice" in _]
 
 commands(
     music_voices,
@@ -135,10 +135,10 @@ commands(
 
 commands(
     ("vn", 1),
-    library.margin_markup("Vn.", context="SingleStringStaffGroup"),
+    library.margin_markup("Vn.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Violin",
-        context="SingleStringStaffGroup",
+        context="StringInstrumentPianoStaff",
         hcenter_in=16,
     ),
     baca.clef("percussion"),
@@ -160,10 +160,10 @@ commands(
 
 commands(
     "va",
-    library.margin_markup("Va.", context="SingleStringStaffGroup"),
+    library.margin_markup("Va.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Viola",
-        context="SingleStringStaffGroup",
+        context="StringInstrumentPianoStaff",
         hcenter_in=16,
     ),
     baca.staff_lines(5),
@@ -180,10 +180,10 @@ commands(
 
 commands(
     ("vc", 1),
-    library.margin_markup("Vc.", context="SingleStringStaffGroup"),
+    library.margin_markup("Vc.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Cello",
-        context="SingleStringStaffGroup",
+        context="StringInstrumentPianoStaff",
         hcenter_in=16,
     ),
     baca.clef("treble"),
