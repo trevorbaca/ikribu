@@ -86,7 +86,7 @@ for n in range(1, 8 + 1):
 
 # phantom & reapply
 
-music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+music_voices = [_ for _ in voice_names if "MusicVoice" in _]
 
 commands(
     music_voices,
