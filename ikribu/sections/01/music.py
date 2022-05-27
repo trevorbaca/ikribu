@@ -111,13 +111,16 @@ music_voices = [_ for _ in voice_names if "MusicVoice" in _]
 commands(
     music_voices,
     baca.append_phantom_measure(),
-    baca.attach_first_section_default_indicators(),
+    baca.attach_first_section_default_indicators(
+        attach_instruments_by_hand=True,
+    ),
 )
 
 # bcl
 
 commands(
     "bcl",
+    baca.instrument(commands.instruments["BassClarinet"]),
     library.margin_markup("B. cl."),
     baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
     baca.staff_lines(5),
@@ -135,6 +138,7 @@ commands(
 
 commands(
     ("vn", 1),
+    baca.instrument(commands.instruments["Violin"]),
     library.margin_markup("Vn.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Violin",
@@ -160,6 +164,7 @@ commands(
 
 commands(
     "va",
+    baca.instrument(commands.instruments["Viola"]),
     library.margin_markup("Va.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Viola",
@@ -180,6 +185,7 @@ commands(
 
 commands(
     ("vc", 1),
+    baca.instrument(commands.instruments["Cello"]),
     library.margin_markup("Vc.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Cello",
