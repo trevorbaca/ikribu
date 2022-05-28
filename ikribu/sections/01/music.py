@@ -121,6 +121,7 @@ commands(
 commands(
     "bcl",
     baca.instrument(commands.instruments["BassClarinet"]),
+    baca.clef("treble"),
     library.margin_markup("B. cl."),
     baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
     baca.staff_lines(5),
@@ -132,6 +133,7 @@ commands(
 commands(
     "vn_rh",
     baca.staff_lines(1),
+    baca.clef("percussion"),
 )
 
 # vn
@@ -139,13 +141,13 @@ commands(
 commands(
     ("vn", 1),
     baca.instrument(commands.instruments["Violin"]),
+    baca.clef("percussion"),
     library.margin_markup("Vn.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Violin",
         context="StringInstrumentPianoStaff",
         hcenter_in=16,
     ),
-    baca.clef("percussion"),
     baca.staff_lines(1),
     baca.markup(r"\ikribu-grainfall-one-markup"),
     library.box_adjustment(),
@@ -158,6 +160,7 @@ commands(
 commands(
     "va_rh",
     baca.staff_lines(1),
+    baca.clef("percussion"),
 )
 
 # va
@@ -165,6 +168,7 @@ commands(
 commands(
     "va",
     baca.instrument(commands.instruments["Viola"]),
+    baca.clef("alto"),
     library.margin_markup("Va.", context="StringInstrumentPianoStaff"),
     baca.start_markup(
         "Viola",
@@ -178,6 +182,7 @@ commands(
 
 commands(
     "vc_rh",
+    baca.clef("percussion"),
     baca.staff_lines(1),
 )
 
