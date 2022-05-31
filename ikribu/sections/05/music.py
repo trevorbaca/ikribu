@@ -58,11 +58,6 @@ commands(
     baca.make_mmrests_flat(),
 )
 
-commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va"],
-    baca.append_phantom_measure(),
-)
-
 # VC_RH
 
 commands(
@@ -80,11 +75,6 @@ commands(
     baca.make_mmrests_flat(),
 )
 
-commands(
-    ("vc_rh", 11),
-    baca.append_phantom_measure(),
-)
-
 # VC
 
 commands(
@@ -95,11 +85,6 @@ commands(
 commands(
     ("vc", 11),
     baca.make_mmrests_flat(),
-)
-
-commands(
-    ("vc", 11),
-    baca.append_phantom_measure(),
 )
 
 # bcl, vn_rh, vn, va_rh, va
