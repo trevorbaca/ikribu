@@ -86,33 +86,29 @@ number.11.GlobalRests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
+      %! PHANTOM
       %! baca._comment_measure_numbers()
+      %! baca._style_phantom_measures(4)
     % [GlobalRests measure 11]
     % BEFORE:
     % GROB_OVERRIDES:
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     % OPENING:
     % COMMANDS:
+      %! PHANTOM
       %! baca.GlobalFermataCommand._call(2)
+      %! baca._style_phantom_measures(4)
       %! baca.global_fermata()
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
     % AFTER:
     % MARKUP:
+      %! PHANTOM
       %! baca.GlobalFermataCommand._call(1)
+      %! baca._style_phantom_measures(4)
       %! baca.global_fermata()
     ^ \baca-long-fermata-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! PHANTOM
-      %! baca._comment_measure_numbers()
-      %! baca._style_phantom_measures(4)
-    % [GlobalRests measure 12]
-      %! PHANTOM
-      %! baca._make_global_rests(2)
-    R1 * 1/4
     % CLOSING:
     % COMMANDS:
 
