@@ -1,5 +1,1 @@
-dict(
-    {
-        "bol_measure_numbers": [1, 16, 33, 49],
-    }
-)
+{"bol_measure_numbers": [1, 16, 33, 49]}
