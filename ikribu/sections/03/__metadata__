@@ -5,6 +5,7 @@
     "final_measure_is_fermata": True,
     "final_measure_number": 34,
     "first_measure_number": 10,
+    "has_anchor_skip": True,
     "start_clock_time": "1'04''",
     "stop_clock_time": "3'21''",
     "time_signatures": [
