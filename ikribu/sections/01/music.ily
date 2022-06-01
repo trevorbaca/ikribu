@@ -10,27 +10,21 @@ number.1.GlobalRests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! PHANTOM
       %! baca._comment_measure_numbers()
-      %! baca._style_phantom_measures(4)
     % [GlobalRests measure 2]
     % BEFORE:
     % GROB_OVERRIDES:
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     % OPENING:
     % COMMANDS:
-      %! PHANTOM
       %! baca.GlobalFermataCommand._call(2)
-      %! baca._style_phantom_measures(4)
       %! baca.global_fermata()
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
     % AFTER:
     % MARKUP:
-      %! PHANTOM
       %! baca.GlobalFermataCommand._call(1)
-      %! baca._style_phantom_measures(4)
       %! baca.global_fermata()
     ^ \baca-long-fermata-markup
     % CLOSING:
@@ -150,46 +144,55 @@ number.1.GlobalSkips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
+      %! ANCHOR_SKIP
       %! PHANTOM
       %! baca._comment_measure_numbers()
-      %! baca._style_phantom_measures(1)
+      %! baca._style_anchor_skip(1)
     % [GlobalSkips measure 3]
     % OPENING:
     % COMMANDS:
+      %! ANCHOR_SKIP
       %! PHANTOM
-      %! baca._style_phantom_measures(2)
+      %! baca._style_anchor_skip(2)
     \baca-time-signature-transparent
+      %! ANCHOR_SKIP
       %! PHANTOM
       %! baca._make_global_skips(3)
     s1 * 1/4
     % AFTER:
     % SPANNER_STOPS:
+      %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! PHANTOM
       %! baca._label_clock_time()
-      %! baca._style_phantom_measures(1)
+      %! baca._style_anchor_skip(1)
     %@% \bacaStopTextSpanCT
+      %! ANCHOR_SKIP
       %! LOCAL_MEASURE_NUMBER
       %! PHANTOM
       %! baca._label_measure_numbers()
-      %! baca._style_phantom_measures(1)
+      %! baca._style_anchor_skip(1)
     \bacaStopTextSpanLMN
+      %! ANCHOR_SKIP
       %! EOS_STOP_MM_SPANNER
       %! PHANTOM
       %! baca._attach_metronome_marks(4)
-      %! baca._style_phantom_measures(1)
+      %! baca._style_anchor_skip(1)
     \bacaStopTextSpanMM
+      %! ANCHOR_SKIP
       %! MEASURE_NUMBER
       %! PHANTOM
       %! baca._label_measure_numbers()
-      %! baca._style_phantom_measures(1)
+      %! baca._style_anchor_skip(1)
     %@% \bacaStopTextSpanMN
     % COMMANDS:
+      %! ANCHOR_SKIP
       %! PHANTOM
-      %! baca._style_phantom_measures(3)
+      %! baca._style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
+      %! ANCHOR_SKIP
       %! PHANTOM
-      %! baca._style_phantom_measures(3)
+      %! baca._style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
     % CLOSING:
     % COMMANDS:
