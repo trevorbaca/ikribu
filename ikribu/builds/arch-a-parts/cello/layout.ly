@@ -2134,26 +2134,32 @@
               %! baca._make_global_skips(1)
             s1 * 1/4
 
+              %! ANCHOR_SKIP
               %! PHANTOM
               %! baca._comment_measure_numbers()
-              %! baca._style_phantom_measures(1)
+              %! baca._style_anchor_skip(1)
             % [Page_Layout measure 259]
+              %! ANCHOR_SKIP
               %! BREAK
               %! PHANTOM
               %! baca._apply_breaks(2)
-              %! baca._style_phantom_measures(1)
+              %! baca._style_anchor_skip(1)
             \noBreak
+              %! ANCHOR_SKIP
               %! PHANTOM
-              %! baca._style_phantom_measures(2)
+              %! baca._style_anchor_skip(2)
             \baca-time-signature-transparent
+              %! ANCHOR_SKIP
               %! PHANTOM
               %! baca._make_global_skips(3)
             s1 * 1/4
+              %! ANCHOR_SKIP
               %! PHANTOM
-              %! baca._style_phantom_measures(3)
+              %! baca._style_anchor_skip(3)
             \once \override Score.BarLine.transparent = ##t
+              %! ANCHOR_SKIP
               %! PHANTOM
-              %! baca._style_phantom_measures(3)
+              %! baca._style_anchor_skip(3)
             \once \override Score.SpanBar.transparent = ##t
 
           %! baca.make_global_context()
