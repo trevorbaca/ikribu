@@ -21,7 +21,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     instruments=library.instruments(),
-    margin_markups=library.margin_markups(),
+    short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
@@ -109,8 +109,8 @@ commands(
     "bcl",
     baca.instrument(commands.instruments["BassClarinet"]),
     baca.clef("treble"),
-    library.margin_markup("B. cl."),
-    baca.start_markup(["Bass", "clarinet"], hcenter_in=16),
+    library.short_instrument_name("B. cl."),
+    baca.instrument_name(["Bass", "clarinet"], hcenter_in=16),
     baca.staff_lines(5),
 )
 
@@ -129,8 +129,8 @@ commands(
     ("vn", 1),
     baca.instrument(commands.instruments["Violin"]),
     baca.clef("percussion"),
-    library.margin_markup("Vn.", context="StringInstrumentPianoStaff"),
-    baca.start_markup(
+    library.short_instrument_name("Vn.", context="StringInstrumentPianoStaff"),
+    baca.instrument_name(
         "Violin",
         context="StringInstrumentPianoStaff",
         hcenter_in=16,
@@ -156,8 +156,8 @@ commands(
     "va",
     baca.instrument(commands.instruments["Viola"]),
     baca.clef("alto"),
-    library.margin_markup("Va.", context="StringInstrumentPianoStaff"),
-    baca.start_markup(
+    library.short_instrument_name("Va.", context="StringInstrumentPianoStaff"),
+    baca.instrument_name(
         "Viola",
         context="StringInstrumentPianoStaff",
         hcenter_in=16,
@@ -178,8 +178,8 @@ commands(
 commands(
     ("vc", 1),
     baca.instrument(commands.instruments["Cello"]),
-    library.margin_markup("Vc.", context="StringInstrumentPianoStaff"),
-    baca.start_markup(
+    library.short_instrument_name("Vc.", context="StringInstrumentPianoStaff"),
+    baca.instrument_name(
         "Cello",
         context="StringInstrumentPianoStaff",
         hcenter_in=16,

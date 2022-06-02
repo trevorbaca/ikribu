@@ -222,13 +222,13 @@ number.1.BassClarinet.MusicVoice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
       %! baca.IndicatorCommand._call()
-      %! baca.start_markup()
+      %! baca.instrument_name()
     \set Staff.instrumentName = \markup \column { \hcenter-in #16 "Bass" \hcenter-in #16 "clarinet" }
       %! -PARTS
-      %! EXPLICIT_MARGIN_MARKUP
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -255,7 +255,7 @@ number.1.BassClarinet.MusicVoice = {
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)
-      %! EXPLICIT_MARGIN_MARKUP_COLOR
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)
       %! EXPLICIT_STAFF_LINES_COLOR
@@ -280,7 +280,7 @@ number.1.BassClarinet.MusicVoice = {
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "(“BassClarinet”)"
-      %! EXPLICIT_MARGIN_MARKUP_ALERT
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“B. cl.”]"
     % ABSOLUTE_AFTER:
@@ -288,14 +288,14 @@ number.1.BassClarinet.MusicVoice = {
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
     % ABSOLUTE_BEFORE:
@@ -521,13 +521,13 @@ number.1.Violin.MusicVoice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
       %! baca.IndicatorCommand._call()
-      %! baca.start_markup()
+      %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Violin"
       %! -PARTS
-      %! EXPLICIT_MARGIN_MARKUP
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -557,7 +557,7 @@ number.1.Violin.MusicVoice = {
       %! EXPLICIT_STAFF_LINES_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-      %! EXPLICIT_MARGIN_MARKUP_COLOR
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -589,7 +589,7 @@ number.1.Violin.MusicVoice = {
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "(“Violin”)"
-      %! EXPLICIT_MARGIN_MARKUP_ALERT
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vn.”]"
       %! baca.IndicatorCommand._call()
@@ -600,14 +600,14 @@ number.1.Violin.MusicVoice = {
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
     % ABSOLUTE_BEFORE:
@@ -819,13 +819,13 @@ number.1.Viola.MusicVoice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
       %! baca.IndicatorCommand._call()
-      %! baca.start_markup()
+      %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Viola"
       %! -PARTS
-      %! EXPLICIT_MARGIN_MARKUP
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Va."
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -855,7 +855,7 @@ number.1.Viola.MusicVoice = {
       %! EXPLICIT_STAFF_LINES_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-      %! EXPLICIT_MARGIN_MARKUP_COLOR
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -877,7 +877,7 @@ number.1.Viola.MusicVoice = {
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "(“Viola”)"
-      %! EXPLICIT_MARGIN_MARKUP_ALERT
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Va.”]"
     % ABSOLUTE_AFTER:
@@ -885,14 +885,14 @@ number.1.Viola.MusicVoice = {
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Va."
     % ABSOLUTE_BEFORE:
@@ -1107,13 +1107,13 @@ number.1.Cello.MusicVoice = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
       %! baca.IndicatorCommand._call()
-      %! baca.start_markup()
+      %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Cello"
       %! -PARTS
-      %! EXPLICIT_MARGIN_MARKUP
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -1143,7 +1143,7 @@ number.1.Cello.MusicVoice = {
       %! EXPLICIT_STAFF_LINES_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-      %! EXPLICIT_MARGIN_MARKUP_COLOR
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -1178,7 +1178,7 @@ number.1.Cello.MusicVoice = {
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "(“Cello”)"
-      %! EXPLICIT_MARGIN_MARKUP_ALERT
+      %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Vc.”]"
       %! baca.IndicatorCommand._call()
@@ -1192,14 +1192,14 @@ number.1.Cello.MusicVoice = {
       %! EXPLICIT_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME_COLOR
       %! baca._attach_color_literal(2)
     \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
-      %! REDRAWN_EXPLICIT_MARGIN_MARKUP
+      %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.margin_markup()
+      %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
     \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
     % ABSOLUTE_BEFORE:

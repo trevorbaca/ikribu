@@ -5,10 +5,10 @@ import baca
 from abjadext import rmakers
 
 
-def _make_margin_markup(markup, context="Staff"):
-    return abjad.MarginMarkup(
+def _make_short_instrument_name(markup, context="Staff"):
+    return abjad.ShortInstrumentName(
+        rf'\markup \hcenter-in #16 "{markup}"',
         context=context,
-        markup=rf'\markup \hcenter-in #16 "{markup}"',
     )
 
 
@@ -267,15 +267,15 @@ def make_vigil_rhythm():
     )
 
 
-def margin_markup(
+def short_instrument_name(
     key,
     alert=None,
     context="Staff",
     selector=lambda _: abjad.select.leaf(_, 0),
 ):
-    margin_markup = margin_markups()[key]
-    command = baca.margin_markup(
-        margin_markup,
+    short_instrument_name = short_instrument_names()[key]
+    command = baca.short_instrument_name(
+        short_instrument_name,
         alert=alert,
         context=context,
         selector=selector,
@@ -283,13 +283,13 @@ def margin_markup(
     return baca.not_parts(command)
 
 
-def margin_markups():
+def short_instrument_names():
     return dict(
         [
-            ("B. cl.", _make_margin_markup("B. cl.")),
-            ("Va.", _make_margin_markup("Va.", context="StringInstrumentPianoStaff")),
-            ("Vc.", _make_margin_markup("Vc.", context="StringInstrumentPianoStaff")),
-            ("Vn.", _make_margin_markup("Vn.", context="StringInstrumentPianoStaff")),
+            ("B. cl.", _make_short_instrument_name("B. cl.")),
+            ("Va.", _make_short_instrument_name("Va.", context="StringInstrumentPianoStaff")),
+            ("Vc.", _make_short_instrument_name("Vc.", context="StringInstrumentPianoStaff")),
+            ("Vn.", _make_short_instrument_name("Vn.", context="StringInstrumentPianoStaff")),
         ]
     )
 
