@@ -72,12 +72,21 @@ def instruments():
             ("BassClarinet", abjad.BassClarinet()),
             (
                 "Violin",
-                abjad.Violin(context="StaffGroup", pitch_range="[G3, +inf]"),
+                abjad.Violin(
+                    context="StaffGroup", pitch_range=abjad.PitchRange("[G3, +inf]")
+                ),
             ),
-            ("Viola", abjad.Viola(context="StaffGroup", pitch_range="[C3, +inf]")),
+            (
+                "Viola",
+                abjad.Viola(
+                    context="StaffGroup", pitch_range=abjad.PitchRange("[C3, +inf]")
+                ),
+            ),
             (
                 "Cello",
-                abjad.Cello(context="StaffGroup", pitch_range="[Bb0, +inf]"),
+                abjad.Cello(
+                    context="StaffGroup", pitch_range=abjad.PitchRange("[Bb0, +inf]")
+                ),
             ),
         ]
     )
@@ -287,9 +296,24 @@ def short_instrument_names():
     return dict(
         [
             ("B. cl.", _make_short_instrument_name("B. cl.")),
-            ("Va.", _make_short_instrument_name("Va.", context="StringInstrumentPianoStaff")),
-            ("Vc.", _make_short_instrument_name("Vc.", context="StringInstrumentPianoStaff")),
-            ("Vn.", _make_short_instrument_name("Vn.", context="StringInstrumentPianoStaff")),
+            (
+                "Va.",
+                _make_short_instrument_name(
+                    "Va.", context="StringInstrumentPianoStaff"
+                ),
+            ),
+            (
+                "Vc.",
+                _make_short_instrument_name(
+                    "Vc.", context="StringInstrumentPianoStaff"
+                ),
+            ),
+            (
+                "Vn.",
+                _make_short_instrument_name(
+                    "Vn.", context="StringInstrumentPianoStaff"
+                ),
+            ),
         ]
     )
 
