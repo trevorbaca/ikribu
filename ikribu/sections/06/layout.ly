@@ -18,12 +18,12 @@
     <<
 
           %! baca.make_global_context()
-        \context PageLayout = "Page_Layout"
+        \context PageLayout = "PageLayout"
           %! baca.make_global_context()
-        {   %*% Page_Layout
+        {   %*% PageLayout
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 1]
+            % [PageLayout measure 1]
               %! BREAK
               %! baca._apply_breaks(1)
             \autoPageBreaksOff
@@ -49,7 +49,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 2]
+            % [PageLayout measure 2]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -69,7 +69,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 3]
+            % [PageLayout measure 3]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -89,7 +89,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 4]
+            % [PageLayout measure 4]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -109,7 +109,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 5]
+            % [PageLayout measure 5]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -129,7 +129,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 6]
+            % [PageLayout measure 6]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -149,7 +149,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 7]
+            % [PageLayout measure 7]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -169,7 +169,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 8]
+            % [PageLayout measure 8]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -189,7 +189,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 9]
+            % [PageLayout measure 9]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -209,7 +209,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 10]
+            % [PageLayout measure 10]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -229,7 +229,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 11]
+            % [PageLayout measure 11]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #35 #288
@@ -249,7 +249,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 12]
+            % [PageLayout measure 12]
               %! BREAK
               %! baca.IndicatorCommand._call()
             \baca-lbsd #140 #'(15 20)
@@ -275,7 +275,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 13]
+            % [PageLayout measure 13]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -295,7 +295,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 14]
+            % [PageLayout measure 14]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -315,7 +315,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 15]
+            % [PageLayout measure 15]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -335,7 +335,7 @@
             %@% \bacaStartTextSpanSPM
 
               %! baca._comment_measure_numbers()
-            % [Page_Layout measure 16]
+            % [PageLayout measure 16]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #12
@@ -357,7 +357,7 @@
               %! ANCHOR_SKIP
               %! baca._comment_measure_numbers()
               %! baca._style_anchor_skip(1)
-            % [Page_Layout measure 17]
+            % [PageLayout measure 17]
               %! ANCHOR_SKIP
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
@@ -387,7 +387,7 @@
             \once \override Score.SpanBar.transparent = ##t
 
           %! baca.make_global_context()
-        }   %*% Page_Layout
+        }   %*% PageLayout
 
       %! baca.make_global_context()
     >>
