@@ -134,7 +134,7 @@ def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     # BASS CLARINET
-    bass_clarinet_music_voice = abjad.Voice(name="BassClarinet.MusicVoice", tag=tag)
+    bass_clarinet_music_voice = abjad.Voice(name="BassClarinet.Music", tag=tag)
     bass_clarinet_music_staff = abjad.Staff(
         [bass_clarinet_music_voice],
         name="BassClarinet.Staff",
@@ -142,7 +142,7 @@ def make_empty_score():
     )
     baca.score.attach_lilypond_tag("BassClarinet", bass_clarinet_music_staff)
     # VIOLIN
-    violin_rh_music_voice = abjad.Voice(name="ViolinRH.MusicVoice", tag=tag)
+    violin_rh_music_voice = abjad.Voice(name="ViolinRH.Music", tag=tag)
     violin_rh_music_staff = abjad.Staff(
         [violin_rh_music_voice],
         lilypond_type="RHStaff",
@@ -150,7 +150,7 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(violin_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
-    violin_music_voice = abjad.Voice(name="Violin.MusicVoice", tag=tag)
+    violin_music_voice = abjad.Voice(name="Violin.Music", tag=tag)
     violin_music_staff = abjad.Staff([violin_music_voice], name="Violin.Staff", tag=tag)
     violin_staff_group = abjad.StaffGroup(
         [violin_rh_music_staff, violin_music_staff],
@@ -160,7 +160,7 @@ def make_empty_score():
     )
     baca.score.attach_lilypond_tag("Violin", violin_staff_group)
     # VIOLA
-    viola_rh_music_voice = abjad.Voice(name="ViolaRH.MusicVoice", tag=tag)
+    viola_rh_music_voice = abjad.Voice(name="ViolaRH.Music", tag=tag)
     viola_rh_music_staff = abjad.Staff(
         [viola_rh_music_voice],
         lilypond_type="RHStaff",
@@ -168,7 +168,7 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(viola_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
-    viola_music_voice = abjad.Voice(name="Viola.MusicVoice", tag=tag)
+    viola_music_voice = abjad.Voice(name="Viola.Music", tag=tag)
     viola_music_staff = abjad.Staff([viola_music_voice], name="Viola.Staff", tag=tag)
     viola_staff_group = abjad.StaffGroup(
         [viola_rh_music_staff, viola_music_staff],
@@ -178,7 +178,7 @@ def make_empty_score():
     )
     baca.score.attach_lilypond_tag("Viola", viola_staff_group)
     # CELLO
-    cello_rh_music_voice = abjad.Voice(name="CelloRH.MusicVoice", tag=tag)
+    cello_rh_music_voice = abjad.Voice(name="CelloRH.Music", tag=tag)
     cello_rh_music_staff = abjad.Staff(
         [cello_rh_music_voice],
         lilypond_type="RHStaff",
@@ -186,7 +186,7 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(cello_rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
-    cello_music_voice = abjad.Voice(name="Cello.MusicVoice", tag=tag)
+    cello_music_voice = abjad.Voice(name="Cello.Music", tag=tag)
     cello_music_staff = abjad.Staff([cello_music_voice], name="Cello.Staff", tag=tag)
     cello_staff_group = abjad.StaffGroup(
         [cello_rh_music_staff, cello_music_staff],
@@ -352,11 +352,11 @@ def time_signatures():
 
 def voice_abbreviations():
     return {
-        "bcl": "BassClarinet.MusicVoice",
-        "vn_rh": "ViolinRH.MusicVoice",
-        "vn": "Violin.MusicVoice",
-        "va_rh": "ViolaRH.MusicVoice",
-        "va": "Viola.MusicVoice",
-        "vc_rh": "CelloRH.MusicVoice",
-        "vc": "Cello.MusicVoice",
+        "bcl": "BassClarinet.Music",
+        "vn_rh": "ViolinRH.Music",
+        "vn": "Violin.Music",
+        "va_rh": "ViolaRH.Music",
+        "va": "Viola.Music",
+        "vc_rh": "CelloRH.Music",
+        "vc": "Cello.Music",
     }

@@ -195,12 +195,12 @@ number.1.GlobalSkips = {
 
 
   %! baca.path.extern()
-number.1.BassClarinet.MusicVoice = {
+number.1.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [BassClarinet.MusicVoice measure 1]
+    % [BassClarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -302,7 +302,7 @@ number.1.BassClarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [BassClarinet.MusicVoice measure 2]
+    % [BassClarinet.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -346,10 +346,10 @@ number.1.BassClarinet.Staff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "BassClarinet.MusicVoice"
+    \context Voice = "BassClarinet.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.BassClarinet.MusicVoice }
+    { \number.1.BassClarinet.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -360,12 +360,12 @@ number.1.BassClarinet.Staff = {
 
 
   %! baca.path.extern()
-number.1.ViolinRH.MusicVoice = {
+number.1.ViolinRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [ViolinRH.MusicVoice measure 1]
+    % [ViolinRH.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -438,7 +438,7 @@ number.1.ViolinRH.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [ViolinRH.MusicVoice measure 2]
+    % [ViolinRH.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -474,10 +474,10 @@ number.1.Violin.RHStaff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "ViolinRH.MusicVoice"
+    \context Voice = "ViolinRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.ViolinRH.MusicVoice }
+    { \number.1.ViolinRH.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -488,12 +488,12 @@ number.1.Violin.RHStaff = {
 
 
   %! baca.path.extern()
-number.1.Violin.MusicVoice = {
+number.1.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 1]
+    % [Violin.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -614,7 +614,7 @@ number.1.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 2]
+    % [Violin.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -650,10 +650,10 @@ number.1.Violin.Staff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "Violin.MusicVoice"
+    \context Voice = "Violin.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.Violin.MusicVoice }
+    { \number.1.Violin.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -664,12 +664,12 @@ number.1.Violin.Staff = {
 
 
   %! baca.path.extern()
-number.1.ViolaRH.MusicVoice = {
+number.1.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [ViolaRH.MusicVoice measure 1]
+    % [ViolaRH.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -742,7 +742,7 @@ number.1.ViolaRH.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [ViolaRH.MusicVoice measure 2]
+    % [ViolaRH.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -778,10 +778,10 @@ number.1.Viola.RHStaff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "ViolaRH.MusicVoice"
+    \context Voice = "ViolaRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.ViolaRH.MusicVoice }
+    { \number.1.ViolaRH.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -792,12 +792,12 @@ number.1.Viola.RHStaff = {
 
 
   %! baca.path.extern()
-number.1.Viola.MusicVoice = {
+number.1.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 1]
+    % [Viola.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -899,7 +899,7 @@ number.1.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 2]
+    % [Viola.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -935,10 +935,10 @@ number.1.Viola.Staff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "Viola.MusicVoice"
+    \context Voice = "Viola.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.Viola.MusicVoice }
+    { \number.1.Viola.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -949,12 +949,12 @@ number.1.Viola.Staff = {
 
 
   %! baca.path.extern()
-number.1.CelloRH.MusicVoice = {
+number.1.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [CelloRH.MusicVoice measure 1]
+    % [CelloRH.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_1
@@ -1027,7 +1027,7 @@ number.1.CelloRH.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [CelloRH.MusicVoice measure 2]
+    % [CelloRH.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -1063,10 +1063,10 @@ number.1.Cello.RHStaff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "CelloRH.MusicVoice"
+    \context Voice = "CelloRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.CelloRH.MusicVoice }
+    { \number.1.CelloRH.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -1077,12 +1077,12 @@ number.1.Cello.RHStaff = {
 
 
   %! baca.path.extern()
-number.1.Cello.MusicVoice = {
+number.1.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 1]
+    % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -1206,7 +1206,7 @@ number.1.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 2]
+    % [Cello.Music measure 2]
     % BEFORE:
     % COMMANDS:
       %! baca._style_fermata_measures(1)
@@ -1242,10 +1242,10 @@ number.1.Cello.Staff = {
 
     % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
-    \context Voice = "Cello.MusicVoice"
+    \context Voice = "Cello.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
-    { \number.1.Cello.MusicVoice }
+    { \number.1.Cello.Music }
     % CLOSING:
     % COMMANDS:
 
