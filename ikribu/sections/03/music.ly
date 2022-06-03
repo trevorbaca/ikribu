@@ -51,19 +51,19 @@
 
                 % OPEN_BRACKETS:
                   %! baca.make_global_context()
-                \context GlobalRests = "GlobalRests"
+                \context GlobalRests = "Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \number.3.GlobalRests }
+                { \number.3.Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
                 % OPEN_BRACKETS:
                   %! baca.make_global_context()
-                \context GlobalSkips = "GlobalSkips"
+                \context GlobalSkips = "Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \number.3.GlobalSkips }
+                { \number.3.Skips }
                 % CLOSING:
                 % COMMANDS:
 

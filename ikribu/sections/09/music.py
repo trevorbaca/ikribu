@@ -35,7 +35,7 @@ commands = baca.CommandAccumulator(
 )
 
 commands(
-    "GlobalRests",
+    "Rests",
     baca.global_fermata(
         "fermata",
         selector=lambda _: abjad.select.leaf(_, 9 - 1),

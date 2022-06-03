@@ -1,17 +1,17 @@
   %! baca.path.extern()
-number.1.GlobalRests = {
+number.1.Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 1]
+    % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 7/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 2]
+    % [Rests measure 2]
     % BEFORE:
     % GROB_OVERRIDES:
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
@@ -37,12 +37,12 @@ number.1.GlobalRests = {
 
 
   %! baca.path.extern()
-number.1.GlobalSkips = {
+number.1.Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 1]
+    % [Skips measure 1]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -99,7 +99,7 @@ number.1.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 2]
+    % [Skips measure 2]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -147,7 +147,7 @@ number.1.GlobalSkips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [GlobalSkips measure 3]
+    % [Skips measure 3]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
