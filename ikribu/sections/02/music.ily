@@ -1,52 +1,52 @@
   %! baca.path.extern()
-number.2.GlobalRests = {
+number.2.Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 1]
+    % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 2]
+    % [Rests measure 2]
       %! baca._make_global_rests(1)
     R1 * 7/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 3]
+    % [Rests measure 3]
       %! baca._make_global_rests(1)
     R1 * 1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 4]
+    % [Rests measure 4]
       %! baca._make_global_rests(1)
     R1 * 1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 5]
+    % [Rests measure 5]
       %! baca._make_global_rests(1)
     R1 * 3/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 6]
+    % [Rests measure 6]
       %! baca._make_global_rests(1)
     R1 * 7/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalRests measure 7]
+    % [Rests measure 7]
     % BEFORE:
     % GROB_OVERRIDES:
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
@@ -72,12 +72,12 @@ number.2.GlobalRests = {
 
 
   %! baca.path.extern()
-number.2.GlobalSkips = {
+number.2.Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 1]
+    % [Skips measure 1]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -144,7 +144,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 2]
+    % [Skips measure 2]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -190,7 +190,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 3]
+    % [Skips measure 3]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -245,7 +245,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 4]
+    % [Skips measure 4]
       %! baca._make_global_skips(1)
     s1 * 1
     % AFTER:
@@ -282,7 +282,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 5]
+    % [Skips measure 5]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -328,7 +328,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 6]
+    % [Skips measure 6]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -383,7 +383,7 @@ number.2.GlobalSkips = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [GlobalSkips measure 7]
+    % [Skips measure 7]
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -431,7 +431,7 @@ number.2.GlobalSkips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [GlobalSkips measure 8]
+    % [Skips measure 8]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP

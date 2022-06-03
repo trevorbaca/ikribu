@@ -2,8 +2,8 @@
     "alive_during_section": [
         "Score",
         "GlobalContext",
-        "GlobalRests",
-        "GlobalSkips",
+        "Rests",
+        "Skips",
         "MusicContext",
         "EnsembleStaffGroup",
         "BassClarinet.Staff",
@@ -161,7 +161,7 @@
         ],
         "Score": [
             baca.Memento(
-                context="GlobalSkips",
+                context="Skips",
                 edition=None,
                 manifest="metronome_marks",
                 prototype=None,
@@ -169,7 +169,7 @@
                 value="night",
             ),
             baca.Memento(
-                context="GlobalSkips",
+                context="Skips",
                 edition=None,
                 manifest=None,
                 prototype="abjad.TimeSignature",
