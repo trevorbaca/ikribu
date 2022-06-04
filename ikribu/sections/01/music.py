@@ -128,7 +128,9 @@ commands(
 commands(
     ("vn", 1),
     baca.instrument(commands.instruments["Violin"]),
-    baca.instrument_name(r"\ikribu-violin-markup", context="StringInstrumentPianoStaff"),
+    baca.instrument_name(
+        r"\ikribu-violin-markup", context="StringInstrumentPianoStaff"
+    ),
     library.short_instrument_name("Vn.", context="StringInstrumentPianoStaff"),
     baca.clef("percussion"),
     baca.staff_lines(1),
