@@ -293,29 +293,21 @@ def short_instrument_name(
 
 
 def short_instrument_names():
-    return dict(
-        [
-            ("B. cl.", _make_short_instrument_name("B. cl.")),
-            (
-                "Va.",
-                _make_short_instrument_name(
-                    "Va.", context="StringInstrumentPianoStaff"
-                ),
-            ),
-            (
-                "Vc.",
-                _make_short_instrument_name(
-                    "Vc.", context="StringInstrumentPianoStaff"
-                ),
-            ),
-            (
-                "Vn.",
-                _make_short_instrument_name(
-                    "Vn.", context="StringInstrumentPianoStaff"
-                ),
-            ),
-        ]
-    )
+    return {
+        "B. cl.": abjad.ShortInstrumentName(r"\ikribu-bcl-markup"),
+        "Va.": abjad.ShortInstrumentName(
+            r"\ikribu-va-markup",
+            context="StringInstrumentPianoStaff",
+        ),
+        "Vc.": abjad.ShortInstrumentName(
+            r"\ikribu-vc-markup",
+            context="StringInstrumentPianoStaff",
+        ),
+        "Vn.": abjad.ShortInstrumentName(
+            r"\ikribu-vn-markup",
+            context="StringInstrumentPianoStaff",
+        ),
+    }
 
 
 def metronome_marks():

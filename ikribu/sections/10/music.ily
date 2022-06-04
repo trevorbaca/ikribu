@@ -639,12 +639,12 @@ number.10.BassClarinet.Music = {
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.instrumentName = \ikribu-bcl-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \ikribu-bcl-markup
       %! EXPLICIT_STAFF_LINES
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -717,7 +717,7 @@ number.10.BassClarinet.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \ikribu-bcl-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1193,12 +1193,12 @@ number.10.Violin.Music = {
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! baca._clone_section_initial_short_instrument_name()
-    \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Vn."
+    \set StringInstrumentPianoStaff.instrumentName = \ikribu-vn-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup
       %! EXPLICIT_STAFF_LINES
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -1271,7 +1271,7 @@ number.10.Violin.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1747,12 +1747,12 @@ number.10.Viola.Music = {
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! baca._clone_section_initial_short_instrument_name()
-    \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Va."
+    \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
       %! EXPLICIT_STAFF_LINES
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -1825,7 +1825,7 @@ number.10.Viola.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2307,12 +2307,12 @@ number.10.Cello.Music = {
       %! baca.text_script_parent_alignment_x()
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
-    \set StringInstrumentPianoStaff.instrumentName = \markup \hcenter-in #16 "Vc."
+    \set StringInstrumentPianoStaff.instrumentName = \ikribu-vc-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
@@ -2392,7 +2392,7 @@ number.10.Cello.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set StringInstrumentPianoStaff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
