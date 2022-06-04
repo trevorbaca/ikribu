@@ -90,6 +90,15 @@ number.5.Rests = {
       %! baca.GlobalFermataCommand._call(1)
       %! baca.global_fermata()
     ^ \baca-short-fermata-markup
+    % COMMANDS:
+      %! FERMATA_MEASURE
+      %! MEASURE_62
+      %! baca._style_fermata_measures(7)
+    \once \override Score.BarLine.transparent = ##t
+      %! FERMATA_MEASURE
+      %! MEASURE_62
+      %! baca._style_fermata_measures(7)
+    \once \override Score.SpanBar.transparent = ##t
     % CLOSING:
     % COMMANDS:
 
@@ -635,11 +644,6 @@ number.5.Skips = {
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
     % [anchor skip]
-    % OPENING:
-    % COMMANDS:
-      %! ANCHOR_SKIP
-      %! baca._style_anchor_skip(2)
-    \baca-time-signature-transparent
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
@@ -909,14 +913,6 @@ number.5.BassClarinet.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % COMMANDS:
-      %! FERMATA_MEASURE
-      %! MEASURE_62
-      %! baca._style_fermata_measures(7)
-    \once \override Score.BarLine.transparent = ##t
-      %! FERMATA_MEASURE
-      %! MEASURE_62
-      %! baca._style_fermata_measures(7)
-    \once \override Score.SpanBar.transparent = ##t
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)

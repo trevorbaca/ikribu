@@ -710,11 +710,6 @@ number.18.Skips = {
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
     % [anchor skip]
-    % OPENING:
-    % COMMANDS:
-      %! ANCHOR_SKIP
-      %! baca._style_anchor_skip(2)
-    \baca-time-signature-transparent
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
