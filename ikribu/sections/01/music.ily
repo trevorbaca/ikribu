@@ -279,10 +279,10 @@ number.1.BassClarinet.Music = {
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "(“BassClarinet”)"
+    ^ \baca-explicit-instrument-markup "(“BassClarinet”)"
       %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "[“B. cl.”]"
+    ^ \baca-explicit-short-instrument-name-markup "[“B. cl.”]"
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
@@ -588,10 +588,10 @@ number.1.Violin.Music = {
     % MARKUP:
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "(“Violin”)"
+    ^ \baca-explicit-instrument-markup "(“Violin”)"
       %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "[“Vn.”]"
+    ^ \baca-explicit-short-instrument-name-markup "[“Vn.”]"
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-grainfall-one-markup
@@ -876,10 +876,10 @@ number.1.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "(“Viola”)"
+    ^ \baca-explicit-instrument-markup "(“Viola”)"
       %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "[“Va.”]"
+    ^ \baca-explicit-short-instrument-name-markup "[“Va.”]"
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! EXPLICIT_CLEF_REDRAW_COLOR
@@ -1177,10 +1177,10 @@ number.1.Cello.Music = {
     % MARKUP:
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "(“Cello”)"
+    ^ \baca-explicit-instrument-markup "(“Cello”)"
       %! EXPLICIT_SHORT_INSTRUMENT_NAME_ALERT
       %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "[“Vc.”]"
+    ^ \baca-explicit-short-instrument-name-markup "[“Vc.”]"
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \markup pizz.
