@@ -200,6 +200,26 @@
     }
 }
 
+% INSTRUMENT NAME MARKUP
+
+ikribu-bass-clarinet-markup = \markup
+  \column {
+  \hcenter-in #16 "Bass"
+  \hcenter-in #16 "clarinet"
+  }
+ikribu-bcl-markup = \markup \hcenter-in #16 "B. cl."
+
+ikribu-violin-markup = \markup \hcenter-in #16 Violin
+ikribu-vn-markup = \markup \hcenter-in #16 Vn.
+
+ikribu-viola-markup = \markup \hcenter-in #16 Viola
+ikribu-va-markup = \markup \hcenter-in #16 Va.
+
+ikribu-cello-markup = \markup \hcenter-in #16 Cello
+ikribu-vc-markup = \markup \hcenter-in #16 Vc.
+
+% MARKUP
+
 ikribu-breathe-discreetly-markup = \markup
   \column {
       "breathe discreetly before any downbeat as needed"
