@@ -35,6 +35,16 @@ commands = baca.CommandAccumulator(
     voice_names=voice_names,
 )
 
+baca.interpret.set_up_score(
+    score,
+    commands.manifests(),
+    commands.time_signatures,
+    append_anchor_skip=True,
+    always_make_global_rests=True,
+    attach_nonfirst_empty_start_bar=True,
+    stage_markup=stage_markup,
+)
+
 commands(
     "Skips",
     baca.metronome_mark(
@@ -183,7 +193,6 @@ if __name__ == "__main__":
         fermata_measure_empty_overrides=fermata_measures,
         final_section=True,
         part_manifest=library.part_manifest(),
-        stage_markup=stage_markup,
         transpose_score=True,
     )
     lilypond_file = baca.make_lilypond_file(
