@@ -45,21 +45,17 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-commands(
-    "Skips",
-    baca.metronome_mark(
-        "night",
-        selector=lambda _: abjad.select.leaf(_, 1 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=lambda _: abjad.select.leaf(_, 1 - 1),
-    ),
-    baca.metronome_mark(
-        "windows",
-        selector=lambda _: abjad.select.leaf(_, 11 - 1),
-    ),
-)
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in (
+    (1 - 1, "night"),
+    (1 - 1, baca.Accelerando()),
+    (11 - 1, "windows"),
+):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
 
 # BCL
 

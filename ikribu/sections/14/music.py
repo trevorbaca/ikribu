@@ -58,61 +58,27 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-commands(
-    "Skips",
-    baca.metronome_mark(
-        "incisions",
-        selector=lambda _: abjad.select.leaf(_, 1 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=lambda _: abjad.select.leaf(_, 1 - 1),
-    ),
-    baca.metronome_mark(
-        "windows",
-        selector=lambda _: abjad.select.leaf(_, 4 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Ritardando(),
-        selector=lambda _: abjad.select.leaf(_, 6 - 1),
-    ),
-    baca.metronome_mark(
-        "incisions",
-        selector=lambda _: abjad.select.leaf(_, 7 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=lambda _: abjad.select.leaf(_, 9 - 1),
-    ),
-    baca.metronome_mark(
-        "windows",
-        selector=lambda _: abjad.select.leaf(_, 12 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Ritardando(),
-        selector=lambda _: abjad.select.leaf(_, 14 - 1),
-    ),
-    baca.metronome_mark(
-        "incisions",
-        selector=lambda _: abjad.select.leaf(_, 17 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=lambda _: abjad.select.leaf(_, 19 - 1),
-    ),
-    baca.metronome_mark(
-        "windows",
-        selector=lambda _: abjad.select.leaf(_, 20 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Ritardando(),
-        selector=lambda _: abjad.select.leaf(_, 22 - 1),
-    ),
-    baca.metronome_mark(
-        "incisions",
-        selector=lambda _: abjad.select.leaf(_, 27 - 1),
-    ),
-)
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in (
+    (1 - 1, "incisions"),
+    (1 - 1, baca.Accelerando()),
+    (4 - 1, "windows"),
+    (6 - 1, baca.Ritardando()),
+    (7 - 1, "incisions"),
+    (9 - 1, baca.Accelerando()),
+    (12 - 1, "windows"),
+    (14 - 1, baca.Ritardando()),
+    (17 - 1, "incisions"),
+    (19 - 1, baca.Accelerando()),
+    (20 - 1, "windows"),
+    (22 - 1, baca.Ritardando()),
+    (27 - 1, "incisions"),
+):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
 
 commands(
     "Rests",
