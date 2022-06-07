@@ -46,7 +46,7 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-baca.commands._bar_line(score["Skips"][12 - 1], "|.")
+baca.bar_line(score["Skips"][12 - 1], "|.")
 
 skips = score["Skips"]
 manifests = commands.manifests()
