@@ -37,6 +37,7 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
+    commands,
     commands.manifests(),
     commands.time_signatures,
     append_anchor_skip=True,
@@ -45,10 +46,7 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-commands(
-    "Skips",
-    baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
-)
+baca.commands._bar_line(score["Skips"][12 - 1], "|.")
 
 skips = score["Skips"]
 manifests = commands.manifests()
