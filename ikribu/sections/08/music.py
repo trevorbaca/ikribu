@@ -67,7 +67,7 @@ commands(
 
 commands(
     ("bcl", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -77,7 +77,7 @@ commands(
 
 commands(
     ("bcl", 4),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -87,7 +87,7 @@ commands(
 
 commands(
     ("bcl", 6),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -97,7 +97,7 @@ commands(
 
 commands(
     ("bcl", 8),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -107,7 +107,7 @@ commands(
 
 commands(
     ("bcl", 10),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -117,14 +117,14 @@ commands(
 
 commands(
     ("bcl", 12),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VN_RH, VN, VA_RH, VA, VC_RH
 
 commands(
     ["vn_rh", "vn", "va_rh", "va", "vc_rh"],
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC
@@ -139,7 +139,7 @@ commands(
 
 commands(
     ("vc", 12),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # reapply

@@ -102,7 +102,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, 1),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, (2, 4)),
@@ -111,7 +111,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     if grainfall is True:
         commands(
             (voice_name, 5),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
         commands(
             (voice_name, 6),
@@ -120,7 +120,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, (5, 6)),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, 7),
@@ -129,7 +129,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     if grainfall is True:
         commands(
             (voice_name, 8),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
         commands(
             (voice_name, 9),
@@ -138,7 +138,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, (8, 9)),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, (10, 12)),
@@ -147,7 +147,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     if grainfall is True:
         commands(
             (voice_name, 13),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
         commands(
             (voice_name, 14),
@@ -156,7 +156,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, (13, 14)),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, (15, 17)),
@@ -165,7 +165,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     if grainfall is True:
         commands(
             (voice_name, 18),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
         commands(
             (voice_name, 19),
@@ -174,7 +174,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, (18, 19)),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, 20),
@@ -183,7 +183,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     if grainfall is True:
         commands(
             (voice_name, 21),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
         commands(
             (voice_name, 22),
@@ -192,7 +192,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     else:
         commands(
             (voice_name, (21, 22)),
-            baca.make_mmrests_flat(),
+            baca.make_mmrests(),
         )
     commands(
         (voice_name, (23, 27)),
@@ -200,7 +200,7 @@ def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
     )
     commands(
         (voice_name, (28, 33)),
-        baca.make_mmrests_flat(),
+        baca.make_mmrests(),
     )
 
 
@@ -211,7 +211,7 @@ baca.alternate_makers(
     "bcl",
     [(2, 4), 7, (10, 12), (15, 17), 20, (23, 31)],
     baca.make_repeat_tied_notes(),
-    baca.make_mmrests(),
+    baca.make_mmrests(head=True),
     total=32,
 )
 
@@ -219,7 +219,7 @@ baca.alternate_makers(
 
 commands(
     ["vn_rh", "va_rh", "vc_rh"],
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VN
@@ -239,7 +239,7 @@ commands(
 
 commands(
     ("vc", 5),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -249,7 +249,7 @@ commands(
 
 commands(
     ("vc", 8),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -259,7 +259,7 @@ commands(
 
 commands(
     ("vc", 13),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -269,7 +269,7 @@ commands(
 
 commands(
     ("vc", 18),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -279,7 +279,7 @@ commands(
 
 commands(
     ("vc", 21),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -289,7 +289,7 @@ commands(
 
 commands(
     ("vc", (28, 32)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # reapply

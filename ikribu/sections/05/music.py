@@ -61,7 +61,7 @@ for index, string in ((11 - 1, "short"),):
 
 commands(
     ["bcl", "vn_rh", "vn", "va_rh", "va"],
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC_RH
@@ -78,7 +78,7 @@ commands(
 
 commands(
     ("vc_rh", 11),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC
@@ -90,7 +90,7 @@ commands(
 
 commands(
     ("vc", 11),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # bcl, vn_rh, vn, va_rh, va

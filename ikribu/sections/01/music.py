@@ -54,14 +54,14 @@ for index, string in ((2 - 1, "long"),):
 
 commands(
     "bcl",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VNR_RH
 
 commands(
     "vn_rh",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VN
@@ -73,28 +73,28 @@ commands(
 
 commands(
     ("vn", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VAR_RH
 
 commands(
     "va_rh",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VA
 
 commands(
     "va",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VCR_RH
 
 commands(
     "vc_rh",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC
@@ -106,7 +106,7 @@ commands(
 
 commands(
     ("vc", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # bcl
