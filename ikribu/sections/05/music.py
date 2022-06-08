@@ -54,9 +54,7 @@ for index, item in ((1 - 1, "windows"),):
     baca.commands._metronome_mark(skip, indicator, manifests)
 
 rests = score["Rests"]
-for index, string in (
-    (11 - 1, "short"),
-):
+for index, string in ((11 - 1, "short"),):
     baca.global_fermata(rests[index], string)
 
 # BCL, VN_RH, VN, VA_RH, VA

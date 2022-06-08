@@ -46,9 +46,7 @@ baca.interpret.set_up_score(
 )
 
 rests = score["Rests"]
-for index, string in (
-    (9 - 1, "fermata"),
-):
+for index, string in ((9 - 1, "fermata"),):
     baca.global_fermata(rests[index], string)
 
 # BCL

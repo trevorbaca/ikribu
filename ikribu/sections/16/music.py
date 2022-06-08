@@ -71,9 +71,7 @@ for index, item in ((1 - 1, "night"),):
     baca.commands._metronome_mark(skip, indicator, manifests)
 
 rests = score["Rests"]
-for index, string in (
-    (21 - 1, "fermata"),
-):
+for index, string in ((21 - 1, "fermata"),):
     baca.global_fermata(rests[index], string)
 
 # BCL
