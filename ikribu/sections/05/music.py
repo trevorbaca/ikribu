@@ -53,13 +53,11 @@ for index, item in ((1 - 1, "windows"),):
     indicator = commands.metronome_marks.get(item, item)
     baca.commands._metronome_mark(skip, indicator, manifests)
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 11 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (11 - 1, "short"),
+):
+    baca.global_fermata(rests[index], string)
 
 # BCL, VN_RH, VN, VA_RH, VA
 

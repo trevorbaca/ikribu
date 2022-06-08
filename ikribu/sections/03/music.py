@@ -50,37 +50,17 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 4 - 1),
-    ),
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 6 - 1),
-    ),
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 10 - 1),
-    ),
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 12 - 1),
-    ),
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 16 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 18 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 25 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (4 - 1, "long"),
+    (6 - 1, "long"),
+    (10 - 1, "long"),
+    (12 - 1, "long"),
+    (16 - 1, "long"),
+    (18 - 1, "short"),
+    (25 - 1, "short"),
+):
+    baca.global_fermata(rests[index], string)
 
 # BCL
 

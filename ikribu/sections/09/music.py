@@ -45,13 +45,11 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "fermata",
-        selector=lambda _: abjad.select.leaf(_, 9 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (9 - 1, "fermata"),
+):
+    baca.global_fermata(rests[index], string)
 
 # BCL
 
