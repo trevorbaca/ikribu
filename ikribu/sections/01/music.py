@@ -46,13 +46,11 @@ for index, item in ((1 - 1, "incisions"),):
     indicator = commands.metronome_marks.get(item, item)
     baca.commands._metronome_mark(skip, indicator, manifests)
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "long",
-        selector=lambda _: abjad.select.leaf(_, 2 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (2 - 1, "long"),
+):
+    baca.global_fermata(rests[index], string)
 
 # BCL
 

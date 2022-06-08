@@ -81,33 +81,16 @@ for index, item in (
     indicator = commands.metronome_marks.get(item, item)
     baca.commands._metronome_mark(skip, indicator, manifests)
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 5 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 8 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 13 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 18 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 21 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 32 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (5 - 1, "short"),
+    (8 - 1, "short"),
+    (13 - 1, "short"),
+    (18 - 1, "short"),
+    (21 - 1, "short"),
+    (32 - 1, "short"),
+):
+    baca.global_fermata(rests[index], string)
 
 
 def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
