@@ -53,68 +53,89 @@ for index, item in ((1 - 1, "windows"),):
 
 # BCL
 
-commands(
-    ("bcl", [(1, 5), (6, 10)]),
-    baca.make_repeat_tied_notes(),
-)
+voice = score["BassClarinet.Music"]
+
+# commands(
+#    ("bcl", [(1, 5), (6, 10)]),
+#    baca.make_repeat_tied_notes(),
+# )
+music = baca.make_repeat_tied_notes_function(commands.get(1, 5))
+voice.extend(music)
+music = baca.make_repeat_tied_notes_function(commands.get(6, 10))
+voice.extend(music)
 
 # VN_RH
 
-commands(
-    ("vn_rh", (1, 10)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
-        ),
-        rotation=0,
+voice = score["ViolinRH.Music"]
+
+music = library.make_bow_rhythm(
+    rmakers.force_rest(
+        lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
     ),
+    rotation=0,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # VN
 
-commands(
-    ("vn", (1, 10)),
-    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
+voice = score["Violin.Music"]
+
+music = library.make_glissando_rhythm(
+    rotation_1=0,
+    rotation_2=0,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # VA_RH
 
+voice = score["ViolaRH.Music"]
+
 pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
-commands(
-    ("va_rh", (1, 10)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), pattern),
-        ),
-        rotation=-1,
+music = library.make_bow_rhythm(
+    rmakers.force_rest(
+        lambda _: abjad.select.get(baca.select.lts(_), pattern),
     ),
+    rotation=-1,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # VA
 
-commands(
-    ("va", (1, 10)),
-    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
+voice = score["Viola.Music"]
+
+music = library.make_glissando_rhythm(
+    rotation_1=-4,
+    rotation_2=-1,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # VC_RH
 
-commands(
-    ("vc_rh", (1, 10)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
-        ),
-        rotation=-2,
+voice = score["CelloRH.Music"]
+
+music = library.make_bow_rhythm(
+    rmakers.force_rest(
+        lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
     ),
+    rotation=-2,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # VC
 
-commands(
-    ("vc", (1, 10)),
-    library.make_glissando_rhythm(rotation_1=-8, rotation_2=-2),
+voice = score["Cello.Music"]
+
+music = library.make_glissando_rhythm(
+    rotation_1=-8,
+    rotation_2=-2,
+    function=commands.get(1, 10),
 )
+voice.extend(music)
 
 # reapply
 
