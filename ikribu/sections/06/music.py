@@ -79,152 +79,112 @@ for index, item in (
 
 # BCL
 
-commands(
-    ("bcl", (1, 4)),
-    baca.make_repeat_tied_notes(),
-)
+voice = score["BassClarinet.Music"]
 
-commands(
-    ("bcl", (5, 8)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(1, 4))
+voice.extend(music)
 
-commands(
-    ("bcl", (9, 12)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(5, 8))
+voice.extend(music)
 
-commands(
-    ("bcl", (13, 16)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(9, 12))
+voice.extend(music)
+
+music = baca.make_repeat_tied_notes_function(commands.get(13, 16))
+voice.extend(music)
 
 # VN_RH
 
-commands(
-    "vn_rh",
-    baca.make_mmrests(),
-)
+voice = score["ViolinRH.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # VN
 
-commands(
-    ("vn", (1, 2)),
-    library.make_triplet_rhythm(),
-)
+voice = score["Violin.Music"]
 
-commands(
-    ("vn", (3, 4)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(1, 2))
+voice.extend(music)
 
-commands(
-    ("vn", (5, 6)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(3, 4))
+voice.extend(music)
 
-commands(
-    ("vn", (7, 8)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(5, 6))
+voice.extend(music)
 
-commands(
-    ("vn", (9, 10)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(7, 8))
+voice.extend(music)
 
-commands(
-    ("vn", (11, 12)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(9, 10))
+voice.extend(music)
 
-commands(
-    ("vn", (13, 14)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(11, 12))
+voice.extend(music)
 
-commands(
-    ("vn", (15, 16)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(13, 14))
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(15, 16))
+voice.extend(music)
 
 # VA_RH
 
-commands(
-    "va_rh",
-    baca.make_mmrests(),
-)
+voice = score["ViolaRH.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # VA
 
-commands(
-    ("va", 1),
-    baca.make_mmrests(),
-)
+voice = score["Viola.Music"]
 
-commands(
-    ("va", (2, 3)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(1))
+voice.extend(music)
 
-commands(
-    ("va", (4, 5)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(2, 3))
+voice.extend(music)
 
-commands(
-    ("va", (6, 7)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(4, 5))
+voice.extend(music)
 
-commands(
-    ("va", (8, 9)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(6, 7))
+voice.extend(music)
 
-commands(
-    ("va", (10, 11)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(8, 9))
+voice.extend(music)
 
-commands(
-    ("va", (12, 13)),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(10, 11))
+voice.extend(music)
 
-commands(
-    ("va", (14, 15)),
-    library.make_triplet_rhythm(),
-)
+music = baca.make_mmrests_function(commands.get(12, 13))
+voice.extend(music)
 
-commands(
-    ("va", 16),
-    baca.make_mmrests(),
-)
+music = library.make_triplet_rhythm(function=commands.get(14, 15))
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(16))
+voice.extend(music)
 
 # VC_RH
 
-commands(
-    "vc_rh",
-    baca.make_mmrests(),
-)
+voice = score["CelloRH.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # VC
 
-commands(
-    ("vc", (1, 8)),
-    baca.make_mmrests(),
-)
+voice = score["Cello.Music"]
 
-commands(
-    ("vc", (9, 12)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_mmrests_function(commands.get(1, 8))
+voice.extend(music)
 
-commands(
-    ("vc", (13, 16)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(9, 12))
+voice.extend(music)
+
+music = baca.make_repeat_tied_notes_function(commands.get(13, 16))
+voice.extend(music)
 
 # reapply
 

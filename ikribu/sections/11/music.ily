@@ -3995,7 +3995,6 @@ number.11.Cello.Music = {
     % SPANNER_STARTS:
       %! baca.make_repeat_tied_notes()
     \repeatTie
-      %! baca.IndicatorCommand._call()
       %! baca.tie()
     ~
     % ABSOLUTE_BEFORE:

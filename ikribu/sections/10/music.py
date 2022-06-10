@@ -63,24 +63,27 @@ for index, string in (
 
 # BCL, VN_RH, VN, VA_RH, VA, VC_RH
 
-commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va", "vc_rh"],
-    baca.make_mmrests(),
-)
+for voice in (
+    score["BassClarinet.Music"],
+    score["ViolinRH.Music"],
+    score["Violin.Music"],
+    score["ViolaRH.Music"],
+    score["Viola.Music"],
+    score["CelloRH.Music"],
+):
+    music = baca.make_mmrests_function(commands.get())
+    voice.extend(music)
 
 # VC
 
+voice = score["Cello.Music"]
+
 for n in range(1, 8 + 1):
     if n % 2 == 1:
-        commands(
-            ("vc", n),
-            baca.make_tied_repeated_durations([(1, 4)]),
-        )
+        music = baca.make_tied_repeated_durations_function(commands.get(n), [(1, 4)])
     else:
-        commands(
-            ("vc", n),
-            baca.make_mmrests(),
-        )
+        music = baca.make_mmrests_function(commands.get(n))
+    voice.extend(music)
 
 # reapply
 

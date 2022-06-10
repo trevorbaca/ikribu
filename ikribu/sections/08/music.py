@@ -60,87 +60,69 @@ for index, item in (
 
 # BCL
 
-commands(
-    ("bcl", 1),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+voice = score["BassClarinet.Music"]
 
-commands(
-    ("bcl", 2),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(1), [(6, 4), (1, 4)])
+voice.extend(music)
 
-commands(
-    ("bcl", 3),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+music = baca.make_mmrests_function(commands.get(2))
+voice.extend(music)
 
-commands(
-    ("bcl", 4),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(3), [(6, 4), (1, 4)])
+voice.extend(music)
 
-commands(
-    ("bcl", 5),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+music = baca.make_mmrests_function(commands.get(4))
+voice.extend(music)
 
-commands(
-    ("bcl", 6),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(5), [(6, 4), (1, 4)])
+voice.extend(music)
 
-commands(
-    ("bcl", 7),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+music = baca.make_mmrests_function(commands.get(6))
+voice.extend(music)
 
-commands(
-    ("bcl", 8),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(7), [(6, 4), (1, 4)])
+voice.extend(music)
 
-commands(
-    ("bcl", 9),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+music = baca.make_mmrests_function(commands.get(8))
+voice.extend(music)
 
-commands(
-    ("bcl", 10),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(9), [(6, 4), (1, 4)])
+voice.extend(music)
 
-commands(
-    ("bcl", 11),
-    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-)
+music = baca.make_mmrests_function(commands.get(10))
+voice.extend(music)
 
-commands(
-    ("bcl", 12),
-    baca.make_mmrests(),
-)
+music = baca.make_tied_repeated_durations_function(commands.get(11), [(6, 4), (1, 4)])
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(12))
+voice.extend(music)
 
 # VN_RH, VN, VA_RH, VA, VC_RH
 
-commands(
-    ["vn_rh", "vn", "va_rh", "va", "vc_rh"],
-    baca.make_mmrests(),
-)
+for voice in (
+    score["ViolinRH.Music"],
+    score["Violin.Music"],
+    score["ViolaRH.Music"],
+    score["Viola.Music"],
+    score["CelloRH.Music"],
+):
+    music = baca.make_mmrests_function(commands.get())
+    voice.extend(music)
 
 # VC
 
-commands(
-    ("vc", (1, 11)),
-    baca.make_notes(
-        rmakers.reduce_multiplier(),
-        repeat_ties=True,
-    ),
-)
+voice = score["Cello.Music"]
 
-commands(
-    ("vc", 12),
-    baca.make_mmrests(),
+music = baca.make_notes_function(
+    commands.get(1, 11),
+    rmakers.reduce_multiplier(),
+    repeat_ties=True,
 )
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(12))
+voice.extend(music)
 
 # reapply
 

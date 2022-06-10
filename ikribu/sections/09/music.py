@@ -51,80 +51,87 @@ for index, string in ((9 - 1, "fermata"),):
 
 # BCL
 
-commands(
-    ("bcl", (1, 8)),
-    baca.make_repeat_tied_notes(),
-)
+voice = score["BassClarinet.Music"]
 
-commands(
-    ("bcl", 9),
-    baca.make_mmrests(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(1, 8))
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(9))
+voice.extend(music)
 
 # VN_RH
 
-commands(
-    ("vn_rh", (1, 8)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
-        ),
-        rotation=0,
-    ),
-)
+voice = score["ViolinRH.Music"]
 
-commands(
-    ("vn_rh", 9),
-    baca.make_mmrests(),
+music = library.make_bow_rhythm(
+    rmakers.force_rest(
+        lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
+    ),
+    rotation=0,
+    function=commands.get(1, 8),
 )
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(9))
+voice.extend(music)
 
 # VN
 
-commands(
-    ("vn", (1, 8)),
-    library.make_glissando_rhythm(rotation_1=0, rotation_2=0),
-)
+voice = score["Violin.Music"]
 
-commands(
-    ("vn", 9),
-    baca.make_mmrests(),
+music = library.make_glissando_rhythm(
+    rotation_1=0,
+    rotation_2=0,
+    function=commands.get(1, 8),
 )
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(9))
+voice.extend(music)
 
 # VA_RH
 
-commands(
-    ("va_rh", (1, 8)),
-    library.make_bow_rhythm(
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
-        ),
-        rotation=-1,
-    ),
-)
+voice = score["ViolaRH.Music"]
 
-commands(
-    ("va_rh", 9),
-    baca.make_mmrests(),
+music = library.make_bow_rhythm(
+    rmakers.force_rest(
+        lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
+    ),
+    rotation=-1,
+    function=commands.get(1, 8),
 )
+voice.extend(music)
+
+music = baca.make_mmrests_function(commands.get(9))
+voice.extend(music)
 
 # VA
 
-commands(
-    ("va", (1, 8)),
-    library.make_glissando_rhythm(rotation_1=-4, rotation_2=-1),
-)
+voice = score["Viola.Music"]
 
-commands(
-    ("va", 9),
-    baca.make_mmrests(),
+music = library.make_glissando_rhythm(
+    rotation_1=-4,
+    rotation_2=-1,
+    function=commands.get(1, 8),
 )
+voice.extend(music)
 
-# VC_RH, VC
+music = baca.make_mmrests_function(commands.get(9))
+voice.extend(music)
 
-commands(
-    ["vc_rh", "vc"],
-    baca.make_mmrests(),
-)
+# VC_RH
+
+voice = score["CelloRH.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
+
+# VC
+
+voice = score["Cello.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # reapply
 
