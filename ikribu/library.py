@@ -350,10 +350,10 @@ def metronome_marks():
 
 def part_manifest():
     return baca.PartManifest(
-        baca.Part(section="BassClarinet"),
-        baca.Part(section="Violin"),
-        baca.Part(section="Viola"),
-        baca.Part(section="Cello"),
+        baca.Part("BassClarinet"),
+        baca.Part("Violin"),
+        baca.Part("Viola"),
+        baca.Part("Cello"),
     )
 
 
