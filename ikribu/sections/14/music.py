@@ -93,14 +93,16 @@ for index, string in (
     baca.global_fermata(rests[index], string)
 
 
-# def make_vn_va_rhythm(commands, voice_name, color_rhythm_n, grainfall=False):
 def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_repeat_tied_notes(commands.get(1))
     else:
         music = baca.make_mmrests(commands.get(1))
     voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[0], function=commands.get(2, 4))
+    music = library.make_color_rhythm(
+        commands.get(2, 4),
+        color_rhythm_n[0],
+    )
     voice.extend(music)
     if grainfall is True:
         music = baca.make_mmrests(commands.get(5))
@@ -110,7 +112,10 @@ def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(commands.get(5, 6))
         voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[1], function=commands.get(7))
+    music = library.make_color_rhythm(
+        commands.get(7),
+        color_rhythm_n[1],
+    )
     voice.extend(music)
     if grainfall is True:
         music = baca.make_mmrests(commands.get(8))
@@ -120,7 +125,10 @@ def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(commands.get(8, 9))
         voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[2], function=commands.get(10, 12))
+    music = library.make_color_rhythm(
+        commands.get(10, 12),
+        color_rhythm_n[2],
+    )
     voice.extend(music)
     if grainfall is True:
         music = baca.make_mmrests(commands.get(13))
@@ -130,7 +138,10 @@ def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(commands.get(13, 14))
         voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[3], function=commands.get(15, 17))
+    music = library.make_color_rhythm(
+        commands.get(15, 17),
+        color_rhythm_n[3],
+    )
     voice.extend(music)
     if grainfall is True:
         music = baca.make_mmrests(commands.get(18))
@@ -140,7 +151,10 @@ def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(commands.get(18, 19))
         voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[4], function=commands.get(20))
+    music = library.make_color_rhythm(
+        commands.get(20),
+        color_rhythm_n[4],
+    )
     voice.extend(music)
     if grainfall is True:
         music = baca.make_mmrests(commands.get(21))
@@ -150,7 +164,10 @@ def make_vn_va_rhythm(voice, commands, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(commands.get(21, 22))
         voice.extend(music)
-    music = library.make_color_rhythm(color_rhythm_n[5], function=commands.get(23, 27))
+    music = library.make_color_rhythm(
+        commands.get(23, 27),
+        color_rhythm_n[5],
+    )
     voice.extend(music)
     music = baca.make_mmrests(commands.get(28, 33))
     voice.extend(music)

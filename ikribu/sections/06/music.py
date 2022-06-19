@@ -104,25 +104,25 @@ voice.extend(music)
 
 voice = score["Violin.Music"]
 
-music = library.make_triplet_rhythm(function=commands.get(1, 2))
+music = library.make_triplet_rhythm(commands.get(1, 2))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(3, 4))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(5, 6))
+music = library.make_triplet_rhythm(commands.get(5, 6))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(7, 8))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(9, 10))
+music = library.make_triplet_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11, 12))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(13, 14))
+music = library.make_triplet_rhythm(commands.get(13, 14))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(15, 16))
@@ -142,25 +142,25 @@ voice = score["Viola.Music"]
 music = baca.make_mmrests(commands.get(1))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(2, 3))
+music = library.make_triplet_rhythm(commands.get(2, 3))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4, 5))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(6, 7))
+music = library.make_triplet_rhythm(commands.get(6, 7))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(8, 9))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(10, 11))
+music = library.make_triplet_rhythm(commands.get(10, 11))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(12, 13))
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(14, 15))
+music = library.make_triplet_rhythm(commands.get(14, 15))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(16))
