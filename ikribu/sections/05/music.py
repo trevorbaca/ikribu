@@ -66,7 +66,7 @@ for voice in (
     score["ViolaRH.Music"],
     score["Viola.Music"],
 ):
-    music = baca.make_mmrests_function(commands.get())
+    music = baca.make_mmrests(commands.get())
     voice.extend(music)
 
 # VC_RH
@@ -82,7 +82,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(11))
+music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 # VC
@@ -96,7 +96,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(11))
+music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 # bcl, vn_rh, vn, va_rh, va
