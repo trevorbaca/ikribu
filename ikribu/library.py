@@ -92,7 +92,7 @@ def instruments():
     )
 
 
-def make_bow_rhythm(*commands, function=None, rotation=0):
+def make_bow_rhythm(time_signatures, *commands, rotation=0):
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
     rhythm_maker = rmakers.stack(
@@ -103,11 +103,11 @@ def make_bow_rhythm(*commands, function=None, rotation=0):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
-def make_clb_rhythm(*, extra_counts, function=None):
+def make_clb_rhythm(time_signatures, *, extra_counts):
     rhythm_maker = rmakers.stack(
         rmakers.even_division([8], extra_counts=extra_counts),
         rmakers.beam(),
@@ -116,11 +116,11 @@ def make_clb_rhythm(*, extra_counts, function=None):
         rmakers.force_diminution(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
-def make_color_rhythm(n, *, function=None):
+def make_color_rhythm(time_signatures, n):
     rhythm_maker = rmakers.stack(
         rmakers.tuplet([tuple(n * [1])]),
         rmakers.force_fraction(),
@@ -131,7 +131,7 @@ def make_color_rhythm(n, *, function=None):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
@@ -227,7 +227,7 @@ def make_empty_score():
     return score
 
 
-def make_glissando_rhythm(rotation_1=0, rotation_2=0, *, function=None):
+def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
@@ -241,11 +241,11 @@ def make_glissando_rhythm(rotation_1=0, rotation_2=0, *, function=None):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
-def make_inscription_rhythm(*, function=None):
+def make_inscription_rhythm(time_signatures):
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
@@ -257,11 +257,11 @@ def make_inscription_rhythm(*, function=None):
         rmakers.force_repeat_tie(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
-def make_triplet_rhythm(*, function=None):
+def make_triplet_rhythm(time_signatures):
     rhythm_maker = rmakers.stack(
         rmakers.tuplet([(1, 1, 1)]),
         rmakers.beam(),
@@ -273,11 +273,11 @@ def make_triplet_rhythm(*, function=None):
         rmakers.force_diminution(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 
-def make_vigil_rhythm(*, function=None):
+def make_vigil_rhythm(time_signatures):
     rhythm_maker = rmakers.stack(
         rmakers.talea([16, -1], 4),
         rmakers.beam(),
@@ -285,7 +285,7 @@ def make_vigil_rhythm(*, function=None):
         rmakers.force_repeat_tie(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    music = rhythm_maker(function)
+    music = rhythm_maker(time_signatures)
     return music
 
 

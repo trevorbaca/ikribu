@@ -64,11 +64,11 @@ voice.extend(music)
 voice = score["ViolinRH.Music"]
 
 music = library.make_bow_rhythm(
+    commands.get(1, 8),
     rmakers.force_rest(
         lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
     ),
     rotation=0,
-    function=commands.get(1, 8),
 )
 voice.extend(music)
 
@@ -80,9 +80,9 @@ voice.extend(music)
 voice = score["Violin.Music"]
 
 music = library.make_glissando_rhythm(
+    commands.get(1, 8),
     rotation_1=0,
     rotation_2=0,
-    function=commands.get(1, 8),
 )
 voice.extend(music)
 
@@ -94,11 +94,11 @@ voice.extend(music)
 voice = score["ViolaRH.Music"]
 
 music = library.make_bow_rhythm(
+    commands.get(1, 8),
     rmakers.force_rest(
         lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
     ),
     rotation=-1,
-    function=commands.get(1, 8),
 )
 voice.extend(music)
 
@@ -110,9 +110,9 @@ voice.extend(music)
 voice = score["Viola.Music"]
 
 music = library.make_glissando_rhythm(
+    commands.get(1, 8),
     rotation_1=-4,
     rotation_2=-1,
-    function=commands.get(1, 8),
 )
 voice.extend(music)
 

@@ -78,13 +78,16 @@ for voice in (
 
 voice = score["Violin.Music"]
 
-music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(1, 16))
+music = library.make_clb_rhythm(
+    commands.get(1, 16),
+    extra_counts=[4],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(17, 20), head=voice.name)
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(21, 32))
+music = library.make_triplet_rhythm(commands.get(21, 32))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(33))
@@ -94,13 +97,16 @@ voice.extend(music)
 
 voice = score["Viola.Music"]
 
-music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(1, 8))
+music = library.make_clb_rhythm(
+    commands.get(1, 8),
+    extra_counts=[2],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(9, 12), head=voice.name)
 voice.extend(music)
 
-music = library.make_triplet_rhythm(function=commands.get(13, 32))
+music = library.make_triplet_rhythm(commands.get(13, 32))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(33))

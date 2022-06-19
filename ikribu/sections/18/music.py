@@ -104,7 +104,7 @@ voice.extend(music)
 
 voice = score["Cello.Music"]
 
-music = library.make_inscription_rhythm(function=commands.get(1, 11))
+music = library.make_inscription_rhythm(commands.get(1, 11))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(12))
