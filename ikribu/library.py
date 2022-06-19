@@ -95,7 +95,7 @@ def instruments():
 def make_bow_rhythm(*commands, function=None, rotation=0):
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.even_division([4], extra_counts=extra_counts),
         *commands,
         rmakers.beam(),
@@ -103,14 +103,12 @@ def make_bow_rhythm(*commands, function=None, rotation=0):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_clb_rhythm(*, extra_counts, function=None):
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.even_division([8], extra_counts=extra_counts),
         rmakers.beam(),
         rmakers.force_fraction(),
@@ -118,14 +116,12 @@ def make_clb_rhythm(*, extra_counts, function=None):
         rmakers.force_diminution(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_color_rhythm(n, *, function=None):
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.tuplet([tuple(n * [1])]),
         rmakers.force_fraction(),
         rmakers.trivialize(),
@@ -135,10 +131,8 @@ def make_color_rhythm(n, *, function=None):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_empty_score():
@@ -238,7 +232,7 @@ def make_glissando_rhythm(rotation_1=0, rotation_2=0, *, function=None):
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.talea(counts, 16, extra_counts=extra_counts),
         rmakers.beam(),
         rmakers.untie(),
@@ -247,10 +241,8 @@ def make_glissando_rhythm(rotation_1=0, rotation_2=0, *, function=None):
         rmakers.extract_trivial(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_inscription_rhythm(*, function=None):
@@ -258,21 +250,19 @@ def make_inscription_rhythm(*, function=None):
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
     extra_counts = [2, 4, 0]
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.talea(counts, 16, extra_counts=extra_counts),
         rmakers.beam(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_triplet_rhythm(*, function=None):
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.tuplet([(1, 1, 1)]),
         rmakers.beam(),
         rmakers.denominator((1, 4)),
@@ -283,24 +273,20 @@ def make_triplet_rhythm(*, function=None):
         rmakers.force_diminution(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def make_vigil_rhythm(*, function=None):
-    command = baca.rhythm(
+    rhythm_maker = rmakers.stack(
         rmakers.talea([16, -1], 4),
         rmakers.beam(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
         tag=baca.tags.function_name(inspect.currentframe()),
     )
-    if function:
-        music = command.rhythm_maker(function)
-        return music
-    return command
+    music = rhythm_maker(function)
+    return music
 
 
 def short_instrument_name(
