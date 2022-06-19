@@ -80,7 +80,7 @@ voice = score["Cello.Music"]
 
 for n in range(1, 8 + 1):
     if n % 2 == 1:
-        music = baca.make_tied_repeated_durations_function(commands.get(n), [(1, 4)])
+        music = baca.make_tied_repeated_durations(commands.get(n), [(1, 4)])
     else:
         music = baca.make_mmrests(commands.get(n))
     voice.extend(music)
