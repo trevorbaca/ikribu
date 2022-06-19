@@ -71,7 +71,7 @@ for voice in (
     score["Viola.Music"],
     score["CelloRH.Music"],
 ):
-    music = baca.make_mmrests_function(commands.get())
+    music = baca.make_mmrests(commands.get())
     voice.extend(music)
 
 # VC
@@ -82,7 +82,7 @@ for n in range(1, 8 + 1):
     if n % 2 == 1:
         music = baca.make_tied_repeated_durations_function(commands.get(n), [(1, 4)])
     else:
-        music = baca.make_mmrests_function(commands.get(n))
+        music = baca.make_mmrests(commands.get(n))
     voice.extend(music)
 
 # reapply

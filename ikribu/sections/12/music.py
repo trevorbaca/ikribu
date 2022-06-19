@@ -69,19 +69,19 @@ voice = score["BassClarinet.Music"]
 
 music = baca.make_tied_repeated_durations_function(commands.get(1), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(2, 4))
+music = baca.make_mmrests(commands.get(2, 4))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(5), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(9), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(10, 12))
+music = baca.make_mmrests(commands.get(10, 12))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(13), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(14, 16))
+music = baca.make_mmrests(commands.get(14, 16))
 voice.extend(music)
 
 # VN_RH, VA_RH, VC_RH
@@ -91,53 +91,53 @@ for voice in (
     score["ViolaRH.Music"],
     score["CelloRH.Music"],
 ):
-    music = baca.make_mmrests_function(commands.get())
+    music = baca.make_mmrests(commands.get())
     voice.extend(music)
 
 # VN
 
 voice = score["Violin.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 2))
+music = baca.make_mmrests(commands.get(1, 2))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(3))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(4, 6))
+music = baca.make_mmrests(commands.get(4, 6))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(7))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(8, 10))
+music = baca.make_mmrests(commands.get(8, 10))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(11))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(12, 14))
+music = baca.make_mmrests(commands.get(12, 14))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(15))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(16))
+music = baca.make_mmrests(commands.get(16))
 voice.extend(music)
 
 # VA
 
 voice = score["Viola.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 2))
+music = baca.make_mmrests(commands.get(1, 2))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(3))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(4, 6))
+music = baca.make_mmrests(commands.get(4, 6))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(7))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(8, 10))
+music = baca.make_mmrests(commands.get(8, 10))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(11))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(12, 14))
+music = baca.make_mmrests(commands.get(12, 14))
 voice.extend(music)
 music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(15))
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(16))
+music = baca.make_mmrests(commands.get(16))
 voice.extend(music)
 
 # VC
@@ -146,19 +146,19 @@ voice = score["Cello.Music"]
 
 music = baca.make_tied_repeated_durations_function(commands.get(1), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(2, 4))
+music = baca.make_mmrests(commands.get(2, 4))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(5), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(9), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(10, 12))
+music = baca.make_mmrests(commands.get(10, 12))
 voice.extend(music)
 music = baca.make_tied_repeated_durations_function(commands.get(13), [(1, 4)])
 voice.extend(music)
-music = baca.make_mmrests_function(commands.get(14, 16))
+music = baca.make_mmrests(commands.get(14, 16))
 voice.extend(music)
 
 # reapply

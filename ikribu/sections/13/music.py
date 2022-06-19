@@ -61,7 +61,7 @@ voice = score["BassClarinet.Music"]
 music = baca.make_repeat_tied_notes_function(commands.get(1, 28))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(29, 33))
+music = baca.make_mmrests(commands.get(29, 33))
 voice.extend(music)
 
 # VN_RH, VA_RH, VC_RH
@@ -71,7 +71,7 @@ for voice in (
     score["ViolaRH.Music"],
     score["CelloRH.Music"],
 ):
-    music = baca.make_mmrests_function(commands.get())
+    music = baca.make_mmrests(commands.get())
     voice.extend(music)
 
 # VN
@@ -81,13 +81,13 @@ voice = score["Violin.Music"]
 music = library.make_clb_rhythm(extra_counts=[4], function=commands.get(1, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 20), head=voice.name)
+music = baca.make_mmrests(commands.get(17, 20), head=voice.name)
 voice.extend(music)
 
 music = library.make_triplet_rhythm(function=commands.get(21, 32))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(33))
+music = baca.make_mmrests(commands.get(33))
 voice.extend(music)
 
 # VA
@@ -97,13 +97,13 @@ voice = score["Viola.Music"]
 music = library.make_clb_rhythm(extra_counts=[2], function=commands.get(1, 8))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9, 12), head=voice.name)
+music = baca.make_mmrests(commands.get(9, 12), head=voice.name)
 voice.extend(music)
 
 music = library.make_triplet_rhythm(function=commands.get(13, 32))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(33))
+music = baca.make_mmrests(commands.get(33))
 voice.extend(music)
 
 # VC
@@ -114,7 +114,7 @@ for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
     music = baca.make_tied_repeated_durations_function(commands.get(*pair), [(1, 4)])
     voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(25, 33))
+music = baca.make_mmrests(commands.get(25, 33))
 voice.extend(music)
 
 # reapply

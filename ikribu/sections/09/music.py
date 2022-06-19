@@ -56,7 +56,7 @@ voice = score["BassClarinet.Music"]
 music = baca.make_repeat_tied_notes_function(commands.get(1, 8))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9))
+music = baca.make_mmrests(commands.get(9))
 voice.extend(music)
 
 # VN_RH
@@ -72,7 +72,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9))
+music = baca.make_mmrests(commands.get(9))
 voice.extend(music)
 
 # VN
@@ -86,7 +86,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9))
+music = baca.make_mmrests(commands.get(9))
 voice.extend(music)
 
 # VA_RH
@@ -102,7 +102,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9))
+music = baca.make_mmrests(commands.get(9))
 voice.extend(music)
 
 # VA
@@ -116,21 +116,21 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(9))
+music = baca.make_mmrests(commands.get(9))
 voice.extend(music)
 
 # VC_RH
 
 voice = score["CelloRH.Music"]
 
-music = baca.make_mmrests_function(commands.get())
+music = baca.make_mmrests(commands.get())
 voice.extend(music)
 
 # VC
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests_function(commands.get())
+music = baca.make_mmrests(commands.get())
 voice.extend(music)
 
 # reapply

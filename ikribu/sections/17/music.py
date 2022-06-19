@@ -77,7 +77,7 @@ voice.extend(music)
 music = baca.make_repeat_tied_notes_function(commands.get(7))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(8))
+music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 # VN_RH
@@ -93,7 +93,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # VN
@@ -107,7 +107,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # VA_RH
@@ -123,7 +123,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # VA
@@ -138,7 +138,7 @@ music = library.make_glissando_rhythm(
 voice.extend(music)
 
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # VC_RH
@@ -154,7 +154,7 @@ music = library.make_bow_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # VC
@@ -168,7 +168,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 # reapply
