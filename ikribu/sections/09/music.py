@@ -53,7 +53,7 @@ for index, string in ((9 - 1, "fermata"),):
 
 voice = score["BassClarinet.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 8))
+music = baca.make_repeat_tied_notes(commands.get(1, 8))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(9))

@@ -54,9 +54,9 @@ for index, item in ((1 - 1, "windows"),):
 # BCL
 
 voice = score["BassClarinet.Music"]
-music = baca.make_repeat_tied_notes_function(commands.get(1, 5))
+music = baca.make_repeat_tied_notes(commands.get(1, 5))
 voice.extend(music)
-music = baca.make_repeat_tied_notes_function(commands.get(6, 10))
+music = baca.make_repeat_tied_notes(commands.get(6, 10))
 voice.extend(music)
 
 # VN_RH

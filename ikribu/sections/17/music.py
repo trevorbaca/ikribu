@@ -68,13 +68,13 @@ for index, string in ((8 - 1, "long"),):
 
 voice = score["BassClarinet.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 4))
+music = baca.make_repeat_tied_notes(commands.get(1, 4))
 voice.extend(music)
 
-music = baca.make_repeated_duration_notes_function(commands.get(5, 6), [(1, 4)])
+music = baca.make_repeated_duration_notes(commands.get(5, 6), [(1, 4)])
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(7))
+music = baca.make_repeat_tied_notes(commands.get(7))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(8))

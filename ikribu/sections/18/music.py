@@ -64,7 +64,7 @@ for index, string in ((12 - 1, "fermata"),):
 
 voice = score["BassClarinet.Music"]
 
-music = baca.make_tied_repeated_durations_function(commands.get(1, 6), [(1, 4)])
+music = baca.make_tied_repeated_durations(commands.get(1, 6), [(1, 4)])
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(7, 12))
@@ -84,7 +84,7 @@ for voice in (
 
 voice = score["Violin.Music"]
 
-music = baca.make_repeated_duration_notes_function(commands.get(1, 9), [(1, 4)])
+music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 12))
@@ -94,7 +94,7 @@ voice.extend(music)
 
 voice = score["Viola.Music"]
 
-music = baca.make_repeated_duration_notes_function(commands.get(1, 9), [(1, 4)])
+music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 12))
