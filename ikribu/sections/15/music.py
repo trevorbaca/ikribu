@@ -49,7 +49,7 @@ manifests = commands.manifests()
 for index, item in ((1 - 1, "windows"),):
     skip = skips[index]
     indicator = commands.metronome_marks.get(item, item)
-    baca.commands._metronome_mark(skip, indicator, manifests)
+    baca.metronome_mark(skip, indicator, manifests)
 
 # BCL
 
