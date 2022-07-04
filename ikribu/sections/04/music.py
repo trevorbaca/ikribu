@@ -269,7 +269,7 @@ commands(
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     baca.pitches(
         "F#4 G#4 G#4 F#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
@@ -301,7 +301,7 @@ commands(
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     baca.pitches(
         "F4 E4 E4 F4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),

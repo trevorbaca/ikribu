@@ -171,7 +171,7 @@ commands(
     ("bcl", (5, 25)),
     baca.pitch(
         "Db2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.dynamic("ppp"),
 )
@@ -206,7 +206,7 @@ commands(
     ),
     baca.pitch(
         "E4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
