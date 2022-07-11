@@ -57,93 +57,110 @@ rests = score["Rests"]
 for index, string in ((11 - 1, "short"),):
     baca.global_fermata(rests[index], string)
 
-# BCL, VN_RH, VN, VA_RH, VA
 
-for voice in (
-    score["BassClarinet.Music"],
-    score["ViolinRH.Music"],
-    score["Violin.Music"],
-    score["ViolaRH.Music"],
-    score["Viola.Music"],
-):
-    music = baca.make_mmrests(commands.get())
+def MOST():
+
+    for voice in (
+        score["BassClarinet.Music"],
+        score["ViolinRH.Music"],
+        score["Violin.Music"],
+        score["ViolaRH.Music"],
+        score["Viola.Music"],
+    ):
+        music = baca.make_mmrests(commands.get())
+        voice.extend(music)
+
+
+def VC_RH():
+
+    voice = score["CelloRH.Music"]
+
+    music = library.make_bow_rhythm(
+        commands.get(1, 10),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
+        ),
+        rotation=-2,
+    )
     voice.extend(music)
 
-# VC_RH
+    music = baca.make_mmrests(commands.get(11))
+    voice.extend(music)
 
-voice = score["CelloRH.Music"]
 
-music = library.make_bow_rhythm(
-    commands.get(1, 10),
-    rmakers.force_rest(
-        lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
-    ),
-    rotation=-2,
-)
-voice.extend(music)
+def VC():
 
-music = baca.make_mmrests(commands.get(11))
-voice.extend(music)
+    voice = score["Cello.Music"]
 
-# VC
+    music = library.make_glissando_rhythm(
+        commands.get(1, 10),
+        rotation_1=0,
+        rotation_2=0,
+    )
+    voice.extend(music)
 
-voice = score["Cello.Music"]
+    music = baca.make_mmrests(commands.get(11))
+    voice.extend(music)
 
-music = library.make_glissando_rhythm(
-    commands.get(1, 10),
-    rotation_1=0,
-    rotation_2=0,
-)
-voice.extend(music)
 
-music = baca.make_mmrests(commands.get(11))
-voice.extend(music)
+def bcl(m):
 
-# bcl, vn_rh, vn, va_rh, va
+    commands(
+        "bcl",
+        baca.staff_lines(5),
+    )
 
-commands(
-    ["bcl", "vn_rh", "vn", "va_rh", "va"],
-    baca.reapply_persistent_indicators(),
-)
 
-commands(
-    "bcl",
-    baca.staff_lines(5),
-)
+def vc_rh():
 
-# vc_rh
+    commands(
+        ("vc_rh", (1, 10)),
+        baca.markup(r"\baca-half-clt-markup"),
+        baca.staff_position(0),
+        library.bcps(rotation=-2),
+        baca.script_staff_padding(
+            7,
+            selector=lambda _: baca.select.leaves(_),
+        ),
+        baca.text_script_staff_padding(8),
+        baca.text_spanner_staff_padding(4),
+        baca.hairpin(
+            "ff > p < f > pp < f > ppp <",
+            bookend=True,
+            pieces=library.enchain_runs([3, 4]),
+        ),
+        baca.dls_staff_padding(9),
+    )
 
-commands(
-    ("vc_rh", (1, 10)),
-    baca.reapply_persistent_indicators(),
-    baca.markup(r"\baca-half-clt-markup"),
-    baca.staff_position(0),
-    library.bcps(rotation=-2),
-    baca.script_staff_padding(
-        7,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.text_script_staff_padding(8),
-    baca.text_spanner_staff_padding(4),
-    baca.hairpin(
-        "ff > p < f > pp < f > ppp <",
-        bookend=True,
-        pieces=library.enchain_runs([3, 4]),
-    ),
-    baca.dls_staff_padding(9),
-)
 
-# vc
+def vc():
 
-commands(
-    ("vc", (1, 10)),
-    baca.reapply_persistent_indicators(),
-    baca.clef("tenor"),
-    library.glissando_pitches(octave=4, rotation=-20),
-    baca.glissando(),
-)
+    commands(
+        ("vc", (1, 10)),
+        baca.clef("tenor"),
+        library.glissando_pitches(octave=4, rotation=-20),
+        baca.glissando(),
+    )
+
+
+def main():
+    MOST()
+    VC_RH()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    bcl(cache["bcl"])
+    vc_rh()
+    vc()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,

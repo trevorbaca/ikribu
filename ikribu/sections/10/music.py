@@ -61,51 +61,60 @@ for index, string in (
 ):
     baca.global_fermata(rests[index], string)
 
-# BCL, VN_RH, VN, VA_RH, VA, VC_RH
 
-for voice in (
-    score["BassClarinet.Music"],
-    score["ViolinRH.Music"],
-    score["Violin.Music"],
-    score["ViolaRH.Music"],
-    score["Viola.Music"],
-    score["CelloRH.Music"],
-):
-    music = baca.make_mmrests(commands.get())
-    voice.extend(music)
+def MOST():
 
-# VC
+    for voice in (
+        score["BassClarinet.Music"],
+        score["ViolinRH.Music"],
+        score["Violin.Music"],
+        score["ViolaRH.Music"],
+        score["Viola.Music"],
+        score["CelloRH.Music"],
+    ):
+        music = baca.make_mmrests(commands.get())
+        voice.extend(music)
 
-voice = score["Cello.Music"]
 
-for n in range(1, 8 + 1):
-    if n % 2 == 1:
-        music = baca.make_tied_repeated_durations(commands.get(n), [(1, 4)])
-    else:
-        music = baca.make_mmrests(commands.get(n))
-    voice.extend(music)
+def VC():
 
-# reapply
+    voice = score["Cello.Music"]
 
-music_voices = [_ for _ in voice_names if "Music" in _]
+    for n in range(1, 8 + 1):
+        if n % 2 == 1:
+            music = baca.make_tied_repeated_durations(commands.get(n), [(1, 4)])
+        else:
+            music = baca.make_mmrests(commands.get(n))
+        voice.extend(music)
 
-commands(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
 
-# bcl
+def vc(m):
 
-commands(
-    ("vc", (1, 8)),
-    baca.staff_lines(1),
-    baca.staff_position(0),
-    baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
-    library.box_adjustment(),
-    baca.dynamic('"mf"'),
-)
+    commands(
+        ("vc", (1, 8)),
+        baca.staff_lines(1),
+        baca.staff_position(0),
+        baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
+        library.box_adjustment(),
+        baca.dynamic('"mf"'),
+    )
+
+
+def main():
+    MOST()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    vc(cache["bcl"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
