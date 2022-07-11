@@ -54,223 +54,249 @@ rests = score["Rests"]
 for index, string in ((33 - 1, "short"),):
     baca.global_fermata(rests[index], string)
 
-# BCL
 
-voice = score["BassClarinet.Music"]
+def BCL():
 
-music = baca.make_repeat_tied_notes(commands.get(1, 28))
-voice.extend(music)
+    voice = score["BassClarinet.Music"]
 
-music = baca.make_mmrests(commands.get(29, 33))
-voice.extend(music)
-
-# VN_RH, VA_RH, VC_RH
-
-for voice in (
-    score["ViolinRH.Music"],
-    score["ViolaRH.Music"],
-    score["CelloRH.Music"],
-):
-    music = baca.make_mmrests(commands.get())
+    music = baca.make_repeat_tied_notes(commands.get(1, 28))
     voice.extend(music)
 
-# VN
-
-voice = score["Violin.Music"]
-
-music = library.make_clb_rhythm(
-    commands.get(1, 16),
-    extra_counts=[4],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(17, 20), head=voice.name)
-voice.extend(music)
-
-music = library.make_triplet_rhythm(commands.get(21, 32))
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(33))
-voice.extend(music)
-
-# VA
-
-voice = score["Viola.Music"]
-
-music = library.make_clb_rhythm(
-    commands.get(1, 8),
-    extra_counts=[2],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(9, 12), head=voice.name)
-voice.extend(music)
-
-music = library.make_triplet_rhythm(commands.get(13, 32))
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(33))
-voice.extend(music)
-
-# VC
-
-voice = score["Cello.Music"]
-
-for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
-    music = baca.make_tied_repeated_durations(commands.get(*pair), [(1, 4)])
+    music = baca.make_mmrests(commands.get(29, 33))
     voice.extend(music)
 
-music = baca.make_mmrests(commands.get(25, 33))
-voice.extend(music)
 
-# reapply
+def ALL_RH():
 
-music_voices = [_ for _ in voice_names if "Music" in _]
+    for voice in (
+        score["ViolinRH.Music"],
+        score["ViolaRH.Music"],
+        score["CelloRH.Music"],
+    ):
+        music = baca.make_mmrests(commands.get())
+        voice.extend(music)
 
-commands(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
 
-# bcl
+def VN():
 
-commands(
-    ("bcl", (1, 28)),
-    baca.clef("treble"),
-    baca.dynamic("ppp"),
-    baca.markup(r"\ikribu-breathe-discreetly-markup"),
-    baca.pitch("C2"),
-    baca.staff_lines(5),
-)
+    voice = score["Violin.Music"]
 
-commands(
-    ("vn", (1, 16)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    library.clb_staff_positions(rotation=-1),
-)
+    music = library.make_clb_rhythm(
+        commands.get(1, 16),
+        extra_counts=[4],
+    )
+    voice.extend(music)
 
-commands(
-    ("vn", (21, 32)),
-    baca.accent(
-        selector=lambda _: abjad.select.get(
-            baca.select.pheads(_),
-            ~abjad.Pattern([0, 4], period=9),
+    music = baca.make_mmrests(commands.get(17, 20), head=voice.name)
+    voice.extend(music)
+
+    music = library.make_triplet_rhythm(commands.get(21, 32))
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(33))
+    voice.extend(music)
+
+
+def VA():
+
+    voice = score["Viola.Music"]
+
+    music = library.make_clb_rhythm(
+        commands.get(1, 8),
+        extra_counts=[2],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(9, 12), head=voice.name)
+    voice.extend(music)
+
+    music = library.make_triplet_rhythm(commands.get(13, 32))
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(33))
+    voice.extend(music)
+
+
+def VC():
+
+    voice = score["Cello.Music"]
+
+    for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
+        music = baca.make_tied_repeated_durations(commands.get(*pair), [(1, 4)])
+        voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(25, 33))
+    voice.extend(music)
+
+
+def bcl(m):
+
+    commands(
+        ("bcl", (1, 28)),
+        baca.clef("treble"),
+        baca.dynamic("ppp"),
+        baca.markup(r"\ikribu-breathe-discreetly-markup"),
+        baca.pitch("C2"),
+        baca.staff_lines(5),
+    )
+
+
+def vn():
+
+    commands(
+        ("vn", (1, 16)),
+        baca.staccato(selector=lambda _: baca.select.pheads(_)),
+        library.clb_staff_positions(rotation=-1),
+    )
+
+    commands(
+        ("vn", (21, 32)),
+        baca.accent(
+            selector=lambda _: abjad.select.get(
+                baca.select.pheads(_),
+                ~abjad.Pattern([0, 4], period=9),
+            ),
         ),
-    ),
-    baca.dls_staff_padding(8),
-    baca.markup(r"\ikribu-sponges-on-bd-markup"),
-    baca.hairpin(
-        "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
-        bookend=-1,
-        pieces=lambda _: baca.select.cmgroups(
-            _,
+        baca.dls_staff_padding(8),
+        baca.markup(r"\ikribu-sponges-on-bd-markup"),
+        baca.hairpin(
+            "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
+            bookend=-1,
+            pieces=lambda _: baca.select.cmgroups(
+                _,
+            ),
         ),
-    ),
-    baca.stem_tremolo(
-        selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 4], 9),
-    ),
-    baca.staff_position(0),
-    baca.tuplet_bracket_staff_padding(3),
-    library.box_adjustment(),
-)
-
-commands(
-    ("vn", (13, 16)),
-    baca.dls_staff_padding(8),
-    baca.hairpin(
-        '"mp" >o niente',
-        selector=lambda _: baca.select.tleaves(
-            _,
+        baca.stem_tremolo(
+            selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 4], 9),
         ),
-    ),
-    baca.hairpin_start_shift('"mp"'),
-)
+        baca.staff_position(0),
+        baca.tuplet_bracket_staff_padding(3),
+        library.box_adjustment(),
+    )
 
-commands(
-    ("va", (1, 8)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    library.clb_staff_positions(rotation=-1),
-)
-
-commands(
-    ("va", (5, 8)),
-    baca.dls_staff_padding(8),
-    baca.hairpin(
-        '"mp" >o niente',
-        selector=lambda _: baca.select.tleaves(
-            _,
+    commands(
+        ("vn", (13, 16)),
+        baca.dls_staff_padding(8),
+        baca.hairpin(
+            '"mp" >o niente',
+            selector=lambda _: baca.select.tleaves(
+                _,
+            ),
         ),
-    ),
-    baca.hairpin_start_shift('"mp"'),
-)
+        baca.hairpin_start_shift('"mp"'),
+    )
 
-commands(
-    ("va", (13, 32)),
-    baca.accent(
-        selector=lambda _: abjad.select.get(
-            baca.select.pheads(_),
-            ~abjad.Pattern([0, 5], period=11),
+
+def va():
+
+    commands(
+        ("va", (1, 8)),
+        baca.staccato(selector=lambda _: baca.select.pheads(_)),
+        library.clb_staff_positions(rotation=-1),
+    )
+
+    commands(
+        ("va", (5, 8)),
+        baca.dls_staff_padding(8),
+        baca.hairpin(
+            '"mp" >o niente',
+            selector=lambda _: baca.select.tleaves(
+                _,
+            ),
         ),
-    ),
-    baca.dls_staff_padding(8),
-    baca.markup(r"\ikribu-sponges-on-bd-markup"),
-    baca.hairpin(
-        "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
-        " f > mf < f > mf < ff > f < ff > f < fff",
-        bookend=-1,
-        pieces=lambda _: baca.select.cmgroups(
-            _,
+        baca.hairpin_start_shift('"mp"'),
+    )
+
+    commands(
+        ("va", (13, 32)),
+        baca.accent(
+            selector=lambda _: abjad.select.get(
+                baca.select.pheads(_),
+                ~abjad.Pattern([0, 5], period=11),
+            ),
         ),
-    ),
-    baca.staff_position(0),
-    baca.stem_tremolo(
-        selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 5], 11),
-    ),
-    baca.tuplet_bracket_staff_padding(3),
-    library.box_adjustment(),
-)
-
-
-commands(
-    "vc",
-    baca.hairpin(
-        "p < f >",
-        bookend=-1,
-        pieces=lambda _: baca.select.cmgroups(
-            _,
+        baca.dls_staff_padding(8),
+        baca.markup(r"\ikribu-sponges-on-bd-markup"),
+        baca.hairpin(
+            "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
+            " f > mf < f > mf < ff > f < ff > f < fff",
+            bookend=-1,
+            pieces=lambda _: baca.select.cmgroups(
+                _,
+            ),
         ),
-        selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.staff_position(0),
-    library.box_adjustment(),
-)
+        baca.staff_position(0),
+        baca.stem_tremolo(
+            selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 5], 11),
+        ),
+        baca.tuplet_bracket_staff_padding(3),
+        library.box_adjustment(),
+    )
 
-commands(
-    ("vc", 5),
-    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-)
 
-commands(
-    ("vc", 9),
-    baca.markup(r"\ikribu-graincircle-pi-four-markup"),
-)
+def vc():
 
-commands(
-    ("vc", 13),
-    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-)
+    commands(
+        "vc",
+        baca.hairpin(
+            "p < f >",
+            bookend=-1,
+            pieces=lambda _: baca.select.cmgroups(
+                _,
+            ),
+            selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN),
+        ),
+        baca.staff_position(0),
+        library.box_adjustment(),
+    )
 
-commands(
-    ("vc", 17),
-    baca.markup(r"\ikribu-graincircle-pi-two-markup"),
-)
+    commands(
+        ("vc", 5),
+        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
+    )
 
-commands(
-    ("vc", 21),
-    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-)
+    commands(
+        ("vc", 9),
+        baca.markup(r"\ikribu-graincircle-pi-four-markup"),
+    )
+
+    commands(
+        ("vc", 13),
+        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
+    )
+
+    commands(
+        ("vc", 17),
+        baca.markup(r"\ikribu-graincircle-pi-two-markup"),
+    )
+
+    commands(
+        ("vc", 21),
+        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
+    )
+
+
+def main():
+    BCL()
+    ALL_RH()
+    VN()
+    VA()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    bcl(cache["bcl"])
+    vn()
+    va()
+    vc()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,

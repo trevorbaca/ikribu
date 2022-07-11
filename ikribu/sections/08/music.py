@@ -58,149 +58,164 @@ for index, item in (
     indicator = commands.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
-# BCL
 
-voice = score["BassClarinet.Music"]
+def BCL():
 
-music = baca.make_tied_repeated_durations(commands.get(1), [(6, 4), (1, 4)])
-voice.extend(music)
+    voice = score["BassClarinet.Music"]
 
-music = baca.make_mmrests(commands.get(2))
-voice.extend(music)
-
-music = baca.make_tied_repeated_durations(commands.get(3), [(6, 4), (1, 4)])
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(4))
-voice.extend(music)
-
-music = baca.make_tied_repeated_durations(commands.get(5), [(6, 4), (1, 4)])
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6))
-voice.extend(music)
-
-music = baca.make_tied_repeated_durations(commands.get(7), [(6, 4), (1, 4)])
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(8))
-voice.extend(music)
-
-music = baca.make_tied_repeated_durations(commands.get(9), [(6, 4), (1, 4)])
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(10))
-voice.extend(music)
-
-music = baca.make_tied_repeated_durations(commands.get(11), [(6, 4), (1, 4)])
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(12))
-voice.extend(music)
-
-# VN_RH, VN, VA_RH, VA, VC_RH
-
-for voice in (
-    score["ViolinRH.Music"],
-    score["Violin.Music"],
-    score["ViolaRH.Music"],
-    score["Viola.Music"],
-    score["CelloRH.Music"],
-):
-    music = baca.make_mmrests(commands.get())
+    music = baca.make_tied_repeated_durations(commands.get(1), [(6, 4), (1, 4)])
     voice.extend(music)
 
-# VC
+    music = baca.make_mmrests(commands.get(2))
+    voice.extend(music)
 
-voice = score["Cello.Music"]
+    music = baca.make_tied_repeated_durations(commands.get(3), [(6, 4), (1, 4)])
+    voice.extend(music)
 
-music = baca.make_notes(
-    commands.get(1, 11),
-    rmakers.reduce_multiplier(),
-    repeat_ties=True,
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(4))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(12))
-voice.extend(music)
+    music = baca.make_tied_repeated_durations(commands.get(5), [(6, 4), (1, 4)])
+    voice.extend(music)
 
-# reapply
+    music = baca.make_mmrests(commands.get(6))
+    voice.extend(music)
 
-music_voices = [_ for _ in voice_names if "Music" in _]
+    music = baca.make_tied_repeated_durations(commands.get(7), [(6, 4), (1, 4)])
+    voice.extend(music)
 
-commands(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
+    music = baca.make_mmrests(commands.get(8))
+    voice.extend(music)
 
-# bcl
+    music = baca.make_tied_repeated_durations(commands.get(9), [(6, 4), (1, 4)])
+    voice.extend(music)
 
-commands(
-    ("bcl", [1, 3, 5, 7, 9, 11]),
-    baca.dls_staff_padding(7),
-)
+    music = baca.make_mmrests(commands.get(10))
+    voice.extend(music)
 
-commands(
-    ("bcl", 1),
-    baca.hairpin("ppp < mp"),
-    baca.pitch("G2"),
-)
+    music = baca.make_tied_repeated_durations(commands.get(11), [(6, 4), (1, 4)])
+    voice.extend(music)
 
-commands(
-    ("bcl", 3),
-    baca.hairpin("pp < mf"),
-    baca.pitch("Gb2"),
-)
+    music = baca.make_mmrests(commands.get(12))
+    voice.extend(music)
 
-commands(
-    ("bcl", 5),
-    baca.hairpin("p < f"),
-    baca.pitch("F2"),
-)
 
-commands(
-    ("bcl", 7),
-    baca.hairpin("mf < ff"),
-    baca.pitch("E2"),
-)
+def MOST():
 
-commands(
-    ("bcl", 9),
-    baca.hairpin("f < fff"),
-    baca.pitch("Eb2"),
-)
+    for voice in (
+        score["ViolinRH.Music"],
+        score["Violin.Music"],
+        score["ViolaRH.Music"],
+        score["Viola.Music"],
+        score["CelloRH.Music"],
+    ):
+        music = baca.make_mmrests(commands.get())
+        voice.extend(music)
 
-commands(
-    ("bcl", 11),
-    baca.hairpin("ff < ffff"),
-    baca.pitch("D2"),
-)
 
-commands(
-    ("vc", (1, 11)),
-    baca.dls_staff_padding(7),
-    baca.glissando(),
-    baca.hairpin(
-        "ppp < pp >",
-        final_hairpin=False,
-        pieces=lambda _: baca.select.cmgroups(
-            _,
+def VC():
+
+    voice = score["Cello.Music"]
+
+    music = baca.make_notes(
+        commands.get(1, 11),
+        rmakers.reduce_multiplier(),
+        repeat_ties=True,
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(12))
+    voice.extend(music)
+
+
+def bcl(m):
+
+    commands(
+        ("bcl", [1, 3, 5, 7, 9, 11]),
+        baca.dls_staff_padding(7),
+    )
+
+    commands(
+        ("bcl", 1),
+        baca.hairpin("ppp < mp"),
+        baca.pitch("G2"),
+    )
+
+    commands(
+        ("bcl", 3),
+        baca.hairpin("pp < mf"),
+        baca.pitch("Gb2"),
+    )
+
+    commands(
+        ("bcl", 5),
+        baca.hairpin("p < f"),
+        baca.pitch("F2"),
+    )
+
+    commands(
+        ("bcl", 7),
+        baca.hairpin("mf < ff"),
+        baca.pitch("E2"),
+    )
+
+    commands(
+        ("bcl", 9),
+        baca.hairpin("f < fff"),
+        baca.pitch("Eb2"),
+    )
+
+    commands(
+        ("bcl", 11),
+        baca.hairpin("ff < ffff"),
+        baca.pitch("D2"),
+    )
+
+
+def vc():
+
+    commands(
+        ("vc", (1, 11)),
+        baca.dls_staff_padding(7),
+        baca.glissando(),
+        baca.hairpin(
+            "ppp < pp >",
+            final_hairpin=False,
+            pieces=lambda _: baca.select.cmgroups(
+                _,
+            ),
+            selector=lambda _: baca.select.tleaves(
+                _,
+            ),
         ),
-        selector=lambda _: baca.select.tleaves(
-            _,
+        baca.markup(
+            r"\baca-string-iii-markup",
+            direction=abjad.DOWN,
         ),
-    ),
-    baca.markup(
-        r"\baca-string-iii-markup",
-        direction=abjad.DOWN,
-    ),
-    baca.note_head_style_harmonic(),
-    baca.pitches("D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3"),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-    baca.tuplet_bracket_down(),
-)
+        baca.note_head_style_harmonic(),
+        baca.pitches("D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3"),
+        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+        baca.tuplet_bracket_down(),
+    )
+
+
+def main():
+    BCL()
+    MOST()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    bcl(cache["bcl"])
+    vc()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
