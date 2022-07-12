@@ -60,119 +60,147 @@ rests = score["Rests"]
 for index, string in ((12 - 1, "fermata"),):
     baca.global_fermata(rests[index], string)
 
-# BCL
 
-voice = score["BassClarinet.Music"]
+def BCL():
 
-music = baca.make_tied_repeated_durations(commands.get(1, 6), [(1, 4)])
-voice.extend(music)
+    voice = score["BassClarinet.Music"]
 
-music = baca.make_mmrests(commands.get(7, 12))
-voice.extend(music)
-
-# VN_RH, VA_RH, VC_RH
-
-for voice in (
-    score["ViolinRH.Music"],
-    score["ViolaRH.Music"],
-    score["CelloRH.Music"],
-):
-    music = baca.make_mmrests(commands.get())
+    music = baca.make_tied_repeated_durations(commands.get(1, 6), [(1, 4)])
     voice.extend(music)
 
-# VN
+    music = baca.make_mmrests(commands.get(7, 12))
+    voice.extend(music)
 
-voice = score["Violin.Music"]
 
-music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
-voice.extend(music)
+def ALL_RH():
 
-music = baca.make_mmrests(commands.get(10, 12))
-voice.extend(music)
+    for voice in (
+        score["ViolinRH.Music"],
+        score["ViolaRH.Music"],
+        score["CelloRH.Music"],
+    ):
+        music = baca.make_mmrests(commands.get())
+        voice.extend(music)
 
-# VA
 
-voice = score["Viola.Music"]
+def VN():
 
-music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
-voice.extend(music)
+    voice = score["Violin.Music"]
 
-music = baca.make_mmrests(commands.get(10, 12))
-voice.extend(music)
+    music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
+    voice.extend(music)
 
-# VC
+    music = baca.make_mmrests(commands.get(10, 12))
+    voice.extend(music)
 
-voice = score["Cello.Music"]
 
-music = library.make_inscription_rhythm(commands.get(1, 11))
-voice.extend(music)
+def VA():
 
-music = baca.make_mmrests(commands.get(12))
-voice.extend(music)
+    voice = score["Viola.Music"]
 
-# reapply
+    music = baca.make_repeated_duration_notes(commands.get(1, 9), [(1, 4)])
+    voice.extend(music)
 
-music_voices = [_ for _ in voice_names if "Music" in _]
+    music = baca.make_mmrests(commands.get(10, 12))
+    voice.extend(music)
 
-commands(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
 
-commands(
-    ("bcl", (1, 11)),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-    baca.staff_position(0),
-    library.box_adjustment(),
-)
+def VC():
 
-commands(
-    ("vn", (1, 9)),
-    baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
-    baca.staff_positions([-1, 0, 1]),
-    baca.text_script_padding(2.5),
-)
+    voice = score["Cello.Music"]
 
-commands(
-    ("va", (1, 9)),
-    baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
-    baca.staff_positions([0, -1, 1]),
-    baca.text_script_padding(2.5),
-)
+    music = library.make_inscription_rhythm(commands.get(1, 11))
+    voice.extend(music)
 
-commands(
-    "vc",
-    baca.accent(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.dynamic('"mf"'),
-    baca.markup(r"\ikribu-stonescratch-markup"),
-    baca.staff_position(0),
-    library.box_adjustment(),
-)
+    music = baca.make_mmrests(commands.get(12))
+    voice.extend(music)
 
-commands(
-    ("vc", -1),
-    baca.chunk(
-        baca.mark(r"\ikribu-colophon-markup"),
-        baca.rehearsal_mark_down(),
-        baca.rehearsal_mark_padding(12),
-        baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-        selector=lambda _: baca.select.rleaf(_, -1),
-    ),
-)
 
-commands(
-    ["bcl", "vn", "va", "vc"],
-    baca.staff_lines(1),
-)
+def bcl(m):
+
+    commands(
+        ("bcl", (1, 11)),
+        baca.staff_lines(1),
+        baca.dynamic('"mf"'),
+        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
+        baca.staff_position(0),
+        library.box_adjustment(),
+    )
+
+
+def vn():
+
+    commands(
+        ("vn", (1, 9)),
+        baca.staff_lines(1),
+        baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
+        baca.dynamic('"mf"'),
+        baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
+        baca.staff_positions([-1, 0, 1]),
+        baca.text_script_padding(2.5),
+    )
+
+
+def va():
+
+    commands(
+        ("va", (1, 9)),
+        baca.staff_lines(1),
+        baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
+        baca.dynamic('"mf"'),
+        baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
+        baca.staff_positions([0, -1, 1]),
+        baca.text_script_padding(2.5),
+    )
+
+
+def vc():
+
+    commands(
+        "vc",
+        baca.staff_lines(1),
+        baca.accent(
+            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
+        ),
+        baca.dynamic('"mf"'),
+        baca.markup(r"\ikribu-stonescratch-markup"),
+        baca.staff_position(0),
+        library.box_adjustment(),
+    )
+
+    commands(
+        ("vc", 12),
+        baca.chunk(
+            baca.mark(r"\ikribu-colophon-markup"),
+            baca.rehearsal_mark_down(),
+            baca.rehearsal_mark_padding(12),
+            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
+            selector=lambda _: baca.select.rleaf(_, -1),
+        ),
+    )
+
+
+def main():
+    BCL()
+    ALL_RH()
+    VN()
+    VA()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    bcl(cache["bcl"])
+    vn()
+    va()
+    vc()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
