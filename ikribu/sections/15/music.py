@@ -52,19 +52,14 @@ for index, item in ((1 - 1, "windows"),):
     baca.metronome_mark(skip, indicator, manifests)
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
+def BCL(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 5))
     voice.extend(music)
     music = baca.make_repeat_tied_notes(commands.get(6, 10))
     voice.extend(music)
 
 
-def VN_RH():
-
-    voice = score["ViolinRH.Music"]
-
+def VN_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 10),
         rmakers.force_rest(
@@ -75,10 +70,7 @@ def VN_RH():
     voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 10),
         rotation_1=0,
@@ -87,10 +79,7 @@ def VN():
     voice.extend(music)
 
 
-def VA_RH():
-
-    voice = score["ViolaRH.Music"]
-
+def VA_RH(voice):
     pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
     music = library.make_bow_rhythm(
         commands.get(1, 10),
@@ -102,10 +91,7 @@ def VA_RH():
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 10),
         rotation_1=-4,
@@ -114,10 +100,7 @@ def VA():
     voice.extend(music)
 
 
-def VC_RH():
-
-    voice = score["CelloRH.Music"]
-
+def VC_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 10),
         rmakers.force_rest(
@@ -128,10 +111,7 @@ def VC_RH():
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 10),
         rotation_1=-8,
@@ -141,7 +121,6 @@ def VC():
 
 
 def bcl(m):
-
     commands(
         ("bcl", (1, 5)),
         baca.tag(
@@ -153,7 +132,6 @@ def bcl(m):
         baca.markup(r"\ikribu-introduce-upper-partials-gradually-markup"),
         baca.pitch("Bb1"),
     )
-
     commands(
         ("bcl", (6, 10)),
         baca.pitch("<Bb1 D4>"),
@@ -161,8 +139,7 @@ def bcl(m):
     )
 
 
-def all_rh():
-
+def all_rh(cache):
     commands(
         [
             ("vn_rh", (1, 10)),
@@ -177,7 +154,6 @@ def all_rh():
         ),
         baca.staff_position(0),
     )
-
     commands(
         ("vn_rh", (1, 10)),
         baca.script_staff_padding(
@@ -187,7 +163,6 @@ def all_rh():
         baca.text_spanner_staff_padding(3.5),
         library.bcps(rotation=0),
     )
-
     commands(
         ("va_rh", (1, 10)),
         baca.script_staff_padding(
@@ -197,7 +172,6 @@ def all_rh():
         baca.text_spanner_staff_padding(3.5),
         library.bcps(rotation=-1),
     )
-
     commands(
         ("vc_rh", (1, 10)),
         baca.script_staff_padding(
@@ -207,7 +181,6 @@ def all_rh():
         baca.text_spanner_staff_padding(3.5),
         library.bcps(rotation=-2),
     )
-
     commands(
         [
             "vn_rh",
@@ -218,8 +191,7 @@ def all_rh():
     )
 
 
-def vn():
-
+def vn(m):
     commands(
         ("vn", (1, 10)),
         baca.clef("treble"),
@@ -231,8 +203,7 @@ def vn():
     )
 
 
-def va():
-
+def va(m):
     commands(
         ("va", (1, 10)),
         baca.staff_lines(5),
@@ -244,8 +215,7 @@ def va():
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         ("vc", (1, 10)),
         baca.clef("tenor"),
@@ -257,13 +227,13 @@ def vc():
 
 
 def main():
-    BCL()
-    VN_RH()
-    VN()
-    VA_RH()
-    VA()
-    VC_RH()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    VN_RH(commands.voice("ViolinRH.Music"))
+    VN(commands.voice("Violin.Music"))
+    VA_RH(commands.voice("ViolaRH.Music"))
+    VA(commands.voice("Viola.Music"))
+    VC_RH(commands.voice("CelloRH.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -272,10 +242,10 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    all_rh()
-    vn()
-    va()
-    vc()
+    all_rh(cache)
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
 
 
 # TODO: find and eliminate 1 unterminated text spanner

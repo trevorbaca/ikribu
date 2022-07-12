@@ -62,8 +62,7 @@ for index, string in (
     baca.global_fermata(rests[index], string)
 
 
-def MOST():
-
+def MOST(score):
     for voice in (
         score["BassClarinet.Music"],
         score["ViolinRH.Music"],
@@ -76,10 +75,7 @@ def MOST():
         voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     for n in range(1, 8 + 1):
         if n % 2 == 1:
             music = baca.make_tied_repeated_durations(commands.get(n), [(1, 4)])
@@ -89,7 +85,6 @@ def VC():
 
 
 def vc(m):
-
     commands(
         ("vc", (1, 8)),
         baca.staff_lines(1),
@@ -101,8 +96,8 @@ def vc(m):
 
 
 def main():
-    MOST()
-    VC()
+    MOST(score)
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -110,7 +105,7 @@ def main():
         len(commands.time_signatures),
         commands.voice_abbreviations,
     )
-    vc(cache["bcl"])
+    vc(cache["vc"])
 
 
 if __name__ == "__main__":

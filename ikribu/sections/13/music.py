@@ -55,19 +55,14 @@ for index, string in ((33 - 1, "short"),):
     baca.global_fermata(rests[index], string)
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
-
+def BCL(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 28))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(29, 33))
     voice.extend(music)
 
 
-def ALL_RH():
-
+def ALL_RH(score):
     for voice in (
         score["ViolinRH.Music"],
         score["ViolaRH.Music"],
@@ -77,60 +72,43 @@ def ALL_RH():
         voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = library.make_clb_rhythm(
         commands.get(1, 16),
         extra_counts=[4],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 20), head=voice.name)
     voice.extend(music)
-
     music = library.make_triplet_rhythm(commands.get(21, 32))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(33))
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = library.make_clb_rhythm(
         commands.get(1, 8),
         extra_counts=[2],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(9, 12), head=voice.name)
     voice.extend(music)
-
     music = library.make_triplet_rhythm(commands.get(13, 32))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(33))
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
         music = baca.make_tied_repeated_durations(commands.get(*pair), [(1, 4)])
         voice.extend(music)
-
     music = baca.make_mmrests(commands.get(25, 33))
     voice.extend(music)
 
 
 def bcl(m):
-
     commands(
         ("bcl", (1, 28)),
         baca.clef("treble"),
@@ -141,14 +119,12 @@ def bcl(m):
     )
 
 
-def vn():
-
+def vn(m):
     commands(
         ("vn", (1, 16)),
         baca.staccato(selector=lambda _: baca.select.pheads(_)),
         library.clb_staff_positions(rotation=-1),
     )
-
     commands(
         ("vn", (21, 32)),
         baca.accent(
@@ -173,7 +149,6 @@ def vn():
         baca.tuplet_bracket_staff_padding(3),
         library.box_adjustment(),
     )
-
     commands(
         ("vn", (13, 16)),
         baca.dls_staff_padding(8),
@@ -187,14 +162,12 @@ def vn():
     )
 
 
-def va():
-
+def va(m):
     commands(
         ("va", (1, 8)),
         baca.staccato(selector=lambda _: baca.select.pheads(_)),
         library.clb_staff_positions(rotation=-1),
     )
-
     commands(
         ("va", (5, 8)),
         baca.dls_staff_padding(8),
@@ -206,7 +179,6 @@ def va():
         ),
         baca.hairpin_start_shift('"mp"'),
     )
-
     commands(
         ("va", (13, 32)),
         baca.accent(
@@ -234,8 +206,7 @@ def va():
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         "vc",
         baca.hairpin(
@@ -249,27 +220,22 @@ def vc():
         baca.staff_position(0),
         library.box_adjustment(),
     )
-
     commands(
         ("vc", 5),
         baca.markup(r"\ikribu-graincircle-pi-three-markup"),
     )
-
     commands(
         ("vc", 9),
         baca.markup(r"\ikribu-graincircle-pi-four-markup"),
     )
-
     commands(
         ("vc", 13),
         baca.markup(r"\ikribu-graincircle-pi-three-markup"),
     )
-
     commands(
         ("vc", 17),
         baca.markup(r"\ikribu-graincircle-pi-two-markup"),
     )
-
     commands(
         ("vc", 21),
         baca.markup(r"\ikribu-graincircle-pi-three-markup"),
@@ -277,11 +243,11 @@ def vc():
 
 
 def main():
-    BCL()
-    ALL_RH()
-    VN()
-    VA()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    ALL_RH(score)
+    VN(commands.voice("Violin.Music"))
+    VA(commands.voice("Viola.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -290,9 +256,9 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    vn()
-    va()
-    vc()
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
 
 
 if __name__ == "__main__":

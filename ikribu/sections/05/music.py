@@ -58,8 +58,7 @@ for index, string in ((11 - 1, "short"),):
     baca.global_fermata(rests[index], string)
 
 
-def MOST():
-
+def MOST(score):
     for voice in (
         score["BassClarinet.Music"],
         score["ViolinRH.Music"],
@@ -71,10 +70,7 @@ def MOST():
         voice.extend(music)
 
 
-def VC_RH():
-
-    voice = score["CelloRH.Music"]
-
+def VC_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 10),
         rmakers.force_rest(
@@ -83,36 +79,29 @@ def VC_RH():
         rotation=-2,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(11))
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 10),
         rotation_1=0,
         rotation_2=0,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(11))
     voice.extend(music)
 
 
 def bcl(m):
-
     commands(
         "bcl",
         baca.staff_lines(5),
     )
 
 
-def vc_rh():
-
+def vc_rh(m):
     commands(
         ("vc_rh", (1, 10)),
         baca.markup(r"\baca-half-clt-markup"),
@@ -133,8 +122,7 @@ def vc_rh():
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         ("vc", (1, 10)),
         baca.clef("tenor"),
@@ -144,9 +132,9 @@ def vc():
 
 
 def main():
-    MOST()
-    VC_RH()
-    VC()
+    MOST(score)
+    VC_RH(commands.voice("CelloRH.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -155,8 +143,8 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    vc_rh()
-    vc()
+    vc(cache["vc"])
+    vc_rh(cache["vc_rh"])
 
 
 if __name__ == "__main__":
