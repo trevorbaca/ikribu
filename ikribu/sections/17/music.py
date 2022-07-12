@@ -64,238 +64,260 @@ rests = score["Rests"]
 for index, string in ((8 - 1, "long"),):
     baca.global_fermata(rests[index], string)
 
-# BCL
 
-voice = score["BassClarinet.Music"]
+def BCL():
 
-music = baca.make_repeat_tied_notes(commands.get(1, 4))
-voice.extend(music)
+    voice = score["BassClarinet.Music"]
 
-music = baca.make_repeated_duration_notes(commands.get(5, 6), [(1, 4)])
-voice.extend(music)
+    music = baca.make_repeat_tied_notes(commands.get(1, 4))
+    voice.extend(music)
 
-music = baca.make_repeat_tied_notes(commands.get(7))
-voice.extend(music)
+    music = baca.make_repeated_duration_notes(commands.get(5, 6), [(1, 4)])
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(8))
-voice.extend(music)
+    music = baca.make_repeat_tied_notes(commands.get(7))
+    voice.extend(music)
 
-# VN_RH
-
-voice = score["ViolinRH.Music"]
-
-music = library.make_bow_rhythm(
-    commands.get(1, 5),
-    rmakers.force_rest(
-        lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
-    ),
-    rotation=0,
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
-
-# VN
-
-voice = score["Violin.Music"]
-
-music = library.make_glissando_rhythm(
-    commands.get(1, 5),
-    rotation_1=0,
-    rotation_2=0,
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
-
-# VA_RH
-
-voice = score["ViolaRH.Music"]
-
-music = library.make_bow_rhythm(
-    commands.get(1, 5),
-    rmakers.force_rest(
-        lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
-    ),
-    rotation=-1,
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
-
-# VA
-
-voice = score["Viola.Music"]
-
-music = library.make_glissando_rhythm(
-    commands.get(1, 5),
-    rotation_1=-4,
-    rotation_2=-1,
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(8))
+    voice.extend(music)
 
 
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
+def VN_RH():
 
-# VC_RH
+    voice = score["ViolinRH.Music"]
 
-voice = score["CelloRH.Music"]
-
-music = library.make_bow_rhythm(
-    commands.get(1, 5),
-    rmakers.force_rest(
-        lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
-    ),
-    rotation=-2,
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
-
-# VC
-
-voice = score["Cello.Music"]
-
-music = library.make_glissando_rhythm(
-    commands.get(1, 5),
-    rotation_1=-8,
-    rotation_2=-2,
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(6, 8))
-voice.extend(music)
-
-# reapply
-
-music_voices = [_ for _ in voice_names if "Music" in _]
-
-commands(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
-
-# bcl
-
-commands(
-    ("bcl", (1, 4)),
-    baca.pitch("Bb4"),
-)
-
-commands(
-    ("bcl", (5, 6)),
-    baca.suite(
-        baca.pitches(
-            "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
-            exact=True,
+    music = library.make_bow_rhythm(
+        commands.get(1, 5),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
         ),
-        baca.repeat_tie(lambda _: abjad.select.leaf(_, 0)),
-        baca.glissando(),
-    ),
-)
+        rotation=0,
+    )
+    voice.extend(music)
 
-commands(
-    ("bcl", 7),
-    baca.suite(
-        baca.pitch("B1"),
-        baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
-    ),
-)
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
 
-commands(
-    ("bcl", (1, 7)),
-    baca.hairpin(
-        "pp < mf",
-        selector=lambda _: baca.select.leaves(_)[:4],
-    ),
-    baca.hairpin(
-        "mf >o niente",
-        selector=lambda _: baca.rleaves(_)[4:],
-    ),
-)
 
-commands(
-    ("bcl", (5, 7)),
-    baca.dls_staff_padding(9),
-)
+def VN():
 
-commands(
-    ("vn", (1, 5)),
-    baca.suite(
-        library.glissando_pitches(octave=5, rotation=0),
-        baca.glissando(),
-    ),
-)
+    voice = score["Violin.Music"]
 
-commands(
-    ("vn_rh", (1, 5)),
-    baca.script_staff_padding(
-        7,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.text_spanner_staff_padding(4),
-    library.bcps(rotation=0),
-)
+    music = library.make_glissando_rhythm(
+        commands.get(1, 5),
+        rotation_1=0,
+        rotation_2=0,
+    )
+    voice.extend(music)
 
-commands(
-    ("va_rh", (1, 5)),
-    baca.script_staff_padding(
-        7,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.text_spanner_staff_padding(4),
-    library.bcps(rotation=-1),
-)
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
 
-commands(
-    ("va", (1, 5)),
-    baca.suite(
-        library.glissando_pitches(octave=5, rotation=-10),
-        baca.glissando(),
-    ),
-)
 
-commands(
-    ("vc_rh", (1, 5)),
-    baca.script_staff_padding(
-        7,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.text_spanner_staff_padding(4),
-    library.bcps(rotation=-2),
-)
+def VA_RH():
 
-commands(
-    ("vc", (1, 5)),
-    baca.clef("tenor"),
-    baca.suite(
-        library.glissando_pitches(octave=4, rotation=-20),
-        baca.glissando(),
-    ),
-)
+    voice = score["ViolaRH.Music"]
 
-commands(
-    [
+    music = library.make_bow_rhythm(
+        commands.get(1, 5),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([4, 14], 16)),
+        ),
+        rotation=-1,
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
+
+
+def VA():
+
+    voice = score["Viola.Music"]
+
+    music = library.make_glissando_rhythm(
+        commands.get(1, 5),
+        rotation_1=-4,
+        rotation_2=-1,
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
+
+
+def VC_RH():
+
+    voice = score["CelloRH.Music"]
+
+    music = library.make_bow_rhythm(
+        commands.get(1, 5),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
+        ),
+        rotation=-2,
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
+
+
+def VC():
+
+    voice = score["Cello.Music"]
+
+    music = library.make_glissando_rhythm(
+        commands.get(1, 5),
+        rotation_1=-8,
+        rotation_2=-2,
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(6, 8))
+    voice.extend(music)
+
+
+def bcl(m):
+
+    commands(
+        ("bcl", (1, 4)),
+        baca.pitch("Bb4"),
+    )
+
+    commands(
+        ("bcl", (5, 6)),
+        baca.suite(
+            baca.pitches(
+                "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
+                exact=True,
+            ),
+            baca.repeat_tie(lambda _: abjad.select.leaf(_, 0)),
+            baca.glissando(),
+        ),
+    )
+
+    commands(
+        ("bcl", 7),
+        baca.suite(
+            baca.pitch("B1"),
+            baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
+        ),
+    )
+
+    commands(
+        ("bcl", (1, 7)),
+        baca.hairpin(
+            "pp < mf",
+            selector=lambda _: baca.select.leaves(_)[:4],
+        ),
+        baca.hairpin(
+            "mf >o niente",
+            selector=lambda _: baca.rleaves(_)[4:],
+        ),
+    )
+
+    commands(
+        ("bcl", (5, 7)),
+        baca.dls_staff_padding(9),
+    )
+
+
+def strings():
+
+    commands(
+        ("vn", (1, 5)),
+        baca.suite(
+            library.glissando_pitches(octave=5, rotation=0),
+            baca.glissando(),
+        ),
+    )
+
+    commands(
         ("vn_rh", (1, 5)),
+        baca.script_staff_padding(
+            7,
+            selector=lambda _: baca.select.leaves(_),
+        ),
+        baca.text_spanner_staff_padding(4),
+        library.bcps(rotation=0),
+    )
+
+    commands(
         ("va_rh", (1, 5)),
+        baca.script_staff_padding(
+            7,
+            selector=lambda _: baca.select.leaves(_),
+        ),
+        baca.text_spanner_staff_padding(4),
+        library.bcps(rotation=-1),
+    )
+
+    commands(
+        ("va", (1, 5)),
+        baca.suite(
+            library.glissando_pitches(octave=5, rotation=-10),
+            baca.glissando(),
+        ),
+    )
+
+    commands(
         ("vc_rh", (1, 5)),
-    ],
-    baca.dls_staff_padding(9),
-    baca.markup(r"\baca-half-clt-markup"),
-    baca.hairpin(
-        "p > pp < p > ppp < pp > ppp <",
-        bookend=True,
-        pieces=library.enchain_runs([3, 4]),
-    ),
-    baca.staff_position(0),
-)
+        baca.script_staff_padding(
+            7,
+            selector=lambda _: baca.select.leaves(_),
+        ),
+        baca.text_spanner_staff_padding(4),
+        library.bcps(rotation=-2),
+    )
+
+    commands(
+        ("vc", (1, 5)),
+        baca.clef("tenor"),
+        baca.suite(
+            library.glissando_pitches(octave=4, rotation=-20),
+            baca.glissando(),
+        ),
+    )
+
+    commands(
+        [
+            ("vn_rh", (1, 5)),
+            ("va_rh", (1, 5)),
+            ("vc_rh", (1, 5)),
+        ],
+        baca.dls_staff_padding(9),
+        baca.markup(r"\baca-half-clt-markup"),
+        baca.hairpin(
+            "p > pp < p > ppp < pp > ppp <",
+            bookend=True,
+            pieces=library.enchain_runs([3, 4]),
+        ),
+        baca.staff_position(0),
+    )
+
+
+def main():
+    BCL()
+    VN_RH()
+    VN()
+    VA_RH()
+    VA()
+    VC_RH()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    bcl(cache["bcl"])
+    strings()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
