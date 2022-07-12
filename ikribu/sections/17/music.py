@@ -65,27 +65,18 @@ for index, string in ((8 - 1, "long"),):
     baca.global_fermata(rests[index], string)
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
-
+def BCL(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 4))
     voice.extend(music)
-
     music = baca.make_repeated_duration_notes(commands.get(5, 6), [(1, 4)])
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(7))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
 
 
-def VN_RH():
-
-    voice = score["ViolinRH.Music"]
-
+def VN_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 5),
         rmakers.force_rest(
@@ -94,30 +85,22 @@ def VN_RH():
         rotation=0,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 5),
         rotation_1=0,
         rotation_2=0,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
-def VA_RH():
-
-    voice = score["ViolaRH.Music"]
-
+def VA_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 5),
         rmakers.force_rest(
@@ -126,30 +109,22 @@ def VA_RH():
         rotation=-1,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 5),
         rotation_1=-4,
         rotation_2=-1,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
-def VC_RH():
-
-    voice = score["CelloRH.Music"]
-
+def VC_RH(voice):
     music = library.make_bow_rhythm(
         commands.get(1, 5),
         rmakers.force_rest(
@@ -158,33 +133,26 @@ def VC_RH():
         rotation=-2,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = library.make_glissando_rhythm(
         commands.get(1, 5),
         rotation_1=-8,
         rotation_2=-2,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
 
 
 def bcl(m):
-
     commands(
         ("bcl", (1, 4)),
         baca.pitch("Bb4"),
     )
-
     commands(
         ("bcl", (5, 6)),
         baca.suite(
@@ -196,7 +164,6 @@ def bcl(m):
             baca.glissando(),
         ),
     )
-
     commands(
         ("bcl", 7),
         baca.suite(
@@ -204,7 +171,6 @@ def bcl(m):
             baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
         ),
     )
-
     commands(
         ("bcl", (1, 7)),
         baca.hairpin(
@@ -216,15 +182,13 @@ def bcl(m):
             selector=lambda _: baca.rleaves(_)[4:],
         ),
     )
-
     commands(
         ("bcl", (5, 7)),
         baca.dls_staff_padding(9),
     )
 
 
-def strings():
-
+def strings(cache):
     commands(
         ("vn", (1, 5)),
         baca.suite(
@@ -232,7 +196,6 @@ def strings():
             baca.glissando(),
         ),
     )
-
     commands(
         ("vn_rh", (1, 5)),
         baca.script_staff_padding(
@@ -242,7 +205,6 @@ def strings():
         baca.text_spanner_staff_padding(4),
         library.bcps(rotation=0),
     )
-
     commands(
         ("va_rh", (1, 5)),
         baca.script_staff_padding(
@@ -252,7 +214,6 @@ def strings():
         baca.text_spanner_staff_padding(4),
         library.bcps(rotation=-1),
     )
-
     commands(
         ("va", (1, 5)),
         baca.suite(
@@ -260,7 +221,6 @@ def strings():
             baca.glissando(),
         ),
     )
-
     commands(
         ("vc_rh", (1, 5)),
         baca.script_staff_padding(
@@ -270,7 +230,6 @@ def strings():
         baca.text_spanner_staff_padding(4),
         library.bcps(rotation=-2),
     )
-
     commands(
         ("vc", (1, 5)),
         baca.clef("tenor"),
@@ -279,7 +238,6 @@ def strings():
             baca.glissando(),
         ),
     )
-
     commands(
         [
             ("vn_rh", (1, 5)),
@@ -298,13 +256,13 @@ def strings():
 
 
 def main():
-    BCL()
-    VN_RH()
-    VN()
-    VA_RH()
-    VA()
-    VC_RH()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    VN_RH(commands.voice("ViolinRH.Music"))
+    VN(commands.voice("Violin.Music"))
+    VA_RH(commands.voice("ViolaRH.Music"))
+    VA(commands.voice("Viola.Music"))
+    VC_RH(commands.voice("CelloRH.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -313,7 +271,7 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    strings()
+    strings(cache)
 
 
 if __name__ == "__main__":

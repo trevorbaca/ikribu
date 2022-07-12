@@ -64,10 +64,7 @@ for index, string in (
     baca.global_fermata(rests[index], string)
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
-
+def BCL(voice):
     music = baca.make_tied_repeated_durations(commands.get(1), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(commands.get(2, 4))
@@ -86,8 +83,7 @@ def BCL():
     voice.extend(music)
 
 
-def ALL_RH():
-
+def ALL_RH(score):
     for voice in (
         score["ViolinRH.Music"],
         score["ViolaRH.Music"],
@@ -97,10 +93,7 @@ def ALL_RH():
         voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = baca.make_mmrests(commands.get(1, 2))
     voice.extend(music)
     music = library.make_clb_rhythm(
@@ -133,10 +126,7 @@ def VN():
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = baca.make_mmrests(commands.get(1, 2))
     voice.extend(music)
     music = library.make_clb_rhythm(
@@ -169,10 +159,7 @@ def VA():
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = baca.make_tied_repeated_durations(commands.get(1), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(commands.get(2, 4))
@@ -192,7 +179,6 @@ def VC():
 
 
 def bcl(m):
-
     commands(
         ("bcl", 5),
         baca.dynamic(
@@ -201,7 +187,6 @@ def bcl(m):
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
     )
-
     commands(
         ("bcl", 9),
         baca.dynamic(
@@ -210,7 +195,6 @@ def bcl(m):
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
     )
-
     commands(
         ("bcl", 13),
         baca.dynamic(
@@ -219,7 +203,6 @@ def bcl(m):
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
         ),
     )
-
     commands(
         ("bcl", (1, 16)),
         baca.dls_staff_padding(6),
@@ -227,8 +210,7 @@ def bcl(m):
     )
 
 
-def vn():
-
+def vn(m):
     commands(
         ("vn", (1, 16)),
         baca.dls_staff_padding(8),
@@ -249,8 +231,7 @@ def vn():
     )
 
 
-def va():
-
+def va(m):
     commands(
         ("va", (1, 16)),
         baca.dls_staff_padding(8),
@@ -271,8 +252,7 @@ def va():
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         ("vc", (1, 16)),
         baca.staff_lines(1),
@@ -282,7 +262,6 @@ def vc():
         library.box_adjustment(),
         baca.dynamic('"p"'),
     )
-
     commands(
         ("vc", 5),
         baca.dynamic(
@@ -291,7 +270,6 @@ def vc():
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
     )
-
     commands(
         ("vc", 9),
         baca.dynamic(
@@ -300,7 +278,6 @@ def vc():
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
     )
-
     commands(
         ("vc", 13),
         baca.dynamic(
@@ -312,11 +289,11 @@ def vc():
 
 
 def main():
-    BCL()
-    ALL_RH()
-    VN()
-    VA()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    ALL_RH(score)
+    VN(commands.voice("Violin.Music"))
+    VA(commands.voice("Viola.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -325,9 +302,9 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    vn()
-    va()
-    vc()
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
 
 
 if __name__ == "__main__":

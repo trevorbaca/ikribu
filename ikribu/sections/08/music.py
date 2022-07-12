@@ -59,49 +59,34 @@ for index, item in (
     baca.metronome_mark(skip, indicator, manifests)
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
-
+def BCL(voice):
     music = baca.make_tied_repeated_durations(commands.get(1), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(2))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(3), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(4))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(5), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(7), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(9), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(10))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(11), [(6, 4), (1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(12))
     voice.extend(music)
 
 
-def MOST():
-
+def MOST(score):
     for voice in (
         score["ViolinRH.Music"],
         score["Violin.Music"],
@@ -113,58 +98,47 @@ def MOST():
         voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = baca.make_notes(
         commands.get(1, 11),
         rmakers.reduce_multiplier(),
         repeat_ties=True,
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(12))
     voice.extend(music)
 
 
 def bcl(m):
-
     commands(
         ("bcl", [1, 3, 5, 7, 9, 11]),
         baca.dls_staff_padding(7),
     )
-
     commands(
         ("bcl", 1),
         baca.hairpin("ppp < mp"),
         baca.pitch("G2"),
     )
-
     commands(
         ("bcl", 3),
         baca.hairpin("pp < mf"),
         baca.pitch("Gb2"),
     )
-
     commands(
         ("bcl", 5),
         baca.hairpin("p < f"),
         baca.pitch("F2"),
     )
-
     commands(
         ("bcl", 7),
         baca.hairpin("mf < ff"),
         baca.pitch("E2"),
     )
-
     commands(
         ("bcl", 9),
         baca.hairpin("f < fff"),
         baca.pitch("Eb2"),
     )
-
     commands(
         ("bcl", 11),
         baca.hairpin("ff < ffff"),
@@ -172,8 +146,7 @@ def bcl(m):
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         ("vc", (1, 11)),
         baca.dls_staff_padding(7),
@@ -200,9 +173,9 @@ def vc():
 
 
 def main():
-    BCL()
-    MOST()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    MOST(score)
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -211,7 +184,7 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    vc()
+    vc(cache["vc"])
 
 
 if __name__ == "__main__":

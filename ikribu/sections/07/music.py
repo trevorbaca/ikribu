@@ -49,22 +49,16 @@ baca.interpret.set_up_score(
 )
 
 
-def BCL():
-
-    voice = score["BassClarinet.Music"]
-
+def BCL(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 4))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(5))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(6, 8))
     voice.extend(music)
 
 
-def ALL_RH():
-
+def ALL_RH(score):
     for voice in (
         score["ViolinRH.Music"],
         score["ViolaRH.Music"],
@@ -74,58 +68,40 @@ def ALL_RH():
         voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = baca.make_mmrests(commands.get(1, 5))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(6, 7))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8), head=voice.name)
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = baca.make_mmrests(commands.get(1, 5))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(6, 7))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8), head=voice.name)
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 4))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(5))
     voice.extend(music)
-
     music = baca.make_tied_repeated_durations(commands.get(6, 7), [(1, 4)])
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
 
 
 def bcl(m):
-
     commands(
         ("bcl", (1, 4)),
         baca.pitch("F#3"),
     )
-
     commands(
         ("bcl", (6, 8)),
         baca.hairpin("sfp > ppp"),
@@ -133,8 +109,7 @@ def bcl(m):
     )
 
 
-def vn_va():
-
+def vn_va(cache):
     commands(
         [
             ("vn", (6, 7)),
@@ -148,7 +123,6 @@ def vn_va():
         baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
         baca.text_spanner_staff_padding(3.5),
     )
-
     commands(
         ("vn", (6, 7)),
         baca.clef("treble"),
@@ -160,7 +134,6 @@ def vn_va():
         baca.text_spanner("trem. flaut. XP => trem. flaut. tast."),
         baca.staff_lines(5),
     )
-
     commands(
         ("va", (6, 7)),
         baca.markup(
@@ -176,8 +149,7 @@ def vn_va():
     )
 
 
-def vc():
-
+def vc(m):
     commands(
         ("vc", (1, 4)),
         baca.hairpin("p < ff"),
@@ -186,7 +158,6 @@ def vc():
         baca.text_spanner("(trem. flaut. tast.) => trem. XP (non. flaut.)"),
         baca.text_spanner_staff_padding(3.5),
     )
-
     commands(
         ("vc", (6, 7)),
         baca.markup(r"\ikribu-graincircle-pi-two-markup"),
@@ -194,7 +165,6 @@ def vc():
         baca.staff_position(0),
         library.box_adjustment(),
     )
-
     commands(
         ("vc", 8),
         baca.clef("treble"),
@@ -203,11 +173,11 @@ def vc():
 
 
 def main():
-    BCL()
-    ALL_RH()
-    VN()
-    VA()
-    VC()
+    BCL(commands.voice("BassClarinet.Music"))
+    ALL_RH(score)
+    VN(commands.voice("Violin.Music"))
+    VA(commands.voice("Viola.Music"))
+    VC(commands.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
@@ -216,8 +186,8 @@ def main():
         commands.voice_abbreviations,
     )
     bcl(cache["bcl"])
-    vn_va()
-    vc()
+    vn_va(cache)
+    vc(cache["vc"])
 
 
 if __name__ == "__main__":
