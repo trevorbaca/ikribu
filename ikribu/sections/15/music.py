@@ -256,13 +256,15 @@ if __name__ == "__main__":
     main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
-        commands,
+        commands.manifests(),
+        commands.time_signatures,
         **defaults,
         activate=(
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        commands=commands,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,
