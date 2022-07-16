@@ -25,7 +25,7 @@ time_signatures = maker_.run()
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
@@ -36,9 +36,9 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
@@ -46,11 +46,11 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in ((1 - 1, "windows"),):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 rests = score["Rests"]
@@ -66,43 +66,43 @@ def MOST(score):
         score["ViolaRH.Music"],
         score["Viola.Music"],
     ):
-        music = baca.make_mmrests(commands.get())
+        music = baca.make_mmrests(accumulator.get())
         voice.extend(music)
 
 
 def VC_RH(voice):
     music = library.make_bow_rhythm(
-        commands.get(1, 10),
+        accumulator.get(1, 10),
         rmakers.force_rest(
             lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
         ),
         rotation=-2,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
 
 
 def VC(voice):
     music = library.make_glissando_rhythm(
-        commands.get(1, 10),
+        accumulator.get(1, 10),
         rotation_1=0,
         rotation_2=0,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
 
 
 def bcl(m):
-    commands(
+    accumulator(
         "bcl",
         baca.staff_lines(5),
     )
 
 
 def vc_rh(m):
-    commands(
+    accumulator(
         ("vc_rh", (1, 10)),
         baca.markup(r"\baca-half-clt-markup"),
         baca.staff_position(0),
@@ -123,7 +123,7 @@ def vc_rh(m):
 
 
 def vc(m):
-    commands(
+    accumulator(
         ("vc", (1, 10)),
         baca.clef("tenor"),
         library.glissando_pitches(octave=4, rotation=-20),
@@ -133,14 +133,14 @@ def vc(m):
 
 def main():
     MOST(score)
-    VC_RH(commands.voice("CelloRH.Music"))
-    VC(commands.voice("Cello.Music"))
+    VC_RH(accumulator.voice("CelloRH.Music"))
+    VC(accumulator.voice("Cello.Music"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
-    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
         score,
-        len(commands.time_signatures),
-        commands.voice_abbreviations,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
     )
     bcl(cache["bcl"])
     vc(cache["vc"])
@@ -149,23 +149,23 @@ def main():
 
 if __name__ == "__main__":
     main()
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),
         transpose_score=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
