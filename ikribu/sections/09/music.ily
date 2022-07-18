@@ -916,8 +916,8 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -938,14 +938,14 @@ number.9.ViolinRH.Music = {
           %! baca.markup()
         ^ \baca-half-clt-markup
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -968,18 +968,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1003,18 +1003,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1037,18 +1037,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1057,22 +1057,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1081,8 +1081,8 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1099,18 +1099,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1155,22 +1155,22 @@ number.9.ViolinRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \pp
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1179,18 +1179,18 @@ number.9.ViolinRH.Music = {
     r4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-invisible-line
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1199,8 +1199,8 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(6)
       %! baca.bcps()
+      %! baca.bcps(6)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1217,18 +1217,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \pp
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1251,22 +1251,22 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1275,8 +1275,8 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1293,18 +1293,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \p
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1313,18 +1313,18 @@ number.9.ViolinRH.Music = {
     r4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-invisible-line
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1347,22 +1347,22 @@ number.9.ViolinRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \p
-      %! baca.BCPCommand._call(5)
       %! baca.bcps()
+      %! baca.bcps(5)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1397,22 +1397,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1436,18 +1436,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \ppp
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1470,18 +1470,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1490,18 +1490,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1524,22 +1524,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \ff
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1562,8 +1562,8 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1580,18 +1580,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1600,18 +1600,18 @@ number.9.ViolinRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1634,22 +1634,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-          %! baca.BCPCommand._call(5)
           %! baca.bcps()
+          %! baca.bcps(5)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1690,22 +1690,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1729,18 +1729,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1749,18 +1749,18 @@ number.9.ViolinRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #2 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1783,22 +1783,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \f
-          %! baca.BCPCommand._call(5)
           %! baca.bcps()
+          %! baca.bcps(5)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #2 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -1821,18 +1821,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % CLOSING:
         % COMMANDS:
@@ -1849,8 +1849,8 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1867,18 +1867,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \pp
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -1901,18 +1901,18 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #4 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1923,18 +1923,18 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #5 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1958,18 +1958,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \p
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #6 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -2006,22 +2006,22 @@ number.9.ViolinRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \ppp
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2030,18 +2030,18 @@ number.9.ViolinRH.Music = {
     r4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-invisible-line
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #6 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2050,8 +2050,8 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(6)
       %! baca.bcps()
+      %! baca.bcps(6)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -2068,18 +2068,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \ppp
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #6 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -2102,22 +2102,22 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2126,8 +2126,8 @@ number.9.ViolinRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -2144,18 +2144,18 @@ number.9.ViolinRH.Music = {
       %! baca.hairpin()
     \ff
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2176,18 +2176,18 @@ number.9.ViolinRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2210,22 +2210,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \ff
-          %! baca.BCPCommand._call(5)
           %! baca.bcps()
+          %! baca.bcps(5)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2248,22 +2248,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2286,22 +2286,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2324,22 +2324,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2348,18 +2348,18 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2383,18 +2383,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2432,18 +2432,18 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \pp
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2452,18 +2452,18 @@ number.9.ViolinRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % CLOSING:
         % COMMANDS:
@@ -2504,22 +2504,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \pp
-          %! baca.BCPCommand._call(5)
           %! baca.bcps()
+          %! baca.bcps(5)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2542,22 +2542,22 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2580,22 +2580,22 @@ number.9.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2604,18 +2604,18 @@ number.9.ViolinRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2624,8 +2624,8 @@ number.9.ViolinRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2642,21 +2642,21 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-right-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -2694,8 +2694,8 @@ number.9.ViolinRH.Music = {
           %! baca.hairpin()
         \ppp
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(1)
           %! baca.bcps()
+          %! baca.bcps(1)
         \bacaStopTextSpanBCP
         % COMMANDS:
           %! baca.OverrideCommand._call(2)
@@ -3275,22 +3275,22 @@ number.9.ViolaRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \ff
-      %! baca.BCPCommand._call(5)
       %! baca.bcps()
+      %! baca.bcps(5)
     - \upbow
     % MARKUP:
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-half-clt-markup
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3318,22 +3318,22 @@ number.9.ViolaRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3356,22 +3356,22 @@ number.9.ViolaRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \p
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3394,8 +3394,8 @@ number.9.ViolaRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3412,18 +3412,18 @@ number.9.ViolaRH.Music = {
       %! baca.hairpin()
     \f
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3432,18 +3432,18 @@ number.9.ViolaRH.Music = {
     r4
     % AFTER:
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-invisible-line
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3466,22 +3466,22 @@ number.9.ViolaRH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \f
-      %! baca.BCPCommand._call(5)
       %! baca.bcps()
+      %! baca.bcps(5)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3504,22 +3504,22 @@ number.9.ViolaRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3543,18 +3543,18 @@ number.9.ViolaRH.Music = {
       %! baca.hairpin()
     \pp
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #4 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -3589,18 +3589,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3609,18 +3609,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3643,22 +3643,22 @@ number.9.ViolaRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3681,22 +3681,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3719,22 +3719,22 @@ number.9.ViolaRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \ppp
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3757,8 +3757,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3775,18 +3775,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ff
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3795,18 +3795,18 @@ number.9.ViolaRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3815,8 +3815,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3833,18 +3833,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ff
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3885,22 +3885,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #2 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3924,18 +3924,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -3958,22 +3958,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3997,18 +3997,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4017,18 +4017,18 @@ number.9.ViolaRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4037,8 +4037,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4055,18 +4055,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4089,18 +4089,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4123,22 +4123,22 @@ number.9.ViolaRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \pp
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4161,22 +4161,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % CLOSING:
         % COMMANDS:
@@ -4203,22 +4203,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4227,8 +4227,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4245,18 +4245,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4287,22 +4287,22 @@ number.9.ViolaRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(7)
       %! baca.bcps()
+      %! baca.bcps(7)
     - \upbow
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #7 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4311,8 +4311,8 @@ number.9.ViolaRH.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.BCPCommand._call(8)
       %! baca.bcps()
+      %! baca.bcps(8)
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -4329,18 +4329,18 @@ number.9.ViolaRH.Music = {
       %! baca.hairpin()
     \ppp
     % SPANNER_STOPS:
-      %! baca.BCPCommand._call(3)
       %! baca.bcps()
+      %! baca.bcps(3)
     \bacaStopTextSpanBCP
     % SPANNER_STARTS:
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \abjad-solid-line-with-arrow
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     - \baca-bcp-spanner-left-text #0 #7
-      %! baca.BCPCommand._call(2)
       %! baca.bcps()
+      %! baca.bcps(2)
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -4389,22 +4389,22 @@ number.9.ViolaRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \ff
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4413,18 +4413,18 @@ number.9.ViolaRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4433,8 +4433,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4451,18 +4451,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ff
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4485,18 +4485,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4520,18 +4520,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4554,18 +4554,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4588,22 +4588,22 @@ number.9.ViolaRH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \f
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4612,18 +4612,18 @@ number.9.ViolaRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % CLOSING:
         % COMMANDS:
@@ -4650,8 +4650,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4668,18 +4668,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \f
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4702,22 +4702,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4726,8 +4726,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4744,18 +4744,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \pp
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4778,18 +4778,18 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4798,22 +4798,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #2 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4837,18 +4837,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #1 #4
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4871,22 +4871,22 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(8)
           %! baca.bcps()
+          %! baca.bcps(8)
         - \downbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #0 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4910,18 +4910,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ppp
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #4 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -4959,18 +4959,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ff
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #5 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4979,18 +4979,18 @@ number.9.ViolaRH.Music = {
         r4
         % AFTER:
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-invisible-line
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % CLOSING:
         % COMMANDS:
@@ -5017,8 +5017,8 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(6)
           %! baca.bcps()
+          %! baca.bcps(6)
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -5035,18 +5035,18 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \ff
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -5069,25 +5069,25 @@ number.9.ViolaRH.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.BCPCommand._call(7)
           %! baca.bcps()
+          %! baca.bcps(7)
         - \upbow
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(3)
           %! baca.bcps()
+          %! baca.bcps(3)
         \bacaStopTextSpanBCP
         % SPANNER_STARTS:
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \abjad-solid-line-with-arrow
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-left-text #7 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         - \baca-bcp-spanner-right-text #6 #7
-          %! baca.BCPCommand._call(2)
           %! baca.bcps()
+          %! baca.bcps(2)
         \bacaStartTextSpanBCP
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5111,8 +5111,8 @@ number.9.ViolaRH.Music = {
           %! baca.hairpin()
         \p
         % SPANNER_STOPS:
-          %! baca.BCPCommand._call(1)
           %! baca.bcps()
+          %! baca.bcps(1)
         \bacaStopTextSpanBCP
         % COMMANDS:
           %! baca.OverrideCommand._call(2)
