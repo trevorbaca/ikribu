@@ -260,14 +260,13 @@ def vc(m):
         baca.glissando_function(o)
         baca.tuplet_bracket_down_function(o)
         baca.dls_staff_padding_function(o, 7)
-    accumulator(
-        ("vc", (2, 16)),
-        baca.hairpin(
-            "ppp < pp >",
-            final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(_),
-        ),
-    )
+        with baca.scope(m.get(2, 16)) as o:
+            baca.hairpin_function(
+                o,
+                "ppp < pp >",
+                final_hairpin=False,
+                pieces=lambda _: baca.select.cmgroups(_),
+            )
 
 
 def main():
@@ -303,7 +302,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,
