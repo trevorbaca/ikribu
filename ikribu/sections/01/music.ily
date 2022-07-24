@@ -220,7 +220,6 @@ number.1.BassClarinet.Music = {
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set Staff.instrumentName = \ikribu-bass-clarinet-markup
       %! -PARTS
@@ -489,11 +488,9 @@ number.1.Violin.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \once \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \once \override TextScript.parent-alignment-X = 0
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -502,7 +499,6 @@ number.1.Violin.Music = {
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-violin-markup
       %! -PARTS
@@ -571,7 +567,6 @@ number.1.Violin.Music = {
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-instrument-markup "(“Violin”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-grainfall-one-markup
     % ABSOLUTE_AFTER:
@@ -791,7 +786,6 @@ number.1.Viola.Music = {
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-viola-markup
       %! -PARTS
@@ -1052,8 +1046,7 @@ number.1.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \once \override NoteHead.style = #'harmonic
       %! MEASURE_1
       %! SHIFTED_CLEF
@@ -1070,7 +1063,6 @@ number.1.Cello.Music = {
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-cello-markup
       %! -PARTS
@@ -1135,17 +1127,14 @@ number.1.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \sfz
-      %! baca.IndicatorCommand._call()
       %! baca.laissez_vibrer()
     \laissezVibrer
     % MARKUP:
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-explicit-instrument-markup "(“Cello”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \markup pizz.
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-iii-markup
     % ABSOLUTE_AFTER:

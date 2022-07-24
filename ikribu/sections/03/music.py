@@ -129,113 +129,49 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (5, 25)),
-        baca.pitch(
-            "Db2",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.dynamic("ppp"),
-    )
-    accumulator(
-        ("bcl", (19, 21)),
-        baca.hairpin(
-            "ppp < f",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "f >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
+    with baca.scope(m.get(5, 25)) as o:
+        baca.pitch_function(o, "Db2")
+        baca.dynamic_function(o, "ppp")
+    with baca.scope(m.get(19, 21)) as o:
+        baca.hairpin_function(o.leaves()[:2], "ppp < f")
+        baca.hairpin_function(o.rleaves()[-2:], "f >o niente")
 
 
 def vn(m):
-    accumulator(
-        "vn",
-        baca.text_script_staff_padding(3, allow_mmrests=True),
-        baca.text_spanner_staff_padding(3.5),
-    )
-    accumulator(
-        ("vn", (1, 15)),
-        baca.markup(
-            r"\baca-string-iii-markup",
-            direction=abjad.DOWN,
-        ),
-        baca.pitch(
-            "E4",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-    )
-    accumulator(
-        ("vn", (1, 3)),
-        baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
-        baca.hairpin(
-            "ppp < p",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "p >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
-    accumulator(
-        ("vn", (7, 9)),
-        baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
-        baca.hairpin(
-            "ppp < p",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "p >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
-    accumulator(
-        ("vn", (13, 15)),
-        baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
-        baca.hairpin(
-            "ppp < p",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "p >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.text_script_staff_padding_function(o, 3, allow_mmrests=True)
+        baca.text_spanner_staff_padding_function(o, 3.5)
+    with baca.scope(m.get(1, 15)) as o:
+        baca.markup_function(o, r"\baca-string-iii-markup", direction=abjad.DOWN)
+        baca.pitch_function(o, "E4")
+        baca.stem_tremolo_function(o.pleaves())
+    with baca.scope(m.get(1, 3)) as o:
+        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin_function(o.leaves()[:2], "ppp < p")
+        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
+    with baca.scope(m.get(7, 9)) as o:
+        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin_function(o.leaves()[:2], "ppp < p")
+        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
+    with baca.scope(m.get(13, 15)) as o:
+        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin_function(o.leaves()[:2], "ppp < p")
+        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
 
 
 def va(m):
-    accumulator(
-        "va",
-        baca.clef("alto"),
-        baca.staff_lines(5),
-        baca.text_script_staff_padding(3, allow_mmrests=True),
-        baca.text_spanner_staff_padding(3.5),
-    )
-    accumulator(
-        ("va", (19, 24)),
-        baca.markup(
-            r"\baca-string-ii-markup",
-            direction=abjad.DOWN,
-        ),
-        baca.pitch("Eb4"),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.text_spanner("trem. flaut. pont. => trem. flaut. tast."),
-        baca.hairpin(
-            "ppp < mf",
-            selector=lambda _: baca.select.leaves(_)[:5],
-        ),
-        baca.hairpin(
-            "mf >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "alto")
+        baca.staff_lines_function(o, 5)
+        baca.text_script_staff_padding_function(o, 3, allow_mmrests=True)
+        baca.text_spanner_staff_padding_function(o, 3.5)
+    with baca.scope(m.get(19, 24)) as o:
+        baca.markup_function(o, r"\baca-string-ii-markup", direction=abjad.DOWN)
+        baca.pitch_function(o, "Eb4")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin_function(o.leaves()[:5], "ppp < mf")
+        baca.hairpin_function(o.rleaves()[-2:], "mf >o niente")
 
 
 def main():
@@ -270,7 +206,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

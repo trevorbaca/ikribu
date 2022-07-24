@@ -31,6 +31,11 @@ def box_adjustment():
     )
 
 
+def box_adjustment_function(argument):
+    baca.text_script_padding_function(argument, 2.5, allow_mmrests=True)
+    baca.text_script_parent_alignment_x_function(argument, 0, allow_mmrests=True)
+
+
 def clb_staff_positions(*, rotation=0):
     positions = [[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]]
     positions = baca.sequence.helianthate(positions, -1, -1)
@@ -303,6 +308,15 @@ def short_instrument_name(
         selector=selector,
     )
     return baca.not_parts(command)
+
+
+def short_instrument_name_function(leaf, key, context="Staff"):
+    short_instrument_name = short_instrument_names()[key]
+    baca.short_instrument_name_function(
+        leaf,
+        short_instrument_name,
+        context=context,
+    )
 
 
 def short_instrument_names():
