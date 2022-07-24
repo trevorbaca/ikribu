@@ -1369,11 +1369,9 @@ number.4.BassClarinet.Music = {
     % [BassClarinet.Music measure 2]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -1423,11 +1421,9 @@ number.4.BassClarinet.Music = {
     \baca-effort-mf
     % MARKUP:
       %! +ARCH_A_PARTS_BCL
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     %@% ^ \ikribu-stonecircle-pi-two-markup
       %! -ARCH_A_PARTS_BCL
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -1934,11 +1930,9 @@ number.4.BassClarinet.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"6"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(2)
     \revert TextScript.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -2268,11 +2262,9 @@ number.4.Violin.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \once \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \once \override TextScript.parent-alignment-X = 0
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -2347,7 +2339,6 @@ number.4.Violin.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Violin”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-grainfall-two-markup
     % ABSOLUTE_AFTER:
@@ -2379,8 +2370,7 @@ number.4.Violin.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 3
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -2388,8 +2378,7 @@ number.4.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 2.5
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -2449,7 +2438,6 @@ number.4.Violin.Music = {
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2468,7 +2456,6 @@ number.4.Violin.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-trem-flaut-tast-markup
     % SPANNER_STARTS:
@@ -2498,7 +2485,6 @@ number.4.Violin.Music = {
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2549,7 +2535,6 @@ number.4.Violin.Music = {
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2594,7 +2579,6 @@ number.4.Violin.Music = {
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2645,7 +2629,6 @@ number.4.Violin.Music = {
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2690,7 +2673,6 @@ number.4.Violin.Music = {
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2741,7 +2723,6 @@ number.4.Violin.Music = {
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2786,7 +2767,6 @@ number.4.Violin.Music = {
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2805,11 +2785,9 @@ number.4.Violin.Music = {
       %! baca.hairpin()
     \pp
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3235,11 +3213,9 @@ number.4.Viola.Music = {
     % [Viola.Music measure 2]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 3
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 2.5
       %! baca.make_mmrests(1)
     R1 * 4/4
@@ -3257,7 +3233,6 @@ number.4.Viola.Music = {
     f'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3276,7 +3251,6 @@ number.4.Viola.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-trem-flaut-tast-markup
     % SPANNER_STARTS:
@@ -3306,7 +3280,6 @@ number.4.Viola.Music = {
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3357,7 +3330,6 @@ number.4.Viola.Music = {
     e'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3402,7 +3374,6 @@ number.4.Viola.Music = {
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3453,7 +3424,6 @@ number.4.Viola.Music = {
     f'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3498,7 +3468,6 @@ number.4.Viola.Music = {
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3549,7 +3518,6 @@ number.4.Viola.Music = {
     e'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3594,7 +3562,6 @@ number.4.Viola.Music = {
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3613,11 +3580,9 @@ number.4.Viola.Music = {
       %! baca.hairpin()
     \pp
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3951,8 +3916,7 @@ number.4.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \once \override NoteHead.style = #'harmonic
       %! EXPLICIT_BAR_EXTENT
       %! baca._reanalyze_reapplied_synthetic_wrappers()
@@ -4020,17 +3984,14 @@ number.4.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \sfz
-      %! baca.IndicatorCommand._call()
       %! baca.laissez_vibrer()
     \laissezVibrer
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-pizz-markup
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-iii-markup
     % ABSOLUTE_AFTER:
@@ -4054,23 +4015,18 @@ number.4.Cello.Music = {
     % [Cello.Music measure 2]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \override NoteHead.style = #'harmonic
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 3.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_down()
+      %! baca.tuplet_bracket_down_function(1)
     \override TupletBracket.direction = #down
       %! baca.make_notes()
     d''1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4139,7 +4095,6 @@ number.4.Cello.Music = {
     fqf''!1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4184,7 +4139,6 @@ number.4.Cello.Music = {
     d''2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4236,7 +4190,6 @@ number.4.Cello.Music = {
         b'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -4286,7 +4239,6 @@ number.4.Cello.Music = {
     d''1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4331,7 +4283,6 @@ number.4.Cello.Music = {
     b'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4376,7 +4327,6 @@ number.4.Cello.Music = {
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4428,7 +4378,6 @@ number.4.Cello.Music = {
         b'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -4478,7 +4427,6 @@ number.4.Cello.Music = {
     g'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4523,7 +4471,6 @@ number.4.Cello.Music = {
     d'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4568,7 +4515,6 @@ number.4.Cello.Music = {
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4620,7 +4566,6 @@ number.4.Cello.Music = {
         d'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -4670,7 +4615,6 @@ number.4.Cello.Music = {
     g1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4715,7 +4659,6 @@ number.4.Cello.Music = {
     d'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4760,7 +4703,6 @@ number.4.Cello.Music = {
     g2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -4784,17 +4726,13 @@ number.4.Cello.Music = {
       %! baca.text_spanner()
     \stopTextSpan
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(2)
     \revert NoteHead.style
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_down()
+      %! baca.tuplet_bracket_down_function(2)
     \revert TupletBracket.direction
     % ABSOLUTE_BEFORE:
     % COMMANDS:

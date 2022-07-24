@@ -2812,11 +2812,9 @@ number.3.Violin.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 3
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 3.5
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-vn-markup
@@ -2867,7 +2865,6 @@ number.3.Violin.Music = {
     e'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2889,7 +2886,6 @@ number.3.Violin.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Violin”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-iii-markup
     % SPANNER_STARTS:
@@ -2958,7 +2954,6 @@ number.3.Violin.Music = {
     e'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2992,7 +2987,6 @@ number.3.Violin.Music = {
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3221,7 +3215,6 @@ number.3.Violin.Music = {
     e'\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3291,7 +3284,6 @@ number.3.Violin.Music = {
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3325,7 +3317,6 @@ number.3.Violin.Music = {
     e'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3554,7 +3545,6 @@ number.3.Violin.Music = {
     e'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3624,7 +3614,6 @@ number.3.Violin.Music = {
     e'1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3658,7 +3647,6 @@ number.3.Violin.Music = {
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3974,11 +3962,9 @@ number.3.Violin.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -4560,11 +4546,9 @@ number.3.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 3
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 3.5
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
@@ -4999,7 +4983,6 @@ number.3.Viola.Music = {
     ef'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -5018,7 +5001,6 @@ number.3.Viola.Music = {
       %! baca.hairpin()
     \ppp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-ii-markup
     % SPANNER_STARTS:
@@ -5073,7 +5055,6 @@ number.3.Viola.Music = {
     ef'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -5092,7 +5073,6 @@ number.3.Viola.Music = {
     ef'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -5111,7 +5091,6 @@ number.3.Viola.Music = {
     ef'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -5130,7 +5109,6 @@ number.3.Viola.Music = {
     ef'1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -5164,7 +5142,6 @@ number.3.Viola.Music = {
     ef'\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -5284,11 +5261,9 @@ number.3.Viola.Music = {
               %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
               %! baca._style_fermata_measures(2)
             \override Staff.BarLine.bar-extent = #'(-2 . 2)
-              %! baca.OverrideCommand._call(2)
-              %! baca.text_script_staff_padding()
+              %! baca.text_script_staff_padding_function(2)
             \revert TextScript.staff-padding
-              %! baca.OverrideCommand._call(2)
-              %! baca.text_spanner_staff_padding()
+              %! baca.text_spanner_staff_padding_function(2)
             \revert TextSpanner.staff-padding
             % CLOSING:
             % COMMANDS:

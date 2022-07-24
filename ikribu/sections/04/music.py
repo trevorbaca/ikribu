@@ -171,139 +171,102 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (2, 17)),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.tag(
-            abjad.Tag("+ARCH_A_PARTS_BCL"),
-            baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
-            deactivate=True,
-        ),
-        baca.tag(
-            abjad.Tag("-ARCH_A_PARTS_BCL"),
-            baca.markup(r"\ikribu-stonecircle-pi-two-markup"),
-        ),
-        library.box_adjustment(),
-        baca.dynamic(
+    with baca.scope(m.get(2, 17)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        wrapper = baca.markup_function(
+            o,
+            r"\ikribu-stonecircle-pi-two-markup",
+            tags=[abjad.Tag("+ARCH_A_PARTS_BCL")],
+        )
+        wrapper.deactivate = True
+        baca.markup_function(
+            o,
+            r"\ikribu-stonecircle-pi-two-markup",
+            tags=[abjad.Tag("-ARCH_A_PARTS_BCL")],
+        )
+        library.box_adjustment_function(o)
+        baca.dynamic_function(
+            o,
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-        ),
-    )
+        )
 
 
 def vn(m):
-    accumulator(
-        ("vn", 1),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.markup(r"\ikribu-grainfall-two-markup"),
-        library.box_adjustment(),
-        baca.staff_position(0),
-        baca.dynamic('"mf"'),
-    )
-    accumulator(
-        ("vn", (2, 16)),
-        baca.clef("treble"),
-        baca.staff_lines(5),
-        baca.markup(
-            r"\ikribu-trem-flaut-tast-markup",
-            selector=lambda _: baca.select.pleaf(_, 0, exclude=baca.enums.HIDDEN),
-        ),
-        baca.text_script_staff_padding(2.5, allow_mmrests=True),
-        baca.pitches(
-            "F#4 G#4 G#4 F#4",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.hairpin("pp < p"),
-            map=lambda _: abjad.select.get(
-                baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
-            ),
-        ),
-        baca.new(
-            baca.hairpin("p > pp"),
-            map=lambda _: abjad.select.get(
-                baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
-            ),
-        ),
-        baca.dls_staff_padding(3),
-    )
+    with baca.scope(m[1]) as o:
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.markup_function(o, r"\ikribu-grainfall-two-markup")
+        library.box_adjustment_function(o)
+        baca.staff_position_function(o, 0)
+        baca.dynamic_function(o, '"mf"')
+    with baca.scope(m.get(2, 16)) as o:
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
+        baca.pitches_function(o, "F#4 G#4 G#4 F#4")
+        baca.stem_tremolo_function(o.pleaves())
+        runs = baca.select.runs(o)
+        for i, run in enumerate(runs):
+            baca.glissando_function(run)
+            if i % 2 == 0:
+                baca.hairpin_function(run, "pp < p")
+            else:
+                baca.hairpin_function(run, "p > pp")
+        baca.dls_staff_padding_function(o, 3)
 
 
 def va(m):
-    accumulator(
-        ("va", (2, 16)),
-        baca.markup(r"\ikribu-trem-flaut-tast-markup"),
-        baca.text_script_staff_padding(2.5, allow_mmrests=True),
-        baca.pitches(
-            "F4 E4 E4 F4",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.hairpin("pp < p"),
-            map=lambda _: abjad.select.get(
-                baca.select.runs(_, exclude=baca.enums.HIDDEN), [0], 2
-            ),
-        ),
-        baca.new(
-            baca.hairpin("p > pp"),
-            map=lambda _: abjad.select.get(
-                baca.select.runs(_, exclude=baca.enums.HIDDEN), [1], 2
-            ),
-        ),
-        baca.dls_staff_padding(3),
-    )
+    with baca.scope(m.get(2, 16)) as o:
+        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
+        baca.pitches_function(o, "F4 E4 E4 F4")
+        baca.stem_tremolo_function(o.pleaves())
+        runs = baca.select.runs(o)
+        for i, run in enumerate(runs):
+            baca.glissando_function(run)
+            if i % 2 == 0:
+                baca.hairpin_function(run, "pp < p")
+            else:
+                baca.hairpin_function(run, "p > pp")
+        baca.dls_staff_padding_function(o, 3)
 
 
 def vc(m):
-    accumulator(
-        ("vc", 1),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.pitch("F~5"),
-        baca.note_head_style_harmonic(),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(
+    with baca.scope(m[1]) as o:
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.pitch_function(o, "F~5")
+        baca.note_head_style_harmonic_function(o)
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.dynamic("sfz"),
-    )
-    accumulator(
-        ("vc", (2, 16)),
-        baca.text_spanner("trem. flaut. tasto. (arco) => trem. flaut. XP"),
-        baca.text_spanner_staff_padding(3.5),
-        baca.pitches(
+        )
+        baca.dynamic_function(o, "sfz")
+    with baca.scope(m.get(2, 16)) as o:
+        baca.text_spanner_function(o, "trem. flaut. tasto. (arco) => trem. flaut. XP")
+        baca.text_spanner_staff_padding_function(o, 3.5)
+        baca.pitches_function(
+            o,
             "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
             exact=True,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.glissando(),
-        baca.tuplet_bracket_down(),
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.stem_tremolo_function(o.pleaves())
+        baca.glissando_function(o)
+        baca.tuplet_bracket_down_function(o)
+        baca.dls_staff_padding_function(o, 7)
+    accumulator(
+        ("vc", (2, 16)),
         baca.hairpin(
             "ppp < pp >",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
+            pieces=lambda _: baca.select.cmgroups(_),
         ),
-        baca.dls_staff_padding(7),
     )
 
 

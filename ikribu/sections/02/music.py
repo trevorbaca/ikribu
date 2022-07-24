@@ -100,42 +100,31 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (1, 5)),
-        baca.pitch("D2"),
-        baca.hairpin(
-            "ppp < f",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "f >o niente",
-            selector=lambda _: baca.rleaves(_)[-4:],
-        ),
-    )
+    with baca.scope(m.get(1, 5)) as o:
+        baca.pitch_function(o, "D2")
+        baca.hairpin_function(o.leaves()[:2], "ppp < f")
+        baca.hairpin_function(o.rleaves()[-4:], "f >o niente")
 
 
 def vn(m):
-    accumulator(
-        "vn",
-        baca.clef("treble"),
-        baca.staff_lines(5),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
 
 
 def va(m):
-    accumulator(
-        ("va", (3, 6)),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
-        library.box_adjustment(),
-        baca.staff_position(0),
-        baca.dynamic(
+    with baca.scope(m.get(3, 6)) as o:
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
+        library.box_adjustment_function(o)
+        baca.staff_position_function(o, 0)
+        baca.dynamic_function(
+            o,
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-        ),
-    )
+        )
 
 
 def main():
@@ -170,7 +159,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

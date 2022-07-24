@@ -91,90 +91,89 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        "bcl",
-        baca.instrument(accumulator.instruments["BassClarinet"]),
-        baca.instrument_name(r"\ikribu-bass-clarinet-markup"),
-        library.short_instrument_name("B. cl."),
-        baca.clef("treble"),
-        baca.staff_lines(5),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["BassClarinet"], accumulator.manifests()
+        )
+        baca.instrument_name_function(o, r"\ikribu-bass-clarinet-markup")
+        library.short_instrument_name_function(o, "B. cl.", accumulator.manifests())
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
 
 
 def vn_rh(m):
-    accumulator(
-        "vn_rh",
-        baca.staff_lines(1),
-        baca.clef("percussion"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.staff_lines_function(o, 1)
+        baca.clef_function(o, "percussion")
 
 
 def vn(m):
-    accumulator(
-        ("vn", 1),
-        baca.instrument(accumulator.instruments["Violin"]),
-        baca.instrument_name(
-            r"\ikribu-violin-markup", context="StringInstrumentPianoStaff"
-        ),
-        library.short_instrument_name("Vn.", context="StringInstrumentPianoStaff"),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.markup(r"\ikribu-grainfall-one-markup"),
-        library.box_adjustment(),
-        baca.staff_position(0),
-        baca.dynamic('"mf"'),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["Violin"], accumulator.manifests()
+        )
+        baca.instrument_name_function(
+            o,
+            r"\ikribu-violin-markup",
+            context="StringInstrumentPianoStaff",
+        )
+        library.short_instrument_name_function(
+            o, "Vn.", context="StringInstrumentPianoStaff"
+        )
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.markup_function(o, r"\ikribu-grainfall-one-markup")
+        library.box_adjustment_function(o)
+        baca.staff_position_function(o, 0)
+        baca.dynamic_function(o, '"mf"')
 
 
 def va_rh(m):
-    accumulator(
-        "va_rh",
-        baca.staff_lines(1),
-        baca.clef("percussion"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.staff_lines_function(o, 1)
+        baca.clef_function(o, "percussion")
 
 
 def va(m):
-    accumulator(
-        "va",
-        baca.instrument(accumulator.instruments["Viola"]),
-        baca.instrument_name(
-            r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
-        ),
-        library.short_instrument_name("Va.", context="StringInstrumentPianoStaff"),
-        baca.clef("alto"),
-        baca.staff_lines(5),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["Viola"], accumulator.manifests()
+        )
+        baca.instrument_name_function(
+            o, r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
+        )
+        library.short_instrument_name_function(
+            o, "Va.", context="StringInstrumentPianoStaff"
+        )
+        baca.clef_function(o, "alto")
+        baca.staff_lines_function(o, 5)
 
 
 def vc_rh(m):
-    accumulator(
-        "vc_rh",
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
 
 
 def vc(m):
-    accumulator(
-        ("vc", 1),
-        baca.instrument(accumulator.instruments["Cello"]),
-        baca.instrument_name(
-            r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
-        ),
-        library.short_instrument_name("Vc.", context="StringInstrumentPianoStaff"),
-        baca.clef("treble"),
-        baca.staff_lines(5),
-        baca.markup(r"\markup pizz."),
-        baca.pitch("F~5"),
-        baca.note_head_style_harmonic(),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(
-            r"\baca-string-iii-markup",
-            direction=abjad.DOWN,
-        ),
-        baca.dynamic("sfz"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["Cello"], accumulator.manifests()
+        )
+        baca.instrument_name_function(
+            o, r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
+        )
+        library.short_instrument_name_function(
+            o, "Vc.", context="StringInstrumentPianoStaff"
+        )
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+        baca.markup_function(o, r"\markup pizz.")
+        baca.pitch_function(o, "F~5")
+        baca.note_head_style_harmonic_function(o)
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-string-iii-markup", direction=abjad.DOWN)
+        baca.dynamic_function(o, "sfz")
 
 
 def main():
@@ -211,7 +210,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),
