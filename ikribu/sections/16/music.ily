@@ -1449,7 +1449,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_AFTER:
@@ -1478,7 +1477,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1493,7 +1491,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1508,7 +1505,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1523,7 +1519,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1538,7 +1533,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1553,7 +1547,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1569,7 +1562,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1584,7 +1576,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1599,7 +1590,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1614,7 +1604,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1629,7 +1618,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1644,7 +1632,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1660,7 +1647,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1675,7 +1661,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1690,7 +1675,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1705,7 +1689,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1720,7 +1703,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1777,7 +1759,6 @@ number.16.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -1789,7 +1770,6 @@ number.16.BassClarinet.Music = {
     c1
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -2393,13 +2373,11 @@ number.16.Violin.Music = {
     % [Violin.Music measure 9]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 2.5
     <e' fs'!>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2416,7 +2394,6 @@ number.16.Violin.Music = {
       %! baca.dynamic()
     \ppppp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \ikribu-strings-two-plus-three-markup
     % SPANNER_STARTS:
@@ -2456,7 +2433,6 @@ number.16.Violin.Music = {
     <e' fs'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2474,7 +2450,6 @@ number.16.Violin.Music = {
     <e' fs'>2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2492,7 +2467,6 @@ number.16.Violin.Music = {
     <e' fs'>\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2510,7 +2484,6 @@ number.16.Violin.Music = {
     <e' fs'>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2528,7 +2501,6 @@ number.16.Violin.Music = {
     <e' fs'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2546,7 +2518,6 @@ number.16.Violin.Music = {
     <e' fs'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2564,7 +2535,6 @@ number.16.Violin.Music = {
     <e' fs'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2582,7 +2552,6 @@ number.16.Violin.Music = {
     <e' fs'>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2600,7 +2569,6 @@ number.16.Violin.Music = {
     <e' fs'>\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2618,7 +2586,6 @@ number.16.Violin.Music = {
     <e' fs'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2677,7 +2644,6 @@ number.16.Violin.Music = {
     <e' fs'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STOPS:
@@ -2689,8 +2655,7 @@ number.16.Violin.Music = {
       %! baca.make_repeat_tied_notes()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3293,13 +3258,11 @@ number.16.Viola.Music = {
     % [Viola.Music measure 9]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 2.5
     <ef'! f'>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3316,7 +3279,6 @@ number.16.Viola.Music = {
       %! baca.dynamic()
     \ppppp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \ikribu-strings-two-plus-three-markup
     % SPANNER_STARTS:
@@ -3356,7 +3318,6 @@ number.16.Viola.Music = {
     <ef' f'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3374,7 +3335,6 @@ number.16.Viola.Music = {
     <ef' f'>2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3392,7 +3352,6 @@ number.16.Viola.Music = {
     <ef' f'>\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3410,7 +3369,6 @@ number.16.Viola.Music = {
     <ef' f'>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3428,7 +3386,6 @@ number.16.Viola.Music = {
     <ef' f'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3446,7 +3403,6 @@ number.16.Viola.Music = {
     <ef' f'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3464,7 +3420,6 @@ number.16.Viola.Music = {
     <ef' f'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3482,7 +3437,6 @@ number.16.Viola.Music = {
     <ef' f'>1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3500,7 +3454,6 @@ number.16.Viola.Music = {
     <ef' f'>\breve
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -3518,7 +3471,6 @@ number.16.Viola.Music = {
     <ef' f'>2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3577,7 +3529,6 @@ number.16.Viola.Music = {
     <ef' f'>1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STOPS:
@@ -3589,8 +3540,7 @@ number.16.Viola.Music = {
       %! baca.make_repeat_tied_notes()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4155,14 +4105,12 @@ number.16.Cello.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.ottava_bassa()
     \ottava -1
-      %! baca.OverrideCommand._call(1)
-      %! baca.ottava_bracket_staff_padding()
+      %! baca.ottava_bracket_staff_padding_function(1)
     \override Staff.OttavaBracket.staff-padding = 10
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 2.5
       %! baca.make_repeat_tied_notes()
     bf,,,!2
@@ -4961,14 +4909,12 @@ number.16.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.ottava_bassa()
     \ottava 0
-      %! baca.OverrideCommand._call(2)
-      %! baca.ottava_bracket_staff_padding()
+      %! baca.ottava_bracket_staff_padding_function(2)
     \revert Staff.OttavaBracket.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:

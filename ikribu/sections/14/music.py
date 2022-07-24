@@ -260,218 +260,154 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        "bcl",
-        baca.pitch("B1"),
-    )
-    accumulator(
-        ("bcl", [(2, 4), (10, 12), (15, 17)]),
-        baca.hairpin(
-            "p < fff",
-            selector=lambda _: baca.select.leaves(_)[:2],
-        ),
-        baca.hairpin(
-            "fff >o niente",
-            selector=lambda _: baca.rleaves(_)[-2:],
-        ),
-    )
-    accumulator(
-        ("bcl", (23, 31)),
-        baca.hairpin(
-            "ppp < fff",
-            selector=lambda _: baca.select.leaves(_)[:-1],
-        ),
-    )
-    accumulator(
-        ("bcl", [7, 20]),
-        baca.dynamic("p"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.pitch_function(o, "B1")
+    for pair in [(2, 4), (10, 12), (15, 17)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.hairpin_function(o.leaves()[:2], "p < fff")
+            baca.hairpin_function(o.rleaves()[-2:], "fff >o niente")
+    with baca.scope(m.get(23, 31)) as o:
+        baca.hairpin_function(o.leaves()[:-1], "ppp < fff")
+
+    for n in [7, 20]:
+        baca.dynamic_function(m[n], "p")
 
 
 def vn_va(cache):
-    accumulator(
-        [
-            "vn",
-            "va",
-        ],
-        baca.dls_staff_padding(8),
-        baca.tuplet_bracket_staff_padding(3),
-        library.box_adjustment(),
-    )
-    accumulator(
-        [
-            ("vn", (1, 27)),
-            ("va", (1, 27)),
-        ],
-        baca.staff_position(0),
-    )
-    accumulator(
-        (
-            ["vn", "va"],
-            [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)],
-        ),
-        baca.accent(
-            selector=lambda _: abjad.select.get(
-                baca.select.pheads(_),
-                ~abjad.Pattern([0], period=2),
-            ),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: abjad.select.get(baca.select.pheads(_), [0], 2),
-        ),
-    )
+    for name in ["vn", "va"]:
+        m = cache[name]
+        with baca.scope(m.leaves()) as o:
+            baca.dls_staff_padding_function(o, 8)
+            baca.tuplet_bracket_staff_padding_function(o, 3)
+            library.box_adjustment_function(o)
+        with baca.scope(m.get(1, 27)) as o:
+            baca.staff_position_function(o, 0)
+        for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
+            with baca.scope(m.get(item)) as o:
+                baca.accent_function(
+                    abjad.select.get(o.pheads(), ~abjad.Pattern([0], period=2))
+                )
+                baca.stem_tremolo_function(
+                    abjad.select.get(o.pheads(), [0], 2),
+                )
 
 
 def vn(m):
-    accumulator(
-        ("vn", 1),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-three-markup"),
-    )
-    accumulator(
-        ("vn", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-        baca.markup(r"\ikribu-sponges-on-bd-markup"),
-    )
-    accumulator(
-        ("vn", 6),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-four-markup"),
-    )
-    accumulator(
-        ("vn", 9),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-five-markup"),
-    )
-    accumulator(
-        ("vn", 14),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-six-markup"),
-    )
-    accumulator(
-        ("vn", 19),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-seven-markup"),
-    )
-    accumulator(
-        ("vn", 22),
-        baca.dynamic('"f"'),
-        baca.markup(r"\ikribu-grainfall-eight-markup"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-three-markup")
+    for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
+        baca.markup_function(m.get(item), r"\ikribu-sponges-on-bd-markup")
+    with baca.scope(m[6]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-four-markup")
+    with baca.scope(m[9]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-five-markup")
+    with baca.scope(m[14]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-six-markup")
+    with baca.scope(m[19]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-seven-markup")
+    with baca.scope(m[22]) as o:
+        baca.dynamic_function(o, '"f"')
+        baca.markup_function(o, r"\ikribu-grainfall-eight-markup")
 
 
 def vc(m):
-    accumulator(
-        ("vc", [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]),
-        baca.clef("bass"),
-        baca.ottava_bassa(),
-        baca.pitch("C1"),
-    )
-    accumulator(
-        ("vc", [(2, 4), (10, 12), (15, 17), (23, 27)]),
-        baca.text_spanner("tasto => XP"),
-    )
-    accumulator(
-        ("vc", 1),
-        baca.staff_lines(5),
-        baca.clef("treble"),
-        baca.dynamic("sfz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+    for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
+        with baca.scope(m.get(item)) as o:
+            baca.clef_function(o, "bass")
+            baca.ottava_bassa_function(o)
+            baca.pitch_function(o, "C1")
+    for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
+        with baca.scope(m.get(pair)) as o:
+            baca.text_spanner_function(o, "tasto => XP")
+    with baca.scope(m[1]) as o:
+        baca.staff_lines_function(o, 5)
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sfz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("F~5"),
-    )
-    accumulator(
-        ("vc", 6),
-        baca.clef("treble"),
-        baca.dynamic("sfz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "F~5")
+    with baca.scope(m[6]) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sfz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("G5"),
-    )
-    accumulator(
-        ("vc", [7, 20]),
-        baca.markup(r"\baca-xp-markup"),
-    )
-    accumulator(
-        ("vc", 9),
-        baca.clef("treble"),
-        baca.dynamic("sffz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "G5")
+    for n in [7, 20]:
+        baca.markup_function(m[n], r"\baca-xp-markup")
+    with baca.scope(m[9]) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sffz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("F~5"),
-    )
-    accumulator(
-        ("vc", 14),
-        baca.clef("treble"),
-        baca.dynamic("sffz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "F~5")
+    with baca.scope(m[14]) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sffz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("G5"),
-    )
-    accumulator(
-        ("vc", 19),
-        baca.clef("treble"),
-        baca.dynamic("sfffz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "G5")
+    with baca.scope(m[19]) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sfffz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("A5"),
-    )
-    accumulator(
-        ("vc", 22),
-        baca.clef("treble"),
-        baca.dynamic("sfffz"),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.markup(
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "A5")
+    with baca.scope(m[22]) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "sfffz")
+        baca.laissez_vibrer_function(o.ptails())
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitch("C+6"),
-    )
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitch_function(o, "C+6")
 
 
 def strings(cache):
-    accumulator(
-        (
-            ["vn", "va", "vc"],
-            [(2, 4), (10, 12), (15, 17), (23, 27)],
-        ),
-        baca.hairpin("mf < fff"),
-    )
-    accumulator(
-        [
-            ("vn", 7),
-            ("vn", 20),
-            ("vc", 7),
-            ("vc", 20),
-        ],
-        baca.dynamic("fff"),
-    )
+    for name in ["vn", "va", "vc"]:
+        for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
+            baca.hairpin_function(cache[name].get(pair), "mf < fff")
+        if name in ("vn", "vc"):
+            baca.dynamic_function(cache[name][7], "fff")
+            baca.dynamic_function(cache[name][20], "fff")
 
 
 def main():
@@ -506,7 +442,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

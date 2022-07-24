@@ -149,110 +149,54 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (1, 4)),
-        baca.pitch("Bb4"),
-    )
-    accumulator(
-        ("bcl", (5, 6)),
-        baca.suite(
-            baca.pitches(
-                "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
-                exact=True,
-            ),
-            baca.repeat_tie(lambda _: abjad.select.leaf(_, 0)),
-            baca.glissando(),
+    with baca.scope(m.get(1, 4)) as o:
+        baca.pitch_function(o, "Bb4")
+    with baca.scope(m.get(5, 6)) as o:
+        baca.pitches_function(
+            o,
+            "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
+            exact=True,
         ),
-    )
-    accumulator(
-        ("bcl", 7),
-        baca.suite(
-            baca.pitch("B1"),
-            baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
-        ),
-    )
-    accumulator(
-        ("bcl", (1, 7)),
-        baca.hairpin(
-            "pp < mf",
-            selector=lambda _: baca.select.leaves(_)[:4],
-        ),
-        baca.hairpin(
-            "mf >o niente",
-            selector=lambda _: baca.rleaves(_)[4:],
-        ),
-    )
-    accumulator(
-        ("bcl", (5, 7)),
-        baca.dls_staff_padding(9),
-    )
+        baca.repeat_tie_function(o.leaf(0))
+        baca.glissando_function(o)
+    with baca.scope(m[7]) as o:
+        baca.pitch_function(o, "B1")
+        baca.repeat_tie_function(o.phead(0))
+    with baca.scope(m.get(1, 7)) as o:
+        baca.hairpin_function(o.leaves()[:4], "pp < mf")
+        baca.hairpin_function(o.rleaves()[4:], "mf >o niente")
+    with baca.scope(m.get(5, 7)) as o:
+        baca.dls_staff_padding_function(o, 9)
 
 
 def strings(cache):
-    accumulator(
-        ("vn", (1, 5)),
-        baca.suite(
-            library.glissando_pitches(octave=5, rotation=0),
-            baca.glissando(),
-        ),
-    )
-    accumulator(
-        ("vn_rh", (1, 5)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(4),
-        library.bcps(rotation=0),
-    )
-    accumulator(
-        ("va_rh", (1, 5)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(4),
-        library.bcps(rotation=-1),
-    )
-    accumulator(
-        ("va", (1, 5)),
-        baca.suite(
-            library.glissando_pitches(octave=5, rotation=-10),
-            baca.glissando(),
-        ),
-    )
-    accumulator(
-        ("vc_rh", (1, 5)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(4),
-        library.bcps(rotation=-2),
-    )
-    accumulator(
-        ("vc", (1, 5)),
-        baca.clef("tenor"),
-        baca.suite(
-            library.glissando_pitches(octave=4, rotation=-20),
-            baca.glissando(),
-        ),
-    )
-    accumulator(
-        [
-            ("vn_rh", (1, 5)),
-            ("va_rh", (1, 5)),
-            ("vc_rh", (1, 5)),
-        ],
-        baca.dls_staff_padding(9),
-        baca.markup(r"\baca-half-clt-markup"),
-        baca.hairpin(
-            "p > pp < p > ppp < pp > ppp <",
-            bookend=True,
-            pieces=library.enchain_runs([3, 4]),
-        ),
-        baca.staff_position(0),
-    )
+    for name, octave, rotation in (
+        ("vn", 5, 0),
+        ("va", 5, -10),
+        ("vc", 4, -20),
+    ):
+        with baca.scope(cache[name].get(1, 5)) as o:
+            library.glissando_pitches_function(o, octave=octave, rotation=rotation)
+            baca.glissando_function(o)
+    baca.clef_function(cache["vc"][1], "tenor")
+    for name, rotation in (
+        ("vn_rh", 0),
+        ("va_rh", -1),
+        ("vc_rh", -2),
+    ):
+        with baca.scope(cache[name].get(1, 5)) as o:
+            baca.script_staff_padding_function(o, 7)
+            baca.text_spanner_staff_padding_function(o, 4)
+            library.bcps_function(o, rotation=rotation)
+            baca.dls_staff_padding_function(o, 9)
+            baca.markup_function(o, r"\baca-half-clt-markup")
+            baca.hairpin_function(
+                o,
+                "p > pp < p > ppp < pp > ppp <",
+                bookend=True,
+                pieces=library.enchain_runs([3, 4]),
+            ),
+            baca.staff_position_function(o, 0)
 
 
 def main():
@@ -286,7 +230,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),
