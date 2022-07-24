@@ -833,8 +833,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! EXPLICIT_BAR_EXTENT
       %! REAPPLIED_BAR_EXTENT
@@ -965,8 +964,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -987,8 +985,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 3]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! baca.make_tied_repeated_durations()
     af!1.
@@ -1052,8 +1049,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1074,8 +1070,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 5]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! baca.make_tied_repeated_durations()
     g1.
@@ -1139,8 +1134,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1161,8 +1155,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 7]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! baca.make_tied_repeated_durations()
     fs!1.
@@ -1226,8 +1219,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1248,8 +1240,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 9]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! baca.make_tied_repeated_durations()
     f1.
@@ -1313,8 +1304,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1335,8 +1325,7 @@ number.8.BassClarinet.Music = {
     % [BassClarinet.Music measure 11]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
       %! baca.make_tied_repeated_durations()
     e1.
@@ -1400,8 +1389,7 @@ number.8.BassClarinet.Music = {
       %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2627,11 +2615,9 @@ number.8.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \override NoteHead.style = #'harmonic
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -2639,8 +2625,7 @@ number.8.Cello.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_down()
+      %! baca.tuplet_bracket_down_function(1)
     \override TupletBracket.direction = #down
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-vc-markup
@@ -2688,7 +2673,6 @@ number.8.Cello.Music = {
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2710,7 +2694,6 @@ number.8.Cello.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-string-iii-markup
     % SPANNER_STARTS:
@@ -2758,7 +2741,6 @@ number.8.Cello.Music = {
         fqf''!4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2805,7 +2787,6 @@ number.8.Cello.Music = {
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2854,7 +2835,6 @@ number.8.Cello.Music = {
         b'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2901,7 +2881,6 @@ number.8.Cello.Music = {
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2950,7 +2929,6 @@ number.8.Cello.Music = {
         b'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2997,7 +2975,6 @@ number.8.Cello.Music = {
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3046,7 +3023,6 @@ number.8.Cello.Music = {
         b'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -3093,7 +3069,6 @@ number.8.Cello.Music = {
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3142,7 +3117,6 @@ number.8.Cello.Music = {
         d'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -3189,7 +3163,6 @@ number.8.Cello.Music = {
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -3208,14 +3181,11 @@ number.8.Cello.Music = {
       %! baca.hairpin()
     \ppp
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(2)
     \revert NoteHead.style
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_down()
+      %! baca.tuplet_bracket_down_function(2)
     \revert TupletBracket.direction
     % ABSOLUTE_BEFORE:
     % COMMANDS:

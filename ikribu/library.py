@@ -24,6 +24,18 @@ def bcps(rotation=0):
     return baca.bcps(bcps)
 
 
+def bcps_function(argument, rotation=0):
+    bcps = [
+        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
+        [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
+        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7), (7, 7)],
+        [(0, 4), (1, 4), (2, 4), (1, 4)],
+    ]
+    bcps = abjad.sequence.rotate(bcps, n=rotation)
+    bcps = abjad.sequence.flatten(bcps, depth=1)
+    return baca.bcps_function(argument, bcps)
+
+
 def box_adjustment():
     return baca.suite(
         baca.text_script_padding(2.5, allow_mmrests=True),
@@ -69,6 +81,19 @@ def glissando_pitches(octave=4, rotation=0):
     pitches_ = pitches[:]
     pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
     return baca.pitches(pitches_, allow_repeats=True)
+
+
+def glissando_pitches_function(argument, octave=4, rotation=0):
+    segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
+    inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
+    left = segment[:] + inversion[:]
+    right = list(reversed(left))
+    pitches = left[:] + right[1:-1]
+    transposition = 12 * (octave - 4)
+    pitches = [_ + transposition for _ in pitches]
+    pitches_ = pitches[:]
+    pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
+    return baca.pitches_function(argument, pitches_, allow_repeats=True)
 
 
 def instruments():

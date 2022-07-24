@@ -110,66 +110,47 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", [1, 3, 5, 7, 9, 11]),
-        baca.dls_staff_padding(7),
-    )
-    accumulator(
-        ("bcl", 1),
-        baca.hairpin("ppp < mp"),
-        baca.pitch("G2"),
-    )
-    accumulator(
-        ("bcl", 3),
-        baca.hairpin("pp < mf"),
-        baca.pitch("Gb2"),
-    )
-    accumulator(
-        ("bcl", 5),
-        baca.hairpin("p < f"),
-        baca.pitch("F2"),
-    )
-    accumulator(
-        ("bcl", 7),
-        baca.hairpin("mf < ff"),
-        baca.pitch("E2"),
-    )
-    accumulator(
-        ("bcl", 9),
-        baca.hairpin("f < fff"),
-        baca.pitch("Eb2"),
-    )
-    accumulator(
-        ("bcl", 11),
-        baca.hairpin("ff < ffff"),
-        baca.pitch("D2"),
-    )
+    for n in [1, 3, 5, 7, 9, 11]:
+        baca.dls_staff_padding_function(m[n], 7)
+    with baca.scope(m[1]) as o:
+        baca.hairpin_function(o, "ppp < mp")
+        baca.pitch_function(o, "G2")
+    with baca.scope(m[3]) as o:
+        baca.hairpin_function(o, "pp < mf")
+        baca.pitch_function(o, "Gb2")
+    with baca.scope(m[5]) as o:
+        baca.hairpin_function(o, "p < f")
+        baca.pitch_function(o, "F2")
+    with baca.scope(m[7]) as o:
+        baca.hairpin_function(o, "mf < ff")
+        baca.pitch_function(o, "E2")
+    with baca.scope(m[9]) as o:
+        baca.hairpin_function(o, "f < fff")
+        baca.pitch_function(o, "Eb2")
+    with baca.scope(m[11]) as o:
+        baca.hairpin_function(o, "ff < ffff")
+        baca.pitch_function(o, "D2")
 
 
 def vc(m):
-    accumulator(
-        ("vc", (1, 11)),
-        baca.dls_staff_padding(7),
-        baca.glissando(),
-        baca.hairpin(
+    with baca.scope(m.get(1, 11)) as o:
+        baca.dls_staff_padding_function(o, 7)
+        baca.glissando_function(o)
+        baca.hairpin_function(
+            o.tleaves(),
             "ppp < pp >",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.markup(
+            pieces=lambda _: baca.select.cmgroups(_),
+        )
+        baca.markup_function(
+            o,
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.pitches("D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.tuplet_bracket_down(),
-    )
+        )
+        baca.note_head_style_harmonic_function(o)
+        baca.pitches_function(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.tuplet_bracket_down_function(o)
 
 
 def main():
@@ -199,7 +180,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,
