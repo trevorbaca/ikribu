@@ -139,153 +139,102 @@ def VC(voice):
     voice.extend(music)
 
 
-def bcl(m):
-    accumulator(
-        ("bcl", (1, 2)),
-        baca.pitch("<Bb1 D4>"),
-    )
-    accumulator(
-        ("bcl", (3, 6)),
-        baca.pitch("<Bb1 F4>"),
-    )
-    accumulator(
-        ("bcl", 7),
-        baca.pitch("<Bb1 D4>"),
-    )
-    accumulator(
-        ("bcl", 8),
-        baca.pitch("Bb1"),
-    )
-    accumulator(
-        ("bcl", 9),
-        baca.pitch("<Bb1 D4>"),
-    )
-    accumulator(
-        ("bcl", 10),
-        baca.pitch("<Bb1 F4>"),
-    )
-    accumulator(
-        ("bcl", (11, 12)),
-        baca.pitch("<Bb1 Ab~4>"),
-    )
-    accumulator(
-        ("bcl", 13),
-        baca.pitch("<Bb1 F4>"),
-    )
-    accumulator(
-        ("bcl", 14),
-        baca.pitch("Bb1"),
-    )
-    accumulator(
-        ("bcl", (15, 16)),
-        baca.pitch("<Bb1 D4>"),
-    )
-    accumulator(
-        ("bcl", 17),
-        baca.pitch("<Bb1 F4>"),
-    )
-    accumulator(
-        ("bcl", 18),
-        baca.pitch("<Bb1 D4>"),
-    )
-    accumulator(
-        ("bcl", (19, 20)),
-        baca.hairpin(
-            "p >o niente",
-            selector=lambda _: baca.rleaves(_)[-3:],
-        ),
-        baca.pitch("Bb1"),
-    )
-    accumulator(
-        ("bcl", (1, 21)),
-        baca.suite(
-            baca.untie(lambda _: baca.select.leaves(_)),
-            baca.repeat_tie(
-                lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN)
-            ),
-        ),
-    )
+def bcl(cache):
+    m = cache["bcl"]
+    with baca.scope(m.get(1, 2)) as o:
+        baca.pitch_function(o, "<Bb1 D4>")
+    with baca.scope(m.get(3, 6)) as o:
+        baca.pitch_function(o, "<Bb1 F4>")
+    with baca.scope(m[7]) as o:
+        baca.pitch_function(o, "<Bb1 D4>"),
+    with baca.scope(m[8]) as o:
+        baca.pitch_function(o, "Bb1")
+    with baca.scope(m[9]) as o:
+        baca.pitch_function(o, "<Bb1 D4>")
+    with baca.scope(m[10]) as o:
+        baca.pitch_function(o, "<Bb1 F4>")
+    with baca.scope(m.get(11, 12)) as o:
+        baca.pitch_function(o, "<Bb1 Ab~4>")
+    with baca.scope(m[13]) as o:
+        baca.pitch_function(o, "<Bb1 F4>")
+    with baca.scope(m[14]) as o:
+        baca.pitch_function(o, "Bb1")
+    with baca.scope(m.get(15, 16)) as o:
+        baca.pitch_function(o, "<Bb1 D4>")
+    with baca.scope(m[17]) as o:
+        baca.pitch_function(o, "<Bb1 F4>")
+    with baca.scope(m[18]) as o:
+        baca.pitch_function(o, "<Bb1 D4>")
+    cache.rebuild()
+    m = cache["bcl"]
+    with baca.scope(m.get(19, 20)) as o:
+        baca.hairpin_function(o.rleaves()[-3:], "p >o niente")
+        baca.pitch_function(o, "Bb1")
+    with baca.scope(m.get(1, 21)) as o:
+        baca.untie_function(o.leaves())
+        baca.repeat_tie_function(o.pleaves())
 
 
-def vn(m):
-    accumulator(
-        ("vn", (9, 20)),
-        baca.dynamic("ppppp"),
-        baca.hairpin(
-            "ppppp >o niente",
-            selector=lambda _: baca.rleaves(_)[-3:],
-        ),
-        baca.markup(
+def vn(cache):
+    m = cache["vn"]
+    with baca.scope(m.get(9, 20)) as o:
+        baca.pitch_function(o, "<E4 F#4>")
+        cache.rebuild()
+        m = cache["vn"]
+    with baca.scope(m.get(9, 20)) as o:
+        baca.dynamic_function(o, "ppppp")
+        baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
+        baca.markup_function(
+            o,
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
-        ),
-        baca.pitch("<E4 F#4>"),
-        baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.text_spanner_staff_padding(2.5),
-    )
+        )
+        baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. nut")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_spanner_staff_padding_function(o, 2.5)
 
 
-def va(m):
-    accumulator(
-        ("va", (9, 20)),
-        baca.dynamic("ppppp"),
-        baca.hairpin(
-            "ppppp >o niente",
-            selector=lambda _: baca.rleaves(_)[-3:],
-        ),
-        baca.markup(
+def va(cache):
+    m = cache["va"]
+    with baca.scope(m.get(9, 20)) as o:
+        baca.pitch_function(o, "<Eb4 F4>")
+        cache.rebuild()
+        m = cache["va"]
+    with baca.scope(m.get(9, 20)) as o:
+        baca.dynamic_function(o, "ppppp")
+        baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
+        baca.markup_function(
+            o,
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
-        ),
-        baca.pitch("<Eb4 F4>"),
-        baca.text_spanner("trem. flaut. XP => trem. flaut. nut"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.text_spanner_staff_padding(2.5),
-    )
+        )
+        baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. nut")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_spanner_staff_padding_function(o, 2.5)
 
 
 def vc(m):
-    accumulator(
-        ("vc", (5, 20)),
-        baca.new(
-            baca.clef("bass"),
-            measures=1,
-        ),
-        baca.ottava_bassa(),
-        baca.hairpin(
+    baca.clef_function(m[1], "bass")
+    with baca.scope(m.get(5, 20)) as o:
+        baca.ottava_bassa_function(o)
+        baca.hairpin_function(
+            o.tleaves(),
             "mp > p <",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
+            pieces=lambda _: baca.select.cmgroups(_),
         ),
-        baca.pitch("Bb0"),
-        baca.text_spanner_staff_padding(2.5),
-    )
-    accumulator(
-        ("vc", (5, 8)),
-        baca.text_spanner("tasto poss. => pos. ord."),
-    )
-    accumulator(
-        ("vc", (9, 12)),
-        baca.text_spanner("pos. ord. => XP"),
-    )
-    accumulator(
-        ("vc", (13, 16)),
-        baca.text_spanner("XP => pos. ord."),
-    )
-    accumulator(
-        ("vc", (17, 20)),
-        baca.text_spanner("pos. ord. => tasto poss."),
-    )
-    accumulator(
-        ("vc", (5, 20)),
-        baca.ottava_bracket_staff_padding(10),
-    )
+        baca.pitch_function(o, "Bb0")
+        baca.text_spanner_staff_padding_function(o, 2.5)
+    with baca.scope(m.get(5, 8)) as o:
+        baca.text_spanner_function(o, "tasto poss. => pos. ord.")
+    with baca.scope(m.get(9, 12)) as o:
+        baca.text_spanner_function(o, "pos. ord. => XP")
+    with baca.scope(m.get(13, 16)) as o:
+        baca.text_spanner_function(o, "XP => pos. ord.")
+    with baca.scope(m.get(17, 20)) as o:
+        baca.text_spanner_function(o, "pos. ord. => tasto poss.")
+    with baca.scope(m.get(5, 20)) as o:
+        baca.ottava_bracket_staff_padding_function(o, 10)
 
 
 def main():
@@ -301,9 +250,9 @@ def main():
         len(accumulator.time_signatures),
         accumulator.voice_abbreviations,
     )
-    bcl(cache["bcl"])
-    vn(cache["vn"])
-    va(cache["va"])
+    bcl(cache)
+    vn(cache)
+    va(cache)
     vc(cache["vc"])
 
 
@@ -319,7 +268,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

@@ -109,137 +109,91 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (1, 28)),
-        baca.clef("treble"),
-        baca.dynamic("ppp"),
-        baca.markup(r"\ikribu-breathe-discreetly-markup"),
-        baca.pitch("C2"),
-        baca.staff_lines(5),
-    )
+    with baca.scope(m.get(1, 28)) as o:
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "ppp")
+        baca.markup_function(o, r"\ikribu-breathe-discreetly-markup")
+        baca.pitch_function(o, "C2")
+        baca.staff_lines_function(o, 5)
 
 
 def vn(m):
-    accumulator(
-        ("vn", (1, 16)),
-        baca.staccato(selector=lambda _: baca.select.pheads(_)),
-        library.clb_staff_positions(rotation=-1),
-    )
-    accumulator(
-        ("vn", (21, 32)),
-        baca.accent(
-            selector=lambda _: abjad.select.get(
-                baca.select.pheads(_),
-                ~abjad.Pattern([0, 4], period=9),
-            ),
-        ),
-        baca.dls_staff_padding(8),
-        baca.markup(r"\ikribu-sponges-on-bd-markup"),
-        baca.hairpin(
+    with baca.scope(m.get(1, 16)) as o:
+        baca.staccato_function(o.pheads())
+        library.clb_staff_positions_function(o, rotation=-1)
+    with baca.scope(m.get(21, 32)) as o:
+        baca.accent_function(
+            abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
+        )
+        baca.dls_staff_padding_function(o, 8)
+        baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+        baca.hairpin_function(
+            o,
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 4], 9),
-        ),
-        baca.staff_position(0),
-        baca.tuplet_bracket_staff_padding(3),
-        library.box_adjustment(),
-    )
-    accumulator(
-        ("vn", (13, 16)),
-        baca.dls_staff_padding(8),
-        baca.hairpin(
-            '"mp" >o niente',
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.hairpin_start_shift('"mp"'),
-    )
+            pieces=lambda _: baca.select.cmgroups(_),
+        )
+        baca.stem_tremolo_function(
+            abjad.select.get(o.pheads(), [0, 4], 9),
+        )
+        baca.staff_position_function(o, 0)
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+        library.box_adjustment_function(o)
+    with baca.scope(m.get(13, 16)) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.hairpin_function(o.tleaves(), '"mp" >o niente')
+        baca.hairpin_start_shift_function(o, '"mp"')
 
 
 def va(m):
-    accumulator(
-        ("va", (1, 8)),
-        baca.staccato(selector=lambda _: baca.select.pheads(_)),
-        library.clb_staff_positions(rotation=-1),
-    )
-    accumulator(
-        ("va", (5, 8)),
-        baca.dls_staff_padding(8),
-        baca.hairpin(
-            '"mp" >o niente',
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.hairpin_start_shift('"mp"'),
-    )
-    accumulator(
-        ("va", (13, 32)),
-        baca.accent(
-            selector=lambda _: abjad.select.get(
-                baca.select.pheads(_),
-                ~abjad.Pattern([0, 5], period=11),
-            ),
-        ),
-        baca.dls_staff_padding(8),
-        baca.markup(r"\ikribu-sponges-on-bd-markup"),
-        baca.hairpin(
+    with baca.scope(m.get(1, 8)) as o:
+        baca.staccato_function(o.pheads())
+        library.clb_staff_positions_function(o, rotation=-1)
+    with baca.scope(m.get(5, 8)) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.hairpin_function(o.tleaves(), '"mp" >o niente')
+        baca.hairpin_start_shift_function(o, '"mp"')
+    with baca.scope(m.get(13, 32)) as o:
+        baca.accent_function(
+            abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11))
+        )
+        baca.dls_staff_padding_function(o, 8)
+        baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+        baca.hairpin_function(
+            o,
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
             " f > mf < f > mf < ff > f < ff > f < fff",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-        ),
-        baca.staff_position(0),
-        baca.stem_tremolo(
-            selector=lambda _: abjad.select.get(baca.select.pheads(_), [0, 5], 11),
-        ),
-        baca.tuplet_bracket_staff_padding(3),
-        library.box_adjustment(),
-    )
+            pieces=lambda _: baca.select.cmgroups(_),
+        )
+        baca.staff_position_function(o, 0)
+        baca.stem_tremolo_function(
+            abjad.select.get(o.pheads(), [0, 5], 11),
+        )
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+        library.box_adjustment_function(o)
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.hairpin(
+    with baca.scope(m.leaves()) as o:
+        baca.hairpin_function(
+            o.tleaves(),
             "p < f >",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-            selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.staff_position(0),
-        library.box_adjustment(),
-    )
-    accumulator(
-        ("vc", 5),
-        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-    )
-    accumulator(
-        ("vc", 9),
-        baca.markup(r"\ikribu-graincircle-pi-four-markup"),
-    )
-    accumulator(
-        ("vc", 13),
-        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-    )
-    accumulator(
-        ("vc", 17),
-        baca.markup(r"\ikribu-graincircle-pi-two-markup"),
-    )
-    accumulator(
-        ("vc", 21),
-        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-    )
+            pieces=lambda _: baca.select.cmgroups(_),
+        )
+        baca.staff_position_function(o, 0)
+        library.box_adjustment_function(o)
+    with baca.scope(m[5]) as o:
+        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+    with baca.scope(m[9]) as o:
+        baca.markup_function(o, r"\ikribu-graincircle-pi-four-markup")
+    with baca.scope(m[13]) as o:
+        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+    with baca.scope(m[17]) as o:
+        baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
+    with baca.scope(m[21]) as o:
+        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
 
 
 def main():
@@ -273,7 +227,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

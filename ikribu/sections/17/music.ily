@@ -760,8 +760,7 @@ number.17.BassClarinet.Music = {
     % [BassClarinet.Music measure 5]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 9
       %! baca.make_repeated_duration_notes()
     c'''4
@@ -811,7 +810,6 @@ number.17.BassClarinet.Music = {
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % ABSOLUTE_BEFORE:
@@ -966,12 +964,10 @@ number.17.BassClarinet.Music = {
     cs2.
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.IndicatorCommand._call()
       %! baca.repeat_tie()
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1060,19 +1056,16 @@ number.17.ViolinRH.Music = {
         % [ViolinRH.Music measure 1]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 9
-          %! baca.OverrideCommand._call(1)
-          %! baca.script_staff_padding()
+          %! baca.script_staff_padding_function(1)
         \override Script.staff-padding = 7
           %! EXPLICIT_BAR_EXTENT
           %! baca._reanalyze_reapplied_synthetic_wrappers()
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
-          %! baca.OverrideCommand._call(1)
-          %! baca.text_spanner_staff_padding()
+          %! baca.text_spanner_staff_padding_function(1)
         \override TextSpanner.staff-padding = 4
           %! EXPLICIT_STAFF_LINES
           %! baca._reanalyze_reapplied_synthetic_wrappers()
@@ -1153,7 +1146,6 @@ number.17.ViolinRH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-half-clt-markup
         % SPANNER_STARTS:
@@ -2100,14 +2092,11 @@ number.17.ViolinRH.Music = {
           %! baca.bcps(1)
         \bacaStopTextSpanBCP
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.script_staff_padding()
+          %! baca.script_staff_padding_function(2)
         \revert Script.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.text_spanner_staff_padding()
+          %! baca.text_spanner_staff_padding_function(2)
         \revert TextSpanner.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -2658,19 +2647,16 @@ number.17.ViolaRH.Music = {
     % [ViolaRH.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 9
-      %! baca.OverrideCommand._call(1)
-      %! baca.script_staff_padding()
+      %! baca.script_staff_padding_function(1)
     \override Script.staff-padding = 7
       %! EXPLICIT_BAR_EXTENT
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(1)
     \override TextSpanner.staff-padding = 4
       %! EXPLICIT_STAFF_LINES
       %! baca._reanalyze_reapplied_synthetic_wrappers()
@@ -2729,7 +2715,6 @@ number.17.ViolaRH.Music = {
       %! baca.bcps(5)
     - \upbow
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-half-clt-markup
     % SPANNER_STARTS:
@@ -3783,14 +3768,11 @@ number.17.ViolaRH.Music = {
       %! baca.bcps(1)
     \bacaStopTextSpanBCP
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.script_staff_padding()
+      %! baca.script_staff_padding_function(2)
     \revert Script.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_spanner_staff_padding()
+      %! baca.text_spanner_staff_padding_function(2)
     \revert TextSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4277,19 +4259,16 @@ number.17.CelloRH.Music = {
         % [CelloRH.Music measure 1]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 9
-          %! baca.OverrideCommand._call(1)
-          %! baca.script_staff_padding()
+          %! baca.script_staff_padding_function(1)
         \override Script.staff-padding = 7
           %! EXPLICIT_BAR_EXTENT
           %! baca._reanalyze_reapplied_synthetic_wrappers()
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
         \override Staff.BarLine.bar-extent = #'(-2 . 0)
-          %! baca.OverrideCommand._call(1)
-          %! baca.text_spanner_staff_padding()
+          %! baca.text_spanner_staff_padding_function(1)
         \override TextSpanner.staff-padding = 4
           %! EXPLICIT_STAFF_LINES
           %! baca._reanalyze_reapplied_synthetic_wrappers()
@@ -4370,7 +4349,6 @@ number.17.CelloRH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-half-clt-markup
         % SPANNER_STARTS:
@@ -5306,14 +5284,11 @@ number.17.CelloRH.Music = {
           %! baca.bcps(1)
         \bacaStopTextSpanBCP
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.script_staff_padding()
+          %! baca.script_staff_padding_function(2)
         \revert Script.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.text_spanner_staff_padding()
+          %! baca.text_spanner_staff_padding_function(2)
         \revert TextSpanner.staff-padding
         % CLOSING:
         % COMMANDS:

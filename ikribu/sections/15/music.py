@@ -120,110 +120,72 @@ def VC(voice):
     voice.extend(music)
 
 
-def bcl(m):
-    accumulator(
-        ("bcl", (1, 5)),
-        baca.tag(
-            abjad.Tag("+ARCH_A_PARTS_BCL"),
-            baca.text_script_extra_offset((0, 7)),
-            deactivate=True,
-        ),
-        baca.dynamic("p"),
-        baca.markup(r"\ikribu-introduce-upper-partials-gradually-markup"),
-        baca.pitch("Bb1"),
-    )
-    accumulator(
-        ("bcl", (6, 10)),
-        baca.pitch("<Bb1 D4>"),
-        baca.repeat_tie(lambda _: baca.select.phead(_, 0)),
-    )
+def bcl(cache):
+    m = cache["bcl"]
+    with baca.scope(m.get(1, 5)) as o:
+        wrapper_1, wrapper_2 = baca.text_script_extra_offset_function(
+            o,
+            (0, 7),
+            tags=[abjad.Tag("+ARCH_A_PARTS_BCL")],
+        )
+        wrapper_1.deactivate = True
+        wrapper_2.deactivate = True
+        baca.dynamic_function(o, "p")
+        baca.markup_function(o, r"\ikribu-introduce-upper-partials-gradually-markup")
+        baca.pitch_function(o, "Bb1")
+    with baca.scope(m.get(6, 10)) as o:
+        baca.pitch_function(o, "<Bb1 D4>")
+        cache.rebuild()
+        m = cache["bcl"]
+    with baca.scope(m.get(6, 10)) as o:
+        baca.repeat_tie_function(o.phead(0))
 
 
 def all_rh(cache):
-    accumulator(
-        [
-            ("vn_rh", (1, 10)),
-            ("va_rh", (1, 10)),
-            ("vc_rh", (1, 10)),
-        ],
-        baca.markup(r"\baca-half-clt-markup"),
-        baca.hairpin(
-            "ff > p < f > pp < p > ppp <",
-            bookend=True,
-            pieces=library.enchain_runs([3, 4]),
-        ),
-        baca.staff_position(0),
-    )
-    accumulator(
-        ("vn_rh", (1, 10)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(3.5),
-        library.bcps(rotation=0),
-    )
-    accumulator(
-        ("va_rh", (1, 10)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(3.5),
-        library.bcps(rotation=-1),
-    )
-    accumulator(
-        ("vc_rh", (1, 10)),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_spanner_staff_padding(3.5),
-        library.bcps(rotation=-2),
-    )
-    accumulator(
-        [
-            "vn_rh",
-            "va_rh",
-            "vc_rh",
-        ],
-        baca.dls_staff_padding(9),
-    )
+    for name in ["vn_rh", "va_rh", "vc_rh"]:
+        with baca.scope(cache[name].get(1, 10)) as o:
+            baca.markup_function(o, r"\baca-half-clt-markup")
+            baca.hairpin_function(
+                o,
+                "ff > p < f > pp < p > ppp <",
+                bookend=True,
+                pieces=library.enchain_runs([3, 4]),
+            ),
+            baca.staff_position_function(o, 0)
+            baca.script_staff_padding_function(o, 7)
+            baca.text_spanner_staff_padding_function(o, 3.5)
+            if name == "vn_rh":
+                rotation = 0
+            elif name == "va_rh":
+                rotation = -1
+            elif name == "vc_rh":
+                rotation = -2
+            library.bcps_function(o, rotation=rotation)
+        with baca.scope(cache[name].leaves()) as o:
+            baca.dls_staff_padding_function(o, 9)
 
 
 def vn(m):
-    accumulator(
-        ("vn", (1, 10)),
-        baca.clef("treble"),
-        baca.staff_lines(5),
-        baca.suite(
-            library.glissando_pitches(octave=5, rotation=0),
-            baca.glissando(),
-        ),
-    )
+    with baca.scope(m.get(1, 10)) as o:
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+        library.glissando_pitches_function(o, octave=5, rotation=0)
+        baca.glissando_function(o)
 
 
 def va(m):
-    accumulator(
-        ("va", (1, 10)),
-        baca.staff_lines(5),
-        baca.clef("treble"),
-        baca.suite(
-            library.glissando_pitches(octave=5, rotation=-10),
-            baca.glissando(),
-        ),
-    )
+    with baca.scope(m.get(1, 10)) as o:
+        baca.staff_lines_function(o, 5)
+        baca.clef_function(o, "treble")
+        library.glissando_pitches_function(o, octave=5, rotation=-10)
+        baca.glissando_function(o)
 
 
 def vc(m):
-    accumulator(
-        ("vc", (1, 10)),
-        baca.clef("tenor"),
-        baca.suite(
-            library.glissando_pitches(octave=4, rotation=-20),
-            baca.glissando(),
-        ),
-    )
+    with baca.scope(m.get(1, 10)) as o:
+        baca.clef_function(o, "tenor")
+        library.glissando_pitches_function(o, octave=4, rotation=-20)
+        baca.glissando_function(o)
 
 
 def main():
@@ -241,7 +203,7 @@ def main():
         len(accumulator.time_signatures),
         accumulator.voice_abbreviations,
     )
-    bcl(cache["bcl"])
+    bcl(cache)
     all_rh(cache)
     vn(cache["vn"])
     va(cache["va"])
@@ -264,7 +226,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,

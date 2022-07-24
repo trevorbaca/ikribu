@@ -778,8 +778,7 @@ number.11.BassClarinet.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -787,11 +786,9 @@ number.11.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \ikribu-bcl-markup
@@ -860,7 +857,6 @@ number.11.BassClarinet.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-four-markup
     % SPANNER_STARTS:
@@ -1071,7 +1067,6 @@ number.11.BassClarinet.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-three-markup
     % SPANNER_STARTS:
@@ -1374,8 +1369,7 @@ number.11.BassClarinet.Music = {
       %! baca._style_fermata_measures(4)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
       %! +ARCH_A_PARTS_BCL
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_extra_offset()
+      %! baca.text_script_extra_offset_function(1)
 %%% \override TextScript.extra-offset = #'(0 . 8)
       %! baca._style_fermata_measures(3)
     \stopStaff
@@ -1410,7 +1404,6 @@ number.11.BassClarinet.Music = {
       %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -1455,8 +1448,7 @@ number.11.BassClarinet.Music = {
     \repeatTie
     % COMMANDS:
       %! +ARCH_A_PARTS_BCL
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_extra_offset()
+      %! baca.text_script_extra_offset_function(2)
 %%% \revert TextScript.extra-offset
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1482,14 +1474,11 @@ number.11.BassClarinet.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(2)
     \revert TextScript.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -1793,8 +1782,7 @@ number.11.Violin.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -1802,11 +1790,9 @@ number.11.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-vn-markup
@@ -1875,7 +1861,6 @@ number.11.Violin.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Violin”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -2194,7 +2179,6 @@ number.11.Violin.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-markup
     % SPANNER_STARTS:
@@ -2421,7 +2405,6 @@ number.11.Violin.Music = {
       %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -2488,14 +2471,11 @@ number.11.Violin.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(2)
     \revert TextScript.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -2799,8 +2779,7 @@ number.11.Viola.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -2808,11 +2787,9 @@ number.11.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(1)
     \override TextScript.padding = 2.5
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
@@ -2881,7 +2858,6 @@ number.11.Viola.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Viola”)"
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-three-markup
     % SPANNER_STARTS:
@@ -3092,7 +3068,6 @@ number.11.Viola.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-four-markup
     % SPANNER_STARTS:
@@ -3198,7 +3173,6 @@ number.11.Viola.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -3425,7 +3399,6 @@ number.11.Viola.Music = {
       %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
@@ -3492,14 +3465,11 @@ number.11.Viola.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_padding()
+      %! baca.text_script_padding_function(2)
     \revert TextScript.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -3911,11 +3881,10 @@ number.11.Cello.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.ottava_bassa()
     \ottava -1
-      %! baca.OverrideCommand._call(1)
-      %! baca.ottava_bracket_staff_padding()
+      %! baca.ottava_bracket_staff_padding_function(1)
     \override Staff.OttavaBracket.staff-padding = 8
       %! baca.make_repeat_tied_notes()
     d,,1
@@ -3934,7 +3903,6 @@ number.11.Cello.Music = {
       %! baca.dynamic()
     \p
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-poco-vib-markup
     % SPANNER_STARTS:
@@ -4068,11 +4036,10 @@ number.11.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.ottava_bassa()
     \ottava 0
-      %! baca.OverrideCommand._call(2)
-      %! baca.ottava_bracket_staff_padding()
+      %! baca.ottava_bracket_staff_padding_function(2)
     \revert Staff.OttavaBracket.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:

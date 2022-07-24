@@ -179,113 +179,91 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", 5),
-        baca.dynamic(
+    with baca.scope(m[5]) as o:
+        baca.dynamic_function(
+            o,
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-        ),
-    )
-    accumulator(
-        ("bcl", 9),
-        baca.dynamic(
+        )
+    with baca.scope(m[9]) as o:
+        baca.dynamic_function(
+            o,
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-        ),
-    )
-    accumulator(
-        ("bcl", 13),
-        baca.dynamic(
+        )
+    with baca.scope(m[13]) as o:
+        baca.dynamic_function(
+            o,
             '"p"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
-        ),
-    )
-    accumulator(
-        ("bcl", (1, 16)),
-        baca.dls_staff_padding(6),
-        baca.staff_position(0),
-    )
+        )
+    with baca.scope(m.get(1, 16)) as o:
+        baca.dls_staff_padding_function(o, 6)
+        baca.staff_position_function(o, 0)
 
 
 def vn(m):
-    accumulator(
-        ("vn", (1, 16)),
-        baca.dls_staff_padding(8),
-        baca.new(
-            baca.dynamic(
-                '"mp"',
-                abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
-                abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-            ),
-            baca.markup(r"\baca-col-legno-battuto-markup"),
-            selector=lambda _: baca.select.phead(_, 0, exclude=baca.enums.HIDDEN),
-        ),
-        baca.staccato(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.text_script_padding(2.5, allow_mmrests=True),
-        library.clb_staff_positions(),
-    )
-
-
-def va(m):
-    accumulator(
-        ("va", (1, 16)),
-        baca.dls_staff_padding(8),
-        baca.new(
-            baca.dynamic(
-                '"mp"',
-                abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
-                abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-            ),
-            baca.markup(r"\baca-col-legno-battuto-markup"),
-            selector=lambda _: baca.select.phead(_, 0, exclude=baca.enums.HIDDEN),
-        ),
-        baca.staccato(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.text_script_padding(2.5, allow_mmrests=True),
-        library.clb_staff_positions(),
-    )
-
-
-def vc(m):
-    accumulator(
-        ("vc", (1, 16)),
-        baca.staff_lines(1),
-        baca.markup(r"\ikribu-graincircle-pi-two-markup"),
-        baca.dls_staff_padding(6),
-        baca.staff_position(0),
-        library.box_adjustment(),
-        baca.dynamic('"p"'),
-    )
-    accumulator(
-        ("vc", 5),
-        baca.dynamic(
+    with baca.scope(m.get(1, 16)) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.dynamic_function(
+            o,
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
-    )
-    accumulator(
-        ("vc", 9),
-        baca.dynamic(
+        baca.markup_function(o, r"\baca-col-legno-battuto-markup")
+        baca.staccato_function(o.pheads())
+        baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
+        library.clb_staff_positions_function(o)
+
+
+def va(m):
+    with baca.scope(m.get(1, 16)) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.dynamic_function(
+            o,
+            '"mp"',
+            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
+        )
+        baca.markup_function(o, r"\baca-col-legno-battuto-markup")
+        baca.staccato_function(o.pheads())
+        baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
+        library.clb_staff_positions_function(o)
+
+
+def vc(m):
+    with baca.scope(m.get(1, 16)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
+        baca.dls_staff_padding_function(o, 6)
+        baca.staff_position_function(o, 0)
+        library.box_adjustment_function(o)
+        baca.dynamic_function(o, '"p"')
+    with baca.scope(m[5]) as o:
+        baca.dynamic_function(
+            o,
+            '"mp"',
+            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
+        )
+    with baca.scope(m[9]) as o:
+        baca.dynamic_function(
+            o,
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
-        ),
-    )
-    accumulator(
-        ("vc", 13),
-        baca.dynamic(
+        )
+    with baca.scope(m[13]) as o:
+        baca.dynamic_function(
+            o,
             '"f"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
-        ),
-    )
+        )
 
 
 def main():
@@ -319,7 +297,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

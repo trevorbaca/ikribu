@@ -100,62 +100,51 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (1, 11)),
-        baca.staff_lines(1),
-        baca.dynamic('"mf"'),
-        baca.markup(r"\ikribu-graincircle-pi-three-markup"),
-        baca.staff_position(0),
-        library.box_adjustment(),
-    )
+    with baca.scope(m.get(1, 11)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.dynamic_function(o, '"mf"')
+        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+        baca.staff_position_function(o, 0)
+        library.box_adjustment_function(o)
 
 
 def vn(m):
-    accumulator(
-        ("vn", (1, 9)),
-        baca.staff_lines(1),
-        baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
-        baca.dynamic('"mf"'),
-        baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
-        baca.staff_positions([-1, 0, 1]),
-        baca.text_script_padding(2.5),
-    )
+    with baca.scope(m.get(1, 9)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.double_staccato_function(o.pheads())
+        baca.dynamic_function(o, '"mf"')
+        baca.markup_function(
+            o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
+        )
+        baca.staff_positions_function(o, [-1, 0, 1])
+        baca.text_script_padding_function(o, 2.5)
 
 
 def va(m):
-    accumulator(
-        ("va", (1, 9)),
-        baca.staff_lines(1),
-        baca.double_staccato(selector=lambda _: baca.select.pheads(_)),
-        baca.dynamic('"mf"'),
-        baca.markup(r"\ikribu-col-legno-battuto-meccanico-explanation-markup"),
-        baca.staff_positions([0, -1, 1]),
-        baca.text_script_padding(2.5),
-    )
+    with baca.scope(m.get(1, 9)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.double_staccato_function(o.pheads())
+        baca.dynamic_function(o, '"mf"')
+        baca.markup_function(
+            o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
+        )
+        baca.staff_positions_function(o, [0, -1, 1])
+        baca.text_script_padding_function(o, 2.5)
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.staff_lines(1),
-        baca.accent(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.dynamic('"mf"'),
-        baca.markup(r"\ikribu-stonescratch-markup"),
-        baca.staff_position(0),
-        library.box_adjustment(),
-    )
-    accumulator(
-        ("vc", 12),
-        baca.chunk(
-            baca.mark(r"\ikribu-colophon-markup"),
-            baca.rehearsal_mark_down(),
-            baca.rehearsal_mark_padding(12),
-            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-            selector=lambda _: baca.select.rleaf(_, -1),
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.staff_lines_function(o, 1)
+        baca.accent_function(o.pheads())
+        baca.dynamic_function(o, '"mf"')
+        baca.markup_function(o, r"\ikribu-stonescratch-markup")
+        baca.staff_position_function(o, 0)
+        library.box_adjustment_function(o)
+    with baca.scope(m[12]) as o:
+        baca.mark_function(o, r"\ikribu-colophon-markup")
+        baca.rehearsal_mark_down_function(o)
+        baca.rehearsal_mark_padding_function(o, 12)
+        baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
 
 
 def main():
@@ -189,7 +178,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         final_section=True,
