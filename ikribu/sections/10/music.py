@@ -85,14 +85,12 @@ def VC(voice):
 
 
 def vc(m):
-    accumulator(
-        ("vc", (1, 8)),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.markup(r"\ikribu-stonecircle-pi-four-markup"),
-        library.box_adjustment(),
-        baca.dynamic('"mf"'),
-    )
+    with baca.scope(m.get(1, 8)) as o:
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
+        library.box_adjustment_function(o)
+        baca.dynamic_function(o, '"mf"')
 
 
 def main():
@@ -120,7 +118,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),

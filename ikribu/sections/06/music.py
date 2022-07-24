@@ -154,83 +154,57 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        ("bcl", (1, 4)),
-        baca.dynamic("ppp"),
-        baca.pitch("E3"),
-    )
-    accumulator(
-        ("bcl", (5, 8)),
-        baca.pitch("E+3"),
-    )
-    accumulator(
-        ("bcl", (9, 12)),
-        baca.pitch("F3"),
-    )
-    accumulator(
-        ("bcl", (13, 16)),
-        baca.pitch("F+3"),
-    )
+    with baca.scope(m.get(1, 4)) as o:
+        baca.dynamic_function(o, "ppp")
+        baca.pitch_function(o, "E3")
+    with baca.scope(m.get(5, 8)) as o:
+        baca.pitch_function(o, "E+3")
+    with baca.scope(m.get(9, 12)) as o:
+        baca.pitch_function(o, "F3"),
+    with baca.scope(m.get(13, 16)) as o:
+        baca.pitch_function(o, "F+3"),
 
 
 def vn_va(cache):
-    accumulator(
-        ["vn", "va"],
-        baca.clef("percussion"),
-        baca.accent(
-            selector=lambda _: abjad.select.get(
-                baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-                ~abjad.Pattern([0, 4], period=9),
-            ),
-        ),
-        baca.dls_staff_padding(8),
-        baca.markup(r"\ikribu-sponges-on-bd-markup"),
-        baca.hairpin(
-            "f > p <",
-            bookend=True,
-            pieces=library.enchain_runs([4, 3], exclude=baca.enums.HIDDEN),
-        ),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.stem_tremolo(
-            selector=lambda _: abjad.select.get(
-                baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-                [0, 4],
-                9,
-            ),
-        ),
-        baca.tuplet_bracket_staff_padding(3),
-        library.box_adjustment(),
-    )
+    for name in ["vn", "va"]:
+        with baca.scope(cache[name].leaves()) as o:
+            baca.clef_function(o, "percussion")
+            baca.accent_function(
+                abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
+            )
+            baca.dls_staff_padding_function(o, 8)
+            baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+            baca.hairpin_function(
+                o,
+                "f > p <",
+                bookend=True,
+                pieces=library.enchain_runs([4, 3], exclude=baca.enums.HIDDEN),
+            )
+            baca.staff_lines_function(o, 1)
+            baca.staff_position_function(o, 0)
+            baca.stem_tremolo_function(abjad.select.get(o.pheads(), [0, 4], period=9))
+            baca.tuplet_bracket_staff_padding_function(o, 3)
+            library.box_adjustment_function(o)
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.clef("bass"),
-    )
-    accumulator(
-        ("vc", (9, 16)),
-        baca.dls_staff_padding(4),
-        baca.markup(r"\ikribu-trem-flaut-tast-markup"),
-        baca.hairpin(
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "bass")
+    with baca.scope(m.get(9, 16)) as o:
+        baca.dls_staff_padding_function(o, 4)
+        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.hairpin_function(
+            o,
             "p < mp >",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(
-                _,
-            ),
-        ),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.text_script_staff_padding(2.5),
-    )
-    accumulator(
-        ("vc", (9, 12)),
-        baca.pitch("F3"),
-    )
-    accumulator(
-        ("vc", (13, 16)),
-        baca.pitch("F+3"),
-    )
+            pieces=lambda _: baca.select.cmgroups(_),
+        )
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_script_staff_padding_function(o, 2.5)
+    with baca.scope(m.get(9, 12)) as o:
+        baca.pitch_function(o, "F3")
+    with baca.scope(m.get(13, 16)) as o:
+        baca.pitch_function(o, "F+3")
 
 
 def main():
@@ -265,7 +239,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,

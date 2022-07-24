@@ -95,40 +95,32 @@ def VC(voice):
 
 
 def bcl(m):
-    accumulator(
-        "bcl",
-        baca.staff_lines(5),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.staff_lines_function(o, 5)
 
 
 def vc_rh(m):
-    accumulator(
-        ("vc_rh", (1, 10)),
-        baca.markup(r"\baca-half-clt-markup"),
-        baca.staff_position(0),
-        library.bcps(rotation=-2),
-        baca.script_staff_padding(
-            7,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.text_script_staff_padding(8),
-        baca.text_spanner_staff_padding(4),
-        baca.hairpin(
+    with baca.scope(m.get(1, 10)) as o:
+        baca.markup_function(o, r"\baca-half-clt-markup")
+        baca.staff_position_function(o, 0)
+        library.bcps_function(o, rotation=-2)
+        baca.script_staff_padding_function(o, 7)
+        baca.text_script_staff_padding_function(o, 8)
+        baca.text_spanner_staff_padding_function(o, 4)
+        baca.hairpin_function(
+            o,
             "ff > p < f > pp < f > ppp <",
             bookend=True,
             pieces=library.enchain_runs([3, 4]),
-        ),
-        baca.dls_staff_padding(9),
-    )
+        )
+        baca.dls_staff_padding_function(o, 9)
 
 
 def vc(m):
-    accumulator(
-        ("vc", (1, 10)),
-        baca.clef("tenor"),
-        library.glissando_pitches(octave=4, rotation=-20),
-        baca.glissando(),
-    )
+    with baca.scope(m.get(1, 10)) as o:
+        baca.clef_function(o, "tenor")
+        library.glissando_pitches_function(o, octave=4, rotation=-20)
+        baca.glissando_function(o)
 
 
 def main():
@@ -159,7 +151,6 @@ if __name__ == "__main__":
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         fermata_measure_empty_overrides=fermata_measures,
         part_manifest=library.part_manifest(),
