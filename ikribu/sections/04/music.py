@@ -239,7 +239,7 @@ def vc(m):
     with baca.scope(m[1]) as o:
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.pitch_function(o, "F~5")
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(
             o,
@@ -255,7 +255,7 @@ def vc(m):
             "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
             exact=True,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.stem_tremolo_function(o.pleaves())
         baca.glissando_function(o)
         baca.tuplet_bracket_down_function(o)

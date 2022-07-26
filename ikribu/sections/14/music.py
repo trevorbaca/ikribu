@@ -335,7 +335,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "F~5")
     with baca.scope(m[6]) as o:
         baca.clef_function(o, "treble")
@@ -347,7 +347,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "G5")
     for n in [7, 20]:
         baca.markup_function(m[n], r"\baca-xp-markup")
@@ -361,7 +361,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "F~5")
     with baca.scope(m[14]) as o:
         baca.clef_function(o, "treble")
@@ -373,7 +373,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "G5")
     with baca.scope(m[19]) as o:
         baca.clef_function(o, "treble")
@@ -385,7 +385,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "A5")
     with baca.scope(m[22]) as o:
         baca.clef_function(o, "treble")
@@ -397,7 +397,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "C+6")
 
 

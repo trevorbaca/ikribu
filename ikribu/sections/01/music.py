@@ -170,7 +170,7 @@ def vc(m):
         baca.staff_lines_function(o, 5)
         baca.markup_function(o, r"\markup pizz.")
         baca.pitch_function(o, "F~5")
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-string-iii-markup", direction=abjad.DOWN)
         baca.dynamic_function(o, "sfz")
