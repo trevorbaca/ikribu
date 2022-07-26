@@ -147,7 +147,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitches_function(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
         baca.stem_tremolo_function(o.pleaves())
         baca.tuplet_bracket_down_function(o)
