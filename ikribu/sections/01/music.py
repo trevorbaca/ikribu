@@ -95,8 +95,10 @@ def bcl(m):
         baca.instrument_function(
             o.leaf(0), accumulator.instruments["BassClarinet"], accumulator.manifests()
         )
-        baca.instrument_name_function(o, r"\ikribu-bass-clarinet-markup")
-        library.short_instrument_name_function(o, "B. cl.", accumulator.manifests())
+        baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
+        library.short_instrument_name_function(
+            o.leaf(0), "B. cl.", accumulator.manifests()
+        )
         baca.clef_function(o, "treble")
         baca.staff_lines_function(o, 5)
 
@@ -113,12 +115,12 @@ def vn(m):
             o.leaf(0), accumulator.instruments["Violin"], accumulator.manifests()
         )
         baca.instrument_name_function(
-            o,
+            o.leaf(0),
             r"\ikribu-violin-markup",
             context="StringInstrumentPianoStaff",
         )
         library.short_instrument_name_function(
-            o, "Vn.", context="StringInstrumentPianoStaff"
+            o.leaf(0), "Vn.", context="StringInstrumentPianoStaff"
         )
         baca.clef_function(o, "percussion")
         baca.staff_lines_function(o, 1)
@@ -140,10 +142,10 @@ def va(m):
             o.leaf(0), accumulator.instruments["Viola"], accumulator.manifests()
         )
         baca.instrument_name_function(
-            o, r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
+            o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
         library.short_instrument_name_function(
-            o, "Va.", context="StringInstrumentPianoStaff"
+            o.leaf(0), "Va.", context="StringInstrumentPianoStaff"
         )
         baca.clef_function(o, "alto")
         baca.staff_lines_function(o, 5)
@@ -161,10 +163,10 @@ def vc(m):
             o.leaf(0), accumulator.instruments["Cello"], accumulator.manifests()
         )
         baca.instrument_name_function(
-            o, r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
+            o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
         library.short_instrument_name_function(
-            o, "Vc.", context="StringInstrumentPianoStaff"
+            o.leaf(0), "Vc.", context="StringInstrumentPianoStaff"
         )
         baca.clef_function(o, "treble")
         baca.staff_lines_function(o, 5)
