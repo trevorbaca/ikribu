@@ -55,7 +55,6 @@ def clb_staff_positions(*, rotation=0):
     positions = abjad.sequence.flatten(positions)
     return baca.staff_positions(
         positions,
-        allow_repeats=True,
         selector=lambda _: baca.select.plts(_),
     )
 
@@ -65,11 +64,7 @@ def clb_staff_positions_function(argument, *, rotation=0):
     positions = baca.sequence.helianthate(positions, -1, -1)
     positions = abjad.sequence.rotate(positions, rotation)
     positions = abjad.sequence.flatten(positions)
-    baca.staff_positions_function(
-        argument,
-        positions,
-        allow_repeats=True,
-    )
+    baca.staff_positions_function(argument, positions)
 
 
 def enchain_runs(counts, exclude=None):
