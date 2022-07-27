@@ -93,7 +93,7 @@ def VC(voice):
 def bcl(m):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(
-            o, accumulator.instruments["BassClarinet"], accumulator.manifests()
+            o.leaf(0), accumulator.instruments["BassClarinet"], accumulator.manifests()
         )
         baca.instrument_name_function(o, r"\ikribu-bass-clarinet-markup")
         library.short_instrument_name_function(o, "B. cl.", accumulator.manifests())
@@ -110,7 +110,7 @@ def vn_rh(m):
 def vn(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(
-            o, accumulator.instruments["Violin"], accumulator.manifests()
+            o.leaf(0), accumulator.instruments["Violin"], accumulator.manifests()
         )
         baca.instrument_name_function(
             o,
@@ -137,7 +137,7 @@ def va_rh(m):
 def va(m):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(
-            o, accumulator.instruments["Viola"], accumulator.manifests()
+            o.leaf(0), accumulator.instruments["Viola"], accumulator.manifests()
         )
         baca.instrument_name_function(
             o, r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
@@ -158,7 +158,7 @@ def vc_rh(m):
 def vc(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(
-            o, accumulator.instruments["Cello"], accumulator.manifests()
+            o.leaf(0), accumulator.instruments["Cello"], accumulator.manifests()
         )
         baca.instrument_name_function(
             o, r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
