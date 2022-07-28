@@ -116,7 +116,7 @@ def va(m):
     with baca.scope(m.get(3, 6)) as o:
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(

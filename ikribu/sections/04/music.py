@@ -174,14 +174,14 @@ def bcl(m):
     with baca.scope(m.get(2, 17)) as o:
         baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
-        wrapper = baca.markup_function(
-            o,
+        wrappers = baca.markup_function(
+            o.pleaf(0),
             r"\ikribu-stonecircle-pi-two-markup",
             tags=[abjad.Tag("+ARCH_A_PARTS_BCL")],
         )
-        wrapper.deactivate = True
+        wrappers[0].deactivate = True
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\ikribu-stonecircle-pi-two-markup",
             tags=[abjad.Tag("-ARCH_A_PARTS_BCL")],
         )
@@ -198,14 +198,14 @@ def vn(m):
     with baca.scope(m[1]) as o:
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o, r"\ikribu-grainfall-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-two-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), '"mf"')
     with baca.scope(m.get(2, 16)) as o:
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
-        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
         baca.pitches_function(o, "F#4 G#4 G#4 F#4")
         baca.stem_tremolo_function(o.pleaves())
@@ -221,7 +221,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m.get(2, 16)) as o:
-        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
         baca.pitches_function(o, "F4 E4 E4 F4")
         baca.stem_tremolo_function(o.pleaves())
@@ -237,12 +237,12 @@ def va(m):
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.pitch_function(o, "F~5")
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )

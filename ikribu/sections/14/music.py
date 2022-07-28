@@ -295,24 +295,26 @@ def vn_va(cache):
 def vn(m):
     with baca.scope(m[1]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-three-markup")
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
-        baca.markup_function(m.get(item), r"\ikribu-sponges-on-bd-markup")
+        baca.markup_function(
+            baca.select.pleaf(m.get(item), 0), r"\ikribu-sponges-on-bd-markup"
+        )
     with baca.scope(m[6]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-four-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-four-markup")
     with baca.scope(m[9]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-five-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-five-markup")
     with baca.scope(m[14]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-six-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-six-markup")
     with baca.scope(m[19]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-seven-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-seven-markup")
     with baca.scope(m[22]) as o:
         baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o, r"\ikribu-grainfall-eight-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-eight-markup")
 
 
 def vc(m):
@@ -329,9 +331,9 @@ def vc(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
@@ -341,23 +343,23 @@ def vc(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "G5")
     for n in [7, 20]:
-        baca.markup_function(m[n], r"\baca-xp-markup")
+        baca.markup_function(baca.select.pleaf(m[n], 0), r"\baca-xp-markup")
     with baca.scope(m[9]) as o:
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
@@ -367,9 +369,9 @@ def vc(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
@@ -379,9 +381,9 @@ def vc(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
@@ -391,9 +393,9 @@ def vc(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )

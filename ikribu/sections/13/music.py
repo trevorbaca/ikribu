@@ -112,7 +112,7 @@ def bcl(m):
     with baca.scope(m.get(1, 28)) as o:
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "ppp")
-        baca.markup_function(o, r"\ikribu-breathe-discreetly-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-breathe-discreetly-markup")
         baca.pitch_function(o, "C2")
         baca.staff_lines_function(o.leaf(0), 5)
 
@@ -126,7 +126,7 @@ def vn(m):
             abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
         )
         baca.dls_staff_padding_function(o, 8)
-        baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin_function(
             o,
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
@@ -158,7 +158,7 @@ def va(m):
             abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11))
         )
         baca.dls_staff_padding_function(o, 8)
-        baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin_function(
             o,
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
@@ -185,15 +185,15 @@ def vc(m):
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
     with baca.scope(m[5]) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
     with baca.scope(m[9]) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-four-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-four-markup")
     with baca.scope(m[13]) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
     with baca.scope(m[17]) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
     with baca.scope(m[21]) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
 
 
 def main():

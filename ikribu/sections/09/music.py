@@ -132,7 +132,7 @@ def tutti(cache):
     for name in ["vn_rh", "va_rh"]:
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.dls_staff_padding_function(o, 10)
-            baca.markup_function(o, r"\baca-half-clt-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
             baca.hairpin_function(
                 o,
                 "ff > p < f > pp < p > ppp <",

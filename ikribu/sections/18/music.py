@@ -103,7 +103,7 @@ def bcl(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.staff_lines_function(o.leaf(0), 1)
         baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
 
@@ -114,7 +114,7 @@ def vn(m):
         baca.double_staccato_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(
-            o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
+            o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
         baca.staff_positions_function(o, [-1, 0, 1])
         baca.text_script_padding_function(o, 2.5)
@@ -126,7 +126,7 @@ def va(m):
         baca.double_staccato_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(
-            o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
+            o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
         baca.staff_positions_function(o, [0, -1, 1])
         baca.text_script_padding_function(o, 2.5)
@@ -137,7 +137,7 @@ def vc(m):
         baca.staff_lines_function(o.leaf(0), 1)
         baca.accent_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(o, r"\ikribu-stonescratch-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonescratch-markup")
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
     with baca.scope(m[12]) as o:

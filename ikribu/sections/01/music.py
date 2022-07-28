@@ -124,7 +124,7 @@ def vn(m):
         )
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o, r"\ikribu-grainfall-one-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-one-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), '"mf"')
@@ -170,11 +170,13 @@ def vc(m):
         )
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
-        baca.markup_function(o, r"\markup pizz.")
+        baca.markup_function(o.pleaf(0), r"\markup pizz.")
         baca.pitch_function(o, "F~5")
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o, r"\baca-string-iii-markup", direction=abjad.DOWN)
+        baca.markup_function(
+            o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN
+        )
         baca.dynamic_function(o.pleaf(0), "sfz")
 
 

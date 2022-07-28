@@ -131,7 +131,9 @@ def bcl(cache):
         wrapper_1.deactivate = True
         wrapper_2.deactivate = True
         baca.dynamic_function(o.pleaf(0), "p")
-        baca.markup_function(o, r"\ikribu-introduce-upper-partials-gradually-markup")
+        baca.markup_function(
+            o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup"
+        )
         baca.pitch_function(o, "Bb1")
     with baca.scope(m.get(6, 10)) as o:
         baca.pitch_function(o, "<Bb1 D4>")
@@ -144,7 +146,7 @@ def bcl(cache):
 def all_rh(cache):
     for name in ["vn_rh", "va_rh", "vc_rh"]:
         with baca.scope(cache[name].get(1, 10)) as o:
-            baca.markup_function(o, r"\baca-half-clt-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
             baca.hairpin_function(
                 o,
                 "ff > p < f > pp < p > ppp <",

@@ -189,7 +189,7 @@ def strings(cache):
             baca.text_spanner_staff_padding_function(o, 4)
             library.bcps_function(o, rotation=rotation)
             baca.dls_staff_padding_function(o, 9)
-            baca.markup_function(o, r"\baca-half-clt-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
             baca.hairpin_function(
                 o,
                 "p > pp < p > ppp < pp > ppp <",

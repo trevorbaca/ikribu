@@ -143,7 +143,7 @@ def vc(m):
             pieces=lambda _: baca.select.cmgroups(_),
         )
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )

@@ -145,23 +145,23 @@ def tutti(cache):
             baca.staff_lines_function(o.leaf(0), 1)
             baca.staff_position_function(o, 0)
     with baca.scope(cache["bcl"].get(1, 2)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
     with baca.scope(cache["bcl"].get(3, 4)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
     with baca.scope(cache["vn"].get(1, 4)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vn"].get(5, 6)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-markup")
     with baca.scope(cache["va"].get(1, 2)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-three-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
     with baca.scope(cache["va"].get(3, 4)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
     with baca.scope(cache["va"].get(5, 6)) as o:
-        baca.markup_function(o, r"\ikribu-stonecircle-pi-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vc"].get(3, 8)) as o:
         baca.dynamic_function(o.pleaf(0), "p")
         baca.hairpin_function(o.leaves()[-2:], "p < mf")
-        baca.markup_function(o, r"\baca-poco-vib-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-poco-vib-markup")
         baca.ottava_bassa_function(o)
         baca.ottava_bracket_staff_padding_function(o, 8)
         baca.pitch_function(o, "D1")
@@ -174,7 +174,7 @@ def tutti(cache):
                 abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
                 abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
             ),
-            baca.markup_function(o, r"\ikribu-stonecircle-pi-two-markup")
+            baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
             if name == "bcl":
                 baca.text_script_extra_offset_function(
                     o,
