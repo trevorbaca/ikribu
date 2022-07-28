@@ -114,7 +114,7 @@ def bcl(m):
         baca.dynamic_function(o.pleaf(0), "ppp")
         baca.markup_function(o, r"\ikribu-breathe-discreetly-markup")
         baca.pitch_function(o, "C2")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
 
 
 def vn(m):

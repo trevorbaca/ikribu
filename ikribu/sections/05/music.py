@@ -96,7 +96,7 @@ def VC(voice):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
 
 
 def vc_rh(m):

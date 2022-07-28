@@ -180,7 +180,7 @@ def vn_va(cache):
                 bookend=True,
                 pieces=library.enchain_runs([4, 3], exclude=baca.enums.HIDDEN),
             )
-            baca.staff_lines_function(o, 1)
+            baca.staff_lines_function(o.leaf(0), 1)
             baca.staff_position_function(o, 0)
             baca.stem_tremolo_function(abjad.select.get(o.pheads(), [0, 4], period=9))
             baca.tuplet_bracket_staff_padding_function(o, 3)

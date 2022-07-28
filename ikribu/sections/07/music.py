@@ -138,7 +138,7 @@ def vn_va(cache):
                 baca.clef_extra_offset_function(o.leaf(0), (-2.5, 0))
                 baca.clef_x_extent_false_function(o.leaf(0))
                 baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. tast.")
-                baca.staff_lines_function(o, 5)
+                baca.staff_lines_function(o.leaf(0), 5)
 
 
 def vc(m):
@@ -150,12 +150,12 @@ def vc(m):
         baca.text_spanner_staff_padding_function(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:
         baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
     with baca.scope(m[8]) as o:
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
 
 
 def main():

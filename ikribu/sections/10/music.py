@@ -86,7 +86,7 @@ def VC(voice):
 
 def vc(m):
     with baca.scope(m.get(1, 8)) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
         library.box_adjustment_function(o)

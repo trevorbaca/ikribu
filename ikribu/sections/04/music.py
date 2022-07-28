@@ -172,7 +172,7 @@ def VC(voice):
 
 def bcl(m):
     with baca.scope(m.get(2, 17)) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         wrapper = baca.markup_function(
             o,
@@ -197,14 +197,14 @@ def bcl(m):
 def vn(m):
     with baca.scope(m[1]) as o:
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.markup_function(o, r"\ikribu-grainfall-two-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), '"mf"')
     with baca.scope(m.get(2, 16)) as o:
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
         baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
         baca.pitches_function(o, "F#4 G#4 G#4 F#4")
