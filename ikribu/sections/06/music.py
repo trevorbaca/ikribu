@@ -155,7 +155,7 @@ def VC(voice):
 
 def bcl(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.pitch_function(o, "E3")
     with baca.scope(m.get(5, 8)) as o:
         baca.pitch_function(o, "E+3")

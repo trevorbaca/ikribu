@@ -117,7 +117,7 @@ def VC(voice):
 
 def tutti(cache):
     with baca.scope(cache["bcl"].get(1, 8)) as o:
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.pitch_function(o, "Db2")
     with baca.scope(cache["vn_rh"].get(1, 8)) as o:
         library.bcps_function(o, rotation=0)

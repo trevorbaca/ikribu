@@ -127,7 +127,7 @@ def vn(m):
         baca.markup_function(o, r"\ikribu-grainfall-one-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
 
 
 def va_rh(m):
@@ -175,7 +175,7 @@ def vc(m):
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-string-iii-markup", direction=abjad.DOWN)
-        baca.dynamic_function(o, "sfz")
+        baca.dynamic_function(o.pleaf(0), "sfz")
 
 
 def main():

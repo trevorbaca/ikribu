@@ -111,7 +111,7 @@ def VC(voice):
 def bcl(m):
     with baca.scope(m.get(1, 28)) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.markup_function(o, r"\ikribu-breathe-discreetly-markup")
         baca.pitch_function(o, "C2")
         baca.staff_lines_function(o, 5)

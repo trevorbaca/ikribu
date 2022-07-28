@@ -90,7 +90,7 @@ def vc(m):
         baca.staff_position_function(o, 0)
         baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
         library.box_adjustment_function(o)
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
 
 
 def main():
