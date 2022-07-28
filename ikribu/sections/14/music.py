@@ -325,7 +325,7 @@ def vc(m):
         with baca.scope(m.get(pair)) as o:
             baca.text_spanner_function(o, "tasto => XP")
     with baca.scope(m[1]) as o:
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())

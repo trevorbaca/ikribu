@@ -237,7 +237,7 @@ def va(m):
 
 def vc(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
         baca.dls_staff_padding_function(o, 6)
         baca.staff_position_function(o, 0)

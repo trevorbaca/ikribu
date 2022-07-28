@@ -109,13 +109,13 @@ def bcl(m):
 def vn(m):
     with baca.scope(m.leaves()) as o:
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
 
 
 def va(m):
     with baca.scope(m.get(3, 6)) as o:
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)

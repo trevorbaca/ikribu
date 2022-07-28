@@ -132,7 +132,7 @@ def VC(voice):
 def tutti(cache):
     with baca.scope(cache["vc"].get(1, 2)) as o:
         baca.clef_function(o.leaf(0), "bass")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
     for name in [
         "bcl",
         "vn",
@@ -142,7 +142,7 @@ def tutti(cache):
             baca.clef_function(o.leaf(0), "percussion")
             baca.dls_staff_padding_function(o, 6)
             baca.dynamic_function(o.pleaf(0), '"mf"')
-            baca.staff_lines_function(o, 1)
+            baca.staff_lines_function(o.leaf(0), 1)
             baca.staff_position_function(o, 0)
     with baca.scope(cache["bcl"].get(1, 2)) as o:
         baca.markup_function(o, r"\ikribu-stonecircle-pi-four-markup")
