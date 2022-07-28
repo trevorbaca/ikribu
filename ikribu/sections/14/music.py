@@ -318,7 +318,7 @@ def vn(m):
 def vc(m):
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
         with baca.scope(m.get(item)) as o:
-            baca.clef_function(o, "bass")
+            baca.clef_function(o.leaf(0), "bass")
             baca.ottava_bassa_function(o)
             baca.pitch_function(o, "C1")
     for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
@@ -326,7 +326,7 @@ def vc(m):
             baca.text_spanner_function(o, "tasto => XP")
     with baca.scope(m[1]) as o:
         baca.staff_lines_function(o, 5)
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
@@ -338,7 +338,7 @@ def vc(m):
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "F~5")
     with baca.scope(m[6]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
@@ -352,7 +352,7 @@ def vc(m):
     for n in [7, 20]:
         baca.markup_function(m[n], r"\baca-xp-markup")
     with baca.scope(m[9]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
@@ -364,7 +364,7 @@ def vc(m):
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "F~5")
     with baca.scope(m[14]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
@@ -376,7 +376,7 @@ def vc(m):
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "G5")
     with baca.scope(m[19]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
@@ -388,7 +388,7 @@ def vc(m):
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.pitch_function(o, "A5")
     with baca.scope(m[22]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")

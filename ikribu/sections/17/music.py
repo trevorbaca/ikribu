@@ -178,7 +178,7 @@ def strings(cache):
         with baca.scope(cache[name].get(1, 5)) as o:
             library.glissando_pitches_function(o, octave=octave, rotation=rotation)
             baca.glissando_function(o)
-    baca.clef_function(cache["vc"][1], "tenor")
+    baca.clef_function(abjad.select.leaf(cache["vc"][1], 0), "tenor")
     for name, rotation in (
         ("vn_rh", 0),
         ("va_rh", -1),

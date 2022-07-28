@@ -99,14 +99,14 @@ def bcl(m):
         library.short_instrument_name_function(
             o.leaf(0), "B. cl.", accumulator.manifests()
         )
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
 
 
 def vn_rh(m):
     with baca.scope(m.leaves()) as o:
         baca.staff_lines_function(o, 1)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
 
 
 def vn(m):
@@ -122,7 +122,7 @@ def vn(m):
         library.short_instrument_name_function(
             o.leaf(0), "Vn.", context="StringInstrumentPianoStaff"
         )
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o, 1)
         baca.markup_function(o, r"\ikribu-grainfall-one-markup")
         library.box_adjustment_function(o)
@@ -133,7 +133,7 @@ def vn(m):
 def va_rh(m):
     with baca.scope(m.leaves()) as o:
         baca.staff_lines_function(o, 1)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
 
 
 def va(m):
@@ -147,13 +147,13 @@ def va(m):
         library.short_instrument_name_function(
             o.leaf(0), "Va.", context="StringInstrumentPianoStaff"
         )
-        baca.clef_function(o, "alto")
+        baca.clef_function(o.leaf(0), "alto")
         baca.staff_lines_function(o, 5)
 
 
 def vc_rh(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o, 1)
 
 
@@ -168,7 +168,7 @@ def vc(m):
         library.short_instrument_name_function(
             o.leaf(0), "Vc.", context="StringInstrumentPianoStaff"
         )
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
         baca.markup_function(o, r"\markup pizz.")
         baca.pitch_function(o, "F~5")

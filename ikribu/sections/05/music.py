@@ -118,7 +118,7 @@ def vc_rh(m):
 
 def vc(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o, "tenor")
+        baca.clef_function(o.leaf(0), "tenor")
         library.glissando_pitches_function(o, octave=4, rotation=-20)
         baca.glissando_function(o)
 
