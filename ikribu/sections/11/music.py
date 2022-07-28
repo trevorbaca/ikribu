@@ -141,7 +141,7 @@ def tutti(cache):
         with baca.scope(cache[name].leaves()) as o:
             baca.clef_function(o, "percussion")
             baca.dls_staff_padding_function(o, 6)
-            baca.dynamic_function(o, '"mf"')
+            baca.dynamic_function(o.pleaf(0), '"mf"')
             baca.staff_lines_function(o, 1)
             baca.staff_position_function(o, 0)
     with baca.scope(cache["bcl"].get(1, 2)) as o:
@@ -159,7 +159,7 @@ def tutti(cache):
     with baca.scope(cache["va"].get(5, 6)) as o:
         baca.markup_function(o, r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vc"].get(3, 8)) as o:
-        baca.dynamic_function(o, "p")
+        baca.dynamic_function(o.pleaf(0), "p")
         baca.hairpin_function(o.leaves()[-2:], "p < mf")
         baca.markup_function(o, r"\baca-poco-vib-markup")
         baca.ottava_bassa_function(o)
@@ -169,7 +169,7 @@ def tutti(cache):
         library.box_adjustment_function(cache[name].leaves())
         with baca.scope(cache[name][10]) as o:
             baca.dynamic_function(
-                o,
+                o.pleaf(0),
                 '"f"',
                 abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
                 abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),

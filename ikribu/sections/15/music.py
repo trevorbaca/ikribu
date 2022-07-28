@@ -130,7 +130,7 @@ def bcl(cache):
         )
         wrapper_1.deactivate = True
         wrapper_2.deactivate = True
-        baca.dynamic_function(o, "p")
+        baca.dynamic_function(o.pleaf(0), "p")
         baca.markup_function(o, r"\ikribu-introduce-upper-partials-gradually-markup")
         baca.pitch_function(o, "Bb1")
     with baca.scope(m.get(6, 10)) as o:

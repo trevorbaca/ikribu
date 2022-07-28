@@ -181,21 +181,21 @@ def VC(voice):
 def bcl(m):
     with baca.scope(m[5]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[9]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[13]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"p"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
@@ -209,7 +209,7 @@ def vn(m):
     with baca.scope(m.get(1, 16)) as o:
         baca.dls_staff_padding_function(o, 8)
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
@@ -224,7 +224,7 @@ def va(m):
     with baca.scope(m.get(1, 16)) as o:
         baca.dls_staff_padding_function(o, 8)
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
@@ -242,24 +242,24 @@ def vc(m):
         baca.dls_staff_padding_function(o, 6)
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
-        baca.dynamic_function(o, '"p"')
+        baca.dynamic_function(o.pleaf(0), '"p"')
     with baca.scope(m[5]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[9]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[13]) as o:
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"f"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),

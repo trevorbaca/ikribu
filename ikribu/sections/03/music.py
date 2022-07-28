@@ -131,7 +131,7 @@ def VC(voice):
 def bcl(m):
     with baca.scope(m.get(5, 25)) as o:
         baca.pitch_function(o, "Db2")
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
     with baca.scope(m.get(19, 21)) as o:
         baca.hairpin_function(o.leaves()[:2], "ppp < f")
         baca.hairpin_function(o.rleaves()[-2:], "f >o niente")

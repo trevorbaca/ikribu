@@ -270,7 +270,7 @@ def bcl(m):
         baca.hairpin_function(o.leaves()[:-1], "ppp < fff")
 
     for n in [7, 20]:
-        baca.dynamic_function(m[n], "p")
+        baca.dynamic_function(baca.select.pleaf(m[n], 0), "p")
 
 
 def vn_va(cache):
@@ -294,24 +294,24 @@ def vn_va(cache):
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-three-markup")
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
         baca.markup_function(m.get(item), r"\ikribu-sponges-on-bd-markup")
     with baca.scope(m[6]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-four-markup")
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-five-markup")
     with baca.scope(m[14]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-six-markup")
     with baca.scope(m[19]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-seven-markup")
     with baca.scope(m[22]) as o:
-        baca.dynamic_function(o, '"f"')
+        baca.dynamic_function(o.pleaf(0), '"f"')
         baca.markup_function(o, r"\ikribu-grainfall-eight-markup")
 
 
@@ -327,7 +327,7 @@ def vc(m):
     with baca.scope(m[1]) as o:
         baca.staff_lines_function(o, 5)
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sfz")
+        baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -339,7 +339,7 @@ def vc(m):
         baca.pitch_function(o, "F~5")
     with baca.scope(m[6]) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sfz")
+        baca.dynamic_function(o.pleaf(0), "sfz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -353,7 +353,7 @@ def vc(m):
         baca.markup_function(m[n], r"\baca-xp-markup")
     with baca.scope(m[9]) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sffz")
+        baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -365,7 +365,7 @@ def vc(m):
         baca.pitch_function(o, "F~5")
     with baca.scope(m[14]) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sffz")
+        baca.dynamic_function(o.pleaf(0), "sffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -377,7 +377,7 @@ def vc(m):
         baca.pitch_function(o, "G5")
     with baca.scope(m[19]) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sfffz")
+        baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -389,7 +389,7 @@ def vc(m):
         baca.pitch_function(o, "A5")
     with baca.scope(m[22]) as o:
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "sfffz")
+        baca.dynamic_function(o.pleaf(0), "sfffz")
         baca.laissez_vibrer_function(o.ptails())
         baca.markup_function(o, r"\baca-pizz-markup")
         baca.markup_function(
@@ -406,8 +406,8 @@ def strings(cache):
         for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
             baca.hairpin_function(cache[name].get(pair), "mf < fff")
         if name in ("vn", "vc"):
-            baca.dynamic_function(cache[name][7], "fff")
-            baca.dynamic_function(cache[name][20], "fff")
+            baca.dynamic_function(baca.select.pleaf(cache[name][7], 0), "fff")
+            baca.dynamic_function(baca.select.pleaf(cache[name][20], 0), "fff")
 
 
 def main():

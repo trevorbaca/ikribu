@@ -120,7 +120,7 @@ def va(m):
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),

@@ -187,7 +187,7 @@ def bcl(m):
         )
         library.box_adjustment_function(o)
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
@@ -201,7 +201,7 @@ def vn(m):
         baca.markup_function(o, r"\ikribu-grainfall-two-markup")
         library.box_adjustment_function(o)
         baca.staff_position_function(o, 0)
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
     with baca.scope(m.get(2, 16)) as o:
         baca.clef_function(o, "treble")
         baca.staff_lines_function(o, 5)
@@ -246,7 +246,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.dynamic_function(o, "sfz")
+        baca.dynamic_function(o.pleaf(0), "sfz")
     with baca.scope(m.get(2, 16)) as o:
         baca.text_spanner_function(o, "trem. flaut. tasto. (arco) => trem. flaut. XP")
         baca.text_spanner_staff_padding_function(o, 3.5)

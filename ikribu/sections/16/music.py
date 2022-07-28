@@ -182,7 +182,7 @@ def vn(cache):
         cache.rebuild()
         m = cache["vn"]
     with baca.scope(m.get(9, 20)) as o:
-        baca.dynamic_function(o, "ppppp")
+        baca.dynamic_function(o.pleaf(0), "ppppp")
         baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
         baca.markup_function(
             o,
@@ -201,7 +201,7 @@ def va(cache):
         cache.rebuild()
         m = cache["va"]
     with baca.scope(m.get(9, 20)) as o:
-        baca.dynamic_function(o, "ppppp")
+        baca.dynamic_function(o.pleaf(0), "ppppp")
         baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
         baca.markup_function(
             o,

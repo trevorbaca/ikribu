@@ -102,7 +102,7 @@ def VC(voice):
 def bcl(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.staff_lines_function(o, 1)
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(o, r"\ikribu-graincircle-pi-three-markup")
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
@@ -112,7 +112,7 @@ def vn(m):
     with baca.scope(m.get(1, 9)) as o:
         baca.staff_lines_function(o, 1)
         baca.double_staccato_function(o.pheads())
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(
             o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
@@ -124,7 +124,7 @@ def va(m):
     with baca.scope(m.get(1, 9)) as o:
         baca.staff_lines_function(o, 1)
         baca.double_staccato_function(o.pheads())
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(
             o, r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
@@ -136,7 +136,7 @@ def vc(m):
     with baca.scope(m.leaves()) as o:
         baca.staff_lines_function(o, 1)
         baca.accent_function(o.pheads())
-        baca.dynamic_function(o, '"mf"')
+        baca.dynamic_function(o.pleaf(0), '"mf"')
         baca.markup_function(o, r"\ikribu-stonescratch-markup")
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
