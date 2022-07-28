@@ -131,7 +131,7 @@ def VC(voice):
 
 def tutti(cache):
     with baca.scope(cache["vc"].get(1, 2)) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.staff_lines_function(o, 5)
     for name in [
         "bcl",
@@ -139,7 +139,7 @@ def tutti(cache):
         "va",
     ]:
         with baca.scope(cache[name].leaves()) as o:
-            baca.clef_function(o, "percussion")
+            baca.clef_function(o.leaf(0), "percussion")
             baca.dls_staff_padding_function(o, 6)
             baca.dynamic_function(o.pleaf(0), '"mf"')
             baca.staff_lines_function(o, 1)

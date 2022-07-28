@@ -168,7 +168,7 @@ def bcl(m):
 def vn_va(cache):
     for name in ["vn", "va"]:
         with baca.scope(cache[name].leaves()) as o:
-            baca.clef_function(o, "percussion")
+            baca.clef_function(o.leaf(0), "percussion")
             baca.accent_function(
                 abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
             )
@@ -189,7 +189,7 @@ def vn_va(cache):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
     with baca.scope(m.get(9, 16)) as o:
         baca.dls_staff_padding_function(o, 4)
         baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")

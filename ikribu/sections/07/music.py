@@ -120,7 +120,7 @@ def vn_va(cache):
             baca.stem_tremolo_function(o.pleaves())
             baca.text_spanner_staff_padding_function(o, 3.5)
             if name == "vn":
-                baca.clef_function(o, "treble")
+                baca.clef_function(o.leaf(0), "treble")
                 baca.markup_function(
                     o,
                     r"\ikribu-strings-two-plus-three-markup",
@@ -134,7 +134,7 @@ def vn_va(cache):
                     r"\ikribu-strings-one-plus-two-markup",
                     direction=abjad.DOWN,
                 )
-                baca.clef_function(o, "treble")
+                baca.clef_function(o.leaf(0), "treble")
                 baca.clef_extra_offset_function(o.leaf(0), (-2.5, 0))
                 baca.clef_x_extent_false_function(o.leaf(0))
                 baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. tast.")
@@ -154,7 +154,7 @@ def vc(m):
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
     with baca.scope(m[8]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
 
 

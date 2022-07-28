@@ -161,7 +161,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o, "alto")
+        baca.clef_function(o.leaf(0), "alto")
         baca.staff_lines_function(o, 5)
         baca.text_script_staff_padding_function(o, 3, allow_mmrests=True)
         baca.text_spanner_staff_padding_function(o, 3.5)

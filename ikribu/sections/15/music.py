@@ -167,7 +167,7 @@ def all_rh(cache):
 
 def vn(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
         library.glissando_pitches_function(o, octave=5, rotation=0)
         baca.glissando_function(o)
@@ -176,14 +176,14 @@ def vn(m):
 def va(m):
     with baca.scope(m.get(1, 10)) as o:
         baca.staff_lines_function(o, 5)
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         library.glissando_pitches_function(o, octave=5, rotation=-10)
         baca.glissando_function(o)
 
 
 def vc(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o, "tenor")
+        baca.clef_function(o.leaf(0), "tenor")
         library.glissando_pitches_function(o, octave=4, rotation=-20)
         baca.glissando_function(o)
 

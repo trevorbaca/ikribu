@@ -214,7 +214,7 @@ def va(cache):
 
 
 def vc(m):
-    baca.clef_function(m[1], "bass")
+    baca.clef_function(abjad.select.leaf(m[1], 0), "bass")
     with baca.scope(m.get(5, 20)) as o:
         baca.ottava_bassa_function(o)
         baca.hairpin_function(
