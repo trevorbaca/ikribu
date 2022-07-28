@@ -173,7 +173,7 @@ def vn_va(cache):
                 abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
             )
             baca.dls_staff_padding_function(o, 8)
-            baca.markup_function(o, r"\ikribu-sponges-on-bd-markup")
+            baca.markup_function(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             baca.hairpin_function(
                 o,
                 "f > p <",
@@ -192,7 +192,7 @@ def vc(m):
         baca.clef_function(o.leaf(0), "bass")
     with baca.scope(m.get(9, 16)) as o:
         baca.dls_staff_padding_function(o, 4)
-        baca.markup_function(o, r"\ikribu-trem-flaut-tast-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.hairpin_function(
             o,
             "p < mp >",

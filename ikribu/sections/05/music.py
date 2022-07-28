@@ -101,7 +101,7 @@ def bcl(m):
 
 def vc_rh(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.markup_function(o, r"\baca-half-clt-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
         baca.staff_position_function(o, 0)
         library.bcps_function(o, rotation=-2)
         baca.script_staff_padding_function(o, 7)

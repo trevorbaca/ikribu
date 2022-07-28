@@ -214,7 +214,7 @@ def vn(m):
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
-        baca.markup_function(o, r"\baca-col-legno-battuto-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
         baca.staccato_function(o.pheads())
         baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
         library.clb_staff_positions_function(o)
@@ -229,7 +229,7 @@ def va(m):
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
-        baca.markup_function(o, r"\baca-col-legno-battuto-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
         baca.staccato_function(o.pheads())
         baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
         library.clb_staff_positions_function(o)
@@ -238,7 +238,7 @@ def va(m):
 def vc(m):
     with baca.scope(m.get(1, 16)) as o:
         baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
         baca.dls_staff_padding_function(o, 6)
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)

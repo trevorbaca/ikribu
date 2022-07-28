@@ -122,7 +122,7 @@ def vn_va(cache):
             if name == "vn":
                 baca.clef_function(o.leaf(0), "treble")
                 baca.markup_function(
-                    o,
+                    o.pleaf(0),
                     r"\ikribu-strings-two-plus-three-markup",
                     direction=abjad.DOWN,
                 )
@@ -130,7 +130,7 @@ def vn_va(cache):
                 baca.staff_lines_function(o.leaf(0), 5)
             elif name == "va":
                 baca.markup_function(
-                    o,
+                    o.pleaf(0),
                     r"\ikribu-strings-one-plus-two-markup",
                     direction=abjad.DOWN,
                 )
@@ -149,7 +149,7 @@ def vc(m):
         baca.text_spanner_function(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
         baca.text_spanner_staff_padding_function(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:
-        baca.markup_function(o, r"\ikribu-graincircle-pi-two-markup")
+        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
         baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)

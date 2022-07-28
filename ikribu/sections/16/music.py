@@ -185,7 +185,7 @@ def vn(cache):
         baca.dynamic_function(o.pleaf(0), "ppppp")
         baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
         )
@@ -204,7 +204,7 @@ def va(cache):
         baca.dynamic_function(o.pleaf(0), "ppppp")
         baca.hairpin_function(o.rleaves()[-3:], "ppppp >o niente")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
         )
