@@ -46,7 +46,7 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-baca.bar_line(score["Skips"][12 - 1], "|.")
+baca.bar_line_function(score["Skips"][12 - 1], "|.")
 
 skips = score["Skips"]
 manifests = accumulator.manifests()
@@ -54,11 +54,11 @@ manifests = accumulator.manifests()
 for index, item in ((1 - 1, "inscription"),):
     skip = skips[index]
     indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, indicator, manifests)
 
 rests = score["Rests"]
 for index, string in ((12 - 1, "fermata"),):
-    baca.global_fermata(rests[index], string)
+    baca.global_fermata_function(rests[index], string)
 
 
 def BCL(voice):

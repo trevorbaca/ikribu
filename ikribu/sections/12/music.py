@@ -61,7 +61,7 @@ for index, string in (
     (14 - 1, "short"),
     (16 - 1, "fermata"),
 ):
-    baca.global_fermata(rests[index], string)
+    baca.global_fermata_function(rests[index], string)
 
 
 def BCL(voice):

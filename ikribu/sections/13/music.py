@@ -52,7 +52,7 @@ baca.interpret.set_up_score(
 
 rests = score["Rests"]
 for index, string in ((33 - 1, "short"),):
-    baca.global_fermata(rests[index], string)
+    baca.global_fermata_function(rests[index], string)
 
 
 def BCL(voice):

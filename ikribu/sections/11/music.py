@@ -53,14 +53,14 @@ manifests = accumulator.manifests()
 for index, item in ((10 - 1, "incisions"),):
     skip = skips[index]
     indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, indicator, manifests)
 
 rests = score["Rests"]
 for index, string in (
     (9 - 1, "long"),
     (11 - 1, "long"),
 ):
-    baca.global_fermata(rests[index], string)
+    baca.global_fermata_function(rests[index], string)
 
 
 def BCL(voice):
