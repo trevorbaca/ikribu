@@ -141,7 +141,7 @@ def vc(m):
         baca.staff_position_function(o, 0)
         library.box_adjustment_function(o)
     with baca.scope(m[12]) as o:
-        baca.mark_function(o, r"\ikribu-colophon-markup")
+        baca.mark_function(o.leaf(0), r"\ikribu-colophon-markup")
         baca.rehearsal_mark_down_function(o)
         baca.rehearsal_mark_padding_function(o, 12)
         baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
