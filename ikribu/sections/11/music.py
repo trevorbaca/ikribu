@@ -176,11 +176,9 @@ def tutti(cache):
             ),
             baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
             if name == "bcl":
-                baca.text_script_extra_offset_function(
-                    o,
-                    (0, 8),
-                    tags=[abjad.Tag("+ARCH_A_PARTS_BCL")],
-                )
+                wrappers = baca.text_script_extra_offset_function(o, (0, 8))
+                for wrapper in wrappers:
+                    wrapper.tag = wrapper.tag.append(abjad.Tag("+ARCH_A_PARTS_BCL"))
 
 
 def main():

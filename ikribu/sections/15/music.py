@@ -123,13 +123,10 @@ def VC(voice):
 def bcl(cache):
     m = cache["bcl"]
     with baca.scope(m.get(1, 5)) as o:
-        wrapper_1, wrapper_2 = baca.text_script_extra_offset_function(
-            o,
-            (0, 7),
-            tags=[abjad.Tag("+ARCH_A_PARTS_BCL")],
-        )
-        wrapper_1.deactivate = True
-        wrapper_2.deactivate = True
+        wrappers = baca.text_script_extra_offset_function(o, (0, 7))
+        for wrapper in wrappers:
+            wrapper.deactivate = True
+            wrapper.tag = wrapper.tag.append(abjad.Tag("+ARCH_A_PARTS_BCL"))
         baca.dynamic_function(o.pleaf(0), "p")
         baca.markup_function(
             o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup"
