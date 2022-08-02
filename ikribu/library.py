@@ -63,7 +63,7 @@ def clb_staff_positions_function(argument, *, rotation=0):
 def enchain_runs(counts, exclude=None):
     def selector(argument):
         result = abjad.select.runs(argument, exclude=exclude)
-        result = [baca.enchain(_, counts) for _ in result]
+        result = [baca.select.enchain(_, counts) for _ in result]
         result = abjad.sequence.flatten(result)
         return result
 
