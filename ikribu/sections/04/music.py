@@ -179,14 +179,12 @@ def bcl(m):
             r"\ikribu-stonecircle-pi-two-markup",
         )
         wrappers[0].deactivate = True
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(abjad.Tag("+ARCH_A_PARTS_BCL"))
+        baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         wrappers = baca.markup_function(
             o.pleaf(0),
             r"\ikribu-stonecircle-pi-two-markup",
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(abjad.Tag("-ARCH_A_PARTS_BCL"))
+        baca.tags.wrappers(wrappers, abjad.Tag("-ARCH_A_PARTS_BCL"))
         library.box_adjustment_function(o)
         baca.dynamic_function(
             o.pleaf(0),
