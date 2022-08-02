@@ -36,16 +36,9 @@ def bcps_function(argument, rotation=0):
     return baca.bcps_function(argument, bcps)
 
 
-def box_adjustment():
-    return baca.suite(
-        baca.text_script_padding(2.5, allow_mmrests=True),
-        baca.text_script_parent_alignment_x(0, allow_mmrests=True),
-    )
-
-
 def box_adjustment_function(argument):
-    baca.text_script_padding_function(argument, 2.5, allow_mmrests=True)
-    baca.text_script_parent_alignment_x_function(argument, 0, allow_mmrests=True)
+    baca.text_script_padding_function(argument, 2.5)
+    baca.text_script_parent_alignment_x_function(argument, 0)
 
 
 def clb_staff_positions(*, rotation=0):
