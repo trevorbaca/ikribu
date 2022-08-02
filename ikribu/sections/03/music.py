@@ -139,7 +139,7 @@ def bcl(m):
 
 def vn(m):
     with baca.scope(m.leaves()) as o:
-        baca.text_script_staff_padding_function(o, 3, allow_mmrests=True)
+        baca.text_script_staff_padding_function(o, 3)
         baca.text_spanner_staff_padding_function(o, 3.5)
     with baca.scope(m.get(1, 15)) as o:
         baca.markup_function(
@@ -165,7 +165,7 @@ def va(m):
     with baca.scope(m.leaves()) as o:
         baca.clef_function(o.leaf(0), "alto")
         baca.staff_lines_function(o.leaf(0), 5)
-        baca.text_script_staff_padding_function(o, 3, allow_mmrests=True)
+        baca.text_script_staff_padding_function(o, 3)
         baca.text_spanner_staff_padding_function(o, 3.5)
     with baca.scope(m.get(19, 24)) as o:
         baca.markup_function(

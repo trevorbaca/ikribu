@@ -208,7 +208,7 @@ def vn(m):
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
         baca.markup_function(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
+        baca.text_script_staff_padding_function(o, 2.5)
         baca.pitches_function(o, "F#4 G#4 G#4 F#4")
         baca.stem_tremolo_function(o.pleaves())
         runs = baca.select.runs(o)
@@ -224,7 +224,7 @@ def vn(m):
 def va(m):
     with baca.scope(m.get(2, 16)) as o:
         baca.markup_function(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.text_script_staff_padding_function(o, 2.5, allow_mmrests=True)
+        baca.text_script_staff_padding_function(o, 2.5)
         baca.pitches_function(o, "F4 E4 E4 F4")
         baca.stem_tremolo_function(o.pleaves())
         runs = baca.select.runs(o)

@@ -216,7 +216,7 @@ def vn(m):
         ),
         baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
         baca.staccato_function(o.pheads())
-        baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
+        baca.text_script_padding_function(o, 2.5)
         library.clb_staff_positions_function(o)
 
 
@@ -231,7 +231,7 @@ def va(m):
         )
         baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
         baca.staccato_function(o.pheads())
-        baca.text_script_padding_function(o, 2.5, allow_mmrests=True)
+        baca.text_script_padding_function(o, 2.5)
         library.clb_staff_positions_function(o)
 
 

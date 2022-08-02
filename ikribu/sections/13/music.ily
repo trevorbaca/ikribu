@@ -272,7 +272,7 @@ number.13.Skips = {
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
-      %! +SEGMENT
+      %! +SECTION
       %! EMPTY_START_BAR
       %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
@@ -4691,10 +4691,10 @@ number.13.Violin.Music = {
     \once \override DynamicText.X-extent = #'(0 . 0)
       %! baca.dynamic_text_extra_offset_function(1)
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)
+      %! baca.hairpin_shorten_pair_function(1)
+    \once \override Hairpin.shorten-pair = #'(2.25 . 0)
       %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 8
-      %! baca.hairpin_shorten_pair_function(1)
-    \override Hairpin.shorten-pair = #'(2.25 . 0)
       %! ikribu.make_clb_rhythm()
     c'8
     % AFTER:
@@ -5362,8 +5362,6 @@ number.13.Violin.Music = {
         % COMMANDS:
           %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.hairpin_shorten_pair_function(2)
-        \revert Hairpin.shorten-pair
         % CLOSING:
         % COMMANDS:
 
@@ -7588,10 +7586,10 @@ number.13.Viola.Music = {
         \once \override DynamicText.X-extent = #'(0 . 0)
           %! baca.dynamic_text_extra_offset_function(1)
         \once \override DynamicText.extra-offset = #'(-3.5 . 0)
+          %! baca.hairpin_shorten_pair_function(1)
+        \once \override Hairpin.shorten-pair = #'(2.25 . 0)
           %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 8
-          %! baca.hairpin_shorten_pair_function(1)
-        \override Hairpin.shorten-pair = #'(2.25 . 0)
           %! ikribu.make_clb_rhythm()
         d'8
         % AFTER:
@@ -8085,8 +8083,6 @@ number.13.Viola.Music = {
         % COMMANDS:
           %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.hairpin_shorten_pair_function(2)
-        \revert Hairpin.shorten-pair
         % CLOSING:
         % COMMANDS:
 
