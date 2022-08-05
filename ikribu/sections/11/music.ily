@@ -3887,7 +3887,7 @@ number.11.Cello.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca._attach_start_stop_indicators(2)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava -1
       %! baca.ottava_bracket_staff_padding_function(1)
@@ -4042,7 +4042,7 @@ number.11.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._attach_start_stop_indicators(4)
+      %! baca._do_spanner_indicator_command(4)
       %! baca.ottava_bassa_function()
     \ottava 0
       %! baca.ottava_bracket_staff_padding_function(2)
