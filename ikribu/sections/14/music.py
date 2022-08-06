@@ -321,7 +321,7 @@ def vc(m):
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
         with baca.scope(m.get(item)) as o:
             baca.clef_function(o.leaf(0), "bass")
-            baca.ottava_bassa_function(o)
+            baca.ottava_bassa_function(o.tleaves())
             baca.pitch_function(o, "C1")
     for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
         with baca.scope(m.get(pair)) as o:

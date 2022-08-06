@@ -162,7 +162,7 @@ def tutti(cache):
         baca.dynamic_function(o.pleaf(0), "p")
         baca.hairpin_function(o.leaves()[-2:], "p < mf")
         baca.markup_function(o.pleaf(0), r"\baca-poco-vib-markup")
-        baca.ottava_bassa_function(o)
+        baca.ottava_bassa_function(o.tleaves())
         baca.ottava_bracket_staff_padding_function(o, 8)
         baca.pitch_function(o, "D1")
     for name in ["bcl", "vn", "va"]:
