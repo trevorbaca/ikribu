@@ -120,7 +120,10 @@ def vn(m):
             context="StringInstrumentPianoStaff",
         )
         library.short_instrument_name_function(
-            o.leaf(0), "Vn.", context="StringInstrumentPianoStaff"
+            o.leaf(0),
+            "Vn.",
+            accumulator.manifests(),
+            context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
@@ -145,7 +148,10 @@ def va(m):
             o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
         library.short_instrument_name_function(
-            o.leaf(0), "Va.", context="StringInstrumentPianoStaff"
+            o.leaf(0),
+            "Va.",
+            accumulator.manifests(),
+            context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "alto")
         baca.staff_lines_function(o.leaf(0), 5)
@@ -166,7 +172,10 @@ def vc(m):
             o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
         library.short_instrument_name_function(
-            o.leaf(0), "Vc.", context="StringInstrumentPianoStaff"
+            o.leaf(0),
+            "Vc.",
+            accumulator.manifests(),
+            context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
