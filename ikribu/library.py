@@ -12,18 +12,6 @@ def _make_short_instrument_name(markup, context="Staff"):
     )
 
 
-def bcps(rotation=0):
-    bcps = [
-        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
-        [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
-        [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7), (7, 7)],
-        [(0, 4), (1, 4), (2, 4), (1, 4)],
-    ]
-    bcps = abjad.sequence.rotate(bcps, n=rotation)
-    bcps = abjad.sequence.flatten(bcps, depth=1)
-    return baca.bcps(bcps)
-
-
 def bcps_function(argument, rotation=0):
     bcps = [
         [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
@@ -39,17 +27,6 @@ def bcps_function(argument, rotation=0):
 def box_adjustment_function(argument):
     baca.text_script_padding_function(argument, 2.5)
     baca.text_script_parent_alignment_x_function(argument, 0)
-
-
-def clb_staff_positions(*, rotation=0):
-    positions = [[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]]
-    positions = baca.sequence.helianthate(positions, -1, -1)
-    positions = abjad.sequence.rotate(positions, rotation)
-    positions = abjad.sequence.flatten(positions)
-    return baca.staff_positions(
-        positions,
-        selector=lambda _: baca.select.plts(_),
-    )
 
 
 def clb_staff_positions_function(argument, *, rotation=0):
@@ -70,19 +47,6 @@ def enchain_runs(counts, exclude=None):
     return selector
 
 
-def glissando_pitches(octave=4, rotation=0):
-    segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
-    inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
-    left = segment[:] + inversion[:]
-    right = list(reversed(left))
-    pitches = left[:] + right[1:-1]
-    transposition = 12 * (octave - 4)
-    pitches = [_ + transposition for _ in pitches]
-    pitches_ = pitches[:]
-    pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
-    return baca.pitches(pitches_, allow_repeats=True)
-
-
 def glissando_pitches_function(argument, octave=4, rotation=0):
     segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
     inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
@@ -97,29 +61,18 @@ def glissando_pitches_function(argument, octave=4, rotation=0):
 
 
 def instruments():
-    return dict(
-        [
-            ("BassClarinet", abjad.BassClarinet()),
-            (
-                "Violin",
-                abjad.Violin(
-                    context="StaffGroup", pitch_range=abjad.PitchRange("[G3, +inf]")
-                ),
-            ),
-            (
-                "Viola",
-                abjad.Viola(
-                    context="StaffGroup", pitch_range=abjad.PitchRange("[C3, +inf]")
-                ),
-            ),
-            (
-                "Cello",
-                abjad.Cello(
-                    context="StaffGroup", pitch_range=abjad.PitchRange("[Bb0, +inf]")
-                ),
-            ),
-        ]
-    )
+    return {
+        "BassClarinet": abjad.BassClarinet(),
+        "Violin": abjad.Violin(
+            context="StaffGroup", pitch_range=abjad.PitchRange("[G3, +inf]")
+        ),
+        "Viola": abjad.Viola(
+            context="StaffGroup", pitch_range=abjad.PitchRange("[C3, +inf]")
+        ),
+        "Cello": abjad.Cello(
+            context="StaffGroup", pitch_range=abjad.PitchRange("[Bb0, +inf]")
+        ),
+    }
 
 
 def make_bow_rhythm(time_signatures, *commands, rotation=0):
@@ -168,7 +121,6 @@ def make_color_rhythm(time_signatures, n):
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-    # BASS CLARINET
     bass_clarinet_music_voice = abjad.Voice(name="BassClarinet.Music", tag=tag)
     bass_clarinet_music_staff = abjad.Staff(
         [bass_clarinet_music_voice],
@@ -176,7 +128,6 @@ def make_empty_score():
         tag=tag,
     )
     baca.score.attach_lilypond_tag("BassClarinet", bass_clarinet_music_staff)
-    # VIOLIN
     violin_rh_music_voice = abjad.Voice(name="ViolinRH.Music", tag=tag)
     violin_rh_music_staff = abjad.Staff(
         [violin_rh_music_voice],
@@ -194,7 +145,6 @@ def make_empty_score():
         tag=tag,
     )
     baca.score.attach_lilypond_tag("Violin", violin_staff_group)
-    # VIOLA
     viola_rh_music_voice = abjad.Voice(name="ViolaRH.Music", tag=tag)
     viola_rh_music_staff = abjad.Staff(
         [viola_rh_music_voice],
@@ -212,7 +162,6 @@ def make_empty_score():
         tag=tag,
     )
     baca.score.attach_lilypond_tag("Viola", viola_staff_group)
-    # CELLO
     cello_rh_music_voice = abjad.Voice(name="CelloRH.Music", tag=tag)
     cello_rh_music_staff = abjad.Staff(
         [cello_rh_music_voice],
@@ -230,7 +179,6 @@ def make_empty_score():
         tag=tag,
     )
     baca.score.attach_lilypond_tag("Cello", cello_staff_group)
-    # ENSEMBLE STAFF GROUP
     ensemble_staff_group = abjad.StaffGroup(
         [
             bass_clarinet_music_staff,
@@ -242,14 +190,12 @@ def make_empty_score():
         name="EnsembleStaffGroup",
         tag=tag,
     )
-    # MUSIC CONTEXT
     music_context = abjad.Context(
         [ensemble_staff_group],
         lilypond_type="MusicContext",
         name="MusicContext",
         tag=tag,
     )
-    # SCORE
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
     baca.score.assert_lilypond_identifiers(score)
     baca.score.assert_unique_context_names(score)
@@ -318,27 +264,12 @@ def make_vigil_rhythm(time_signatures):
     return music
 
 
-def short_instrument_name(
-    key,
-    alert=None,
-    context="Staff",
-    selector=lambda _: abjad.select.leaf(_, 0),
-):
-    short_instrument_name = short_instrument_names()[key]
-    command = baca.short_instrument_name(
-        short_instrument_name,
-        alert=alert,
-        context=context,
-        selector=selector,
-    )
-    return baca.not_parts(command)
-
-
-def short_instrument_name_function(leaf, key, context="Staff"):
+def short_instrument_name_function(leaf, key, manifests, context="Staff"):
     short_instrument_name = short_instrument_names()[key]
     baca.short_instrument_name_function(
         leaf,
         short_instrument_name,
+        manifests,
         context=context,
     )
 
@@ -362,14 +293,12 @@ def short_instrument_names():
 
 
 def metronome_marks():
-    return dict(
-        [
-            ("incisions", abjad.MetronomeMark((1, 4), 58)),
-            ("inscription", abjad.MetronomeMark((1, 4), 66)),
-            ("night", abjad.MetronomeMark((1, 4), 42)),
-            ("windows", abjad.MetronomeMark((1, 4), 104)),
-        ]
-    )
+    return {
+        "incisions": abjad.MetronomeMark((1, 4), 58),
+        "inscription": abjad.MetronomeMark((1, 4), 66),
+        "night": abjad.MetronomeMark((1, 4), 42),
+        "windows": abjad.MetronomeMark((1, 4), 104),
+    }
 
 
 def part_manifest():
