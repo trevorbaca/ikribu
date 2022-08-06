@@ -8723,7 +8723,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -8859,7 +8859,7 @@ number.14.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
@@ -8975,7 +8975,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -9018,7 +9018,7 @@ number.14.Cello.Music = {
     ^ \baca-xp-markup
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_AFTER:
@@ -9139,7 +9139,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -9275,7 +9275,7 @@ number.14.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
@@ -9391,7 +9391,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -9527,7 +9527,7 @@ number.14.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
@@ -9643,7 +9643,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -9686,7 +9686,7 @@ number.14.Cello.Music = {
     ^ \baca-xp-markup
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_AFTER:
@@ -9807,7 +9807,7 @@ number.14.Cello.Music = {
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! SPANNER_START
-      %! baca._do_spanner_indicator_command(2)
+      %! baca._do_spanner_indicator_command(1)
       %! baca.ottava_bassa_function()
     \ottava -1
     % OPENING:
@@ -9973,7 +9973,7 @@ number.14.Cello.Music = {
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._do_spanner_indicator_command(4)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
