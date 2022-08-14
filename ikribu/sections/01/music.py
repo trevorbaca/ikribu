@@ -92,9 +92,7 @@ def VC(voice):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["BassClarinet"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
         baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
         baca.short_instrument_name_function(
             o.leaf(0),
@@ -113,9 +111,7 @@ def vn_rh(m):
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["Violin"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Violin", accumulator.manifests())
         baca.instrument_name_function(
             o.leaf(0),
             r"\ikribu-violin-markup",
@@ -123,7 +119,7 @@ def vn(m):
         )
         baca.short_instrument_name_function(
             o.leaf(0),
-            accumulator.short_instrument_names["Vn."],
+            "Vn.",
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
@@ -143,15 +139,13 @@ def va_rh(m):
 
 def va(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["Viola"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Viola", accumulator.manifests())
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
         baca.short_instrument_name_function(
             o.leaf(0),
-            accumulator.short_instrument_names["Va."],
+            "Va.",
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
@@ -167,15 +161,13 @@ def vc_rh(m):
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["Cello"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Cello", accumulator.manifests())
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
         baca.short_instrument_name_function(
             o.leaf(0),
-            accumulator.short_instrument_names["Vc."],
+            "Vc.",
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
