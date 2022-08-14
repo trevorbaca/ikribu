@@ -96,8 +96,10 @@ def bcl(m):
             o.leaf(0), accumulator.instruments["BassClarinet"], accumulator.manifests()
         )
         baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
-        library.short_instrument_name_function(
-            o.leaf(0), "B. cl.", accumulator.manifests()
+        baca.short_instrument_name_function(
+            o.leaf(0),
+            accumulator.short_instrument_names["B. cl."],
+            accumulator.manifests(),
         )
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
@@ -119,9 +121,9 @@ def vn(m):
             r"\ikribu-violin-markup",
             context="StringInstrumentPianoStaff",
         )
-        library.short_instrument_name_function(
+        baca.short_instrument_name_function(
             o.leaf(0),
-            "Vn.",
+            accumulator.short_instrument_names["Vn."],
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
@@ -147,9 +149,9 @@ def va(m):
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
-        library.short_instrument_name_function(
+        baca.short_instrument_name_function(
             o.leaf(0),
-            "Va.",
+            accumulator.short_instrument_names["Va."],
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
@@ -171,9 +173,9 @@ def vc(m):
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
-        library.short_instrument_name_function(
+        baca.short_instrument_name_function(
             o.leaf(0),
-            "Vc.",
+            accumulator.short_instrument_names["Vc."],
             accumulator.manifests(),
             context="StringInstrumentPianoStaff",
         )
