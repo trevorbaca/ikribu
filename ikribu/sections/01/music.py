@@ -96,7 +96,7 @@ def bcl(m):
         baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
         baca.short_instrument_name_function(
             o.leaf(0),
-            accumulator.short_instrument_names["B. cl."],
+            "B. cl.",
             accumulator.manifests(),
         )
         baca.clef_function(o.leaf(0), "treble")
