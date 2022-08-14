@@ -264,16 +264,6 @@ def make_vigil_rhythm(time_signatures):
     return music
 
 
-def short_instrument_name_function(leaf, key, manifests, context="Staff"):
-    short_instrument_name = short_instrument_names()[key]
-    baca.short_instrument_name_function(
-        leaf,
-        short_instrument_name,
-        manifests,
-        context=context,
-    )
-
-
 def short_instrument_names():
     return {
         "B. cl.": abjad.ShortInstrumentName(r"\ikribu-bcl-markup"),
