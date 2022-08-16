@@ -157,7 +157,7 @@ def main():
     BCL(accumulator.voice("BassClarinet.Music"))
     MOST(score)
     VC(accumulator.voice("Cello.Music"))
-    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    previous_persist = baca.previous_persist(__file__)
     baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
         score,
