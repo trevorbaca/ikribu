@@ -60,21 +60,6 @@ def glissando_pitches_function(argument, octave=4, rotation=0):
     return baca.pitches_function(argument, pitches_, allow_repeats=True)
 
 
-def instruments():
-    return {
-        "BassClarinet": abjad.BassClarinet(),
-        "Violin": abjad.Violin(
-            context="StaffGroup", pitch_range=abjad.PitchRange("[G3, +inf]")
-        ),
-        "Viola": abjad.Viola(
-            context="StaffGroup", pitch_range=abjad.PitchRange("[C3, +inf]")
-        ),
-        "Cello": abjad.Cello(
-            context="StaffGroup", pitch_range=abjad.PitchRange("[Bb0, +inf]")
-        ),
-    }
-
-
 def make_bow_rhythm(time_signatures, *commands, rotation=0):
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
@@ -264,33 +249,6 @@ def make_vigil_rhythm(time_signatures):
     return music
 
 
-def short_instrument_names():
-    return {
-        "B. cl.": abjad.ShortInstrumentName(r"\ikribu-bcl-markup"),
-        "Va.": abjad.ShortInstrumentName(
-            r"\ikribu-va-markup",
-            context="StringInstrumentPianoStaff",
-        ),
-        "Vc.": abjad.ShortInstrumentName(
-            r"\ikribu-vc-markup",
-            context="StringInstrumentPianoStaff",
-        ),
-        "Vn.": abjad.ShortInstrumentName(
-            r"\ikribu-vn-markup",
-            context="StringInstrumentPianoStaff",
-        ),
-    }
-
-
-def metronome_marks():
-    return {
-        "incisions": abjad.MetronomeMark((1, 4), 58),
-        "inscription": abjad.MetronomeMark((1, 4), 66),
-        "night": abjad.MetronomeMark((1, 4), 42),
-        "windows": abjad.MetronomeMark((1, 4), 104),
-    }
-
-
 def part_manifest():
     return (
         baca.Part("BassClarinet"),
@@ -322,3 +280,49 @@ def voice_abbreviations():
         "vc_rh": "CelloRH.Music",
         "vc": "Cello.Music",
     }
+
+
+instruments = {
+    "BassClarinet": abjad.BassClarinet(),
+    "Violin": abjad.Violin(
+        context="StaffGroup", pitch_range=abjad.PitchRange("[G3, +inf]")
+    ),
+    "Viola": abjad.Viola(
+        context="StaffGroup", pitch_range=abjad.PitchRange("[C3, +inf]")
+    ),
+    "Cello": abjad.Cello(
+        context="StaffGroup", pitch_range=abjad.PitchRange("[Bb0, +inf]")
+    ),
+}
+
+
+metronome_marks = {
+    "incisions": abjad.MetronomeMark((1, 4), 58),
+    "inscription": abjad.MetronomeMark((1, 4), 66),
+    "night": abjad.MetronomeMark((1, 4), 42),
+    "windows": abjad.MetronomeMark((1, 4), 104),
+}
+
+
+short_instrument_names = {
+    "B. cl.": abjad.ShortInstrumentName(r"\ikribu-bcl-markup"),
+    "Va.": abjad.ShortInstrumentName(
+        r"\ikribu-va-markup",
+        context="StringInstrumentPianoStaff",
+    ),
+    "Vc.": abjad.ShortInstrumentName(
+        r"\ikribu-vc-markup",
+        context="StringInstrumentPianoStaff",
+    ),
+    "Vn.": abjad.ShortInstrumentName(
+        r"\ikribu-vn-markup",
+        context="StringInstrumentPianoStaff",
+    ),
+}
+
+
+manifests = {
+    "abjad.Instrument": instruments,
+    "abjad.MetronomeMark": metronome_marks,
+    "abjad.ShortInstrumentName": short_instrument_names,
+}

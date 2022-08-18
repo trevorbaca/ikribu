@@ -20,9 +20,9 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 accumulator = baca.CommandAccumulator(
-    instruments=library.instruments(),
-    short_instrument_names=library.short_instrument_names(),
-    metronome_marks=library.metronome_marks(),
+    instruments=library.instruments,
+    short_instrument_names=library.short_instrument_names,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
@@ -31,7 +31,7 @@ accumulator = baca.CommandAccumulator(
 baca.interpret.set_up_score(
     score,
     accumulator,
-    accumulator.manifests(),
+    library.manifests,
     accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
@@ -39,7 +39,7 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = accumulator.manifests()
+manifests = library.manifests
 
 for index, item in ((1 - 1, "incisions"),):
     skip = skips[index]
@@ -91,12 +91,12 @@ def VC(voice):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
         baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
         baca.short_instrument_name_function(
             o.leaf(0),
             "B. cl.",
-            accumulator.manifests(),
+            library.manifests,
         )
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
@@ -110,7 +110,7 @@ def vn_rh(m):
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o.leaf(0), "Violin", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Violin", library.manifests)
         baca.instrument_name_function(
             o.leaf(0),
             r"\ikribu-violin-markup",
@@ -119,7 +119,7 @@ def vn(m):
         baca.short_instrument_name_function(
             o.leaf(0),
             "Vn.",
-            accumulator.manifests(),
+            library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "percussion")
@@ -138,14 +138,14 @@ def va_rh(m):
 
 def va(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "Viola", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Viola", library.manifests)
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
         baca.short_instrument_name_function(
             o.leaf(0),
             "Va.",
-            accumulator.manifests(),
+            library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "alto")
@@ -160,14 +160,14 @@ def vc_rh(m):
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o.leaf(0), "Cello", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Cello", library.manifests)
         baca.instrument_name_function(
             o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
         baca.short_instrument_name_function(
             o.leaf(0),
             "Vc.",
-            accumulator.manifests(),
+            library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef_function(o.leaf(0), "treble")
@@ -208,7 +208,7 @@ if __name__ == "__main__":
     main()
     metadata, persist, score, timing = baca.build.section(
         score,
-        accumulator.manifests(),
+        library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
         activate=(
