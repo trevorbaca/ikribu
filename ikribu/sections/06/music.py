@@ -74,8 +74,7 @@ for index, item in (
     (15 - 1, "night"),
 ):
     skip = skips[index]
-    indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark_function(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, item, manifests)
 
 
 def BCL(voice):
