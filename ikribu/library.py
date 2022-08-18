@@ -270,18 +270,6 @@ def time_signatures():
     return time_signatures
 
 
-def voice_abbreviations():
-    return {
-        "bcl": "BassClarinet.Music",
-        "vn_rh": "ViolinRH.Music",
-        "vn": "Violin.Music",
-        "va_rh": "ViolaRH.Music",
-        "va": "Viola.Music",
-        "vc_rh": "CelloRH.Music",
-        "vc": "Cello.Music",
-    }
-
-
 instruments = {
     "BassClarinet": abjad.BassClarinet(),
     "Violin": abjad.Violin(
@@ -325,4 +313,15 @@ manifests = {
     "abjad.Instrument": instruments,
     "abjad.MetronomeMark": metronome_marks,
     "abjad.ShortInstrumentName": short_instrument_names,
+}
+
+
+voice_abbreviations = {
+    "bcl": "BassClarinet.Music",
+    "vn_rh": "ViolinRH.Music",
+    "vn": "Violin.Music",
+    "va_rh": "ViolaRH.Music",
+    "va": "Viola.Music",
+    "vc_rh": "CelloRH.Music",
+    "vc": "Cello.Music",
 }
