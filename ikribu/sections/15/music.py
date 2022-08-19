@@ -213,22 +213,21 @@ def main():
     vc(cache["vc"])
 
 
-# TODO: find and eliminate 1 unterminated text spanner
-defaults = baca.interpret.section_defaults()
-del defaults["check_wellformedness"]
-
 if __name__ == "__main__":
     main()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
         accumulator.time_signatures,
-        **defaults,
+        **baca.interpret.section_defaults(),
         activate=(
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
         ),
         always_make_global_rests=True,
+        # TODO: find and eliminate 1 unterminated text spanner
+        do_not_check_wellformedness=True,
+        empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
         transpose_score=True,
