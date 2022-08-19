@@ -47,7 +47,7 @@ accumulator = baca.CommandAccumulator(
     short_instrument_names=library.short_instrument_names,
     metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    _voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -252,7 +252,7 @@ def main():
     cache = baca.interpret.cache_leaves(
         score,
         len(accumulator.time_signatures),
-        accumulator.voice_abbreviations,
+        library.voice_abbreviations,
     )
     bcl(cache)
     vn(cache)
