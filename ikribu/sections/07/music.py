@@ -7,17 +7,6 @@ from ikribu import library
 ########################################### 07 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[F.1]", 1),
-    ("[F.2]", 2),
-    ("[F.3]", 3),
-    ("[F.4]", 4),
-    ("[F.5]", 5),
-    ("[F.6]", 6),
-    ("[F.7]", 7),
-    ("[F.8]", 8),
-)
-
 maker_ = baca.TimeSignatureMaker(
     library.time_signatures(),
     count=8,
@@ -42,8 +31,20 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
+
+skips = score["Skips"]
+stage_markup = (
+    ("[F.1]", 1),
+    ("[F.2]", 2),
+    ("[F.3]", 3),
+    ("[F.4]", 4),
+    ("[F.5]", 5),
+    ("[F.6]", 6),
+    ("[F.7]", 7),
+    ("[F.8]", 8),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 
 def BCL(voice):

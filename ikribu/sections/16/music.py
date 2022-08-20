@@ -7,29 +7,6 @@ from ikribu import library
 ########################################### 16 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[O.1]", 1),
-    ("[O.2]", 2),
-    ("[O.3]", 3),
-    ("[O.4]", 4),
-    ("[O.5]", 5),
-    ("[O.6]", 6),
-    ("[O.7]", 7),
-    ("[O.8]", 8),
-    ("[O.9]", 9),
-    ("[O.10]", 10),
-    ("[O.11]", 11),
-    ("[O.12]", 12),
-    ("[O.13]", 13),
-    ("[O.14]", 14),
-    ("[O.15]", 15),
-    ("[O.16]", 16),
-    ("[O.17]", 17),
-    ("[O.18]", 18),
-    ("[O.19]", 19),
-    ("[O.20]", 20),
-)
-
 fermata_measures = [21]
 maker_ = baca.TimeSignatureMaker(
     library.time_signatures(),
@@ -56,15 +33,36 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+stage_markup = (
+    ("[O.1]", 1),
+    ("[O.2]", 2),
+    ("[O.3]", 3),
+    ("[O.4]", 4),
+    ("[O.5]", 5),
+    ("[O.6]", 6),
+    ("[O.7]", 7),
+    ("[O.8]", 8),
+    ("[O.9]", 9),
+    ("[O.10]", 10),
+    ("[O.11]", 11),
+    ("[O.12]", 12),
+    ("[O.13]", 13),
+    ("[O.14]", 14),
+    ("[O.15]", 15),
+    ("[O.16]", 16),
+    ("[O.17]", 17),
+    ("[O.18]", 18),
+    ("[O.19]", 19),
+    ("[O.20]", 20),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in ((1 - 1, "night"),):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 rests = score["Rests"]
 for index, string in ((21 - 1, "fermata"),):

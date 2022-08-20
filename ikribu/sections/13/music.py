@@ -7,17 +7,6 @@ from ikribu import library
 ########################################### 13 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[L.1]", 1),
-    ("[L.2]", 5),
-    ("[L.3]", 9),
-    ("[L.4]", 13),
-    ("[L.5]", 17),
-    ("[L.6]", 21),
-    ("[L.7]", 25),
-    ("[L.8]", 29),
-)
-
 fermata_measures = [33]
 maker_ = baca.TimeSignatureMaker(
     library.time_signatures(),
@@ -44,8 +33,20 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
+
+skips = score["Skips"]
+stage_markup = (
+    ("[L.1]", 1),
+    ("[L.2]", 5),
+    ("[L.3]", 9),
+    ("[L.4]", 13),
+    ("[L.5]", 17),
+    ("[L.6]", 21),
+    ("[L.7]", 25),
+    ("[L.8]", 29),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 rests = score["Rests"]
 for index, string in ((33 - 1, "short"),):

@@ -8,14 +8,6 @@ from ikribu import library
 ########################################### 17 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[P.1]", 1),
-    ("[P.2]", 4),
-    ("[P.3]", 5),
-    ("[P.4]", 6),
-    ("[P.5]", 7),
-)
-
 fermata_measures = [8]
 maker_ = baca.TimeSignatureMaker(
     library.time_signatures(),
@@ -42,11 +34,17 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+stage_markup = (
+    ("[P.1]", 1),
+    ("[P.2]", 4),
+    ("[P.3]", 5),
+    ("[P.4]", 6),
+    ("[P.5]", 7),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (1 - 1, "windows"),
@@ -54,7 +52,7 @@ for index, item in (
     (6 - 1, "night"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 rests = score["Rests"]
 for index, string in ((8 - 1, "long"),):
