@@ -8,22 +8,6 @@ from ikribu import library
 ########################################### 04 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[C.1]", 1),
-    ("[C.2]", 2),
-    ("[C.3]", 3),
-    ("[C.4]", 4),
-    ("[C.6]", 6),
-    ("[C.7]", 7),
-    ("[C.8]", 8),
-    ("[C.10]", 10),
-    ("[C.11]", 11),
-    ("[C.12]", 12),
-    ("[C.14]", 14),
-    ("[C.15]", 15),
-    ("[C.16]", 16),
-)
-
 pairs = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
 pairs.insert(0, (7, 4))
 maker_ = baca.TimeSignatureMaker(
@@ -49,11 +33,25 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+stage_markup = (
+    ("[C.1]", 1),
+    ("[C.2]", 2),
+    ("[C.3]", 3),
+    ("[C.4]", 4),
+    ("[C.6]", 6),
+    ("[C.7]", 7),
+    ("[C.8]", 8),
+    ("[C.10]", 10),
+    ("[C.11]", 11),
+    ("[C.12]", 12),
+    ("[C.14]", 14),
+    ("[C.15]", 15),
+    ("[C.16]", 16),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (1 - 1, "incisions"),
@@ -71,7 +69,7 @@ for index, item in (
     (16 - 1, "night"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def BCL(voice):
