@@ -71,7 +71,7 @@ for index, item in (
     baca.metronome_mark_function(skip, item, library.manifests)
 
 
-def BCL(voice):
+def BCL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
     music = baca.make_tied_repeated_durations(accumulator.get(2, 3), [(1, 4)])
@@ -92,12 +92,12 @@ def BCL(voice):
     voice.extend(music)
 
 
-def VN_RH(voice):
+def VN_RH(voice, accumulator):
     music = baca.make_mmrests(accumulator.get())
     voice.extend(music)
 
 
-def VN(voice):
+def VN(voice, accumulator):
     music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
@@ -120,12 +120,12 @@ def VN(voice):
     voice.extend(music)
 
 
-def VA_RH(voice):
+def VA_RH(voice, accumulator):
     music = baca.make_mmrests(accumulator.get())
     voice.extend(music)
 
 
-def VA(voice):
+def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
     music = baca.make_notes(accumulator.get(3, 4), repeat_ties=True)
@@ -146,12 +146,12 @@ def VA(voice):
     voice.extend(music)
 
 
-def VC_RH(voice):
+def VC_RH(voice, accumulator):
     music = baca.make_mmrests(accumulator.get())
     voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
     music = baca.make_notes(
@@ -263,13 +263,13 @@ def vc(m):
 
 
 def main():
-    BCL(accumulator.voice("BassClarinet.Music"))
-    VN_RH(accumulator.voice("ViolinRH.Music"))
-    VN(accumulator.voice("Violin.Music"))
-    VA_RH(accumulator.voice("ViolaRH.Music"))
-    VA(accumulator.voice("Viola.Music"))
-    VC_RH(accumulator.voice("CelloRH.Music"))
-    VC(accumulator.voice("Cello.Music"))
+    BCL(accumulator.voice("BassClarinet.Music"), accumulator)
+    VN_RH(accumulator.voice("ViolinRH.Music"), accumulator)
+    VN(accumulator.voice("Violin.Music"), accumulator)
+    VA_RH(accumulator.voice("ViolaRH.Music"), accumulator)
+    VA(accumulator.voice("Viola.Music"), accumulator)
+    VC_RH(accumulator.voice("CelloRH.Music"), accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

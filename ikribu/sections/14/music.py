@@ -166,7 +166,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     voice.extend(music)
 
 
-def BCL(voice):
+def BCL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1), head=voice.name)
     voice.extend(music)
     music = baca.make_repeat_tied_notes(accumulator.get(2, 4))
@@ -195,7 +195,7 @@ def BCL(voice):
     voice.extend(music)
 
 
-def ALL_RH(score):
+def ALL_RH(score, accumulator):
     for voice in (
         score["ViolinRH.Music"],
         score["ViolaRH.Music"],
@@ -205,15 +205,15 @@ def ALL_RH(score):
         voice.extend(music)
 
 
-def VN(voice):
+def VN(voice, accumulator):
     make_vn_va_rhythm(voice, accumulator, [3, 4, 5, 3, 4, 5], grainfall=True)
 
 
-def VA(voice):
+def VA(voice, accumulator):
     make_vn_va_rhythm(voice, accumulator, [4, 5, 3, 4, 5, 3], grainfall=False)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
     music = baca.make_repeat_tied_notes(accumulator.get(2, 4))
@@ -406,11 +406,11 @@ def strings(cache):
 
 
 def main():
-    BCL(accumulator.voice("BassClarinet.Music"))
-    ALL_RH(score)
-    VN(accumulator.voice("Violin.Music"))
-    VA(accumulator.voice("Viola.Music"))
-    VC(accumulator.voice("Cello.Music"))
+    BCL(accumulator.voice("BassClarinet.Music"), accumulator)
+    ALL_RH(score, accumulator)
+    VN(accumulator.voice("Violin.Music"), accumulator)
+    VA(accumulator.voice("Viola.Music"), accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

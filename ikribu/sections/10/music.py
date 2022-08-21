@@ -55,7 +55,7 @@ for index, string in (
     baca.global_fermata_function(rests[index], string)
 
 
-def MOST(score):
+def MOST(score, accumulator):
     for voice in (
         score["BassClarinet.Music"],
         score["ViolinRH.Music"],
@@ -68,7 +68,7 @@ def MOST(score):
         voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     for n in range(1, 8 + 1):
         if n % 2 == 1:
             music = baca.make_tied_repeated_durations(accumulator.get(n), [(1, 4)])
@@ -87,8 +87,8 @@ def vc(m):
 
 
 def main():
-    MOST(score)
-    VC(accumulator.voice("Cello.Music"))
+    MOST(score, accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
