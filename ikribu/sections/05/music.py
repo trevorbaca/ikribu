@@ -51,7 +51,7 @@ for index, string in ((11 - 1, "short"),):
     baca.global_fermata_function(rests[index], string)
 
 
-def MOST(score):
+def MOST(score, accumulator):
     for voice in (
         score["BassClarinet.Music"],
         score["ViolinRH.Music"],
@@ -63,7 +63,7 @@ def MOST(score):
         voice.extend(music)
 
 
-def VC_RH(voice):
+def VC_RH(voice, accumulator):
     music = library.make_bow_rhythm(
         accumulator.get(1, 10),
         rmakers.force_rest(
@@ -76,7 +76,7 @@ def VC_RH(voice):
     voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = library.make_glissando_rhythm(
         accumulator.get(1, 10),
         rotation_1=0,
@@ -117,9 +117,9 @@ def vc(m):
 
 
 def main():
-    MOST(score)
-    VC_RH(accumulator.voice("CelloRH.Music"))
-    VC(accumulator.voice("Cello.Music"))
+    MOST(score, accumulator)
+    VC_RH(accumulator.voice("CelloRH.Music"), accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

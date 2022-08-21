@@ -54,14 +54,14 @@ for index, string in ((12 - 1, "fermata"),):
     baca.global_fermata_function(rests[index], string)
 
 
-def BCL(voice):
+def BCL(voice, accumulator):
     music = baca.make_tied_repeated_durations(accumulator.get(1, 6), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 12))
     voice.extend(music)
 
 
-def ALL_RH(score):
+def ALL_RH(score, accumulator):
     for voice in (
         score["ViolinRH.Music"],
         score["ViolaRH.Music"],
@@ -71,21 +71,21 @@ def ALL_RH(score):
         voice.extend(music)
 
 
-def VN(voice):
+def VN(voice, accumulator):
     music = baca.make_repeated_duration_notes(accumulator.get(1, 9), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 12))
     voice.extend(music)
 
 
-def VA(voice):
+def VA(voice, accumulator):
     music = baca.make_repeated_duration_notes(accumulator.get(1, 9), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 12))
     voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = library.make_inscription_rhythm(accumulator.get(1, 11))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12))
@@ -141,11 +141,11 @@ def vc(m):
 
 
 def main():
-    BCL(accumulator.voice("BassClarinet.Music"))
-    ALL_RH(score)
-    VN(accumulator.voice("Violin.Music"))
-    VA(accumulator.voice("Viola.Music"))
-    VC(accumulator.voice("Cello.Music"))
+    BCL(accumulator.voice("BassClarinet.Music"), accumulator)
+    ALL_RH(score, accumulator)
+    VN(accumulator.voice("Violin.Music"), accumulator)
+    VA(accumulator.voice("Viola.Music"), accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

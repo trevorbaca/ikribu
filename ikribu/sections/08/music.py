@@ -52,7 +52,7 @@ for index, item in (
     baca.metronome_mark_function(skip, item, library.manifests)
 
 
-def BCL(voice):
+def BCL(voice, accumulator):
     music = baca.make_tied_repeated_durations(accumulator.get(1), [(6, 4), (1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
@@ -79,7 +79,7 @@ def BCL(voice):
     voice.extend(music)
 
 
-def MOST(score):
+def MOST(score, accumulator):
     for voice in (
         score["ViolinRH.Music"],
         score["Violin.Music"],
@@ -91,7 +91,7 @@ def MOST(score):
         voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = baca.make_notes(
         accumulator.get(1, 11),
         rmakers.reduce_multiplier(),
@@ -147,9 +147,9 @@ def vc(m):
 
 
 def main():
-    BCL(accumulator.voice("BassClarinet.Music"))
-    MOST(score)
-    VC(accumulator.voice("Cello.Music"))
+    BCL(accumulator.voice("BassClarinet.Music"), accumulator)
+    MOST(score, accumulator)
+    VC(accumulator.voice("Cello.Music"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
