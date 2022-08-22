@@ -175,7 +175,7 @@ def va(m):
         baca.hairpin_function(o.rleaves()[-2:], "mf >o niente")
 
 
-def main():
+def make_score():
     BCL(accumulator.voice("BassClarinet.Music"), accumulator)
     VN_RH(accumulator.voice("ViolinRH.Music"), accumulator)
     VN(accumulator.voice("Violin.Music"), accumulator)
@@ -200,8 +200,8 @@ def main():
     va(cache["va"])
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -223,3 +223,7 @@ if __name__ == "__main__":
         includes=["../stylesheet.ily"],
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()
