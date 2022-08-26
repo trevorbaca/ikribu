@@ -7,83 +7,73 @@ from ikribu import library
 ########################################### 14 ##########################################
 #########################################################################################
 
-fermata_measures = [5, 8, 13, 18, 21, 32]
-maker_ = baca.TimeSignatureMaker(
-    library.time_signatures(),
-    count=32,
-    fermata_measures=fermata_measures,
-    rotation=-13,
-)
-time_signatures = maker_.run()
 
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
+def make_empty_score():
+    fermata_measures = [5, 8, 13, 18, 21, 32]
+    maker_ = baca.TimeSignatureMaker(
+        library.time_signatures(),
+        count=32,
+        fermata_measures=fermata_measures,
+        rotation=-13,
+    )
+    time_signatures = maker_.run()
+    score = library.make_empty_score()
+    voice_names = baca.accumulator.get_voice_names(score)
+    accumulator = baca.CommandAccumulator(
+        time_signatures=time_signatures,
+        _voice_abbreviations=library.voice_abbreviations,
+        _voice_names=voice_names,
+    )
+    return score, accumulator
 
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
 
-baca.interpret.set_up_score(
-    score,
-    accumulator.time_signatures,
-    accumulator,
-    library.manifests,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-)
-
-skips = score["Skips"]
-stage_markup = (
-    ("[M.1]", 1),
-    ("[M.2]", 2),
-    ("[M.3]", 4),
-    ("[M.5]", 6),
-    ("[M.6]", 7),
-    ("[M.8]", 9),
-    ("[M.9]", 10),
-    ("[M.10]", 12),
-    ("[M.12]", 14),
-    ("[M.13]", 15),
-    ("[M.14]", 17),
-    ("[M.16]", 19),
-    ("[M.17]", 20),
-    ("[M.19]", 22),
-    ("[M.20]", 23),
-    ("[M.21]", 27),
-    ("[M.22]", 28),
-)
-baca.label_stage_numbers(skips, stage_markup)
-
-for index, item in (
-    (1 - 1, "incisions"),
-    (1 - 1, baca.Accelerando()),
-    (4 - 1, "windows"),
-    (6 - 1, baca.Ritardando()),
-    (7 - 1, "incisions"),
-    (9 - 1, baca.Accelerando()),
-    (12 - 1, "windows"),
-    (14 - 1, baca.Ritardando()),
-    (17 - 1, "incisions"),
-    (19 - 1, baca.Accelerando()),
-    (20 - 1, "windows"),
-    (22 - 1, baca.Ritardando()),
-    (27 - 1, "incisions"),
-):
-    skip = skips[index]
-    baca.metronome_mark_function(skip, item, library.manifests)
-
-rests = score["Rests"]
-for index, string in (
-    (5 - 1, "short"),
-    (8 - 1, "short"),
-    (13 - 1, "short"),
-    (18 - 1, "short"),
-    (21 - 1, "short"),
-    (32 - 1, "short"),
-):
-    baca.global_fermata_function(rests[index], string)
+def GLOBALS(skips, rests):
+    stage_markup = (
+        ("[M.1]", 1),
+        ("[M.2]", 2),
+        ("[M.3]", 4),
+        ("[M.5]", 6),
+        ("[M.6]", 7),
+        ("[M.8]", 9),
+        ("[M.9]", 10),
+        ("[M.10]", 12),
+        ("[M.12]", 14),
+        ("[M.13]", 15),
+        ("[M.14]", 17),
+        ("[M.16]", 19),
+        ("[M.17]", 20),
+        ("[M.19]", 22),
+        ("[M.20]", 23),
+        ("[M.21]", 27),
+        ("[M.22]", 28),
+    )
+    baca.label_stage_numbers(skips, stage_markup)
+    for index, item in (
+        (1 - 1, "incisions"),
+        (1 - 1, baca.Accelerando()),
+        (4 - 1, "windows"),
+        (6 - 1, baca.Ritardando()),
+        (7 - 1, "incisions"),
+        (9 - 1, baca.Accelerando()),
+        (12 - 1, "windows"),
+        (14 - 1, baca.Ritardando()),
+        (17 - 1, "incisions"),
+        (19 - 1, baca.Accelerando()),
+        (20 - 1, "windows"),
+        (22 - 1, baca.Ritardando()),
+        (27 - 1, "incisions"),
+    ):
+        skip = skips[index]
+        baca.metronome_mark_function(skip, item, library.manifests)
+    for index, string in (
+        (5 - 1, "short"),
+        (8 - 1, "short"),
+        (13 - 1, "short"),
+        (18 - 1, "short"),
+        (21 - 1, "short"),
+        (32 - 1, "short"),
+    ):
+        baca.global_fermata_function(rests[index], string)
 
 
 def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
@@ -405,14 +395,24 @@ def strings(cache):
             baca.dynamic_function(baca.select.pleaf(cache[name][20], 0), "fff")
 
 
-def make_score():
-    BCL(accumulator.voice("BassClarinet.Music"), accumulator)
+def make_score(first_measure_number, previous_persistent_indicators):
+    score, accumulator = make_empty_score()
+    baca.interpret.set_up_score(
+        score,
+        accumulator.time_signatures,
+        accumulator,
+        library.manifests,
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_measure_number=first_measure_number,
+        previous_persistent_indicators=previous_persistent_indicators,
+    )
+    GLOBALS(score["Skips"], score["Rests"])
+    BCL(accumulator.voice("bcl"), accumulator)
     ALL_RH(score, accumulator)
-    VN(accumulator.voice("Violin.Music"), accumulator)
-    VA(accumulator.voice("Viola.Music"), accumulator)
-    VC(accumulator.voice("Cello.Music"), accumulator)
-    previous_persist = baca.previous_persist(__file__)
-    previous_persistent_indicators = previous_persist["persistent_indicators"]
+    VN(accumulator.voice("vn"), accumulator)
+    VA(accumulator.voice("va"), accumulator)
+    VC(accumulator.voice("vc"), accumulator)
     baca.reapply(
         accumulator.voices(),
         library.manifests,
@@ -428,10 +428,16 @@ def make_score():
     vn(cache["vn"])
     vc(cache["vc"])
     strings(cache)
+    return score, accumulator
 
 
 def main():
-    make_score()
+    previous_metadata = baca.previous_metadata(__file__)
+    first_measure_number = previous_metadata["final_measure_number"] + 1
+    previous_persist = baca.previous_persist(__file__)
+    score, accumulator = make_score(
+        first_measure_number, previous_persist["persistent_indicators"]
+    )
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -444,6 +450,7 @@ def main():
         always_make_global_rests=True,
         empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
+        first_measure_number=first_measure_number,
         part_manifest=library.part_manifest(),
         transpose_score=True,
     )
