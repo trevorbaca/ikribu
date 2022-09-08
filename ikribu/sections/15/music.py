@@ -113,9 +113,7 @@ def bcl(cache):
         for wrapper in wrappers:
             wrapper.deactivate = True
         baca.dynamic(o.pleaf(0), "p")
-        baca.markup(
-            o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup"
-        )
+        baca.markup(o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup")
         baca.pitch(o, "Bb1")
     with baca.scope(m.get(6, 10)) as o:
         baca.pitch(o, "<Bb1 D4>")

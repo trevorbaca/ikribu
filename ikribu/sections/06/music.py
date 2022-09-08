@@ -154,9 +154,7 @@ def vn_va(cache):
     for name in ["vn", "va"]:
         with baca.scope(cache[name].leaves()) as o:
             baca.clef(o.leaf(0), "percussion")
-            baca.accent(
-                abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
-            )
+            baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
             baca.dls_staff_padding(o, 8)
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             baca.hairpin(

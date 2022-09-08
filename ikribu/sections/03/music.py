@@ -130,9 +130,7 @@ def vn(m):
         baca.text_script_staff_padding(o, 3)
         baca.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(1, 15)) as o:
-        baca.markup(
-            o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN
-        )
+        baca.markup(o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN)
         baca.pitch(o, "E4")
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m.get(1, 3)) as o:
@@ -156,9 +154,7 @@ def va(m):
         baca.text_script_staff_padding(o, 3)
         baca.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(19, 24)) as o:
-        baca.markup(
-            o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN
-        )
+        baca.markup(o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN)
         baca.pitch(o, "Eb4")
         baca.stem_tremolo(o.pleaves())
         baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")

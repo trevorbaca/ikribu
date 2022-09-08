@@ -161,9 +161,7 @@ def vc(m):
         baca.pitch(o, "F~5")
         baca.note_head_style_harmonic(o.pleaves())
         baca.laissez_vibrer(o.ptails())
-        baca.markup(
-            o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN
-        )
+        baca.markup(o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN)
         baca.dynamic(o.pleaf(0), "sfz")
 
 
