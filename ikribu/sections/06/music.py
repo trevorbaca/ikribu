@@ -64,13 +64,13 @@ def GLOBALS(skips):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 4))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 4))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(5, 8))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(5, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(9, 12))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 12))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(13, 16))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(13, 16))
     voice.extend(music)
 
 
@@ -132,9 +132,9 @@ def VC_RH(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(9, 12))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 12))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(13, 16))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(13, 16))
     voice.extend(music)
 
 

@@ -100,7 +100,7 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(3, 6))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(3, 6))
     baca.tie(abjad.select.leaf(music, -1))
     voice.extend(music)
     music = baca.make_tied_repeated_durations(
