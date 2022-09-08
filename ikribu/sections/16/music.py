@@ -79,7 +79,7 @@ def BCL(voice, accumulator):
             time_signatures = accumulator.get(item)
         else:
             time_signatures = accumulator.get(*item)
-        music = baca.make_repeat_tied_notes(time_signatures)
+        music = baca.make_repeat_tied_notes_function(time_signatures)
         voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)
@@ -98,7 +98,7 @@ def ALL_RH(score, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(9, 20))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)
@@ -107,7 +107,7 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(9, 20))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)
@@ -116,7 +116,7 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(5, 20))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(5, 20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)

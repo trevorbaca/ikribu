@@ -650,7 +650,7 @@ number.17.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     c'''2.
     % AFTER:
     % ARTICULATIONS:
@@ -710,7 +710,7 @@ number.17.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 2]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     c'''2
     % AFTER:
     % SPANNER_STARTS:
@@ -718,14 +718,14 @@ number.17.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     c'''1..
     % AFTER:
     % SPANNER_STARTS:
@@ -733,14 +733,14 @@ number.17.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 4]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     c'''1..
     % AFTER:
     % ARTICULATIONS:
@@ -763,7 +763,7 @@ number.17.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -972,7 +972,7 @@ number.17.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 7]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     cs2.
     % AFTER:
     % SPANNER_STARTS:

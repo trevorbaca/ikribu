@@ -38,9 +38,9 @@ def GLOBALS(skips):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 5))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 5))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(6, 10))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(6, 10))
     voice.extend(music)
 
 
