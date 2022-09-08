@@ -110,9 +110,7 @@ def vn(m):
         baca.staccato(o.pheads())
         library.clb_staff_positions(o, rotation=-1)
     with baca.scope(m.get(21, 32)) as o:
-        baca.accent(
-            abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9))
-        )
+        baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
         baca.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(
@@ -142,9 +140,7 @@ def va(m):
         baca.hairpin(o.tleaves(), '"mp" >o niente')
         baca.hairpin_start_shift(o.tleaves()[0], '"mp"')
     with baca.scope(m.get(13, 32)) as o:
-        baca.accent(
-            abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11))
-        )
+        baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11)))
         baca.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(

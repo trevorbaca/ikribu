@@ -267,9 +267,7 @@ def vn_va(cache):
             baca.staff_position(o, 0)
         for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
             with baca.scope(m.get(item)) as o:
-                baca.accent(
-                    abjad.select.get(o.pheads(), ~abjad.Pattern([0], period=2))
-                )
+                baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0], period=2)))
                 baca.stem_tremolo(
                     abjad.select.get(o.pheads(), [0], 2),
                 )
@@ -280,9 +278,7 @@ def vn(m):
         baca.dynamic(o.pleaf(0), '"f"')
         baca.markup(o.pleaf(0), r"\ikribu-grainfall-three-markup")
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
-        baca.markup(
-            baca.select.pleaf(m.get(item), 0), r"\ikribu-sponges-on-bd-markup"
-        )
+        baca.markup(baca.select.pleaf(m.get(item), 0), r"\ikribu-sponges-on-bd-markup")
     with baca.scope(m[6]) as o:
         baca.dynamic(o.pleaf(0), '"f"')
         baca.markup(o.pleaf(0), r"\ikribu-grainfall-four-markup")
