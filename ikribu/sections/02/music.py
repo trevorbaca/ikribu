@@ -36,9 +36,9 @@ def GLOBALS(skips, rests):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "night"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((7 - 1, "long"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -84,25 +84,25 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.get(1, 5)) as o:
-        baca.pitch_function(o, "D2")
-        baca.hairpin_function(o.leaves()[:2], "ppp < f")
-        baca.hairpin_function(o.rleaves()[-4:], "f >o niente")
+        baca.pitch(o, "D2")
+        baca.hairpin(o.leaves()[:2], "ppp < f")
+        baca.hairpin(o.rleaves()[-4:], "f >o niente")
 
 
 def vn(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
 
 
 def va(m):
     with baca.scope(m.get(3, 6)) as o:
-        baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
-        library.box_adjustment_function(o)
-        baca.staff_position_function(o, 0)
-        baca.dynamic_function(
+        baca.clef(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
+        library.box_adjustment(o)
+        baca.staff_position(o, 0)
+        baca.dynamic(
             o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),

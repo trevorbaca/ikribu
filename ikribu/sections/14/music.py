@@ -64,7 +64,7 @@ def GLOBALS(skips, rests):
         (27 - 1, "incisions"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in (
         (5 - 1, "short"),
         (8 - 1, "short"),
@@ -73,7 +73,7 @@ def GLOBALS(skips, rests):
         (21 - 1, "short"),
         (32 - 1, "short"),
     ):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
@@ -244,155 +244,155 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.pitch_function(o, "B1")
+        baca.pitch(o, "B1")
     for pair in [(2, 4), (10, 12), (15, 17)]:
         with baca.scope(m.get(pair)) as o:
-            baca.hairpin_function(o.leaves()[:2], "p < fff")
-            baca.hairpin_function(o.rleaves()[-2:], "fff >o niente")
+            baca.hairpin(o.leaves()[:2], "p < fff")
+            baca.hairpin(o.rleaves()[-2:], "fff >o niente")
     with baca.scope(m.get(23, 31)) as o:
-        baca.hairpin_function(o.leaves()[:-1], "ppp < fff")
+        baca.hairpin(o.leaves()[:-1], "ppp < fff")
 
     for n in [7, 20]:
-        baca.dynamic_function(baca.select.pleaf(m[n], 0), "p")
+        baca.dynamic(baca.select.pleaf(m[n], 0), "p")
 
 
 def vn_va(cache):
     for name in ["vn", "va"]:
         m = cache[name]
         with baca.scope(m.leaves()) as o:
-            baca.dls_staff_padding_function(o, 8)
-            baca.tuplet_bracket_staff_padding_function(o, 3)
-            library.box_adjustment_function(o)
+            baca.dls_staff_padding(o, 8)
+            baca.tuplet_bracket_staff_padding(o, 3)
+            library.box_adjustment(o)
         with baca.scope(m.get(1, 27)) as o:
-            baca.staff_position_function(o, 0)
+            baca.staff_position(o, 0)
         for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
             with baca.scope(m.get(item)) as o:
-                baca.accent_function(
+                baca.accent(
                     abjad.select.get(o.pheads(), ~abjad.Pattern([0], period=2))
                 )
-                baca.stem_tremolo_function(
+                baca.stem_tremolo(
                     abjad.select.get(o.pheads(), [0], 2),
                 )
 
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-three-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-three-markup")
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
-        baca.markup_function(
+        baca.markup(
             baca.select.pleaf(m.get(item), 0), r"\ikribu-sponges-on-bd-markup"
         )
     with baca.scope(m[6]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-four-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-four-markup")
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-five-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-five-markup")
     with baca.scope(m[14]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-six-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-six-markup")
     with baca.scope(m[19]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-seven-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-seven-markup")
     with baca.scope(m[22]) as o:
-        baca.dynamic_function(o.pleaf(0), '"f"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-eight-markup")
+        baca.dynamic(o.pleaf(0), '"f"')
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-eight-markup")
 
 
 def vc(m):
     for item in [(2, 4), 7, (10, 12), (15, 17), 20, (23, 27)]:
         with baca.scope(m.get(item)) as o:
-            baca.clef_function(o.leaf(0), "bass")
-            baca.ottava_bassa_function(o.tleaves())
-            baca.pitch_function(o, "C1")
+            baca.clef(o.leaf(0), "bass")
+            baca.ottava_bassa(o.tleaves())
+            baca.pitch(o, "C1")
     for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
         with baca.scope(m.get(pair)) as o:
-            baca.text_spanner_function(o, "tasto => XP")
+            baca.text_spanner(o, "tasto => XP")
     with baca.scope(m[1]) as o:
-        baca.staff_lines_function(o.leaf(0), 5)
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sfz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.staff_lines(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sfz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "F~5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "F~5")
     with baca.scope(m[6]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sfz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sfz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "G5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "G5")
     for n in [7, 20]:
-        baca.markup_function(baca.select.pleaf(m[n], 0), r"\baca-xp-markup")
+        baca.markup(baca.select.pleaf(m[n], 0), r"\baca-xp-markup")
     with baca.scope(m[9]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sffz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sffz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "F~5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "F~5")
     with baca.scope(m[14]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sffz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sffz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "G5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "G5")
     with baca.scope(m[19]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sfffz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sfffz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "A5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "A5")
     with baca.scope(m[22]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.dynamic_function(o.pleaf(0), "sfffz")
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.dynamic(o.pleaf(0), "sfffz")
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(o.pleaf(0), r"\baca-pizz-markup")
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitch_function(o, "C+6")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitch(o, "C+6")
 
 
 def strings(cache):
     for name in ["vn", "va", "vc"]:
         for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
-            baca.hairpin_function(cache[name].get(pair), "mf < fff")
+            baca.hairpin(cache[name].get(pair), "mf < fff")
         if name in ("vn", "vc"):
-            baca.dynamic_function(baca.select.pleaf(cache[name][7], 0), "fff")
-            baca.dynamic_function(baca.select.pleaf(cache[name][20], 0), "fff")
+            baca.dynamic(baca.select.pleaf(cache[name][7], 0), "fff")
+            baca.dynamic(baca.select.pleaf(cache[name][20], 0), "fff")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

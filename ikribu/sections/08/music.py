@@ -41,7 +41,7 @@ def GLOBALS(skips):
         (11 - 1, "windows"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def BCL(voice, accumulator):
@@ -96,46 +96,46 @@ def VC(voice, accumulator):
 
 def bcl(m):
     for n in [1, 3, 5, 7, 9, 11]:
-        baca.dls_staff_padding_function(m[n], 7)
+        baca.dls_staff_padding(m[n], 7)
     with baca.scope(m[1]) as o:
-        baca.hairpin_function(o, "ppp < mp")
-        baca.pitch_function(o, "G2")
+        baca.hairpin(o, "ppp < mp")
+        baca.pitch(o, "G2")
     with baca.scope(m[3]) as o:
-        baca.hairpin_function(o, "pp < mf")
-        baca.pitch_function(o, "Gb2")
+        baca.hairpin(o, "pp < mf")
+        baca.pitch(o, "Gb2")
     with baca.scope(m[5]) as o:
-        baca.hairpin_function(o, "p < f")
-        baca.pitch_function(o, "F2")
+        baca.hairpin(o, "p < f")
+        baca.pitch(o, "F2")
     with baca.scope(m[7]) as o:
-        baca.hairpin_function(o, "mf < ff")
-        baca.pitch_function(o, "E2")
+        baca.hairpin(o, "mf < ff")
+        baca.pitch(o, "E2")
     with baca.scope(m[9]) as o:
-        baca.hairpin_function(o, "f < fff")
-        baca.pitch_function(o, "Eb2")
+        baca.hairpin(o, "f < fff")
+        baca.pitch(o, "Eb2")
     with baca.scope(m[11]) as o:
-        baca.hairpin_function(o, "ff < ffff")
-        baca.pitch_function(o, "D2")
+        baca.hairpin(o, "ff < ffff")
+        baca.pitch(o, "D2")
 
 
 def vc(m):
     with baca.scope(m.get(1, 11)) as o:
-        baca.dls_staff_padding_function(o, 7)
-        baca.glissando_function(o)
-        baca.hairpin_function(
+        baca.dls_staff_padding(o, 7)
+        baca.glissando(o)
+        baca.hairpin(
             o.tleaves(),
             "ppp < pp >",
             final_hairpin=False,
             pieces=lambda _: baca.select.cmgroups(_),
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.pitches_function(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
-        baca.stem_tremolo_function(o.pleaves())
-        baca.tuplet_bracket_down_function(o)
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.pitches(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
+        baca.stem_tremolo(o.pleaves())
+        baca.tuplet_bracket_down(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

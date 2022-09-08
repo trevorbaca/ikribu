@@ -35,14 +35,14 @@ def GLOBALS(skips, rests):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "night"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in (
         (2 - 1, "long"),
         (4 - 1, "long"),
         (6 - 1, "long"),
         (8 - 1, "long"),
     ):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def MOST(score, accumulator):
@@ -69,11 +69,11 @@ def VC(voice, accumulator):
 
 def vc(m):
     with baca.scope(m.get(1, 8)) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.staff_position_function(o, 0)
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
-        library.box_adjustment_function(o)
-        baca.dynamic_function(o.pleaf(0), '"mf"')
+        baca.staff_lines(o.leaf(0), 1)
+        baca.staff_position(o, 0)
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
+        library.box_adjustment(o)
+        baca.dynamic(o.pleaf(0), '"mf"')
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

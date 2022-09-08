@@ -43,9 +43,9 @@ def GLOBALS(skips, rests):
         (6 - 1, "night"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((8 - 1, "long"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -133,23 +133,23 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.pitch_function(o, "Bb4")
+        baca.pitch(o, "Bb4")
     with baca.scope(m.get(5, 6)) as o:
-        baca.pitches_function(
+        baca.pitches(
             o,
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
             exact=True,
         ),
-        baca.repeat_tie_function(o.leaf(0))
-        baca.glissando_function(o)
+        baca.repeat_tie(o.leaf(0))
+        baca.glissando(o)
     with baca.scope(m[7]) as o:
-        baca.pitch_function(o, "B1")
-        baca.repeat_tie_function(o.phead(0))
+        baca.pitch(o, "B1")
+        baca.repeat_tie(o.phead(0))
     with baca.scope(m.get(1, 7)) as o:
-        baca.hairpin_function(o.leaves()[:4], "pp < mf")
-        baca.hairpin_function(o.rleaves()[4:], "mf >o niente")
+        baca.hairpin(o.leaves()[:4], "pp < mf")
+        baca.hairpin(o.rleaves()[4:], "mf >o niente")
     with baca.scope(m.get(5, 7)) as o:
-        baca.dls_staff_padding_function(o, 9)
+        baca.dls_staff_padding(o, 9)
 
 
 def strings(cache):
@@ -159,27 +159,27 @@ def strings(cache):
         ("vc", 4, -20),
     ):
         with baca.scope(cache[name].get(1, 5)) as o:
-            library.glissando_pitches_function(o, octave=octave, rotation=rotation)
-            baca.glissando_function(o)
-    baca.clef_function(abjad.select.leaf(cache["vc"][1], 0), "tenor")
+            library.glissando_pitches(o, octave=octave, rotation=rotation)
+            baca.glissando(o)
+    baca.clef(abjad.select.leaf(cache["vc"][1], 0), "tenor")
     for name, rotation in (
         ("vn_rh", 0),
         ("va_rh", -1),
         ("vc_rh", -2),
     ):
         with baca.scope(cache[name].get(1, 5)) as o:
-            baca.script_staff_padding_function(o, 7)
-            baca.text_spanner_staff_padding_function(o, 4)
-            library.bcps_function(o, rotation=rotation)
-            baca.dls_staff_padding_function(o, 9)
-            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
-            baca.hairpin_function(
+            baca.script_staff_padding(o, 7)
+            baca.text_spanner_staff_padding(o, 4)
+            library.bcps(o, rotation=rotation)
+            baca.dls_staff_padding(o, 9)
+            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.hairpin(
                 o,
                 "p > pp < p > ppp < pp > ppp <",
                 bookend=True,
                 pieces=library.enchain_runs([3, 4]),
             ),
-            baca.staff_position_function(o, 0)
+            baca.staff_position(o, 0)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

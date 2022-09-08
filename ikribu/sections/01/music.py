@@ -30,9 +30,9 @@ def make_empty_score():
 def GLOBALS(skips, rests):
     for index, item in ((1 - 1, "incisions"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((2 - 1, "long"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -76,95 +76,95 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
-        baca.instrument_name_function(o.leaf(0), r"\ikribu-bass-clarinet-markup")
-        baca.short_instrument_name_function(
+        baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
+        baca.instrument_name(o.leaf(0), r"\ikribu-bass-clarinet-markup")
+        baca.short_instrument_name(
             o.leaf(0),
             "B. cl.",
             library.manifests,
         )
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
 
 
 def vn_rh(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.clef_function(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.clef(o.leaf(0), "percussion")
 
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o.leaf(0), "Violin", library.manifests)
-        baca.instrument_name_function(
+        baca.instrument(o.leaf(0), "Violin", library.manifests)
+        baca.instrument_name(
             o.leaf(0),
             r"\ikribu-violin-markup",
             context="StringInstrumentPianoStaff",
         )
-        baca.short_instrument_name_function(
+        baca.short_instrument_name(
             o.leaf(0),
             "Vn.",
             library.manifests,
             context="StringInstrumentPianoStaff",
         )
-        baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o.pleaf(0), r"\ikribu-grainfall-one-markup")
-        library.box_adjustment_function(o)
-        baca.staff_position_function(o, 0)
-        baca.dynamic_function(o.pleaf(0), '"mf"')
+        baca.clef(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.markup(o.pleaf(0), r"\ikribu-grainfall-one-markup")
+        library.box_adjustment(o)
+        baca.staff_position(o, 0)
+        baca.dynamic(o.pleaf(0), '"mf"')
 
 
 def va_rh(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.clef_function(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.clef(o.leaf(0), "percussion")
 
 
 def va(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "Viola", library.manifests)
-        baca.instrument_name_function(
+        baca.instrument(o.leaf(0), "Viola", library.manifests)
+        baca.instrument_name(
             o.leaf(0), r"\ikribu-viola-markup", context="StringInstrumentPianoStaff"
         )
-        baca.short_instrument_name_function(
+        baca.short_instrument_name(
             o.leaf(0),
             "Va.",
             library.manifests,
             context="StringInstrumentPianoStaff",
         )
-        baca.clef_function(o.leaf(0), "alto")
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "alto")
+        baca.staff_lines(o.leaf(0), 5)
 
 
 def vc_rh(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o.leaf(0), 1)
+        baca.clef(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
 
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o.leaf(0), "Cello", library.manifests)
-        baca.instrument_name_function(
+        baca.instrument(o.leaf(0), "Cello", library.manifests)
+        baca.instrument_name(
             o.leaf(0), r"\ikribu-cello-markup", context="StringInstrumentPianoStaff"
         )
-        baca.short_instrument_name_function(
+        baca.short_instrument_name(
             o.leaf(0),
             "Vc.",
             library.manifests,
             context="StringInstrumentPianoStaff",
         )
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
-        baca.markup_function(o.pleaf(0), r"\markup pizz.")
-        baca.pitch_function(o, "F~5")
-        baca.note_head_style_harmonic_function(o.pleaves())
-        baca.laissez_vibrer_function(o.ptails())
-        baca.markup_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
+        baca.markup(o.pleaf(0), r"\markup pizz.")
+        baca.pitch(o, "F~5")
+        baca.note_head_style_harmonic(o.pleaves())
+        baca.laissez_vibrer(o.ptails())
+        baca.markup(
             o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN
         )
-        baca.dynamic_function(o.pleaf(0), "sfz")
+        baca.dynamic(o.pleaf(0), "sfz")
 
 
 def make_score():

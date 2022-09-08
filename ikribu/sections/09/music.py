@@ -35,7 +35,7 @@ def GLOBALS(skips, rests):
     )
     baca.label_stage_numbers(skips, stage_markup)
     for index, string in ((9 - 1, "fermata"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -105,32 +105,32 @@ def VC(voice, accumulator):
 
 def tutti(cache):
     with baca.scope(cache["bcl"].get(1, 8)) as o:
-        baca.dynamic_function(o.pleaf(0), "ppp")
-        baca.pitch_function(o, "Db2")
+        baca.dynamic(o.pleaf(0), "ppp")
+        baca.pitch(o, "Db2")
     with baca.scope(cache["vn_rh"].get(1, 8)) as o:
-        library.bcps_function(o, rotation=0)
+        library.bcps(o, rotation=0)
     with baca.scope(cache["vn"].get(1, 8)) as o:
-        baca.glissando_function(o)
-        library.glissando_pitches_function(o, octave=5, rotation=0)
+        baca.glissando(o)
+        library.glissando_pitches(o, octave=5, rotation=0)
     with baca.scope(cache["va_rh"].get(1, 8)) as o:
-        library.bcps_function(o, rotation=-1)
+        library.bcps(o, rotation=-1)
     with baca.scope(cache["va"].get(1, 8)) as o:
-        baca.glissando_function(o)
-        library.glissando_pitches_function(o, octave=5, rotation=-10)
+        baca.glissando(o)
+        library.glissando_pitches(o, octave=5, rotation=-10)
     for name in ["vn_rh", "va_rh"]:
         with baca.scope(cache[name].get(1, 8)) as o:
-            baca.dls_staff_padding_function(o, 10)
-            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
-            baca.hairpin_function(
+            baca.dls_staff_padding(o, 10)
+            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.hairpin(
                 o,
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
                 pieces=library.enchain_runs([3, 4]),
             )
-            baca.script_staff_padding_function(o, 7)
-            baca.staff_position_function(o, 0)
-            baca.text_script_staff_padding_function(o, 8)
-            baca.text_spanner_staff_padding_function(o, 4)
+            baca.script_staff_padding(o, 7)
+            baca.staff_position(o, 0)
+            baca.text_script_staff_padding(o, 8)
+            baca.text_spanner_staff_padding(o, 4)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

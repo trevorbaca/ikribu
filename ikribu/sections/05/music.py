@@ -36,9 +36,9 @@ def GLOBALS(skips, rests):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "windows"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((11 - 1, "short"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def MOST(score, accumulator):
@@ -79,31 +79,31 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.staff_lines(o.leaf(0), 5)
 
 
 def vc_rh(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
-        baca.staff_position_function(o, 0)
-        library.bcps_function(o, rotation=-2)
-        baca.script_staff_padding_function(o, 7)
-        baca.text_script_staff_padding_function(o, 8)
-        baca.text_spanner_staff_padding_function(o, 4)
-        baca.hairpin_function(
+        baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+        baca.staff_position(o, 0)
+        library.bcps(o, rotation=-2)
+        baca.script_staff_padding(o, 7)
+        baca.text_script_staff_padding(o, 8)
+        baca.text_spanner_staff_padding(o, 4)
+        baca.hairpin(
             o,
             "ff > p < f > pp < f > ppp <",
             bookend=True,
             pieces=library.enchain_runs([3, 4]),
         )
-        baca.dls_staff_padding_function(o, 9)
+        baca.dls_staff_padding(o, 9)
 
 
 def vc(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o.leaf(0), "tenor")
-        library.glissando_pitches_function(o, octave=4, rotation=-20)
-        baca.glissando_function(o)
+        baca.clef(o.leaf(0), "tenor")
+        library.glissando_pitches(o, octave=4, rotation=-20)
+        baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
