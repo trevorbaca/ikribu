@@ -89,63 +89,63 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.pitch_function(o, "F#3")
+        baca.pitch(o, "F#3")
     with baca.scope(m.get(6, 8)) as o:
-        baca.hairpin_function(o, "sfp > ppp")
-        baca.pitch_function(o, "G2")
+        baca.hairpin(o, "sfp > ppp")
+        baca.pitch(o, "G2")
 
 
 def vn_va(cache):
-    baca.pitch_function(cache["vn"].get(6, 7), "<E4 F#4>")
-    baca.pitch_function(cache["va"].get(6, 7), "<Eb4 F4>")
+    baca.pitch(cache["vn"].get(6, 7), "<E4 F#4>")
+    baca.pitch(cache["va"].get(6, 7), "<Eb4 F4>")
     cache.rebuild()
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
-            baca.dls_staff_padding_function(o, 4)
-            baca.hairpin_function(
+            baca.dls_staff_padding(o, 4)
+            baca.hairpin(
                 o,
                 "sfpp < p >o niente",
                 pieces=lambda _: baca.select.omgroups(baca.select.rleaves(_), [1, 1]),
             )
-            baca.stem_tremolo_function(o.pleaves())
-            baca.text_spanner_staff_padding_function(o, 3.5)
+            baca.stem_tremolo(o.pleaves())
+            baca.text_spanner_staff_padding(o, 3.5)
             if name == "vn":
-                baca.clef_function(o.leaf(0), "treble")
-                baca.markup_function(
+                baca.clef(o.leaf(0), "treble")
+                baca.markup(
                     o.pleaf(0),
                     r"\ikribu-strings-two-plus-three-markup",
                     direction=abjad.DOWN,
                 )
-                baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. tast.")
-                baca.staff_lines_function(o.leaf(0), 5)
+                baca.text_spanner(o, "trem. flaut. XP => trem. flaut. tast.")
+                baca.staff_lines(o.leaf(0), 5)
             elif name == "va":
-                baca.markup_function(
+                baca.markup(
                     o.pleaf(0),
                     r"\ikribu-strings-one-plus-two-markup",
                     direction=abjad.DOWN,
                 )
-                baca.clef_function(o.leaf(0), "treble")
-                baca.clef_extra_offset_function(o.leaf(0), (-2.5, 0))
-                baca.clef_x_extent_false_function(o.leaf(0))
-                baca.text_spanner_function(o, "trem. flaut. XP => trem. flaut. tast.")
-                baca.staff_lines_function(o.leaf(0), 5)
+                baca.clef(o.leaf(0), "treble")
+                baca.clef_extra_offset(o.leaf(0), (-2.5, 0))
+                baca.clef_x_extent_false(o.leaf(0))
+                baca.text_spanner(o, "trem. flaut. XP => trem. flaut. tast.")
+                baca.staff_lines(o.leaf(0), 5)
 
 
 def vc(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.hairpin_function(o, "p < ff")
-        baca.pitch_function(o, "F#3")
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_spanner_function(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
-        baca.text_spanner_staff_padding_function(o, 3.5)
+        baca.hairpin(o, "p < ff")
+        baca.pitch(o, "F#3")
+        baca.stem_tremolo(o.pleaves())
+        baca.text_spanner(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
+        baca.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.staff_position_function(o, 0)
-        library.box_adjustment_function(o)
+        baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.staff_position(o, 0)
+        library.box_adjustment(o)
     with baca.scope(m[8]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

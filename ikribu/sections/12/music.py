@@ -49,7 +49,7 @@ def GLOBALS(skips, rests):
         (14 - 1, "short"),
         (16 - 1, "fermata"),
     ):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -168,85 +168,85 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m[5]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[13]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"p"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
         )
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding_function(o, 6)
-        baca.staff_position_function(o, 0)
+        baca.dls_staff_padding(o, 6)
+        baca.staff_position(o, 0)
 
 
 def vn(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding_function(o, 8)
-        baca.dynamic_function(
+        baca.dls_staff_padding(o, 8)
+        baca.dynamic(
             o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
-        baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
-        baca.staccato_function(o.pheads())
-        baca.text_script_padding_function(o, 2.5)
-        library.clb_staff_positions_function(o)
+        baca.markup(o.pleaf(0), r"\baca-col-legno-battuto-markup")
+        baca.staccato(o.pheads())
+        baca.text_script_padding(o, 2.5)
+        library.clb_staff_positions(o)
 
 
 def va(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding_function(o, 8)
-        baca.dynamic_function(
+        baca.dls_staff_padding(o, 8)
+        baca.dynamic(
             o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
-        baca.markup_function(o.pleaf(0), r"\baca-col-legno-battuto-markup")
-        baca.staccato_function(o.pheads())
-        baca.text_script_padding_function(o, 2.5)
-        library.clb_staff_positions_function(o)
+        baca.markup(o.pleaf(0), r"\baca-col-legno-battuto-markup")
+        baca.staccato(o.pheads())
+        baca.text_script_padding(o, 2.5)
+        library.clb_staff_positions(o)
 
 
 def vc(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
-        baca.dls_staff_padding_function(o, 6)
-        baca.staff_position_function(o, 0)
-        library.box_adjustment_function(o)
-        baca.dynamic_function(o.pleaf(0), '"p"')
+        baca.staff_lines(o.leaf(0), 1)
+        baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
+        baca.dls_staff_padding(o, 6)
+        baca.staff_position(o, 0)
+        library.box_adjustment(o)
+        baca.dynamic(o.pleaf(0), '"p"')
     with baca.scope(m[5]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"mp"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"mf"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
     with baca.scope(m[13]) as o:
-        baca.dynamic_function(
+        baca.dynamic(
             o.pleaf(0),
             '"f"',
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),

@@ -48,7 +48,7 @@ def GLOBALS(skips, rests):
         (18 - 1, "short"),
         (25 - 1, "short"),
     ):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -118,52 +118,52 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.get(5, 25)) as o:
-        baca.pitch_function(o, "Db2")
-        baca.dynamic_function(o.pleaf(0), "ppp")
+        baca.pitch(o, "Db2")
+        baca.dynamic(o.pleaf(0), "ppp")
     with baca.scope(m.get(19, 21)) as o:
-        baca.hairpin_function(o.leaves()[:2], "ppp < f")
-        baca.hairpin_function(o.rleaves()[-2:], "f >o niente")
+        baca.hairpin(o.leaves()[:2], "ppp < f")
+        baca.hairpin(o.rleaves()[-2:], "f >o niente")
 
 
 def vn(m):
     with baca.scope(m.leaves()) as o:
-        baca.text_script_staff_padding_function(o, 3)
-        baca.text_spanner_staff_padding_function(o, 3.5)
+        baca.text_script_staff_padding(o, 3)
+        baca.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(1, 15)) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN
         )
-        baca.pitch_function(o, "E4")
-        baca.stem_tremolo_function(o.pleaves())
+        baca.pitch(o, "E4")
+        baca.stem_tremolo(o.pleaves())
     with baca.scope(m.get(1, 3)) as o:
-        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin_function(o.leaves()[:2], "ppp < p")
-        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
+        baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin(o.leaves()[:2], "ppp < p")
+        baca.hairpin(o.rleaves()[-2:], "p >o niente")
     with baca.scope(m.get(7, 9)) as o:
-        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin_function(o.leaves()[:2], "ppp < p")
-        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
+        baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin(o.leaves()[:2], "ppp < p")
+        baca.hairpin(o.rleaves()[-2:], "p >o niente")
     with baca.scope(m.get(13, 15)) as o:
-        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin_function(o.leaves()[:2], "ppp < p")
-        baca.hairpin_function(o.rleaves()[-2:], "p >o niente")
+        baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin(o.leaves()[:2], "ppp < p")
+        baca.hairpin(o.rleaves()[-2:], "p >o niente")
 
 
 def va(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "alto")
-        baca.staff_lines_function(o.leaf(0), 5)
-        baca.text_script_staff_padding_function(o, 3)
-        baca.text_spanner_staff_padding_function(o, 3.5)
+        baca.clef(o.leaf(0), "alto")
+        baca.staff_lines(o.leaf(0), 5)
+        baca.text_script_staff_padding(o, 3)
+        baca.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(19, 24)) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN
         )
-        baca.pitch_function(o, "Eb4")
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_spanner_function(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin_function(o.leaves()[:5], "ppp < mf")
-        baca.hairpin_function(o.rleaves()[-2:], "mf >o niente")
+        baca.pitch(o, "Eb4")
+        baca.stem_tremolo(o.pleaves())
+        baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.hairpin(o.leaves()[:5], "ppp < mf")
+        baca.hairpin(o.rleaves()[-2:], "mf >o niente")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

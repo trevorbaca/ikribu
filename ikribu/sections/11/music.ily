@@ -66,13 +66,13 @@ number.11.Rests = {
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     % OPENING:
     % COMMANDS:
-      %! baca.global_fermata_function(2)
+      %! baca.global_fermata(2)
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
     % AFTER:
     % MARKUP:
-      %! baca.global_fermata_function(1)
+      %! baca.global_fermata(1)
     ^ \baca-long-fermata-markup
     % COMMANDS:
       %! FERMATA_MEASURE
@@ -100,13 +100,13 @@ number.11.Rests = {
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
     % OPENING:
     % COMMANDS:
-      %! baca.global_fermata_function(2)
+      %! baca.global_fermata(2)
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
     % AFTER:
     % MARKUP:
-      %! baca.global_fermata_function(1)
+      %! baca.global_fermata(1)
     ^ \baca-long-fermata-markup
     % COMMANDS:
       %! FERMATA_MEASURE
@@ -630,19 +630,19 @@ number.11.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "58"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -778,23 +778,23 @@ number.11.BassClarinet.Music = {
     % COMMANDS:
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_x_extent_false_function(1)
+      %! baca.clef_x_extent_false(1)
 %%% \once \override Staff.Clef.X-extent = ##f
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_extra_offset_function(1)
+      %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.dls_staff_padding_function(1)
+      %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(1)
+      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
-      %! baca.text_script_padding_function(1)
+      %! baca.text_script_padding(1)
     \override TextScript.padding = 2.5
-      %! baca.text_script_parent_alignment_x_function(1)
+      %! baca.text_script_parent_alignment_x(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \ikribu-bcl-markup
@@ -806,24 +806,24 @@ number.11.BassClarinet.Music = {
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \startStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -840,7 +840,7 @@ number.11.BassClarinet.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! baca.make_tied_repeated_durations()
@@ -852,18 +852,18 @@ number.11.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-mf
     % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-four-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -1073,7 +1073,7 @@ number.11.BassClarinet.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-three-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -1375,7 +1375,7 @@ number.11.BassClarinet.Music = {
       %! baca._style_fermata_measures(4)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
       %! +ARCH_A_PARTS_BCL
-      %! baca.text_script_extra_offset_function(1)
+      %! baca.text_script_extra_offset(1)
 %%% \override TextScript.extra-offset = #'(0 . 8)
       %! baca._style_fermata_measures(3)
     \stopStaff
@@ -1390,27 +1390,27 @@ number.11.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak extra-offset #'(-2 . 0)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -1454,7 +1454,7 @@ number.11.BassClarinet.Music = {
     \repeatTie
     % COMMANDS:
       %! +ARCH_A_PARTS_BCL
-      %! baca.text_script_extra_offset_function(2)
+      %! baca.text_script_extra_offset(2)
 %%% \revert TextScript.extra-offset
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1480,11 +1480,11 @@ number.11.BassClarinet.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
-      %! baca.dls_staff_padding_function(2)
+      %! baca.dls_staff_padding(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.text_script_padding_function(2)
+      %! baca.text_script_padding(2)
     \revert TextScript.padding
-      %! baca.text_script_parent_alignment_x_function(2)
+      %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -1782,23 +1782,23 @@ number.11.Violin.Music = {
     % COMMANDS:
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_x_extent_false_function(1)
+      %! baca.clef_x_extent_false(1)
 %%% \once \override Staff.Clef.X-extent = ##f
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_extra_offset_function(1)
+      %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.dls_staff_padding_function(1)
+      %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(1)
+      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.text_script_padding_function(1)
+      %! baca.text_script_padding(1)
     \override TextScript.padding = 2.5
-      %! baca.text_script_parent_alignment_x_function(1)
+      %! baca.text_script_parent_alignment_x(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-vn-markup
@@ -1810,24 +1810,24 @@ number.11.Violin.Music = {
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \startStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -1844,7 +1844,7 @@ number.11.Violin.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! baca.make_tied_repeated_durations()
@@ -1856,18 +1856,18 @@ number.11.Violin.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-mf
     % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Violin”)"
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -2185,7 +2185,7 @@ number.11.Violin.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -2391,27 +2391,27 @@ number.11.Violin.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak extra-offset #'(-2 . 0)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -2477,11 +2477,11 @@ number.11.Violin.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.dls_staff_padding_function(2)
+      %! baca.dls_staff_padding(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.text_script_padding_function(2)
+      %! baca.text_script_padding(2)
     \revert TextScript.padding
-      %! baca.text_script_parent_alignment_x_function(2)
+      %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -2779,23 +2779,23 @@ number.11.Viola.Music = {
     % COMMANDS:
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_x_extent_false_function(1)
+      %! baca.clef_x_extent_false(1)
 %%% \once \override Staff.Clef.X-extent = ##f
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_extra_offset_function(1)
+      %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.dls_staff_padding_function(1)
+      %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(1)
+      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.text_script_padding_function(1)
+      %! baca.text_script_padding(1)
     \override TextScript.padding = 2.5
-      %! baca.text_script_parent_alignment_x_function(1)
+      %! baca.text_script_parent_alignment_x(1)
     \override TextScript.parent-alignment-X = 0
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
@@ -2807,24 +2807,24 @@ number.11.Viola.Music = {
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \startStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -2841,7 +2841,7 @@ number.11.Viola.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! baca.make_tied_repeated_durations()
@@ -2853,18 +2853,18 @@ number.11.Viola.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-mf
     % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Viola”)"
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-three-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -3074,7 +3074,7 @@ number.11.Viola.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-four-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -3179,7 +3179,7 @@ number.11.Viola.Music = {
     c'4
     % AFTER:
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -3385,27 +3385,27 @@ number.11.Viola.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak extra-offset #'(-2 . 0)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \baca-effort-f
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \ikribu-stonecircle-pi-two-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -3471,11 +3471,11 @@ number.11.Viola.Music = {
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
       %! baca._style_fermata_measures(2)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca.dls_staff_padding_function(2)
+      %! baca.dls_staff_padding(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.text_script_padding_function(2)
+      %! baca.text_script_padding(2)
     \revert TextScript.padding
-      %! baca.text_script_parent_alignment_x_function(2)
+      %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
     % CLOSING:
     % COMMANDS:
@@ -3773,17 +3773,17 @@ number.11.Cello.Music = {
     % COMMANDS:
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_x_extent_false_function(1)
+      %! baca.clef_x_extent_false(1)
 %%% \once \override Staff.Clef.X-extent = ##f
       %! MEASURE_116
       %! SHIFTED_CLEF
-      %! baca.clef_extra_offset_function(1)
+      %! baca.clef_extra_offset(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(1)
+      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! baca._clone_section_initial_short_instrument_name()
     \set StringInstrumentPianoStaff.instrumentName = \ikribu-vc-markup
@@ -3795,24 +3795,24 @@ number.11.Cello.Music = {
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \once \override Staff.StaffSymbol.line-count = 5
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines_function(2)
+      %! baca.staff_lines(2)
     \startStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
     \clef "bass"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -3829,7 +3829,7 @@ number.11.Cello.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! baca.make_mmrests(1)
@@ -3888,9 +3888,9 @@ number.11.Cello.Music = {
     % COMMANDS:
       %! SPANNER_START
       %! baca._do_spanner_indicator_command(1)
-      %! baca.ottava_bassa_function()
+      %! baca.ottava_bassa()
     \ottava -1
-      %! baca.ottava_bracket_staff_padding_function(1)
+      %! baca.ottava_bracket_staff_padding(1)
     \override Staff.OttavaBracket.staff-padding = 8
       %! baca.make_repeat_tied_notes()
     d,,1
@@ -3901,15 +3901,15 @@ number.11.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic_function()
+      %! baca.dynamic()
     \p
     % MARKUP:
-      %! baca.markup_function()
+      %! baca.markup()
     ^ \baca-poco-vib-markup
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -3957,7 +3957,7 @@ number.11.Cello.Music = {
     % SPANNER_STARTS:
       %! baca.make_repeat_tied_notes()
     \repeatTie
-      %! baca.tie_function()
+      %! baca.tie()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3987,13 +3987,13 @@ number.11.Cello.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     \p
     % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4002,13 +4002,13 @@ number.11.Cello.Music = {
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     \<
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
@@ -4029,13 +4029,13 @@ number.11.Cello.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     \mf
     % SPANNER_STARTS:
       %! baca.make_tied_repeated_durations()
@@ -4043,9 +4043,9 @@ number.11.Cello.Music = {
     % COMMANDS:
       %! SPANNER_STOP
       %! baca._do_spanner_indicator_command(2)
-      %! baca.ottava_bassa_function()
+      %! baca.ottava_bassa()
     \ottava 0
-      %! baca.ottava_bracket_staff_padding_function(2)
+      %! baca.ottava_bracket_staff_padding(2)
     \revert Staff.OttavaBracket.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:

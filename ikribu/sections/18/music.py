@@ -28,7 +28,7 @@ def make_empty_score():
 
 
 def GLOBALS(skips, rests):
-    baca.bar_line_function(skips[12 - 1], "|.")
+    baca.bar_line(skips[12 - 1], "|.")
     stage_markup = (
         ("[Q.1]", 1),
         ("[Q.2]", 4),
@@ -38,9 +38,9 @@ def GLOBALS(skips, rests):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "inscription"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((12 - 1, "fermata"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -83,50 +83,50 @@ def VC(voice, accumulator):
 
 def bcl(m):
     with baca.scope(m.get(1, 11)) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
-        baca.staff_position_function(o, 0)
-        library.box_adjustment_function(o)
+        baca.staff_lines(o.leaf(0), 1)
+        baca.dynamic(o.pleaf(0), '"mf"')
+        baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-three-markup")
+        baca.staff_position(o, 0)
+        library.box_adjustment(o)
 
 
 def vn(m):
     with baca.scope(m.get(1, 9)) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.double_staccato_function(o.pheads())
-        baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(
+        baca.staff_lines(o.leaf(0), 1)
+        baca.double_staccato(o.pheads())
+        baca.dynamic(o.pleaf(0), '"mf"')
+        baca.markup(
             o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
-        baca.staff_positions_function(o, [-1, 0, 1])
-        baca.text_script_padding_function(o, 2.5)
+        baca.staff_positions(o, [-1, 0, 1])
+        baca.text_script_padding(o, 2.5)
 
 
 def va(m):
     with baca.scope(m.get(1, 9)) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.double_staccato_function(o.pheads())
-        baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(
+        baca.staff_lines(o.leaf(0), 1)
+        baca.double_staccato(o.pheads())
+        baca.dynamic(o.pleaf(0), '"mf"')
+        baca.markup(
             o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
-        baca.staff_positions_function(o, [0, -1, 1])
-        baca.text_script_padding_function(o, 2.5)
+        baca.staff_positions(o, [0, -1, 1])
+        baca.text_script_padding(o, 2.5)
 
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.accent_function(o.pheads())
-        baca.dynamic_function(o.pleaf(0), '"mf"')
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonescratch-markup")
-        baca.staff_position_function(o, 0)
-        library.box_adjustment_function(o)
+        baca.staff_lines(o.leaf(0), 1)
+        baca.accent(o.pheads())
+        baca.dynamic(o.pleaf(0), '"mf"')
+        baca.markup(o.pleaf(0), r"\ikribu-stonescratch-markup")
+        baca.staff_position(o, 0)
+        library.box_adjustment(o)
     with baca.scope(m[12]) as o:
-        baca.mark_function(o.leaf(0), r"\ikribu-colophon-markup")
-        baca.rehearsal_mark_down_function(o)
-        baca.rehearsal_mark_padding_function(o, 12)
-        baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
+        baca.mark(o.leaf(0), r"\ikribu-colophon-markup")
+        baca.rehearsal_mark_down(o)
+        baca.rehearsal_mark_padding(o, 12)
+        baca.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

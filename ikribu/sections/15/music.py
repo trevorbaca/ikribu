@@ -34,7 +34,7 @@ def GLOBALS(skips):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "windows"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def BCL(voice, accumulator):
@@ -108,68 +108,68 @@ def VC(voice, accumulator):
 def bcl(cache):
     m = cache["bcl"]
     with baca.scope(m.get(1, 5)) as o:
-        wrappers = baca.text_script_extra_offset_function(o, (0, 7))
+        wrappers = baca.text_script_extra_offset(o, (0, 7))
         baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         for wrapper in wrappers:
             wrapper.deactivate = True
-        baca.dynamic_function(o.pleaf(0), "p")
-        baca.markup_function(
+        baca.dynamic(o.pleaf(0), "p")
+        baca.markup(
             o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup"
         )
-        baca.pitch_function(o, "Bb1")
+        baca.pitch(o, "Bb1")
     with baca.scope(m.get(6, 10)) as o:
-        baca.pitch_function(o, "<Bb1 D4>")
+        baca.pitch(o, "<Bb1 D4>")
         cache.rebuild()
         m = cache["bcl"]
     with baca.scope(m.get(6, 10)) as o:
-        baca.repeat_tie_function(o.phead(0))
+        baca.repeat_tie(o.phead(0))
 
 
 def all_rh(cache):
     for name in ["vn_rh", "va_rh", "vc_rh"]:
         with baca.scope(cache[name].get(1, 10)) as o:
-            baca.markup_function(o.pleaf(0), r"\baca-half-clt-markup")
-            baca.hairpin_function(
+            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.hairpin(
                 o,
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
                 pieces=library.enchain_runs([3, 4]),
             ),
-            baca.staff_position_function(o, 0)
-            baca.script_staff_padding_function(o, 7)
-            baca.text_spanner_staff_padding_function(o, 3.5)
+            baca.staff_position(o, 0)
+            baca.script_staff_padding(o, 7)
+            baca.text_spanner_staff_padding(o, 3.5)
             if name == "vn_rh":
                 rotation = 0
             elif name == "va_rh":
                 rotation = -1
             elif name == "vc_rh":
                 rotation = -2
-            library.bcps_function(o, rotation=rotation)
+            library.bcps(o, rotation=rotation)
         with baca.scope(cache[name].leaves()) as o:
-            baca.dls_staff_padding_function(o, 9)
+            baca.dls_staff_padding(o, 9)
 
 
 def vn(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
-        library.glissando_pitches_function(o, octave=5, rotation=0)
-        baca.glissando_function(o)
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
+        library.glissando_pitches(o, octave=5, rotation=0)
+        baca.glissando(o)
 
 
 def va(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.staff_lines_function(o.leaf(0), 5)
-        baca.clef_function(o.leaf(0), "treble")
-        library.glissando_pitches_function(o, octave=5, rotation=-10)
-        baca.glissando_function(o)
+        baca.staff_lines(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "treble")
+        library.glissando_pitches(o, octave=5, rotation=-10)
+        baca.glissando(o)
 
 
 def vc(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.clef_function(o.leaf(0), "tenor")
-        library.glissando_pitches_function(o, octave=4, rotation=-20)
-        baca.glissando_function(o)
+        baca.clef(o.leaf(0), "tenor")
+        library.glissando_pitches(o, octave=4, rotation=-20)
+        baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

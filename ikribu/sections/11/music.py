@@ -38,12 +38,12 @@ def GLOBALS(skips, rests):
     baca.label_stage_numbers(skips, stage_markup)
     for index, item in ((10 - 1, "incisions"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in (
         (9 - 1, "long"),
         (11 - 1, "long"),
     ):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def BCL(voice, accumulator):
@@ -101,7 +101,7 @@ def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
     music = baca.make_repeat_tied_notes(accumulator.get(3, 6))
-    baca.tie_function(abjad.select.leaf(music, -1))
+    baca.tie(abjad.select.leaf(music, -1))
     voice.extend(music)
     music = baca.make_tied_repeated_durations(
         accumulator.get(7, 8),
@@ -114,52 +114,52 @@ def VC(voice, accumulator):
 
 def tutti(cache):
     with baca.scope(cache["vc"].get(1, 2)) as o:
-        baca.clef_function(o.leaf(0), "bass")
-        baca.staff_lines_function(o.leaf(0), 5)
+        baca.clef(o.leaf(0), "bass")
+        baca.staff_lines(o.leaf(0), 5)
     for name in [
         "bcl",
         "vn",
         "va",
     ]:
         with baca.scope(cache[name].leaves()) as o:
-            baca.clef_function(o.leaf(0), "percussion")
-            baca.dls_staff_padding_function(o, 6)
-            baca.dynamic_function(o.pleaf(0), '"mf"')
-            baca.staff_lines_function(o.leaf(0), 1)
-            baca.staff_position_function(o, 0)
+            baca.clef(o.leaf(0), "percussion")
+            baca.dls_staff_padding(o, 6)
+            baca.dynamic(o.pleaf(0), '"mf"')
+            baca.staff_lines(o.leaf(0), 1)
+            baca.staff_position(o, 0)
     with baca.scope(cache["bcl"].get(1, 2)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
     with baca.scope(cache["bcl"].get(3, 4)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
     with baca.scope(cache["vn"].get(1, 4)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vn"].get(5, 6)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-markup")
     with baca.scope(cache["va"].get(1, 2)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-three-markup")
     with baca.scope(cache["va"].get(3, 4)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-four-markup")
     with baca.scope(cache["va"].get(5, 6)) as o:
-        baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
+        baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vc"].get(3, 8)) as o:
-        baca.dynamic_function(o.pleaf(0), "p")
-        baca.hairpin_function(o.leaves()[-2:], "p < mf")
-        baca.markup_function(o.pleaf(0), r"\baca-poco-vib-markup")
-        baca.ottava_bassa_function(o.tleaves())
-        baca.ottava_bracket_staff_padding_function(o, 8)
-        baca.pitch_function(o, "D1")
+        baca.dynamic(o.pleaf(0), "p")
+        baca.hairpin(o.leaves()[-2:], "p < mf")
+        baca.markup(o.pleaf(0), r"\baca-poco-vib-markup")
+        baca.ottava_bassa(o.tleaves())
+        baca.ottava_bracket_staff_padding(o, 8)
+        baca.pitch(o, "D1")
     for name in ["bcl", "vn", "va"]:
-        library.box_adjustment_function(cache[name].leaves())
+        library.box_adjustment(cache[name].leaves())
         with baca.scope(cache[name][10]) as o:
-            baca.dynamic_function(
+            baca.dynamic(
                 o.pleaf(0),
                 '"f"',
                 abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
                 abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
             ),
-            baca.markup_function(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
+            baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
             if name == "bcl":
-                wrappers = baca.text_script_extra_offset_function(o, (0, 8))
+                wrappers = baca.text_script_extra_offset(o, (0, 8))
                 baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
 
 

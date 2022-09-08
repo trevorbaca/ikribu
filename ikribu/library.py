@@ -12,7 +12,7 @@ def _make_short_instrument_name(markup, context="Staff"):
     )
 
 
-def bcps_function(argument, rotation=0):
+def bcps(argument, rotation=0):
     bcps = [
         [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)],
         [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)],
@@ -21,20 +21,20 @@ def bcps_function(argument, rotation=0):
     ]
     bcps = abjad.sequence.rotate(bcps, n=rotation)
     bcps = abjad.sequence.flatten(bcps, depth=1)
-    return baca.bcps_function(argument, bcps)
+    return baca.bcps(argument, bcps)
 
 
-def box_adjustment_function(argument):
-    baca.text_script_padding_function(argument, 2.5)
-    baca.text_script_parent_alignment_x_function(argument, 0)
+def box_adjustment(argument):
+    baca.text_script_padding(argument, 2.5)
+    baca.text_script_parent_alignment_x(argument, 0)
 
 
-def clb_staff_positions_function(argument, *, rotation=0):
+def clb_staff_positions(argument, *, rotation=0):
     positions = [[-1, 0, 1, 1, 0], [0, 1, -1, 0], [-1, 1, 0, 1]]
     positions = baca.sequence.helianthate(positions, -1, -1)
     positions = abjad.sequence.rotate(positions, rotation)
     positions = abjad.sequence.flatten(positions)
-    baca.staff_positions_function(argument, positions)
+    baca.staff_positions(argument, positions)
 
 
 def enchain_runs(counts, exclude=None):
@@ -47,7 +47,7 @@ def enchain_runs(counts, exclude=None):
     return selector
 
 
-def glissando_pitches_function(argument, octave=4, rotation=0):
+def glissando_pitches(argument, octave=4, rotation=0):
     segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
     inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
     left = segment[:] + inversion[:]
@@ -57,7 +57,7 @@ def glissando_pitches_function(argument, octave=4, rotation=0):
     pitches = [_ + transposition for _ in pitches]
     pitches_ = pitches[:]
     pitches_ = abjad.sequence.rotate(pitches_, n=rotation)
-    return baca.pitches_function(argument, pitches_, allow_repeats=True)
+    return baca.pitches(argument, pitches_, allow_repeats=True)
 
 
 def make_bow_rhythm(time_signatures, *commands, rotation=0):
