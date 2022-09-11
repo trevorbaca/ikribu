@@ -2681,7 +2681,7 @@ number.8.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2749,7 +2749,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         fqf''!4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2795,7 +2795,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2843,7 +2843,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 4]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2889,7 +2889,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2937,7 +2937,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 6]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2983,7 +2983,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -3031,7 +3031,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3077,7 +3077,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -3125,7 +3125,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 10]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         d'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3171,7 +3171,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:

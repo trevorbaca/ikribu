@@ -2488,7 +2488,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2535,7 +2535,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2585,7 +2585,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 7]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2629,7 +2629,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 8]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2679,7 +2679,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 11]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2723,7 +2723,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 12]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2773,7 +2773,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 15]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2817,7 +2817,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 16]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3283,7 +3283,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     f'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3330,7 +3330,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3380,7 +3380,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     e'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3424,7 +3424,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 8]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3474,7 +3474,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 11]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     f'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3518,7 +3518,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 12]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3568,7 +3568,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 15]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     e'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3612,7 +3612,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 16]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4077,7 +4077,7 @@ number.4.Cello.Music = {
     \override TextSpanner.staff-padding = 3.5
       %! baca.tuplet_bracket_down(1)
     \override TupletBracket.direction = #down
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4145,7 +4145,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     fqf''!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4189,7 +4189,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4240,7 +4240,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4289,7 +4289,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d''1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4333,7 +4333,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     b'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4377,7 +4377,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4428,7 +4428,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 9]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4477,7 +4477,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4521,7 +4521,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4565,7 +4565,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4616,7 +4616,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 13]
-          %! baca.make_notes()
+          %! baca.make_notes_function()
         d'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4665,7 +4665,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 14]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4709,7 +4709,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     d'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4753,7 +4753,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
-      %! baca.make_notes()
+      %! baca.make_notes_function()
     g2.
     % AFTER:
     % STEM_TREMOLOS:
