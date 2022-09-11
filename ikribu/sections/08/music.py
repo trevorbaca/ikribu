@@ -84,12 +84,12 @@ def MOST(score, accumulator):
 
 
 def VC(voice, accumulator):
-    music = baca.make_notes(
+    music = baca.make_notes_function(
         accumulator.get(1, 11),
-        rmakers.reduce_multiplier(),
         repeat_ties=True,
     )
     voice.extend(music)
+    rmakers.reduce_multiplier_function(music)
     music = baca.make_mmrests(accumulator.get(12))
     voice.extend(music)
 
