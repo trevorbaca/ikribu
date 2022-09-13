@@ -75,7 +75,7 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_inscription_rhythm(accumulator.get(1, 11))
+    music = library.make_inscription_rhythm_function(accumulator.get(1, 11))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12))
     voice.extend(music)
