@@ -90,7 +90,9 @@ def VA(voice, accumulator):
 
 def VC(voice, accumulator):
     for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
-        music = baca.make_tied_repeated_durations(accumulator.get(*pair), [(1, 4)])
+        music = baca.make_tied_repeated_durations_function(
+            accumulator.get(*pair), [(1, 4)]
+        )
         voice.extend(music)
     music = baca.make_mmrests(accumulator.get(25, 33))
     voice.extend(music)
