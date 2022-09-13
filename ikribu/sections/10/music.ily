@@ -2348,7 +2348,7 @@ number.10.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2392,7 +2392,7 @@ number.10.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2400,16 +2400,16 @@ number.10.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2451,7 +2451,7 @@ number.10.Cello.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2462,7 +2462,7 @@ number.10.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2470,16 +2470,16 @@ number.10.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2521,7 +2521,7 @@ number.10.Cello.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2532,7 +2532,7 @@ number.10.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2540,16 +2540,16 @@ number.10.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2591,7 +2591,7 @@ number.10.Cello.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2602,7 +2602,7 @@ number.10.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2610,16 +2610,16 @@ number.10.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:

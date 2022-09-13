@@ -774,7 +774,7 @@ number.17.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 9
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'''4
     % AFTER:
     % ARTICULATIONS:
@@ -827,7 +827,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     a''4
     % AFTER:
     % SPANNER_STARTS:
@@ -837,7 +837,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     f''4
     % AFTER:
     % SPANNER_STARTS:
@@ -847,7 +847,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     d''4
     % AFTER:
     % SPANNER_STARTS:
@@ -857,7 +857,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -867,7 +867,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     g'4
     % AFTER:
     % SPANNER_STARTS:
@@ -877,7 +877,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     e'4
     % AFTER:
     % SPANNER_STARTS:
@@ -887,7 +887,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -899,7 +899,7 @@ number.17.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     b4
     % AFTER:
     % SPANNER_STARTS:
@@ -909,7 +909,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     a4
     % AFTER:
     % SPANNER_STARTS:
@@ -919,7 +919,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     g4
     % AFTER:
     % SPANNER_STARTS:
@@ -929,7 +929,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     f4
     % AFTER:
     % SPANNER_STARTS:
@@ -939,7 +939,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     e4
     % AFTER:
     % SPANNER_STARTS:
@@ -949,7 +949,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     d4
     % AFTER:
     % SPANNER_STARTS:
@@ -959,7 +959,7 @@ number.17.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     cs!4
     % AFTER:
     % SPANNER_STARTS:

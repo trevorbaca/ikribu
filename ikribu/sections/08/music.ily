@@ -894,7 +894,7 @@ number.8.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     a1.
     % AFTER:
     % ARTICULATIONS:
@@ -954,7 +954,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     a4
     % AFTER:
     % ARTICULATIONS:
@@ -973,7 +973,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \mp
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -999,7 +999,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     af!1.
     % AFTER:
     % ARTICULATIONS:
@@ -1039,7 +1039,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     af4
     % AFTER:
     % ARTICULATIONS:
@@ -1058,7 +1058,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \mf
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1084,7 +1084,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     g1.
     % AFTER:
     % ARTICULATIONS:
@@ -1124,7 +1124,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     g4
     % AFTER:
     % ARTICULATIONS:
@@ -1143,7 +1143,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \f
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1169,7 +1169,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     fs!1.
     % AFTER:
     % ARTICULATIONS:
@@ -1209,7 +1209,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     fs4
     % AFTER:
     % ARTICULATIONS:
@@ -1228,7 +1228,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \ff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1254,7 +1254,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     f1.
     % AFTER:
     % ARTICULATIONS:
@@ -1294,7 +1294,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     f4
     % AFTER:
     % ARTICULATIONS:
@@ -1313,7 +1313,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \fff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1339,7 +1339,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     e1.
     % AFTER:
     % ARTICULATIONS:
@@ -1379,7 +1379,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     e4
     % AFTER:
     % ARTICULATIONS:
@@ -1398,7 +1398,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \ffff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations()
+      %! baca.make_tied_repeated_durations_function()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)

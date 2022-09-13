@@ -66,19 +66,23 @@ def GLOBALS(skips):
 def BCL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = baca.make_tied_repeated_durations(accumulator.get(2, 3), [(1, 4)])
+    music = baca.make_tied_repeated_durations_function(accumulator.get(2, 3), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 5))
     voice.extend(music)
-    music = baca.make_tied_repeated_durations(accumulator.get(6, 7), [(1, 4)])
+    music = baca.make_tied_repeated_durations_function(accumulator.get(6, 7), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 9))
     voice.extend(music)
-    music = baca.make_tied_repeated_durations(accumulator.get(10, 11), [(1, 4)])
+    music = baca.make_tied_repeated_durations_function(
+        accumulator.get(10, 11), [(1, 4)]
+    )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 13))
     voice.extend(music)
-    music = baca.make_tied_repeated_durations(accumulator.get(14, 15), [(1, 4)])
+    music = baca.make_tied_repeated_durations_function(
+        accumulator.get(14, 15), [(1, 4)]
+    )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(16, 17))
     voice.extend(music)
