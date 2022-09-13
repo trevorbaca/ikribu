@@ -4561,18 +4561,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 2]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -4614,7 +4614,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4623,7 +4623,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -4633,24 +4633,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 3]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4659,7 +4659,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -4668,7 +4668,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -4678,24 +4678,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 4]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4704,7 +4704,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4713,7 +4713,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4738,7 +4738,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4803,18 +4803,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/4
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 7]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4839,7 +4839,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4848,7 +4848,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4857,7 +4857,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4867,7 +4867,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4932,18 +4932,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 10]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4985,7 +4985,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4994,7 +4994,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5003,7 +5003,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5012,7 +5012,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5022,24 +5022,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 4/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 11]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5048,7 +5048,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5057,7 +5057,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5066,7 +5066,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5075,7 +5075,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5085,24 +5085,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 12]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5111,7 +5111,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5120,7 +5120,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5129,7 +5129,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5138,7 +5138,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5163,7 +5163,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5228,18 +5228,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/12
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 15]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5281,7 +5281,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5290,7 +5290,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5300,24 +5300,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/12
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 16]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5326,7 +5326,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5335,7 +5335,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5345,24 +5345,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 17]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5371,7 +5371,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -5380,7 +5380,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5405,7 +5405,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5470,18 +5470,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/4
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 20]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5506,7 +5506,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5515,7 +5515,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5524,7 +5524,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5534,7 +5534,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5599,18 +5599,18 @@ number.14.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 4/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 23]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5652,7 +5652,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -5661,7 +5661,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5670,7 +5670,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -5679,7 +5679,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5689,24 +5689,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/10
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 24]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -5715,7 +5715,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5724,7 +5724,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -5733,7 +5733,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5742,7 +5742,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -5752,24 +5752,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 4/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 25]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5778,7 +5778,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5787,7 +5787,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5796,7 +5796,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5805,7 +5805,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5815,24 +5815,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 4/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 26]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5841,7 +5841,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5850,7 +5850,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5859,7 +5859,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5868,7 +5868,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5878,24 +5878,24 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 27]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5904,7 +5904,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5913,7 +5913,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5922,7 +5922,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -5931,7 +5931,7 @@ number.14.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5956,7 +5956,7 @@ number.14.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6774,7 +6774,7 @@ number.14.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 2]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -6813,7 +6813,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6822,7 +6822,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -6831,7 +6831,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6842,7 +6842,7 @@ number.14.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -6851,7 +6851,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6860,7 +6860,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -6869,7 +6869,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -6880,19 +6880,19 @@ number.14.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'8
     % AFTER:
     % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
     % START_BEAM:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'8
     % AFTER:
     % ARTICULATIONS:
@@ -6901,7 +6901,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'8
     % AFTER:
     % STEM_TREMOLOS:
@@ -6910,7 +6910,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'8
     % AFTER:
     % ARTICULATIONS:
@@ -6931,7 +6931,7 @@ number.14.Viola.Music = {
       %! baca.hairpin()
     \fff
     % STOP_BEAM:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6984,18 +6984,18 @@ number.14.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 7]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7004,7 +7004,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -7013,7 +7013,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7022,7 +7022,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -7031,7 +7031,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7041,7 +7041,7 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7095,7 +7095,7 @@ number.14.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 10]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -7134,7 +7134,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -7143,7 +7143,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -7153,18 +7153,18 @@ number.14.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 11]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7173,7 +7173,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7182,7 +7182,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7192,14 +7192,14 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 12]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -7208,7 +7208,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -7217,7 +7217,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -7289,18 +7289,18 @@ number.14.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/8
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 15]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7339,7 +7339,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7348,7 +7348,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7357,7 +7357,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7367,24 +7367,24 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/8
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 16]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7393,7 +7393,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7402,7 +7402,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7411,7 +7411,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7421,14 +7421,14 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 17]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'2
     % AFTER:
     % STEM_TREMOLOS:
@@ -7437,7 +7437,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -7446,7 +7446,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'2
     % AFTER:
     % STEM_TREMOLOS:
@@ -7455,7 +7455,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -7526,18 +7526,18 @@ number.14.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 3/5
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 20]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7546,7 +7546,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -7555,7 +7555,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7564,7 +7564,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -7573,7 +7573,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -7583,7 +7583,7 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7636,18 +7636,18 @@ number.14.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 23]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -7686,7 +7686,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -7695,7 +7695,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -7705,24 +7705,24 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 7/12
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 24]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -7731,7 +7731,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -7740,7 +7740,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -7750,24 +7750,24 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 25]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7776,7 +7776,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7785,7 +7785,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7795,24 +7795,24 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     \times 2/3
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 26]
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7821,7 +7821,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -7830,7 +7830,7 @@ number.14.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_color_rhythm()
+          %! ikribu.make_color_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -7840,14 +7840,14 @@ number.14.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 27]
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -7856,7 +7856,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -7865,7 +7865,7 @@ number.14.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_color_rhythm()
+      %! ikribu.make_color_rhythm_function()
     c'4
     % AFTER:
     % STEM_TREMOLOS:

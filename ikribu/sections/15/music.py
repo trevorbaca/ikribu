@@ -1,6 +1,5 @@
 import abjad
 import baca
-from abjadext import rmakers
 
 from ikribu import library
 
@@ -45,18 +44,16 @@ def BCL(voice, accumulator):
 
 
 def VN_RH(voice, accumulator):
-    music = library.make_bow_rhythm(
+    music = library.make_bow_rhythm_function(
         accumulator.get(1, 10),
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([0, 8], 12)),
-        ),
+        force_rest_lts=([0, 8], 12),
         rotation=0,
     )
     voice.extend(music)
 
 
 def VN(voice, accumulator):
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(1, 10),
         rotation_1=0,
         rotation_2=0,
@@ -66,18 +63,16 @@ def VN(voice, accumulator):
 
 def VA_RH(voice, accumulator):
     pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
-    music = library.make_bow_rhythm(
+    music = library.make_bow_rhythm_function(
         accumulator.get(1, 10),
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), pattern),
-        ),
+        force_rest_lts=pattern,
         rotation=-1,
     )
     voice.extend(music)
 
 
 def VA(voice, accumulator):
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(1, 10),
         rotation_1=-4,
         rotation_2=-1,
@@ -86,18 +81,16 @@ def VA(voice, accumulator):
 
 
 def VC_RH(voice, accumulator):
-    music = library.make_bow_rhythm(
+    music = library.make_bow_rhythm_function(
         accumulator.get(1, 10),
-        rmakers.force_rest(
-            lambda _: abjad.select.get(baca.select.lts(_), ([8, 20], 20)),
-        ),
+        force_rest_lts=([8, 20], 20),
         rotation=-2,
     )
     voice.extend(music)
 
 
 def VC(voice, accumulator):
-    music = library.make_glissando_rhythm(
+    music = library.make_glissando_rhythm_function(
         accumulator.get(1, 10),
         rotation_1=-8,
         rotation_2=-2,

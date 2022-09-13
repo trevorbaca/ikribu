@@ -84,28 +84,28 @@ def ALL_RH(score, accumulator):
 def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(3),
         extra_counts=[4],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 6))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(7),
         extra_counts=[4],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 10))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(11),
         extra_counts=[4],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 14))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(15),
         extra_counts=[4],
     )
@@ -117,28 +117,28 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(3),
         extra_counts=[2],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 6))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(7),
         extra_counts=[2],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 10))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(11),
         extra_counts=[2],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 14))
     voice.extend(music)
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(15),
         extra_counts=[2],
     )

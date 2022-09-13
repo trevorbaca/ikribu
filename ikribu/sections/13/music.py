@@ -61,7 +61,7 @@ def ALL_RH(score, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(1, 16),
         extra_counts=[4],
     )
@@ -75,7 +75,7 @@ def VN(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_clb_rhythm(
+    music = library.make_clb_rhythm_function(
         accumulator.get(1, 8),
         extra_counts=[2],
     )
