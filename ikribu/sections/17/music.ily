@@ -1055,11 +1055,11 @@ number.17.ViolinRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 3/2
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1114,7 +1114,7 @@ number.17.ViolinRH.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set RHStaff.forceClef = ##t
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % ARTICULATIONS:
@@ -1136,7 +1136,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1184,14 +1184,14 @@ number.17.ViolinRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 2]
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % SPANNER_STOPS:
@@ -1207,7 +1207,7 @@ number.17.ViolinRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -1253,18 +1253,18 @@ number.17.ViolinRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 7/8
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolinRH.Music measure 3]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -1280,7 +1280,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1299,7 +1299,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1346,7 +1346,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1379,7 +1379,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -1395,7 +1395,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1442,7 +1442,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1461,7 +1461,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1495,24 +1495,24 @@ number.17.ViolinRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 7/9
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolinRH.Music measure 4]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -1528,7 +1528,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1575,7 +1575,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1594,7 +1594,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1639,7 +1639,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -1655,7 +1655,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -1671,7 +1671,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1718,7 +1718,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1751,7 +1751,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -1768,24 +1768,24 @@ number.17.ViolinRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 8/7
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolinRH.Music measure 5]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1832,7 +1832,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1851,7 +1851,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1882,7 +1882,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -1898,7 +1898,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1945,7 +1945,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -1963,7 +1963,7 @@ number.17.ViolinRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -1995,7 +1995,7 @@ number.17.ViolinRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2080,11 +2080,11 @@ number.17.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 6/7
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2143,7 +2143,7 @@ number.17.Violin.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         c''8
         % AFTER:
         % ARTICULATIONS:
@@ -2162,7 +2162,7 @@ number.17.Violin.Music = {
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Violin”)"
         % START_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         [
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2185,7 +2185,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         b''8.
         % AFTER:
         % SPANNER_STARTS:
@@ -2195,7 +2195,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a'8
         % AFTER:
         % SPANNER_STARTS:
@@ -2205,11 +2205,11 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         b'8.
         % AFTER:
         % STOP_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         ]
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2218,7 +2218,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         g'4
         % AFTER:
         % SPANNER_STARTS:
@@ -2229,24 +2229,24 @@ number.17.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 4/6
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 2]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         g''2
         % AFTER:
         % SPANNER_STARTS:
@@ -2256,11 +2256,11 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         e''8
         % AFTER:
         % START_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         [
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2269,11 +2269,11 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f'''8
         % AFTER:
         % STOP_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         ]
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2283,14 +2283,14 @@ number.17.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     e'''2..
     % AFTER:
     % SPANNER_STARTS:
@@ -2300,7 +2300,7 @@ number.17.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     d''2..
     % AFTER:
     % SPANNER_STARTS:
@@ -2311,18 +2311,18 @@ number.17.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 14/15
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 4]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         c''1
         % AFTER:
         % SPANNER_STARTS:
@@ -2332,11 +2332,11 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d'8
         % AFTER:
         % START_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         [
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2345,7 +2345,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         e''8.
         % AFTER:
         % SPANNER_STARTS:
@@ -2355,7 +2355,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d''8
         % AFTER:
         % SPANNER_STARTS:
@@ -2365,11 +2365,11 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f''8.
         % AFTER:
         % STOP_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         ]
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -2378,7 +2378,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f'4
         % AFTER:
         % SPANNER_STARTS:
@@ -2389,24 +2389,24 @@ number.17.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 16/18
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 5]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a'2
         % AFTER:
         % SPANNER_STARTS:
@@ -2416,7 +2416,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         g8
         % AFTER:
         % SPANNER_STARTS:
@@ -2426,7 +2426,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a1
         % AFTER:
         % SPANNER_STARTS:
@@ -2436,7 +2436,7 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         b'2
         % AFTER:
         % SPANNER_STARTS:
@@ -2446,13 +2446,13 @@ number.17.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2586,7 +2586,7 @@ number.17.ViolaRH.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2638,7 +2638,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2657,7 +2657,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2705,18 +2705,18 @@ number.17.ViolaRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 2/3
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolaRH.Music measure 2]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2749,7 +2749,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -2765,7 +2765,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2813,24 +2813,24 @@ number.17.ViolaRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 7/9
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolaRH.Music measure 3]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2849,7 +2849,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2894,7 +2894,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -2910,7 +2910,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -2926,7 +2926,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2973,7 +2973,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2992,7 +2992,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3039,7 +3039,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3072,7 +3072,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -3089,24 +3089,24 @@ number.17.ViolaRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 7/6
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [ViolaRH.Music measure 4]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3153,7 +3153,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3172,7 +3172,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3217,7 +3217,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3236,7 +3236,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3267,7 +3267,7 @@ number.17.ViolaRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -3284,14 +3284,14 @@ number.17.ViolaRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 5]
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3338,7 +3338,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % SPANNER_STOPS:
@@ -3354,7 +3354,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3401,7 +3401,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3420,7 +3420,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3439,7 +3439,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3486,7 +3486,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3507,7 +3507,7 @@ number.17.ViolaRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3618,11 +3618,11 @@ number.17.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 6/8
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3681,7 +3681,7 @@ number.17.Viola.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         c''2..
         % AFTER:
         % ARTICULATIONS:
@@ -3720,7 +3720,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d'8
         % AFTER:
         % SPANNER_STARTS:
@@ -3731,14 +3731,14 @@ number.17.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 2]
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     e''2
     % AFTER:
     % SPANNER_STARTS:
@@ -3749,18 +3749,18 @@ number.17.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 14/15
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 3]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d''4.
         % AFTER:
         % SPANNER_STARTS:
@@ -3770,7 +3770,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f''2..
         % AFTER:
         % SPANNER_STARTS:
@@ -3780,7 +3780,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f'2
         % AFTER:
         % SPANNER_STARTS:
@@ -3790,7 +3790,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a'8
         % AFTER:
         % SPANNER_STARTS:
@@ -3801,24 +3801,24 @@ number.17.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 14/16
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 4]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         g4.
         % AFTER:
         % SPANNER_STARTS:
@@ -3828,11 +3828,11 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a8
         % AFTER:
         % START_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         [
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -3841,7 +3841,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         b'8.
         % AFTER:
         % SPANNER_STARTS:
@@ -3851,7 +3851,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a8
         % AFTER:
         % SPANNER_STARTS:
@@ -3861,11 +3861,11 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         g8.
         % AFTER:
         % STOP_BEAM:
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         ]
         % SPANNER_STARTS:
           %! abjad.glissando(7)
@@ -3874,7 +3874,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a'2..
         % AFTER:
         % SPANNER_STARTS:
@@ -3884,7 +3884,7 @@ number.17.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         f'8
         % AFTER:
         % SPANNER_STARTS:
@@ -3895,14 +3895,14 @@ number.17.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 5]
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     f''2..
     % AFTER:
     % SPANNER_STARTS:
@@ -3912,7 +3912,7 @@ number.17.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     d''2..
     % AFTER:
     % SPANNER_STARTS:
@@ -3922,7 +3922,7 @@ number.17.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     e''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4007,11 +4007,11 @@ number.17.CelloRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 3/4
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4066,7 +4066,7 @@ number.17.CelloRH.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set RHStaff.forceClef = ##t
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % ARTICULATIONS:
@@ -4088,7 +4088,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4135,7 +4135,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -4151,7 +4151,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4197,14 +4197,14 @@ number.17.CelloRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 2]
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % SPANNER_STOPS:
@@ -4220,7 +4220,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4240,18 +4240,18 @@ number.17.CelloRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 7/6
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [CelloRH.Music measure 3]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4298,7 +4298,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4331,7 +4331,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -4347,7 +4347,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4394,7 +4394,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % SPANNER_STOPS:
@@ -4410,7 +4410,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4458,14 +4458,14 @@ number.17.CelloRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 4]
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % SPANNER_STOPS:
@@ -4481,7 +4481,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4500,7 +4500,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4545,7 +4545,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % SPANNER_STOPS:
@@ -4561,7 +4561,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4606,7 +4606,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4625,7 +4625,7 @@ number.17.CelloRH.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -4645,18 +4645,18 @@ number.17.CelloRH.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     \times 8/9
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [CelloRH.Music measure 5]
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4689,7 +4689,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         r4
         % AFTER:
         % SPANNER_STOPS:
@@ -4705,7 +4705,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4752,7 +4752,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4771,7 +4771,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4818,7 +4818,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4837,7 +4837,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4856,7 +4856,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4903,7 +4903,7 @@ number.17.CelloRH.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_bow_rhythm()
+          %! ikribu.make_bow_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -4935,7 +4935,7 @@ number.17.CelloRH.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_bow_rhythm()
+      %! ikribu.make_bow_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5083,7 +5083,7 @@ number.17.Cello.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     a,8
     % AFTER:
     % ARTICULATIONS:
@@ -5102,7 +5102,7 @@ number.17.Cello.Music = {
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
     % START_BEAM:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     [
     % SPANNER_STARTS:
       %! abjad.glissando(7)
@@ -5125,7 +5125,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     g,8.
     % AFTER:
     % SPANNER_STARTS:
@@ -5135,7 +5135,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     a8
     % AFTER:
     % SPANNER_STARTS:
@@ -5145,7 +5145,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     f8.
     % AFTER:
     % SPANNER_STARTS:
@@ -5155,11 +5155,11 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     f'8
     % AFTER:
     % STOP_BEAM:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     ]
     % SPANNER_STARTS:
       %! abjad.glissando(7)
@@ -5169,18 +5169,18 @@ number.17.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 4/5
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d'2
         % AFTER:
         % SPANNER_STARTS:
@@ -5190,7 +5190,7 @@ number.17.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         e'8
         % AFTER:
         % SPANNER_STARTS:
@@ -5201,24 +5201,24 @@ number.17.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 14/16
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 3]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d8
         % AFTER:
         % SPANNER_STARTS:
@@ -5228,7 +5228,7 @@ number.17.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         c'1
         % AFTER:
         % SPANNER_STARTS:
@@ -5238,7 +5238,7 @@ number.17.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         d'2..
         % AFTER:
         % SPANNER_STARTS:
@@ -5249,14 +5249,14 @@ number.17.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     e''1
     % AFTER:
     % SPANNER_STARTS:
@@ -5266,11 +5266,11 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     f''8
     % AFTER:
     % START_BEAM:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     [
     % SPANNER_STARTS:
       %! abjad.glissando(7)
@@ -5279,7 +5279,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     e'8.
     % AFTER:
     % SPANNER_STARTS:
@@ -5289,7 +5289,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     g'8
     % AFTER:
     % SPANNER_STARTS:
@@ -5299,7 +5299,7 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     g8.
     % AFTER:
     % SPANNER_STARTS:
@@ -5309,11 +5309,11 @@ number.17.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     b8
     % AFTER:
     % STOP_BEAM:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     ]
     % SPANNER_STARTS:
       %! abjad.glissando(7)
@@ -5323,18 +5323,18 @@ number.17.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     \times 16/17
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         a2.
         % AFTER:
         % SPANNER_STARTS:
@@ -5344,7 +5344,7 @@ number.17.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         b'1
         % AFTER:
         % SPANNER_STARTS:
@@ -5354,13 +5354,13 @@ number.17.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_glissando_rhythm()
+          %! ikribu.make_glissando_rhythm_function()
         c'4.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_glissando_rhythm()
+      %! ikribu.make_glissando_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

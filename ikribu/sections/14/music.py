@@ -82,7 +82,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(2, 4),
         color_rhythm_n[0],
     )
@@ -95,7 +95,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(5, 6))
         voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(7),
         color_rhythm_n[1],
     )
@@ -108,7 +108,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(8, 9))
         voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(10, 12),
         color_rhythm_n[2],
     )
@@ -121,7 +121,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(13, 14))
         voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(15, 17),
         color_rhythm_n[3],
     )
@@ -134,7 +134,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(18, 19))
         voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(20),
         color_rhythm_n[4],
     )
@@ -147,7 +147,7 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     else:
         music = baca.make_mmrests(accumulator.get(21, 22))
         voice.extend(music)
-    music = library.make_color_rhythm(
+    music = library.make_color_rhythm_function(
         accumulator.get(23, 27),
         color_rhythm_n[5],
     )
