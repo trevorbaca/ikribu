@@ -165,9 +165,10 @@ def make_score(first_measure_number, previous_persistent_indicators):
 
 
 def main():
-    previous_metadata = baca.previous_metadata(__file__)
+    arguments = baca.build.arguments()
+    previous_metadata = baca.path.previous_metadata(__file__)
     first_measure_number = previous_metadata["final_measure_number"] + 1
-    previous_persist = baca.previous_persist(__file__)
+    previous_persist = baca.path.previous_persist(__file__)
     score, accumulator = make_score(
         first_measure_number, previous_persist["persistent_indicators"]
     )
@@ -175,6 +176,7 @@ def main():
         score,
         library.manifests,
         accumulator.time_signatures,
+        baca.path.dictionaries(__file__),
         **baca.interpret.section_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
@@ -184,7 +186,6 @@ def main():
         empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
         final_section=True,
-        first_measure_number=first_measure_number,
         part_manifest=library.part_manifest(),
         transpose_score=True,
     )
@@ -193,7 +194,7 @@ def main():
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
     )
-    baca.build.persist(lilypond_file, metadata, persist, timing)
+    baca.build.persist(lilypond_file, metadata, persist, timing, arguments)
 
 
 if __name__ == "__main__":
