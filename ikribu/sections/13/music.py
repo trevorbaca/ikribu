@@ -44,7 +44,7 @@ def GLOBALS(skips, rests):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 28))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 28))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29, 33))
     voice.extend(music)
@@ -61,28 +61,28 @@ def ALL_RH(score, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_clb_rhythm_function(
+    music = library.make_clb_rhythm(
         accumulator.get(1, 16),
         extra_counts=[4],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(17, 20), head=voice.name)
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(21, 32))
+    music = library.make_triplet_rhythm(accumulator.get(21, 32))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(33))
     voice.extend(music)
 
 
 def VA(voice, accumulator):
-    music = library.make_clb_rhythm_function(
+    music = library.make_clb_rhythm(
         accumulator.get(1, 8),
         extra_counts=[2],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(9, 12), head=voice.name)
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(13, 32))
+    music = library.make_triplet_rhythm(accumulator.get(13, 32))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(33))
     voice.extend(music)
@@ -90,9 +90,7 @@ def VA(voice, accumulator):
 
 def VC(voice, accumulator):
     for pair in [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]:
-        music = baca.make_tied_repeated_durations_function(
-            accumulator.get(*pair), [(1, 4)]
-        )
+        music = baca.make_tied_repeated_durations(accumulator.get(*pair), [(1, 4)])
         voice.extend(music)
     music = baca.make_mmrests(accumulator.get(25, 33))
     voice.extend(music)

@@ -843,7 +843,7 @@ number.11.BassClarinet.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -887,7 +887,7 @@ number.11.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -895,12 +895,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -908,12 +908,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -921,12 +921,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -934,12 +934,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -947,12 +947,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -960,14 +960,14 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 2]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -975,12 +975,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -988,12 +988,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1001,12 +1001,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1014,12 +1014,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1027,12 +1027,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1040,12 +1040,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1053,23 +1053,23 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % MARKUP:
@@ -1083,7 +1083,7 @@ number.11.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1091,12 +1091,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1104,12 +1104,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1117,14 +1117,14 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 4]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1132,12 +1132,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1145,12 +1145,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1158,12 +1158,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1171,14 +1171,14 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 5]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1186,12 +1186,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1199,12 +1199,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1212,14 +1212,14 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1227,12 +1227,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1240,12 +1240,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1253,12 +1253,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1266,12 +1266,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1279,12 +1279,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1292,12 +1292,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1305,16 +1305,16 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1383,7 +1383,7 @@ number.11.BassClarinet.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -1420,7 +1420,7 @@ number.11.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1428,12 +1428,12 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1441,16 +1441,16 @@ number.11.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! +ARCH_A_PARTS_BCL
@@ -1847,7 +1847,7 @@ number.11.Violin.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -1891,7 +1891,7 @@ number.11.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1899,12 +1899,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1912,12 +1912,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1925,12 +1925,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1938,12 +1938,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1951,12 +1951,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1964,14 +1964,14 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 2]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1979,12 +1979,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1992,12 +1992,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2005,12 +2005,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2018,12 +2018,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2031,12 +2031,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2044,12 +2044,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2057,12 +2057,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2070,14 +2070,14 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2085,12 +2085,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2098,12 +2098,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2111,12 +2111,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2124,14 +2124,14 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2139,12 +2139,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2152,12 +2152,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2165,23 +2165,23 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % MARKUP:
@@ -2195,7 +2195,7 @@ number.11.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2203,12 +2203,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2216,14 +2216,14 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 6]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2231,12 +2231,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2244,12 +2244,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2257,12 +2257,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2270,12 +2270,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2283,12 +2283,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2296,12 +2296,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2309,16 +2309,16 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2384,7 +2384,7 @@ number.11.Violin.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2421,7 +2421,7 @@ number.11.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2429,12 +2429,12 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2442,16 +2442,16 @@ number.11.Violin.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2844,7 +2844,7 @@ number.11.Viola.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2888,7 +2888,7 @@ number.11.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2896,12 +2896,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2909,12 +2909,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2922,12 +2922,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2935,12 +2935,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2948,12 +2948,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2961,14 +2961,14 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 2]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2976,12 +2976,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -2989,12 +2989,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3002,12 +3002,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3015,12 +3015,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3028,12 +3028,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3041,12 +3041,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3054,23 +3054,23 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % MARKUP:
@@ -3084,7 +3084,7 @@ number.11.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3092,12 +3092,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3105,12 +3105,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3118,14 +3118,14 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3133,12 +3133,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3146,12 +3146,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3159,23 +3159,23 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 5]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % MARKUP:
@@ -3189,7 +3189,7 @@ number.11.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3197,12 +3197,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3210,14 +3210,14 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 6]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3225,12 +3225,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3238,12 +3238,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3251,12 +3251,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3264,12 +3264,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3277,12 +3277,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3290,12 +3290,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3303,16 +3303,16 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3378,7 +3378,7 @@ number.11.Viola.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! baca._style_fermata_measures(3)
     \startStaff
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3415,7 +3415,7 @@ number.11.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3423,12 +3423,12 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
@@ -3436,16 +3436,16 @@ number.11.Viola.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     c'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3892,7 +3892,7 @@ number.11.Cello.Music = {
     \ottava -1
       %! baca.ottava_bracket_staff_padding(1)
     \override Staff.OttavaBracket.staff-padding = 8
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     d,,1
     % AFTER:
     % ARTICULATIONS:
@@ -3921,7 +3921,7 @@ number.11.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     d,,1
     % AFTER:
     % SPANNER_STARTS:
@@ -3929,14 +3929,14 @@ number.11.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     d,,2.
     % AFTER:
     % SPANNER_STARTS:
@@ -3944,18 +3944,18 @@ number.11.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     d,,\breve
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
       %! baca.tie()
     ~
@@ -3964,7 +3964,7 @@ number.11.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     d,,1..
     % AFTER:
     % SPANNER_STARTS:
@@ -3977,7 +3977,7 @@ number.11.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     d,,2
     % AFTER:
     % ARTICULATIONS:
@@ -4014,12 +4014,12 @@ number.11.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     d,,4
     % AFTER:
     % ARTICULATIONS:
@@ -4038,7 +4038,7 @@ number.11.Cello.Music = {
       %! baca.hairpin()
     \mf
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! SPANNER_STOP

@@ -1339,7 +1339,7 @@ number.6.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fs'!2
     % AFTER:
     % ARTICULATIONS:
@@ -1383,7 +1383,7 @@ number.6.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 2]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fs'1..
     % AFTER:
     % SPANNER_STARTS:
@@ -1391,14 +1391,14 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fs'2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1406,25 +1406,25 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 4]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fs'1
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 5]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     ftqs'!2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1437,7 +1437,7 @@ number.6.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     ftqs'1
     % AFTER:
     % SPANNER_STARTS:
@@ -1445,14 +1445,14 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 7]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     ftqs'2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1460,25 +1460,25 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 8]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     ftqs'2
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 9]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     g'1..
     % AFTER:
     % SPANNER_STARTS:
@@ -1491,7 +1491,7 @@ number.6.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 10]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     g'\breve
     % AFTER:
     % SPANNER_STARTS:
@@ -1499,14 +1499,14 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 11]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     g'1..
     % AFTER:
     % SPANNER_STARTS:
@@ -1514,25 +1514,25 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 12]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     g'1..
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 13]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     gqs'!2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1545,7 +1545,7 @@ number.6.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 14]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     gqs'2
     % AFTER:
     % SPANNER_STARTS:
@@ -1553,14 +1553,14 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 15]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     gqs'1..
     % AFTER:
     % SPANNER_STARTS:
@@ -1568,18 +1568,18 @@ number.6.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 16]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     gqs'\breve
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % CLOSING:
     % COMMANDS:
@@ -1886,11 +1886,11 @@ number.6.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1968,7 +1968,7 @@ number.6.Violin.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2027,7 +2027,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2036,7 +2036,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2046,24 +2046,24 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 2]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2101,7 +2101,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -2110,7 +2110,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2134,7 +2134,7 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2165,7 +2165,7 @@ number.6.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2203,7 +2203,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2212,7 +2212,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2222,18 +2222,18 @@ number.6.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 4/6
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 6]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % STEM_TREMOLOS:
@@ -2272,7 +2272,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2281,7 +2281,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2305,7 +2305,7 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2335,18 +2335,18 @@ number.6.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 9]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2384,7 +2384,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -2393,7 +2393,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2403,24 +2403,24 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 8/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 10]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2458,7 +2458,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2467,7 +2467,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -2491,7 +2491,7 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2522,7 +2522,7 @@ number.6.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 13]
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -2561,7 +2561,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2570,7 +2570,7 @@ number.6.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2580,18 +2580,18 @@ number.6.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin.Music measure 14]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2629,7 +2629,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2638,7 +2638,7 @@ number.6.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2662,7 +2662,7 @@ number.6.Violin.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3113,18 +3113,18 @@ number.6.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 2]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -3166,7 +3166,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3175,7 +3175,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3185,14 +3185,14 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3230,7 +3230,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -3239,7 +3239,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3287,18 +3287,18 @@ number.6.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 4/6
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 6]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -3336,7 +3336,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -3345,7 +3345,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -3355,14 +3355,14 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % STEM_TREMOLOS:
@@ -3401,7 +3401,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3410,7 +3410,7 @@ number.6.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3458,18 +3458,18 @@ number.6.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 8/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 10]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3507,7 +3507,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -3516,7 +3516,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3526,24 +3526,24 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 11]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3581,7 +3581,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3590,7 +3590,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3614,7 +3614,7 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3644,18 +3644,18 @@ number.6.Viola.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 2/3
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 14]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3694,7 +3694,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3703,7 +3703,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -3713,24 +3713,24 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     \times 7/12
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola.Music measure 15]
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3768,7 +3768,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % STEM_TREMOLOS:
@@ -3777,7 +3777,7 @@ number.6.Viola.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_triplet_rhythm_function()
+          %! ikribu.make_triplet_rhythm()
         c'1
         % AFTER:
         % ARTICULATIONS:
@@ -3801,7 +3801,7 @@ number.6.Viola.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_triplet_rhythm_function()
+      %! ikribu.make_triplet_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4333,7 +4333,7 @@ number.6.Cello.Music = {
     \override DynamicLineSpanner.staff-padding = 4
       %! baca.text_script_staff_padding(1)
     \override TextScript.staff-padding = 2.5
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     f1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -4381,7 +4381,7 @@ number.6.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     f\breve
     % AFTER:
     % STEM_TREMOLOS:
@@ -4421,14 +4421,14 @@ number.6.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     f1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -4468,14 +4468,14 @@ number.6.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     f1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -4511,14 +4511,14 @@ number.6.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 13]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fqs!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4563,7 +4563,7 @@ number.6.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 14]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fqs2
     % AFTER:
     % STEM_TREMOLOS:
@@ -4603,14 +4603,14 @@ number.6.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fqs1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -4650,14 +4650,14 @@ number.6.Cello.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fqs\breve
     % AFTER:
     % STEM_TREMOLOS:
@@ -4679,7 +4679,7 @@ number.6.Cello.Music = {
       %! baca.hairpin()
     \mp
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)

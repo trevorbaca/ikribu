@@ -78,11 +78,11 @@ def GLOBALS(skips, rests):
 
 def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
-        music = baca.make_repeat_tied_notes_function(accumulator.get(1))
+        music = baca.make_repeat_tied_notes(accumulator.get(1))
     else:
         music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(2, 4),
         color_rhythm_n[0],
     )
@@ -90,12 +90,12 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_mmrests(accumulator.get(5))
         voice.extend(music)
-        music = baca.make_repeat_tied_notes_function(accumulator.get(6))
+        music = baca.make_repeat_tied_notes(accumulator.get(6))
         voice.extend(music)
     else:
         music = baca.make_mmrests(accumulator.get(5, 6))
         voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(7),
         color_rhythm_n[1],
     )
@@ -103,12 +103,12 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_mmrests(accumulator.get(8))
         voice.extend(music)
-        music = baca.make_repeat_tied_notes_function(accumulator.get(9))
+        music = baca.make_repeat_tied_notes(accumulator.get(9))
         voice.extend(music)
     else:
         music = baca.make_mmrests(accumulator.get(8, 9))
         voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(10, 12),
         color_rhythm_n[2],
     )
@@ -116,12 +116,12 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_mmrests(accumulator.get(13))
         voice.extend(music)
-        music = baca.make_repeat_tied_notes_function(accumulator.get(14))
+        music = baca.make_repeat_tied_notes(accumulator.get(14))
         voice.extend(music)
     else:
         music = baca.make_mmrests(accumulator.get(13, 14))
         voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(15, 17),
         color_rhythm_n[3],
     )
@@ -129,12 +129,12 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_mmrests(accumulator.get(18))
         voice.extend(music)
-        music = baca.make_repeat_tied_notes_function(accumulator.get(19))
+        music = baca.make_repeat_tied_notes(accumulator.get(19))
         voice.extend(music)
     else:
         music = baca.make_mmrests(accumulator.get(18, 19))
         voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(20),
         color_rhythm_n[4],
     )
@@ -142,12 +142,12 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
     if grainfall is True:
         music = baca.make_mmrests(accumulator.get(21))
         voice.extend(music)
-        music = baca.make_repeat_tied_notes_function(accumulator.get(22))
+        music = baca.make_repeat_tied_notes(accumulator.get(22))
         voice.extend(music)
     else:
         music = baca.make_mmrests(accumulator.get(21, 22))
         voice.extend(music)
-    music = library.make_color_rhythm_function(
+    music = library.make_color_rhythm(
         accumulator.get(23, 27),
         color_rhythm_n[5],
     )
@@ -159,27 +159,27 @@ def make_vn_va_rhythm(voice, accumulator, color_rhythm_n, grainfall=False):
 def BCL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(2, 4))
+    music = baca.make_repeat_tied_notes(accumulator.get(2, 4))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 6), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
+    music = baca.make_repeat_tied_notes(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 9), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(10, 12))
+    music = baca.make_repeat_tied_notes(accumulator.get(10, 12))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13, 14), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(15, 17))
+    music = baca.make_repeat_tied_notes(accumulator.get(15, 17))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(18, 19), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(20))
+    music = baca.make_repeat_tied_notes(accumulator.get(20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 22), head=voice.name)
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(23, 31))
+    music = baca.make_repeat_tied_notes(accumulator.get(23, 31))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(32), head=voice.name)
     voice.extend(music)
@@ -204,39 +204,39 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1))
+    music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(2, 4))
+    music = baca.make_repeat_tied_notes(accumulator.get(2, 4))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(6))
+    music = baca.make_repeat_tied_notes(accumulator.get(6))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
+    music = baca.make_repeat_tied_notes(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(9))
+    music = baca.make_repeat_tied_notes(accumulator.get(9))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(10, 12))
+    music = baca.make_repeat_tied_notes(accumulator.get(10, 12))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(14))
+    music = baca.make_repeat_tied_notes(accumulator.get(14))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(15, 17))
+    music = baca.make_repeat_tied_notes(accumulator.get(15, 17))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(18))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(19))
+    music = baca.make_repeat_tied_notes(accumulator.get(19))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(20))
+    music = baca.make_repeat_tied_notes(accumulator.get(20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(22))
+    music = baca.make_repeat_tied_notes(accumulator.get(22))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(23, 27))
+    music = baca.make_repeat_tied_notes(accumulator.get(23, 27))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(28, 32))
     voice.extend(music)

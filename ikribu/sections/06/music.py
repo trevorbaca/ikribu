@@ -64,13 +64,13 @@ def GLOBALS(skips):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 4))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 4))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(5, 8))
+    music = baca.make_repeat_tied_notes(accumulator.get(5, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 12))
+    music = baca.make_repeat_tied_notes(accumulator.get(9, 12))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(13, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(13, 16))
     voice.extend(music)
 
 
@@ -80,19 +80,19 @@ def VN_RH(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_triplet_rhythm_function(accumulator.get(1, 2))
+    music = library.make_triplet_rhythm(accumulator.get(1, 2))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(3, 4))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(5, 6))
+    music = library.make_triplet_rhythm(accumulator.get(5, 6))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 8))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(9, 10))
+    music = library.make_triplet_rhythm(accumulator.get(9, 10))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11, 12))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(13, 14))
+    music = library.make_triplet_rhythm(accumulator.get(13, 14))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(15, 16))
     voice.extend(music)
@@ -106,19 +106,19 @@ def VA_RH(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(2, 3))
+    music = library.make_triplet_rhythm(accumulator.get(2, 3))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4, 5))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(6, 7))
+    music = library.make_triplet_rhythm(accumulator.get(6, 7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 9))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(10, 11))
+    music = library.make_triplet_rhythm(accumulator.get(10, 11))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(12, 13))
     voice.extend(music)
-    music = library.make_triplet_rhythm_function(accumulator.get(14, 15))
+    music = library.make_triplet_rhythm(accumulator.get(14, 15))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(16))
     voice.extend(music)
@@ -132,9 +132,9 @@ def VC_RH(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(9, 12))
+    music = baca.make_repeat_tied_notes(accumulator.get(9, 12))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes_function(accumulator.get(13, 16))
+    music = baca.make_repeat_tied_notes(accumulator.get(13, 16))
     voice.extend(music)
 
 

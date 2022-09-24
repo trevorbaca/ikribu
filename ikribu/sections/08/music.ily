@@ -894,7 +894,7 @@ number.8.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     a1.
     % AFTER:
     % ARTICULATIONS:
@@ -954,7 +954,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     a4
     % AFTER:
     % ARTICULATIONS:
@@ -973,7 +973,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \mp
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -999,7 +999,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     af!1.
     % AFTER:
     % ARTICULATIONS:
@@ -1039,7 +1039,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     af4
     % AFTER:
     % ARTICULATIONS:
@@ -1058,7 +1058,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \mf
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1084,7 +1084,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     g1.
     % AFTER:
     % ARTICULATIONS:
@@ -1124,7 +1124,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     g4
     % AFTER:
     % ARTICULATIONS:
@@ -1143,7 +1143,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \f
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1169,7 +1169,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     fs!1.
     % AFTER:
     % ARTICULATIONS:
@@ -1209,7 +1209,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     fs4
     % AFTER:
     % ARTICULATIONS:
@@ -1228,7 +1228,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \ff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1254,7 +1254,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     f1.
     % AFTER:
     % ARTICULATIONS:
@@ -1294,7 +1294,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     f4
     % AFTER:
     % ARTICULATIONS:
@@ -1313,7 +1313,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \fff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -1339,7 +1339,7 @@ number.8.BassClarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 7
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     e1.
     % AFTER:
     % ARTICULATIONS:
@@ -1379,7 +1379,7 @@ number.8.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     e4
     % AFTER:
     % ARTICULATIONS:
@@ -1398,7 +1398,7 @@ number.8.BassClarinet.Music = {
       %! baca.hairpin()
     \ffff
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % COMMANDS:
       %! baca.dls_staff_padding(2)
@@ -2681,7 +2681,7 @@ number.8.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2749,7 +2749,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         fqf''!4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2795,7 +2795,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2843,7 +2843,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 4]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2889,7 +2889,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -2937,7 +2937,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 6]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -2983,7 +2983,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -3031,7 +3031,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3077,7 +3077,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:
@@ -3125,7 +3125,7 @@ number.8.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 10]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         d'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -3171,7 +3171,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'1..
     % AFTER:
     % STEM_TREMOLOS:

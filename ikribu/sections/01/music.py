@@ -46,7 +46,7 @@ def VN_RH(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1))
+    music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
@@ -68,7 +68,7 @@ def VC_RH(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1))
+    music = baca.make_repeat_tied_notes(accumulator.get(1))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
