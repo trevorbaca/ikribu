@@ -823,7 +823,7 @@ number.18.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -867,7 +867,7 @@ number.18.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -875,12 +875,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -888,12 +888,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -901,12 +901,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -914,12 +914,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -927,12 +927,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -940,14 +940,14 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 2]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -955,12 +955,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -968,12 +968,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -981,12 +981,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -994,12 +994,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1007,12 +1007,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1020,12 +1020,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1033,12 +1033,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1046,14 +1046,14 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1061,12 +1061,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1074,12 +1074,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1087,12 +1087,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1100,12 +1100,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1113,12 +1113,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1126,12 +1126,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1139,14 +1139,14 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 4]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1154,12 +1154,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1167,12 +1167,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1180,14 +1180,14 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 5]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1195,12 +1195,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1208,14 +1208,14 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1223,12 +1223,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1236,12 +1236,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1249,12 +1249,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1262,12 +1262,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1275,12 +1275,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1288,12 +1288,12 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1301,16 +1301,16 @@ number.18.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1729,7 +1729,7 @@ number.18.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1770,7 +1770,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1779,7 +1779,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1788,7 +1788,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1797,7 +1797,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1806,7 +1806,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1815,7 +1815,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1826,7 +1826,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 2]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1835,7 +1835,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1844,7 +1844,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1853,7 +1853,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1862,7 +1862,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1871,7 +1871,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1880,7 +1880,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1889,7 +1889,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1900,7 +1900,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1909,7 +1909,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1918,7 +1918,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1927,7 +1927,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1936,7 +1936,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1945,7 +1945,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1954,7 +1954,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1965,7 +1965,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1974,7 +1974,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -1983,7 +1983,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -1994,7 +1994,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2003,7 +2003,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2014,7 +2014,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 6]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2023,7 +2023,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2032,7 +2032,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2041,7 +2041,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2050,7 +2050,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2059,7 +2059,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2068,7 +2068,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2077,7 +2077,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2088,7 +2088,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 7]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2097,7 +2097,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2106,7 +2106,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2115,7 +2115,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2124,7 +2124,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2133,7 +2133,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2142,7 +2142,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2153,7 +2153,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 8]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2162,7 +2162,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2171,7 +2171,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2180,7 +2180,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2191,7 +2191,7 @@ number.18.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 9]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2200,7 +2200,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2209,7 +2209,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2218,7 +2218,7 @@ number.18.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2603,7 +2603,7 @@ number.18.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2644,7 +2644,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2653,7 +2653,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2662,7 +2662,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2671,7 +2671,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2680,7 +2680,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2689,7 +2689,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2700,7 +2700,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 2]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2709,7 +2709,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2718,7 +2718,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2727,7 +2727,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2736,7 +2736,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2745,7 +2745,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2754,7 +2754,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2763,7 +2763,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2774,7 +2774,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2783,7 +2783,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2792,7 +2792,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2801,7 +2801,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2810,7 +2810,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2819,7 +2819,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2828,7 +2828,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2839,7 +2839,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2848,7 +2848,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2857,7 +2857,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2868,7 +2868,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 5]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2877,7 +2877,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2888,7 +2888,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 6]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2897,7 +2897,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2906,7 +2906,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2915,7 +2915,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2924,7 +2924,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2933,7 +2933,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2942,7 +2942,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2951,7 +2951,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2962,7 +2962,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2971,7 +2971,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -2980,7 +2980,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -2989,7 +2989,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -2998,7 +2998,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -3007,7 +3007,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -3016,7 +3016,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -3027,7 +3027,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 8]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -3036,7 +3036,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -3045,7 +3045,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -3054,7 +3054,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -3065,7 +3065,7 @@ number.18.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 9]
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -3074,7 +3074,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -3083,7 +3083,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -3092,7 +3092,7 @@ number.18.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes_function()
+      %! baca.make_repeated_duration_notes()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -3421,11 +3421,11 @@ number.18.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 14/15
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3489,7 +3489,7 @@ number.18.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -3514,7 +3514,7 @@ number.18.Cello.Music = {
           %! baca.markup()
         ^ \ikribu-stonescratch-markup
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -3533,7 +3533,7 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -3542,24 +3542,24 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -3568,29 +3568,29 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -3599,84 +3599,84 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 8/9
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -3686,14 +3686,14 @@ number.18.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
@@ -3702,24 +3702,24 @@ number.18.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
@@ -3728,106 +3728,106 @@ number.18.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 6/7
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 4]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -3836,7 +3836,7 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -3845,7 +3845,7 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -3854,50 +3854,50 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 2/3
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r4.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -3906,31 +3906,31 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -3941,76 +3941,76 @@ number.18.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % SPANNER_STARTS:
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8.
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -4019,46 +4019,46 @@ number.18.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 14/15
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 7]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r4..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4067,7 +4067,7 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4076,98 +4076,98 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r2..
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 4/5
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -4178,25 +4178,25 @@ number.18.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % START_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     [
     % SPANNER_STARTS:
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a8
     % AFTER:
     % ARTICULATIONS:
@@ -4205,63 +4205,63 @@ number.18.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     a16
     % AFTER:
     % ARTICULATIONS:
       %! baca.accent()
     - \accent
     % STOP_BEAM:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     r8.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 6/7
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 10]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r4..
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
@@ -4270,24 +4270,24 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4297,36 +4297,36 @@ number.18.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     \times 7/8
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 11]
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4335,7 +4335,7 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8
         % AFTER:
         % ARTICULATIONS:
@@ -4344,24 +4344,24 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a8.
         % AFTER:
         % ARTICULATIONS:
@@ -4370,42 +4370,42 @@ number.18.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % START_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         a16
         % AFTER:
         % ARTICULATIONS:
           %! baca.accent()
         - \accent
         % STOP_BEAM:
-          %! ikribu.make_inscription_rhythm_function()
+          %! ikribu.make_inscription_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! ikribu.make_inscription_rhythm_function()
+      %! ikribu.make_inscription_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

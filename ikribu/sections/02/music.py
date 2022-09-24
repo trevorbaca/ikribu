@@ -42,7 +42,7 @@ def GLOBALS(skips, rests):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 5))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 5))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 7), head=voice.name)
     voice.extend(music)
@@ -66,7 +66,7 @@ def VA_RH(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 2))
     voice.extend(music)
-    music = baca.make_tied_repeated_durations_function(accumulator.get(3, 6), [(1, 4)])
+    music = baca.make_tied_repeated_durations(accumulator.get(3, 6), [(1, 4)])
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7))
     voice.extend(music)

@@ -1447,7 +1447,7 @@ number.4.BassClarinet.Music = {
       %! EXPLICIT_STAFF_LINES_COLOR
       %! baca._attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -1495,7 +1495,7 @@ number.4.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1503,12 +1503,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1516,12 +1516,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1529,14 +1529,14 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1544,12 +1544,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1557,12 +1557,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1570,16 +1570,16 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1610,7 +1610,7 @@ number.4.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1621,7 +1621,7 @@ number.4.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1629,12 +1629,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1642,12 +1642,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1655,14 +1655,14 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 7]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1670,12 +1670,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1683,12 +1683,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1696,16 +1696,16 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1736,7 +1736,7 @@ number.4.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 10]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1747,7 +1747,7 @@ number.4.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1755,12 +1755,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1768,12 +1768,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1781,14 +1781,14 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 11]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1796,12 +1796,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1809,12 +1809,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1822,16 +1822,16 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1862,7 +1862,7 @@ number.4.BassClarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 14]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1873,7 +1873,7 @@ number.4.BassClarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1881,12 +1881,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1894,12 +1894,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1907,14 +1907,14 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 15]
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1922,12 +1922,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1935,12 +1935,12 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
@@ -1948,16 +1948,16 @@ number.4.BassClarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     b'4
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_tied_repeated_durations_function()
+      %! baca.make_tied_repeated_durations()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2373,7 +2373,7 @@ number.4.Violin.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     c'1..
     % AFTER:
     % ARTICULATIONS:
@@ -2488,7 +2488,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2535,7 +2535,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2585,7 +2585,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 7]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2629,7 +2629,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 8]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2679,7 +2679,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 11]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     fs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2723,7 +2723,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 12]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     gs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -2773,7 +2773,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 15]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     gs'!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -2817,7 +2817,7 @@ number.4.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 16]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     fs'!2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3283,7 +3283,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     f'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3330,7 +3330,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3380,7 +3380,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     e'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3424,7 +3424,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 8]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3474,7 +3474,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 11]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     f'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3518,7 +3518,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 12]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     e'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -3568,7 +3568,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 15]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     e'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -3612,7 +3612,7 @@ number.4.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 16]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     f'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4022,7 +4022,7 @@ number.4.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeat_tied_notes_function()
+      %! baca.make_repeat_tied_notes()
     fqf''!1..
     % AFTER:
     % ARTICULATIONS:
@@ -4077,7 +4077,7 @@ number.4.Cello.Music = {
     \override TextSpanner.staff-padding = 3.5
       %! baca.tuplet_bracket_down(1)
     \override TupletBracket.direction = #down
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4145,7 +4145,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     fqf''!1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4189,7 +4189,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4240,7 +4240,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4289,7 +4289,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d''1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4333,7 +4333,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     b'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4377,7 +4377,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4428,7 +4428,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 9]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         b'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4477,7 +4477,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4521,7 +4521,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4565,7 +4565,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -4616,7 +4616,7 @@ number.4.Cello.Music = {
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 13]
-          %! baca.make_notes_function()
+          %! baca.make_notes()
         d'4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4665,7 +4665,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 14]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4709,7 +4709,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     d'1
     % AFTER:
     % STEM_TREMOLOS:
@@ -4753,7 +4753,7 @@ number.4.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
-      %! baca.make_notes_function()
+      %! baca.make_notes()
     g2.
     % AFTER:
     % STEM_TREMOLOS:

@@ -52,7 +52,7 @@ def MOST(score, accumulator):
 
 
 def VC_RH(voice, accumulator):
-    music = library.make_bow_rhythm_function(
+    music = library.make_bow_rhythm(
         accumulator.get(1, 10),
         force_rest_lts=([8, 20], 20),
         rotation=-2,
@@ -63,7 +63,7 @@ def VC_RH(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(1, 10),
         rotation_1=0,
         rotation_2=0,

@@ -37,14 +37,14 @@ def GLOBALS(skips, rests):
 
 
 def BCL(voice, accumulator):
-    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 8))
+    music = baca.make_repeat_tied_notes(accumulator.get(1, 8))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(9))
     voice.extend(music)
 
 
 def VN_RH(voice, accumulator):
-    music = library.make_bow_rhythm_function(
+    music = library.make_bow_rhythm(
         accumulator.get(1, 8),
         force_rest_lts=([0, 8], 12),
         rotation=0,
@@ -55,7 +55,7 @@ def VN_RH(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(1, 8),
         rotation_1=0,
         rotation_2=0,
@@ -66,7 +66,7 @@ def VN(voice, accumulator):
 
 
 def VA_RH(voice, accumulator):
-    music = library.make_bow_rhythm_function(
+    music = library.make_bow_rhythm(
         accumulator.get(1, 8),
         force_rest_lts=([4, 14], 16),
         rotation=-1,
@@ -77,7 +77,7 @@ def VA_RH(voice, accumulator):
 
 
 def VA(voice, accumulator):
-    music = library.make_glissando_rhythm_function(
+    music = library.make_glissando_rhythm(
         accumulator.get(1, 8),
         rotation_1=-4,
         rotation_2=-1,
