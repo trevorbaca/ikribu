@@ -182,7 +182,7 @@ def vc(m):
 
 def make_score(first_measure_number, previous_persistent_indicators):
     score, accumulator = make_empty_score()
-    baca.interpret.set_up_score(
+    baca.section.set_up_score(
         score,
         accumulator.time_signatures,
         accumulator,
@@ -203,7 +203,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
         library.manifests,
         previous_persistent_indicators,
     )
-    cache = baca.interpret.cache_leaves(
+    cache = baca.section.cache_leaves(
         score,
         len(accumulator.time_signatures),
         library.voice_abbreviations,
@@ -226,7 +226,7 @@ def main():
         library.manifests,
         accumulator.time_signatures,
         environment,
-        **baca.interpret.section_defaults(),
+        **baca.section.section_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
             baca.tags.STAGE_NUMBER,
