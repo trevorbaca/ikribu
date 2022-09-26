@@ -81,7 +81,7 @@ def bcl(m):
         baca.short_instrument_name(
             o.leaf(0),
             "B. cl.",
-            library.manifests,
+            manifests=library.manifests,
         )
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
@@ -104,7 +104,7 @@ def vn(m):
         baca.short_instrument_name(
             o.leaf(0),
             "Vn.",
-            library.manifests,
+            manifests=library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef(o.leaf(0), "percussion")
@@ -130,7 +130,7 @@ def va(m):
         baca.short_instrument_name(
             o.leaf(0),
             "Va.",
-            library.manifests,
+            manifests=library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef(o.leaf(0), "alto")
@@ -152,7 +152,7 @@ def vc(m):
         baca.short_instrument_name(
             o.leaf(0),
             "Vc.",
-            library.manifests,
+            manifests=library.manifests,
             context="StringInstrumentPianoStaff",
         )
         baca.clef(o.leaf(0), "treble")
@@ -172,10 +172,10 @@ def make_score():
         score,
         accumulator.time_signatures,
         accumulator,
-        library.manifests,
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_section=True,
+        manifests=library.manifests,
     )
     GLOBALS(score["Skips"], score["Rests"])
     BCL(accumulator.voice("bcl"), accumulator)
@@ -204,11 +204,9 @@ def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
     timing = baca.build.Timing()
     score, accumulator = make_score(timing)
-    metadata, persist, timing = baca.build.postprocess_score(
+    metadata, persist = baca.section.postprocess_score(
         score,
-        library.manifests,
         accumulator.time_signatures,
-        environment,
         **baca.section.section_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
@@ -216,8 +214,11 @@ def main():
         ],
         always_make_global_rests=True,
         empty_fermata_measures=True,
+        environment=environment,
         error_on_not_yet_pitched=True,
+        manifests=library.manifests,
         part_manifest=library.part_manifest(),
+        timing=timing,
     )
     lilypond_file = baca.lilypond.file(
         score,
