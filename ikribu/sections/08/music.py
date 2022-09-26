@@ -34,7 +34,7 @@ def GLOBALS(skips):
         ("[G.9]", 9),
         ("[G.11]", 11),
     )
-    baca.label_stage_numbers(skips, stage_markup)
+    baca.section.label_stage_numbers(skips, stage_markup)
     for index, item in (
         (1 - 1, "night"),
         (1 - 1, baca.Accelerando()),
@@ -145,17 +145,17 @@ def make_score(first_measure_number, previous_persistent_indicators):
         score,
         accumulator.time_signatures,
         accumulator,
-        library.manifests,
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
+        manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
     GLOBALS(score["Skips"])
     BCL(accumulator.voice("bcl"), accumulator)
     MOST(score, accumulator)
     VC(accumulator.voice("vc"), accumulator)
-    baca.reapply(
+    baca.section.reapply(
         accumulator.voices(),
         library.manifests,
         previous_persistent_indicators,
@@ -178,11 +178,9 @@ def main():
         environment.previous_persist["persistent_indicators"],
         timing,
     )
-    metadata, persist, timing = baca.build.postprocess_score(
+    metadata, persist = baca.section.postprocess_score(
         score,
-        library.manifests,
         accumulator.time_signatures,
-        environment,
         **baca.section.section_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
@@ -190,8 +188,11 @@ def main():
         ],
         always_make_global_rests=True,
         empty_fermata_measures=True,
+        environment=environment,
         error_on_not_yet_pitched=True,
+        manifests=library.manifests,
         part_manifest=library.part_manifest(),
+        timing=timing,
         transpose_score=True,
     )
     lilypond_file = baca.lilypond.file(
