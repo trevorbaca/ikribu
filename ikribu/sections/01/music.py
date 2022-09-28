@@ -165,7 +165,7 @@ def vc(m):
         baca.dynamic(o.pleaf(0), "sfz")
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score():
     score, accumulator = make_empty_score()
     baca.section.set_up_score(
