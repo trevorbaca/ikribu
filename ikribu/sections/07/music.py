@@ -17,7 +17,7 @@ def make_empty_score():
     time_signatures = maker_.run()
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.measures(time_signatures)
+    measures = baca.section.measures(time_signatures)
     return score, voices, measures
 
 
