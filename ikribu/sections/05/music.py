@@ -17,13 +17,9 @@ def make_empty_score():
     )
     time_signatures = maker_.run()
     score = library.make_empty_score()
-    voice_names = baca.accumulator.get_voice_names(score)
-    accumulator = baca.CommandAccumulator(
-        time_signatures=time_signatures,
-        _voice_abbreviations=library.voice_abbreviations,
-        _voice_names=voice_names,
-    )
-    return score, accumulator
+    voices = baca.section.cache_voices(score, library.voice_abbreviations)
+    measures = baca.measures(time_signatures)
+    return score, voices, measures
 
 
 def GLOBALS(skips, rests):
@@ -39,7 +35,7 @@ def GLOBALS(skips, rests):
         baca.global_fermata(rests[index], string)
 
 
-def MOST(score, accumulator):
+def MOST(score, measures):
     for voice in (
         score["BassClarinet.Music"],
         score["ViolinRH.Music"],
@@ -47,29 +43,29 @@ def MOST(score, accumulator):
         score["ViolaRH.Music"],
         score["Viola.Music"],
     ):
-        music = baca.make_mmrests(accumulator.get())
+        music = baca.make_mmrests(measures())
         voice.extend(music)
 
 
-def VC_RH(voice, accumulator):
+def VC_RH(voice, measures):
     music = library.make_bow_rhythm(
-        accumulator.get(1, 10),
+        measures(1, 10),
         force_rest_lts=([8, 20], 20),
         rotation=-2,
     )
     voice.extend(music)
-    music = baca.make_mmrests(accumulator.get(11))
+    music = baca.make_mmrests(measures(11))
     voice.extend(music)
 
 
-def VC(voice, accumulator):
+def VC(voice, measures):
     music = library.make_glissando_rhythm(
-        accumulator.get(1, 10),
+        measures(1, 10),
         rotation_1=0,
         rotation_2=0,
     )
     voice.extend(music)
-    music = baca.make_mmrests(accumulator.get(11))
+    music = baca.make_mmrests(measures(11))
     voice.extend(music)
 
 
@@ -104,11 +100,10 @@ def vc(m):
 
 @baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
-    score, accumulator = make_empty_score()
+    score, voices, measures = make_empty_score()
     baca.section.set_up_score(
         score,
-        accumulator.time_signatures,
-        accumulator,
+        measures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
@@ -116,36 +111,36 @@ def make_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     GLOBALS(score["Skips"], score["Rests"])
-    MOST(score, accumulator)
-    VC_RH(accumulator.voice("vc_rh"), accumulator)
-    VC(accumulator.voice("vc"), accumulator)
+    MOST(score, measures)
+    VC_RH(voices("vc_rh"), measures)
+    VC(voices("vc"), measures)
     baca.section.reapply(
-        accumulator.voices(),
+        voices,
         library.manifests,
         previous_persistent_indicators,
     )
     cache = baca.section.cache_leaves(
         score,
-        len(accumulator.time_signatures),
+        len(measures()),
         library.voice_abbreviations,
     )
     bcl(cache["bcl"])
     vc(cache["vc"])
     vc_rh(cache["vc_rh"])
-    return score, accumulator
+    return score, measures
 
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
     timing = baca.build.Timing()
-    score, accumulator = make_score(
+    score, measures = make_score(
         environment.first_measure_number,
         environment.previous_persist["persistent_indicators"],
         timing,
     )
     metadata, persist = baca.section.postprocess_score(
         score,
-        accumulator.time_signatures,
+        measures(),
         **baca.section.section_defaults(),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
