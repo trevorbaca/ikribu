@@ -207,12 +207,11 @@ def main():
         error_on_not_yet_pitched=True,
         manifests=library.manifests,
         part_manifest=library.part_manifest(),
-        tags=baca.tags.Tags(
-            activate=[
-                baca.tags.LOCAL_MEASURE_NUMBER,
-                baca.tags.STAGE_NUMBER,
-            ],
-        ),
+    )
+    baca.tags.activate(
+        score,
+        baca.tags.LOCAL_MEASURE_NUMBER,
+        baca.tags.STAGE_NUMBER,
     )
     lilypond_file = baca.lilypond.file(
         score,
