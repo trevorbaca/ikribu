@@ -294,11 +294,11 @@ def main():
     )
     metadata = baca.section.postprocess_score(
         score,
+        environment,
+        library.manifests,
         always_make_global_rests=True,
         empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
-        environment=environment,
-        manifests=library.manifests,
         part_manifest=library.part_manifest(),
         transpose_score=True,
     )

@@ -206,13 +206,13 @@ def main():
     )
     metadata = baca.section.postprocess_score(
         score,
+        environment,
+        library.manifests,
         always_make_global_rests=True,
         # TODO: find and eliminate 1 unterminated text spanner
         do_not_check_wellformedness=True,
         empty_fermata_measures=True,
-        environment=environment,
         error_on_not_yet_pitched=True,
-        manifests=library.manifests,
         part_manifest=library.part_manifest(),
         transpose_score=True,
     )
