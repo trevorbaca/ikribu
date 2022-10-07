@@ -206,7 +206,6 @@ def main():
     )
     metadata = baca.section.postprocess_score(
         score,
-        **baca.section.section_defaults(),
         always_make_global_rests=True,
         # TODO: find and eliminate 1 unterminated text spanner
         do_not_check_wellformedness=True,

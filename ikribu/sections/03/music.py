@@ -203,7 +203,6 @@ def main():
     )
     metadata = baca.section.postprocess_score(
         score,
-        **baca.section.section_defaults(),
         always_make_global_rests=True,
         environment=environment,
         empty_fermata_measures=True,
