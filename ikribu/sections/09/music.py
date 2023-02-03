@@ -111,11 +111,12 @@ def tutti(cache):
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.dls_staff_padding(o, 10)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            runs = library.enchain_runs(o, [3, 4])
             baca.hairpin(
                 o,
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
-                pieces=library.enchain_runs([3, 4]),
+                the_pieces=runs,
             )
             baca.script_staff_padding(o, 7)
             baca.staff_position(o, 0)

@@ -116,11 +116,12 @@ def all_rh(cache):
     for name in ["vn_rh", "va_rh", "vc_rh"]:
         with baca.scope(cache[name].get(1, 10)) as o:
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            runs = library.enchain_runs(o, [3, 4])
             baca.hairpin(
                 o,
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
-                pieces=library.enchain_runs([3, 4]),
+                the_pieces=runs,
             ),
             baca.staff_position(o, 0)
             baca.script_staff_padding(o, 7)
