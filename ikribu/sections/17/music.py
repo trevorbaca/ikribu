@@ -162,11 +162,12 @@ def strings(cache):
             library.bcps(o, rotation=rotation)
             baca.dls_staff_padding(o, 9)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            runs = library.enchain_runs(o, [3, 4])
             baca.hairpin(
                 o,
                 "p > pp < p > ppp < pp > ppp <",
                 bookend=True,
-                pieces=library.enchain_runs([3, 4]),
+                the_pieces=runs,
             ),
             baca.staff_position(o, 0)
 

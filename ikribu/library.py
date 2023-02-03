@@ -37,14 +37,11 @@ def clb_staff_positions(argument, *, rotation=0):
     baca.staff_positions(argument, positions)
 
 
-def enchain_runs(counts, exclude=None):
-    def selector(argument):
-        result = abjad.select.runs(argument, exclude=exclude)
-        result = [baca.select.enchain(_, counts) for _ in result]
-        result = abjad.sequence.flatten(result)
-        return result
-
-    return selector
+def enchain_runs(argument, counts, exclude=None):
+    result = abjad.select.runs(argument, exclude=exclude)
+    result = [baca.select.enchain(_, counts) for _ in result]
+    result = abjad.sequence.flatten(result)
+    return result
 
 
 def glissando_pitches(argument, octave=4, rotation=0):

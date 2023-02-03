@@ -82,11 +82,12 @@ def vc_rh(m):
         baca.script_staff_padding(o, 7)
         baca.text_script_staff_padding(o, 8)
         baca.text_spanner_staff_padding(o, 4)
+        runs = library.enchain_runs(o, [3, 4])
         baca.hairpin(
             o,
             "ff > p < f > pp < f > ppp <",
             bookend=True,
-            pieces=library.enchain_runs([3, 4]),
+            the_pieces=runs,
         )
         baca.dls_staff_padding(o, 9)
 

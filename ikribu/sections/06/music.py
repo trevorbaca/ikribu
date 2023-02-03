@@ -153,11 +153,12 @@ def vn_va(cache):
             baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
             baca.dls_staff_padding(o, 8)
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
+            runs = library.enchain_runs(o, [4, 3], exclude=baca.enums.HIDDEN)
             baca.hairpin(
                 o,
                 "f > p <",
                 bookend=True,
-                pieces=library.enchain_runs([4, 3], exclude=baca.enums.HIDDEN),
+                the_pieces=runs,
             )
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
