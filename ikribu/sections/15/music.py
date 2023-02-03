@@ -17,8 +17,8 @@ def make_empty_score():
     time_signatures = maker_.run()
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.section.measures(time_signatures)
-    return score, voices, measures
+    signatures = baca.section.signatures(time_signatures)
+    return score, voices, signatures
 
 
 def GLOBALS(skips):
@@ -32,62 +32,62 @@ def GLOBALS(skips):
         baca.metronome_mark(skip, item, library.manifests)
 
 
-def BCL(voice, measures):
-    music = baca.make_repeat_tied_notes(measures(1, 5))
+def BCL(voice, signatures):
+    music = baca.make_repeat_tied_notes(signatures(1, 5))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(measures(6, 10))
+    music = baca.make_repeat_tied_notes(signatures(6, 10))
     voice.extend(music)
 
 
-def VN_RH(voice, measures):
+def VN_RH(voice, signatures):
     music = library.make_bow_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         force_rest_lts=([0, 8], 12),
         rotation=0,
     )
     voice.extend(music)
 
 
-def VN(voice, measures):
+def VN(voice, signatures):
     music = library.make_glissando_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         rotation_1=0,
         rotation_2=0,
     )
     voice.extend(music)
 
 
-def VA_RH(voice, measures):
+def VA_RH(voice, signatures):
     pattern = abjad.Pattern([4, 14], period=16) | abjad.Pattern([-1])
     music = library.make_bow_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         force_rest_lts=pattern,
         rotation=-1,
     )
     voice.extend(music)
 
 
-def VA(voice, measures):
+def VA(voice, signatures):
     music = library.make_glissando_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         rotation_1=-4,
         rotation_2=-1,
     )
     voice.extend(music)
 
 
-def VC_RH(voice, measures):
+def VC_RH(voice, signatures):
     music = library.make_bow_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         force_rest_lts=([8, 20], 20),
         rotation=-2,
     )
     voice.extend(music)
 
 
-def VC(voice, measures):
+def VC(voice, signatures):
     music = library.make_glissando_rhythm(
-        measures(1, 10),
+        signatures(1, 10),
         rotation_1=-8,
         rotation_2=-2,
     )
@@ -162,10 +162,10 @@ def vc(m):
 
 @baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
-    score, voices, measures = make_empty_score()
+    score, voices, signatures = make_empty_score()
     baca.section.set_up_score(
         score,
-        measures(),
+        signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
@@ -173,13 +173,13 @@ def make_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     GLOBALS(score["Skips"])
-    BCL(voices("bcl"), measures)
-    VN_RH(voices("vn_rh"), measures)
-    VN(voices("vn"), measures)
-    VA_RH(voices("va_rh"), measures)
-    VA(voices("va"), measures)
-    VC_RH(voices("vc_rh"), measures)
-    VC(voices("vc"), measures)
+    BCL(voices("bcl"), signatures)
+    VN_RH(voices("vn_rh"), signatures)
+    VN(voices("vn"), signatures)
+    VA_RH(voices("va_rh"), signatures)
+    VA(voices("va"), signatures)
+    VC_RH(voices("vc_rh"), signatures)
+    VC(voices("vc"), signatures)
     baca.section.reapply(
         voices,
         previous_persistent_indicators,
@@ -187,7 +187,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     )
     cache = baca.section.cache_leaves(
         score,
-        len(measures()),
+        len(signatures()),
         library.voice_abbreviations,
     )
     bcl(cache)
