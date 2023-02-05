@@ -113,7 +113,7 @@ def vn(m):
             o,
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(_),
+            the_pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(
             abjad.select.get(o.pheads(), [0, 4], 9),
@@ -144,7 +144,7 @@ def va(m):
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
             " f > mf < f > mf < ff > f < ff > f < fff",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(_),
+            the_pieces=baca.select.cmgroups(o),
         )
         baca.staff_position(o, 0)
         baca.stem_tremolo(
@@ -160,7 +160,7 @@ def vc(m):
             o.tleaves(),
             "p < f >",
             bookend=-1,
-            pieces=lambda _: baca.select.cmgroups(_),
+            the_pieces=baca.select.cmgroups(o.tleaves()),
         )
         baca.staff_position(o, 0)
         library.box_adjustment(o)

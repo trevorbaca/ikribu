@@ -101,7 +101,7 @@ def vn_va(cache):
             baca.hairpin(
                 o,
                 "sfpp < p >o niente",
-                pieces=lambda _: baca.select.omgroups(baca.select.rleaves(_), [1, 1]),
+                the_pieces=baca.select.omgroups(baca.select.rleaves(o), [1, 1]),
             )
             baca.stem_tremolo(o.pleaves())
             baca.text_spanner_staff_padding(o, 3.5)
