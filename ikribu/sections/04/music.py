@@ -246,7 +246,7 @@ def vc(m):
                 o,
                 "ppp < pp >",
                 final_hairpin=False,
-                the_pieces=baca.select.cmgroups(o),
+                pieces=baca.select.cmgroups(o),
             )
 
 

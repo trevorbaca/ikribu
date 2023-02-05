@@ -87,7 +87,7 @@ def vc_rh(m):
             o,
             "ff > p < f > pp < f > ppp <",
             bookend=True,
-            the_pieces=runs,
+            pieces=runs,
         )
         baca.dls_staff_padding(o, 9)
 

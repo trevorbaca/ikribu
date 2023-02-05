@@ -158,7 +158,7 @@ def vn_va(cache):
                 o,
                 "f > p <",
                 bookend=True,
-                the_pieces=runs,
+                pieces=runs,
             )
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
@@ -177,7 +177,7 @@ def vc(m):
             o,
             "p < mp >",
             final_hairpin=False,
-            the_pieces=baca.select.cmgroups(o),
+            pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(o.pleaves())
         baca.text_script_staff_padding(o, 2.5)
