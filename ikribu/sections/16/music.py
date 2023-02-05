@@ -200,7 +200,7 @@ def vc(m):
             o.tleaves(),
             "mp > p <",
             final_hairpin=False,
-            the_pieces=baca.select.cmgroups(o.tleaves()),
+            pieces=baca.select.cmgroups(o.tleaves()),
         ),
         baca.pitch(o, "Bb0")
         baca.text_spanner_staff_padding(o, 2.5)

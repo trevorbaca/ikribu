@@ -167,7 +167,7 @@ def strings(cache):
                 o,
                 "p > pp < p > ppp < pp > ppp <",
                 bookend=True,
-                the_pieces=runs,
+                pieces=runs,
             ),
             baca.staff_position(o, 0)
 

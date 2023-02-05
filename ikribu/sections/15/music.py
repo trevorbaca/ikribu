@@ -121,7 +121,7 @@ def all_rh(cache):
                 o,
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
-                the_pieces=runs,
+                pieces=runs,
             ),
             baca.staff_position(o, 0)
             baca.script_staff_padding(o, 7)
