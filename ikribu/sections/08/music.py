@@ -121,7 +121,7 @@ def vc(m):
             o.tleaves(),
             "ppp < pp >",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(_),
+            the_pieces=baca.select.cmgroups(o.tleaves()),
         )
         baca.markup(
             o.pleaf(0),

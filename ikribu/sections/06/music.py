@@ -177,7 +177,7 @@ def vc(m):
             o,
             "p < mp >",
             final_hairpin=False,
-            pieces=lambda _: baca.select.cmgroups(_),
+            the_pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(o.pleaves())
         baca.text_script_staff_padding(o, 2.5)
