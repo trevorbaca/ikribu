@@ -1,104 +1,71 @@
   %! baca.path.extern()
 number.18.Rests = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 7/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 2]
       %! baca._make_global_rests(1)
     R1 * 8/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 3]
       %! baca._make_global_rests(1)
     R1 * 7/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 4]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 5]
       %! baca._make_global_rests(1)
     R1 * 2/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 6]
       %! baca._make_global_rests(1)
     R1 * 8/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 7]
       %! baca._make_global_rests(1)
     R1 * 7/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 8]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 9]
       %! baca._make_global_rests(1)
     R1 * 4/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 10]
       %! baca._make_global_rests(1)
     R1 * 3/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 11]
       %! baca._make_global_rests(1)
     R1 * 7/4
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 12]
-    % BEFORE:
-    % GROB_OVERRIDES:
     \once \override MultiMeasureRestText.extra-offset = #'(0 . 2.5)
-    % OPENING:
-    % COMMANDS:
       %! baca.global_fermata(2)
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! baca.global_fermata(1)
     ^ \baca-fermata-markup
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -106,13 +73,9 @@ number.18.Rests = {
 
   %! baca.path.extern()
 number.18.Skips = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 1]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -126,8 +89,6 @@ number.18.Skips = {
     \time 7/4
       %! baca._make_global_skips(1)
     s1 * 7/4
-    % AFTER:
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -179,13 +140,9 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 2]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -195,8 +152,6 @@ number.18.Skips = {
     \time 8/4
       %! baca._make_global_skips(1)
     s1 * 8/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -206,7 +161,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'24'']"
@@ -225,13 +179,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 3]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -241,8 +191,6 @@ number.18.Skips = {
     \time 7/4
       %! baca._make_global_skips(1)
     s1 * 7/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -252,7 +200,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'31'']"
@@ -271,13 +218,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 4]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -287,8 +230,6 @@ number.18.Skips = {
     \time 3/4
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -301,7 +242,6 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'38'']"
@@ -326,13 +266,9 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 5]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -342,8 +278,6 @@ number.18.Skips = {
     \time 2/4
       %! baca._make_global_skips(1)
     s1 * 2/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -353,7 +287,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'40'']"
@@ -372,13 +305,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 6]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -388,8 +317,6 @@ number.18.Skips = {
     \time 8/4
       %! baca._make_global_skips(1)
     s1 * 8/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -399,7 +326,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'42'']"
@@ -418,13 +344,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 7]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -434,8 +356,6 @@ number.18.Skips = {
     \time 7/4
       %! baca._make_global_skips(1)
     s1 * 7/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -448,7 +368,6 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'49'']"
@@ -473,13 +392,9 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 8]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -489,8 +404,6 @@ number.18.Skips = {
     \time 4/4
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -500,7 +413,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'56'']"
@@ -519,15 +431,11 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 9]
       %! baca._make_global_skips(1)
     s1 * 4/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -537,7 +445,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[19'59'']"
@@ -556,13 +463,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 10]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -572,8 +475,6 @@ number.18.Skips = {
     \time 3/4
       %! baca._make_global_skips(1)
     s1 * 3/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -586,7 +487,6 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStopTextSpanSNM
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[20'03'']"
@@ -611,13 +511,9 @@ number.18.Skips = {
       %! STAGE_NUMBER
       %! baca.label_stage_numbers()
     \bacaStartTextSpanSNM
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 11]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -627,8 +523,6 @@ number.18.Skips = {
     \time 7/4
       %! baca._make_global_skips(1)
     s1 * 7/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -638,7 +532,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-left-only "[20'06'']"
@@ -657,13 +550,9 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 12]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -673,8 +562,6 @@ number.18.Skips = {
     \time 1/4
       %! baca._make_global_skips(1)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% \bacaStopTextSpanCT
@@ -684,7 +571,6 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     %@% - \baca-start-ct-both-left-fermata "2''" "[20'14'']"
@@ -703,11 +589,8 @@ number.18.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % COMMANDS:
       %! baca.bar_line()
     \bar "|."
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
@@ -716,8 +599,6 @@ number.18.Skips = {
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -743,17 +624,13 @@ number.18.Skips = {
       %! baca.label_stage_numbers()
       %! baca.style_anchor_skip(1)
     \bacaStopTextSpanSNM
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -761,13 +638,9 @@ number.18.Skips = {
 
   %! baca.path.extern()
 number.18.BassClarinet.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
@@ -800,8 +673,6 @@ number.18.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(2)
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -825,8 +696,6 @@ number.18.BassClarinet.Music = {
     \set Staff.forceClef = ##t
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -839,19 +708,15 @@ number.18.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-mf
-    % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
       %! baca.markup()
     ^ \ikribu-graincircle-pi-three-markup
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -864,526 +729,365 @@ number.18.BassClarinet.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \ikribu-bcl-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 2]
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 3]
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 4]
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 5]
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 6]
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_tied_repeated_durations()
     b'4
-    % AFTER:
-    % SPANNER_STARTS:
       %! baca.make_tied_repeated_durations()
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 8]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 9]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % COMMANDS:
       %! baca.text_script_padding(2)
     \revert TextScript.padding
       %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [BassClarinet.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -1392,15 +1096,10 @@ number.18.BassClarinet.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -1408,19 +1107,13 @@ number.18.BassClarinet.Music = {
 
   %! baca.path.extern()
 number.18.BassClarinet.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "BassClarinet.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.BassClarinet.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -1428,13 +1121,9 @@ number.18.BassClarinet.Staff = {
 
   %! baca.path.extern()
 number.18.ViolinRH.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! EXPLICIT_BAR_EXTENT
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -1455,8 +1144,6 @@ number.18.ViolinRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -1477,8 +1164,6 @@ number.18.ViolinRH.Music = {
     \set RHStaff.forceClef = ##t
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % ARTICULATIONS:
       %! REAPPLIED_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REAPPLIED_DYNAMIC
@@ -1489,142 +1174,95 @@ number.18.ViolinRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \ppp
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 3]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 2/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 8]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 9]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolinRH.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -1633,15 +1271,10 @@ number.18.ViolinRH.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -1649,19 +1282,13 @@ number.18.ViolinRH.Music = {
 
   %! baca.path.extern()
 number.18.Violin.RHStaff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "ViolinRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.ViolinRH.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -1669,13 +1296,9 @@ number.18.Violin.RHStaff = {
 
   %! baca.path.extern()
 number.18.Violin.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
@@ -1706,8 +1329,6 @@ number.18.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(2)
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -1731,8 +1352,6 @@ number.18.Violin.Music = {
     \set Staff.forceClef = ##t
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1747,14 +1366,11 @@ number.18.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-mf
-    % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Violin”)"
       %! baca.markup()
     ^ \ikribu-col-legno-battuto-meccanico-explanation-markup
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -1767,497 +1383,288 @@ number.18.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
     \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 2]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 3]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 4]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 6]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 7]
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 8]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 9]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % COMMANDS:
       %! baca.text_script_padding(2)
     \revert TextScript.padding
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -2266,15 +1673,10 @@ number.18.Violin.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -2282,19 +1684,13 @@ number.18.Violin.Music = {
 
   %! baca.path.extern()
 number.18.Violin.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "Violin.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.Violin.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -2302,13 +1698,9 @@ number.18.Violin.Staff = {
 
   %! baca.path.extern()
 number.18.ViolaRH.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! EXPLICIT_BAR_EXTENT
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -2329,8 +1721,6 @@ number.18.ViolaRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -2351,8 +1741,6 @@ number.18.ViolaRH.Music = {
     \set RHStaff.forceClef = ##t
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % ARTICULATIONS:
       %! REAPPLIED_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REAPPLIED_DYNAMIC
@@ -2363,142 +1751,95 @@ number.18.ViolaRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \ppp
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 3]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 2/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 8]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 9]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [ViolaRH.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -2507,15 +1848,10 @@ number.18.ViolaRH.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -2523,19 +1859,13 @@ number.18.ViolaRH.Music = {
 
   %! baca.path.extern()
 number.18.Viola.RHStaff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "ViolaRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.ViolaRH.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -2543,13 +1873,9 @@ number.18.Viola.RHStaff = {
 
   %! baca.path.extern()
 number.18.Viola.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
@@ -2580,8 +1906,6 @@ number.18.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.staff_lines(2)
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -2605,8 +1929,6 @@ number.18.Viola.Music = {
     \set Staff.forceClef = ##t
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
@@ -2621,14 +1943,11 @@ number.18.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.dynamic()
     \baca-effort-mf
-    % MARKUP:
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Viola”)"
       %! baca.markup()
     ^ \ikribu-col-legno-battuto-meccanico-explanation-markup
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -2641,497 +1960,288 @@ number.18.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
     \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 2]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 3]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 4]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 5]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 6]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 7]
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 8]
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 9]
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     c''4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     b'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca.make_repeated_duration_notes()
     a'4
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.double_staccato()
     - \baca-staccati #2
-    % COMMANDS:
       %! baca.text_script_padding(2)
     \revert TextScript.padding
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -3140,15 +2250,10 @@ number.18.Viola.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -3156,19 +2261,13 @@ number.18.Viola.Music = {
 
   %! baca.path.extern()
 number.18.Viola.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "Viola.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.Viola.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -3176,13 +2275,9 @@ number.18.Viola.Staff = {
 
   %! baca.path.extern()
 number.18.CelloRH.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! EXPLICIT_BAR_EXTENT
       %! baca._reanalyze_reapplied_synthetic_wrappers()
       %! baca._reapply_persistent_indicators(3)
@@ -3203,8 +2298,6 @@ number.18.CelloRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -3225,8 +2318,6 @@ number.18.CelloRH.Music = {
     \set RHStaff.forceClef = ##t
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % ARTICULATIONS:
       %! REAPPLIED_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REAPPLIED_DYNAMIC
@@ -3237,142 +2328,95 @@ number.18.CelloRH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \pp
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 3]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 2/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 8/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 8]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 9]
       %! baca.make_mmrests(1)
     R1 * 4/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 10]
       %! baca.make_mmrests(1)
     R1 * 3/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 11]
       %! baca.make_mmrests(1)
     R1 * 7/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [CelloRH.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca._style_fermata_measures(1)
     \stopStaff
       %! baca._style_fermata_measures(1)
@@ -3381,15 +2425,10 @@ number.18.CelloRH.Music = {
     \startStaff
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -3397,19 +2436,13 @@ number.18.CelloRH.Music = {
 
   %! baca.path.extern()
 number.18.Cello.RHStaff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "CelloRH.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.CelloRH.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -3417,23 +2450,16 @@ number.18.Cello.RHStaff = {
 
   %! baca.path.extern()
 number.18.Cello.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! ikribu.make_inscription_rhythm()
     \times 14/15
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 1]
-        % BEFORE:
-        % COMMANDS:
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! baca._attach_persistent_indicator()
@@ -3466,8 +2492,6 @@ number.18.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.staff_lines(2)
         \startStaff
-        % OPENING:
-        % COMMANDS:
           %! REAPPLIED_CLEF
           %! baca._reapply_persistent_indicators(3)
           %! baca._set_status_tag()
@@ -3491,8 +2515,6 @@ number.18.Cello.Music = {
         \set Staff.forceClef = ##t
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
@@ -3507,17 +2529,13 @@ number.18.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.dynamic()
         \baca-effort-mf
-        % MARKUP:
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Cello”)"
           %! baca.markup()
         ^ \ikribu-stonescratch-markup
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
@@ -3530,890 +2548,530 @@ number.18.Cello.Music = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(3)
         \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r16
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r1
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \times 8/9
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r2
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r1
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8.
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8.
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! ikribu.make_inscription_rhythm()
     \times 6/7
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 4]
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r4
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \times 2/3
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
           %! ikribu.make_inscription_rhythm()
         r4.
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r16
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
         - \tweak stencil ##f
           %! baca._attach_shadow_tie_indicators()
         ~
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % SPANNER_STARTS:
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r1
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8.
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! ikribu.make_inscription_rhythm()
     \times 14/15
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 7]
           %! ikribu.make_inscription_rhythm()
         r4..
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r16
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r2..
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \times 4/5
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
           %! ikribu.make_inscription_rhythm()
         r4
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r2
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
         - \tweak stencil ##f
           %! baca._attach_shadow_tie_indicators()
         ~
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % START_BEAM:
       %! ikribu.make_inscription_rhythm()
     [
-    % SPANNER_STARTS:
     \repeatTie
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a8
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     a16
-    % AFTER:
-    % ARTICULATIONS:
       %! baca.accent()
     - \accent
-    % STOP_BEAM:
       %! ikribu.make_inscription_rhythm()
     ]
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ikribu.make_inscription_rhythm()
     r8.
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! ikribu.make_inscription_rhythm()
     \times 6/7
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 10]
           %! ikribu.make_inscription_rhythm()
         r4..
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
       %! ikribu.make_inscription_rhythm()
     \times 7/8
       %! ikribu.make_inscription_rhythm()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 11]
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r16
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a8.
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r1
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         r8
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % START_BEAM:
           %! ikribu.make_inscription_rhythm()
         [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! ikribu.make_inscription_rhythm()
         a16
-        % AFTER:
-        % ARTICULATIONS:
           %! baca.accent()
         - \accent
-        % STOP_BEAM:
           %! ikribu.make_inscription_rhythm()
         ]
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! ikribu.make_inscription_rhythm()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-    % BEFORE:
-    % COMMANDS:
       %! baca.rehearsal_mark_down(1)
     \once \override Score.RehearsalMark.direction = #down
       %! baca.rehearsal_mark_padding(1)
@@ -4426,26 +3084,18 @@ number.18.Cello.Music = {
     \once \override Staff.StaffSymbol.line-count = 0
       %! baca._style_fermata_measures(1)
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! baca.mark()
     \mark \ikribu-colophon-markup
       %! baca.make_mmrests(1)
     R1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % COMMANDS:
       %! baca.text_script_padding(2)
     \revert TextScript.padding
       %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
@@ -4453,19 +3103,13 @@ number.18.Cello.Music = {
 
   %! baca.path.extern()
 number.18.Cello.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! ikribu.make_empty_score()
     \context Voice = "Cello.Music"
       %! ikribu.make_empty_score()
       %! baca.path.extern()
     { \number.18.Cello.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! ikribu.make_empty_score()
   %! baca.path.extern()
 }
