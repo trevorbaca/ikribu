@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from ikribu import library
@@ -8,13 +9,11 @@ from ikribu import library
 
 
 def make_empty_score():
-    fermata_measures = [2, 4, 6, 8]
-    maker_ = baca.TimeSignatureMaker(
-        [[(3, 4)]],
-        fermata_measures=fermata_measures,
-        count=8,
+    time_signatures = baca.make_time_signatures(
+        [abjad.TimeSignature((3, 4))],
+        8,
+        fermata_measures=[2, 4, 6, 8],
     )
-    time_signatures = maker_.run()
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.time_signatures(time_signatures)

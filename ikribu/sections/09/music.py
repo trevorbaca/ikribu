@@ -8,14 +8,12 @@ from ikribu import library
 
 
 def make_empty_score():
-    fermata_measures = [9]
-    maker_ = baca.TimeSignatureMaker(
+    time_signatures = baca.make_time_signatures(
         library.time_signatures(),
-        count=9,
-        fermata_measures=fermata_measures,
+        9,
+        fermata_measures=[9],
         rotation=-8,
     )
-    time_signatures = maker_.run()
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.time_signatures(time_signatures)
