@@ -10,13 +10,9 @@ from ikribu import library
 
 
 def make_empty_score():
-    pairs = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
-    pairs.insert(0, (7, 4))
-    maker_ = baca.TimeSignatureMaker(
-        [pairs],
-        count=17,
-    )
-    time_signatures = maker_.run()
+    pairs = [(7, 4)] + 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
+    time_signatures = [abjad.TimeSignature(_) for _ in pairs]
+    time_signatures = baca.make_time_signatures(time_signatures, 17)
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.time_signatures(time_signatures)
