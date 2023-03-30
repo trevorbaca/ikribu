@@ -10,7 +10,7 @@ from ikribu import library
 
 def make_empty_score():
     time_signatures = baca.make_time_signatures(
-        [abjad.TimeSignature((3, 4))],
+        [[abjad.TimeSignature((3, 4))]],
         8,
         fermata_measures=[2, 4, 6, 8],
     )
