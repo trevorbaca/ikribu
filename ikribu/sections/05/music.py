@@ -113,7 +113,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     MOST(score, time_signatures)
     VC_RH(voices("vc_rh"), time_signatures)
     VC(voices("vc"), time_signatures)
-    baca.section.reapply(
+    baca.section.reapply_persistent_indicators(
         voices,
         previous_persistent_indicators,
         manifests=library.manifests,
