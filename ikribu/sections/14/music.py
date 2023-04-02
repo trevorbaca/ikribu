@@ -403,7 +403,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     VN(voices("vn"), time_signatures)
     VA(voices("va"), time_signatures)
     VC(voices("vc"), time_signatures)
-    baca.section.reapply(
+    baca.section.reapply_persistent_indicators(
         voices,
         previous_persistent_indicators,
         manifests=library.manifests,
