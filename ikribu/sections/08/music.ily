@@ -80,10 +80,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 2]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
@@ -138,10 +138,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 4]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
@@ -196,10 +196,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 6]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
@@ -254,10 +254,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 8]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
@@ -312,10 +312,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 10]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
@@ -383,10 +383,10 @@ number.8.Skips = {
     \bacaStartTextSpanSNM
 
     % [Skips measure 12]
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/6
     s1 * 1/6
