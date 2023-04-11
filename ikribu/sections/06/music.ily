@@ -435,6 +435,8 @@ number.6.Skips = {
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
     %@% \bacaStopTextSpanMN
+      %! STAGE_NUMBER
+    \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -459,6 +461,10 @@ number.6.Skips = {
     %@% - \baca-start-mn-left-only "73"
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
+      %! STAGE_NUMBER
+    - \baca-start-snm-left-only "[E.11]"
+      %! STAGE_NUMBER
+    \bacaStartTextSpanSNM
 
     % [Skips measure 12]
     s1 * 7/4
@@ -483,7 +489,7 @@ number.6.Skips = {
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
       %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.11]"
+    - \baca-start-snm-left-only "[E.12]"
       %! STAGE_NUMBER
     \bacaStartTextSpanSNM
 
@@ -527,7 +533,7 @@ number.6.Skips = {
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
       %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.12]"
+    - \baca-start-snm-left-only "[E.13]"
       %! STAGE_NUMBER
     \bacaStartTextSpanSNM
 
@@ -558,7 +564,7 @@ number.6.Skips = {
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
       %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.13]"
+    - \baca-start-snm-left-only "[E.14]"
       %! STAGE_NUMBER
     \bacaStartTextSpanSNM
 
@@ -602,7 +608,7 @@ number.6.Skips = {
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
       %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.14]"
+    - \baca-start-snm-left-only "[E.15]"
       %! STAGE_NUMBER
     \bacaStartTextSpanSNM
 
@@ -633,7 +639,7 @@ number.6.Skips = {
       %! MEASURE_NUMBER
     %@% \bacaStartTextSpanMN
       %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.15]"
+    - \baca-start-snm-left-only "[E.16]"
       %! STAGE_NUMBER
     \bacaStartTextSpanSNM
 
@@ -661,12 +667,6 @@ number.6.Skips = {
       %! ANCHOR_SKIP
       %! STAGE_NUMBER
     \bacaStopTextSpanSNM
-      %! ANCHOR_SKIP
-      %! STAGE_NUMBER
-    - \baca-start-snm-left-only "[E.16]"
-      %! ANCHOR_SKIP
-      %! STAGE_NUMBER
-    \bacaStartTextSpanSNM
       %! ANCHOR_SKIP
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
