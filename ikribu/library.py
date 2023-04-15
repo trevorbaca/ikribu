@@ -285,10 +285,10 @@ instruments = {
 
 
 metronome_marks = {
-    "incisions": abjad.MetronomeMark((1, 4), 58),
-    "inscription": abjad.MetronomeMark((1, 4), 66),
-    "night": abjad.MetronomeMark((1, 4), 42),
-    "windows": abjad.MetronomeMark((1, 4), 104),
+    "incisions": abjad.MetronomeMark(abjad.Duration(1, 4), 58),
+    "inscription": abjad.MetronomeMark(abjad.Duration(1, 4), 66),
+    "night": abjad.MetronomeMark(abjad.Duration(1, 4), 42),
+    "windows": abjad.MetronomeMark(abjad.Duration(1, 4), 104),
 }
 
 
