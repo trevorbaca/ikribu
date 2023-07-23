@@ -84,6 +84,7 @@
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
+        \consists Bar_engraver
         % causes programming error: cyclic dependency: calculation-in-progress
         % encountered for VerticalAxisGroup.adjacent-pure-heights:
         % \consists Bar_number_engraver
@@ -97,6 +98,7 @@
         \override BarNumber.Y-extent = ##f
         \override BarNumber.font-size = 1
         \override StaffSymbol.stencil = ##f
+        \override TextSpanner.to-barline = ##t
         % prevents StaffSymbol from starting too early after cut-away measures:
         \override TimeSignature.X-extent = ##f
         %\override TimeSignature.break-align-symbol = #'left-edge
