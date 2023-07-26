@@ -32,7 +32,7 @@ def GLOBALS(skips, rests):
     baca.section.label_stage_numbers(skips, stage_markup)
     for index, item in ((10 - 1, "incisions"),):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
     for index, string in (
         (9 - 1, "long"),
         (11 - 1, "long"),

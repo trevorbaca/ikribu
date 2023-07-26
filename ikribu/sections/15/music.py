@@ -28,7 +28,7 @@ def GLOBALS(skips):
     baca.section.label_stage_numbers(skips, stage_markup)
     for index, item in ((1 - 1, "windows"),):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def BCL(voice, time_signatures):

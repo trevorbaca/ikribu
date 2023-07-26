@@ -34,7 +34,7 @@ def GLOBALS(skips):
         (11 - 1, "windows"),
     ):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def BCL(voice, time_signatures):
