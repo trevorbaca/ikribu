@@ -48,13 +48,13 @@ number.17.Skips = {
     \time 3/4
     s1 * 3/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "104" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-dashed-line-with-arrow
+    %@% - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "104"
       %! EXPLICIT_METRONOME_MARK
@@ -200,13 +200,13 @@ number.17.Skips = {
       %! STAGE_NUMBER
     \bacaStopTextSpanSNM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "42"
       %! EXPLICIT_METRONOME_MARK
@@ -540,7 +540,7 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \p
         ^ \baca-half-clt-markup
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -556,7 +556,7 @@ number.17.ViolinRH.Music = {
     % [ViolinRH.Music measure 2]
     c'4
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #4 #7
     \bacaStartTextSpanBCP
 
@@ -569,7 +569,7 @@ number.17.ViolinRH.Music = {
       %! SPANNER_STOP
     \pp
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #5 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -587,14 +587,14 @@ number.17.ViolinRH.Music = {
         % [ViolinRH.Music measure 3]
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
 
         c'4
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -608,7 +608,7 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -629,13 +629,13 @@ number.17.ViolinRH.Music = {
         \ppp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -649,7 +649,7 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \ppp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -663,7 +663,7 @@ number.17.ViolinRH.Music = {
         c'4
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -677,7 +677,7 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -690,7 +690,7 @@ number.17.ViolinRH.Music = {
         % [ViolinRH.Music measure 4]
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -704,7 +704,7 @@ number.17.ViolinRH.Music = {
         \pp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -718,7 +718,7 @@ number.17.ViolinRH.Music = {
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -731,7 +731,7 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \ppp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #4 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -744,13 +744,13 @@ number.17.ViolinRH.Music = {
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #5 #7
         \bacaStartTextSpanBCP
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
 
@@ -764,7 +764,7 @@ number.17.ViolinRH.Music = {
         \p
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -785,13 +785,13 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -812,7 +812,7 @@ number.17.ViolinRH.Music = {
         \pp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -826,7 +826,7 @@ number.17.ViolinRH.Music = {
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #4
         \bacaStartTextSpanBCP
 
@@ -839,13 +839,13 @@ number.17.ViolinRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #1 #4
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #2 #4
         \bacaStartTextSpanBCP
 
@@ -859,7 +859,7 @@ number.17.ViolinRH.Music = {
         \p
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #2 #4
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -872,7 +872,7 @@ number.17.ViolinRH.Music = {
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #1 #4
         - \baca-bcp-spanner-right-text #0 #7
         \bacaStartTextSpanBCP
@@ -1125,7 +1125,7 @@ number.17.ViolaRH.Music = {
     \p
     - \upbow
     ^ \baca-half-clt-markup
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1141,7 +1141,7 @@ number.17.ViolaRH.Music = {
     c'4
     - \downbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #0 #7
     \bacaStartTextSpanBCP
 
@@ -1155,7 +1155,7 @@ number.17.ViolaRH.Music = {
     \pp
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1181,13 +1181,13 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -1201,7 +1201,7 @@ number.17.ViolaRH.Music = {
         \p
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1222,7 +1222,7 @@ number.17.ViolaRH.Music = {
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -1235,7 +1235,7 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \ppp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #4 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1248,13 +1248,13 @@ number.17.ViolaRH.Music = {
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #5 #7
         \bacaStartTextSpanBCP
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
 
@@ -1268,7 +1268,7 @@ number.17.ViolaRH.Music = {
         \pp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1282,7 +1282,7 @@ number.17.ViolaRH.Music = {
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
 
@@ -1296,7 +1296,7 @@ number.17.ViolaRH.Music = {
         \ppp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1317,13 +1317,13 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #4
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #1 #4
         \bacaStartTextSpanBCP
 
@@ -1344,7 +1344,7 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #1 #4
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1358,7 +1358,7 @@ number.17.ViolaRH.Music = {
         c'4
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #2 #4
         \bacaStartTextSpanBCP
 
@@ -1371,7 +1371,7 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #1 #4
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1385,7 +1385,7 @@ number.17.ViolaRH.Music = {
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -1398,13 +1398,13 @@ number.17.ViolaRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #4 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #5 #7
         \bacaStartTextSpanBCP
 
@@ -1421,7 +1421,7 @@ number.17.ViolaRH.Music = {
       %! SPANNER_STOP
     \p
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #5 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1434,7 +1434,7 @@ number.17.ViolaRH.Music = {
 
     c'4
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #6 #7
     \bacaStartTextSpanBCP
 
@@ -1448,7 +1448,7 @@ number.17.ViolaRH.Music = {
     \ppp
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1462,14 +1462,14 @@ number.17.ViolaRH.Music = {
     c'4
     - \downbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #6 #7
     \bacaStartTextSpanBCP
 
     c'4
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
 
@@ -1483,7 +1483,7 @@ number.17.ViolaRH.Music = {
       %! SPANNER_STOP
     \pp
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #0 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1497,7 +1497,7 @@ number.17.ViolaRH.Music = {
     c'4
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     - \baca-bcp-spanner-right-text #0 #7
     \bacaStartTextSpanBCP
@@ -1739,7 +1739,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \p
         ^ \baca-half-clt-markup
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1752,7 +1752,7 @@ number.17.CelloRH.Music = {
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #4 #7
         \bacaStartTextSpanBCP
 
@@ -1765,7 +1765,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #5 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1781,14 +1781,14 @@ number.17.CelloRH.Music = {
     % [CelloRH.Music measure 2]
     c'4
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #6 #7
     \bacaStartTextSpanBCP
 
     c'4
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
 
@@ -1807,7 +1807,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #6 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1828,13 +1828,13 @@ number.17.CelloRH.Music = {
         \ppp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #0 #4
         \bacaStartTextSpanBCP
 
@@ -1848,7 +1848,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \ppp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #4
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1861,7 +1861,7 @@ number.17.CelloRH.Music = {
 
         c'4
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #1 #4
         \bacaStartTextSpanBCP
 
@@ -1875,7 +1875,7 @@ number.17.CelloRH.Music = {
         \pp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #2 #4
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1891,14 +1891,14 @@ number.17.CelloRH.Music = {
     % [CelloRH.Music measure 4]
     c'4
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #1 #4
     \bacaStartTextSpanBCP
 
     c'4
     - \downbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #0 #7
     \bacaStartTextSpanBCP
 
@@ -1911,7 +1911,7 @@ number.17.CelloRH.Music = {
       %! SPANNER_STOP
     \ppp
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #4 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1924,7 +1924,7 @@ number.17.CelloRH.Music = {
 
     c'4
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #5 #7
     \bacaStartTextSpanBCP
 
@@ -1937,7 +1937,7 @@ number.17.CelloRH.Music = {
       %! SPANNER_STOP
     \p
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #6 #7
     \bacaStartTextSpanBCP
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1951,14 +1951,14 @@ number.17.CelloRH.Music = {
     c'4
     - \upbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
 
     c'4
     - \downbow
     \bacaStopTextSpanBCP
-    - \abjad-solid-line-with-arrow
+    - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #6 #7
     \bacaStartTextSpanBCP
 
@@ -1977,13 +1977,13 @@ number.17.CelloRH.Music = {
         \pp
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
         r4
         \bacaStopTextSpanBCP
-        - \abjad-invisible-line
+        - \baca-invisible-line
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -1997,7 +1997,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2011,7 +2011,7 @@ number.17.CelloRH.Music = {
         c'4
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
@@ -2025,7 +2025,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2039,14 +2039,14 @@ number.17.CelloRH.Music = {
         c'4
         - \upbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #7 #7
         \bacaStartTextSpanBCP
 
         c'4
         - \downbow
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
 
@@ -2059,7 +2059,7 @@ number.17.CelloRH.Music = {
           %! SPANNER_STOP
         \ppp
         \bacaStopTextSpanBCP
-        - \abjad-solid-line-with-arrow
+        - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #4 #7
         - \baca-bcp-spanner-right-text #5 #7
         \bacaStartTextSpanBCP
