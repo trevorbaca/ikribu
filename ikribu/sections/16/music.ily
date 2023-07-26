@@ -87,13 +87,13 @@ number.16.Skips = {
     \time 4/4
     s1 * 4/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "42"
       %! EXPLICIT_METRONOME_MARK
@@ -1197,7 +1197,7 @@ number.16.Violin.Music = {
     \ppppp
     _ \ikribu-strings-two-plus-three-markup
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
@@ -1579,7 +1579,7 @@ number.16.Viola.Music = {
     \ppppp
     _ \ikribu-strings-two-plus-three-markup
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
@@ -1949,7 +1949,7 @@ number.16.Cello.Music = {
       %! SPANNER_STOP
     \mp
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "tasto poss."
       %! SPANNER_START
@@ -2042,7 +2042,7 @@ number.16.Cello.Music = {
       %! SPANNER_STOP
     \mp
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "pos. ord."
       %! SPANNER_START
@@ -2136,7 +2136,7 @@ number.16.Cello.Music = {
       %! SPANNER_STOP
     \mp
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "XP"
       %! SPANNER_START
@@ -2230,7 +2230,7 @@ number.16.Cello.Music = {
       %! SPANNER_STOP
     \mp
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "pos. ord."
       %! SPANNER_START

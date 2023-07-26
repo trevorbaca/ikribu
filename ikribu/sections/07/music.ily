@@ -39,13 +39,13 @@ number.7.Skips = {
     \time 4/4
     s1 * 4/4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-    - \abjad-invisible-line
+    - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "42" #'green4
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
-    %@% - \abjad-invisible-line
+    %@% - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "42"
       %! REAPPLIED_METRONOME_MARK
@@ -610,7 +610,7 @@ number.7.Violin.Music = {
     \baca-sfpp
     _ \ikribu-strings-two-plus-three-markup
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
@@ -902,7 +902,7 @@ number.7.Viola.Music = {
     \baca-sfpp
     _ \ikribu-strings-one-plus-two-markup
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
@@ -1132,7 +1132,7 @@ number.7.Cello.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
       %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
+    - \baca-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "(trem. flaut. tast.)"
       %! SPANNER_START
