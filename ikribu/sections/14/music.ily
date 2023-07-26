@@ -1343,6 +1343,9 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \fff
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1350,9 +1353,6 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -1524,6 +1524,9 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \fff
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1531,9 +1534,6 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -1642,6 +1642,9 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \fff
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1649,9 +1652,6 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -3896,15 +3896,15 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \mf
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "tasto"
       %! SPANNER_START
     - \baca-text-spanner-right-text "XP"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4081,15 +4081,15 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \mf
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "tasto"
       %! SPANNER_START
     - \baca-text-spanner-right-text "XP"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4194,15 +4194,15 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \mf
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "tasto"
       %! SPANNER_START
     - \baca-text-spanner-right-text "XP"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4379,15 +4379,15 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \mf
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "tasto"
       %! SPANNER_START
     - \baca-text-spanner-right-text "XP"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR

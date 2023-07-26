@@ -610,15 +610,15 @@ number.7.Violin.Music = {
     \baca-sfpp
     _ \ikribu-strings-two-plus-three-markup
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
     - \baca-text-spanner-right-text "trem. flaut. tast."
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
@@ -645,6 +645,9 @@ number.7.Violin.Music = {
     \p
       %! SPANNER_STOP
     \stopTextSpan
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -652,9 +655,6 @@ number.7.Violin.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -902,15 +902,15 @@ number.7.Viola.Music = {
     \baca-sfpp
     _ \ikribu-strings-one-plus-two-markup
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. XP"
       %! SPANNER_START
     - \baca-text-spanner-right-text "trem. flaut. tast."
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
@@ -937,6 +937,9 @@ number.7.Viola.Music = {
     \p
       %! SPANNER_STOP
     \stopTextSpan
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -944,9 +947,6 @@ number.7.Viola.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak circled-tip ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -1132,15 +1132,15 @@ number.7.Cello.Music = {
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "(trem. flaut. tast.)"
       %! SPANNER_START
     - \baca-text-spanner-right-text "trem. XP (non. flaut.)"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
