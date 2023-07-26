@@ -23,7 +23,7 @@ def make_empty_score():
 def GLOBALS(skips, rests):
     for index, item in ((1 - 1, "incisions"),):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
     for index, string in ((2 - 1, "long"),):
         baca.global_fermata(rests[index], string)
 
