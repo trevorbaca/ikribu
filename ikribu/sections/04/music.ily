@@ -1867,15 +1867,15 @@ number.4.Cello.Music = {
       %! SPANNER_STOP
     \ppp
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "trem. flaut. tasto. (arco)"
       %! SPANNER_START
     - \baca-text-spanner-right-text "trem. flaut. XP"
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
