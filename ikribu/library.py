@@ -58,7 +58,7 @@ def glissando_pitches(argument, octave=4, rotation=0):
 
 
 def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
@@ -76,7 +76,7 @@ def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
 
 
 def make_clb_rhythm(time_signatures, *, extra_counts):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.even_division(durations, [8], extra_counts=extra_counts, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -89,7 +89,7 @@ def make_clb_rhythm(time_signatures, *, extra_counts):
 
 
 def make_color_rhythm(time_signatures, n):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.tuplet(durations, [tuple(n * [1])], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -104,7 +104,7 @@ def make_color_rhythm(time_signatures, n):
 
 
 def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     bass_clarinet_music_voice = abjad.Voice(name="BassClarinet.Music", tag=tag)
     bass_clarinet_music_staff = abjad.Staff(
@@ -188,7 +188,7 @@ def make_empty_score():
 
 
 def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     counts = [2, 3, 2, 3, 14, 16, 14, 16]
     counts = abjad.sequence.rotate(counts, n=rotation_1)
@@ -206,7 +206,7 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
 
 
 def make_inscription_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     counts = [[2, 2, 1, -1, 3], [-18], [1, 1], [1, -2, 2, 3], [-10]]
     counts = baca.sequence.helianthate(counts, -1, -1)
@@ -222,7 +222,7 @@ def make_inscription_rhythm(time_signatures):
 
 
 def make_triplet_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
@@ -238,7 +238,7 @@ def make_triplet_rhythm(time_signatures):
 
 
 def make_vigil_rhythm(time_signatures):
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.talea(durations, [16, -1], 4, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
