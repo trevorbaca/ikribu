@@ -203,13 +203,11 @@
     \override BarLine.hair-thickness = 0.5
     %\override BarLine.X-extent = #'(0 . 0)
 
-    \override Beam.breakable = ##t
     \override Beam.damping = 99
 
     \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
     \override DynamicLineSpanner.padding = #1.5
 
-    \override Glissando.breakable = ##t
     \override Glissando.thickness = 3
 
     \override Hairpin.to-barline = ##f
@@ -243,7 +241,6 @@
 
     \override TrillSpanner.bound-details.right.padding = 2
 
-    \override TupletBracket.breakable = ##t
     \override TupletBracket.full-length-to-extent = ##f
     \override TupletBracket.padding = 2
     \override TupletBracket.staff-padding = 1.5
