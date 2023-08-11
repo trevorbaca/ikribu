@@ -142,7 +142,7 @@ number.12.Skips = {
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "58" #'green4
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "58" #(x11-color 'green4)
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
@@ -712,7 +712,7 @@ number.12.BassClarinet.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-3 . 0)
       %! EXPLICIT_DYNAMIC
@@ -769,7 +769,7 @@ number.12.BassClarinet.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-3 . 0)
       %! EXPLICIT_DYNAMIC
@@ -846,7 +846,7 @@ number.12.BassClarinet.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-2 . 0)
       %! EXPLICIT_DYNAMIC
@@ -1175,7 +1175,7 @@ number.12.Violin.Music = {
         - \tweak X-extent #'(0 . 0)
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         - \tweak extra-offset #'(-3 . 0)
           %! EXPLICIT_DYNAMIC
@@ -1766,7 +1766,7 @@ number.12.Viola.Music = {
         - \tweak X-extent #'(0 . 0)
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         - \tweak extra-offset #'(-3 . 0)
           %! EXPLICIT_DYNAMIC
@@ -2266,7 +2266,7 @@ number.12.Cello.Music = {
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
+    \once \override Staff.StaffSymbol.color = #blue
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
     \override DynamicLineSpanner.staff-padding = 6
@@ -2294,7 +2294,7 @@ number.12.Cello.Music = {
     d4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-effort-p
       %! REAPPLIED_INSTRUMENT_ALERT
@@ -2364,7 +2364,7 @@ number.12.Cello.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-3 . 0)
       %! EXPLICIT_DYNAMIC
@@ -2421,7 +2421,7 @@ number.12.Cello.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-3 . 0)
       %! EXPLICIT_DYNAMIC
@@ -2498,7 +2498,7 @@ number.12.Cello.Music = {
     - \tweak X-extent #'(0 . 0)
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     - \tweak extra-offset #'(-2 . 0)
       %! EXPLICIT_DYNAMIC
