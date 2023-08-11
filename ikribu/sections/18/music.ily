@@ -61,7 +61,7 @@ number.18.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "66" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "66" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -412,7 +412,7 @@ number.18.BassClarinet.Music = {
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
+    \once \override Staff.StaffSymbol.color = #blue
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
@@ -437,7 +437,7 @@ number.18.BassClarinet.Music = {
     b'4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-effort-mf
       %! REAPPLIED_INSTRUMENT_ALERT
@@ -779,7 +779,7 @@ number.18.Violin.Music = {
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
+    \once \override Staff.StaffSymbol.color = #blue
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
       %! -PARTS
@@ -806,7 +806,7 @@ number.18.Violin.Music = {
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-effort-mf
       %! REAPPLIED_INSTRUMENT_ALERT
@@ -1112,7 +1112,7 @@ number.18.Viola.Music = {
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
+    \once \override Staff.StaffSymbol.color = #blue
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
     \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
       %! -PARTS
@@ -1139,7 +1139,7 @@ number.18.Viola.Music = {
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \baca-effort-mf
       %! REAPPLIED_INSTRUMENT_ALERT
@@ -1449,7 +1449,7 @@ number.18.Cello.Music = {
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! EXPLICIT_STAFF_LINES_COLOR
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)
+        \once \override Staff.StaffSymbol.color = #blue
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
         \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
           %! -PARTS
@@ -1477,7 +1477,7 @@ number.18.Cello.Music = {
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \baca-effort-mf
           %! REAPPLIED_INSTRUMENT_ALERT
