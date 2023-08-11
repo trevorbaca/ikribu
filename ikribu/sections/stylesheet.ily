@@ -21,5 +21,6 @@
 
 \layout
 {
+  barNumberVisibility = #all-bar-numbers-visible
   indent = 0
 }
