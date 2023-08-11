@@ -51,6 +51,12 @@ number.18.Skips = {
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 7/4
+      %! RED_START_BAR
+    %@% \tweak break-visibility ##(#t #t #f)
+      %! RED_START_BAR
+    %@% \tweak color #red
+      %! RED_START_BAR
+    %@% \mark \markup \with-dimensions-from \null "18"
     s1 * 7/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
