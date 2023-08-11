@@ -42,6 +42,8 @@ number.9.Rests = {
 number.9.Skips = {
 
     % [Skips measure 1]
+      %! RED_START_BAR
+    %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
