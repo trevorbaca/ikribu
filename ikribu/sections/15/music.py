@@ -166,7 +166,6 @@ def make_score(first_measure_number, previous_persistent_indicators):
         score,
         time_signatures(),
         append_anchor_skip=True,
-        always_make_global_rests=True,
         first_measure_number=first_measure_number,
         manifests=library.manifests,
         score_persistent_indicators=previous_persistent_indicators["Score"],
@@ -202,7 +201,6 @@ def persist_score(score, environment):
         score,
         environment,
         library.manifests,
-        always_make_global_rests=True,
         # TODO: find and eliminate 1 unterminated text spanner
         do_not_check_wellformedness=True,
         empty_fermata_measures=True,
