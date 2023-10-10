@@ -136,7 +136,6 @@ def persist_score(score, environment):
         empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
-        transpose_score=True,
     )
     baca.tags.activate(
         score,
