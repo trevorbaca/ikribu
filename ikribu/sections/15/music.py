@@ -201,8 +201,6 @@ def persist_score(score, environment):
         score,
         environment,
         library.manifests,
-        # TODO: find and eliminate 1 unterminated text spanner
-        do_not_check_wellformedness=True,
         empty_fermata_measures=True,
         error_on_not_yet_pitched=True,
         part_manifest=library.part_manifest(),
