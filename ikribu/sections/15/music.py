@@ -133,7 +133,7 @@ def all_rh(cache):
                 rotation = -2
             library.bcps(o, rotation=rotation)
         with baca.scope(cache[name].leaves()) as o:
-            baca.dls_staff_padding(o, 9)
+            baca.override.dls_staff_padding(o, 9)
 
 
 def vn(m):

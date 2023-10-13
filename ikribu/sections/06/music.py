@@ -150,7 +150,7 @@ def vn_va(cache):
         with baca.scope(cache[name].leaves()) as o:
             baca.clef(o.leaf(0), "percussion")
             baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
-            baca.dls_staff_padding(o, 8)
+            baca.override.dls_staff_padding(o, 8)
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             runs = library.enchain_runs(o, [4, 3], exclude=baca.enums.HIDDEN)
             baca.hairpin(
@@ -170,7 +170,7 @@ def vc(m):
     with baca.scope(m.leaves()) as o:
         baca.clef(o.leaf(0), "bass")
     with baca.scope(m.get(9, 16)) as o:
-        baca.dls_staff_padding(o, 4)
+        baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.hairpin(
             o,

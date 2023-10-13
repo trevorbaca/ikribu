@@ -136,7 +136,7 @@ def bcl(m):
         baca.hairpin(o.leaves()[:4], "pp < mf")
         baca.hairpin(o.rleaves()[4:], "mf >o niente")
     with baca.scope(m.get(5, 7)) as o:
-        baca.dls_staff_padding(o, 9)
+        baca.override.dls_staff_padding(o, 9)
 
 
 def strings(cache):
@@ -158,7 +158,7 @@ def strings(cache):
             baca.script_staff_padding(o, 7)
             baca.text_spanner_staff_padding(o, 4)
             library.bcps(o, rotation=rotation)
-            baca.dls_staff_padding(o, 9)
+            baca.override.dls_staff_padding(o, 9)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
             runs = library.enchain_runs(o, [3, 4])
             baca.hairpin(

@@ -96,7 +96,7 @@ def vn_va(cache):
     cache.rebuild()
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
-            baca.dls_staff_padding(o, 4)
+            baca.override.dls_staff_padding(o, 4)
             baca.hairpin(
                 o,
                 "sfpp < p >o niente",
@@ -120,8 +120,8 @@ def vn_va(cache):
                     direction=abjad.DOWN,
                 )
                 baca.clef(o.leaf(0), "treble")
-                baca.clef_extra_offset(o.leaf(0), (-2.5, 0))
-                baca.clef_x_extent_false(o.leaf(0))
+                baca.override.clef_extra_offset(o.leaf(0), (-2.5, 0))
+                baca.override.clef_x_extent_false(o.leaf(0))
                 baca.text_spanner(o, "trem. flaut. XP => trem. flaut. tast.")
                 baca.staff_lines(o.leaf(0), 5)
 

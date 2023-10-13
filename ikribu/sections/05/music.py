@@ -87,7 +87,7 @@ def vc_rh(m):
             bookend=True,
             pieces=runs,
         )
-        baca.dls_staff_padding(o, 9)
+        baca.override.dls_staff_padding(o, 9)
 
 
 def vc(m):

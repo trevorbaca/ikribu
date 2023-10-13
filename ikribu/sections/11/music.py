@@ -117,7 +117,7 @@ def tutti(cache):
     ]:
         with baca.scope(cache[name].leaves()) as o:
             baca.clef(o.leaf(0), "percussion")
-            baca.dls_staff_padding(o, 6)
+            baca.override.dls_staff_padding(o, 6)
             baca.dynamic(o.pleaf(0), '"mf"')
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
