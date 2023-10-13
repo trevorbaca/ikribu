@@ -162,7 +162,7 @@ def vn_va(cache):
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
             baca.stem_tremolo(abjad.select.get(o.pheads(), [0, 4], period=9))
-            baca.tuplet_bracket_staff_padding(o, 3)
+            baca.override.tuplet_bracket_staff_padding(o, 3)
             library.box_adjustment(o)
 
 
@@ -179,7 +179,7 @@ def vc(m):
             pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(o.pleaves())
-        baca.text_script_staff_padding(o, 2.5)
+        baca.override.text_script_staff_padding(o, 2.5)
     with baca.scope(m.get(9, 12)) as o:
         baca.pitch(o, "F3")
     with baca.scope(m.get(13, 16)) as o:

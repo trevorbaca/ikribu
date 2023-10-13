@@ -168,7 +168,7 @@ def vn(cache):
         )
         baca.text_spanner(o, "trem. flaut. XP => trem. flaut. nut")
         baca.stem_tremolo(o.pleaves())
-        baca.text_spanner_staff_padding(o, 2.5)
+        baca.override.text_spanner_staff_padding(o, 2.5)
 
 
 def va(cache):
@@ -187,7 +187,7 @@ def va(cache):
         )
         baca.text_spanner(o, "trem. flaut. XP => trem. flaut. nut")
         baca.stem_tremolo(o.pleaves())
-        baca.text_spanner_staff_padding(o, 2.5)
+        baca.override.text_spanner_staff_padding(o, 2.5)
 
 
 def vc(m):
@@ -201,7 +201,7 @@ def vc(m):
             pieces=baca.select.cmgroups(o.tleaves()),
         ),
         baca.pitch(o, "Bb0")
-        baca.text_spanner_staff_padding(o, 2.5)
+        baca.override.text_spanner_staff_padding(o, 2.5)
     with baca.scope(m.get(5, 8)) as o:
         baca.text_spanner(o, "tasto poss. => pos. ord.")
     with baca.scope(m.get(9, 12)) as o:
@@ -211,7 +211,7 @@ def vc(m):
     with baca.scope(m.get(17, 20)) as o:
         baca.text_spanner(o, "pos. ord. => tasto poss.")
     with baca.scope(m.get(5, 20)) as o:
-        baca.ottava_bracket_staff_padding(o, 10)
+        baca.override.ottava_bracket_staff_padding(o, 10)
 
 
 @baca.build.timed("make_score")

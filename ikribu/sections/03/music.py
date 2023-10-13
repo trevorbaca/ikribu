@@ -121,8 +121,8 @@ def bcl(m):
 
 def vn(m):
     with baca.scope(m.leaves()) as o:
-        baca.text_script_staff_padding(o, 3)
-        baca.text_spanner_staff_padding(o, 3.5)
+        baca.override.text_script_staff_padding(o, 3)
+        baca.override.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(1, 15)) as o:
         baca.markup(o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN)
         baca.pitch(o, "E4")
@@ -145,8 +145,8 @@ def va(m):
     with baca.scope(m.leaves()) as o:
         baca.clef(o.leaf(0), "alto")
         baca.staff_lines(o.leaf(0), 5)
-        baca.text_script_staff_padding(o, 3)
-        baca.text_spanner_staff_padding(o, 3.5)
+        baca.override.text_script_staff_padding(o, 3)
+        baca.override.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(19, 24)) as o:
         baca.markup(o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN)
         baca.pitch(o, "Eb4")

@@ -103,7 +103,7 @@ def vn_va(cache):
                 pieces=baca.select.omgroups(baca.select.rleaves(o), [1, 1]),
             )
             baca.stem_tremolo(o.pleaves())
-            baca.text_spanner_staff_padding(o, 3.5)
+            baca.override.text_spanner_staff_padding(o, 3.5)
             if name == "vn":
                 baca.clef(o.leaf(0), "treble")
                 baca.markup(
@@ -132,7 +132,7 @@ def vc(m):
         baca.pitch(o, "F#3")
         baca.stem_tremolo(o.pleaves())
         baca.text_spanner(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
-        baca.text_spanner_staff_padding(o, 3.5)
+        baca.override.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:
         baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
         baca.staff_lines(o.leaf(0), 1)

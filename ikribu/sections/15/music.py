@@ -96,7 +96,7 @@ def VC(voice, time_signatures):
 def bcl(cache):
     m = cache["bcl"]
     with baca.scope(m.get(1, 5)) as o:
-        wrappers = baca.text_script_extra_offset(o, (0, 7))
+        wrappers = baca.override.text_script_extra_offset(o, (0, 7))
         baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         for wrapper in wrappers:
             wrapper.deactivate = True
@@ -123,8 +123,8 @@ def all_rh(cache):
                 pieces=runs,
             ),
             baca.staff_position(o, 0)
-            baca.script_staff_padding(o, 7)
-            baca.text_spanner_staff_padding(o, 3.5)
+            baca.override.script_staff_padding(o, 7)
+            baca.override.text_spanner_staff_padding(o, 3.5)
             if name == "vn_rh":
                 rotation = 0
             elif name == "va_rh":

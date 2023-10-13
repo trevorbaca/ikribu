@@ -182,7 +182,7 @@ def vn(m):
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.text_script_staff_padding(o, 2.5)
+        baca.override.text_script_staff_padding(o, 2.5)
         baca.pitches(o, "F#4 G#4 G#4 F#4")
         baca.stem_tremolo(o.pleaves())
         runs = baca.select.runs(o)
@@ -198,7 +198,7 @@ def vn(m):
 def va(m):
     with baca.scope(m.get(2, 16)) as o:
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.text_script_staff_padding(o, 2.5)
+        baca.override.text_script_staff_padding(o, 2.5)
         baca.pitches(o, "F4 E4 E4 F4")
         baca.stem_tremolo(o.pleaves())
         runs = baca.select.runs(o)
@@ -215,7 +215,7 @@ def vc(m):
     with baca.scope(m[1]) as o:
         baca.markup(o.pleaf(0), r"\baca-pizz-markup")
         baca.pitch(o, "F~5")
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.laissez_vibrer(o.ptails())
         baca.markup(
             o.pleaf(0),
@@ -225,16 +225,16 @@ def vc(m):
         baca.dynamic(o.pleaf(0), "sfz")
     with baca.scope(m.get(2, 16)) as o:
         baca.text_spanner(o, "trem. flaut. tasto. (arco) => trem. flaut. XP")
-        baca.text_spanner_staff_padding(o, 3.5)
+        baca.override.text_spanner_staff_padding(o, 3.5)
         baca.pitches(
             o,
             "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
             exact=True,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.stem_tremolo(o.pleaves())
         baca.glissando(o)
-        baca.tuplet_bracket_down(o)
+        baca.override.tuplet_bracket_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
             baca.hairpin(

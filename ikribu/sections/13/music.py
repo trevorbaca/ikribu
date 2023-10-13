@@ -117,12 +117,12 @@ def vn(m):
             abjad.select.get(o.pheads(), [0, 4], 9),
         )
         baca.staff_position(o, 0)
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         library.box_adjustment(o)
     with baca.scope(m.get(13, 16)) as o:
         baca.override.dls_staff_padding(o, 8)
         baca.hairpin(o.tleaves(), '"mp" >o niente')
-        baca.hairpin_start_shift(o.tleaves()[0], '"mp"')
+        baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
 
 
 def va(m):
@@ -132,7 +132,7 @@ def va(m):
     with baca.scope(m.get(5, 8)) as o:
         baca.override.dls_staff_padding(o, 8)
         baca.hairpin(o.tleaves(), '"mp" >o niente')
-        baca.hairpin_start_shift(o.tleaves()[0], '"mp"')
+        baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
     with baca.scope(m.get(13, 32)) as o:
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11)))
         baca.override.dls_staff_padding(o, 8)
@@ -148,7 +148,7 @@ def va(m):
         baca.stem_tremolo(
             abjad.select.get(o.pheads(), [0, 5], 11),
         )
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
         library.box_adjustment(o)
 
 
