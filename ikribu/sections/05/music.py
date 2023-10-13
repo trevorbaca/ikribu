@@ -77,9 +77,9 @@ def vc_rh(m):
         baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
         baca.staff_position(o, 0)
         library.bcps(o, rotation=-2)
-        baca.script_staff_padding(o, 7)
-        baca.text_script_staff_padding(o, 8)
-        baca.text_spanner_staff_padding(o, 4)
+        baca.override.script_staff_padding(o, 7)
+        baca.override.text_script_staff_padding(o, 8)
+        baca.override.text_spanner_staff_padding(o, 4)
         runs = library.enchain_runs(o, [3, 4])
         baca.hairpin(
             o,

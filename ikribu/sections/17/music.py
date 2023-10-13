@@ -155,8 +155,8 @@ def strings(cache):
         ("vc_rh", -2),
     ):
         with baca.scope(cache[name].get(1, 5)) as o:
-            baca.script_staff_padding(o, 7)
-            baca.text_spanner_staff_padding(o, 4)
+            baca.override.script_staff_padding(o, 7)
+            baca.override.text_spanner_staff_padding(o, 4)
             library.bcps(o, rotation=rotation)
             baca.override.dls_staff_padding(o, 9)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")

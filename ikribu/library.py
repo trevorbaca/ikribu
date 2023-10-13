@@ -25,8 +25,8 @@ def bcps(argument, rotation=0):
 
 
 def box_adjustment(argument):
-    baca.text_script_padding(argument, 2.5)
-    baca.text_script_parent_alignment_x(argument, 0)
+    baca.override.text_script_padding(argument, 2.5)
+    baca.override.text_script_parent_alignment_x(argument, 0)
 
 
 def clb_staff_positions(argument, *, rotation=0):

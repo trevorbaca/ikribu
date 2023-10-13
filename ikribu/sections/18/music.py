@@ -93,7 +93,7 @@ def vn(m):
             o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
         baca.staff_positions(o, [-1, 0, 1])
-        baca.text_script_padding(o, 2.5)
+        baca.override.text_script_padding(o, 2.5)
 
 
 def va(m):
@@ -105,7 +105,7 @@ def va(m):
             o.pleaf(0), r"\ikribu-col-legno-battuto-meccanico-explanation-markup"
         )
         baca.staff_positions(o, [0, -1, 1])
-        baca.text_script_padding(o, 2.5)
+        baca.override.text_script_padding(o, 2.5)
 
 
 def vc(m):
@@ -118,9 +118,9 @@ def vc(m):
         library.box_adjustment(o)
     with baca.scope(m[12]) as o:
         baca.mark(o.leaf(0), r"\ikribu-colophon-markup")
-        baca.rehearsal_mark_down(o)
-        baca.rehearsal_mark_padding(o, 12)
-        baca.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
+        baca.override.rehearsal_mark_down(o)
+        baca.override.rehearsal_mark_padding(o, 12)
+        baca.override.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 
 
 @baca.build.timed("make_score")

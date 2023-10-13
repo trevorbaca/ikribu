@@ -116,10 +116,10 @@ def tutti(cache):
                 bookend=True,
                 pieces=runs,
             )
-            baca.script_staff_padding(o, 7)
+            baca.override.script_staff_padding(o, 7)
             baca.staff_position(o, 0)
-            baca.text_script_staff_padding(o, 8)
-            baca.text_spanner_staff_padding(o, 4)
+            baca.override.text_script_staff_padding(o, 8)
+            baca.override.text_spanner_staff_padding(o, 4)
 
 
 @baca.build.timed("make_score")

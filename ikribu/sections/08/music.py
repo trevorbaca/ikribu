@@ -125,10 +125,10 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitches(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
         baca.stem_tremolo(o.pleaves())
-        baca.tuplet_bracket_down(o)
+        baca.override.tuplet_bracket_down(o)
 
 
 @baca.build.timed("make_score")

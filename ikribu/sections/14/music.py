@@ -255,7 +255,7 @@ def vn_va(cache):
         m = cache[name]
         with baca.scope(m.leaves()) as o:
             baca.override.dls_staff_padding(o, 8)
-            baca.tuplet_bracket_staff_padding(o, 3)
+            baca.override.tuplet_bracket_staff_padding(o, 3)
             library.box_adjustment(o)
         with baca.scope(m.get(1, 27)) as o:
             baca.staff_position(o, 0)
@@ -310,7 +310,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "F~5")
     with baca.scope(m[6]) as o:
         baca.clef(o.leaf(0), "treble")
@@ -322,7 +322,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "G5")
     for n in [7, 20]:
         baca.markup(baca.select.pleaf(m[n], 0), r"\baca-xp-markup")
@@ -336,7 +336,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "F~5")
     with baca.scope(m[14]) as o:
         baca.clef(o.leaf(0), "treble")
@@ -348,7 +348,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "G5")
     with baca.scope(m[19]) as o:
         baca.clef(o.leaf(0), "treble")
@@ -360,7 +360,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "A5")
     with baca.scope(m[22]) as o:
         baca.clef(o.leaf(0), "treble")
@@ -372,7 +372,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             direction=abjad.DOWN,
         )
-        baca.note_head_style_harmonic(o.pleaves())
+        baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "C+6")
 
 

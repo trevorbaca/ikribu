@@ -140,7 +140,7 @@ def tutti(cache):
         baca.hairpin(o.leaves()[-2:], "p < mf")
         baca.markup(o.pleaf(0), r"\baca-poco-vib-markup")
         baca.ottava_bassa(o.tleaves())
-        baca.ottava_bracket_staff_padding(o, 8)
+        baca.override.ottava_bracket_staff_padding(o, 8)
         baca.pitch(o, "D1")
     for name in ["bcl", "vn", "va"]:
         library.box_adjustment(cache[name].leaves())
@@ -153,7 +153,7 @@ def tutti(cache):
             ),
             baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
             if name == "bcl":
-                wrappers = baca.text_script_extra_offset(o, (0, 8))
+                wrappers = baca.override.text_script_extra_offset(o, (0, 8))
                 baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
 
 
