@@ -254,7 +254,7 @@ def vn_va(cache):
     for name in ["vn", "va"]:
         m = cache[name]
         with baca.scope(m.leaves()) as o:
-            baca.dls_staff_padding(o, 8)
+            baca.override.dls_staff_padding(o, 8)
             baca.tuplet_bracket_staff_padding(o, 3)
             library.box_adjustment(o)
         with baca.scope(m.get(1, 27)) as o:

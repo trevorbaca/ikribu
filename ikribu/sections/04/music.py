@@ -192,7 +192,7 @@ def vn(m):
                 baca.hairpin(run, "pp < p")
             else:
                 baca.hairpin(run, "p > pp")
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
 
 
 def va(m):
@@ -208,7 +208,7 @@ def va(m):
                 baca.hairpin(run, "pp < p")
             else:
                 baca.hairpin(run, "p > pp")
-        baca.dls_staff_padding(o, 3)
+        baca.override.dls_staff_padding(o, 3)
 
 
 def vc(m):
@@ -235,7 +235,7 @@ def vc(m):
         baca.stem_tremolo(o.pleaves())
         baca.glissando(o)
         baca.tuplet_bracket_down(o)
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
             baca.hairpin(
                 o,

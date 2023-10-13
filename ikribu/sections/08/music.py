@@ -89,7 +89,7 @@ def VC(voice, time_signatures):
 
 def bcl(m):
     for n in [1, 3, 5, 7, 9, 11]:
-        baca.dls_staff_padding(m[n], 7)
+        baca.override.dls_staff_padding(m[n], 7)
     with baca.scope(m[1]) as o:
         baca.hairpin(o, "ppp < mp")
         baca.pitch(o, "G2")
@@ -112,7 +112,7 @@ def bcl(m):
 
 def vc(m):
     with baca.scope(m.get(1, 11)) as o:
-        baca.dls_staff_padding(o, 7)
+        baca.override.dls_staff_padding(o, 7)
         baca.glissando(o)
         baca.hairpin(
             o.tleaves(),

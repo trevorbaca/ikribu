@@ -183,13 +183,13 @@ def bcl(m):
             abjad.Tweak(r"- \tweak extra-offset #'(-2 . 0)"),
         )
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
         baca.staff_position(o, 0)
 
 
 def vn(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
@@ -204,7 +204,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m.get(1, 16)) as o:
-        baca.dls_staff_padding(o, 8)
+        baca.override.dls_staff_padding(o, 8)
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
@@ -221,7 +221,7 @@ def vc(m):
     with baca.scope(m.get(1, 16)) as o:
         baca.staff_lines(o.leaf(0), 1)
         baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")
-        baca.dls_staff_padding(o, 6)
+        baca.override.dls_staff_padding(o, 6)
         baca.staff_position(o, 0)
         library.box_adjustment(o)
         baca.dynamic(o.pleaf(0), '"p"')
