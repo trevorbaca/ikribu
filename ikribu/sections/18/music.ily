@@ -49,14 +49,14 @@ number.18.Skips = {
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #blue
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 7/4
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "18"
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 7/4
     s1 * 7/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
@@ -1805,13 +1805,13 @@ number.18.Cello.Music = {
     }
 
     % [Cello.Music measure 12]
+    \mark \ikribu-colophon-markup
     \once \override Score.RehearsalMark.direction = #down
     \once \override Score.RehearsalMark.padding = 12
     \once \override Score.RehearsalMark.self-alignment-X = #right
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
-    \mark \ikribu-colophon-markup
     R1 * 1/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
