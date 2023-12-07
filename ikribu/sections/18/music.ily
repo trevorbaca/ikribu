@@ -407,6 +407,8 @@ number.18.Skips = {
 number.18.BassClarinet.Music = {
 
     % [BassClarinet.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -432,8 +434,6 @@ number.18.BassClarinet.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "treble"
     b'4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
@@ -675,6 +675,8 @@ number.18.BassClarinet.Staff = {
 number.18.ViolinRH.Music = {
 
     % [ViolinRH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
@@ -691,8 +693,6 @@ number.18.ViolinRH.Music = {
     \once \override RHStaff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     R1 * 7/4
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -776,6 +776,8 @@ number.18.Violin.RHStaff = {
 number.18.Violin.Music = {
 
     % [Violin.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
@@ -800,8 +802,6 @@ number.18.Violin.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "treble"
     a'4
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1008,6 +1008,8 @@ number.18.Violin.Staff = {
 number.18.ViolaRH.Music = {
 
     % [ViolaRH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
@@ -1024,8 +1026,6 @@ number.18.ViolaRH.Music = {
     \once \override RHStaff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     R1 * 7/4
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -1109,6 +1109,8 @@ number.18.Viola.RHStaff = {
 number.18.Viola.Music = {
 
     % [Viola.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
@@ -1133,8 +1135,6 @@ number.18.Viola.Music = {
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "treble"
     b'4
     - \baca-staccati #2
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1341,6 +1341,8 @@ number.18.Viola.Staff = {
 number.18.CelloRH.Music = {
 
     % [CelloRH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
@@ -1357,8 +1359,6 @@ number.18.CelloRH.Music = {
     \once \override RHStaff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     R1 * 7/4
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
@@ -1446,6 +1446,8 @@ number.18.Cello.Music = {
     {
 
         % [Cello.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "tenor"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
           %! EXPLICIT_STAFF_LINES_COLOR
@@ -1471,8 +1473,6 @@ number.18.Cello.Music = {
         \once \override Staff.StaffSymbol.line-count = 1
           %! EXPLICIT_STAFF_LINES
         \startStaff
-          %! REAPPLIED_CLEF
-        \clef "tenor"
         a8
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
