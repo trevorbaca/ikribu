@@ -125,7 +125,7 @@ def bcl(m):
         baca.pitches(
             o,
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
-            noncyclic=True,
+            exact=True,
         ),
         baca.repeat_tie(o.leaf(0))
         baca.glissando(o)
