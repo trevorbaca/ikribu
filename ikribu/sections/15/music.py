@@ -117,7 +117,7 @@ def all_rh(cache):
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
             runs = library.enchain_runs(o, [3, 4])
             baca.hairpin(
-                o,
+                (),
                 "ff > p < f > pp < p > ppp <",
                 bookend=True,
                 pieces=runs,
