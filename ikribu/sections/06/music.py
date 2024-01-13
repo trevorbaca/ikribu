@@ -154,7 +154,7 @@ def vn_va(cache):
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             runs = library.enchain_runs(o, [4, 3], exclude=baca.enums.HIDDEN)
             baca.hairpin(
-                o,
+                (),
                 "f > p <",
                 bookend=True,
                 pieces=runs,
@@ -173,7 +173,7 @@ def vc(m):
         baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.hairpin(
-            o,
+            (),
             "p < mp >",
             final_hairpin=False,
             pieces=baca.select.cmgroups(o),

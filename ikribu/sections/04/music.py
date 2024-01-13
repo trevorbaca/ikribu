@@ -238,7 +238,7 @@ def vc(m):
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
             baca.hairpin(
-                o,
+                (),
                 "ppp < pp >",
                 final_hairpin=False,
                 pieces=baca.select.cmgroups(o),

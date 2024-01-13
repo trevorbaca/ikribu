@@ -195,7 +195,7 @@ def vc(m):
     with baca.scope(m.get(5, 20)) as o:
         baca.ottava_bassa(o.tleaves())
         baca.hairpin(
-            o.tleaves(),
+            (),
             "mp > p <",
             final_hairpin=False,
             pieces=baca.select.cmgroups(o.tleaves()),

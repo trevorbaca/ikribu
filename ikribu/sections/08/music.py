@@ -115,7 +115,7 @@ def vc(m):
         baca.override.dls_staff_padding(o, 7)
         baca.glissando(o)
         baca.hairpin(
-            o.tleaves(),
+            (),
             "ppp < pp >",
             final_hairpin=False,
             pieces=baca.select.cmgroups(o.tleaves()),

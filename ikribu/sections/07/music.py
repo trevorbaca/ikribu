@@ -98,7 +98,7 @@ def vn_va(cache):
         with baca.scope(cache[name].get(6, 7)) as o:
             baca.override.dls_staff_padding(o, 4)
             baca.hairpin(
-                o,
+                (),
                 "sfpp < p >o niente",
                 pieces=baca.select.omgroups(baca.select.rleaves(o), [1, 1]),
             )

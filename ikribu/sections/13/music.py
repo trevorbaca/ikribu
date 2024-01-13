@@ -108,7 +108,7 @@ def vn(m):
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(
-            o,
+            (),
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
             bookend=-1,
             pieces=baca.select.cmgroups(o),
@@ -138,7 +138,7 @@ def va(m):
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(
-            o,
+            (),
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
             " f > mf < f > mf < ff > f < ff > f < fff",
             bookend=-1,
@@ -155,7 +155,7 @@ def va(m):
 def vc(m):
     with baca.scope(m.leaves()) as o:
         baca.hairpin(
-            o.tleaves(),
+            (),
             "p < f >",
             bookend=-1,
             pieces=baca.select.cmgroups(o.tleaves()),
