@@ -175,7 +175,7 @@ def vc(m):
         baca.hairpin(
             (),
             "p < mp >",
-            final_hairpin=False,
+            do_not_start_spanner_on_final_piece=True,
             pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(o.pleaves())

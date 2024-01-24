@@ -240,7 +240,7 @@ def vc(m):
             baca.hairpin(
                 (),
                 "ppp < pp >",
-                final_hairpin=False,
+                do_not_start_spanner_on_final_piece=True,
                 pieces=baca.select.cmgroups(o),
             )
 

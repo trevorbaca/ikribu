@@ -197,7 +197,7 @@ def vc(m):
         baca.hairpin(
             (),
             "mp > p <",
-            final_hairpin=False,
+            do_not_start_spanner_on_final_piece=True,
             pieces=baca.select.cmgroups(o.tleaves()),
         ),
         baca.pitch(o, "Bb0")
