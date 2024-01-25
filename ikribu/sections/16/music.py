@@ -193,7 +193,7 @@ def va(cache):
 def vc(m):
     baca.clef(abjad.select.leaf(m[1], 0), "bass")
     with baca.scope(m.get(5, 20)) as o:
-        baca.ottava_bassa(o.tleaves())
+        baca.spanners.ottava_bassa(o.tleaves())
         baca.hairpin(
             (),
             "mp > p <",
