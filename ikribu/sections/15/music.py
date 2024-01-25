@@ -115,13 +115,25 @@ def all_rh(cache):
     for name in ["vn_rh", "va_rh", "vc_rh"]:
         with baca.scope(cache[name].get(1, 10)) as o:
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
-            runs = library.enchain_runs(o, [3, 4])
-            baca.hairpin(
-                (),
-                "ff > p < f > pp < p > ppp <",
-                bookend=True,
-                pieces=runs,
-            ),
+            parts_ = ["ff > ", "p < ", "f > ", "pp < ", "p > ", "ppp < "]
+            parts = abjad.CyclicTuple(parts_)
+            for run in abjad.select.runs(o):
+                lparts = abjad.select.partition_by_counts(
+                    run, [2, 3], cyclic=True, overhang=True
+                )
+                if len(lparts[-1]) == 1:
+                    last_part = lparts.pop(-1)
+                    lparts[-1].extend(last_part)
+                count = len(lparts)
+                my_parts = parts[: count + 1]
+                string = "".join(my_parts)
+                string = string[:-3]
+                baca.hairpin(
+                    (),
+                    string,
+                    pieces=lparts,
+                )
+                parts = abjad.sequence.rotate(parts, -count)
             baca.staff_position(o, 0)
             baca.override.script_staff_padding(o, 7)
             baca.override.text_spanner_staff_padding(o, 3.5)

@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from ikribu import library
@@ -109,13 +110,25 @@ def tutti(cache):
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.override.dls_staff_padding(o, 10)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
-            runs = library.enchain_runs(o, [3, 4])
-            baca.hairpin(
-                (),
-                "ff > p < f > pp < p > ppp <",
-                bookend=True,
-                pieces=runs,
-            )
+            parts_ = ["ff > ", "p < ", "f > ", "pp < ", "p > ", "ppp < "]
+            parts = abjad.CyclicTuple(parts_)
+            for run in abjad.select.runs(o):
+                lparts = abjad.select.partition_by_counts(
+                    run, [2, 3], cyclic=True, overhang=True
+                )
+                if len(lparts[-1]) == 1:
+                    last_part = lparts.pop(-1)
+                    lparts[-1].extend(last_part)
+                count = len(lparts)
+                my_parts = parts[: count + 1]
+                string = "".join(my_parts)
+                string = string[:-3]
+                baca.hairpin(
+                    (),
+                    string,
+                    pieces=lparts,
+                )
+                parts = abjad.sequence.rotate(parts, -count)
             baca.override.script_staff_padding(o, 7)
             baca.staff_position(o, 0)
             baca.override.text_script_staff_padding(o, 8)

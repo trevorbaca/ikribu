@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from ikribu import library
@@ -80,13 +81,25 @@ def vc_rh(m):
         baca.override.script_staff_padding(o, 7)
         baca.override.text_script_staff_padding(o, 8)
         baca.override.text_spanner_staff_padding(o, 4)
-        runs = library.enchain_runs(o, [3, 4])
-        baca.hairpin(
-            (),
-            "ff > p < f > pp < f > ppp <",
-            bookend=True,
-            pieces=runs,
-        )
+        parts_ = ["ff > ", "p < ", "f > ", "pp < ", "f > ", "ppp < "]
+        parts = abjad.CyclicTuple(parts_)
+        for run in abjad.select.runs(o):
+            lparts = abjad.select.partition_by_counts(
+                run, [2, 3], cyclic=True, overhang=True
+            )
+            if len(lparts[-1]) == 1:
+                last_part = lparts.pop(-1)
+                lparts[-1].extend(last_part)
+            count = len(lparts)
+            my_parts = parts[: count + 1]
+            string = "".join(my_parts)
+            string = string[:-3]
+            baca.hairpin(
+                (),
+                string,
+                pieces=lparts,
+            )
+            parts = abjad.sequence.rotate(parts, -count)
         baca.override.dls_staff_padding(o, 9)
 
 
