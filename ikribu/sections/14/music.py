@@ -241,10 +241,10 @@ def bcl(m):
         baca.pitch(o, "B1")
     for pair in [(2, 4), (10, 12), (15, 17)]:
         with baca.scope(m.get(pair)) as o:
-            baca.hairpin(o.leaves()[:2], "p < fff")
-            baca.hairpin(o.rleaves()[-2:], "fff >o niente")
+            baca.spanners.hairpin(o.leaves()[:2], "p < fff")
+            baca.spanners.hairpin(o.rleaves()[-2:], "fff >o niente")
     with baca.scope(m.get(23, 31)) as o:
-        baca.hairpin(o.leaves()[:-1], "ppp < fff")
+        baca.spanners.hairpin(o.leaves()[:-1], "ppp < fff")
 
     for n in [7, 20]:
         baca.dynamic(baca.select.pleaf(m[n], 0), "p")
@@ -379,7 +379,7 @@ def vc(m):
 def strings(cache):
     for name in ["vn", "va", "vc"]:
         for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
-            baca.hairpin(cache[name].get(pair), "mf < fff")
+            baca.spanners.hairpin(cache[name].get(pair), "mf < fff")
         if name in ("vn", "vc"):
             baca.dynamic(baca.select.pleaf(cache[name][7], 0), "fff")
             baca.dynamic(baca.select.pleaf(cache[name][20], 0), "fff")

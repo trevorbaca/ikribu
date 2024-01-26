@@ -115,8 +115,8 @@ def bcl(m):
         baca.pitch(o, "Db2")
         baca.dynamic(o.pleaf(0), "ppp")
     with baca.scope(m.get(19, 21)) as o:
-        baca.hairpin(o.leaves()[:2], "ppp < f")
-        baca.hairpin(o.rleaves()[-2:], "f >o niente")
+        baca.spanners.hairpin(o.leaves()[:2], "ppp < f")
+        baca.spanners.hairpin(o.rleaves()[-2:], "f >o niente")
 
 
 def vn(m):
@@ -129,16 +129,16 @@ def vn(m):
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m.get(1, 3)) as o:
         baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin(o.leaves()[:2], "ppp < p")
-        baca.hairpin(o.rleaves()[-2:], "p >o niente")
+        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
+        baca.spanners.hairpin(o.rleaves()[-2:], "p >o niente")
     with baca.scope(m.get(7, 9)) as o:
         baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin(o.leaves()[:2], "ppp < p")
-        baca.hairpin(o.rleaves()[-2:], "p >o niente")
+        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
+        baca.spanners.hairpin(o.rleaves()[-2:], "p >o niente")
     with baca.scope(m.get(13, 15)) as o:
         baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin(o.leaves()[:2], "ppp < p")
-        baca.hairpin(o.rleaves()[-2:], "p >o niente")
+        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
+        baca.spanners.hairpin(o.rleaves()[-2:], "p >o niente")
 
 
 def va(m):
@@ -152,8 +152,8 @@ def va(m):
         baca.pitch(o, "Eb4")
         baca.stem_tremolo(o.pleaves())
         baca.text_spanner(o, "trem. flaut. pont. => trem. flaut. tast.")
-        baca.hairpin(o.leaves()[:5], "ppp < mf")
-        baca.hairpin(o.rleaves()[-2:], "mf >o niente")
+        baca.spanners.hairpin(o.leaves()[:5], "ppp < mf")
+        baca.spanners.hairpin(o.rleaves()[-2:], "mf >o niente")
 
 
 @baca.build.timed("make_score")

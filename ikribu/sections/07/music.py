@@ -86,7 +86,7 @@ def bcl(m):
     with baca.scope(m.get(1, 4)) as o:
         baca.pitch(o, "F#3")
     with baca.scope(m.get(6, 8)) as o:
-        baca.hairpin(o, "sfp > ppp")
+        baca.spanners.hairpin(o, "sfp > ppp")
         baca.pitch(o, "G2")
 
 
@@ -128,7 +128,7 @@ def vn_va(cache):
 
 def vc(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.hairpin(o, "p < ff")
+        baca.spanners.hairpin(o, "p < ff")
         baca.pitch(o, "F#3")
         baca.stem_tremolo(o.pleaves())
         baca.text_spanner(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
