@@ -189,9 +189,9 @@ def vn(m):
         for i, run in enumerate(runs):
             baca.glissando(run)
             if i % 2 == 0:
-                baca.hairpin(run, "pp < p")
+                baca.spanners.hairpin(run, "pp < p")
             else:
-                baca.hairpin(run, "p > pp")
+                baca.spanners.hairpin(run, "p > pp")
         baca.override.dls_staff_padding(o, 3)
 
 
@@ -205,9 +205,9 @@ def va(m):
         for i, run in enumerate(runs):
             baca.glissando(run)
             if i % 2 == 0:
-                baca.hairpin(run, "pp < p")
+                baca.spanners.hairpin(run, "pp < p")
             else:
-                baca.hairpin(run, "p > pp")
+                baca.spanners.hairpin(run, "p > pp")
         baca.override.dls_staff_padding(o, 3)
 
 

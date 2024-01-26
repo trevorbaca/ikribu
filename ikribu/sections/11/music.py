@@ -137,7 +137,7 @@ def tutti(cache):
         baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
     with baca.scope(cache["vc"].get(3, 8)) as o:
         baca.dynamic(o.pleaf(0), "p")
-        baca.hairpin(o.leaves()[-2:], "p < mf")
+        baca.spanners.hairpin(o.leaves()[-2:], "p < mf")
         baca.markup(o.pleaf(0), r"\baca-poco-vib-markup")
         baca.spanners.ottava_bassa(o.tleaves())
         baca.override.ottava_bracket_staff_padding(o, 8)
