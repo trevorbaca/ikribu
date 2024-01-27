@@ -115,10 +115,9 @@ def vc(m):
         baca.override.dls_staff_padding(o, 7)
         baca.glissando(o)
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o.tleaves()),
             "ppp < pp >",
             do_not_start_spanner_on_final_piece=True,
-            pieces=baca.select.cmgroups(o.tleaves()),
         )
         baca.markup(
             o.pleaf(0),

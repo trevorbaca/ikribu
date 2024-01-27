@@ -108,10 +108,9 @@ def vn(m):
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o),
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
             bookend=-1,
-            pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(
             abjad.select.get(o.pheads(), [0, 4], 9),
@@ -138,11 +137,10 @@ def va(m):
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o),
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
             " f > mf < f > mf < ff > f < ff > f < fff",
             bookend=-1,
-            pieces=baca.select.cmgroups(o),
         )
         baca.staff_position(o, 0)
         baca.stem_tremolo(
@@ -155,10 +153,9 @@ def va(m):
 def vc(m):
     with baca.scope(m.leaves()) as o:
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o.tleaves()),
             "p < f >",
             bookend=-1,
-            pieces=baca.select.cmgroups(o.tleaves()),
         )
         baca.staff_position(o, 0)
         library.box_adjustment(o)
