@@ -94,7 +94,7 @@ def vc_rh(m):
             my_parts = parts[: count + 1]
             string = "".join(my_parts)
             string = string[:-3]
-            baca.hairpin(
+            baca.piecewise.hairpin(
                 lparts,
                 string,
             )
