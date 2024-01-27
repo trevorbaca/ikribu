@@ -224,7 +224,7 @@ def vc(m):
         )
         baca.dynamic(o.pleaf(0), "sfz")
     with baca.scope(m.get(2, 16)) as o:
-        baca.text_spanner(o, "trem. flaut. tasto. (arco) => trem. flaut. XP")
+        baca.piecewise.text(o, "trem. flaut. tasto. (arco) => trem. flaut. XP")
         baca.override.text_spanner_staff_padding(o, 3.5)
         baca.pitches(
             o,
@@ -237,7 +237,7 @@ def vc(m):
         baca.override.tuplet_bracket_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
-            baca.hairpin(
+            baca.piecewise.hairpin(
                 baca.select.cmgroups(o),
                 "ppp < pp >",
                 do_not_start_spanner_on_final_piece=True,

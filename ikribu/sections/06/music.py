@@ -153,7 +153,7 @@ def vn_va(cache):
             baca.override.dls_staff_padding(o, 8)
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             for run in abjad.select.runs(o):
-                baca.hairpin(
+                baca.piecewise.hairpin(
                     baca.select.lparts(run, [3, 3]),
                     "f > p < f",
                 )
@@ -170,7 +170,7 @@ def vc(m):
     with baca.scope(m.get(9, 16)) as o:
         baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.cmgroups(o),
             "p < mp >",
             do_not_start_spanner_on_final_piece=True,

@@ -97,7 +97,7 @@ def vn_va(cache):
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
             baca.override.dls_staff_padding(o, 4)
-            baca.hairpin(
+            baca.piecewise.hairpin(
                 baca.select.omgroups(baca.select.rleaves(o), [1, 1]),
                 "sfpp < p >o niente",
             )
@@ -110,7 +110,7 @@ def vn_va(cache):
                     r"\ikribu-strings-two-plus-three-markup",
                     direction=abjad.DOWN,
                 )
-                baca.text_spanner(o, "trem. flaut. XP => trem. flaut. tast.")
+                baca.piecewise.text(o, "trem. flaut. XP => trem. flaut. tast.")
                 baca.staff_lines(o.leaf(0), 5)
             elif name == "va":
                 baca.markup(
@@ -121,7 +121,7 @@ def vn_va(cache):
                 baca.clef(o.leaf(0), "treble")
                 baca.override.clef_extra_offset(o.leaf(0), (-2.5, 0))
                 baca.override.clef_x_extent_false(o.leaf(0))
-                baca.text_spanner(o, "trem. flaut. XP => trem. flaut. tast.")
+                baca.piecewise.text(o, "trem. flaut. XP => trem. flaut. tast.")
                 baca.staff_lines(o.leaf(0), 5)
 
 
@@ -130,7 +130,7 @@ def vc(m):
         baca.spanners.hairpin(o, "p < ff")
         baca.pitch(o, "F#3")
         baca.stem_tremolo(o.pleaves())
-        baca.text_spanner(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
+        baca.piecewise.text(o, "(trem. flaut. tast.) => trem. XP (non. flaut.)")
         baca.override.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:
         baca.markup(o.pleaf(0), r"\ikribu-graincircle-pi-two-markup")

@@ -298,7 +298,7 @@ def vc(m):
             baca.pitch(o, "C1")
     for pair in [(2, 4), (10, 12), (15, 17), (23, 27)]:
         with baca.scope(m.get(pair)) as o:
-            baca.text_spanner(o, "tasto => XP")
+            baca.piecewise.text(o, "tasto => XP")
     with baca.scope(m[1]) as o:
         baca.staff_lines(o.leaf(0), 5)
         baca.clef(o.leaf(0), "treble")
