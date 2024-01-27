@@ -95,9 +95,8 @@ def vc_rh(m):
             string = "".join(my_parts)
             string = string[:-3]
             baca.hairpin(
-                (),
+                lparts,
                 string,
-                pieces=lparts,
             )
             parts = abjad.sequence.rotate(parts, -count)
         baca.override.dls_staff_padding(o, 9)

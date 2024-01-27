@@ -154,9 +154,8 @@ def vn_va(cache):
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             for run in abjad.select.runs(o):
                 baca.hairpin(
-                    (),
+                    baca.select.lparts(run, [3, 3]),
                     "f > p < f",
-                    pieces=baca.select.lparts(run, [3, 3]),
                 )
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
@@ -172,10 +171,9 @@ def vc(m):
         baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o),
             "p < mp >",
             do_not_start_spanner_on_final_piece=True,
-            pieces=baca.select.cmgroups(o),
         )
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_staff_padding(o, 2.5)

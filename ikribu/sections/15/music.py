@@ -129,9 +129,8 @@ def all_rh(cache):
                 string = "".join(my_parts)
                 string = string[:-3]
                 baca.hairpin(
-                    (),
+                    lparts,
                     string,
-                    pieces=lparts,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.staff_position(o, 0)

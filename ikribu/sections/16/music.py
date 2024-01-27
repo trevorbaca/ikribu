@@ -195,10 +195,9 @@ def vc(m):
     with baca.scope(m.get(5, 20)) as o:
         baca.spanners.ottava_bassa(o.tleaves())
         baca.hairpin(
-            (),
+            baca.select.cmgroups(o.tleaves()),
             "mp > p <",
             do_not_start_spanner_on_final_piece=True,
-            pieces=baca.select.cmgroups(o.tleaves()),
         ),
         baca.pitch(o, "Bb0")
         baca.override.text_spanner_staff_padding(o, 2.5)

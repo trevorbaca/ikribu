@@ -124,9 +124,8 @@ def tutti(cache):
                 string = "".join(my_parts)
                 string = string[:-3]
                 baca.hairpin(
-                    (),
+                    lparts,
                     string,
-                    pieces=lparts,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.override.script_staff_padding(o, 7)
