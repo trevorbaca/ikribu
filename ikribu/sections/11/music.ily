@@ -1754,11 +1754,11 @@ number.11.Cello.Music = {
       %! SPANNER_STOP
     \mf
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
     \revert Staff.OttavaBracket.staff-padding
 
     % [Cello.Music measure 9]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
