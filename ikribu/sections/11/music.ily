@@ -1690,6 +1690,9 @@ number.11.Cello.Music = {
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
 
     % [Cello.Music measure 3]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
     \override Staff.OttavaBracket.staff-padding = 8
@@ -1757,6 +1760,9 @@ number.11.Cello.Music = {
     \revert Staff.OttavaBracket.staff-padding
 
     % [Cello.Music measure 9]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
