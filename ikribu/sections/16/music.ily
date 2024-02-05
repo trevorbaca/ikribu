@@ -2309,12 +2309,12 @@ number.16.Cello.Music = {
       %! SPANNER_STOP
     \stopTextSpan
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
     \revert Staff.OttavaBracket.staff-padding
     \revert TextSpanner.staff-padding
 
     % [Cello.Music measure 21]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff

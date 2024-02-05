@@ -3942,10 +3942,10 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \stopTextSpan
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Cello.Music measure 5]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -4012,12 +4012,12 @@ number.14.Cello.Music = {
       %! EXPLICIT_DYNAMIC
     \fff
     ^ \baca-xp-markup
-      %! SPANNER_STOP
-    \ottava 0
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     % [Cello.Music measure 8]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -4127,10 +4127,10 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \stopTextSpan
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Cello.Music measure 13]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -4240,10 +4240,10 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \stopTextSpan
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Cello.Music measure 18]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -4310,12 +4310,12 @@ number.14.Cello.Music = {
       %! EXPLICIT_DYNAMIC
     \fff
     ^ \baca-xp-markup
-      %! SPANNER_STOP
-    \ottava 0
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     % [Cello.Music measure 21]
+      %! SPANNER_STOP
+    \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
@@ -4437,10 +4437,10 @@ number.14.Cello.Music = {
       %! SPANNER_STOP
     \stopTextSpan
     \repeatTie
-      %! SPANNER_STOP
-    \ottava 0
 
     % [Cello.Music measure 28]
+      %! SPANNER_STOP
+    \ottava 0
     R1 * 7/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
