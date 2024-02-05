@@ -3886,6 +3886,9 @@ number.14.Cello.Music = {
       %! MEASURE_177
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -3944,6 +3947,9 @@ number.14.Cello.Music = {
     \repeatTie
 
     % [Cello.Music measure 5]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
@@ -3999,6 +4005,9 @@ number.14.Cello.Music = {
       %! MEASURE_182
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -4016,6 +4025,9 @@ number.14.Cello.Music = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     % [Cello.Music measure 8]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
@@ -4071,6 +4083,9 @@ number.14.Cello.Music = {
       %! MEASURE_185
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -4129,6 +4144,9 @@ number.14.Cello.Music = {
     \repeatTie
 
     % [Cello.Music measure 13]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
@@ -4184,6 +4202,9 @@ number.14.Cello.Music = {
       %! MEASURE_190
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -4242,6 +4263,9 @@ number.14.Cello.Music = {
     \repeatTie
 
     % [Cello.Music measure 18]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
@@ -4297,6 +4321,9 @@ number.14.Cello.Music = {
       %! MEASURE_195
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -4314,6 +4341,9 @@ number.14.Cello.Music = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     % [Cello.Music measure 21]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     \stopStaff
@@ -4369,6 +4399,9 @@ number.14.Cello.Music = {
       %! MEASURE_198
       %! SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_START
     \ottava -1
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -4439,6 +4472,9 @@ number.14.Cello.Music = {
     \repeatTie
 
     % [Cello.Music measure 28]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override Staff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     R1 * 7/4
