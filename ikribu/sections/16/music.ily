@@ -1944,7 +1944,6 @@ number.16.Cello.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_START
     \ottava -1
     \override Staff.OttavaBracket.staff-padding = 10
     \override TextSpanner.staff-padding = 2.5
@@ -2319,7 +2318,6 @@ number.16.Cello.Music = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override Staff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     \stopStaff
     \once \override Staff.StaffSymbol.line-count = 0
