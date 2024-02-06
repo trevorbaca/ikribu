@@ -932,10 +932,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         ^ \baca-half-clt-markup
         - \baca-solid-line-with-arrow
@@ -958,10 +956,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -999,10 +995,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1019,10 +1013,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         - \upbow
         \bacaStopTextSpanBCP
@@ -1040,10 +1032,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1073,10 +1063,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         - \upbow
         \bacaStopTextSpanBCP
@@ -1110,10 +1098,8 @@ number.5.CelloRH.Music = {
     c'4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ppp
     \bacaStopTextSpanBCP
     - \baca-solid-line-with-arrow
@@ -1141,10 +1127,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1175,10 +1159,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         - \upbow
         \bacaStopTextSpanBCP
@@ -1196,10 +1178,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1231,10 +1211,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1265,10 +1243,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1285,10 +1261,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1312,10 +1286,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1343,10 +1315,8 @@ number.5.CelloRH.Music = {
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ppp
     \bacaStopTextSpanBCP
     - \baca-solid-line-with-arrow
@@ -1382,10 +1352,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ff
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1409,10 +1377,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \p
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1449,10 +1415,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1469,10 +1433,8 @@ number.5.CelloRH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \f
         \bacaStopTextSpanBCP
         - \baca-solid-line-with-arrow
@@ -1497,10 +1459,8 @@ number.5.CelloRH.Music = {
         c'4
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \pp
         \bacaStopTextSpanBCP
         \revert DynamicLineSpanner.staff-padding
