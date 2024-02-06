@@ -505,10 +505,8 @@ number.8.BassClarinet.Music = {
     a4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \mp
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -539,10 +537,8 @@ number.8.BassClarinet.Music = {
     af4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \mf
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -573,10 +569,8 @@ number.8.BassClarinet.Music = {
     g4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \f
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -607,10 +601,8 @@ number.8.BassClarinet.Music = {
     fs4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ff
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -641,10 +633,8 @@ number.8.BassClarinet.Music = {
     f4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \fff
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
@@ -675,10 +665,8 @@ number.8.BassClarinet.Music = {
     e4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ffff
     \repeatTie
     \revert DynamicLineSpanner.staff-padding
