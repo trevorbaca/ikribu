@@ -2066,10 +2066,8 @@ number.13.Violin.Music = {
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \baca-effort-mp
     [
       %! EXPLICIT_DYNAMIC
@@ -3186,10 +3184,8 @@ number.13.Viola.Music = {
         - \staccato
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \baca-effort-mp
         [
           %! EXPLICIT_DYNAMIC
