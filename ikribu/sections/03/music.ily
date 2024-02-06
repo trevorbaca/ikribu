@@ -1061,10 +1061,8 @@ number.3.BassClarinet.Music = {
     ef1
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \f
     - \tweak stencil ##f
     ~
@@ -1096,10 +1094,8 @@ number.3.BassClarinet.Music = {
     R1 * 2/4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \!
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
@@ -1431,10 +1427,8 @@ number.3.Violin.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \p
     - \tweak stencil ##f
     ~
@@ -1487,10 +1481,8 @@ number.3.Violin.Music = {
             b'1 * 1/4
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \!
               %! DURATION_MULTIPLIER
               %! HIDDEN
@@ -1577,10 +1569,8 @@ number.3.Violin.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \p
     - \tweak stencil ##f
     ~
@@ -1633,10 +1623,8 @@ number.3.Violin.Music = {
             b'1 * 1/4
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \!
               %! DURATION_MULTIPLIER
               %! HIDDEN
@@ -1723,10 +1711,8 @@ number.3.Violin.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \p
     - \tweak stencil ##f
     ~
@@ -1779,10 +1765,8 @@ number.3.Violin.Music = {
             b'1 * 1/4
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \!
               %! DURATION_MULTIPLIER
               %! HIDDEN
@@ -2366,10 +2350,8 @@ number.3.Viola.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \mf
     - \tweak stencil ##f
     ~
@@ -2422,10 +2404,8 @@ number.3.Viola.Music = {
             c'1 * 1/4
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \!
               %! DURATION_MULTIPLIER
               %! HIDDEN

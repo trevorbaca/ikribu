@@ -319,10 +319,8 @@ number.2.BassClarinet.Music = {
     e1..
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \f
     - \tweak stencil ##f
     ~
@@ -381,10 +379,8 @@ number.2.BassClarinet.Music = {
             b'1 * 7/4
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \!
               %! DURATION_MULTIPLIER
               %! HIDDEN

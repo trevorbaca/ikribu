@@ -1748,10 +1748,8 @@ number.11.Cello.Music = {
     d,,4
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \mf
     \repeatTie
     \revert Staff.OttavaBracket.staff-padding
