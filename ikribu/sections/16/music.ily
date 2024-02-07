@@ -935,13 +935,10 @@ number.16.BassClarinet.Music = {
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
     R1 * 1/4
-      %! EXPLICIT_DYNAMIC_COLOR
-      %! EXPLICIT_DYNAMIC
-    - \tweak color #blue
-      %! EXPLICIT_DYNAMIC
-    \!
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+      %! SPANNER_STOP
+    \!
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
 
@@ -1313,13 +1310,10 @@ number.16.Violin.Music = {
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
     R1 * 1/4
-      %! EXPLICIT_DYNAMIC_COLOR
-      %! EXPLICIT_DYNAMIC
-    - \tweak color #blue
-      %! EXPLICIT_DYNAMIC
-    \!
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+      %! SPANNER_STOP
+    \!
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
@@ -1691,13 +1685,10 @@ number.16.Viola.Music = {
     \once \override Staff.StaffSymbol.line-count = 0
     \startStaff
     R1 * 1/4
-      %! EXPLICIT_DYNAMIC_COLOR
-      %! EXPLICIT_DYNAMIC
-    - \tweak color #blue
-      %! EXPLICIT_DYNAMIC
-    \!
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+      %! SPANNER_STOP
+    \!
       %! FERMATA_MEASURE_EMPTY_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 

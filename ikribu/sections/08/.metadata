@@ -190,16 +190,6 @@
                 value="1/6",
             ),
         ],
-        "Viola.Music": [
-            baca.Memento(
-                context="Viola.Music",
-                edition=None,
-                manifest=None,
-                prototype="abjad.Dynamic",
-                synthetic_offset=None,
-                value="niente",
-            )
-        ],
         "Viola.PianoStaff": [
             baca.Memento(
                 context="Viola.Music",
@@ -269,16 +259,6 @@
                 synthetic_offset=None,
                 value=5,
             ),
-        ],
-        "Violin.Music": [
-            baca.Memento(
-                context="Violin.Music",
-                edition=None,
-                manifest=None,
-                prototype="abjad.Dynamic",
-                synthetic_offset=None,
-                value="niente",
-            )
         ],
         "Violin.PianoStaff": [
             baca.Memento(

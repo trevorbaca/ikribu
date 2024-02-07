@@ -33,16 +33,6 @@
     "first_measure_number": 3,
     "has_anchor_skip": True,
     "persistent_indicators": {
-        "BassClarinet.Music": [
-            baca.Memento(
-                context="BassClarinet.Music",
-                edition=None,
-                manifest=None,
-                prototype="abjad.Dynamic",
-                synthetic_offset=None,
-                value="niente",
-            )
-        ],
         "BassClarinet.Staff": [
             baca.Memento(
                 context="BassClarinet.Music",

@@ -377,15 +377,12 @@ number.2.BassClarinet.Music = {
               %! HIDDEN
               %! NOTE
             b'1 * 7/4
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #blue
-              %! EXPLICIT_DYNAMIC
-            \!
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
             %@% ^ \baca-duration-multiplier-markup #"7" #"4"
+              %! SPANNER_STOP
+            \!
 
         }
 
