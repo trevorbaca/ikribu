@@ -1120,11 +1120,6 @@ number.9.Violin.Music = {
           %! REAPPLIED_STAFF_LINES
         \startStaff
         c''8
-          %! REAPPLIED_DYNAMIC_COLOR
-          %! REAPPLIED_DYNAMIC
-        - \tweak color #(x11-color 'green4)
-          %! REAPPLIED_DYNAMIC
-        _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
           %! REAPPLIED_INSTRUMENT_ALERT
         ^ \baca-reapplied-instrument-markup "(“Violin”)"
         [
@@ -1984,11 +1979,6 @@ number.9.Viola.Music = {
           %! REAPPLIED_STAFF_LINES
         \startStaff
         c''2..
-          %! REAPPLIED_DYNAMIC_COLOR
-          %! REAPPLIED_DYNAMIC
-        - \tweak color #(x11-color 'green4)
-          %! REAPPLIED_DYNAMIC
-        _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))
           %! REAPPLIED_INSTRUMENT_ALERT
         ^ \baca-reapplied-instrument-markup "(“Viola”)"
           %! REAPPLIED_CLEF_REDRAW_COLOR

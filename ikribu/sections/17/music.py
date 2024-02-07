@@ -134,7 +134,7 @@ def bcl(m):
         baca.repeat_tie(o.phead(0))
     with baca.scope(m.get(1, 7)) as o:
         baca.spanners.hairpin(o.leaves()[:4], "pp < mf")
-        baca.spanners.hairpin(o.rleaves()[4:], "mf >o niente")
+        baca.spanners.hairpin(o.rleaves()[4:], "mf >o !")
     with baca.scope(m.get(5, 7)) as o:
         baca.override.dls_staff_padding(o, 9)
 

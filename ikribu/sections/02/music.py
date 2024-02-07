@@ -80,7 +80,7 @@ def bcl(m):
     with baca.scope(m.get(1, 5)) as o:
         baca.pitch(o, "D2")
         baca.spanners.hairpin(o.leaves()[:2], "ppp < f")
-        baca.spanners.hairpin(o.rleaves()[-4:], "f >o niente")
+        baca.spanners.hairpin(o.rleaves()[-4:], "f >o !")
 
 
 def vn(m):
