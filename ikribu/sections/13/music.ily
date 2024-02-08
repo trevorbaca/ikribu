@@ -2285,10 +2285,7 @@ number.13.Violin.Music = {
 
         b8
         - \staccato
-          %! EXPLICIT_DYNAMIC_COLOR
-          %! EXPLICIT_DYNAMIC
-        - \tweak color #blue
-          %! EXPLICIT_DYNAMIC
+          %! SPANNER_STOP
         \!
         ]
         \revert DynamicLineSpanner.staff-padding
@@ -3317,10 +3314,7 @@ number.13.Viola.Music = {
 
         b8
         - \staccato
-          %! EXPLICIT_DYNAMIC_COLOR
-          %! EXPLICIT_DYNAMIC
-        - \tweak color #blue
-          %! EXPLICIT_DYNAMIC
+          %! SPANNER_STOP
         \!
         ]
         \revert DynamicLineSpanner.staff-padding
