@@ -128,15 +128,15 @@ def vn(m):
         baca.pitch(o, "E4")
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m.get(1, 3)) as o:
-        baca.piecewise.text(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.mspanners.text(o, "trem. flaut. pont. => trem. flaut. tast.")
         baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
         baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
     with baca.scope(m.get(7, 9)) as o:
-        baca.piecewise.text(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.mspanners.text(o, "trem. flaut. pont. => trem. flaut. tast.")
         baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
         baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
     with baca.scope(m.get(13, 15)) as o:
-        baca.piecewise.text(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.mspanners.text(o, "trem. flaut. pont. => trem. flaut. tast.")
         baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
         baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
 
@@ -151,7 +151,7 @@ def va(m):
         baca.markup(o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN)
         baca.pitch(o, "Eb4")
         baca.stem_tremolo(o.pleaves())
-        baca.piecewise.text(o, "trem. flaut. pont. => trem. flaut. tast.")
+        baca.mspanners.text(o, "trem. flaut. pont. => trem. flaut. tast.")
         baca.spanners.hairpin(o.leaves()[:5], "ppp < mf")
         baca.spanners.hairpin(o.rleaves()[-2:], "mf >o !")
 
