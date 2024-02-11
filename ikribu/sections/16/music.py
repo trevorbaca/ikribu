@@ -166,7 +166,7 @@ def vn(cache):
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
         )
-        baca.mspanners.text(o, "trem. flaut. XP => trem. flaut. nut")
+        baca.mspanners.text([o], "trem. flaut. XP => trem. flaut. nut")
         baca.stem_tremolo(o.pleaves())
         baca.override.text_spanner_staff_padding(o, 2.5)
 
@@ -185,7 +185,7 @@ def va(cache):
             r"\ikribu-strings-two-plus-three-markup",
             direction=abjad.DOWN,
         )
-        baca.mspanners.text(o, "trem. flaut. XP => trem. flaut. nut")
+        baca.mspanners.text([o], "trem. flaut. XP => trem. flaut. nut")
         baca.stem_tremolo(o.pleaves())
         baca.override.text_spanner_staff_padding(o, 2.5)
 
@@ -202,13 +202,13 @@ def vc(m):
         baca.pitch(o, "Bb0")
         baca.override.text_spanner_staff_padding(o, 2.5)
     with baca.scope(m.get(5, 8)) as o:
-        baca.mspanners.text(o, "tasto poss. => pos. ord.")
+        baca.mspanners.text([o], "tasto poss. => pos. ord.")
     with baca.scope(m.get(9, 12)) as o:
-        baca.mspanners.text(o, "pos. ord. => XP")
+        baca.mspanners.text([o], "pos. ord. => XP")
     with baca.scope(m.get(13, 16)) as o:
-        baca.mspanners.text(o, "XP => pos. ord.")
+        baca.mspanners.text([o], "XP => pos. ord.")
     with baca.scope(m.get(17, 20)) as o:
-        baca.mspanners.text(o, "pos. ord. => tasto poss.")
+        baca.mspanners.text([o], "pos. ord. => tasto poss.")
     with baca.scope(m.get(5, 20)) as o:
         baca.override.ottava_bracket_staff_padding(o, 10)
 
