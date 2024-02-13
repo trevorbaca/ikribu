@@ -241,10 +241,10 @@ def bcl(m):
         baca.pitch(o, "B1")
     for pair in [(2, 4), (10, 12), (15, 17)]:
         with baca.scope(m.get(pair)) as o:
-            baca.spanners.hairpin(o.leaves()[:2], "p < fff")
-            baca.spanners.hairpin(o.rleaves()[-2:], "fff >o !")
+            baca.spanners.hairpin(o[:2], "p < fff")
+            baca.spanners.hairpin(o[-1:], "fff >o !", rleak=True)
     with baca.scope(m.get(23, 31)) as o:
-        baca.spanners.hairpin(o.leaves()[:-1], "ppp < fff")
+        baca.spanners.hairpin(o[:-1], "ppp < fff")
 
     for n in [7, 20]:
         baca.dynamic(baca.select.pleaf(m[n], 0), "p")

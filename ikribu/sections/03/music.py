@@ -115,8 +115,8 @@ def bcl(m):
         baca.pitch(o, "Db2")
         baca.dynamic(o.pleaf(0), "ppp")
     with baca.scope(m.get(19, 21)) as o:
-        baca.spanners.hairpin(o.leaves()[:2], "ppp < f")
-        baca.spanners.hairpin(o.rleaves()[-2:], "f >o !")
+        baca.spanners.hairpin(o[:2], "ppp < f")
+        baca.spanners.hairpin(o[-1:], "f >o !", rleak=True)
 
 
 def vn(m):
@@ -133,24 +133,24 @@ def vn(m):
             "trem. flaut. pont. => trem. flaut. tast.",
             do_not_rleak=True,
         )
-        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
-        baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
+        baca.spanners.hairpin(o[:2], "ppp < p")
+        baca.spanners.hairpin(o[-1:], "p >o !", rleak=True)
     with baca.scope(m.get(7, 9)) as o:
         baca.mspanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
             do_not_rleak=True,
         )
-        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
-        baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
+        baca.spanners.hairpin(o[:2], "ppp < p")
+        baca.spanners.hairpin(o[-1:], "p >o !", rleak=True)
     with baca.scope(m.get(13, 15)) as o:
         baca.mspanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
             do_not_rleak=True,
         )
-        baca.spanners.hairpin(o.leaves()[:2], "ppp < p")
-        baca.spanners.hairpin(o.rleaves()[-2:], "p >o !")
+        baca.spanners.hairpin(o[:2], "ppp < p")
+        baca.spanners.hairpin(o[-1:], "p >o !", rleak=True)
 
 
 def va(m):
@@ -168,8 +168,8 @@ def va(m):
             "trem. flaut. pont. => trem. flaut. tast.",
             do_not_rleak=True,
         )
-        baca.spanners.hairpin(o.leaves()[:5], "ppp < mf")
-        baca.spanners.hairpin(o.rleaves()[-2:], "mf >o !")
+        baca.spanners.hairpin(o[:5], "ppp < mf")
+        baca.spanners.hairpin(o[-1:], "mf >o !", rleak=True)
 
 
 @baca.build.timed("make_score")
