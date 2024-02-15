@@ -1351,9 +1351,6 @@ number.14.BassClarinet.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
     \>
     \repeatTie
 
@@ -1521,9 +1518,6 @@ number.14.BassClarinet.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
     \>
     \repeatTie
 
@@ -1626,9 +1620,6 @@ number.14.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak color #blue
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak to-barline ##t
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>

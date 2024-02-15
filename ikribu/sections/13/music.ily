@@ -2079,9 +2079,6 @@ number.13.Violin.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak to-barline ##t
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
     \>
 
     d'8
@@ -3164,9 +3161,6 @@ number.13.Viola.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         - \tweak color #blue
-          %! EXPLICIT_DYNAMIC
-          %! SPANNER_START
-        - \tweak to-barline ##t
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
