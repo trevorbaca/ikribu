@@ -100,6 +100,7 @@ def vn_va(cache):
             baca.piecewise.hairpin(
                 baca.select.omgroups(o, [1, 1]),
                 "sfpp < p >o !",
+                glue=True,
                 rleak=True,
             )
             baca.stem_tremolo(o.pleaves())
