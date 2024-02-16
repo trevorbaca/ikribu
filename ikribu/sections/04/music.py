@@ -244,6 +244,7 @@ def vc(m):
             baca.hairpinlib.hairpin(
                 baca.select.cmgroups(o),
                 "ppp < pp >",
+                cyclic=True,
                 do_not_bookend=True,
                 do_not_start_spanner_on_final_piece=True,
             )
