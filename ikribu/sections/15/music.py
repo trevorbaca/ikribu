@@ -131,6 +131,7 @@ def all_rh(cache):
                 baca.piecewise.hairpin(
                     lparts,
                     string,
+                    cyclic=True,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.staff_position(o, 0)

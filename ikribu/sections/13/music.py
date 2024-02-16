@@ -110,6 +110,7 @@ def vn(m):
         baca.piecewise.hairpin(
             baca.select.cmgroups(o),
             "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
+            glue=True,
         )
         baca.stem_tremolo(
             abjad.select.get(o.pheads(), [0, 4], 9),
@@ -139,6 +140,7 @@ def va(m):
             baca.select.cmgroups(o),
             "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
             " f > mf < f > mf < ff > f < ff > f < fff",
+            glue=True,
         )
         baca.staff_position(o, 0)
         baca.stem_tremolo(
@@ -153,6 +155,7 @@ def vc(m):
         baca.piecewise.hairpin(
             baca.select.cmgroups(o.tleaves()),
             "p < f >",
+            cyclic=True,
         )
         baca.staff_position(o, 0)
         library.box_adjustment(o)
