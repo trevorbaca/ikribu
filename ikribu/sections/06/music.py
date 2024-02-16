@@ -156,6 +156,7 @@ def vn_va(cache):
                 baca.piecewise.hairpin(
                     baca.select.lparts(run, [3, 3]),
                     "f > p < f",
+                    glue=True,
                 )
             baca.staff_lines(o.leaf(0), 1)
             baca.staff_position(o, 0)
