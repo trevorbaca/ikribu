@@ -176,7 +176,7 @@ def strings(cache):
                 baca.piecewise.hairpin(
                     lparts,
                     string,
-                    cyclic=True,
+                    glue=True,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.staff_position(o, 0)
