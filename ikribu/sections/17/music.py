@@ -173,7 +173,7 @@ def strings(cache):
                 my_parts = parts[: count + 1]
                 string = "".join(my_parts)
                 string = string[:-3]
-                baca.piecewise.hairpin(
+                baca.hairpinlib.hairpin(
                     lparts,
                     string,
                     glue=True,
