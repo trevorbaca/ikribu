@@ -205,6 +205,7 @@ def vc(m):
         baca.piecewise.hairpin(
             baca.select.cmgroups(o.tleaves()),
             "mp > p <",
+            do_not_bookend=True,
             do_not_start_spanner_on_final_piece=True,
         ),
         baca.pitch(o, "Bb0")
