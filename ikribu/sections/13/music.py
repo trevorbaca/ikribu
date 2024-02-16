@@ -156,7 +156,9 @@ def vc(m):
             baca.select.cmgroups(o.tleaves()),
             "p < f >",
             cyclic=True,
+            do_not_bookend=True,
         )
+        baca.dynamic(o.tleaves()[-1], "p")
         baca.staff_position(o, 0)
         library.box_adjustment(o)
     with baca.scope(m[5]) as o:

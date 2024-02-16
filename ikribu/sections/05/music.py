@@ -97,7 +97,7 @@ def vc_rh(m):
             baca.piecewise.hairpin(
                 lparts,
                 string,
-                cyclic=True,
+                glue=True,
             )
             parts = abjad.sequence.rotate(parts, -count)
         baca.override.dls_staff_padding(o, 9)
