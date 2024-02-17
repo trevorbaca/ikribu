@@ -114,10 +114,9 @@ def vc(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.override.dls_staff_padding(o, 7)
         baca.glissando(o)
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "ppp < pp >",
-            cyclic=True,
             do_not_bookend=True,
             do_not_start_spanner_on_final_piece=True,
         )

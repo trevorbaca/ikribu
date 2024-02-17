@@ -152,10 +152,9 @@ def va(m):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "p < f >",
-            cyclic=True,
             do_not_bookend=True,
         )
         baca.dynamic(o.tleaves()[-1], "p")

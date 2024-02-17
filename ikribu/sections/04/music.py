@@ -241,10 +241,9 @@ def vc(m):
         baca.override.tuplet_bracket_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
-            baca.hairpinlib.hairpin(
+            baca.hairpinlib.cyclic(
                 baca.select.cmgroups(o),
                 "ppp < pp >",
-                cyclic=True,
                 do_not_bookend=True,
                 do_not_start_spanner_on_final_piece=True,
             )
