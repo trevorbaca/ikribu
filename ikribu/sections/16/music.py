@@ -202,10 +202,9 @@ def vc(m):
     baca.clef(abjad.select.leaf(m[1], 0), "bass")
     with baca.scope(m.get(5, 20)) as o:
         baca.rspanners.ottava(o.tleaves(), -1)
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "mp > p <",
-            cyclic=True,
             do_not_bookend=True,
             do_not_start_spanner_on_final_piece=True,
         ),

@@ -171,10 +171,9 @@ def vc(m):
     with baca.scope(m.get(9, 16)) as o:
         baca.override.dls_staff_padding(o, 4)
         baca.markup(o.pleaf(0), r"\ikribu-trem-flaut-tast-markup")
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.cmgroups(o),
             "p < mp >",
-            cyclic=True,
             do_not_bookend=True,
             do_not_start_spanner_on_final_piece=True,
         )
