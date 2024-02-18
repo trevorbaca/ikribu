@@ -189,9 +189,9 @@ def vn(m):
         for i, run in enumerate(runs):
             baca.glissando(run)
             if i % 2 == 0:
-                baca.hairpinlib.exact(run, "pp<p")
+                baca.hairpins.exact(run, "pp<p")
             else:
-                baca.hairpinlib.exact(run, "p>pp")
+                baca.hairpins.exact(run, "p>pp")
         baca.override.dls_staff_padding(o, 3)
 
 
@@ -205,9 +205,9 @@ def va(m):
         for i, run in enumerate(runs):
             baca.glissando(run)
             if i % 2 == 0:
-                baca.hairpinlib.exact(run, "pp<p")
+                baca.hairpins.exact(run, "pp<p")
             else:
-                baca.hairpinlib.exact(run, "p>pp")
+                baca.hairpins.exact(run, "p>pp")
         baca.override.dls_staff_padding(o, 3)
 
 
@@ -241,7 +241,7 @@ def vc(m):
         baca.override.tuplet_bracket_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
-            baca.hairpinlib.cyclic(
+            baca.hairpins.cyclic(
                 baca.select.cmgroups(o),
                 "ppp < pp >",
                 do_not_bookend=True,

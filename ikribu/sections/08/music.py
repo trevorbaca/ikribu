@@ -91,22 +91,22 @@ def bcl(m):
     for n in [1, 3, 5, 7, 9, 11]:
         baca.override.dls_staff_padding(m[n], 7)
     with baca.scope(m[1]) as o:
-        baca.hairpinlib.exact(o, "ppp<mp")
+        baca.hairpins.exact(o, "ppp<mp")
         baca.pitch(o, "G2")
     with baca.scope(m[3]) as o:
-        baca.hairpinlib.exact(o, "pp<mf")
+        baca.hairpins.exact(o, "pp<mf")
         baca.pitch(o, "Gb2")
     with baca.scope(m[5]) as o:
-        baca.hairpinlib.exact(o, "p<f")
+        baca.hairpins.exact(o, "p<f")
         baca.pitch(o, "F2")
     with baca.scope(m[7]) as o:
-        baca.hairpinlib.exact(o, "mf<ff")
+        baca.hairpins.exact(o, "mf<ff")
         baca.pitch(o, "E2")
     with baca.scope(m[9]) as o:
-        baca.hairpinlib.exact(o, "f<fff")
+        baca.hairpins.exact(o, "f<fff")
         baca.pitch(o, "Eb2")
     with baca.scope(m[11]) as o:
-        baca.hairpinlib.exact(o, "ff<ffff")
+        baca.hairpins.exact(o, "ff<ffff")
         baca.pitch(o, "D2")
 
 
@@ -114,7 +114,7 @@ def vc(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.override.dls_staff_padding(o, 7)
         baca.glissando(o)
-        baca.hairpinlib.cyclic(
+        baca.hairpins.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "ppp < pp >",
             do_not_bookend=True,
