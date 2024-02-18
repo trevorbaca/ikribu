@@ -79,8 +79,8 @@ def VC(voice, time_signatures):
 def bcl(m):
     with baca.scope(m.get(1, 5)) as o:
         baca.pitch(o, "D2")
-        baca.spanners.hairpin(o[:2], "ppp < f")
-        baca.spanners.hairpin(o[-3:], "f >o !", rleak=True)
+        baca.hairpinlib.exact(o[:2], "ppp<f")
+        baca.hairpinlib.exact(o[-3:], "f>o!", rleak=True)
 
 
 def vn(m):
