@@ -107,10 +107,9 @@ def vn(m):
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
-        baca.hairpins.hairpin(
+        baca.hairpins.exact(
             baca.select.cmgroups(o),
-            "mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff",
-            glue=True,
+            "mp< mf> mp< f> mf< f> mf< ff> f< ff> f< fff>ff",
         )
         baca.stem_tremolo(
             abjad.select.get(o.pheads(), [0, 4], 9),
@@ -136,11 +135,10 @@ def va(m):
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11)))
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
-        baca.hairpins.hairpin(
+        baca.hairpins.exact(
             baca.select.cmgroups(o),
-            "p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <"
-            " f > mf < f > mf < ff > f < ff > f < fff",
-            glue=True,
+            "p> pp< p> pp< mp> p< mp> p< mf> mp< mf> mp<"
+            " f> mf< f> mf< ff> f< ff> f<fff",
         )
         baca.staff_position(o, 0)
         baca.stem_tremolo(
