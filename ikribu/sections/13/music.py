@@ -107,7 +107,7 @@ def vn(m):
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 4], period=9)))
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.cmgroups(o),
             "mp< mf> mp< f> mf< f> mf< ff> f< ff> f< fff>ff",
         )
@@ -119,7 +119,7 @@ def vn(m):
         library.box_adjustment(o)
     with baca.scope(m.get(13, 16)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.hairpins.exact(o.tleaves(), '"mp">o!')
+        baca.hairpin(o.tleaves(), '"mp">o!')
         baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
 
 
@@ -129,13 +129,13 @@ def va(m):
         library.clb_staff_positions(o, rotation=-1)
     with baca.scope(m.get(5, 8)) as o:
         baca.override.dls_staff_padding(o, 8)
-        baca.hairpins.exact(o.tleaves(), '"mp">o!')
+        baca.hairpin(o.tleaves(), '"mp">o!')
         baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
     with baca.scope(m.get(13, 32)) as o:
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11)))
         baca.override.dls_staff_padding(o, 8)
         baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.cmgroups(o),
             "p> pp< p> pp< mp> p< mp> p< mf> mp< mf> mp<"
             " f> mf< f> mf< ff> f< ff> f<fff",

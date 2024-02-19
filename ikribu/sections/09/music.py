@@ -126,7 +126,7 @@ def tutti(cache):
                 words = string.split()
                 words = words[:-2] + [words[-2] + words[-1]]
                 string = " ".join(words)
-                baca.hairpins.exact(
+                baca.hairpin(
                     lparts,
                     string,
                 )

@@ -145,7 +145,7 @@ def bcl(cache):
     cache.rebuild()
     m = cache["bcl"]
     with baca.scope(m.get(19, 20)) as o:
-        baca.hairpins.exact(o[-2:], "p>o!", rleak=True)
+        baca.hairpin(o[-2:], "p>o!", rleak=True)
         baca.pitch(o, "Bb1")
     with baca.scope(m.get(1, 21)) as o:
         baca.untie(o.leaves())
@@ -160,7 +160,7 @@ def vn(cache):
         m = cache["vn"]
     with baca.scope(m.get(9, 20)) as o:
         baca.dynamic(o.pleaf(0), "ppppp")
-        baca.hairpins.exact(o[-2:], "ppppp>o!", rleak=True)
+        baca.hairpin(o[-2:], "ppppp>o!", rleak=True)
         baca.markup(
             o.pleaf(0),
             r"\ikribu-strings-two-plus-three-markup",
@@ -183,7 +183,7 @@ def va(cache):
         m = cache["va"]
     with baca.scope(m.get(9, 20)) as o:
         baca.dynamic(o.pleaf(0), "ppppp")
-        baca.hairpins.exact(o[-2:], "ppppp>o!", rleak=True)
+        baca.hairpin(o[-2:], "ppppp>o!", rleak=True)
         baca.markup(
             o.pleaf(0),
             r"\ikribu-strings-two-plus-three-markup",
