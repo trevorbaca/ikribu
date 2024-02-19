@@ -81,7 +81,7 @@ def vc_rh(m):
         baca.override.script_staff_padding(o, 7)
         baca.override.text_script_staff_padding(o, 8)
         baca.override.text_spanner_staff_padding(o, 4)
-        parts_ = ["ff > ", "p < ", "f > ", "pp < ", "f > ", "ppp < "]
+        parts_ = ["ff> ", "p< ", "f> ", "pp< ", "f> ", "ppp< "]
         parts = abjad.CyclicTuple(parts_)
         for run in abjad.select.runs(o):
             lparts = abjad.select.partition_by_counts(
@@ -93,11 +93,13 @@ def vc_rh(m):
             count = len(lparts)
             my_parts = parts[: count + 1]
             string = "".join(my_parts)
-            string = string[:-3]
-            baca.hairpins.hairpin(
+            string = string[:-2]
+            words = string.split()
+            words = words[:-2] + [words[-2] + words[-1]]
+            string = " ".join(words)
+            baca.hairpins.exact(
                 lparts,
                 string,
-                glue=True,
             )
             parts = abjad.sequence.rotate(parts, -count)
         baca.override.dls_staff_padding(o, 9)

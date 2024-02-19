@@ -160,7 +160,7 @@ def strings(cache):
             library.bcps(o, rotation=rotation)
             baca.override.dls_staff_padding(o, 9)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
-            parts_ = ["p > ", "pp < ", "p > ", "ppp < ", "pp > ", "ppp < "]
+            parts_ = ["p> ", "pp< ", "p> ", "ppp< ", "pp> ", "ppp< "]
             parts = abjad.CyclicTuple(parts_)
             for run in abjad.select.runs(o):
                 lparts = abjad.select.partition_by_counts(
@@ -172,11 +172,13 @@ def strings(cache):
                 count = len(lparts)
                 my_parts = parts[: count + 1]
                 string = "".join(my_parts)
-                string = string[:-3]
-                baca.hairpins.hairpin(
+                string = string[:-2]
+                words = string.split()
+                words = words[:-2] + [words[-2] + words[-1]]
+                string = " ".join(words)
+                baca.hairpins.exact(
                     lparts,
                     string,
-                    glue=True,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.staff_position(o, 0)

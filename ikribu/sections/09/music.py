@@ -110,7 +110,7 @@ def tutti(cache):
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.override.dls_staff_padding(o, 10)
             baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
-            parts_ = ["ff > ", "p < ", "f > ", "pp < ", "p > ", "ppp < "]
+            parts_ = ["ff> ", "p< ", "f> ", "pp< ", "p> ", "ppp< "]
             parts = abjad.CyclicTuple(parts_)
             for run in abjad.select.runs(o):
                 lparts = abjad.select.partition_by_counts(
@@ -122,11 +122,13 @@ def tutti(cache):
                 count = len(lparts)
                 my_parts = parts[: count + 1]
                 string = "".join(my_parts)
-                string = string[:-3]
-                baca.hairpins.hairpin(
+                string = string[:-2]
+                words = string.split()
+                words = words[:-2] + [words[-2] + words[-1]]
+                string = " ".join(words)
+                baca.hairpins.exact(
                     lparts,
                     string,
-                    glue=True,
                 )
                 parts = abjad.sequence.rotate(parts, -count)
             baca.override.script_staff_padding(o, 7)

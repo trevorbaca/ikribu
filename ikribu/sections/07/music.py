@@ -97,10 +97,9 @@ def vn_va(cache):
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
             baca.override.dls_staff_padding(o, 4)
-            baca.hairpins.hairpin(
+            baca.hairpins.exact(
                 baca.select.omgroups(o, [1, 1]),
-                "sfpp < p >o !",
-                glue=True,
+                "sfpp< p>o!",
                 rleak=True,
             )
             baca.stem_tremolo(o.pleaves())
