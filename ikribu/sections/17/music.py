@@ -133,8 +133,8 @@ def bcl(m):
         baca.pitch(o, "B1")
         baca.repeat_tie(o.phead(0))
     with baca.scope(m.get(1, 7)) as o:
-        baca.hairpins.exact(o[:4], "pp<mf")
-        baca.hairpins.exact(o[4:], "mf>o!", rleak=True)
+        baca.hairpin(o[:4], "pp<mf")
+        baca.hairpin(o[4:], "mf>o!", rleak=True)
     with baca.scope(m.get(5, 7)) as o:
         baca.override.dls_staff_padding(o, 9)
 
@@ -176,7 +176,7 @@ def strings(cache):
                 words = string.split()
                 words = words[:-2] + [words[-2] + words[-1]]
                 string = " ".join(words)
-                baca.hairpins.exact(
+                baca.hairpin(
                     lparts,
                     string,
                 )

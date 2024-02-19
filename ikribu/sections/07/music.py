@@ -86,7 +86,7 @@ def bcl(m):
     with baca.scope(m.get(1, 4)) as o:
         baca.pitch(o, "F#3")
     with baca.scope(m.get(6, 8)) as o:
-        baca.hairpins.exact(o, "sfp>ppp")
+        baca.hairpin(o, "sfp>ppp")
         baca.pitch(o, "G2")
 
 
@@ -97,7 +97,7 @@ def vn_va(cache):
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
             baca.override.dls_staff_padding(o, 4)
-            baca.hairpins.exact(
+            baca.hairpin(
                 baca.select.omgroups(o, [1, 1]),
                 "sfpp< p>o!",
                 rleak=True,
@@ -136,7 +136,7 @@ def vn_va(cache):
 
 def vc(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.hairpins.exact(o, "p<ff")
+        baca.hairpin(o, "p<ff")
         baca.pitch(o, "F#3")
         baca.stem_tremolo(o.pleaves())
         baca.mspanners.text(

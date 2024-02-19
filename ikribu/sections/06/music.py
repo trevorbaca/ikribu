@@ -153,7 +153,7 @@ def vn_va(cache):
             baca.override.dls_staff_padding(o, 8)
             baca.markup(o.pleaf(0), r"\ikribu-sponges-on-bd-markup")
             for run in abjad.select.runs(o):
-                baca.hairpins.exact(
+                baca.hairpin(
                     baca.select.lparts(run, [3, 3]),
                     "f> p<f",
                 )
