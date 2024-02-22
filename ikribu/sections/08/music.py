@@ -113,7 +113,6 @@ def bcl(m):
 def vc(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.override.dls_staff_padding(o, 7)
-        baca.basic_glissando(o)
         baca.hairpins.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "ppp < pp >",
@@ -127,6 +126,7 @@ def vc(m):
         )
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitches(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
+        baca.basic_glissando(o)
         baca.stem_tremolo(o.pleaves())
         baca.override.tuplet_bracket_down(o)
 
