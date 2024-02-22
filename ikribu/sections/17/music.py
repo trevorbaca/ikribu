@@ -128,7 +128,7 @@ def bcl(m):
             exact=True,
         ),
         baca.repeat_tie(o.leaf(0))
-        baca.glissando(o)
+        baca.basic_glissando(o)
     with baca.scope(m[7]) as o:
         baca.pitch(o, "B1")
         baca.repeat_tie(o.phead(0))
@@ -147,7 +147,7 @@ def strings(cache):
     ):
         with baca.scope(cache[name].get(1, 5)) as o:
             library.glissando_pitches(o, octave=octave, rotation=rotation)
-            baca.glissando(o)
+            baca.basic_glissando(o)
     baca.clef(abjad.select.leaf(cache["vc"][1], 0), "tenor")
     for name, rotation in (
         ("vn_rh", 0),
