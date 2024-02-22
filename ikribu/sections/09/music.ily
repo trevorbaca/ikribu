@@ -1123,6 +1123,7 @@ number.9.Violin.Music = {
           %! REAPPLIED_INSTRUMENT_ALERT
         ^ \baca-reapplied-instrument-markup "(“Violin”)"
         [
+        \glissando
           %! REAPPLIED_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1132,17 +1133,23 @@ number.9.Violin.Music = {
         \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup
 
         b''8.
+        \glissando
 
         a'8
+        \glissando
 
         b'8.
         ]
+        \glissando
 
         g'2..
+        \glissando
 
         g''2
+        \glissando
 
         e''8
+        \glissando
 
     }
 
@@ -1152,27 +1159,36 @@ number.9.Violin.Music = {
 
         % [Violin.Music measure 2]
         f'''4.
+        \glissando
 
         e'''2..
+        \glissando
 
         d''2.
+        \glissando
 
     }
 
     % [Violin.Music measure 3]
     c''4
+    \glissando
 
     d'8
     [
+    \glissando
 
     e''8.
+    \glissando
 
     d''8
+    \glissando
 
     f''8.
     ]
+    \glissando
 
     f'2..
+    \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7
@@ -1180,6 +1196,7 @@ number.9.Violin.Music = {
 
         % [Violin.Music measure 4]
         a'2..
+        \glissando
 
     }
 
@@ -1189,27 +1206,36 @@ number.9.Violin.Music = {
 
         % [Violin.Music measure 5]
         g8
+        \glissando
 
         a2
+        \glissando
 
         b'8
+        \glissando
 
     }
 
     % [Violin.Music measure 6]
     a4
+    \glissando
 
     g1
+    \glissando
 
     a'8
     [
+    \glissando
 
     f'8.
+    \glissando
 
     f''8
+    \glissando
 
     d''16
     ]
+    \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 16/17
@@ -1217,12 +1243,16 @@ number.9.Violin.Music = {
 
         % [Violin.Music measure 7]
         e''8
+        \glissando
 
         d'2..
+        \glissando
 
         c''1
+        \glissando
 
         d''8
+        \glissando
 
     }
 
@@ -1232,6 +1262,7 @@ number.9.Violin.Music = {
 
         % [Violin.Music measure 8]
         e'''2.
+        \glissando
 
         f'''2
 
@@ -1981,6 +2012,7 @@ number.9.Viola.Music = {
         c''2..
           %! REAPPLIED_INSTRUMENT_ALERT
         ^ \baca-reapplied-instrument-markup "(“Viola”)"
+        \glissando
           %! REAPPLIED_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1990,21 +2022,27 @@ number.9.Viola.Music = {
         \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
 
         d'1
+        \glissando
 
         e''4.
+        \glissando
 
     }
 
     % [Viola.Music measure 2]
     d''2
+    \glissando
 
     f''1
+    \glissando
 
     f'8
     [
+    \glissando
 
     a'8
     ]
+    \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15
@@ -2013,17 +2051,23 @@ number.9.Viola.Music = {
         % [Viola.Music measure 3]
         g16
         [
+        \glissando
 
         a8
+        \glissando
 
         b'8.
         ]
+        \glissando
 
         a2..
+        \glissando
 
         g2
+        \glissando
 
         a'8
+        \glissando
 
     }
 
@@ -2033,17 +2077,22 @@ number.9.Viola.Music = {
 
         % [Viola.Music measure 4]
         f'4.
+        \glissando
 
         f''2
+        \glissando
 
         d''8
+        \glissando
 
     }
 
     % [Viola.Music measure 5]
     e''4
+    \glissando
 
     d'4
+    \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15
@@ -2051,18 +2100,24 @@ number.9.Viola.Music = {
 
         % [Viola.Music measure 6]
         c''2.
+        \glissando
 
         d''8
         [
+        \glissando
 
         e'''8.
+        \glissando
 
         f'''8
+        \glissando
 
         e''8.
         ]
+        \glissando
 
         g''2
+        \glissando
 
     }
 
@@ -2072,10 +2127,13 @@ number.9.Viola.Music = {
 
         % [Viola.Music measure 7]
         g'4.
+        \glissando
 
         b'1
+        \glissando
 
         a'2..
+        \glissando
 
     }
 

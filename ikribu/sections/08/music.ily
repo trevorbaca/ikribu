@@ -1239,6 +1239,7 @@ number.8.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
+    \glissando
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
@@ -1266,6 +1267,7 @@ number.8.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
+        \glissando
 
     }
 
@@ -1284,6 +1286,7 @@ number.8.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
+    \glissando
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
@@ -1304,6 +1307,7 @@ number.8.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
+        \glissando
 
     }
 
@@ -1322,6 +1326,7 @@ number.8.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
+    \glissando
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
@@ -1342,6 +1347,7 @@ number.8.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
+        \glissando
 
     }
 
@@ -1360,6 +1366,7 @@ number.8.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
+    \glissando
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
@@ -1380,6 +1387,7 @@ number.8.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
+        \glissando
 
     }
 
@@ -1398,6 +1406,7 @@ number.8.Cello.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
+    \glissando
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
@@ -1418,6 +1427,7 @@ number.8.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \>
+        \glissando
 
     }
 
