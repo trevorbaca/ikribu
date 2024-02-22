@@ -113,7 +113,7 @@ def bcl(m):
 def vc(m):
     with baca.scope(m.get(1, 11)) as o:
         baca.override.dls_staff_padding(o, 7)
-        baca.glissando(o)
+        baca.basic_glissando(o)
         baca.hairpins.cyclic(
             baca.select.cmgroups(o.tleaves()),
             "ppp < pp >",

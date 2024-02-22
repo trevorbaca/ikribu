@@ -99,12 +99,12 @@ def tutti(cache):
     with baca.scope(cache["vn_rh"].get(1, 8)) as o:
         library.bcps(o, rotation=0)
     with baca.scope(cache["vn"].get(1, 8)) as o:
-        baca.glissando(o)
+        baca.basic_glissando(o)
         library.glissando_pitches(o, octave=5, rotation=0)
     with baca.scope(cache["va_rh"].get(1, 8)) as o:
         library.bcps(o, rotation=-1)
     with baca.scope(cache["va"].get(1, 8)) as o:
-        baca.glissando(o)
+        baca.basic_glissando(o)
         library.glissando_pitches(o, octave=5, rotation=-10)
     for name in ["vn_rh", "va_rh"]:
         with baca.scope(cache[name].get(1, 8)) as o:
