@@ -187,7 +187,7 @@ def vn(m):
         baca.stem_tremolo(o.pleaves())
         runs = baca.select.runs(o)
         for i, run in enumerate(runs):
-            baca.basic_glissando(run)
+            baca.multistage_glissando(run)
             if i % 2 == 0:
                 baca.hairpin(run, "pp<p")
             else:
@@ -203,7 +203,7 @@ def va(m):
         baca.stem_tremolo(o.pleaves())
         runs = baca.select.runs(o)
         for i, run in enumerate(runs):
-            baca.basic_glissando(run)
+            baca.multistage_glissando(run)
             if i % 2 == 0:
                 baca.hairpin(run, "pp<p")
             else:
@@ -237,7 +237,7 @@ def vc(m):
         )
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.stem_tremolo(o.pleaves())
-        baca.basic_glissando(o)
+        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
         baca.override.tuplet_bracket_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
