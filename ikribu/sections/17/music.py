@@ -127,8 +127,8 @@ def bcl(m):
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
             exact=True,
         ),
+        baca.multistage_glissando(o)
         baca.repeat_tie(o.leaf(0))
-        baca.basic_glissando(o)
     with baca.scope(m[7]) as o:
         baca.pitch(o, "B1")
         baca.repeat_tie(o.phead(0))
