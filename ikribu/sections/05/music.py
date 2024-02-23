@@ -109,7 +109,7 @@ def vc(m):
     with baca.scope(m.get(1, 10)) as o:
         baca.clef(o.leaf(0), "tenor")
         library.glissando_pitches(o, octave=4, rotation=-20)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
 
 
 @baca.build.timed("make_score")

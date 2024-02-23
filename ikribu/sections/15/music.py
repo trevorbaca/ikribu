@@ -155,7 +155,7 @@ def vn(m):
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
         library.glissando_pitches(o, octave=5, rotation=0)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
 
 
 def va(m):
@@ -163,14 +163,14 @@ def va(m):
         baca.staff_lines(o.leaf(0), 5)
         baca.clef(o.leaf(0), "treble")
         library.glissando_pitches(o, octave=5, rotation=-10)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
 
 
 def vc(m):
     with baca.scope(m.get(1, 10)) as o:
         baca.clef(o.leaf(0), "tenor")
         library.glissando_pitches(o, octave=4, rotation=-20)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
 
 
 @baca.build.timed("make_score")
