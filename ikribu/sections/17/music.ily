@@ -412,46 +412,41 @@ number.17.BassClarinet.Music = {
     \glissando
     \repeatTie
 
+    \hide NoteHead
+    \override Accidental.stencil = ##f
+    \override NoteColumn.glissando-skip = ##t
+    \override NoteHead.no-ledgers = ##t
     a''4
-    \glissando
 
     f''4
-    \glissando
 
     d''4
-    \glissando
 
     b'4
-    \glissando
 
     g'4
-    \glissando
 
     e'4
-    \glissando
 
     c'4
-    \glissando
 
     % [BassClarinet.Music measure 6]
     b4
-    \glissando
 
     a4
-    \glissando
 
     g4
-    \glissando
 
     f4
-    \glissando
 
     e4
-    \glissando
 
     d4
-    \glissando
 
+    \revert Accidental.stencil
+    \revert NoteColumn.glissando-skip
+    \revert NoteHead.no-ledgers
+    \undo \hide NoteHead
     cs!4
     - \tweak stencil ##f
     ~
