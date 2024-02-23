@@ -100,12 +100,12 @@ def tutti(cache):
         library.bcps(o, rotation=0)
     with baca.scope(cache["vn"].get(1, 8)) as o:
         library.glissando_pitches(o, octave=5, rotation=0)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
     with baca.scope(cache["va_rh"].get(1, 8)) as o:
         library.bcps(o, rotation=-1)
     with baca.scope(cache["va"].get(1, 8)) as o:
         library.glissando_pitches(o, octave=5, rotation=-10)
-        baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+        baca.glissando(o, do_not_hide_middle_note_heads=True)
     for name in ["vn_rh", "va_rh"]:
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.override.dls_staff_padding(o, 10)

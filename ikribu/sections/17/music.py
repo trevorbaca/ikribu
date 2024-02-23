@@ -127,7 +127,7 @@ def bcl(m):
             "Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1",
             exact=True,
         ),
-        baca.multistage_glissando(o)
+        baca.glissando(o)
         baca.repeat_tie(o.leaf(0))
     with baca.scope(m[7]) as o:
         baca.pitch(o, "B1")
@@ -147,7 +147,7 @@ def strings(cache):
     ):
         with baca.scope(cache[name].get(1, 5)) as o:
             library.glissando_pitches(o, octave=octave, rotation=rotation)
-            baca.multistage_glissando(o, do_not_hide_middle_note_heads=True)
+            baca.glissando(o, do_not_hide_middle_note_heads=True)
     baca.clef(abjad.select.leaf(cache["vc"][1], 0), "tenor")
     for name, rotation in (
         ("vn_rh", 0),
