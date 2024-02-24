@@ -75,7 +75,7 @@ def bcl(m):
 
 def vc_rh(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-half-clt-markup")
         baca.staff_position(o, 0)
         library.bcps(o, rotation=-2)
         baca.override.script_staff_padding(o, 7)

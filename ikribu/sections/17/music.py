@@ -159,7 +159,7 @@ def strings(cache):
             baca.override.text_spanner_staff_padding(o, 4)
             library.bcps(o, rotation=rotation)
             baca.override.dls_staff_padding(o, 9)
-            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.markup(o.pleaf(0), r"\baca-boxed-half-clt-markup")
             parts_ = ["p> ", "pp< ", "p> ", "ppp< ", "pp> ", "ppp< "]
             parts = abjad.CyclicTuple(parts_)
             for run in abjad.select.runs(o):

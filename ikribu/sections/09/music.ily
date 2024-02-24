@@ -461,7 +461,7 @@ number.9.ViolinRH.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ff
-        ^ \baca-half-clt-markup
+        ^ \baca-boxed-half-clt-markup
         - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
@@ -1322,7 +1322,7 @@ number.9.ViolaRH.Music = {
       %! EXPLICIT_DYNAMIC
     \ff
     - \upbow
-    ^ \baca-half-clt-markup
+    ^ \baca-boxed-half-clt-markup
     - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP

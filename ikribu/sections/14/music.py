@@ -329,7 +329,7 @@ def vc(m):
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.pitch(o, "G5")
     for n in [7, 20]:
-        baca.markup(baca.select.pleaf(m[n], 0), r"\baca-xp-markup")
+        baca.markup(baca.select.pleaf(m[n], 0), r"\baca-boxed-xp-markup")
     with baca.scope(m[9]) as o:
         baca.clef(o.leaf(0), "treble")
         baca.dynamic(o.pleaf(0), "sffz")
