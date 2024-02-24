@@ -114,7 +114,7 @@ def bcl(cache):
 def all_rh(cache):
     for name in ["vn_rh", "va_rh", "vc_rh"]:
         with baca.scope(cache[name].get(1, 10)) as o:
-            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.markup(o.pleaf(0), r"\baca-boxed-half-clt-markup")
             parts_ = ["ff> ", "p< ", "f> ", "pp< ", "p> ", "ppp< "]
             parts = abjad.CyclicTuple(parts_)
             for run in abjad.select.runs(o):

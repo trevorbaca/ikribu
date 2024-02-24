@@ -1180,7 +1180,7 @@ number.12.Violin.Music = {
         - \tweak extra-offset #'(-3 . 0)
           %! EXPLICIT_DYNAMIC
         \baca-effort-mp
-        ^ \baca-col-legno-battuto-markup
+        ^ \baca-boxed-col-legno-battuto-markup
         [
 
         c'8
@@ -1771,7 +1771,7 @@ number.12.Viola.Music = {
         - \tweak extra-offset #'(-3 . 0)
           %! EXPLICIT_DYNAMIC
         \baca-effort-mp
-        ^ \baca-col-legno-battuto-markup
+        ^ \baca-boxed-col-legno-battuto-markup
         [
 
         c'8

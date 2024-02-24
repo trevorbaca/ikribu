@@ -3935,7 +3935,7 @@ number.14.Cello.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \fff
-    ^ \baca-xp-markup
+    ^ \baca-boxed-xp-markup
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
@@ -4237,7 +4237,7 @@ number.14.Cello.Music = {
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
     \fff
-    ^ \baca-xp-markup
+    ^ \baca-boxed-xp-markup
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 

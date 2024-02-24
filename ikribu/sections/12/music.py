@@ -196,7 +196,7 @@ def vn(m):
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         ),
-        baca.markup(o.pleaf(0), r"\baca-col-legno-battuto-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-col-legno-battuto-markup")
         baca.staccato(o.pheads())
         baca.override.text_script_padding(o, 2.5)
         library.clb_staff_positions(o)
@@ -211,7 +211,7 @@ def va(m):
             abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
             abjad.Tweak(r"- \tweak extra-offset #'(-3 . 0)"),
         )
-        baca.markup(o.pleaf(0), r"\baca-col-legno-battuto-markup")
+        baca.markup(o.pleaf(0), r"\baca-boxed-col-legno-battuto-markup")
         baca.staccato(o.pheads())
         baca.override.text_script_padding(o, 2.5)
         library.clb_staff_positions(o)

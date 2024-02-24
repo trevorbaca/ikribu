@@ -523,7 +523,7 @@ number.17.ViolinRH.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \p
-        ^ \baca-half-clt-markup
+        ^ \baca-boxed-half-clt-markup
         - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP
@@ -1075,7 +1075,7 @@ number.17.ViolaRH.Music = {
       %! EXPLICIT_DYNAMIC
     \p
     - \upbow
-    ^ \baca-half-clt-markup
+    ^ \baca-boxed-half-clt-markup
     - \baca-solid-line-with-arrow
     - \baca-bcp-spanner-left-text #7 #7
     \bacaStartTextSpanBCP
@@ -1654,7 +1654,7 @@ number.17.CelloRH.Music = {
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \p
-        ^ \baca-half-clt-markup
+        ^ \baca-boxed-half-clt-markup
         - \baca-solid-line-with-arrow
         - \baca-bcp-spanner-left-text #0 #7
         \bacaStartTextSpanBCP

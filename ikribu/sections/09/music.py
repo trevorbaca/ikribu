@@ -109,7 +109,7 @@ def tutti(cache):
     for name in ["vn_rh", "va_rh"]:
         with baca.scope(cache[name].get(1, 8)) as o:
             baca.override.dls_staff_padding(o, 10)
-            baca.markup(o.pleaf(0), r"\baca-half-clt-markup")
+            baca.markup(o.pleaf(0), r"\baca-boxed-half-clt-markup")
             parts_ = ["ff> ", "p< ", "f> ", "pp< ", "p> ", "ppp< "]
             parts = abjad.CyclicTuple(parts_)
             for run in abjad.select.runs(o):
