@@ -315,7 +315,7 @@ def vc(m):
             direction=abjad.DOWN,
         )
         baca.override.note_head_style_harmonic(o.pleaves())
-        baca.pitch(o, "F~5")
+        baca.pitch(o, "Fqf5")
     with baca.scope(m[6]) as o:
         baca.clef(o.leaf(0), "treble")
         baca.dynamic(o.pleaf(0), "sfz")
@@ -341,7 +341,7 @@ def vc(m):
             direction=abjad.DOWN,
         )
         baca.override.note_head_style_harmonic(o.pleaves())
-        baca.pitch(o, "F~5")
+        baca.pitch(o, "Fqf5")
     with baca.scope(m[14]) as o:
         baca.clef(o.leaf(0), "treble")
         baca.dynamic(o.pleaf(0), "sffz")
@@ -377,7 +377,7 @@ def vc(m):
             direction=abjad.DOWN,
         )
         baca.override.note_head_style_harmonic(o.pleaves())
-        baca.pitch(o, "C+6")
+        baca.pitch(o, "Cqs6")
 
 
 def strings(cache):

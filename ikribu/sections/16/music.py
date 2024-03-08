@@ -131,7 +131,7 @@ def bcl(cache):
     with baca.scope(m[10]) as o:
         baca.pitch(o, "<Bb1 F4>")
     with baca.scope(m.get(11, 12)) as o:
-        baca.pitch(o, "<Bb1 Ab~4>")
+        baca.pitch(o, "<Bb1 Atqf4>")
     with baca.scope(m[13]) as o:
         baca.pitch(o, "<Bb1 F4>")
     with baca.scope(m[14]) as o:

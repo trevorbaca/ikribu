@@ -214,7 +214,7 @@ def va(m):
 def vc(m):
     with baca.scope(m[1]) as o:
         baca.markup(o.pleaf(0), r"\baca-pizz-markup")
-        baca.pitch(o, "F~5")
+        baca.pitch(o, "Fqf5")
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.laissez_vibrer(o.ptails())
         baca.markup(
@@ -232,7 +232,7 @@ def vc(m):
         baca.override.text_spanner_staff_padding(o, 3.5)
         baca.pitches(
             o,
-            "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
+            "D5 Fqf5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
             strict=True,
         )
         baca.override.note_head_style_harmonic(o.pleaves())

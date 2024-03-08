@@ -151,7 +151,7 @@ def vc(m):
         baca.clef(o.leaf(0), "treble")
         baca.staff_lines(o.leaf(0), 5)
         baca.markup(o.pleaf(0), r"\markup pizz.")
-        baca.pitch(o, "F~5")
+        baca.pitch(o, "Fqf5")
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.laissez_vibrer(o.ptails())
         baca.markup(o.pleaf(0), r"\baca-string-iii-markup", direction=abjad.DOWN)
