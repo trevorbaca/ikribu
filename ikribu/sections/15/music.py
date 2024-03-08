@@ -104,7 +104,7 @@ def bcl(cache):
         baca.markup(o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup")
         baca.pitch(o, "Bb1")
     with baca.scope(m.get(6, 10)) as o:
-        baca.pitch(o, "<Bb1 D4>")
+        baca.pitch(o, "Bb1:D4")
         cache.rebuild()
         m = cache["bcl"]
     with baca.scope(m.get(6, 10)) as o:

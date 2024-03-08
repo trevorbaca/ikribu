@@ -119,29 +119,29 @@ def VC(voice, time_signatures):
 def bcl(cache):
     m = cache["bcl"]
     with baca.scope(m.get(1, 2)) as o:
-        baca.pitch(o, "<Bb1 D4>")
+        baca.pitch(o, "Bb1:D4")
     with baca.scope(m.get(3, 6)) as o:
-        baca.pitch(o, "<Bb1 F4>")
+        baca.pitch(o, "Bb1:F4")
     with baca.scope(m[7]) as o:
-        baca.pitch(o, "<Bb1 D4>"),
+        baca.pitch(o, "Bb1:D4"),
     with baca.scope(m[8]) as o:
         baca.pitch(o, "Bb1")
     with baca.scope(m[9]) as o:
-        baca.pitch(o, "<Bb1 D4>")
+        baca.pitch(o, "Bb1:D4")
     with baca.scope(m[10]) as o:
-        baca.pitch(o, "<Bb1 F4>")
+        baca.pitch(o, "Bb1:F4")
     with baca.scope(m.get(11, 12)) as o:
-        baca.pitch(o, "<Bb1 Atqf4>")
+        baca.pitch(o, "Bb1:Atqf4")
     with baca.scope(m[13]) as o:
-        baca.pitch(o, "<Bb1 F4>")
+        baca.pitch(o, "Bb1:F4")
     with baca.scope(m[14]) as o:
         baca.pitch(o, "Bb1")
     with baca.scope(m.get(15, 16)) as o:
-        baca.pitch(o, "<Bb1 D4>")
+        baca.pitch(o, "Bb1:D4")
     with baca.scope(m[17]) as o:
-        baca.pitch(o, "<Bb1 F4>")
+        baca.pitch(o, "Bb1:F4")
     with baca.scope(m[18]) as o:
-        baca.pitch(o, "<Bb1 D4>")
+        baca.pitch(o, "Bb1:D4")
     cache.rebuild()
     m = cache["bcl"]
     with baca.scope(m.get(19, 20)) as o:
@@ -155,7 +155,7 @@ def bcl(cache):
 def vn(cache):
     m = cache["vn"]
     with baca.scope(m.get(9, 20)) as o:
-        baca.pitch(o, "<E4 F#4>")
+        baca.pitch(o, "E4:F#4")
         cache.rebuild()
         m = cache["vn"]
     with baca.scope(m.get(9, 20)) as o:
@@ -178,7 +178,7 @@ def vn(cache):
 def va(cache):
     m = cache["va"]
     with baca.scope(m.get(9, 20)) as o:
-        baca.pitch(o, "<Eb4 F4>")
+        baca.pitch(o, "Eb4:F4")
         cache.rebuild()
         m = cache["va"]
     with baca.scope(m.get(9, 20)) as o:
