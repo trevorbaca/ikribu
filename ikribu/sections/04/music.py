@@ -233,7 +233,7 @@ def vc(m):
         baca.pitches(
             o,
             "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3",
-            exact=True,
+            strict=True,
         )
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.stem_tremolo(o.pleaves())
