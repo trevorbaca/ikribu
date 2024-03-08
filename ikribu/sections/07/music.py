@@ -91,8 +91,8 @@ def bcl(m):
 
 
 def vn_va(cache):
-    baca.pitch(cache["vn"].get(6, 7), "<E4 F#4>")
-    baca.pitch(cache["va"].get(6, 7), "<Eb4 F4>")
+    baca.pitch(cache["vn"].get(6, 7), "E4:F#4")
+    baca.pitch(cache["va"].get(6, 7), "Eb4:F4")
     cache.rebuild()
     for name in ["vn", "va"]:
         with baca.scope(cache[name].get(6, 7)) as o:
