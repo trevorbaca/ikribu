@@ -125,7 +125,7 @@ def vc(m):
             direction=abjad.DOWN,
         )
         baca.override.note_head_style_harmonic(o.pleaves())
-        baca.pitches(o, "D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
+        baca.pitches(o, "D5 Fqf5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3")
         baca.glissando(o, do_not_hide_middle_note_heads=True)
         baca.stem_tremolo(o.pleaves())
         baca.override.tuplet_bracket_down(o)

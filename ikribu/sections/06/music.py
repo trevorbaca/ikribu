@@ -138,11 +138,11 @@ def bcl(m):
         baca.dynamic(o.pleaf(0), "ppp")
         baca.pitch(o, "E3")
     with baca.scope(m.get(5, 8)) as o:
-        baca.pitch(o, "E+3")
+        baca.pitch(o, "Eqs3")
     with baca.scope(m.get(9, 12)) as o:
         baca.pitch(o, "F3"),
     with baca.scope(m.get(13, 16)) as o:
-        baca.pitch(o, "F+3"),
+        baca.pitch(o, "Fqs3"),
 
 
 def vn_va(cache):
@@ -181,7 +181,7 @@ def vc(m):
     with baca.scope(m.get(9, 12)) as o:
         baca.pitch(o, "F3")
     with baca.scope(m.get(13, 16)) as o:
-        baca.pitch(o, "F+3")
+        baca.pitch(o, "Fqs3")
 
 
 @baca.build.timed("make_score")
