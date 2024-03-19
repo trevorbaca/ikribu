@@ -120,7 +120,8 @@ def vn(m):
     with baca.scope(m.get(13, 16)) as o:
         baca.override.dls_staff_padding(o, 8)
         baca.hairpin(o.tleaves(), '"mp">o!')
-        baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
+        baca.override.dynamic_text_x_extent_zero(o[0])
+        baca.override.hairpin_shorten_pair(o[0], (6, 0))
 
 
 def va(m):
@@ -130,7 +131,8 @@ def va(m):
     with baca.scope(m.get(5, 8)) as o:
         baca.override.dls_staff_padding(o, 8)
         baca.hairpin(o.tleaves(), '"mp">o!')
-        baca.override.hairpin_start_shift(o.tleaves()[0], '"mp"')
+        baca.override.dynamic_text_x_extent_zero(o[0])
+        baca.override.hairpin_shorten_pair(o[0], (6, 0))
     with baca.scope(m.get(13, 32)) as o:
         baca.accent(abjad.select.get(o.pheads(), ~abjad.Pattern([0, 5], period=11)))
         baca.override.dls_staff_padding(o, 8)
