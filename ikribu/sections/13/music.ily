@@ -2062,8 +2062,7 @@ number.13.Violin.Music = {
 
     % [Violin.Music measure 13]
     \once \override DynamicText.X-extent = #'(0 . 0)
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)
-    \once \override Hairpin.shorten-pair = #'(2.25 . 0)
+    \once \override Hairpin.shorten-pair = #'(6 . 0)
     \override DynamicLineSpanner.staff-padding = 8
     c'8
     - \staccato
@@ -3149,8 +3148,7 @@ number.13.Viola.Music = {
 
         % [Viola.Music measure 5]
         \once \override DynamicText.X-extent = #'(0 . 0)
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0)
-        \once \override Hairpin.shorten-pair = #'(2.25 . 0)
+        \once \override Hairpin.shorten-pair = #'(6 . 0)
         \override DynamicLineSpanner.staff-padding = 8
         d'8
         - \staccato
