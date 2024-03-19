@@ -105,14 +105,12 @@
     % \consists Bar_number_engraver
     % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
     \consists Staff_collecting_engraver
-    \consists Staff_symbol_engraver
     \consists Time_signature_engraver
     \accepts GlobalRests
     \accepts GlobalSkips
     \accepts PageLayout
     \override BarNumber.Y-extent = ##f
     \override BarNumber.font-size = 1
-    \override StaffSymbol.stencil = ##f
     \override TextSpanner.to-barline = ##t
     % prevents StaffSymbol from starting too early after cut-away measures:
     \override TimeSignature.X-extent = ##f
