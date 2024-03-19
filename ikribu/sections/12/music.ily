@@ -931,11 +931,14 @@ number.12.ViolinRH.Music = {
       %! EXPLICIT_STAFF_LINES
     \startStaff
     R1 * 4/4
-      %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
+    %@%   %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    \ppp
+    %@%   %! baca.treat.treat_persistent_wrapper()
+      %! REAPPLIED_DYNAMIC
+    %@% - \tweak color #(x11-color 'green4)
+      %! REAPPLIED_DYNAMIC
+    %@% \ppp
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -1522,11 +1525,14 @@ number.12.ViolaRH.Music = {
       %! EXPLICIT_STAFF_LINES
     \startStaff
     R1 * 4/4
-      %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
+    %@%   %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    \p
+    %@%   %! baca.treat.treat_persistent_wrapper()
+      %! REAPPLIED_DYNAMIC
+    %@% - \tweak color #(x11-color 'green4)
+      %! REAPPLIED_DYNAMIC
+    %@% \p
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -2089,11 +2095,14 @@ number.12.CelloRH.Music = {
       %! EXPLICIT_STAFF_LINES
     \startStaff
     R1 * 4/4
-      %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
+    %@%   %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    \pp
+    %@%   %! baca.treat.treat_persistent_wrapper()
+      %! REAPPLIED_DYNAMIC
+    %@% - \tweak color #(x11-color 'green4)
+      %! REAPPLIED_DYNAMIC
+    %@% \pp
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
       %! REAPPLIED_CLEF_REDRAW_COLOR

@@ -1012,11 +1012,14 @@ number.7.CelloRH.Music = {
       %! REAPPLIED_STAFF_LINES
     \startStaff
     R1 * 4/4
-      %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
+    %@%   %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
-    \pp
+    %@%   %! baca.treat.treat_persistent_wrapper()
+      %! REAPPLIED_DYNAMIC
+    %@% - \tweak color #(x11-color 'green4)
+      %! REAPPLIED_DYNAMIC
+    %@% \pp
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"4" #"4"
       %! REAPPLIED_CLEF_REDRAW_COLOR
