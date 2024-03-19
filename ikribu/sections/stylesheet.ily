@@ -24,3 +24,6 @@
   barNumberVisibility = #all-bar-numbers-visible
   indent = 0
 }
+
+local-measure-number-extra-offset = #'(0 . 7)
+stage-number-extra-offset = #'(0 . 13)
