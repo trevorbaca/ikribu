@@ -238,7 +238,7 @@ def vc(m):
         baca.override.note_head_style_harmonic(o.pleaves())
         baca.stem_tremolo(o.pleaves())
         baca.glissando(o, do_not_hide_middle_note_heads=True)
-        baca.override.tuplet_bracket_down(o)
+        baca.override.tuplet_bracket_direction_down(o)
         baca.override.dls_staff_padding(o, 7)
         with baca.scope(m.get(2, 16)) as o:
             baca.hairpins.cyclic(
