@@ -200,7 +200,7 @@ def persist_score(score, environment):
         first_section=True,
         part_manifest=library.part_manifest(),
     )
-    baca.tags.activate(
+    baca.section.activate_tags(
         score,
         baca.tags.LOCAL_MEASURE_NUMBER,
         baca.tags.STAGE_NUMBER,
