@@ -321,7 +321,7 @@ number.9.BassClarinet.Music = {
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-    \once \override Staff.InstrumentName.color = #(x11-color 'green4)
+    %@% \once \override Staff.InstrumentName.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)
       %! EXPLICIT_BAR_EXTENT
@@ -348,16 +348,16 @@ number.9.BassClarinet.Music = {
       %! EXPLICIT_DYNAMIC
     \ppp
       %! REAPPLIED_INSTRUMENT_ALERT
-    ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
+    %@% ^ \baca-reapplied-instrument-markup "(“BassClarinet”)"
     - \tweak stencil ##f
     ~
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-    \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)
+    %@% \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)
       %! -PARTS
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
-    \set Staff.shortInstrumentName = \ikribu-bcl-markup
+    \set Staff.shortInstrumentName = \ikribu-bcl-markup %@%
 
     % [BassClarinet.Music measure 2]
     ef1..
@@ -1100,7 +1100,7 @@ number.9.Violin.Music = {
           %! REAPPLIED_STAFF_LINES_COLOR
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
+        %@% \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! REAPPLIED_BAR_EXTENT
@@ -1121,16 +1121,16 @@ number.9.Violin.Music = {
         \startStaff
         c''8
           %! REAPPLIED_INSTRUMENT_ALERT
-        ^ \baca-reapplied-instrument-markup "(“Violin”)"
+        %@% ^ \baca-reapplied-instrument-markup "(“Violin”)"
         [
         \glissando
           %! REAPPLIED_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
+        %@% \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
           %! -PARTS
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
-        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup
+        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vn-markup %@%
 
         b''8.
         \glissando
@@ -1990,7 +1990,7 @@ number.9.Viola.Music = {
           %! REAPPLIED_STAFF_LINES_COLOR
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)
           %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
+        %@% \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! REAPPLIED_BAR_EXTENT
@@ -2011,15 +2011,15 @@ number.9.Viola.Music = {
         \startStaff
         c''2..
           %! REAPPLIED_INSTRUMENT_ALERT
-        ^ \baca-reapplied-instrument-markup "(“Viola”)"
+        %@% ^ \baca-reapplied-instrument-markup "(“Viola”)"
         \glissando
           %! REAPPLIED_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'OliveDrab)
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
+        %@% \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
           %! -PARTS
           %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
-        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
+        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup %@%
 
         d'1
         \glissando
@@ -2263,7 +2263,7 @@ number.9.Cello.Music = {
       %! REAPPLIED_STAFF_LINES_COLOR
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)
       %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-    \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
+    %@% \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! REAPPLIED_BAR_EXTENT
@@ -2291,14 +2291,14 @@ number.9.Cello.Music = {
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"8" #"4"
       %! REAPPLIED_INSTRUMENT_ALERT
-    ^ \baca-reapplied-instrument-markup "(“Cello”)"
+    %@% ^ \baca-reapplied-instrument-markup "(“Cello”)"
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-    \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
+    %@% \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
       %! -PARTS
       %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
-    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup %@%
 
     % [Cello.Music measure 2]
     R1 * 7/4
