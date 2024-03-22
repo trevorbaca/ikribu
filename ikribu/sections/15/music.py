@@ -97,7 +97,7 @@ def bcl(cache):
     m = cache["bcl"]
     with baca.scope(m.get(1, 5)) as o:
         wrappers = baca.override.text_script_extra_offset(o, (0, 7))
-        baca.tags.wrappers(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
+        baca.tags.tag(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         for wrapper in wrappers:
             wrapper.deactivate = True
         baca.dynamic(o.pleaf(0), "p")
