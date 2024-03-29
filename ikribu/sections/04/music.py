@@ -224,10 +224,9 @@ def vc(m):
         )
         baca.dynamic(o.pleaf(0), "sfz")
     with baca.scope(m.get(2, 16)) as o:
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "trem. flaut. tasto. (arco) => trem. flaut. XP",
-            do_not_rleak=True,
         )
         baca.override.text_spanner_staff_padding(o, 3.5)
         baca.pitches(
