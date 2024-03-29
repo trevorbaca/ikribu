@@ -111,10 +111,9 @@ def vn_va(cache):
                     r"\ikribu-strings-two-plus-three-markup",
                     direction=abjad.DOWN,
                 )
-                baca.mspanners.text(
+                baca.spanners.text(
                     [o],
                     "trem. flaut. XP => trem. flaut. tast.",
-                    do_not_rleak=True,
                 )
                 baca.staff_lines(o.leaf(0), 5)
             elif name == "va":
@@ -126,10 +125,9 @@ def vn_va(cache):
                 baca.clef(o.leaf(0), "treble")
                 baca.override.clef_extra_offset(o.leaf(0), (-2.5, 0))
                 baca.override.clef_x_extent_false(o.leaf(0))
-                baca.mspanners.text(
+                baca.spanners.text(
                     [o],
                     "trem. flaut. XP => trem. flaut. tast.",
-                    do_not_rleak=True,
                 )
                 baca.staff_lines(o.leaf(0), 5)
 
@@ -139,10 +137,9 @@ def vc(m):
         baca.hairpin(o, "p<ff")
         baca.pitch(o, "F#3")
         baca.stem_tremolo(o.pleaves())
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "(trem. flaut. tast.) => trem. XP (non. flaut.)",
-            do_not_rleak=True,
         )
         baca.override.text_spanner_staff_padding(o, 3.5)
     with baca.scope(m.get(6, 7)) as o:

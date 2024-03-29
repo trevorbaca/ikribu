@@ -128,26 +128,23 @@ def vn(m):
         baca.pitch(o, "E4")
         baca.stem_tremolo(o.pleaves())
     with baca.scope(m.get(1, 3)) as o:
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
-            do_not_rleak=True,
         )
         baca.hairpin(o[:2], "ppp<p")
         baca.hairpin(o[-1:], "p>o!", rleak=True)
     with baca.scope(m.get(7, 9)) as o:
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
-            do_not_rleak=True,
         )
         baca.hairpin(o[:2], "ppp<p")
         baca.hairpin(o[-1:], "p>o!", rleak=True)
     with baca.scope(m.get(13, 15)) as o:
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
-            do_not_rleak=True,
         )
         baca.hairpin(o[:2], "ppp<p")
         baca.hairpin(o[-1:], "p>o!", rleak=True)
@@ -163,10 +160,9 @@ def va(m):
         baca.markup(o.pleaf(0), r"\baca-string-ii-markup", direction=abjad.DOWN)
         baca.pitch(o, "Eb4")
         baca.stem_tremolo(o.pleaves())
-        baca.mspanners.text(
+        baca.spanners.text(
             [o],
             "trem. flaut. pont. => trem. flaut. tast.",
-            do_not_rleak=True,
         )
         baca.hairpin(o[:5], "ppp<mf")
         baca.hairpin(o[-1:], "mf>o!", rleak=True)
