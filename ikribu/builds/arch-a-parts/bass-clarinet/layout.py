@@ -5,8 +5,8 @@ part_abbreviation = "BCL"
 
 def main():
     padding = 0
-    layout = baca.layout.layout(
-        baca.layout.page(
+    layout = baca.layout.Layout(
+        baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=38, distances=(padding,)),
             baca.layout.System(10, y_offset=66, distances=(padding,)),
@@ -15,7 +15,7 @@ def main():
             baca.layout.System(42, y_offset=150, distances=(padding,)),
             baca.layout.System(50, y_offset=178, distances=(padding,)),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             2,
             baca.layout.System(63, y_offset=10, distances=(padding,)),
             baca.layout.System(74, y_offset=38, distances=(padding,)),
@@ -25,7 +25,7 @@ def main():
             baca.layout.System(116, y_offset=150, distances=(padding,)),
             baca.layout.System(121, y_offset=178, distances=(padding,)),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             3,
             baca.layout.System(131, y_offset=10, distances=(padding,)),
             baca.layout.System(143, y_offset=38, distances=(padding,)),
@@ -35,7 +35,7 @@ def main():
             baca.layout.System(184, y_offset=150, distances=(padding,)),
             baca.layout.System(194, y_offset=178, distances=(padding,)),
         ),
-        baca.layout.page(
+        baca.layout.Page(
             4,
             baca.layout.System(203, y_offset=10, distances=(padding,)),
             baca.layout.System(212, y_offset=38, distances=(padding,)),
