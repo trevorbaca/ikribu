@@ -5,7 +5,7 @@ part_abbreviation = "BCL"
 
 def main():
     padding = 0
-    layout = baca.layout.Layout(
+    breaks = baca.layout.Breaks(
         baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=38, distances=(padding,)),
@@ -45,6 +45,8 @@ def main():
             baca.layout.System(247, y_offset=150, distances=(padding,)),
             baca.layout.System(250, y_offset=178, distances=(padding,)),
         ),
+    )
+    spacing = baca.layout.Spacing(
         default_spacing=(1, 2),
         spacing_overrides=(
             baca.layout.Override((32, 33), (2, 1)),
@@ -69,7 +71,7 @@ def main():
             baca.layout.Override((253, 257), (2, 1)),
         ),
     )
-    baca.build.write_layout_ly(layout)
+    baca.build.write_layout_ly(breaks, spacing)
 
 
 if __name__ == "__main__":
