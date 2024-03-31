@@ -4,7 +4,7 @@ part_abbreviation = "VN"
 
 
 def main():
-    layout = baca.layout.Layout(
+    breaks = baca.layout.Breaks(
         baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=75, distances=(15, 20)),
@@ -16,7 +16,7 @@ def main():
             baca.layout.System(49, y_offset=130, distances=(15, 20)),
         ),
     )
-    baca.build.write_layout_ly(layout)
+    baca.build.write_layout_ly(breaks)
 
 
 if __name__ == "__main__":
