@@ -226,7 +226,7 @@ def make_layout():
         default_spacing=(1, 12),
         spacing_overrides=(baca.layout.Override(10, (1, 16)),),
     )
-    baca.section.write_layout_ly(layout)
+    baca.build.write_layout_ly(layout)
 
 
 def main():
