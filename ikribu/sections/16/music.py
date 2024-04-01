@@ -304,7 +304,7 @@ def make_layout():
         ),
     )
     spacing = baca.layout.Spacing(
-        default_spacing=(1, 10),
+        default=(1, 10),
     )
     baca.build.write_layout_ly(breaks, spacing)
 
