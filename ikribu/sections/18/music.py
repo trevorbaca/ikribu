@@ -164,7 +164,6 @@ def persist_score(score, environment):
         environment,
         library.manifests,
         empty_fermata_measures=True,
-        error_on_not_yet_pitched=True,
         final_section=True,
         part_manifest=library.part_manifest(),
     )
