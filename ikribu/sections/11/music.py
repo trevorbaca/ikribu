@@ -148,7 +148,7 @@ def tutti(cache):
             baca.dynamic(
                 o.pleaf(0),
                 '"f"',
-                abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+                baca.postevent.x_extent_zero(),
                 baca.postevent.extra_offset((-2, 0)),
             ),
             baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")

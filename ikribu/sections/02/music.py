@@ -99,7 +99,7 @@ def va(m):
         baca.dynamic(
             o.pleaf(0),
             '"mf"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
 
