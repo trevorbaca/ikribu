@@ -165,21 +165,21 @@ def bcl(m):
         baca.dynamic(
             o.pleaf(0),
             '"mf"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
     with baca.scope(m[9]) as o:
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
     with baca.scope(m[13]) as o:
         baca.dynamic(
             o.pleaf(0),
             '"p"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-2, 0)),
         )
     with baca.scope(m.get(1, 16)) as o:
@@ -193,7 +193,7 @@ def vn(m):
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         ),
         baca.markup(o.pleaf(0), r"\baca-boxed-col-legno-battuto-markup")
@@ -208,7 +208,7 @@ def va(m):
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
         baca.markup(o.pleaf(0), r"\baca-boxed-col-legno-battuto-markup")
@@ -229,21 +229,21 @@ def vc(m):
         baca.dynamic(
             o.pleaf(0),
             '"mp"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
     with baca.scope(m[9]) as o:
         baca.dynamic(
             o.pleaf(0),
             '"mf"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-3, 0)),
         )
     with baca.scope(m[13]) as o:
         baca.dynamic(
             o.pleaf(0),
             '"f"',
-            abjad.Tweak(r"- \tweak X-extent #'(0 . 0)"),
+            baca.postevent.x_extent_zero(),
             baca.postevent.extra_offset((-2, 0)),
         )
 
