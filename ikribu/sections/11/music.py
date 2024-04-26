@@ -148,8 +148,8 @@ def tutti(cache):
             baca.dynamic(
                 o.pleaf(0),
                 '"f"',
-                baca.postevent.x_extent_zero(),
-                baca.postevent.extra_offset((-2, 0)),
+                baca.tweak.x_extent_zero(),
+                baca.tweak.extra_offset((-2, 0)),
             ),
             baca.markup(o.pleaf(0), r"\ikribu-stonecircle-pi-two-markup")
             if name == "bcl":
