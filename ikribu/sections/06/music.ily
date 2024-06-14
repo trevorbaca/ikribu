@@ -933,7 +933,7 @@ number.6.Violin.RHStaff = {
 number.6.Violin.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Violin.Music measure 1]
@@ -1006,7 +1006,7 @@ number.6.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Violin.Music measure 2]
@@ -1071,7 +1071,7 @@ number.6.Violin.Music = {
     - \accent
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [Violin.Music measure 6]
@@ -1114,7 +1114,7 @@ number.6.Violin.Music = {
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Violin.Music measure 9]
@@ -1142,7 +1142,7 @@ number.6.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12
+    \tuplet 12/8
     {
 
         % [Violin.Music measure 10]
@@ -1207,7 +1207,7 @@ number.6.Violin.Music = {
     - \accent
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Violin.Music measure 14]
@@ -1434,7 +1434,7 @@ number.6.Viola.Music = {
     \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup %@%
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Viola.Music measure 2]
@@ -1500,7 +1500,7 @@ number.6.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [Viola.Music measure 6]
@@ -1565,7 +1565,7 @@ number.6.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"7" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12
+    \tuplet 12/8
     {
 
         % [Viola.Music measure 10]
@@ -1593,7 +1593,7 @@ number.6.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Viola.Music measure 11]
@@ -1636,7 +1636,7 @@ number.6.Viola.Music = {
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Viola.Music measure 14]
@@ -1664,7 +1664,7 @@ number.6.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Viola.Music measure 15]

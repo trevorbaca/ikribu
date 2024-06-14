@@ -1165,7 +1165,7 @@ number.12.Violin.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12
+    \tuplet 12/8
     {
 
         % [Violin.Music measure 3]
@@ -1255,7 +1255,7 @@ number.12.Violin.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/20
+    \tuplet 20/16
     {
 
         % [Violin.Music measure 7]
@@ -1359,7 +1359,7 @@ number.12.Violin.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10
+    \tuplet 10/6
     {
 
         % [Violin.Music measure 11]
@@ -1433,7 +1433,7 @@ number.12.Violin.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12
+    \tuplet 12/8
     {
 
         % [Violin.Music measure 15]
@@ -1759,7 +1759,7 @@ number.12.Viola.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10
+    \tuplet 10/8
     {
 
         % [Viola.Music measure 3]
@@ -1843,7 +1843,7 @@ number.12.Viola.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18
+    \tuplet 18/16
     {
 
         % [Viola.Music measure 7]
@@ -1941,7 +1941,7 @@ number.12.Viola.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8
+    \tuplet 8/6
     {
 
         % [Viola.Music measure 11]
@@ -2009,7 +2009,7 @@ number.12.Viola.Music = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10
+    \tuplet 10/8
     {
 
         % [Viola.Music measure 15]

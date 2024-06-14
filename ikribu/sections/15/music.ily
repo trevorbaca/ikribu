@@ -580,7 +580,7 @@ number.15.ViolinRH.Music = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [ViolinRH.Music measure 3]
@@ -631,7 +631,7 @@ number.15.ViolinRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [ViolinRH.Music measure 4]
@@ -713,7 +713,7 @@ number.15.ViolinRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2
+    \tuplet 2/3
     {
 
         % [ViolinRH.Music measure 5]
@@ -782,7 +782,7 @@ number.15.ViolinRH.Music = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [ViolinRH.Music measure 7]
@@ -864,7 +864,7 @@ number.15.ViolinRH.Music = {
     \>
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6
+    \tuplet 6/7
     {
 
         % [ViolinRH.Music measure 9]
@@ -1035,7 +1035,7 @@ number.15.Violin.RHStaff = {
 number.15.Violin.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Violin.Music measure 1]
@@ -1101,7 +1101,7 @@ number.15.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16
+    \tuplet 16/14
     {
 
         % [Violin.Music measure 2]
@@ -1121,7 +1121,7 @@ number.15.Violin.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Violin.Music measure 4]
@@ -1134,7 +1134,7 @@ number.15.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8
+    \tuplet 8/6
     {
 
         % [Violin.Music measure 5]
@@ -1165,7 +1165,7 @@ number.15.Violin.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Violin.Music measure 7]
@@ -1178,7 +1178,7 @@ number.15.Violin.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [Violin.Music measure 8]
@@ -1215,7 +1215,7 @@ number.15.Violin.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15
+    \tuplet 15/14
     {
 
         % [Violin.Music measure 10]
@@ -1293,7 +1293,7 @@ number.15.ViolaRH.Music = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         % [ViolaRH.Music measure 2]
@@ -1393,7 +1393,7 @@ number.15.ViolaRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [ViolaRH.Music measure 3]
@@ -1463,7 +1463,7 @@ number.15.ViolaRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         % [ViolaRH.Music measure 4]
@@ -1539,7 +1539,7 @@ number.15.ViolaRH.Music = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [ViolaRH.Music measure 6]
@@ -1604,7 +1604,7 @@ number.15.ViolaRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [ViolaRH.Music measure 7]
@@ -1788,7 +1788,7 @@ number.15.ViolaRH.Music = {
     \<
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         % [ViolaRH.Music measure 10]
@@ -1884,7 +1884,7 @@ number.15.Viola.RHStaff = {
 number.15.Viola.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [Viola.Music measure 1]
@@ -1952,7 +1952,7 @@ number.15.Viola.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Viola.Music measure 3]
@@ -1968,7 +1968,7 @@ number.15.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10
+    \tuplet 10/8
     {
 
         % [Viola.Music measure 4]
@@ -2007,7 +2007,7 @@ number.15.Viola.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Viola.Music measure 6]
@@ -2020,7 +2020,7 @@ number.15.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8
+    \tuplet 8/6
     {
 
         % [Viola.Music measure 7]
@@ -2040,7 +2040,7 @@ number.15.Viola.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15
+    \tuplet 15/14
     {
 
         % [Viola.Music measure 9]
@@ -2070,7 +2070,7 @@ number.15.Viola.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16
+    \tuplet 16/14
     {
 
         % [Viola.Music measure 10]
@@ -2098,7 +2098,7 @@ number.15.Viola.Staff = {
 number.15.CelloRH.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [CelloRH.Music measure 1]
@@ -2160,7 +2160,7 @@ number.15.CelloRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9
+    \tuplet 9/7
     {
 
         % [CelloRH.Music measure 2]
@@ -2279,7 +2279,7 @@ number.15.CelloRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2
+    \tuplet 2/3
     {
 
         % [CelloRH.Music measure 3]
@@ -2349,7 +2349,7 @@ number.15.CelloRH.Music = {
     \bacaStartTextSpanBCP
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [CelloRH.Music measure 5]
@@ -2400,7 +2400,7 @@ number.15.CelloRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [CelloRH.Music measure 6]
@@ -2476,7 +2476,7 @@ number.15.CelloRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2
+    \tuplet 2/3
     {
 
         % [CelloRH.Music measure 7]
@@ -2535,7 +2535,7 @@ number.15.CelloRH.Music = {
     \<
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         % [CelloRH.Music measure 9]
@@ -2623,7 +2623,7 @@ number.15.CelloRH.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9
+    \tuplet 9/7
     {
 
         % [CelloRH.Music measure 10]
@@ -2805,7 +2805,7 @@ number.15.Cello.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15
+    \tuplet 15/14
     {
 
         % [Cello.Music measure 2]
@@ -2821,7 +2821,7 @@ number.15.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8
+    \tuplet 8/6
     {
 
         % [Cello.Music measure 3]
@@ -2838,7 +2838,7 @@ number.15.Cello.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Cello.Music measure 5]
@@ -2862,7 +2862,7 @@ number.15.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10
+    \tuplet 10/8
     {
 
         % [Cello.Music measure 6]
@@ -2888,7 +2888,7 @@ number.15.Cello.Music = {
     \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Cello.Music measure 8]
@@ -2901,7 +2901,7 @@ number.15.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16
+    \tuplet 16/14
     {
 
         % [Cello.Music measure 9]

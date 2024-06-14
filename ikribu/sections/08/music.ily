@@ -1254,7 +1254,7 @@ number.8.Cello.Music = {
     \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-vc-markup %@%
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 2]
@@ -1294,7 +1294,7 @@ number.8.Cello.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 4]
@@ -1334,7 +1334,7 @@ number.8.Cello.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 6]
@@ -1374,7 +1374,7 @@ number.8.Cello.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 8]
@@ -1414,7 +1414,7 @@ number.8.Cello.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 10]

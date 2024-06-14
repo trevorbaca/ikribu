@@ -1453,7 +1453,7 @@ number.18.Cello.RHStaff = {
 number.18.Cello.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15
+    \tuplet 15/14
     {
 
         % [Cello.Music measure 1]
@@ -1532,7 +1532,7 @@ number.18.Cello.Music = {
 
     }
 
-    \times 8/9
+    \tuplet 9/8
     {
 
         % [Cello.Music measure 2]
@@ -1599,7 +1599,7 @@ number.18.Cello.Music = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Cello.Music measure 4]
@@ -1626,7 +1626,7 @@ number.18.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 5]
@@ -1678,7 +1678,7 @@ number.18.Cello.Music = {
     r8.
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15
+    \tuplet 15/14
     {
 
         % [Cello.Music measure 7]
@@ -1704,7 +1704,7 @@ number.18.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [Cello.Music measure 8]
@@ -1753,7 +1753,7 @@ number.18.Cello.Music = {
     r8.
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [Cello.Music measure 10]
@@ -1778,7 +1778,7 @@ number.18.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         % [Cello.Music measure 11]
