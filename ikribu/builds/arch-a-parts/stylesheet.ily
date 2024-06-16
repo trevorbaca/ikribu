@@ -1,3 +1,4 @@
+\version "2.25.13"
 \include "../../stylesheet.ily"
 
 #(set-default-paper-size "arch a")
@@ -15,7 +16,7 @@
         \line { Trevor Bača (*1975) \hspace #10 }
     }
     title = \markup \column {
-        \center-align {
+        \center-column {
             \override #'(font-name . "Palatino")
             \fontsize #8
             \line { IKRIBU }
