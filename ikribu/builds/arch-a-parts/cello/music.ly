@@ -8,7 +8,7 @@
 \score {
     <<
         \keepWithTag Cello {
-        \include "layout.ly"
+        \include "layout.ily"
         }
         \keepWithTag Cello {
         \include "_sections/_.ly"

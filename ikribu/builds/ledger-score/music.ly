@@ -26,7 +26,7 @@
 \score {
     <<
         {
-        \include "layout.ly"
+        \include "layout.ily"
         }
         {
         \include "_sections/01.ly"
