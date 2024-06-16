@@ -8,7 +8,7 @@
 \score {
     <<
         {
-        \include "bass-clarinet-layout.ly"
+        \include "bass-clarinet-layout.ily"
         }
         \keepWithTag BassClarinet {
         \include "_sections/_.ly"
