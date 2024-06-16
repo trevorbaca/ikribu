@@ -1,3 +1,4 @@
+\version "2.25.16"
 #(set-default-paper-size "ledger")
 #(set-global-staff-size 12)
 
@@ -77,7 +78,7 @@
     }
     tagline = \markup { "" }
     title = \markup \column {
-        \center-align {
+        \center-column {
             \override #'(font-name . "Palatino")
             \fontsize #3
             \line {
