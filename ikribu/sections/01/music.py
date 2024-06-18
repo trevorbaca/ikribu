@@ -228,7 +228,7 @@ def make_layout(environment):
     spacing = baca.layout.Spacing(
         default=(1, 12),
     )
-    baca.build.write_layout_ily(
+    lilypond_file, bol_measure_numbers = baca.build.write_layout_ily(
         breaks,
         environment.metadata["time_signatures"],
         fermata_measure_numbers=environment.metadata.get("fermata_measure_numbers", []),

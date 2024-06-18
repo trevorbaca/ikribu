@@ -322,7 +322,7 @@ def make_layout(environment):
         default=(1, 12),
         overrides=(baca.layout.Override([5, 9, 13, 17], (1, 24)),),
     )
-    baca.build.write_layout_ily(
+    lilypond_file, bol_measure_numbers = baca.build.write_layout_ily(
         breaks,
         environment.metadata["time_signatures"],
         fermata_measure_numbers=environment.metadata.get("fermata_measure_numbers", []),
