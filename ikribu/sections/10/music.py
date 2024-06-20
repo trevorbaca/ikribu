@@ -137,7 +137,7 @@ def make_layout(environment):
     spacing = baca.layout.Spacing(
         default=(1, 24),
     )
-    return baca.build.write_layout_ily(
+    return baca.section.make_layout_score(
         breaks,
         environment.metadata["time_signatures"],
         fermata_measure_numbers=environment.metadata.get("fermata_measure_numbers", []),
