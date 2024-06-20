@@ -5,13 +5,15 @@
 \include "stylesheet.ily"
 \include "layout.ily"
 
-
-\score {
-    <<
-        \keepWithTag Cello {
+\score
+{
+  <<
+      \keepWithTag Cello
+      {
         \page-layout-score
-        }
-        \keepWithTag Cello {
+      }
+      \keepWithTag Cello
+      {
         \include "_sections/_.ly"
         \include "_sections/A.ly"
         \include "_sections/B.ly"
@@ -30,6 +32,6 @@
         \include "_sections/O.ly"
         \include "_sections/P.ly"
         \include "_sections/Q.ly"
-        }
-    >>
+      }
+  >>
 }
