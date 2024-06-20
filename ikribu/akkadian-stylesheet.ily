@@ -6,7 +6,7 @@
 \include "contexts.ily"
 
 \paper {
-    %bottom-margin = 10\mm
+    %bottom-margin = 10
     evenFooterMarkup = \markup
         \if \should-print-page-number
         \fill-line {
@@ -34,14 +34,14 @@
             " "
     }
     evenHeaderMarkup = \markup \fill-line { " " }
-    left-margin = 20\mm
+    left-margin = 20
     oddFooterMarkup = \evenFooterMarkup
     oddHeaderMarkup = \markup \fill-line { " " }
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
-    right-margin = 5\mm
+    right-margin = 5
     markup-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 90)
@@ -67,7 +67,7 @@
         (padding . 0)
         (stretchability . 0)
     )
-    top-margin = 0\mm
+    top-margin = 0
 }
 
 \header {
