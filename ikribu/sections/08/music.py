@@ -200,7 +200,7 @@ def make_layout(environment):
         default=(1, 12),
         overrides=(baca.layout.Override([2, 4, 6, 8, 10, 12], (1, 24)),),
     )
-    return baca.build.write_layout_ily(
+    return baca.section.make_layout_score(
         breaks,
         environment.metadata["time_signatures"],
         fermata_measure_numbers=environment.metadata.get("fermata_measure_numbers", []),

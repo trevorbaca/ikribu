@@ -16,7 +16,7 @@ def main(environment):
             baca.layout.System(49, y_offset=130, distances=(15, 20)),
         ),
     )
-    return baca.build.write_layout_ily(
+    return baca.section.make_layout_score(
         breaks,
         environment.time_signatures,
         fermata_measure_numbers=environment.fermata_measure_numbers,
