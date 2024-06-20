@@ -3,12 +3,13 @@
 \version "2.25.16"
 
 \include "stylesheet.ily"
+\include "layout.ily"
 
 
 \score {
     <<
         \keepWithTag Violin {
-        \include "layout.ily"
+        \page-layout-score
         }
         \keepWithTag Violin {
         \include "_sections/_.ly"

@@ -3,12 +3,13 @@
 \version "2.25.16"
 
 \include "stylesheet.ily"
+\include "layout.ily"
 
 
 \score {
     <<
         \keepWithTag Cello {
-        \include "layout.ily"
+        \page-layout-score
         }
         \keepWithTag Cello {
         \include "_sections/_.ly"
