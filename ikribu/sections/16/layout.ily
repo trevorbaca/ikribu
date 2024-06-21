@@ -11,14 +11,8 @@
         {   %*% PageLayout
 
             % [PageLayout measure 1]
-              %! BREAK
-            \autoPageBreaksOff
-              %! BREAK
-            \baca-lbsd #20 #'(15 20)
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \pageBreak
             s1 * 4/4
               %! SPACING
             %@% - \baca-start-spm-left-only "[1/10]"
@@ -28,8 +22,6 @@
             % [PageLayout measure 2]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 3/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -41,8 +33,6 @@
             % [PageLayout measure 3]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 4/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -54,8 +44,6 @@
             % [PageLayout measure 4]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 3/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -67,8 +55,6 @@
             % [PageLayout measure 5]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 2/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -80,8 +66,6 @@
             % [PageLayout measure 6]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -93,8 +77,6 @@
             % [PageLayout measure 7]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -106,8 +88,6 @@
             % [PageLayout measure 8]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 8/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -119,8 +99,6 @@
             % [PageLayout measure 9]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #35 #240
-              %! BREAK
-            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -130,12 +108,8 @@
             %@% \bacaStartTextSpanSPM
 
             % [PageLayout measure 10]
-              %! BREAK
-            \baca-lbsd #140 #'(15 20)
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \break
             s1 * 3/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -147,8 +121,6 @@
             % [PageLayout measure 11]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 2/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -160,8 +132,6 @@
             % [PageLayout measure 12]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 8/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -173,8 +143,6 @@
             % [PageLayout measure 13]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -186,8 +154,6 @@
             % [PageLayout measure 14]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 4/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -199,8 +165,6 @@
             % [PageLayout measure 15]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 4/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -212,8 +176,6 @@
             % [PageLayout measure 16]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 3/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -225,8 +187,6 @@
             % [PageLayout measure 17]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 7/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -238,8 +198,6 @@
             % [PageLayout measure 18]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 8/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -251,8 +209,6 @@
             % [PageLayout measure 19]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 3/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -264,8 +220,6 @@
             % [PageLayout measure 20]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #10
-              %! BREAK
-            \noBreak
             s1 * 4/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -277,8 +231,6 @@
             % [PageLayout measure 21]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #4
-              %! BREAK
-            \noBreak
             s1 * 1/4
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -291,9 +243,6 @@
               %! ANCHOR_SKIP
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #4
-              %! ANCHOR_SKIP
-              %! BREAK
-            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
               %! ANCHOR_SKIP
@@ -310,69 +259,119 @@
         {
 
             % [Breaks measure 1]
+              %! BREAK
+            \autoPageBreaksOff
+              %! BREAK
+            \baca-lbsd #20 #'(15 20)
+              %! BREAK
+            \pageBreak
             s1 * 4/4
 
             % [Breaks measure 2]
+              %! BREAK
+            \noBreak
             s1 * 3/4
 
             % [Breaks measure 3]
+              %! BREAK
+            \noBreak
             s1 * 4/4
 
             % [Breaks measure 4]
+              %! BREAK
+            \noBreak
             s1 * 3/4
 
             % [Breaks measure 5]
+              %! BREAK
+            \noBreak
             s1 * 2/4
 
             % [Breaks measure 6]
+              %! BREAK
+            \noBreak
             s1 * 7/4
 
             % [Breaks measure 7]
+              %! BREAK
+            \noBreak
             s1 * 7/4
 
             % [Breaks measure 8]
+              %! BREAK
+            \noBreak
             s1 * 8/4
 
             % [Breaks measure 9]
+              %! BREAK
+            \noBreak
             s1 * 7/4
 
             % [Breaks measure 10]
+              %! BREAK
+            \baca-lbsd #140 #'(15 20)
+              %! BREAK
+            \break
             s1 * 3/4
 
             % [Breaks measure 11]
+              %! BREAK
+            \noBreak
             s1 * 2/4
 
             % [Breaks measure 12]
+              %! BREAK
+            \noBreak
             s1 * 8/4
 
             % [Breaks measure 13]
+              %! BREAK
+            \noBreak
             s1 * 7/4
 
             % [Breaks measure 14]
+              %! BREAK
+            \noBreak
             s1 * 4/4
 
             % [Breaks measure 15]
+              %! BREAK
+            \noBreak
             s1 * 4/4
 
             % [Breaks measure 16]
+              %! BREAK
+            \noBreak
             s1 * 3/4
 
             % [Breaks measure 17]
+              %! BREAK
+            \noBreak
             s1 * 7/4
 
             % [Breaks measure 18]
+              %! BREAK
+            \noBreak
             s1 * 8/4
 
             % [Breaks measure 19]
+              %! BREAK
+            \noBreak
             s1 * 3/4
 
             % [Breaks measure 20]
+              %! BREAK
+            \noBreak
             s1 * 4/4
 
             % [Breaks measure 21]
+              %! BREAK
+            \noBreak
             s1 * 1/4
 
             % [anchor skip]
+              %! BREAK
+            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 
