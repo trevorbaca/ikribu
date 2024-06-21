@@ -5,7 +5,7 @@
 <<
 
     \context GlobalContext = "GlobalContext"
-    {
+    <<
 
         \context PageLayout = "PageLayout"
         {   %*% PageLayout
@@ -57,6 +57,21 @@
 
         }   %*% PageLayout
 
-    }
+        \context GlobalSkips = "Breaks"
+        {
+
+            % [Breaks measure 1]
+            s1 * 7/4
+
+            % [Breaks measure 2]
+            s1 * 1/4
+
+            % [anchor skip]
+              %! ANCHOR_SKIP
+            s1 * 1/4
+
+        }
+
+    >>
 
 >>
