@@ -105,7 +105,7 @@ def make_color_rhythm(time_signatures, n):
 
 def make_empty_score():
     tag = baca.helpers.function_name(inspect.currentframe())
-    global_context = baca.score.make_global_context()
+    global_context = baca.score.make_global_context(make_time_signatures_context=True)
     bass_clarinet_music_voice = abjad.Voice(name="BassClarinet.Music", tag=tag)
     bass_clarinet_music_staff = abjad.Staff(
         [bass_clarinet_music_voice],
