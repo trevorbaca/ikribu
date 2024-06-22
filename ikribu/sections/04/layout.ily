@@ -157,92 +157,74 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 7/4
 
             % [SpacingCommands measure 2]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 3]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 4]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 3/4
 
             % [SpacingCommands measure 5]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #24
             s1 * 1/6
 
             % [SpacingCommands measure 6]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 7]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 8]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 3/4
 
             % [SpacingCommands measure 9]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #24
             s1 * 1/6
 
             % [SpacingCommands measure 10]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 11]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 12]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 3/4
 
             % [SpacingCommands measure 13]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #24
             s1 * 1/6
 
             % [SpacingCommands measure 14]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 15]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 4/4
 
             % [SpacingCommands measure 16]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #12
             s1 * 3/4
 
             % [SpacingCommands measure 17]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #24
             s1 * 1/6
 
             % [anchor skip]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             s1 * 1/4
