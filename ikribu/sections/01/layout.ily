@@ -43,33 +43,6 @@
 
         }   %*% SpacingCommands
 
-        \context GlobalSkips = "SpacingAnnotations"
-        {   %*% SpacingAnnotations
-
-            % [SpacingAnnotations measure 1]
-            s1 * 7/4
-              %! SPACING
-            %@% - \baca-start-spm-left-only "[1/12]"
-              %! SPACING
-            %@% \bacaStartTextSpanSPM
-
-            % [SpacingAnnotations measure 2]
-            s1 * 1/4
-              %! SPACING
-            %@% \bacaStopTextSpanSPM
-              %! SPACING
-            %@% - \baca-start-spm-left-only "[1/4]"
-              %! SPACING
-            %@% \bacaStartTextSpanSPM
-
-            % [anchor skip]
-              %! ANCHOR_SKIP
-            s1 * 1/4
-              %! SPACING
-            %@% \bacaStopTextSpanSPM
-
-        }   %*% SpacingAnnotations
-
     >>
 
 }
