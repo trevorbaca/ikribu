@@ -191,10 +191,6 @@
     \override TupletBracket.staff-padding = 1.5
     \override TupletNumber.font-size = 1
     autoBeaming = ##f
-    barNumberFormatter = #baca-oval-bar-numbers
-    explicitClefVisibility = #end-of-line-invisible
-    forceClef = ##t
-    rehearsalMarkFormatter = #format-mark-box-alphabet
     proportionalNotationDuration = \musicLength 1*1/24
     tupletFullLength = ##t
   }
