@@ -198,7 +198,7 @@ def make_layout(environment):
     )
     spacing = baca.layout.Spacing(
         default=(1, 12),
-        overrides=(baca.layout.Override([2, 4, 6, 8, 10, 12], (1, 24)),),
+        strict_overrides=(baca.layout.Override([2, 4, 6, 8, 10, 12], (1, 24)),),
     )
     return baca.section.make_layout_score(
         breaks,
