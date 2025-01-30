@@ -1,4 +1,4 @@
-\version "2.25.22"
+\version "2.25.23"
 #(set-default-paper-size "ledger")
 #(set-global-staff-size 12)
 
