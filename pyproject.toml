@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ikribu"
-version = "1.0.0"
+version = "3.21"
 description = "Ikribu (2016) for bass clarinet, violin, viola & cello"
 authors = [{ name = "Trevor Bača", email = "trevor.baca@gmail.com" }]
 license = { text = "MIT" }
