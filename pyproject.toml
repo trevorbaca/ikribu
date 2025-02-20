@@ -22,5 +22,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/trevorbaca/ikribu"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = ["ikribu"]
+package-dir = { "" = "source" }
