@@ -1,6 +1,6 @@
 % Ikribu (2016) bass clarinet part
 
-\version "2.25.23"
+\version "2.25.24"
 
 \include "stylesheet.ily"
 
