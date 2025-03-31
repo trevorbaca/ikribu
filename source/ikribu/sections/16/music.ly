@@ -18,13 +18,19 @@
             <<
 
                 \context GlobalRests = "Rests"
-                { \number.16.Rests }
+                {
+                    \number.16.Rests
+                }
 
                 \context GlobalSkips = "Skips"
-                { \number.16.Skips }
+                {
+                    \number.16.Skips
+                }
 
                 \context GlobalSkips = "TimeSignatures"
-                { \number.16.TimeSignatures }
+                {
+                    \number.16.TimeSignatures
+                }
 
             >>
 
@@ -36,17 +42,23 @@
 
                     \tag #'BassClarinet
                     \context Staff = "BassClarinet.Staff"
-                    { \number.16.BassClarinet.Staff }
+                    {
+                        \number.16.BassClarinet.Staff
+                    }
 
                     \tag #'Violin
                     \context StringInstrumentPianoStaff = "Violin.PianoStaff"
                     <<
 
                         \context RHStaff = "Violin.RHStaff"
-                        { \number.16.Violin.RHStaff }
+                        {
+                            \number.16.Violin.RHStaff
+                        }
 
                         \context Staff = "Violin.Staff"
-                        { \number.16.Violin.Staff }
+                        {
+                            \number.16.Violin.Staff
+                        }
 
                     >>
 
@@ -55,10 +67,14 @@
                     <<
 
                         \context RHStaff = "Viola.RHStaff"
-                        { \number.16.Viola.RHStaff }
+                        {
+                            \number.16.Viola.RHStaff
+                        }
 
                         \context Staff = "Viola.Staff"
-                        { \number.16.Viola.Staff }
+                        {
+                            \number.16.Viola.Staff
+                        }
 
                     >>
 
@@ -67,10 +83,14 @@
                     <<
 
                         \context RHStaff = "Cello.RHStaff"
-                        { \number.16.Cello.RHStaff }
+                        {
+                            \number.16.Cello.RHStaff
+                        }
 
                         \context Staff = "Cello.Staff"
-                        { \number.16.Cello.Staff }
+                        {
+                            \number.16.Cello.Staff
+                        }
 
                     >>
 

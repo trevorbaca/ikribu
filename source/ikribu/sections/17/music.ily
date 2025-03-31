@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.17.Rests = {
+number.17.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -38,7 +39,8 @@ number.17.Rests = {
 }
 
 
-number.17.Skips = {
+number.17.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -294,7 +296,8 @@ number.17.Skips = {
 }
 
 
-number.17.TimeSignatures = {
+number.17.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -360,7 +363,8 @@ number.17.TimeSignatures = {
 }
 
 
-number.17.BassClarinet.Music = {
+number.17.BassClarinet.Music =
+{
 
     % [BassClarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -515,15 +519,19 @@ number.17.BassClarinet.Music = {
 }
 
 
-number.17.BassClarinet.Staff = {
+number.17.BassClarinet.Staff =
+{
 
     \context Voice = "BassClarinet.Music"
-    { \number.17.BassClarinet.Music }
+    {
+        \number.17.BassClarinet.Music
+    }
 
 }
 
 
-number.17.ViolinRH.Music = {
+number.17.ViolinRH.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 2/3
@@ -917,15 +925,19 @@ number.17.ViolinRH.Music = {
 }
 
 
-number.17.Violin.RHStaff = {
+number.17.Violin.RHStaff =
+{
 
     \context Voice = "ViolinRH.Music"
-    { \number.17.ViolinRH.Music }
+    {
+        \number.17.ViolinRH.Music
+    }
 
 }
 
 
-number.17.Violin.Music = {
+number.17.Violin.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 7/6
@@ -1080,15 +1092,19 @@ number.17.Violin.Music = {
 }
 
 
-number.17.Violin.Staff = {
+number.17.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.17.Violin.Music }
+    {
+        \number.17.Violin.Music
+    }
 
 }
 
 
-number.17.ViolaRH.Music = {
+number.17.ViolaRH.Music =
+{
 
     % [ViolaRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1505,15 +1521,19 @@ number.17.ViolaRH.Music = {
 }
 
 
-number.17.Viola.RHStaff = {
+number.17.Viola.RHStaff =
+{
 
     \context Voice = "ViolaRH.Music"
-    { \number.17.ViolaRH.Music }
+    {
+        \number.17.ViolaRH.Music
+    }
 
 }
 
 
-number.17.Viola.Music = {
+number.17.Viola.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 8/6
@@ -1646,15 +1666,19 @@ number.17.Viola.Music = {
 }
 
 
-number.17.Viola.Staff = {
+number.17.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.17.Viola.Music }
+    {
+        \number.17.Viola.Music
+    }
 
 }
 
 
-number.17.CelloRH.Music = {
+number.17.CelloRH.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 4/3
@@ -2045,15 +2069,19 @@ number.17.CelloRH.Music = {
 }
 
 
-number.17.Cello.RHStaff = {
+number.17.Cello.RHStaff =
+{
 
     \context Voice = "CelloRH.Music"
-    { \number.17.CelloRH.Music }
+    {
+        \number.17.CelloRH.Music
+    }
 
 }
 
 
-number.17.Cello.Music = {
+number.17.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! EXPLICIT_CLEF
@@ -2205,9 +2233,12 @@ number.17.Cello.Music = {
 }
 
 
-number.17.Cello.Staff = {
+number.17.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.17.Cello.Music }
+    {
+        \number.17.Cello.Music
+    }
 
 }

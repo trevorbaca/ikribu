@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.5.Rests = {
+number.5.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -47,7 +48,8 @@ number.5.Rests = {
 }
 
 
-number.5.Skips = {
+number.5.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -333,7 +335,8 @@ number.5.Skips = {
 }
 
 
-number.5.TimeSignatures = {
+number.5.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -420,7 +423,8 @@ number.5.TimeSignatures = {
 }
 
 
-number.5.BassClarinet.Music = {
+number.5.BassClarinet.Music =
+{
 
     % [BassClarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -524,15 +528,19 @@ number.5.BassClarinet.Music = {
 }
 
 
-number.5.BassClarinet.Staff = {
+number.5.BassClarinet.Staff =
+{
 
     \context Voice = "BassClarinet.Music"
-    { \number.5.BassClarinet.Music }
+    {
+        \number.5.BassClarinet.Music
+    }
 
 }
 
 
-number.5.ViolinRH.Music = {
+number.5.ViolinRH.Music =
+{
 
     % [ViolinRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -618,15 +626,19 @@ number.5.ViolinRH.Music = {
 }
 
 
-number.5.Violin.RHStaff = {
+number.5.Violin.RHStaff =
+{
 
     \context Voice = "ViolinRH.Music"
-    { \number.5.ViolinRH.Music }
+    {
+        \number.5.ViolinRH.Music
+    }
 
 }
 
 
-number.5.Violin.Music = {
+number.5.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REAPPLIED_CLEF
@@ -731,15 +743,19 @@ number.5.Violin.Music = {
 }
 
 
-number.5.Violin.Staff = {
+number.5.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.5.Violin.Music }
+    {
+        \number.5.Violin.Music
+    }
 
 }
 
 
-number.5.ViolaRH.Music = {
+number.5.ViolaRH.Music =
+{
 
     % [ViolaRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -825,15 +841,19 @@ number.5.ViolaRH.Music = {
 }
 
 
-number.5.Viola.RHStaff = {
+number.5.Viola.RHStaff =
+{
 
     \context Voice = "ViolaRH.Music"
-    { \number.5.ViolaRH.Music }
+    {
+        \number.5.ViolaRH.Music
+    }
 
 }
 
 
-number.5.Viola.Music = {
+number.5.Viola.Music =
+{
 
     % [Viola.Music measure 1]
       %! REAPPLIED_CLEF
@@ -937,15 +957,19 @@ number.5.Viola.Music = {
 }
 
 
-number.5.Viola.Staff = {
+number.5.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.5.Viola.Music }
+    {
+        \number.5.Viola.Music
+    }
 
 }
 
 
-number.5.CelloRH.Music = {
+number.5.CelloRH.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 4/3
@@ -1534,15 +1558,19 @@ number.5.CelloRH.Music = {
 }
 
 
-number.5.Cello.RHStaff = {
+number.5.Cello.RHStaff =
+{
 
     \context Voice = "CelloRH.Music"
-    { \number.5.CelloRH.Music }
+    {
+        \number.5.CelloRH.Music
+    }
 
 }
 
 
-number.5.Cello.Music = {
+number.5.Cello.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 7/6
@@ -1770,9 +1798,12 @@ number.5.Cello.Music = {
 }
 
 
-number.5.Cello.Staff = {
+number.5.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.5.Cello.Music }
+    {
+        \number.5.Cello.Music
+    }
 
 }

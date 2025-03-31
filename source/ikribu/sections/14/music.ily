@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.14.Rests = {
+number.14.Rests =
+{
 
     % [Rests measure 1]
     R1 * 3/4
@@ -155,7 +156,8 @@ number.14.Rests = {
 }
 
 
-number.14.Skips = {
+number.14.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -1127,7 +1129,8 @@ number.14.Skips = {
 }
 
 
-number.14.TimeSignatures = {
+number.14.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1353,7 +1356,8 @@ number.14.TimeSignatures = {
 }
 
 
-number.14.BassClarinet.Music = {
+number.14.BassClarinet.Music =
+{
 
     <<
 
@@ -1987,15 +1991,19 @@ number.14.BassClarinet.Music = {
 }
 
 
-number.14.BassClarinet.Staff = {
+number.14.BassClarinet.Staff =
+{
 
     \context Voice = "BassClarinet.Music"
-    { \number.14.BassClarinet.Music }
+    {
+        \number.14.BassClarinet.Music
+    }
 
 }
 
 
-number.14.ViolinRH.Music = {
+number.14.ViolinRH.Music =
+{
 
     % [ViolinRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2243,15 +2251,19 @@ number.14.ViolinRH.Music = {
 }
 
 
-number.14.Violin.RHStaff = {
+number.14.Violin.RHStaff =
+{
 
     \context Voice = "ViolinRH.Music"
-    { \number.14.ViolinRH.Music }
+    {
+        \number.14.ViolinRH.Music
+    }
 
 }
 
 
-number.14.Violin.Music = {
+number.14.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REAPPLIED_CLEF
@@ -2850,15 +2862,19 @@ number.14.Violin.Music = {
 }
 
 
-number.14.Violin.Staff = {
+number.14.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.14.Violin.Music }
+    {
+        \number.14.Violin.Music
+    }
 
 }
 
 
-number.14.ViolaRH.Music = {
+number.14.ViolaRH.Music =
+{
 
     % [ViolaRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -3106,15 +3122,19 @@ number.14.ViolaRH.Music = {
 }
 
 
-number.14.Viola.RHStaff = {
+number.14.Viola.RHStaff =
+{
 
     \context Voice = "ViolaRH.Music"
-    { \number.14.ViolaRH.Music }
+    {
+        \number.14.ViolaRH.Music
+    }
 
 }
 
 
-number.14.Viola.Music = {
+number.14.Viola.Music =
+{
 
     % [Viola.Music measure 1]
       %! REAPPLIED_CLEF
@@ -3614,15 +3634,19 @@ number.14.Viola.Music = {
 }
 
 
-number.14.Viola.Staff = {
+number.14.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.14.Viola.Music }
+    {
+        \number.14.Viola.Music
+    }
 
 }
 
 
-number.14.CelloRH.Music = {
+number.14.CelloRH.Music =
+{
 
     % [CelloRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -3870,15 +3894,19 @@ number.14.CelloRH.Music = {
 }
 
 
-number.14.Cello.RHStaff = {
+number.14.Cello.RHStaff =
+{
 
     \context Voice = "CelloRH.Music"
-    { \number.14.CelloRH.Music }
+    {
+        \number.14.CelloRH.Music
+    }
 
 }
 
 
-number.14.Cello.Music = {
+number.14.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! EXPLICIT_CLEF
@@ -4538,9 +4566,12 @@ number.14.Cello.Music = {
 }
 
 
-number.14.Cello.Staff = {
+number.14.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.14.Cello.Music }
+    {
+        \number.14.Cello.Music
+    }
 
 }

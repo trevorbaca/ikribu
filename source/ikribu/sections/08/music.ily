@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.8.Rests = {
+number.8.Rests =
+{
 
     % [Rests measure 1]
     R1 * 7/4
@@ -41,7 +42,8 @@ number.8.Rests = {
 }
 
 
-number.8.Skips = {
+number.8.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -387,7 +389,8 @@ number.8.Skips = {
 }
 
 
-number.8.TimeSignatures = {
+number.8.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! REAPPLIED_TIME_SIGNATURE_COLOR
@@ -502,7 +505,8 @@ number.8.TimeSignatures = {
 }
 
 
-number.8.BassClarinet.Music = {
+number.8.BassClarinet.Music =
+{
 
     % [BassClarinet.Music measure 1]
       %! REAPPLIED_CLEF
@@ -735,15 +739,19 @@ number.8.BassClarinet.Music = {
 }
 
 
-number.8.BassClarinet.Staff = {
+number.8.BassClarinet.Staff =
+{
 
     \context Voice = "BassClarinet.Music"
-    { \number.8.BassClarinet.Music }
+    {
+        \number.8.BassClarinet.Music
+    }
 
 }
 
 
-number.8.ViolinRH.Music = {
+number.8.ViolinRH.Music =
+{
 
     % [ViolinRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -829,15 +837,19 @@ number.8.ViolinRH.Music = {
 }
 
 
-number.8.Violin.RHStaff = {
+number.8.Violin.RHStaff =
+{
 
     \context Voice = "ViolinRH.Music"
-    { \number.8.ViolinRH.Music }
+    {
+        \number.8.ViolinRH.Music
+    }
 
 }
 
 
-number.8.Violin.Music = {
+number.8.Violin.Music =
+{
 
     % [Violin.Music measure 1]
       %! REAPPLIED_CLEF
@@ -937,15 +949,19 @@ number.8.Violin.Music = {
 }
 
 
-number.8.Violin.Staff = {
+number.8.Violin.Staff =
+{
 
     \context Voice = "Violin.Music"
-    { \number.8.Violin.Music }
+    {
+        \number.8.Violin.Music
+    }
 
 }
 
 
-number.8.ViolaRH.Music = {
+number.8.ViolaRH.Music =
+{
 
     % [ViolaRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1031,15 +1047,19 @@ number.8.ViolaRH.Music = {
 }
 
 
-number.8.Viola.RHStaff = {
+number.8.Viola.RHStaff =
+{
 
     \context Voice = "ViolaRH.Music"
-    { \number.8.ViolaRH.Music }
+    {
+        \number.8.ViolaRH.Music
+    }
 
 }
 
 
-number.8.Viola.Music = {
+number.8.Viola.Music =
+{
 
     % [Viola.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1139,15 +1159,19 @@ number.8.Viola.Music = {
 }
 
 
-number.8.Viola.Staff = {
+number.8.Viola.Staff =
+{
 
     \context Voice = "Viola.Music"
-    { \number.8.Viola.Music }
+    {
+        \number.8.Viola.Music
+    }
 
 }
 
 
-number.8.CelloRH.Music = {
+number.8.CelloRH.Music =
+{
 
     % [CelloRH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1241,15 +1265,19 @@ number.8.CelloRH.Music = {
 }
 
 
-number.8.Cello.RHStaff = {
+number.8.Cello.RHStaff =
+{
 
     \context Voice = "CelloRH.Music"
-    { \number.8.CelloRH.Music }
+    {
+        \number.8.CelloRH.Music
+    }
 
 }
 
 
-number.8.Cello.Music = {
+number.8.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1510,9 +1538,12 @@ number.8.Cello.Music = {
 }
 
 
-number.8.Cello.Staff = {
+number.8.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.8.Cello.Music }
+    {
+        \number.8.Cello.Music
+    }
 
 }
