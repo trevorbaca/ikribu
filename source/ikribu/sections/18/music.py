@@ -117,7 +117,7 @@ def vc(m):
         baca.staff_position(o, 0)
         library.box_adjustment(o)
     with baca.scope(m[12]) as o:
-        baca.mark(o.leaf(0), r"\ikribu-colophon-markup")
+        baca.rehearsal_mark(o.leaf(0), r"\ikribu-colophon-markup")
         baca.override.rehearsal_mark_direction_down(o)
         baca.override.rehearsal_mark_padding(o, 12)
         baca.override.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
