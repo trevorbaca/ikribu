@@ -99,7 +99,7 @@
     \override TextSpanner.to-barline = ##t
     % prevents StaffSymbol from starting too early after cut-away measures:
     \override TimeSignature.X-extent = ##f
-    %\override TimeSignature.break-align-symbol = #'left-edge
+    %\override TimeSignature.break-align-symbol = #'clef
     % makes rehearsal (and other) marks right align to time signatures:
     %\override TimeSignature.break-align-anchor-alignment = #right
     \override TimeSignature.break-visibility = #end-of-line-invisible
