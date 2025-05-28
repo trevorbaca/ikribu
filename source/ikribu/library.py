@@ -5,6 +5,12 @@ import baca
 import rmakers
 
 
+def _force_fraction(argument):
+    for tuplet in abjad.select.tuplets(argument):
+        tweak_string = abjad.Tuplet.tuplet_number_calc_fraction_text_tweak_string
+        abjad.tweak(tuplet, tweak_string)
+
+
 def _make_short_instrument_name(markup, context="Staff"):
     return abjad.ShortInstrumentName(
         rf'\markup \hcenter-in #16 "{markup}"',
@@ -69,8 +75,8 @@ def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
         lts = abjad.select.get(lts, force_rest_lts)
         rmakers.force_rest(lts, tag=tag)
     rmakers.beam(voice, tag=tag)
-    rmakers.force_fraction(voice)
     rmakers.extract_trivial(voice)
+    _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -81,9 +87,9 @@ def make_clb_rhythm(time_signatures, *, extra_counts):
     tuplets = rmakers.even_division(durations, [8], extra_counts=extra_counts, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
-    rmakers.force_fraction(voice)
     rmakers.extract_trivial(voice)
     rmakers.force_diminution(voice)
+    _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -93,12 +99,12 @@ def make_color_rhythm(time_signatures, n):
     durations = [_.duration for _ in time_signatures]
     tuplets = rmakers.tuplet(durations, [tuple(n * [1])], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
-    rmakers.force_fraction(voice)
     rmakers.trivialize(voice)
     rmakers.rewrite_dots(voice, tag=tag)
     rmakers.force_diminution(voice)
     rmakers.beam(voice, tag=tag)
     rmakers.extract_trivial(voice)
+    _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -199,8 +205,8 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     rmakers.beam(voice, tag=tag)
     rmakers.untie(voice)
     rmakers.denominator(voice, abjad.Duration(1, 8))
-    rmakers.force_fraction(voice)
     rmakers.extract_trivial(voice)
+    _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -228,11 +234,11 @@ def make_triplet_rhythm(time_signatures):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
     rmakers.denominator(voice, abjad.Duration(1, 4))
-    rmakers.force_fraction(voice)
     rmakers.trivialize(voice)
     rmakers.rewrite_dots(voice)
     rmakers.extract_trivial(voice)
     rmakers.force_diminution(voice)
+    _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
     return music
 
