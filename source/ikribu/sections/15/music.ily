@@ -1235,18 +1235,12 @@ number.15.Violin.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 6/4
-    {
+    % [Violin.Music measure 8]
+    b'4
+    \glissando
 
-        % [Violin.Music measure 8]
-        b'4.
-        \glissando
-
-        a4.
-        \glissando
-
-    }
+    a4
+    \glissando
 
     % [Violin.Music measure 9]
     g2
@@ -1949,60 +1943,54 @@ number.15.Viola.RHStaff =
 number.15.Viola.Music =
 {
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 6/4
-    {
-
-        % [Viola.Music measure 1]
-          %! EXPLICIT_CLEF
-        \clef "treble"
-          %! MEASURE_208
-          %! SHIFTED_CLEF
-    %%% \once \override Staff.Clef.X-extent = ##f
-          %! EXPLICIT_CLEF_COLOR
-        \once \override Staff.Clef.color = #blue
-          %! MEASURE_208
-          %! SHIFTED_CLEF
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-          %! EXPLICIT_STAFF_LINES_COLOR
-        \once \override Staff.StaffSymbol.color = #blue
-          %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        %@% \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
-          %! -PARTS
-          %! EXPLICIT_BAR_EXTENT
-        \override Staff.BarLine.bar-extent = #'(-2 . 2)
-          %! EXPLICIT_CLEF_COLOR_CANCELLATION
-        %@% \override Staff.Clef.color = ##f
-          %! EXPLICIT_CLEF
-        \set Staff.forceClef = ##t
-        \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
-          %! -PARTS
-          %! REAPPLIED_SHORT_INSTRUMENT_NAME
-        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
-          %! EXPLICIT_STAFF_LINES
-        \stopStaff
-          %! EXPLICIT_STAFF_LINES
-        \once \override Staff.StaffSymbol.line-count = 5
-          %! EXPLICIT_STAFF_LINES
-        \startStaff
-        c''2.
-          %! REAPPLIED_DYNAMIC_COLOR
-          %! REAPPLIED_DYNAMIC
-        - \tweak color #(x11-color 'green4)
-          %! REAPPLIED_DYNAMIC
-        \fff
-          %! REAPPLIED_INSTRUMENT_ALERT
-        %@% ^ \baca-reapplied-instrument-markup "(“Viola”)"
-        \glissando
-          %! EXPLICIT_CLEF_REDRAW_COLOR
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-          %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
-        %@% \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
-          %! -PARTS
-          %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
-        \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup %@%
-
-    }
+    % [Viola.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
+      %! MEASURE_208
+      %! SHIFTED_CLEF
+%%% \once \override Staff.Clef.X-extent = ##f
+      %! EXPLICIT_CLEF_COLOR
+    \once \override Staff.Clef.color = #blue
+      %! MEASURE_208
+      %! SHIFTED_CLEF
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
+      %! EXPLICIT_STAFF_LINES_COLOR
+    \once \override Staff.StaffSymbol.color = #blue
+      %! REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
+    %@% \once \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'green4)
+      %! -PARTS
+      %! EXPLICIT_BAR_EXTENT
+    \override Staff.BarLine.bar-extent = #'(-2 . 2)
+      %! EXPLICIT_CLEF_COLOR_CANCELLATION
+    %@% \override Staff.Clef.color = ##f
+      %! EXPLICIT_CLEF
+    \set Staff.forceClef = ##t
+    \set StringInstrumentPianoStaff.instrumentName = \ikribu-va-markup
+      %! -PARTS
+      %! REAPPLIED_SHORT_INSTRUMENT_NAME
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup
+      %! EXPLICIT_STAFF_LINES
+    \stopStaff
+      %! EXPLICIT_STAFF_LINES
+    \once \override Staff.StaffSymbol.line-count = 5
+      %! EXPLICIT_STAFF_LINES
+    \startStaff
+    c''2
+      %! REAPPLIED_DYNAMIC_COLOR
+      %! REAPPLIED_DYNAMIC
+    - \tweak color #(x11-color 'green4)
+      %! REAPPLIED_DYNAMIC
+    \fff
+      %! REAPPLIED_INSTRUMENT_ALERT
+    %@% ^ \baca-reapplied-instrument-markup "(“Viola”)"
+    \glissando
+      %! EXPLICIT_CLEF_REDRAW_COLOR
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
+      %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME_COLOR
+    %@% \override StringInstrumentPianoStaff.InstrumentName.color = #(x11-color 'OliveDrab)
+      %! -PARTS
+      %! REDRAWN_REAPPLIED_SHORT_INSTRUMENT_NAME
+    \set StringInstrumentPianoStaff.shortInstrumentName = \ikribu-va-markup %@%
 
     % [Viola.Music measure 2]
     d'8

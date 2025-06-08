@@ -204,7 +204,17 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
     rmakers.untie(voice)
-    rmakers.denominator(voice, abjad.Duration(1, 8))
+    for tuplet in abjad.select.tuplets(voice):
+        preprolated_duration = sum(
+            [abjad.get.duration(_, preprolated=True) for _ in tuplet]
+        )
+        preprolated_eighths = abjad.duration.with_denominator(preprolated_duration, 8)
+        prolated_duration = abjad.get.duration(tuplet)
+        prolated_eighths = abjad.duration.with_denominator(prolated_duration, 8)
+        ratio_eighths = (prolated_eighths[0], preprolated_eighths[0])
+        assert abjad.Duration(tuplet.multiplier) == abjad.Duration(ratio_eighths)
+        tuplet.multiplier = ratio_eighths
+    rmakers.trivialize(voice)
     rmakers.extract_trivial(voice)
     _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)

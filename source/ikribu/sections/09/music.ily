@@ -1247,15 +1247,9 @@ number.9.Violin.Music =
     f'2..
     \glissando
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \tuplet 7/6
-    {
-
-        % [Violin.Music measure 4]
-        a'2..
-        \glissando
-
-    }
+    % [Violin.Music measure 4]
+    a'2.
+    \glissando
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 6/4
