@@ -204,15 +204,7 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
     rmakers.untie(voice)
-    for tuplet in abjad.select.tuplets(voice):
-        tuplet_duration = abjad.get.duration(tuplet)
-        tuplet_eighths = abjad.duration.with_denominator(tuplet_duration, 8)
-        numerator, denominator = tuplet.multiplier
-        contents_duration = abjad.Duration(denominator, numerator) * tuplet_duration
-        contents_eighths = abjad.duration.with_denominator(contents_duration, 8)
-        pair = (tuplet_eighths[0], contents_eighths[0])
-        assert abjad.Duration(tuplet.multiplier) == abjad.Duration(pair)
-        tuplet.multiplier = pair
+    baca.rhythm.set_tuplet_ratios_in_terms_of(voice, 8)
     rmakers.trivialize(voice)
     rmakers.extract_trivial(voice)
     _force_fraction(voice)
@@ -242,6 +234,7 @@ def make_triplet_rhythm(time_signatures):
     tuplets = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.beam(voice, tag=tag)
+    """
     for tuplet in abjad.select.tuplets(voice):
         tuplet_duration = abjad.get.duration(tuplet)
         tuplet_quarters = abjad.duration.with_denominator(tuplet_duration, 4)
@@ -251,6 +244,8 @@ def make_triplet_rhythm(time_signatures):
         pair = (tuplet_quarters[0], contents_quarters[0])
         assert abjad.Duration(tuplet.multiplier) == abjad.Duration(pair)
         tuplet.multiplier = pair
+    """
+    baca.rhythm.set_tuplet_ratios_in_terms_of(voice, 4)
     rmakers.trivialize(voice)
     rmakers.rewrite_dots(voice)
     rmakers.extract_trivial(voice)
