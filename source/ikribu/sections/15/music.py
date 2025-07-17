@@ -99,7 +99,7 @@ def bcl(cache):
         wrappers = baca.override.text_script_extra_offset(o, (0, 7))
         baca.tags.tag(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         for wrapper in wrappers:
-            wrapper.deactivate = True
+            wrapper.deactivate_setter(True)
         baca.dynamic(o.pleaf(0), "p")
         baca.markup(o.pleaf(0), r"\ikribu-introduce-upper-partials-gradually-markup")
         baca.pitch(o, "Bb1")
