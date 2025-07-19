@@ -154,7 +154,7 @@ def bcl(m):
             o.pleaf(0),
             r"\ikribu-stonecircle-pi-two-markup",
         )
-        wrappers[0].deactivate_setter(True)
+        wrappers[0].set_deactivate(True)
         baca.tags.tag(wrappers, abjad.Tag("+ARCH_A_PARTS_BCL"))
         wrappers = baca.markup(
             o.pleaf(0),
