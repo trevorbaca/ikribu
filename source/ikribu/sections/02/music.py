@@ -37,7 +37,7 @@ def GLOBALS(skips, rests):
 def BCL(voice, time_signatures):
     music = baca.make_repeat_tied_notes(time_signatures(1, 5))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(6, 7), head=voice.name)
+    music = baca.make_mmrests(time_signatures(6, 7), head=voice.get_name())
     voice.extend(music)
 
 

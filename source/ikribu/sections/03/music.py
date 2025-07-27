@@ -74,15 +74,15 @@ def VN_RH(voice, time_signatures):
 def VN(voice, time_signatures):
     music = baca.make_repeat_tied_notes(time_signatures(1, 3))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(4, 6), head=voice.name)
+    music = baca.make_mmrests(time_signatures(4, 6), head=voice.get_name())
     voice.extend(music)
     music = baca.make_repeat_tied_notes(time_signatures(7, 9))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(10, 12), head=voice.name)
+    music = baca.make_mmrests(time_signatures(10, 12), head=voice.get_name())
     voice.extend(music)
     music = baca.make_repeat_tied_notes(time_signatures(13, 15))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(16, 25), head=voice.name)
+    music = baca.make_mmrests(time_signatures(16, 25), head=voice.get_name())
     voice.extend(music)
 
 
@@ -96,7 +96,7 @@ def VA(voice, time_signatures):
     voice.extend(music)
     music = baca.make_repeat_tied_notes(time_signatures(19, 24))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(25), head=voice.name)
+    music = baca.make_mmrests(time_signatures(25), head=voice.get_name())
     voice.extend(music)
 
 
