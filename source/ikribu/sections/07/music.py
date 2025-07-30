@@ -58,7 +58,7 @@ def VN(voice, time_signatures):
     voice.extend(music)
     music = baca.make_repeat_tied_notes(time_signatures(6, 7))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(8), head=voice.get_name())
+    music = baca.make_mmrests(time_signatures(8), head=voice.name())
     voice.extend(music)
 
 
@@ -67,7 +67,7 @@ def VA(voice, time_signatures):
     voice.extend(music)
     music = baca.make_repeat_tied_notes(time_signatures(6, 7))
     voice.extend(music)
-    music = baca.make_mmrests(time_signatures(8), head=voice.get_name())
+    music = baca.make_mmrests(time_signatures(8), head=voice.name())
     voice.extend(music)
 
 
