@@ -141,7 +141,8 @@ def VC(voice, time_signatures):
         time_signatures(2, 16),
     )
     voice.extend(music)
-    rmakers.reduce_multiplier(music)
+    tuplets = abjad.select.tuplets(music)
+    rmakers.reduce_tuplet_ratios(tuplets)
     music = baca.make_mmrests(time_signatures(17))
     voice.extend(music)
 
