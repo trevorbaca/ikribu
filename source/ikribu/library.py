@@ -210,7 +210,8 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam(leaf_lists, tag=tag)
-    rmakers.untie(voice)
+    leaves = abjad.select.leaves(voice)
+    rmakers.untie_leaves(leaves)
     baca.rhythm.set_tuplet_ratios_in_terms_of(voice, 8)
     rmakers.trivialize_tuplets(tuplets)
     rmakers.extract_trivial(tuplets)
