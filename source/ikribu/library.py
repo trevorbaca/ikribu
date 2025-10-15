@@ -74,7 +74,7 @@ def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
         lts = baca.select.lts(voice)
         lts = abjad.select.get(lts, force_rest_lts)
         leaves = abjad.select.leaves(lts)
-        rmakers.force_rest(leaves, tag=tag)
+        rmakers.replace_leaves_with_rests(leaves, tag=tag)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam_runs(leaf_lists, tag=tag)
     rmakers.extract_trivial_tuplets(tuplets)
