@@ -90,7 +90,7 @@ def make_clb_rhythm(time_signatures, *, extra_counts):
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam_runs(leaf_lists, tag=tag)
-    rmakers.force_diminution(tuplets)
+    rmakers.toggle_augmented_tuplets(tuplets)
     rmakers.extract_trivial_tuplets(tuplets)
     _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
@@ -105,7 +105,7 @@ def make_color_rhythm(time_signatures, n):
     rmakers.trivialize_tuplets(tuplets)
     tuplets = abjad.select.tuplets(voice)
     rmakers.respell_tuplets_without_dots(tuplets, tag=tag)
-    rmakers.force_diminution(tuplets)
+    rmakers.toggle_augmented_tuplets(tuplets)
     tuplets = abjad.select.tuplets(voice)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.beam_runs(leaf_lists, tag=tag)
@@ -249,7 +249,7 @@ def make_triplet_rhythm(time_signatures):
     rmakers.trivialize_tuplets(tuplets)
     tuplets = abjad.select.tuplets(voice)
     rmakers.respell_tuplets_without_dots(tuplets)
-    rmakers.force_diminution(tuplets)
+    rmakers.toggle_augmented_tuplets(tuplets)
     rmakers.extract_trivial_tuplets(tuplets)
     _force_fraction(voice)
     music = abjad.mutate.eject_contents(voice)
