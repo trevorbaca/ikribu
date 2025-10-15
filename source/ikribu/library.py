@@ -233,7 +233,7 @@ def make_inscription_rhythm(time_signatures):
     rmakers.beam_runs(leaf_lists, tag=tag)
     rmakers.extract_trivial_tuplets(tuplets)
     leaves = abjad.select.leaves(voice)
-    rmakers.force_repeat_tie(leaves)
+    rmakers.replace_ties_with_repeat_ties(leaves)
     music = abjad.mutate.eject_contents(voice)
     return music
 
@@ -265,7 +265,7 @@ def make_vigil_rhythm(time_signatures):
     rmakers.beam_runs(leaf_lists, tag=tag)
     rmakers.extract_trivial_tuplets(tuplets)
     leaves = abjad.select.leaves(voice)
-    rmakers.force_repeat_tie(leaves)
+    rmakers.replace_ties_with_repeat_ties(leaves)
     music = abjad.mutate.eject_contents(voice)
     return music
 
