@@ -68,7 +68,9 @@ def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
     durations = abjad.duration.durations(time_signatures)
     extra_counts = [-1, 0, 1, 2]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation)
-    tuplets = rmakers.even_division(durations, [4], extra_counts=extra_counts, tag=tag)
+    tuplets = rmakers.make_even_division_tuplets(
+        durations, [4], extra_counts=extra_counts, tag=tag
+    )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     if force_rest_lts is not None:
         lts = baca.select.lts(voice)
@@ -86,7 +88,9 @@ def make_bow_rhythm(time_signatures, *, force_rest_lts=None, rotation=0):
 def make_clb_rhythm(time_signatures, *, extra_counts):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = abjad.duration.durations(time_signatures)
-    tuplets = rmakers.even_division(durations, [8], extra_counts=extra_counts, tag=tag)
+    tuplets = rmakers.make_even_division_tuplets(
+        durations, [8], extra_counts=extra_counts, tag=tag
+    )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.attach_beams_to_runs_by_leaf_list(leaf_lists, tag=tag)
@@ -100,7 +104,7 @@ def make_clb_rhythm(time_signatures, *, extra_counts):
 def make_color_rhythm(time_signatures, n):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = abjad.duration.durations(time_signatures)
-    tuplets = rmakers.tuplet(durations, [tuple(n * [1])], tag=tag)
+    tuplets = rmakers.make_tuplets(durations, [tuple(n * [1])], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     rmakers.trivialize_tuplets(tuplets)
     tuplets = abjad.select.tuplets(voice)
@@ -206,7 +210,9 @@ def make_glissando_rhythm(time_signatures, rotation_1=0, rotation_2=0):
     counts = abjad.sequence.rotate(counts, n=rotation_1)
     extra_counts = [2, 4, 0]
     extra_counts = abjad.sequence.rotate(extra_counts, n=rotation_2)
-    tuplets = rmakers.talea(durations, counts, 16, extra_counts=extra_counts, tag=tag)
+    tuplets = rmakers.make_talea_tuplets(
+        durations, counts, 16, extra_counts=extra_counts, tag=tag
+    )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.attach_beams_to_runs_by_leaf_list(leaf_lists, tag=tag)
@@ -227,7 +233,9 @@ def make_inscription_rhythm(time_signatures):
     counts = baca.sequence.helianthate(counts, -1, -1)
     counts = abjad.sequence.flatten(counts)
     extra_counts = [2, 4, 0]
-    tuplets = rmakers.talea(durations, counts, 16, extra_counts=extra_counts, tag=tag)
+    tuplets = rmakers.make_talea_tuplets(
+        durations, counts, 16, extra_counts=extra_counts, tag=tag
+    )
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.attach_beams_to_runs_by_leaf_list(leaf_lists, tag=tag)
@@ -241,7 +249,7 @@ def make_inscription_rhythm(time_signatures):
 def make_triplet_rhythm(time_signatures):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = abjad.duration.durations(time_signatures)
-    tuplets = rmakers.tuplet(durations, [(1, 1, 1)], tag=tag)
+    tuplets = rmakers.make_tuplets(durations, [(1, 1, 1)], tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.attach_beams_to_runs_by_leaf_list(leaf_lists, tag=tag)
@@ -259,7 +267,7 @@ def make_triplet_rhythm(time_signatures):
 def make_vigil_rhythm(time_signatures):
     tag = baca.helpers.function_name(inspect.currentframe())
     durations = abjad.duration.durations(time_signatures)
-    tuplets = rmakers.talea(durations, [16, -1], 4, tag=tag)
+    tuplets = rmakers.make_talea_tuplets(durations, [16, -1], 4, tag=tag)
     voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
     leaf_lists = [_[:] for _ in tuplets]
     rmakers.attach_beams_to_runs_by_leaf_list(leaf_lists, tag=tag)
